@@ -32,7 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         <footer className="border-t border-gray-200 mt-16">
           <div className="mx-auto max-w-6xl px-6 py-6 text-center text-xs text-gray-400">
-            Fundacja Certo Governance Institute © {new Date().getFullYear()}
+          Fundacja Certo Governance Institute © {new Date().getFullYear()}
+{' · '}
+<a href="/pp" style={{ color: '#9CA3AF' }}>Polityka Prywatności</a>
+{' · '}
+<a href="/terms" style={{ color: '#9CA3AF' }}>Warunki Korzystania</a>
           </div>
         </footer>
       </body>

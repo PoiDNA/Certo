@@ -16,7 +16,7 @@ export default function WarunkiKorzystania() {
       </section>
       <section style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>3. Konto użytkownika</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151', marginBottom: '1rem' }}>Użytkownik zobowiązuje się do: podania prawdziwych danych tożsamości, nieudostępniania danych dostępowych osobom trzecim, niezwłocznego powiadomienia Fundacji o nieautoryzowanym dostępie, korzystania z Serwisu zgodnie z obowiązującym prawem.</p>
+        <p style={{ lineHeight: 1.8, color: '#374151' }}>Użytkownik zobowiązuje się do podania prawdziwych danych tożsamości, nieudostępniania danych dostępowych osobom trzecim, niezwłocznego powiadomienia Fundacji o nieautoryzowanym dostępie oraz korzystania z Serwisu zgodnie z obowiązującym prawem.</p>
       </section>
       <section style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>4. Własność intelektualna</h2>
@@ -41,5 +41,12 @@ export default function WarunkiKorzystania() {
       </section>
       <section style={{ marginBottom: '2.5rem' }}>
         <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>8. Prawo właściwe</h2>
-sed -i '' 's|Governance, certain. © {new Date().getFullYear()} Fundacja Certo Governance Institute|Governance, certain. © {new Date().getFullYear()} Fundacja Certo Governance Institute · <a href="/pp" style={{color: "#4A5568"}}>Polityka Prywatności</a> · <a href="/terms" style={{color: "#4A5568"}}>Warunki Korzystania</a>|' /Users/lk/work/certo/foundation/platform/apps/web/app/layout.tsx
-cd /Users/lk/work/certo && git add -A && git commit -m "feat: strony /pp i /terms + linki w footer" && git push origin main
+        <p style={{ lineHeight: 1.8, color: '#374151' }}>Warunki podlegają prawu polskiemu. Spory rozstrzygane przez sąd właściwy dla siedziby Fundacji.</p>
+      </section>
+      <section>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>9. Kontakt</h2>
+        <p style={{ lineHeight: 1.8, color: '#374151' }}><a href="mailto:kontakt@certo.org.pl" style={{ color: '#C9A84C' }}>kontakt@certo.org.pl</a></p>
+      </section>
+    </main>
+  );
+}
