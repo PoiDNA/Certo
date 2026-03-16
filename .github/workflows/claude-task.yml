@@ -1,0 +1,177 @@
+name: "🤖 Claude Task (with Architect)"
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  execute-task:
+    if: contains(github.event.label.name, 'pipeline/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pipeline deps
+        run: cd pipeline && npm ci
+
+      - name: Determine phase and branch
+        id: task
+        run: |
+          LABEL="${{ github.event.label.name }}"
+          ISSUE_NUM="${{ github.event.issue.number }}"
+          
+          if [[ "$LABEL" == "pipeline/doc" ]]; then
+            echo "phase=doc" >> $GITHUB_OUTPUT
+          else
+            echo "phase=code" >> $GITHUB_OUTPUT
+          fi
+          
+          echo "branch=pipeline/${LABEL#pipeline/}-${ISSUE_NUM}" >> $GITHUB_OUTPUT
+          echo "issue_num=$ISSUE_NUM" >> $GITHUB_OUTPUT
+
+      - name: Create branch
+        run: |
+          git checkout -b ${{ steps.task.outputs.branch }}
+
+      - name: Collect all related documents
+        run: |
+          # Build JSON of all live documents for Architect context
+          DOCS="{}"
+          for doc in \
+            foundation/governance/normy-zewnetrzne/README.md \
+            foundation/governance/policy-registry/README.md \
+            company/technical/deliverable-b/README.md \
+            company/technical/deliverable-c/README.md; do
+            if [ -f "$doc" ]; then
+              CONTENT=$(cat "$doc")
+              DOCS=$(echo "$DOCS" | jq --arg k "$doc" --arg v "$CONTENT" '. + {($k): $v}')
+            fi
+          done
+          echo "$DOCS" > /tmp/related-docs.json
+
+      - name: Get Issue body
+        run: |
+          gh issue view ${{ steps.task.outputs.issue_num }} --json body --jq '.body' > /tmp/issue-body.txt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ═══════════════════════════════════════════
+      #  FAZA 0: ARCHITECT (Gemini planuje)
+      # ═══════════════════════════════════════════
+      - name: "🏗️ Architect — Gemini creates SPEC"
+        run: |
+          cd pipeline
+          ISSUE_BODY="$(cat /tmp/issue-body.txt)" \
+          RELATED_DOCUMENTS="$(cat /tmp/related-docs.json)" \
+          npx tsx agents/architect.ts
+          
+          echo "--- SPEC created ---"
+          cat /tmp/architect-spec.json | jq '.task_analysis'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Save SPEC to branch
+        run: |
+          # Save SPEC on branch so Reviewer can reference it
+          mkdir -p .pipeline
+          cp /tmp/architect-spec.json .pipeline/spec.json
+          cp /tmp/architect-spec-formatted.md .pipeline/spec.md
+
+      - name: Comment SPEC on Issue
+        run: |
+          COMPLEXITY=$(jq -r '.task_analysis.complexity' /tmp/architect-spec.json)
+          EST_ITER=$(jq -r '.task_analysis.estimated_iterations' /tmp/architect-spec.json)
+          FILES=$(jq -r '.task_analysis.cross_doc_impact | join(", ")' /tmp/architect-spec.json)
+          
+          gh issue comment ${{ steps.task.outputs.issue_num }} \
+            --body "## 🏗️ Architect SPEC
+          
+          **Złożoność:** ${COMPLEXITY}
+          **Szacowane iteracje:** ${EST_ITER}
+          **Pliki do edycji:** ${FILES}
+          
+          <details>
+          <summary>Pełny SPEC</summary>
+          
+          \`\`\`json
+          $(cat /tmp/architect-spec.json)
+          \`\`\`
+          </details>
+          
+          Claude Code rozpoczyna realizację..."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ═══════════════════════════════════════════
+      #  FAZA 1: PRODUCER (Claude realizuje SPEC)
+      # ═══════════════════════════════════════════
+      - name: "🤖 Claude Code — execute SPEC"
+        run: |
+          ISSUE_BODY="$(cat /tmp/issue-body.txt)"
+          SPEC="$(cat /tmp/architect-spec-formatted.md)"
+          
+          claude --print \
+            --allowedTools "Edit,Write,Read,Bash" \
+            --systemPrompt "$(cat pipeline/prompts/system-${{ steps.task.outputs.phase }}.md)" \
+            "${ISSUE_BODY}
+
+          ---
+
+          ${SPEC}
+
+          ---
+
+          INSTRUKCJE: Realizuj SPEC dosłownie. Edytuj WSZYSTKIE pliki wskazane w change_plan w JEDNYM podejściu. Sprawdź cross_doc_checklist PRZED zakończeniem. Unikaj pułapek z sekcji pitfalls." \
+            2>&1 | tee /tmp/claude-output.log
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      # ═══════════════════════════════════════════
+      #  COMMIT + PR
+      # ═══════════════════════════════════════════
+      - name: Commit and push
+        run: |
+          git add -A
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "pipeline: #${{ steps.task.outputs.issue_num }} — ${{ github.event.issue.title }}"
+          git push origin ${{ steps.task.outputs.branch }}
+
+      - name: Open PR
+        run: |
+          COMPLEXITY=$(jq -r '.task_analysis.complexity' /tmp/architect-spec.json)
+          EST_ITER=$(jq -r '.task_analysis.estimated_iterations' /tmp/architect-spec.json)
+          
+          gh pr create \
+            --base main \
+            --head ${{ steps.task.outputs.branch }} \
+            --title "🤖 #${{ steps.task.outputs.issue_num }}: ${{ github.event.issue.title }}" \
+            --body "## Pipeline 3-agentowy
+
+          | Agent | Status |
+          |-------|--------|
+          | 🏗️ Architect (Gemini) | ✅ SPEC created |
+          | 🤖 Producer (Claude) | ✅ Changes committed |
+          | 🔍 Reviewer (Gemini) | ⏳ Waiting for review |
+
+          **Złożoność:** ${COMPLEXITY}
+          **Szacowane iteracje do APPROVED:** ${EST_ITER}
+          **Faza:** ${{ steps.task.outputs.phase }}
+
+          SPEC: \`.pipeline/spec.json\`
+
+          ---
+          Closes #${{ steps.task.outputs.issue_num }}" \
+            --label "pipeline/${{ steps.task.outputs.phase }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

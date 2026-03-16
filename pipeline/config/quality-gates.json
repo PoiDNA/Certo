@@ -1,0 +1,251 @@
+# Quality Gates — System Oceny Jakości
+
+## Filozofia
+
+Pipeline NIE ogranicza liczby iteracji. Claude iteruje dopóki Gemini nie potwierdzi,
+że WSZYSTKIE wymiary jakości osiągnęły wymagany próg. Jedyny twardy limit to
+**budżet tokeny/koszt** i **timeout 72h** (eskalacja do human).
+
+```
+Stara filozofia:  "max 5 iteracji → eskalacja"
+Nowa filozofia:   "iteruj aż quality_gate_passed == true"
+```
+
+---
+
+## CZĘŚĆ 1: Quality Gates dla DOKUMENTACJI
+
+### 8 wymiarów oceny (każdy 0-10)
+
+| # | Wymiar | Opis | Próg PASS | Próg EXCELLENT |
+|---|--------|------|-----------|----------------|
+| D1 | **Kompletność zadania** | Czy Issue zostało w pełni zrealizowane? | >= 8.0 | >= 9.5 |
+| D2 | **Spójność krzyżowa** | Zgodność z A ↔ B ↔ C ↔ N (51 konceptów) | >= 9.0 | >= 9.5 |
+| D3 | **Poprawność merytoryczna** | Architektura, reguły NK, mechanizmy — bez błędów | >= 9.0 | >= 9.5 |
+| D4 | **Precyzja terminologiczna** | Nazewnictwo (Fundacja Certo, nie CGI), język prawno-techniczny | >= 8.5 | >= 9.5 |
+| D5 | **Stale references** | Zero reliktów (Redis, sidecar, 5 workflowów, Top 15) | == 10.0 | == 10.0 |
+| D6 | **Spójność liczbowa** | Hard Gates=22, core=14, workflowy=7, workery=3 | == 10.0 | == 10.0 |
+| D7 | **Jakość redakcyjna** | Czytelność, struktura, brak powtórzeń, profesjonalizm | >= 7.5 | >= 9.0 |
+| D8 | **Odporność audytowa** | Czy audytor ISO/IOSCO znajdzie lukę? | >= 8.5 | >= 9.5 |
+
+### Zasady oceny
+
+**Quality Gate PASSED** = WSZYSTKIE 8 wymiarów >= próg PASS.
+Jeden wymiar poniżej progu = CHANGES_REQUESTED (nawet jeśli reszta = 10.0).
+
+**D5 i D6 są binarne**: albo 10.0 (zero stale refs / liczby spójne) albo 0.0.
+Nie ma "prawie zero stale references". Jeden "Redis" = D5 = 0.0 = FAIL.
+
+**Auto-merge eligible**: WSZYSTKIE wymiary >= próg EXCELLENT + żaden komentarz critical/major.
+Human nadal widzi PR, ale może merge bez czytania pełnego diff.
+
+### Progi awaryjne
+
+| Warunek | Akcja |
+|---------|-------|
+| Iteracja >= 10 i brak postępu (score nie rośnie od 3 iteracji) | SOFT ESCALATION: @poi otrzymuje ping, ale Claude kontynuuje |
+| Iteracja >= 20 | HARD ESCALATION: pipeline pauzuje, human decyduje |
+| Budżet per zadanie > $15 | COST ALERT: notyfikacja, pipeline kontynuuje |
+| Budżet per zadanie > $30 | COST STOP: pipeline pauzuje, human decyduje |
+| Czas > 48h od otwarcia PR | TIME ALERT: notyfikacja |
+| Czas > 72h | TIME STOP: pipeline pauzuje |
+
+### Mechanizm postępu
+
+Gemini śledzi postęp między iteracjami:
+
+```json
+{
+  "iteration": 7,
+  "scores": {
+    "D1_completeness": 9.0,
+    "D2_cross_doc": 7.5,
+    "D3_correctness": 9.5,
+    "D4_terminology": 9.0,
+    "D5_stale_refs": 0.0,
+    "D6_numbers": 10.0,
+    "D7_editorial": 8.0,
+    "D8_audit_resilience": 8.5
+  },
+  "quality_gate_passed": false,
+  "blocking_dimensions": ["D2_cross_doc", "D5_stale_refs"],
+  "trend": "improving",
+  "previous_scores": {
+    "iteration_6": { "D2_cross_doc": 6.0, "D5_stale_refs": 0.0 }
+  },
+  "focus_instruction": "D2: brakuje NK-022 w Deliverable C matryca. D5: linia 42 nadal 'Redis Deny-List'."
+}
+```
+
+**focus_instruction** — Gemini mówi Claude DOKŁADNIE co naprawić. Nie "popraw spójność", ale "dodaj NK-022 do matrycy w deliverable-c/README.md, wiersz po NK-021".
+
+**trend** — jeśli `stagnating` (score nie rośnie od 3 iteracji) → Gemini zmienia strategię:
+zamiast dawać te same uwagi, proponuje alternatywne rozwiązanie.
+
+---
+
+## CZĘŚĆ 2: Quality Gates dla KODU
+
+### 6 wymiarów oceny (każdy 0-10)
+
+| # | Wymiar | Opis | Próg PASS | Próg EXCELLENT |
+|---|--------|------|-----------|----------------|
+| C1 | **Funkcjonalność** | Czy kod realizuje zadanie z Issue? Czy działa? | >= 8.0 | >= 9.5 |
+| C2 | **Zgodność z architekturą** | OPA WASM, Transactional Outbox, 3 workery, Zero Redis | >= 9.0 | >= 9.5 |
+| C3 | **Bezpieczeństwo** | RLS, hash ciphertext, no secrets in code, OWASP Top 10 | >= 9.0 | >= 10.0 |
+| C4 | **Jakość kodu** | TypeScript strict, error handling, testy, nazewnictwo | >= 7.5 | >= 9.0 |
+| C5 | **Spójność z dokumentacją** | Czy kod implementuje to co opisują A/B/C? | >= 8.5 | >= 9.5 |
+| C6 | **Operacyjność** | Logging, monitoring, graceful degradation, idempotentność | >= 7.5 | >= 9.0 |
+
+### Zasady oceny (kod)
+
+**Quality Gate PASSED** = WSZYSTKIE 6 wymiarów >= próg PASS.
+
+**C2 i C3 mają wyższe progi** — błąd architektoniczny lub bezpieczeństwa
+jest trudniejszy do naprawienia niż brzydki kod.
+
+**Progi awaryjne (kod):**
+
+| Warunek | Akcja |
+|---------|-------|
+| Iteracja >= 5 i brak postępu | SOFT ESCALATION |
+| Iteracja >= 10 | HARD ESCALATION |
+| Budżet per zadanie > $20 | COST ALERT |
+| Budżet per zadanie > $50 | COST STOP |
+
+Kod wymaga mniej iteracji niż dokumentacja — ale gdy utkniesz
+w architekturze (C2), potrafi się kręcić dłużo.
+
+---
+
+## CZĘŚĆ 3: Format odpowiedzi Gemini (zaktualizowany)
+
+```json
+{
+  "phase": "doc",
+  "iteration": 12,
+  
+  "scores": {
+    "D1_completeness": 9.5,
+    "D2_cross_doc": 9.0,
+    "D3_correctness": 9.5,
+    "D4_terminology": 9.0,
+    "D5_stale_refs": 10.0,
+    "D6_numbers": 10.0,
+    "D7_editorial": 8.0,
+    "D8_audit_resilience": 9.0
+  },
+  
+  "quality_gate_passed": true,
+  "auto_merge_eligible": false,
+  "decision": "APPROVED",
+  
+  "blocking_dimensions": [],
+  "trend": "improving",
+  
+  "summary": "Wszystkie wymiary powyżej progów. D7 (jakość redakcyjna) na 8.0 — sekcja 3.2 mogłaby być krótsza, ale nie blokuje.",
+  
+  "comments": [
+    {
+      "file": "foundation/governance/policy-registry/README.md",
+      "line": 42,
+      "severity": "suggestion",
+      "dimension": "D7_editorial",
+      "message": "Sekcja 3.2 powtarza informację z 2.1. Rozważ cross-reference zamiast duplikacji."
+    }
+  ],
+  
+  "focus_instruction": null,
+  
+  "cost_estimate": {
+    "this_iteration_tokens": 45000,
+    "total_tokens": 380000,
+    "total_cost_usd": 4.20
+  }
+}
+```
+
+---
+
+## CZĘŚĆ 4: Porównanie starego vs nowego modelu
+
+```
+STARY MODEL (iteration-limited)
+────────────────────────────────
+Iteracja 1: Claude → Gemini: 6.5/10 → CHANGES_REQUESTED
+Iteracja 2: Claude → Gemini: 7.0/10 → CHANGES_REQUESTED
+Iteracja 3: Claude → Gemini: 7.5/10 → CHANGES_REQUESTED
+Iteracja 4: Claude → Gemini: 7.8/10 → łagodnieje, APPROVED
+Iteracja 5: (nie doszło)
+
+Problem: Gemini zatwierdził na 7.8 bo zbliżał się limit.
+Dokument jest "OK" ale nie "excellent".
+
+
+NOWY MODEL (quality-driven)
+────────────────────────────────
+Iteracja 1:  Claude → Gemini: D2=4.0 D5=0.0 → "brakuje NK-022 w C, Redis w linii 42"
+Iteracja 2:  Claude → Gemini: D2=6.0 D5=10.0 → "NK-022 w C ale brak w matrycy"
+Iteracja 3:  Claude → Gemini: D2=7.5 → "matryca OK, brak w B decision points"
+Iteracja 4:  Claude → Gemini: D2=8.5 → "B OK, ale brak cross-ref do N sekcja 5.2"
+Iteracja 5:  Claude → Gemini: D2=9.0 → ✅ D2 passed
+Iteracja 6:  Claude → Gemini: D7=6.5 → "sekcja 3 za długa, powtórzenia"
+...
+Iteracja 12: Claude → Gemini: WSZYSTKIE >= próg → APPROVED
+
+Rezultat: dokument jest naprawdę dobry. Kosztował $4-5 zamiast $1.50,
+ale jakość jest 9.0+ zamiast 7.8.
+```
+
+---
+
+## CZĘŚĆ 5: Konfiguracja progów (edytowalny plik)
+
+Progi NIE są zahardkodowane w promptcie. Żyją w pliku konfiguracyjnym:
+
+```json
+{
+  "doc_quality_gates": {
+    "D1_completeness":      { "pass": 8.0, "excellent": 9.5 },
+    "D2_cross_doc":         { "pass": 9.0, "excellent": 9.5 },
+    "D3_correctness":       { "pass": 9.0, "excellent": 9.5 },
+    "D4_terminology":       { "pass": 8.5, "excellent": 9.5 },
+    "D5_stale_refs":        { "pass": 10.0, "excellent": 10.0 },
+    "D6_numbers":           { "pass": 10.0, "excellent": 10.0 },
+    "D7_editorial":         { "pass": 7.5, "excellent": 9.0 },
+    "D8_audit_resilience":  { "pass": 8.5, "excellent": 9.5 }
+  },
+  "code_quality_gates": {
+    "C1_functionality":     { "pass": 8.0, "excellent": 9.5 },
+    "C2_architecture":      { "pass": 9.0, "excellent": 9.5 },
+    "C3_security":          { "pass": 9.0, "excellent": 10.0 },
+    "C4_code_quality":      { "pass": 7.5, "excellent": 9.0 },
+    "C5_doc_consistency":   { "pass": 8.5, "excellent": 9.5 },
+    "C6_operability":       { "pass": 7.5, "excellent": 9.0 }
+  },
+  "escalation": {
+    "doc_soft_escalation_after": 10,
+    "doc_hard_escalation_after": 20,
+    "code_soft_escalation_after": 5,
+    "code_hard_escalation_after": 10,
+    "cost_alert_usd": 15,
+    "cost_stop_usd": 30,
+    "time_alert_hours": 48,
+    "time_stop_hours": 72,
+    "stagnation_trigger": 3
+  },
+  "architecture_state": {
+    "hard_gates_total": 22,
+    "hard_gates_core_sprint0": 14,
+    "soft_gates_total": 22,
+    "workflows_total": 7,
+    "decision_points": 9,
+    "adr_count": 7,
+    "db_tables": 13,
+    "workers_sod": 3
+  }
+}
+```
+
+Zmiana progu = PR do tego pliku. Gemini ładuje progi dynamicznie.
+Zmiana architektury (np. NK-023 = 23 Hard Gates) = PR do `architecture_state`.

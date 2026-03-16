@@ -1,0 +1,30 @@
+name: "📋 Quarterly Management Review"
+on:
+  schedule:
+    - cron: "0 9 1 1,4,7,10 *"
+jobs:
+  create-review-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create review Issue
+        run: |
+          gh issue create \
+            --title "📋 Przegląd zarządzania Q$(date +%q) $(date +%Y)" \
+            --body "## Kwartalny przegląd zarządzania (ISO 9001, 37301)
+
+          ### Checklist
+          - [ ] Przegląd pipeline: ile PR, ile iteracji, ile eskalacji
+          - [ ] Przegląd dokumentów: które wymagają aktualizacji
+          - [ ] Przegląd reguł NK: czy Policy Registry jest aktualny
+          - [ ] Przegląd incydentów: Break-Glass usage, audit alerts
+          - [ ] Decyzja: zmiany w następnym kwartale
+
+          ### Uczestnicy
+          - Zarząd Fundacji Certo
+          - CTO Spółki Certo ID
+          - Przewodniczący Izby Nadzoru (opcjonalnie)
+
+          **Termin:** 14 dni od utworzenia Issue." \
+            --label "management-review"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

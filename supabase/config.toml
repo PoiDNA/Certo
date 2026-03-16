@@ -1,0 +1,13 @@
+[project]
+id = "certo-governance"
+name = "Certo Governance"
+
+[db]
+port = 54322
+major_version = 16
+
+[api]
+port = 54321
+
+[studio]
+port = 54323

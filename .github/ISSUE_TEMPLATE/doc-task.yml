@@ -1,0 +1,53 @@
+name: "📝 Document Task"
+description: "Zadanie dla pipeline dokumentacji (Claude Code → Gemini Review)"
+title: "[DOC] "
+labels: ["pipeline/doc"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Pipeline dokumentacji
+        Claude Code otrzyma to zadanie, wykona zmiany, a Gemini 2.5 Pro automatycznie zrecenzuje PR.
+
+  - type: textarea
+    id: task
+    attributes:
+      label: "Zadanie"
+      description: "Opisz dokładnie co Claude Code ma zrobić."
+      placeholder: "Dodaj sekcję o Rating Revision do Policy Registry..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target
+    attributes:
+      label: "Dokument docelowy"
+      options:
+        - foundation/governance/normy-zewnetrzne
+        - foundation/governance/policy-registry
+        - foundation/governance/metodologia
+        - company/technical/deliverable-b
+        - company/technical/deliverable-c
+        - company/technical/adr
+        - foundation/compliance (nowy dokument)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priorytet"
+      options:
+        - "🔴 Critical (blokuje Sprint)"
+        - "🟠 High"
+        - "🟡 Normal"
+        - "🟢 Low (nice-to-have)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Kontekst dodatkowy"
+      description: "Powiązane dokumenty, decyzje, linki do recenzji."
+      placeholder: "W związku z decyzją o NK-022 Funding Independence..."

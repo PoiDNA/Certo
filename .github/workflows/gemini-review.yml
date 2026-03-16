@@ -1,0 +1,140 @@
+name: "🔍 Gemini Review"
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - "foundation/governance/**"
+      - "company/technical/**"
+      - "company/platform/**"
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: read
+
+env:
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+jobs:
+  gemini-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: |
+          cd pipeline
+          npm ci
+
+      - name: Get PR diff
+        id: diff
+        run: |
+          git diff origin/main...HEAD > /tmp/pr.diff
+          echo "diff_size=$(wc -c < /tmp/pr.diff)" >> $GITHUB_OUTPUT
+
+      - name: Get changed document
+        id: doc
+        run: |
+          # Find the primary document changed in this PR
+          CHANGED=$(git diff --name-only origin/main...HEAD | grep -E '\.(md|mdx)$' | head -1)
+          if [ -n "$CHANGED" ]; then
+            cat "$CHANGED" > /tmp/full-document.md
+            echo "path=$CHANGED" >> $GITHUB_OUTPUT
+            echo "found=true" >> $GITHUB_OUTPUT
+          else
+            echo "found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Get related documents (cross-reference)
+        id: related
+        run: |
+          # Collect key related docs for cross-checking
+          RELATED="{}"
+          for doc in \
+            "foundation/governance/normy-zewnetrzne/README.md" \
+            "foundation/governance/policy-registry/README.md" \
+            "company/technical/deliverable-b/README.md" \
+            "company/technical/deliverable-c/README.md"; do
+            if [ -f "$doc" ]; then
+              SLUG=$(echo "$doc" | sed 's|/README.md||' | sed 's|.*/||')
+              CONTENT=$(head -c 5000 "$doc" | jq -Rs .)
+              RELATED=$(echo "$RELATED" | jq --arg k "$SLUG" --arg v "$(head -c 5000 "$doc")" '. + {($k): $v}')
+            fi
+          done
+          echo "$RELATED" > /tmp/related-docs.json
+
+      - name: Get iteration count
+        id: iteration
+        run: |
+          # Count how many times this PR has been reviewed
+          COUNT=$(gh pr view ${{ github.event.pull_request.number }} --json comments \
+            --jq '[.comments[] | select(.body | contains("Gemini Review"))] | length')
+          echo "count=$((COUNT + 1))" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get linked issue body
+        id: issue
+        run: |
+          # Extract issue number from branch name (pipeline/doc-123)
+          BRANCH="${{ github.head_ref }}"
+          ISSUE_NUM=$(echo "$BRANCH" | grep -oP '\d+$' || echo "0")
+          if [ "$ISSUE_NUM" != "0" ]; then
+            gh issue view "$ISSUE_NUM" --json body --jq '.body' > /tmp/issue-body.txt
+          else
+            echo "No linked issue" > /tmp/issue-body.txt
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run Gemini Review
+        id: review
+        continue-on-error: true
+        run: |
+          cd pipeline
+          PR_DIFF="$(cat /tmp/pr.diff)" \
+          FULL_DOCUMENT="$(cat /tmp/full-document.md 2>/dev/null || echo '')" \
+          RELATED_DOCUMENTS="$(cat /tmp/related-docs.json)" \
+          ISSUE_BODY="$(cat /tmp/issue-body.txt)" \
+          PR_NUMBER="${{ github.event.pull_request.number }}" \
+          ITERATION="${{ steps.iteration.outputs.count }}" \
+          npx tsx agents/gemini-reviewer.ts
+
+      - name: Post review comment
+        if: always()
+        run: |
+          if [ -f /tmp/review-comment.md ]; then
+            gh pr comment ${{ github.event.pull_request.number }} \
+              --body "$(cat /tmp/review-comment.md)"
+          else
+            gh pr comment ${{ github.event.pull_request.number }} \
+              --body "## ⚠️ Gemini Review\nReview nie powiódł się. Sprawdź logi CI."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set PR status
+        if: always()
+        run: |
+          if [ -f /tmp/review-result.json ]; then
+            DECISION=$(jq -r '.decision' /tmp/review-result.json)
+            SCORE=$(jq -r '.score' /tmp/review-result.json)
+            if [ "$DECISION" = "APPROVED" ]; then
+              gh pr review ${{ github.event.pull_request.number }} --approve \
+                --body "✅ Gemini APPROVED (score: ${SCORE}/10)"
+            else
+              gh pr review ${{ github.event.pull_request.number }} --request-changes \
+                --body "🔄 Gemini CHANGES_REQUESTED (score: ${SCORE}/10)"
+            fi
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,132 @@
+name: "🔄 Claude Rework (quality-driven)"
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  rework:
+    if: |
+      github.event.review.state == 'changes_requested' &&
+      startsWith(github.head_ref, 'pipeline/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Determine phase and count iterations
+        id: state
+        run: |
+          COUNT=$(gh pr view ${{ github.event.pull_request.number }} --json comments \
+            --jq '[.comments[] | select(.body | contains("Gemini Review"))] | length')
+          echo "iteration=$COUNT" >> $GITHUB_OUTPUT
+          
+          BRANCH="${{ github.head_ref }}"
+          if [[ "$BRANCH" == pipeline/doc-* ]]; then
+            echo "phase=doc" >> $GITHUB_OUTPUT
+            echo "soft_limit=10" >> $GITHUB_OUTPUT
+            echo "hard_limit=20" >> $GITHUB_OUTPUT
+          else
+            echo "phase=code" >> $GITHUB_OUTPUT
+            echo "soft_limit=5" >> $GITHUB_OUTPUT
+            echo "hard_limit=10" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for stagnation
+        id: stagnation
+        run: |
+          LATEST=$(gh pr view ${{ github.event.pull_request.number }} --json comments \
+            --jq '[.comments[] | select(.body | contains("Gemini Review"))] | last | .body')
+          if echo "$LATEST" | grep -q '"stagnating"'; then
+            echo "detected=true" >> $GITHUB_OUTPUT
+          else
+            echo "detected=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Hard escalation (pipeline pauses)
+        if: ${{ steps.state.outputs.iteration >= steps.state.outputs.hard_limit }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --body "## 🛑 Hard Escalation (iteracja ${{ steps.state.outputs.iteration }})
+          Pipeline **PAUZUJE**. @poi — merge as-is, popraw ręcznie, lub zamknij PR."
+          gh pr edit ${{ github.event.pull_request.number }} --add-label "escalation/human-review"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Soft escalation (ping human, continue)
+        if: ${{ steps.state.outputs.iteration >= steps.state.outputs.soft_limit && steps.state.outputs.iteration < steps.state.outputs.hard_limit }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --body "⚠️ Soft escalation — iteracja ${{ steps.state.outputs.iteration }}. @poi heads up. Claude kontynuuje."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stop if hard escalation
+        if: ${{ steps.state.outputs.iteration >= steps.state.outputs.hard_limit }}
+        run: exit 0
+
+      - name: Extract feedback and build prompt
+        run: |
+          FEEDBACK=$(gh pr view ${{ github.event.pull_request.number }} --json comments \
+            --jq '[.comments[] | select(.body | contains("Gemini Review"))] | last | .body')
+          echo "$FEEDBACK" > /tmp/gemini-feedback.md
+          
+          BRANCH="${{ github.head_ref }}"
+          ISSUE_NUM=$(echo "$BRANCH" | grep -oP '\d+$' || echo "0")
+          [ "$ISSUE_NUM" != "0" ] && gh issue view "$ISSUE_NUM" --json body --jq '.body' > /tmp/issue-body.txt || echo "" > /tmp/issue-body.txt
+          
+          STAG="${{ steps.stagnation.outputs.detected }}"
+          
+          cat > /tmp/rework-prompt.txt << EOF
+          ORYGINALNE ZADANIE:
+          $(cat /tmp/issue-body.txt)
+          
+          FEEDBACK OD GEMINI (iteracja ${{ steps.state.outputs.iteration }}):
+          $(cat /tmp/gemini-feedback.md)
+          
+          INSTRUKCJE:
+          1. Napraw TYLKO wymiary w blocking_dimensions.
+          2. NIE zmieniaj tego co Gemini ocenił pozytywnie.
+          3. focus_instruction = DOKŁADNE instrukcje naprawy.
+          4. Jeśli koncept cross-doc — edytuj WSZYSTKIE powiązane pliki w jednym commicie.
+          $([ "$STAG" = "true" ] && echo "5. STAGNACJA WYKRYTA. Poprzednie podejście nie działa. Spróbuj INACZEJ.")
+          EOF
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Claude Code rework
+        run: |
+          claude --print \
+            --allowedTools "Edit,Write,Read,Bash" \
+            --systemPrompt "$(cat pipeline/prompts/system-${{ steps.state.outputs.phase }}.md)" \
+            "$(cat /tmp/rework-prompt.txt)" \
+            2>&1 | tee /tmp/claude-rework.log
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push
+        run: |
+          git add -A
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "pipeline: rework iter ${{ steps.state.outputs.iteration }} (${{ steps.state.outputs.phase }})"
+          git push origin ${{ github.head_ref }}
+          gh pr comment ${{ github.event.pull_request.number }} \
+            --body "🤖 Rework iter ${{ steps.state.outputs.iteration }}. Stagnacja: ${{ steps.stagnation.outputs.detected }}. Gemini review auto-trigger."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

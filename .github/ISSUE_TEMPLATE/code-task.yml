@@ -1,0 +1,32 @@
+name: "💻 Code Task"
+description: "Zadanie dla pipeline produkcji kodu (Claude Code → Gemini Review)"
+title: "[CODE] "
+labels: ["pipeline/code"]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: "Zadanie"
+      description: "Opisz funkcjonalność do implementacji."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target
+    attributes:
+      label: "Pakiet docelowy"
+      options:
+        - company/platform/apps/web (Next.js)
+        - company/platform/packages/compliance-engine (OPA)
+        - company/platform/packages/db (Prisma/Drizzle)
+        - company/platform/packages/shared
+        - docs-portal
+        - pipeline
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Kryteria akceptacji"
+      description: "Co musi działać żeby Gemini zatwierdziło?"

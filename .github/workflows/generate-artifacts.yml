@@ -1,0 +1,91 @@
+name: "📄 Generate Artifacts (DOCX/PDF)"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "foundation/governance/**/*.md"
+      - "company/technical/**/*.md"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install pandoc
+        run: sudo apt-get install -y pandoc
+
+      - name: Find changed markdown files
+        id: changed
+        run: |
+          FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '\.(md|mdx)$' | grep -v 'README' || echo "")
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+
+      - name: Generate DOCX and PDF
+        run: |
+          mkdir -p artifacts
+          for FILE in ${{ steps.changed.outputs.files }}; do
+            if [ -f "$FILE" ]; then
+              BASENAME=$(basename "$FILE" .md)
+              DIR=$(dirname "$FILE")
+              
+              # Generate DOCX
+              pandoc "$FILE" \
+                -o "artifacts/${BASENAME}.docx" \
+                --reference-doc=pipeline/templates/certo-template.docx \
+                -f markdown -t docx \
+                --toc --toc-depth=3 \
+                -V lang=pl
+              
+              echo "Generated: artifacts/${BASENAME}.docx"
+            fi
+          done
+
+      - name: Upload to Cloudflare R2
+        if: steps.changed.outputs.files != ''
+        run: |
+          # Upload generated artifacts to R2
+          for FILE in artifacts/*; do
+            if [ -f "$FILE" ]; then
+              FILENAME=$(basename "$FILE")
+              aws s3 cp "$FILE" "s3://certo-docs/$FILENAME" \
+                --endpoint-url "$R2_ENDPOINT"
+              echo "Uploaded: $FILENAME"
+            fi
+          done
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+
+      - name: Update Supabase metadata
+        if: steps.changed.outputs.files != ''
+        run: |
+          # Update document metadata in Supabase
+          for FILE in ${{ steps.changed.outputs.files }}; do
+            BASENAME=$(basename "$FILE" .md)
+            curl -X PATCH "$SUPABASE_URL/rest/v1/documents?slug=eq.$BASENAME" \
+              -H "apikey: $SUPABASE_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"docx_url\": \"$R2_PUBLIC_URL/$BASENAME.docx\",
+                \"updated_at\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
+              }"
+          done
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+
+      - name: Trigger docs portal revalidation
+        if: steps.changed.outputs.files != ''
+        run: |
+          curl -X POST "$VERCEL_DEPLOY_HOOK"
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}

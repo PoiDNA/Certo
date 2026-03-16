@@ -1,0 +1,19 @@
+# Frozen docs — REQUIRE human approval (Fundator)
+/foundation/frozen/ @poi
+/company/frozen/ @poi
+
+# Live governance docs — pipeline proposes, human approves
+/foundation/governance/ @poi
+/foundation/compliance/ @poi
+
+# Technical docs — pipeline proposes, human approves
+/company/technical/ @poi
+
+# Platform code — standard review
+/company/platform/ @poi
+
+# Pipeline engine — human approval required
+/pipeline/ @poi
+
+# Docs portal
+/docs-portal/ @poi
