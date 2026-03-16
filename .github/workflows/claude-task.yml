@@ -147,7 +147,7 @@ jobs:
           git add -A
           git diff --staged --quiet && echo "No changes" && exit 0
           git commit -m "pipeline: #${{ steps.task.outputs.issue_num }} — ${{ github.event.issue.title }}"
-          git push origin ${{ steps.task.outputs.branch }}
+          git push origin ${{ steps.task.outputs.branch }} --force
 
       - name: Open PR
         run: |
