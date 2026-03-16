@@ -142,6 +142,8 @@ jobs:
       # ═══════════════════════════════════════════
       - name: Commit and push
         run: |
+          git config user.email "pipeline@certo.pl"
+          git config user.name "Certo Pipeline"
           git add -A
           git diff --staged --quiet && echo "No changes" && exit 0
           git commit -m "pipeline: #${{ steps.task.outputs.issue_num }} — ${{ github.event.issue.title }}"
