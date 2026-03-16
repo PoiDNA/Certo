@@ -3,10 +3,7 @@ name: "🔍 Gemini Review"
 on:
   pull_request:
     types: [opened, synchronize]
-    paths:
-      - "foundation/governance/**"
-      - "company/technical/**"
-      - "company/platform/**"
+    
 
 permissions:
   contents: read
