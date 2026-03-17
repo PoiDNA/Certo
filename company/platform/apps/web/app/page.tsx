@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-certo-gray-light">
@@ -64,7 +66,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { n: '01', t: 'Weryfikacja Tożsamości', d: 'KYC/AML dla podmiotów regulowanych. Automatyczna weryfikacja dokumentów, screening sankcji i PEP, integracja z rejestrami państwowymi.', tag: 'CERTO ID' },
-            { n: '02', t: 'Rating Compliance', d: 'Automatyczny scoring zgodności oparty na metodologii Certo Governance Institute. Pięciostanowy system oceny z pełną ścieżką audytu.', tag: 'CERTO SCORE' },
+            { n: '02', t: 'Rating Compliance', d: 'Automatyczny scoring zgodności oparty na metodologii Certo Governance Institute. Pięciostanowy system oceny z pełną ścieżki audytu.', tag: 'CERTO SCORE' },
             { n: '03', t: 'Remediation Engine', d: 'Automatyczne plany naprawcze i monitoring ich realizacji. Integracja z systemami ERP, GRC i platformami zarządzania ryzykiem.', tag: 'CERTO ACTION' },
           ].map((s) => (
             <div key={s.n} className="bg-certo-teal-darker border border-certo-teal/50 p-8 hover:border-certo-teal hover:shadow-lg transition-all duration-300 rounded-[2px] group relative overflow-hidden">
@@ -107,5 +109,6 @@ export default function Home() {
           </div>
         </div>
       </section>
+    </div>
   );
 }
