@@ -13,7 +13,52 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
-      <body>{children}</body>
+      <body className="bg-certo-gray-light text-certo-teal-darker antialiased min-h-screen flex flex-col font-sans">
+        <header className="bg-white border-b border-certo-gray sticky top-0 z-50 shadow-sm">
+          <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="h-8 w-8 rounded bg-certo-teal flex items-center justify-center text-white font-bold text-sm">
+                ID
+              </div>
+              <div>
+                <h1 className="text-lg font-bold text-certo-teal-darker tracking-tight">Certo ID</h1>
+                <p className="text-[10px] text-certo-gray-dark uppercase font-bold tracking-widest mt-0.5">Platforma Technologiczna</p>
+              </div>
+            </div>
+            <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
+              <a href="#rozwiazania" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Rozwiązania</a>
+              <a href="#technologia" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Technologia</a>
+              <a href="https://certo.org.pl" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
+                Fundacja Certo →
+              </a>
+            </nav>
+          </div>
+        </header>
+        
+        <main className="flex-grow w-full">
+          {children}
+        </main>
+        
+        <footer className="bg-certo-teal-darker text-white border-t border-certo-teal-dark mt-auto">
+          <div className="mx-auto max-w-6xl px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="flex items-center gap-3">
+              <div className="h-8 w-8 rounded bg-certo-teal/20 border border-certo-teal/50 flex items-center justify-center text-certo-teal font-bold text-sm">
+                ID
+              </div>
+              <div>
+                <div className="text-sm font-bold tracking-wide">Certo ID PSA</div>
+                <div className="text-xs text-certo-gray-light/60 mt-1">Operator Technologiczny Ekosystemu Certo</div>
+              </div>
+            </div>
+            
+            <div className="flex gap-6 text-xs text-certo-gray-light/60 font-medium">
+              <span>© {new Date().getFullYear()} Certo ID PSA</span>
+              <a href="#" className="hover:text-certo-teal transition-colors">Privacy</a>
+              <a href="#" className="hover:text-certo-teal transition-colors">Terms</a>
+            </div>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
