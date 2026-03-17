@@ -1,19 +1,36 @@
 @import "tailwindcss";
 
-/* Certo brand tokens */
-:root {
-  --certo-teal: #00796b;
-  --certo-dark: #263238;
+@theme {
+  --color-certo-navy: #1A2744;
+  --color-certo-cream: #F5F0E8;
+  --color-certo-gold: #C49A3C;
+  --color-certo-gold-light: #D4AF6A;
+
+  --font-serif: Georgia, "Playfair Display", serif;
+  --font-sans: system-ui, sans-serif;
+}
+
+/* Base resets or globals */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-certo-cream);
+  color: var(--color-certo-navy);
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
 }
 
 /* Typography for rendered Markdown */
-.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
-.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
+.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
+.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
 .prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
-.prose th { background: #f0fdfa; text-align: left; padding: 0.5rem 0.75rem; border: 1px solid #d1d5db; font-weight: 600; }
-.prose td { padding: 0.5rem 0.75rem; border: 1px solid #e5e7eb; }
-.prose code { background: #f3f4f6; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; }
-.prose pre { background: #1e293b; color: #e2e8f0; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
+.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--color-certo-navy); }
+.prose td { padding: 0.5rem 0.75rem; border: 1px solid rgba(26, 39, 68, 0.1); }
+.prose code { background: rgba(26, 39, 68, 0.05); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--color-certo-navy); }
+.prose pre { background: var(--color-certo-navy); color: var(--color-certo-cream); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
 .prose pre code { background: none; padding: 0; color: inherit; }
-.prose blockquote { border-left: 3px solid #00796b; padding-left: 1rem; color: #4b5563; font-style: italic; }
+.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: rgba(26, 39, 68, 0.8); font-style: italic; }
+.prose a { color: var(--color-certo-gold); text-decoration: none; font-weight: 500; }
+.prose a:hover { text-decoration: underline; }

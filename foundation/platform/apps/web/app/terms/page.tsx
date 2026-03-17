@@ -1,51 +1,77 @@
 export default function WarunkiKorzystania() {
   return (
-    <main style={{ maxWidth: 800, margin: '0 auto', padding: '6rem 2rem 4rem', fontFamily: 'Georgia, serif', color: '#0F1F3D' }}>
-      <div style={{ marginBottom: '3rem' }}>
-        <a href="/" style={{ fontSize: '0.75rem', color: '#C9A84C', textDecoration: 'none', letterSpacing: '0.1em', fontFamily: 'system-ui', fontWeight: 700 }}>← CERTO.ORG.PL</a>
+    <main className="max-w-3xl mx-auto py-16 px-6 font-serif text-certo-navy">
+      <div className="mb-12">
+        <a href="/" className="text-xs text-certo-gold hover:text-certo-gold-light no-underline tracking-widest font-sans font-bold uppercase transition-colors">← Certo.org.pl</a>
       </div>
-      <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem', letterSpacing: '-0.02em' }}>Warunki Korzystania z Serwisu</h1>
-      <p style={{ fontSize: '0.8rem', color: '#6b7280', marginBottom: '3rem', fontFamily: 'system-ui' }}>Ostatnia aktualizacja: marzec 2026</p>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>1. Postanowienia ogólne</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Niniejsze Warunki regulują zasady korzystania z serwisu <strong>certo.org.pl</strong> prowadzonego przez <strong>Fundację Certo Governance Institute</strong>. Korzystanie z Serwisu oznacza akceptację Warunków.</p>
+      
+      <h1 className="text-4xl font-bold mb-2 tracking-tight">Warunki Korzystania z Serwisu</h1>
+      <p className="text-sm text-certo-navy/60 mb-12 font-sans">Ostatnia aktualizacja: marzec 2026</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">1. Postanowienia ogólne</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Niniejsze Warunki regulują zasady korzystania z serwisu <strong>certo.org.pl</strong> prowadzonego przez <strong>Fundację Certo Governance Institute</strong>. Korzystanie z Serwisu oznacza akceptację Warunków.
+        </p>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>2. Charakter serwisu</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Serwis stanowi portal dokumentacyjny Fundacji — niezależnego organu ratingowego działającego na rzecz jakości governance instytucji publicznych. Dostęp do części zasobów wymaga weryfikacji tożsamości.</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">2. Charakter serwisu</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Serwis stanowi portal dokumentacyjny Fundacji — niezależnego organu ratingowego działającego na rzecz jakości governance instytucji publicznych. Dostęp do części zasobów wymaga weryfikacji tożsamości.
+        </p>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>3. Konto użytkownika</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Użytkownik zobowiązuje się do podania prawdziwych danych tożsamości, nieudostępniania danych dostępowych osobom trzecim, niezwłocznego powiadomienia Fundacji o nieautoryzowanym dostępie oraz korzystania z Serwisu zgodnie z obowiązującym prawem.</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">3. Konto użytkownika</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Użytkownik zobowiązuje się do podania prawdziwych danych tożsamości, nieudostępniania danych dostępowych osobom trzecim, niezwłocznego powiadomienia Fundacji o nieautoryzowanym dostępie oraz korzystania z Serwisu zgodnie z obowiązującym prawem.
+        </p>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>4. Własność intelektualna</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Wszelkie treści Serwisu stanowią własność Fundacji. Zabronione jest kopiowanie, rozpowszechnianie lub komercyjne wykorzystywanie treści bez pisemnej zgody Fundacji.</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">4. Własność intelektualna</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Wszelkie treści Serwisu stanowią własność Fundacji. Zabronione jest kopiowanie, rozpowszechnianie lub komercyjne wykorzystywanie treści bez pisemnej zgody Fundacji.
+        </p>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>5. Zasada ratingu tworzonego przez człowieka</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Fundacja stosuje <strong>Zasadę Ratingu Tworzonego przez Człowieka</strong>: wszystkie ratingi są tworzone i weryfikowane przez analityków. Narzędzia AI mogą wspierać procesy analityczne, jednak ostateczna decyzja ratingowa należy zawsze do człowieka.</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">5. Zasada ratingu tworzonego przez człowieka</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Fundacja stosuje <strong>Zasadę Ratingu Tworzonego przez Człowieka</strong>: wszystkie ratingi są tworzone i weryfikowane przez analityków. Narzędzia AI mogą wspierać procesy analityczne, jednak ostateczna decyzja ratingowa należy zawsze do człowieka.
+        </p>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>6. Wyłączenie odpowiedzialności</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Dokumenty i ratingi mają charakter informacyjny i nie stanowią porady prawnej ani finansowej. Fundacja nie ponosi odpowiedzialności za decyzje podjęte na ich podstawie.</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">6. Wyłączenie odpowiedzialności</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Dokumenty i ratingi mają charakter informacyjny i nie stanowią porady prawnej ani finansowej. Fundacja nie ponosi odpowiedzialności za decyzje podjęte na ich podstawie.
+        </p>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>7. Zakaz niedozwolonych działań</h2>
-        <ul style={{ lineHeight: 2, color: '#374151', paddingLeft: '1.5rem' }}>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">7. Zakaz niedozwolonych działań</h2>
+        <ul className="leading-loose text-certo-navy/80 pl-6 list-disc font-sans">
           <li>Nieautoryzowany dostęp do zasobów Serwisu.</li>
           <li>Automatyczne pobieranie treści (scraping) bez zgody Fundacji.</li>
           <li>Działania zakłócające działanie Serwisu.</li>
           <li>Podszywanie się pod Fundację lub jej pracowników.</li>
         </ul>
       </section>
-      <section style={{ marginBottom: '2.5rem' }}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>8. Prawo właściwe</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}>Warunki podlegają prawu polskiemu. Spory rozstrzygane przez sąd właściwy dla siedziby Fundacji.</p>
+      
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">8. Prawo właściwe</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          Warunki podlegają prawu polskiemu. Spory rozstrzygane przez sąd właściwy dla siedziby Fundacji.
+        </p>
       </section>
+      
       <section>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid #E2E8F0' }}>9. Kontakt</h2>
-        <p style={{ lineHeight: 1.8, color: '#374151' }}><a href="mailto:kontakt@certo.org.pl" style={{ color: '#C9A84C' }}>kontakt@certo.org.pl</a></p>
+        <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">9. Kontakt</h2>
+        <p className="leading-relaxed text-certo-navy/80 font-sans">
+          <a href="mailto:kontakt@certo.org.pl" className="text-certo-gold hover:underline">kontakt@certo.org.pl</a>
+        </p>
       </section>
     </main>
   );

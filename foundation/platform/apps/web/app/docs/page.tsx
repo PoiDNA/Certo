@@ -11,9 +11,9 @@ export default function HomePage() {
 
   return (
     <div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-gray-900">Dokumentacja Sprint 0</h2>
-        <p className="mt-1 text-sm text-gray-500">
+      <div className="mb-12 border-b border-certo-gold/30 pb-6">
+        <h2 className="text-3xl font-serif font-bold text-certo-navy tracking-tight">Dokumentacja Sprint 0</h2>
+        <p className="mt-2 text-md text-certo-navy/70 max-w-2xl">
           Komplet dokumentów zatwierdzanych uchwałą Zarządu Fundacji Certo + opinia Izby Nadzoru
         </p>
       </div>
@@ -30,16 +30,16 @@ export default function HomePage() {
         docs={company} 
       />
 
-      <div className="mt-12 rounded-lg bg-teal-50 border border-teal-200 p-6">
-        <h3 className="font-semibold text-teal-800">Pipeline</h3>
-        <p className="mt-1 text-sm text-teal-700">
+      <div className="mt-16 rounded-sm bg-certo-navy border-[2px] border-certo-gold p-8 shadow-lg">
+        <h3 className="font-serif text-xl font-bold text-certo-cream mb-2">Platforma Certo Pipeline</h3>
+        <p className="text-sm text-certo-cream/80 leading-relaxed max-w-3xl">
           Dokumenty produkowane przez Claude Code, recenzowane automatycznie przez Gemini 2.5 Pro.
           Każda zmiana przechodzi CI/CD z weryfikacją spójności krzyżowej.
         </p>
-        <div className="mt-3 flex gap-4 text-xs">
-          <span className="bg-teal-100 text-teal-700 px-2 py-1 rounded">22 Hard Gates</span>
-          <span className="bg-teal-100 text-teal-700 px-2 py-1 rounded">7 Workflowów</span>
-          <span className="bg-teal-100 text-teal-700 px-2 py-1 rounded">14 reguł core Sprint 0</span>
+        <div className="mt-6 flex flex-wrap gap-4 text-xs font-medium tracking-wide">
+          <span className="border border-certo-gold-light text-certo-gold-light px-3 py-1.5 rounded-sm uppercase">22 Hard Gates</span>
+          <span className="border border-certo-gold-light text-certo-gold-light px-3 py-1.5 rounded-sm uppercase">7 Workflowów</span>
+          <span className="border border-certo-gold-light text-certo-gold-light px-3 py-1.5 rounded-sm uppercase">14 reguł core Sprint 0</span>
         </div>
       </div>
     </div>
@@ -54,30 +54,30 @@ function DocumentSection({ title, subtitle, docs }: {
   if (docs.length === 0) return null;
   
   return (
-    <div className="mb-10">
-      <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-      <p className="text-sm text-gray-500 mb-4">{subtitle}</p>
+    <div className="mb-12">
+      <h3 className="text-2xl font-serif font-bold text-certo-navy mb-1">{title}</h3>
+      <p className="text-sm text-certo-navy/60 mb-6 font-medium tracking-wide uppercase">{subtitle}</p>
       
-      <div className="grid gap-3">
+      <div className="grid gap-4">
         {docs.map(doc => (
           <Link 
             key={doc.slug} 
             href={`/documents/${doc.slug}`}
-            className="block rounded-lg border border-gray-200 bg-white p-4 hover:border-teal-300 hover:shadow-sm transition-all"
+            className="block bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group"
           >
-            <div className="flex items-start justify-between">
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
               <div>
-                <h4 className="font-medium text-gray-900">{doc.title}</h4>
-                <p className="text-xs text-gray-500 mt-1">
-                  {doc.category} • v{doc.version} • {doc.updatedAt}
+                <h4 className="font-serif font-semibold text-lg text-certo-navy group-hover:text-certo-gold transition-colors">{doc.title}</h4>
+                <p className="text-xs text-certo-navy/50 mt-2 font-medium tracking-wide uppercase">
+                  {doc.category} <span className="mx-1.5 text-certo-gold/50">•</span> v{doc.version} <span className="mx-1.5 text-certo-gold/50">•</span> {doc.updatedAt}
                 </p>
               </div>
-              <div className="flex items-center gap-2">
-                <span className={`text-xs px-2 py-0.5 rounded-full ${STATUS_CONFIG[doc.status]?.color || ''}`}>
+              <div className="flex items-center gap-3 shrink-0">
+                <span className={`text-xs px-2.5 py-1 rounded-sm font-medium tracking-wide uppercase border ${STATUS_CONFIG[doc.status]?.color || 'border-certo-navy/20 text-certo-navy/60'}`}>
                   {STATUS_CONFIG[doc.status]?.label || doc.status}
                 </span>
                 {doc.docxUrl && (
-                  <span className="text-xs text-blue-600 hover:underline">DOCX</span>
+                  <span className="text-xs font-semibold text-certo-navy hover:text-certo-gold uppercase tracking-wide transition-colors">DOCX</span>
                 )}
               </div>
             </div>

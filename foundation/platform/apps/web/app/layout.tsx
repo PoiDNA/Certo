@@ -2,41 +2,51 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Certo Governance — Dokumentacja",
-  description: "Portal dokumentacji Fundacji Certo Governance Institute i Spółki Certo ID PSA",
+  title: "Certo Governance Institute — Dokumentacja",
+  description: "Portal dokumentacji Fundacji Certo Governance Institute",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
-      <body className="bg-gray-50 text-gray-900 antialiased">
-        <header className="border-b border-gray-200 bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="h-8 w-8 rounded bg-teal-700 flex items-center justify-center text-white font-bold text-sm">C</div>
+      <body className="bg-certo-cream text-certo-navy antialiased min-h-screen flex flex-col">
+        <header className="bg-certo-navy text-certo-cream border-b-[3px] border-certo-gold">
+          <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="h-10 w-10 rounded-full border border-certo-gold flex items-center justify-center text-certo-gold font-serif font-bold text-lg">
+                C
+              </div>
               <div>
-                <h1 className="text-lg font-semibold text-gray-900">Certo Governance</h1>
-                <p className="text-xs text-gray-500">Dokumentacja instytucjonalna</p>
+                <h1 className="text-xl font-serif font-bold text-certo-cream tracking-wide">Certo Governance</h1>
+                <p className="text-xs text-certo-gold-light uppercase tracking-widest mt-0.5">Institute</p>
               </div>
             </div>
-            <nav className="flex gap-6 text-sm">
-              <a href="/" className="text-gray-600 hover:text-teal-700">Dokumenty</a>
-              <a href="/pipeline" className="text-gray-600 hover:text-teal-700">Pipeline</a>
+            <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+              <a href="/" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Dokumenty</a>
+              <a href="/pipeline" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Pipeline</a>
               <a href="https://github.com/certo-governance/certo-governance" 
-                 target="_blank" className="text-gray-400 hover:text-gray-600">GitHub</a>
+                 target="_blank" className="text-certo-gold-light hover:text-certo-gold transition-colors duration-200 uppercase" rel="noreferrer">
+                GitHub
+              </a>
             </nav>
           </div>
         </header>
-        <main className="mx-auto max-w-6xl px-6 py-8">
+        
+        <main className="flex-grow mx-auto max-w-6xl px-6 py-12 w-full">
           {children}
         </main>
-        <footer className="border-t border-gray-200 mt-16">
-          <div className="mx-auto max-w-6xl px-6 py-6 text-center text-xs text-gray-400">
-          Fundacja Certo Governance Institute © {new Date().getFullYear()}
-{' · '}
-<a href="/pp" style={{ color: '#9CA3AF' }}>Polityka Prywatności</a>
-{' · '}
-<a href="/terms" style={{ color: '#9CA3AF' }}>Warunki Korzystania</a>
+        
+        <footer className="bg-certo-navy border-t-[3px] border-certo-gold mt-auto">
+          <div className="mx-auto max-w-6xl px-6 py-8 flex flex-col items-center justify-center text-center">
+            <div className="text-certo-gold-light font-serif mb-4 text-lg">Certo Governance Institute</div>
+            <div className="text-xs text-certo-cream/60 mb-2">
+              Fundacja Certo Governance Institute © {new Date().getFullYear()}
+            </div>
+            <div className="flex gap-4 text-xs">
+              <a href="/pp" className="text-certo-gold hover:text-certo-gold-light transition-colors">Polityka Prywatności</a>
+              <span className="text-certo-cream/40">•</span>
+              <a href="/terms" className="text-certo-gold hover:text-certo-gold-light transition-colors">Warunki Korzystania</a>
+            </div>
           </div>
         </footer>
       </body>

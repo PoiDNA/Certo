@@ -17,29 +17,33 @@ export default async function PipelinePage() {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">Pipeline Status</h2>
-      <p className="text-sm text-gray-500 mb-8">
-        Claude Code → Gemini 2.5 Pro → automatyczny review i merge
-      </p>
+      <div className="mb-12 border-b border-certo-gold/30 pb-6">
+        <h2 className="text-3xl font-serif font-bold text-certo-navy tracking-tight">Pipeline Status</h2>
+        <p className="mt-2 text-md text-certo-navy/70 max-w-2xl font-medium tracking-wide">
+          Claude Code <span className="text-certo-gold">→</span> Gemini 2.5 Pro <span className="text-certo-gold">→</span> Automatyczny Review i Merge
+        </p>
+      </div>
 
       {/* Active runs */}
-      <section className="mb-10">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">Aktywne zadania</h3>
+      <section className="mb-12">
+        <h3 className="text-2xl font-serif font-bold text-certo-navy mb-6">Aktywne zadania</h3>
         {(!runs || runs.length === 0) ? (
-          <p className="text-sm text-gray-400 italic">Brak aktywnych zadań. Stwórz Issue na GitHub z labelem pipeline/doc.</p>
+          <p className="text-sm text-certo-navy/60 italic p-6 border border-dashed border-certo-navy/20 text-center">
+            Brak aktywnych zadań. Stwórz Issue na GitHub z labelem <code className="bg-certo-navy/5 text-certo-navy px-1.5 py-0.5 rounded-sm">pipeline/doc</code>.
+          </p>
         ) : (
-          <div className="grid gap-3">
+          <div className="grid gap-4">
             {runs?.map((run: any) => (
-              <div key={run.id} className="rounded-lg border border-gray-200 bg-white p-4">
-                <div className="flex items-center justify-between">
+              <div key={run.id} className="bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <span className="font-medium">Issue #{run.issue_number}</span>
-                    <span className="text-sm text-gray-500 ml-2">• {run.branch}</span>
+                    <span className="font-serif font-semibold text-lg text-certo-navy group-hover:text-certo-gold transition-colors">Issue #{run.issue_number}</span>
+                    <span className="text-xs text-certo-navy/50 ml-3 font-medium tracking-wide uppercase"><span className="text-certo-gold/50 mr-2">•</span> {run.branch}</span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-4">
                     <StatusBadge status={run.status} />
-                    <span className="text-xs text-gray-400">
-                      iter. {run.iterations}/{run.max_iterations}
+                    <span className="text-xs text-certo-navy/50 font-medium tracking-wide uppercase">
+                      Iter. <span className="text-certo-navy">{run.iterations}</span>/{run.max_iterations}
                     </span>
                   </div>
                 </div>
@@ -51,27 +55,29 @@ export default async function PipelinePage() {
 
       {/* Recent reviews */}
       <section>
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">Ostatnie review (Gemini)</h3>
+        <h3 className="text-2xl font-serif font-bold text-certo-navy mb-6">Ostatnie recenzje <span className="text-certo-gold">(Gemini)</span></h3>
         {(!reviews || reviews.length === 0) ? (
-          <p className="text-sm text-gray-400 italic">Brak recenzji.</p>
+          <p className="text-sm text-certo-navy/60 italic p-6 border border-dashed border-certo-navy/20 text-center">
+            Brak zrealizowanych recenzji.
+          </p>
         ) : (
-          <div className="grid gap-3">
+          <div className="grid gap-4">
             {reviews?.map((review: any) => (
-              <div key={review.id} className="rounded-lg border border-gray-200 bg-white p-4">
-                <div className="flex items-center justify-between">
+              <div key={review.id} className="bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <span className="font-medium">{review.documents?.title || "—"}</span>
-                    <span className="text-sm text-gray-500 ml-2">• PR #{review.pr_number}</span>
+                    <span className="font-serif font-semibold text-lg text-certo-navy group-hover:text-certo-gold transition-colors">{review.documents?.title || "—"}</span>
+                    <span className="text-xs text-certo-navy/50 ml-3 font-medium tracking-wide uppercase"><span className="text-certo-gold/50 mr-2">•</span> PR #{review.pr_number}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                  <div className="flex items-center gap-4">
+                    <span className={`text-xs px-2.5 py-1 rounded-sm font-medium tracking-wide uppercase border ${
                       review.decision === "APPROVED" 
-                        ? "bg-green-100 text-green-800" 
-                        : "bg-yellow-100 text-yellow-800"
+                        ? "border-green-300 bg-green-50 text-green-800" 
+                        : "border-yellow-300 bg-yellow-50 text-yellow-800"
                     }`}>
-                      {review.decision === "APPROVED" ? "✅ Approved" : "🔄 Changes"}
+                      {review.decision === "APPROVED" ? "✓ Approved" : "↻ Changes"}
                     </span>
-                    <span className="text-xs text-gray-500">{review.score}/10</span>
+                    <span className="text-xs text-certo-navy/50 font-medium tracking-wide uppercase">Wynik <span className="text-certo-navy font-bold">{review.score}</span>/10</span>
                   </div>
                 </div>
               </div>
@@ -85,12 +91,12 @@ export default async function PipelinePage() {
 
 function StatusBadge({ status }: { status: string }) {
   const config: Record<string, { label: string; color: string }> = {
-    RUNNING: { label: "W toku", color: "bg-blue-100 text-blue-800" },
-    REVIEWING: { label: "Gemini review", color: "bg-purple-100 text-purple-800" },
-    APPROVED: { label: "Zatwierdzony", color: "bg-green-100 text-green-800" },
-    FAILED: { label: "Błąd", color: "bg-red-100 text-red-800" },
-    ESCALATED: { label: "Eskalacja", color: "bg-orange-100 text-orange-800" },
+    RUNNING: { label: "W toku", color: "bg-blue-50 text-blue-900 border-blue-200" },
+    REVIEWING: { label: "Gemini review", color: "bg-purple-50 text-purple-900 border-purple-200" },
+    APPROVED: { label: "Zatwierdzony", color: "bg-green-50 text-green-900 border-green-200" },
+    FAILED: { label: "Błąd", color: "bg-red-50 text-red-900 border-red-200" },
+    ESCALATED: { label: "Eskalacja", color: "bg-orange-50 text-orange-900 border-orange-200" },
   };
-  const c = config[status] || { label: status, color: "bg-gray-100" };
-  return <span className={`text-xs px-2 py-0.5 rounded-full ${c.color}`}>{c.label}</span>;
+  const c = config[status] || { label: status, color: "bg-certo-navy/5 text-certo-navy border-certo-navy/20" };
+  return <span className={`text-xs px-2.5 py-1 rounded-sm border font-medium tracking-wide uppercase ${c.color}`}>{c.label}</span>;
 }

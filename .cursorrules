@@ -1,0 +1,100 @@
+# Certo Ecosystem — Cursor Rules
+
+## Kontekst projektu
+Monorepo (npm workspaces) ekosystemu Certo składającego się z dwóch podmiotów:
+- **Fundacja Certo Governance Institute** — niezależny organ ratingowy (foundation/)
+- **Certo ID PSA** — komercyjny operator technologiczny (company/)
+
+## Struktura repo
+```
+foundation/platform/apps/web/      → certo.org.pl (Next.js 15, React 19)
+foundation/platform/packages/auth/ → shared auth package (czysty TS, niezależny od Next)
+company/platform/apps/web/         → certo.id (Next.js 14, React 18)
+pipeline/                          → GitHub Actions skrypty (Node.js)
+.github/workflows/                 → 5 workflows: claude-task, gemini-review, generate-artifacts, claude-rework, quarterly-review
+```
+
+## Stack techniczny
+- **Package Manager:** npm — nie pnpm, nie yarn, nie bun
+- **Framework:** Next.js App Router zawsze — nigdy Pages Router
+- **Język:** TypeScript zawsze — nigdy JavaScript. Ścisłe typowanie.
+- **CSS:** Tailwind CSS + inline styles dla jednorazowych overrides
+- **Auth & DB:** Supabase przez @supabase/ssr — nigdy @supabase/auth-helpers
+- **Storage:** Cloudflare R2 (DOCX artifacts)
+- **Hosting:** Vercel (dwa osobne projekty: Certo + Certo ID)
+
+## Design system
+
+### Certo ID (certo.id) — styl: corporate / clean / international
+- Tło: ciemny teal #1B4F5A lub #0D3340, białe sekcje content
+- Akcenty: teal #2A7A8C, biały #FFFFFF, jasny szary #F4F6F7
+- Typografia: sans-serif (system-ui, DM Sans, lub podobny)
+- Styl: czysty, korporacyjny, nowoczesny, dużo whitespace
+- Nawigacja: pozioma, prosta, bez ozdób
+- CTA buttons: teal z białym tekstem, zaokrąglone rogi
+- Zdjęcia: profesjonalne, biznesowe, architektura korporacyjna
+
+### Certo Foundation (certo.org.pl) — styl: prestiżowy / instytucjonalny / klasyczny
+- Tło: głęboki navy #1A2744, cream #F5F0E8 dla sekcji jasnych
+- Akcenty: złoto #C49A3C, złoto jasne #D4AF6A
+- Typografia: serif (Georgia, Playfair Display lub podobny) dla nagłówków, sans dla body
+- Styl: prestiżowy, instytucjonalny, ornamentyka subtelna (linie, separatory)
+- Nawigacja: rozbudowana, z dropdownami, gold accents
+- CTA buttons: gold z białym tekstem lub outline gold
+- Ikony: cienkie linie, gold color
+- Sekcje: naprzemiennie dark navy i cream/white
+- Elementy dekoracyjne: poziome linie gold, herb/logo eksponowane
+
+### Wytyczne techniczne UI
+- Ikony (ogólnie): Lucide React (preferowane, o ile design nie wymaga inaczej)
+- UI Components: czysty HTML + Tailwind — brak zewnętrznej biblioteki komponentów.
+  Nie importuj shadcn/ui, Radix ani innych bibliotek bez wcześniejszego uzgodnienia.
+
+## Konwencje kodowania
+- Język kodu: angielski — nazwy zmiennych, komentarze, wiadomości commitów
+- Dokumentacja merytoryczna: polski (dokumenty Fundacji, README, SPEC)
+- Nazewnictwo plików: kebab-case (user-profile.tsx, auth-callback.ts)
+- Nazewnictwo komponentów: PascalCase (UserProfile, AuthCallback)
+- Importy: używaj path aliases (@/*) zamiast ścieżek relatywnych (../../../)
+
+## Dane i mutacje
+- Server Components + RSC do pobierania danych (domyślne podejście)
+- Server Actions do mutacji formularzy
+- Route Handlers (/api/) do webhooków i zewnętrznych integracji
+- Dyrektywa 'use client' tylko na samym brzegu drzewa komponentów
+  (gdy wymagana jest interaktywność: onClick, useState, useEffect)
+- Stan klienta: natywne hooki React (useState, useReducer, useContext)
+  Nie wprowadzaj Zustand ani Redux bez wcześniejszego uzgodnienia.
+
+## Shared packages
+- Czysty TypeScript, zero zależności od konkretnej wersji Next.js
+- Nowe utility w packages/ zawsze z plikiem .test.ts (Vitest)
+
+## Pipeline AI (GitHub Issues → Actions)
+- pipeline/doc → Claude edytuje dokumenty Markdown w foundation/ i company/
+- pipeline/code → Claude pisze kod TypeScript/Next.js
+- Flow: Issue + label → Gemini Architect (SPEC) → Claude Code → Gemini Review → human merge
+
+Skrypty:
+- ./pipeline/new-issue.sh "tytuł" doc|code
+- ./pipeline/status.sh
+- ./pipeline/watch.sh
+
+## Cursor AI — zachowanie podczas generowania kodu
+- Przed wygenerowaniem kodu UI sprawdź domenę: Foundation = jasny (navy/cream/serif), Company = ciemny teal (corporate/sans-serif)
+- Używaj @/* path aliases, nie ścieżek relatywnych
+- Szukaj istniejących typów Supabase w lib/supabase.ts przed tworzeniem własnych
+- Nie twórz nowych komponentów w root — Foundation: foundation/platform/apps/web/components/, Company: company/platform/apps/web/components/
+- Nie instaluj nowych pakietów bez zaznaczenia tego w odpowiedzi
+
+## Dokumenty i governance
+- Fundacja: foundation/governance/ (aktywne) i foundation/frozen/ (niezmienne — nie edytuj)
+- Spółka: company/technical/
+- Ratingi: system Certo Vector (++ / + / brak / - / --)
+
+## Krytyczne zasady
+1. Żadnych sekretów w repo — .env.local jest w .gitignore
+2. Branch protection na main — zawsze PR, nigdy direct push
+3. Zasada Ratingu Tworzonego przez Człowieka — AI wspiera, nigdy nie decyduje o ratingu
+4. Pełne ścieżki w terminalu — cd /Users/lk/work/certo, nie cd certo
+5. Instalacja pakietów — zawsze w katalogu konkretnej aplikacji, nie w root repo

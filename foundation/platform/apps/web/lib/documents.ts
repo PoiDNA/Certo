@@ -89,8 +89,8 @@ export const ENTITY_LABELS: Record<string, string> = {
 };
 
 export const STATUS_CONFIG: Record<string, { label: string; color: string }> = {
-  DRAFT: { label: "Szkic", color: "bg-yellow-100 text-yellow-800" },
-  IN_REVIEW: { label: "W recenzji", color: "bg-blue-100 text-blue-800" },
-  APPROVED: { label: "Zatwierdzony", color: "bg-green-100 text-green-800" },
-  FROZEN: { label: "Zamrożony", color: "bg-gray-100 text-gray-800" },
+  DRAFT: { label: "Szkic", color: "bg-certo-cream text-certo-navy border border-certo-navy/20" },
+  IN_REVIEW: { label: "W recenzji", color: "bg-blue-50 text-blue-900 border border-blue-200" },
+  APPROVED: { label: "Zatwierdzony", color: "bg-certo-navy text-certo-cream border border-certo-navy" },
+  FROZEN: { label: "Zamrożony", color: "bg-certo-gold text-white border border-certo-gold" },
 };

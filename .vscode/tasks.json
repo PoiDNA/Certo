@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Pipeline: Nowy Issue (code)",
+      "type": "shell",
+      "command": "bash /Users/lk/work/certo/pipeline/new-issue.sh \"${input:issueTitle}\" code",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "new" }
+    },
+    {
+      "label": "Pipeline: Nowy Issue (doc)",
+      "type": "shell",
+      "command": "bash /Users/lk/work/certo/pipeline/new-issue.sh \"${input:issueTitle}\" doc",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "new" }
+    },
+    {
+      "label": "Pipeline: Status",
+      "type": "shell",
+      "command": "bash /Users/lk/work/certo/pipeline/status.sh",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "Pipeline: Watch",
+      "type": "shell",
+      "command": "bash /Users/lk/work/certo/pipeline/watch.sh",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "new" }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "issueTitle",
+      "type": "promptString",
+      "description": "Tytuł Issue"
+    }
+  ]
+}
