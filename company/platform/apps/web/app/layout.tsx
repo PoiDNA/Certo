@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pl">
       <body className="bg-certo-gray-light text-certo-teal-darker antialiased min-h-screen flex flex-col font-sans">
         <header className="bg-white border-b border-certo-gray sticky top-0 z-50 shadow-sm">
-          <div className="container mx-auto py-4 flex items-center justify-between px-6">
+          <div className="w-full py-4 flex items-center justify-between px-6">
             <div className="flex items-center">
               <Link href="/">
                 <img 
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         
         <footer className="bg-certo-teal-darker text-white border-t border-certo-teal-dark mt-auto">
-          <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="w-full px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-4">
               <a href="https://www.certo.org.pl" target="_blank" rel="noreferrer" className="flex items-center gap-3">
                 <img 
