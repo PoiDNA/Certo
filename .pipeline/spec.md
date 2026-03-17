@@ -1,53 +1,87 @@
 # SPEC OD ARCHITECTA — realizuj dosłownie
 
-**Złożoność:** high
-**Szacowane iteracje:** 3
-**Pliki do edycji:** company/technical/deliverable-b/README.md, company/technical/deliverable-c/README.md, pipeline/config/quality-gates.json, SETUP_GUIDE.md
+**Złożoność:** medium
+**Szacowane iteracje:** 2
+**Pliki do edycji:** company/technical/deliverable-b/README.md, pipeline/config/quality-gates.json
 
 ## Efekty drugiego rzędu (WAŻNE)
-- ⚠️ Dodanie nowego ADR-008 zwiększa ich liczbę z 7 do 8, co wymaga aktualizacji `quality-gates.json`.
-- ⚠️ Wprowadzenie tożsamości użytkownika (JWT) wpłynie na schematy baz danych (audyt) i logikę punktów decyzyjnych.
-- ⚠️ Nowy współdzielony pakiet `foundation/platform/packages/auth/` staje się nową zależnością dla aplikacji webowych.
+- ⚠️ Wprowadzenie nowej, kluczowej zależności (Supabase Auth) wymaga udokumentowania jako Architecture Decision Record (ADR).
+- ⚠️ Liczba ADR wzrasta z 7 do 8, co wymaga aktualizacji w `deliverable-b/README.md` oraz w `pipeline/config/quality-gates.json`.
 
 ## Plan zmian
 
-### company/technical/deliverable-b/README.md
-Akcja: add_section
-Lokalizacja: W sekcji z listą Architecture Decision Records, po ostatnim istniejącym ADR (prawdopodobnie ADR-007).
-Spec: Dodaj nowy Architecture Decision Record (ADR-008) dotyczący centralnej autoryzacji. Tytuł: 'ADR-008: Centralized Authentication using Supabase Auth'. Użyj standardowego formatu ADR: Status (np. 'Proposed'), Kontekst (potrzeba jednego, bezpiecznego mechanizmu logowania dla ekosystemu Certo), Decyzja (wybór Supabase Auth, OAuth2 z Google/Microsoft, stworzenie współdzielonego pakietu `@certo/auth` w `foundation/platform/packages/auth/`, przepływ tokenu JWT), Konsekwencje (propagacja JWT do backendu, konieczność rozszerzenia schematów DB o `user_id` dla celów audytowych, ochrona routów w aplikacjach Next.js za pomocą middleware). Zaktualizuj również podsumowanie na początku dokumentu, aby odzwierciedlało 8 ADR, a nie 7.
-MUSI zawierać: ADR-008, Supabase Auth, OAuth 2.0, JWT, shared package, user identity propagation, audit trail
-NIE MOŻE zawierać: szczegóły implementacji UI (np. wygląd przycisków), konkretne klucze API, Redis, sidecar
+### company/platform/apps/web/middleware.ts
+Akcja: create_or_modify_file
+Lokalizacja: undefined
+Spec: Implementacja middleware przy użyciu `@supabase/auth-helpers-nextjs`. Middleware ma chronić wszystkie ścieżki ('/') z wyjątkiem publicznych. Konfiguracja matchera: `matcher: ['/((?!login|auth/callback|pp|terms|_next/static|_next/image|favicon.ico).*)']`. Niezalogowany użytkownik jest przekierowywany na '/login'.
+MUSI zawierać: createMiddlewareClient, NextRequest, NextResponse, matcher config
+NIE MOŻE zawierać: Hardkodowanie kluczy Supabase, Logika biznesowa niezwiązana z autoryzacją
 
-### company/technical/deliverable-c/README.md
-Akcja: update_section
-Lokalizacja: Na początku sekcji opisującej workflowy (W1-W7), przed opisem pierwszego workflow.
-Spec: Dodaj nowy akapit wyjaśniający, że wszystkie workflowy inicjowane przez użytkownika w interfejsach webowych są poprzedzone obowiązkowym krokiem uwierzytelnienia i autoryzacji. Podkreśl, że tożsamość zalogowanego użytkownika jest bezpiecznie powiązana z każdą transakcją i zapisywana w logu audytowym. Dodaj odnośnik do ADR-008 w 'Deliverable B' dla szczegółów technicznych.
-MUSI zawierać: prerequisite, authentication, user identity, audit log, cross-reference to ADR-008
-NIE MOŻE zawierać: zmiana kroków wewnątrz istniejących workflowów W1-W7, szczegółowy opis techniczny przepływu OAuth
+### company/platform/apps/web/app/login/page.tsx
+Akcja: create_file
+Lokalizacja: undefined
+Spec: Strona logowania jako komponent kliencki ('use client'). Stylizacja zgodna z issue: tło #080A0F, akcent #00E5A0, font Syne. Centralnie umieszczone logo Certo ID (400x120), pod nim tagline 'Cryptographic Rating' z odpowiednim stylem. Dwa przyciski OAuth (Google, Microsoft) z ikonami SVG i stylami (border, hover). Linki do /pp i /terms na dole strony. Logika przycisków ma wywoływać `supabase.auth.signInWithOAuth` z odpowiednim providerem i `redirectTo` wskazującym na `/auth/callback`.
+MUSI zawierać: use client, createClientComponentClient, signInWithOAuth, Google provider, Microsoft provider (azure), TailwindCSS/styled-components for styling
+NIE MOŻE zawierać: Dowolne inne metody logowania (np. email/hasło), Formularze
+
+### company/platform/apps/web/app/auth/callback/route.ts
+Akcja: create_file
+Lokalizacja: undefined
+Spec: Route handler (GET) do obsługi callbacku z Supabase po udanym logowaniu OAuth. Używa `@supabase/auth-helpers-nextjs` do wymiany kodu autoryzacyjnego na sesję użytkownika. Po pomyślnej wymianie, przekierowuje użytkownika na stronę główną ('/').
+MUSI zawierać: createRouteHandlerClient, exchangeCodeForSession, NextResponse.redirect
+NIE MOŻE zawierać: Zapisywanie sesji ręcznie, Zwracanie danych JSON
+
+### company/platform/apps/web/app/auth/logout/route.ts
+Akcja: create_file
+Lokalizacja: undefined
+Spec: Route handler (POST) do wylogowywania użytkownika. Używa klienta Supabase do wywołania `signOut()`. Po pomyślnym wylogowaniu, przekierowuje użytkownika na stronę logowania ('/login').
+MUSI zawierać: createRouteHandlerClient, signOut, POST method
+NIE MOŻE zawierać: Obsługa metody GET
+
+### company/platform/apps/web/app/layout.tsx
+Akcja: modify_file
+Lokalizacja: Wewnątrz głównego komponentu nawigacyjnego (Navbar) lub podobnego.
+Spec: Zmodyfikuj istniejącą nawigację, aby była świadoma stanu autoryzacji. Użyj serwerowego klienta Supabase do pobrania sesji. Jeśli użytkownik jest zalogowany, wyświetl jego adres e-mail oraz przycisk 'Wyloguj'. Przycisk ten powinien być wewnątrz formularza, który wykonuje żądanie POST na '/auth/logout'. Jeśli użytkownik nie jest zalogowany, te elementy nie powinny być widoczne.
+MUSI zawierać: createServerComponentClient, data.session, form action='/auth/logout' method='post'
+NIE MOŻE zawierać: Przycisk 'Zaloguj' (logowanie jest przez redirect z middleware)
+
+### company/platform/apps/web/.env.example
+Akcja: create_or_modify_file
+Lokalizacja: Na końcu pliku.
+Spec: Dodaj zmienne środowiskowe wymagane do połączenia z Supabase, aby umożliwić deweloperom lokalne uruchomienie projektu. Zmienne powinny mieć puste wartości.
+MUSI zawierać: NEXT_PUBLIC_SUPABASE_URL=, NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NIE MOŻE zawierać: Jakiekolwiek wartości sekretów
+
+### company/technical/deliverable-b/README.md
+Akcja: modify_file
+Lokalizacja: W sekcji wprowadzającej, gdzie wymieniona jest liczba ADR.
+Spec: Zaktualizuj liczbę ADR z 7 na 8. Zmień tekst '7 ADR' na '8 ADR'. Dodaj również odniesienie do nowego ADR w liście lub opisie.
+MUSI zawierać: 8 ADR
+NIE MOŻE zawierać: 7 ADR
+
+### company/technical/deliverable-b/ADR-008-supabase-auth.md
+Akcja: create_file
+Lokalizacja: undefined
+Spec: Utwórz nowy plik Architecture Decision Record. Struktura: Status (Proposed), Kontekst (potrzeba autoryzacji dla klientów Certo ID PSA, oddzielnie od Fundacji), Rozważane opcje (np. Auth0, self-hosted, Supabase), Decyzja (Wybór Supabase Auth z OAuth dla Google i Microsoft), Uzasadnienie (szybkość wdrożenia, integracja z Next.js, RLS w Postgres), Konsekwencje (zależność od zewnętrznego dostawcy, zarządzanie użytkownikami w panelu Supabase, konieczność konfiguracji RLS dla danych Certo ID).
+MUSI zawierać: ADR-008, Certo ID PSA, Supabase Auth, OAuth, Row Level Security
+NIE MOŻE zawierać: Szczegóły implementacyjne kodu, Fundacja Certo
 
 ### pipeline/config/quality-gates.json
-Akcja: update_value
-Lokalizacja: Wewnątrz obiektu `architecture_state`.
-Spec: Zmień wartość klucza `adr_count` z `7` na `8`.
+Akcja: modify_file
+Lokalizacja: W obiekcie `architecture_state`.
+Spec: Zmień wartość klucza `adr_count` z 7 na 8.
 MUSI zawierać: "adr_count": 8
-NIE MOŻE zawierać: zmiana jakichkolwiek innych wartości liczbowych w `architecture_state`
-
-### SETUP_GUIDE.md
-Akcja: add_section
-Lokalizacja: Po sekcji dotyczącej konfiguracji bazy danych, a przed sekcją o uruchamianiu aplikacji.
-Spec: Dodaj nową sekcję '## Konfiguracja Autoryzacji (Supabase)'. W tej sekcji: 1. Wylistuj wymagane zmienne środowiskowe w formacie tabeli: `FOUNDATION_SUPABASE_URL`, `FOUNDATION_SUPABASE_ANON_KEY`, `CERTOID_SUPABASE_URL`, `CERTOID_SUPABASE_ANON_KEY`. 2. Dodaj instrukcję krok po kroku (lista numerowana) jak skonfigurować dostawców OAuth (Google, Microsoft) w panelu Supabase. 3. Wyraźnie wskaż, że należy dodać dwa Redirect URLs dla każdej aplikacji: `https://certo.org.pl/auth/callback` i `https://certo.id/auth/callback` (lub ich lokalne odpowiedniki dla deweloperów, np. `http://localhost:3000/auth/callback`).
-MUSI zawierać: environment variables, Supabase dashboard, OAuth providers, Redirect URLs, step-by-step guide
-NIE MOŻE zawierać: konkretne wartości sekretów lub kluczy, instrukcje zakładania konta Supabase od zera
+NIE MOŻE zawierać: "adr_count": 7
 
 ## Cross-doc checklist (sprawdź PO zmianach)
-- [ ] Deliverable B: Nowy ADR-008 został dodany, a liczba ADR w podsumowaniu zaktualizowana do 8.
-- [ ] Deliverable C: Dodano wzmiankę o autoryzacji jako warunku wstępnym dla workflowów, z poprawnym odnośnikiem do ADR-008.
-- [ ] quality-gates.json: Wartość `architecture_state.adr_count` jest ustawiona na 8.
-- [ ] SETUP_GUIDE.md: Zawiera nową, kompletną sekcję opisującą konfigurację Supabase Auth i wymagane zmienne środowiskowe.
+- [ ] Sprawdź, czy `company/technical/deliverable-b/README.md` zawiera tekst '8 ADR'.
+- [ ] Upewnij się, że w katalogu `company/technical/deliverable-b/` istnieje nowy plik `ADR-008-supabase-auth.md`.
+- [ ] Zweryfikuj, czy w `pipeline/config/quality-gates.json` wartość `adr_count` została ustawiona na 8.
+- [ ] Potwierdź, że żadne dokumenty w katalogu `foundation/` nie zostały zmodyfikowane.
 
 ## Pułapki (UNIKAJ)
-- 🚫 NIE zapomnij zaktualizować `adr_count` w `quality-gates.json`. Niezgodność liczb spowoduje natychmiastowy fail na wymiarze D6.
-- 🚫 ADR-008 w Deliverable B musi opisywać decyzję architektoniczną, a NIE być tutorialem implementacji. Unikaj wklejania fragmentów kodu.
-- 🚫 Upewnij się, że konsekwencje w ADR-008 wspominają o wpływie na schemat bazy danych (potrzeba przechowywania `user_id` w logach audytowych).
-- 🚫 W `SETUP_GUIDE.md` należy wyraźnie oddzielić zmienne dla `foundation` i `certoid`, aby uniknąć pomyłek w konfiguracji.
-- 🚫 Nie zmieniaj istniejących kroków w diagramach workflow w Deliverable C. Autoryzacja jest krokiem poprzedzającym, a nie częścią np. W2.
+- 🚫 Krytycznym błędem będzie zapomnienie o aktualizacji `adr_count` w `pipeline/config/quality-gates.json`. Reviewer odrzuci zmianę za niespójność liczbową (D6).
+- 🚫 Claude może zapomnieć o utworzeniu pliku `.env.example`, co utrudni lokalne testowanie i wdrożenie.
+- 🚫 Stylistyka strony logowania musi być dokładnie zgodna ze specyfikacją (kolory, font, logo, tagline). Każde odstępstwo zostanie zgłoszone.
+- 🚫 Należy użyć oficjalnych bibliotek `@supabase/auth-helpers-nextjs`, a nie próbować implementować logiki ręcznie. Zapewnia to poprawne zarządzanie sesją w komponentach serwerowych i klienckich.
+- 🚫 Nowy ADR musi jasno rozróżniać bazę użytkowników Certo ID (klienci PSA) od personelu Fundacji Certo, aby uniknąć przyszłych nieporozumień.
