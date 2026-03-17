@@ -16,16 +16,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-certo-gray-light text-certo-teal-darker antialiased min-h-screen flex flex-col font-sans">
         <header className="bg-white border-b border-certo-gray sticky top-0 z-50 shadow-sm">
           <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="h-8 w-8 rounded bg-certo-teal flex items-center justify-center text-white font-bold text-sm">
-                ID
-              </div>
-              <div>
-                <h1 className="text-lg font-bold text-certo-teal-darker tracking-tight">Certo ID</h1>
-                <p className="text-[10px] text-certo-gray-dark uppercase font-bold tracking-widest mt-0.5">Platforma Technologiczna</p>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-400-120.png"
+                width={160} 
+                height={48} 
+                alt="Certo ID" 
+                className="h-10 w-auto"
+              />
             </div>
-            <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
+            <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide items-center">
               <a href="#rozwiazania" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Rozwiązania</a>
               <a href="#technologia" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Technologia</a>
               <a href="https://certo.org.pl" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">

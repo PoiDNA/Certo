@@ -17,15 +17,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="bg-certo-navy text-certo-cream border-b-[3px] border-certo-gold">
           <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="h-10 w-10 rounded-full border border-certo-gold flex items-center justify-center text-certo-gold font-serif font-bold text-lg">
-                C
-              </div>
-              <div>
-                <h1 className="text-xl font-serif font-bold text-certo-cream tracking-wide">Certo Governance</h1>
-                <p className="text-xs text-certo-gold-light uppercase tracking-widest mt-0.5">Institute</p>
-              </div>
+              <a href="/" className="flex items-center gap-4">
+                <img 
+                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-logo-white-200-120.png" 
+                  width={200} 
+                  height={120} 
+                  alt="Certo Governance Institute" 
+                  className="h-10 w-auto"
+                />
+                <span className="hidden sm:inline-block border-l border-certo-cream/20 pl-4 text-certo-gold font-serif text-[0.7rem] uppercase tracking-[0.15em] leading-snug">
+                  Cryptographic<br/>Rating
+                </span>
+              </a>
             </div>
-            <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+            <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide items-center">
               <a href="/" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Dokumenty</a>
               <a href="/pipeline" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Pipeline</a>
               <a href="https://github.com/certo-governance/certo-governance" 
