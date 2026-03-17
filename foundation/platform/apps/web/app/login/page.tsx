@@ -35,7 +35,7 @@ function LoginContent() {
         </div>
         
         <h1 className="text-xl font-bold mb-8 text-certo-navy font-[Verdana] tracking-widest uppercase">
-          Zaloguj się
+          
         </h1>
         
         <div className="flex flex-col gap-3 font-sans">
