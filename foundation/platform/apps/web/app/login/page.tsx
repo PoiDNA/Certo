@@ -27,12 +27,11 @@ function LoginContent() {
     <div className="min-h-screen flex items-center justify-center bg-certo-cream font-serif px-4">
       <div className="bg-white border-[2px] border-certo-gold/30 rounded-sm p-10 w-full max-w-md text-center shadow-lg">
         <div className="mb-8">
-          <div className="w-8 h-8 border border-certo-gold rounded-full flex items-center justify-center text-certo-gold font-bold mx-auto mb-4 text-xs">
-            C
-          </div>
-          <div className="text-[0.7rem] font-bold tracking-[0.15em] text-certo-navy font-sans uppercase">
-            Certo Governance Institute
-          </div>
+          <img 
+            src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-cryptographic-rating-logo-200-120.png" 
+            alt="Certo Governance Institute" 
+            className="h-16 w-auto mx-auto mb-4"
+          />
         </div>
         
         <h1 className="text-2xl font-bold mb-2 text-certo-navy">
