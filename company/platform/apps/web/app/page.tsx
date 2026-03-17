@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-certo-gray-light">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-certo-teal-darker text-white py-24 md:py-32 px-6">
+      <section className="relative overflow-hidden bg-certo-teal-darker text-white py-24 md:py-32">
         <div className="absolute inset-0 opacity-10 bg-repeat" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/cubes.png')" }} />
         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-certo-teal-darker to-transparent" />
         
@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-certo-teal-darker text-white py-16 px-6 border-b border-certo-teal-darker/50">
+      <section className="bg-certo-teal-darker text-white py-16 border-b border-certo-teal-darker/50">
         <div className="mx-auto max-w-6xl grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { label: 'Standardy ISO', value: '27001 · 37301' },
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="uslugi" className="py-24 px-6 mx-auto max-w-6xl w-full bg-certo-teal-darker text-white">
+      <section id="uslugi" className="py-24 mx-auto max-w-6xl w-full bg-certo-teal-darker text-white">
         <div className="mb-16">
           <h2 className="text-xs font-mono font-bold text-certo-teal uppercase tracking-widest mb-3">USŁUGI</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight max-w-2xl">
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Architecture Section */}
-      <section id="technologia" className="py-24 px-6 bg-certo-teal-darker border-t border-certo-teal-darker/50 text-white">
+      <section id="technologia" className="py-24 bg-certo-teal-darker border-t border-certo-teal-darker/50 text-white">
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 text-center">
             <h2 className="text-xs font-mono font-bold text-certo-teal uppercase tracking-widest mb-3">ARCHITEKTURA</h2>
