@@ -121,6 +121,7 @@ Upload przez: npx wrangler r2 object put certo-docs/foundation/images/nazwa.jpg 
 
 ### Certo Foundation (certo.org.pl)
 - Logo główne (białe): ${NEXT_PUBLIC_R2_FOUNDATION}/images/certo-logo-white-200-120.png [200×120]
+- Logo ciemne (czarne litery): ${NEXT_PUBLIC_R2_FOUNDATION}/images/certo-logo-black-200-120.png [200×120]
 - Logo z tagline: ${NEXT_PUBLIC_R2_FOUNDATION}/images/certo-cryptographic-rating-logo-200-120.png [200×120]
 - Układ: logo po lewej + tagline "Cryptographic Rating" po prawej stronie logo
 - Tagline font: serif, gold #C9A84C, małe litery, letter-spacing

@@ -28,7 +28,7 @@ function LoginContent() {
       <div className="bg-white border-[2px] border-certo-gold/30 rounded-sm p-10 w-full max-w-md text-center shadow-lg">
         <div className="mb-8">
           <img 
-            src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-cryptographic-rating-logo-200-120.png" 
+            src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-black-200-120.png" 
             alt="Certo Governance Institute" 
             className="h-16 w-auto mx-auto mb-4"
           />
