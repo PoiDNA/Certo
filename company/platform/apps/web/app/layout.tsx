@@ -31,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="https://certo.org.pl" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
                 Fundacja Certo →
               </a>
+              <a href="/login" className="px-5 py-2 border border-certo-teal bg-certo-teal text-white rounded-[2px] hover:bg-certo-teal-dark hover:border-certo-teal-dark transition-colors duration-200">Zaloguj się</a>
             </nav>
           </div>
         </header>
