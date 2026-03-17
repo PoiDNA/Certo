@@ -27,12 +27,12 @@ export default function AuthNav() {
   }, []);
 
   // Avoid hydration mismatch by not rendering until session state is determined
-  if (isAuthenticated === null) return <nav className="hidden md:flex gap-8" />;
+  if (isAuthenticated === null) return <nav className="flex gap-8" />;
 
   if (!isAuthenticated) {
     return (
-      <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide items-center">
-        <a href="/login" className="border border-certo-gold text-certo-gold hover:bg-certo-gold hover:text-white px-5 py-2 transition-colors duration-300 rounded-[2px] uppercase">
+      <nav className="flex gap-8 text-sm font-medium tracking-wide items-center">
+        <a href="/login" className="text-certo-gold hover:text-certo-gold-light transition-colors duration-300 uppercase">
           Zaloguj się
         </a>
       </nav>
