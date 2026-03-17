@@ -16,7 +16,7 @@ export default async function PipelinePage() {
     .limit(20);
 
   return (
-    <div>
+    <div className="py-12">
       <div className="mb-12 border-b border-certo-gold/30 pb-6">
         <h2 className="text-3xl font-serif font-bold text-certo-navy tracking-tight">Pipeline Status</h2>
         <p className="mt-2 text-md text-certo-navy/70 max-w-2xl font-medium tracking-wide">

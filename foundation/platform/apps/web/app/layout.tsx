@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
         
-        <main className="flex-grow mx-auto max-w-6xl px-6 py-12 w-full">
+        <main className="flex-grow mx-auto max-w-6xl px-6 w-full">
           {children}
         </main>
         
