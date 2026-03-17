@@ -34,12 +34,9 @@ function LoginContent() {
           />
         </div>
         
-        <h1 className="text-2xl font-bold mb-2 text-certo-navy">
+        <h1 className="text-2xl font-bold mb-8 text-certo-navy">
           Zaloguj się
         </h1>
-        <p className="text-sm text-certo-navy/60 mb-8 font-sans">
-          Dostęp do dokumentów Fundacji wymaga weryfikacji tożsamości.
-        </p>
         
         <div className="flex flex-col gap-3 font-sans">
           <button onClick={() => handleOAuth('google')} className="flex items-center justify-center gap-3 px-6 py-3 border border-certo-navy/20 rounded-sm bg-white cursor-pointer text-sm font-semibold text-certo-navy w-full hover:bg-certo-navy/5 hover:border-certo-navy/40 transition-all">
@@ -50,14 +47,6 @@ function LoginContent() {
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
             </svg>
             Zaloguj przez Google
-          </button>
-          
-          <button onClick={() => handleOAuth('azure')} className="flex items-center justify-center gap-3 px-6 py-3 border border-certo-navy/20 rounded-sm bg-white cursor-pointer text-sm font-semibold text-certo-navy w-full hover:bg-certo-navy/5 hover:border-certo-navy/40 transition-all">
-            <svg width="18" height="18" viewBox="0 0 24 24">
-              <path fill="#0078D4" d="M11.4 24H0l9.6-9.6L0 4.8h11.4L24 24H11.4z"/>
-              <path fill="#50E6FF" d="M12.6 0H24L14.4 9.6 24 19.2H12.6L0 0h12.6z"/>
-            </svg>
-            Zaloguj przez Microsoft
           </button>
         </div>
         
