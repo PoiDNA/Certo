@@ -55,8 +55,9 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="uslugi" className="py-24 mx-auto max-w-6xl w-full bg-certo-teal-darker text-white">
-        <div className="mb-16">
+      <section id="uslugi" className="py-24 w-full bg-certo-teal-darker text-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="mb-16">
           <h2 className="text-xs font-mono font-bold text-certo-teal uppercase tracking-widest mb-3">USŁUGI</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight max-w-2xl">
             Trzy warstwy infrastruktury compliance
@@ -84,7 +85,7 @@ export default function Home() {
 
       {/* Architecture Section */}
       <section id="technologia" className="py-24 bg-certo-teal-darker border-t border-certo-teal-darker/50 text-white">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl px-6">
           <div className="mb-16 text-center">
             <h2 className="text-xs font-mono font-bold text-certo-teal uppercase tracking-widest mb-3">ARCHITEKTURA</h2>
             <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
