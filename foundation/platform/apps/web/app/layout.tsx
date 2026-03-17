@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex items-center gap-4">
               <a href="/" className="flex items-center gap-4">
                 <img 
-                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-logo-white-200-120.png" 
+                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png" 
                   width={200} 
                   height={120} 
                   alt="Certo Governance Institute" 
