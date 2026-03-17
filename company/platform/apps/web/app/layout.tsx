@@ -41,14 +41,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         <footer className="bg-certo-teal-darker text-white border-t border-certo-teal-dark mt-auto">
           <div className="mx-auto max-w-6xl px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-3">
-              <div className="h-8 w-8 rounded bg-certo-teal/20 border border-certo-teal/50 flex items-center justify-center text-certo-teal font-bold text-sm">
-                ID
-              </div>
-              <div>
-                <div className="text-sm font-bold tracking-wide">Certo ID PSA</div>
-                <div className="text-xs text-certo-gray-light/60 mt-1">Operator Technologiczny Ekosystemu Certo</div>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
+                width={120} 
+                height={60} 
+                alt="Certo White Logo" 
+                className="h-auto w-auto max-h-10"
+              />
             </div>
             
             <div className="flex gap-6 text-xs text-certo-gray-light/60 font-medium">
