@@ -5,6 +5,25 @@ Monorepo (npm workspaces) ekosystemu Certo składającego się z dwóch podmiot�
 - **Fundacja Certo Governance Institute** — niezależny organ ratingowy (foundation/)
 - **Certo ID PSA** — komercyjny operator technologiczny (company/)
 
+## Nazewnictwo Projektu
+
+- **certogov** lub **CertoGov**
+  → Fundacja Certo Governance Institute
+  → domena: certogov.org
+
+- **certo.id** lub **Certo ID**
+  → Panel klienta spółek Certo
+  → domena: certo.id
+
+- **certo.consulting** lub **Certo Co**
+  → Panel doradców
+  → domena: certo.consulting
+
+- **certodelegate** lub **CertoDelegate**
+  → Usługa AI delegatów
+  → domeny: [nazwa].certo.id / certo.id/[nazwa].[miasto]
+            [nazwa].certodelegate.com
+
 ## Struktura repo
 ```
 foundation/platform/apps/web/      → certo.org.pl (Next.js 15, React 19)
