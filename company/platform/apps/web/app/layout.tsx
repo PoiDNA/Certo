@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
+import Link from 'next/link';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -17,13 +18,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="bg-white border-b border-certo-gray sticky top-0 z-50 shadow-sm">
           <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
             <div className="flex items-center">
-              <img 
-                src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-400-120.png"
-                width={160} 
-                height={48} 
-                alt="Certo ID" 
-                className="h-10 w-auto"
-              />
+              <Link href="/">
+                <img 
+                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-400-120.png"
+                  width={160} 
+                  height={48} 
+                  alt="Certo ID" 
+                  className="h-10 w-auto"
+                />
+              </Link>
             </div>
             <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide items-center">
               <a href="#rozwiazania" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Rozwiązania</a>
