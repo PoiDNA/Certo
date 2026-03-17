@@ -13,25 +13,8 @@ export default function Home() {
       </h1>
       
       <p className="text-lg md:text-xl text-certo-navy/80 mb-12 max-w-2xl leading-relaxed">
-        Niezależny rating jakości governance dla sektora publicznego i instytucji non-profit.
-        Ustanawiamy standardy przejrzystości, odpowiedzialności i dobrych praktyk zarządczych.
+        Certo jest pierwszą na świecie agencją ratingową, której ratingi są kryptograficznymi artefaktami procesu — nie opiniami. Każda decyzja ratingowa jest zakotwiczona poza własną infrastrukturą, weryfikowalna offline i publicznie audytowalna.
       </p>
-
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="/docs" 
-          className="inline-flex items-center justify-center px-8 py-4 bg-certo-gold hover:bg-certo-gold-light text-white font-serif font-medium tracking-wide transition-all duration-300 shadow-md hover:shadow-lg rounded-[2px]"
-        >
-          Dokumenty Fundacji
-          <span className="ml-2 font-sans font-normal">→</span>
-        </a>
-        <a 
-          href="/pipeline" 
-          className="inline-flex items-center justify-center px-8 py-4 border border-certo-gold text-certo-gold hover:bg-certo-gold hover:text-white font-serif font-medium tracking-wide transition-all duration-300 rounded-[2px]"
-        >
-          Proces i Pipeline
-        </a>
-      </div>
 
       {/* Another decorative separator below */}
       <div className="flex items-center justify-center mt-20 w-full max-w-lg gap-4 opacity-50">

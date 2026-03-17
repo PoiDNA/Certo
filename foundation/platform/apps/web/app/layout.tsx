@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AuthNav from "../components/AuthNav";
 
 export const metadata: Metadata = {
   title: "Certo Governance Institute — Dokumentacja",
@@ -30,14 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </span>
               </a>
             </div>
-            <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide items-center">
-              <a href="/" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Dokumenty</a>
-              <a href="/pipeline" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Pipeline</a>
-              <a href="https://github.com/certo-governance/certo-governance" 
-                 target="_blank" className="text-certo-gold-light hover:text-certo-gold transition-colors duration-200 uppercase" rel="noreferrer">
-                GitHub
-              </a>
-            </nav>
+            <AuthNav />
           </div>
         </header>
         
@@ -47,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         <footer className="bg-certo-navy border-t-[3px] border-certo-gold mt-auto">
           <div className="mx-auto max-w-6xl px-6 py-8 flex flex-col items-center justify-center text-center">
-            <div className="text-certo-gold-light font-serif mb-4 text-lg">Certo Governance Institute</div>
+            <div className="text-certo-gold-light font-serif mb-4 text-2xl tracking-wide">Certo Governance Institute</div>
             <div className="text-xs text-certo-cream/60 mb-2">
               Fundacja Certo Governance Institute © {new Date().getFullYear()}
             </div>
