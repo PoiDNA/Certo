@@ -41,14 +41,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         <footer className="bg-certo-teal-darker text-white border-t border-certo-teal-dark mt-auto">
           <div className="mx-auto max-w-6xl px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center">
-              <img 
-                src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
-                width={120} 
-                height={60} 
-                alt="Certo White Logo" 
-                className="h-auto w-auto max-h-10"
-              />
+            <div className="flex items-center gap-4">
+              <a href="https://www.certo.org.pl" target="_blank" rel="noreferrer" className="flex items-center gap-3">
+                <img 
+                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-cryptographic-rating-logo-200-120.png"
+                  width={160} 
+                  height={48} 
+                  alt="Certo Cryptographic Rating Logo" 
+                  className="h-10 w-auto"
+                />
+                <img 
+                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
+                  width={120} 
+                  height={60} 
+                  alt="Certo White Logo" 
+                  className="h-auto w-auto max-h-10"
+                />
+              </a>
             </div>
             
             <div className="flex gap-6 text-xs text-certo-gray-light/60 font-medium">
