@@ -53,8 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             
             <div className="flex gap-6 text-xs text-certo-gray-light/60 font-medium">
               <span>© {new Date().getFullYear()} Certo ID PSA</span>
-              <a href="#" className="hover:text-certo-teal transition-colors">Privacy</a>
-              <a href="#" className="hover:text-certo-teal transition-colors">Terms</a>
+              <a href="/privacy" className="hover:text-certo-teal transition-colors">Privacy</a>
+              <a href="/terms" className="hover:text-certo-teal transition-colors">Terms</a>
             </div>
           </div>
         </footer>
