@@ -44,18 +44,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex items-center gap-4">
               <a href="https://www.certo.org.pl" target="_blank" rel="noreferrer" className="flex items-center gap-3">
                 <img 
-                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-cryptographic-rating-logo-200-120.png"
-                  width={160} 
-                  height={48} 
-                  alt="Certo Cryptographic Rating Logo" 
-                  className="h-10 w-auto"
-                />
-                <img 
                   src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
                   width={120} 
                   height={60} 
                   alt="Certo White Logo" 
                   className="h-auto w-auto max-h-10"
+                />
+                <img 
+                  src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-cryptographic-rating-logo-200-120.png"
+                  width={160} 
+                  height={48} 
+                  alt="Certo Cryptographic Rating Logo" 
+                  className="h-10 w-auto"
                 />
               </a>
             </div>
