@@ -98,3 +98,21 @@ Skrypty:
 3. Zasada Ratingu Tworzonego przez Człowieka — AI wspiera, nigdy nie decyduje o ratingu
 4. Pełne ścieżki w terminalu — cd /Users/lk/work/certo, nie cd certo
 5. Instalacja pakietów — zawsze w katalogu konkretnej aplikacji, nie w root repo
+   
+## Grafiki i assets (Cloudflare R2)
+Bucket: certo-docs (publiczny CDN)
+Struktura:
+- foundation/images/ → grafiki certo.org.pl
+- foundation/documents/ → DOCX Fundacja
+- company/images/ → grafiki certo.id
+- company/documents/ → DOCX Spółka
+
+URL pattern: https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/{ścieżka}
+Zmienne środowiskowe:
+- NEXT_PUBLIC_R2_FOUNDATION = https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation
+- NEXT_PUBLIC_R2_COMPANY = https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company
+
+Użycie w kodzie:
+`${process.env.NEXT_PUBLIC_R2_FOUNDATION}/images/nazwa-pliku.jpg`
+
+Upload przez: npx wrangler r2 object put certo-docs/foundation/images/nazwa.jpg --file=/ścieżka/lokalna --remote
