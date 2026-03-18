@@ -1,13 +1,13 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Vérification d'identité et conformité pour les institutions publiques et les corporations."
+    "description": "Vérification d'identité et conformité pour les institutions publiques et les entreprises."
   },
   "Dashboard": {
     "title": "Tableau de bord Certo ID",
     "welcome": "Bienvenue, {name}",
     "your_rating": "Votre Rating Certo",
-    "your_delegates": "Vos Delegués Certo",
+    "your_delegates": "Vos Delegates",
     "your_accords": "Vos Certo Accord",
     "recent_activity": "Activité récente",
     "quick_actions": "Actions rapides"
@@ -21,8 +21,8 @@
     "verified_badge": "Entité vérifiée"
   },
   "Delegates": {
-    "title": "Délégués Certo",
-    "add_delegate": "Ajouter un délégué",
+    "title": "Delegates Certo",
+    "add_delegate": "Ajouter un delegate",
     "delegate_id": "Delegate ID",
     "delegate_status": "Statut",
     "primary_link": "Lien PRIMARY",

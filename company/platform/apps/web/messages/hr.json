@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Provjera identiteta i usklađenost za javne institucije i korporacije."
+  },
+  "Dashboard": {
+    "title": "Kontrolna ploča Certo ID",
+    "welcome": "Dobrodošli, {name}",
+    "your_rating": "Vaša ocjena Certo",
+    "your_delegates": "Vaši delegati",
+    "your_accords": "Vaši Certo Accord",
+    "recent_activity": "Nedavna aktivnost",
+    "quick_actions": "Brze akcije"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Organizacija",
+    "contact_person": "Osoba za kontakt",
+    "sector": "Sektor",
+    "edit_profile": "Uredi profil",
+    "verified_badge": "Provjeren subjekt"
+  },
+  "Delegates": {
+    "title": "Delegati Certo",
+    "add_delegate": "Dodaj delegata",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Stanje",
+    "primary_link": "PRIMARY poveznica",
+    "failover_link": "FAILOVER poveznica",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

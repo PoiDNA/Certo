@@ -1,35 +1,35 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Encontre um Consultor",
-    "description": "Consultores acreditados Certo. Governança corporativa e conformidade."
+    "description": "Consultores acreditados pela Certo. Governança corporativa e conformidade."
   },
   "Home": {
     "hero_title": "Encontre um especialista em governance",
-    "hero_subtitle": "Consultores acreditados Certo apoiam instituições na manutenção e melhoria de sua classificação Certo.",
+    "hero_subtitle": "Os consultores acreditados pela Certo apoiam instituições na manutenção e melhoria da avaliação Certo.",
     "hero_cta": "Encontre um consultor",
-    "step_1_title": "Indique seu setor",
-    "step_1_text": "Selecione o setor em que sua instituição atua",
-    "step_2_title": "Descreva sua necessidade",
-    "step_2_text": "Diga-nos do que você precisa",
-    "step_3_title": "Receba uma correspondência",
-    "step_3_text": "O sistema encontrará um consultor acreditado Certo"
+    "step_1_title": "Indique o seu setor",
+    "step_1_text": "Selecione o setor em que a sua instituição atua",
+    "step_2_title": "Descreva a sua necessidade",
+    "step_2_text": "Diga-nos do que precisa",
+    "step_3_title": "Receba a correspondência",
+    "step_3_text": "O sistema irá associá-lo a um consultor acreditado pela Certo"
   },
   "FindAdvisor": {
     "title": "Encontre um consultor Certo",
-    "sector_label": "Setor de sua instituição",
-    "need_label": "Do que você precisa?",
-    "need_audit": "Auditoria de governança",
+    "sector_label": "Setor da sua instituição",
+    "need_label": "Do que precisa?",
+    "need_audit": "Auditoria de governance",
     "need_advisory": "Consultoria estratégica",
-    "need_training": "Treinamentos e workshops",
-    "need_rating": "Preparação para classificação",
+    "need_training": "Formações e oficinas",
+    "need_rating": "Preparação para avaliação",
     "region_label": "Região",
     "submit": "Procurar consultor"
   },
   "Advisor": {
-    "accredited_by": "Acreditado por Certo",
+    "accredited_by": "Acreditado pela Certo",
     "specialization": "Especialização",
     "sectors": "Setores",
-    "contact_advisor": "Entre em contato",
+    "contact_advisor": "Entre em contacto",
     "view_profile": "Ver perfil"
   }
 }

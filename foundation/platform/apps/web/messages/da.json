@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingagentur, der vurderer kvaliteten af ledelse i den offentlige, kommercielle, medicinske og forsvarssektor."
+    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af ledelse i den offentlige, private, medicinske og forsvarssektor."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter af processen — ikke meninger. Hver ratingbeslutning er forankret uden for egen infrastruktur, verificerbar offline og offentligt revisionerbar.",
+    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter af processen — ikke meninger. Hver ratingbeslutning er forankret uden for egen infrastruktur, kan verificeres offline og er offentligt revisionerbar.",
     "hero_cta_primary": "Se ratings",
-    "hero_cta_secondary": "Læs mere",
+    "hero_cta_secondary": "Lær mere",
     "section_ratings_title": "Seneste Certo Ratings",
     "section_reports_title": "Analyser og Rapporter",
-    "section_about_title": "Om Fonden"
+    "section_about_title": "Om Fundationen"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Vurderinger af ledelses kvalitet i institutioner",
+    "subtitle": "Vurderinger af institutioners ledelses kvalitet",
     "search_placeholder": "Søg efter institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
-    "sector_corporate": "Kommerciel",
-    "sector_medical": "Medicin",
+    "sector_corporate": "Privat",
+    "sector_medical": "Medicinsk",
     "sector_defense": "Forsvar",
-    "sector_ngo": "Almennyttig",
+    "sector_ngo": "Frivillig",
     "rating_valid_until": "Rating gyldig til",
     "rating_issued": "Udstedelsesdato",
     "no_results": "Ingen resultater fundet",
@@ -30,16 +30,21 @@
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Metodologi",
-    "about": "Om Fonden",
+    "about": "Om Fundationen",
     "login": "Log ind"
+  },
+  "Footer": {
+    "copyright": "Certo Governance Institute © {year}",
+    "privacy": "Privatlivspolitik",
+    "terms": "Brugervilkår"
   },
   "About": {
     "title": "Om Certo Governance Institute",
     "mission_title": "Mission",
     "mission_text": "Opbygning af en kultur for god ledelse gennem uafhængig vurdering og fremme af governance-standarder i Polen og Europa.",
     "independence_title": "Uafhængighed",
-    "independence_text": "Fonden er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
+    "independence_text": "Fundationen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo Ratings er baseret på stringent metodologi baseret på ISO-standarder og EU-retningslinjer."
+    "methodology_text": "Certo Ratings er baseret på stringent metodologi, der følger ISO-standarder og EU-retningslinjer."
   }
 }

@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identitetsverifiering och compliance för offentliga institutioner och företag."
+  },
+  "Dashboard": {
+    "title": "Certo ID-instrumentpanel",
+    "welcome": "Välkommen, {name}",
+    "your_rating": "Din Certo Rating",
+    "your_delegates": "Dina Delegate",
+    "your_accords": "Dina Certo Accord",
+    "recent_activity": "Senaste aktivitet",
+    "quick_actions": "Snabbåtgärder"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Organisation",
+    "contact_person": "Kontaktperson",
+    "sector": "Sektor",
+    "edit_profile": "Redigera profil",
+    "verified_badge": "Verifierad enhet"
+  },
+  "Delegates": {
+    "title": "Certo Delegate",
+    "add_delegate": "Lägg till delegat",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Status",
+    "primary_link": "PRIMARY-länk",
+    "failover_link": "FAILOVER-länk",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

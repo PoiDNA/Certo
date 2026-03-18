@@ -6,13 +6,13 @@
   "Home": {
     "hero_title": "Find a governance expert",
     "hero_subtitle": "Certo accredited advisors support institutions in maintaining and improving their Certo Rating.",
-    "hero_cta": "Find an advisor",
+    "hero_cta": "Find advisor",
     "step_1_title": "Specify your sector",
     "step_1_text": "Select the sector in which your institution operates",
     "step_2_title": "Describe your need",
     "step_2_text": "Tell us what you need",
     "step_3_title": "Get a match",
-    "step_3_text": "The system will match you with an accredited Certo advisor"
+    "step_3_text": "The system will select an accredited Certo advisor for you"
   },
   "FindAdvisor": {
     "title": "Find a Certo advisor",
@@ -21,7 +21,7 @@
     "need_audit": "Governance audit",
     "need_advisory": "Strategic advisory",
     "need_training": "Training and workshops",
-    "need_rating": "Preparation for Certo Rating",
+    "need_rating": "Rating preparation",
     "region_label": "Region",
     "submit": "Search for advisor"
   },

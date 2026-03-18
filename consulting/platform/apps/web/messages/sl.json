@@ -1,35 +1,35 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Poiščite Svetovalca",
-    "description": "Akreditirani svetovalci Certo. Urejenost podjetja in skladnost."
+    "title": "Certo Consulting — Poiščite svetovalca",
+    "description": "Akreditirani svetovalci Certo. Upravljanje in skladnost."
   },
   "Home": {
-    "hero_title": "Poiščite strokovnjaka za governance",
-    "hero_subtitle": "Akreditirani svetovalci Certo podpirajo institucije pri vzdrževanju in izboljšanju ocene Certo Rating.",
+    "hero_title": "Poiščite experta za upravljanje",
+    "hero_subtitle": "Akreditirani svetovalci Certo podpirajo institucije pri ohranjanju in izboljšanju ocene Certo.",
     "hero_cta": "Poiščite svetovalca",
     "step_1_title": "Navedite svoj sektor",
     "step_1_text": "Izberite sektor, v katerem deluje vaša institucija",
     "step_2_title": "Opišite potrebo",
     "step_2_text": "Povejte nam, kaj potrebujete",
-    "step_3_title": "Prejmite ujemanje",
+    "step_3_title": "Pridobite ujemanje",
     "step_3_text": "Sistem bo izbral akreditiranega svetovalca Certo"
   },
   "FindAdvisor": {
     "title": "Poiščite svetovalca Certo",
     "sector_label": "Sektor vaše institucije",
     "need_label": "Kaj potrebujete?",
-    "need_audit": "Revizija urejenosti podjetja",
+    "need_audit": "Presoja upravljanja",
     "need_advisory": "Strateško svetovanje",
-    "need_training": "Izobraževanja in delavnice",
-    "need_rating": "Priprava na Certo Rating",
+    "need_training": "Usposabljanja in delavnice",
+    "need_rating": "Priprava na oceno",
     "region_label": "Regija",
     "submit": "Poiščite svetovalca"
   },
   "Advisor": {
-    "accredited_by": "Akreditan pri Certo",
+    "accredited_by": "Akreditiran s strani Certo",
     "specialization": "Specializacija",
     "sectors": "Sektorji",
-    "contact_advisor": "Stopite v stik",
+    "contact_advisor": "Vzpostavite stik",
     "view_profile": "Oglejte si profil"
   }
 }

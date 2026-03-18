@@ -8,27 +8,27 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organu ratingoù indipendenti li jevalwa l-kwalità tal-ġubbernanzi ta' istituzzjonijiet pubbliċi, korporattivi u mingħajr skop ta' profit."
+    "description": "Organu ratingu indipendenti li jevalwa l-kwalità tal-ġuvern ta' istituzzjonijiet pubbliċi, korporattivi u mingħajr fini ta' profitt."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Dħul",
-    "logout": "Ħruġ",
-    "privacyPolicy": "Politika tal-Privatezza",
-    "termsOfUse": "Kundizzjonijiet ta' Użu",
-    "loading": "Qed jitħammu...",
-    "error": "Ħoloq żball",
-    "save": "Ħiffex",
-    "cancel": "Neħħi",
-    "confirm": "Ikkonferma",
-    "back": "Lura",
+    "login": "Dħol",
+    "logout": "Oħroġ",
+    "privacyPolicy": "Politika dwar il-Privazzjoni",
+    "termsOfUse": "Kundizzjonijiet tal-Użu",
+    "loading": "Jittnegħ...",
+    "error": "Ħdith żball",
+    "save": "Aqra",
+    "cancel": "Kanċella",
+    "confirm": "Ikkonfirma",
+    "back": "Iras",
     "next": "Li jmiss",
     "close": "Agħlaq",
     "search": "Fittex",
-    "download": "Niżżel",
-    "verified": "Verifikat",
+    "download": "Nezzil",
+    "verified": "Ivverifika",
     "active": "Attiv",
     "inactive": "Inattiv"
   },
@@ -37,32 +37,32 @@
     "ratings": "Ratings",
     "reports": "Rapporti",
     "analysis": "Analiżi",
-    "about": "Dwar il-Fundazzjoni",
-    "contact": "Kontatt",
-    "dashboard": "Panel",
+    "about": "Dwar il-Fondazzjoni",
+    "contact": "Kuntatt",
+    "dashboard": "Dashboard",
     "settings": "Settings"
   },
   "Auth": {
-    "login_title": "Dħul",
-    "login_subtitle": "Dħul għal kontok",
-    "login_with_google": "Dħul permezz ta' Google",
-    "email_label": "Indirizz tal-email",
-    "password_label": "Passworda",
-    "forgot_password": "Int tinsejt il-passworda?",
-    "no_account": "M'għandek le konto?",
+    "login_title": "Dħol",
+    "login_subtitle": "Idħol għal kuntux tiegħek",
+    "login_with_google": "Dħol permezz ta' Google",
+    "email_label": "Indirizz ta' email",
+    "password_label": "Passata",
+    "forgot_password": "Insejt il-passata tiegħek?",
+    "no_account": "Għandek kuntux?",
     "register": "Irreġistra"
   },
   "Errors": {
-    "404_title": "Il-paġna ma nstabx",
-    "404_description": "Il-paġna li qed tfittex ma teżistix jew ġiet mtaqla.",
-    "500_title": "Żball tas-server",
-    "500_description": "Ħoloq żball mhux mistenni. Erġa' prova aktar tard.",
-    "unauthorized": "Ebda aċċess. Dħul biex tkompli."
+    "404_title": "Il-paġna ma ġietx instab",
+    "404_description": "Il-paġna li qed tfittex ma teżistix jew ġiet mitmugħa.",
+    "500_title": "Żball tas-Server",
+    "500_description": "Ħdith żball mhux mistenni. Prova għal darb'oħra aktar tard.",
+    "unauthorized": "Ebda aċċess. Idħol biex tkompli."
   },
   "Footer": {
-    "rights": "Kollha d-drittijiet miċ-ċarr",
-    "privacy": "Politika tal-Privatezza",
-    "terms": "Kundizzjonijiet ta' Użu",
-    "contact": "Kontatt"
+    "rights": "Ir-riguri kollha riservati",
+    "privacy": "Politika dwar il-Privazzjoni",
+    "terms": "Kundizzjonijiet tal-Użu",
+    "contact": "Kuntatt"
   }
 }

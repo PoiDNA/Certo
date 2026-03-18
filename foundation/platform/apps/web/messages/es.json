@@ -1,20 +1,20 @@
 {
   "Metadata": {
     "title": "Fundación Certo Governance Institute",
-    "description": "Agencia de calificación independiente que evalúa la calidad de la gobernanza en los sectores público, corporativo, médico y de defensa."
+    "description": "Organismo de calificación independiente que evalúa la calidad de la gobernanza en los sectores público, corporativo, médico y de defensa."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo es la primera agencia de calificación del mundo cuyos ratings son artefactos criptográficos del proceso, no opiniones. Cada decisión de calificación está anclada fuera de su propia infraestructura, es verificable sin conexión y públicamente auditable.",
+    "description": "Certo es la primera agencia de calificación del mundo cuyos ratings son artefactos criptográficos del proceso, no opiniones. Cada decisión de calificación está anclada fuera de su propia infraestructura, verificable sin conexión y públicamente auditable.",
     "hero_cta_primary": "Consultar calificaciones",
     "hero_cta_secondary": "Más información",
     "section_ratings_title": "Últimas Calificaciones Certo",
     "section_reports_title": "Análisis e Informes",
-    "section_about_title": "Acerca de la Fundación"
+    "section_about_title": "Sobre la Fundación"
   },
   "Ratings": {
     "title": "Calificaciones Certo",
-    "subtitle": "Evaluaciones de la calidad de la gobernanza institucional",
+    "subtitle": "Evaluaciones de la calidad de gobernanza de instituciones",
     "search_placeholder": "Buscar institución...",
     "filter_sector": "Sector",
     "sector_public": "Público",
@@ -30,15 +30,20 @@
   "Nav": {
     "ratings": "Calificaciones",
     "methodology": "Metodología",
-    "about": "Acerca de la Fundación",
+    "about": "Sobre la Fundación",
     "login": "Iniciar sesión"
   },
+  "Footer": {
+    "copyright": "Fundación Certo Governance Institute © {year}",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  },
   "About": {
-    "title": "Acerca de la Fundación Certo Governance Institute",
+    "title": "Sobre la Fundación Certo Governance Institute",
     "mission_title": "Misión",
-    "mission_text": "Construir una cultura de buena gobernanza mediante la evaluación independiente y la promoción de estándares de governance en Polonia y Europa.",
+    "mission_text": "Construir una cultura de buen gobierno mediante la evaluación independiente y la promoción de estándares de gobernanza en Polonia y Europa.",
     "independence_title": "Independencia",
-    "independence_text": "La Fundación es independiente de los sujetos evaluados, de los órganos de poder público y de intereses comerciales.",
+    "independence_text": "La Fundación es independiente de los organismos evaluados, autoridades públicas e intereses comerciales.",
     "methodology_title": "Metodología",
     "methodology_text": "Las calificaciones Certo se basan en una metodología rigurosa fundamentada en estándares ISO y directrices de la UE."
   }

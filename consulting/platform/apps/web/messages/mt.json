@@ -1,35 +1,35 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Sib Konsulent",
-    "description": "Konsulenti akkreditati ta' Certo. Ġuvern korporattiv u konformità."
+    "title": "Certo Consulting — Sib Konsulenti",
+    "description": "Konsulenti akkreditati Certo. Governance u dritja u kompjuter."
   },
   "Home": {
-    "hero_title": "Sib espertu tal-governance",
-    "hero_subtitle": "Konsulenti akkreditati ta' Certo jgħinuh l-istituzzjonijiet biex jżommu u jrfgħu l-rating Certo tagħhom.",
-    "hero_cta": "Sib konsulent",
-    "step_1_title": "Tipprovdi s-settur tiegħek",
+    "hero_title": "Sib esperta fil-governance",
+    "hero_subtitle": "Il-konsulenti akkreditati Certo jgħinnu l-istituzzjonijiet biex jippreservaw u jirfgħu r-rating Certo tagħhom.",
+    "hero_cta": "Sib konsulenti",
+    "step_1_title": "Ipprovdi s-settur tiegħek",
     "step_1_text": "Agħżel is-settur li fih taħdem l-istituzzjoni tiegħek",
-    "step_2_title": "Iddeskrivi l-bżonn",
-    "step_2_text": "Għidilna x'għandek bżonn",
-    "step_3_title": "Ikseb qbil",
-    "step_3_text": "Is-sistema se jagħżel konsulent akkreditatu ta' Certo għalik"
+    "step_2_title": "Iddeskrivi l-ħtieġa",
+    "step_2_text": "Qolna x'għandek bżonn",
+    "step_3_title": "Ikseb tqabbil",
+    "step_3_text": "Is-sistema tagħbor konsulenti akkreditat Certo għalik"
   },
   "FindAdvisor": {
-    "title": "Sib konsulent ta' Certo",
-    "sector_label": "Settur tal-istituzzjoni tiegħek",
+    "title": "Sib konsulenti Certo",
+    "sector_label": "Is-settur tal-istituzzjoni tiegħek",
     "need_label": "X'għandek bżonn?",
     "need_audit": "Awdit tal-governance",
     "need_advisory": "Konsulenza strateġika",
     "need_training": "Taħriġ u workshops",
-    "need_rating": "Tħejjija għal rating",
+    "need_rating": "Tħejjija għar-rating",
     "region_label": "Reġjun",
-    "submit": "Fittex konsulent"
+    "submit": "Fittex konsulenti"
   },
   "Advisor": {
-    "accredited_by": "Akkreditatu minn Certo",
+    "accredited_by": "Akkreditat minn Certo",
     "specialization": "Speċjalizzazzjoni",
     "sectors": "Setturi",
-    "contact_advisor": "Ikkuntattja",
-    "view_profile": "Ara l-profil"
+    "contact_advisor": "Ikkontatja",
+    "view_profile": "Ara profil"
   }
 }

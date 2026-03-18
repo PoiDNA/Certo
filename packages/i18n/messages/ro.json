@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ de rating independent care evaluează calitatea guvernanței instituțiilor publice, corporative și neguvernamentale."
+    "description": "Organ independent de rating care evaluează calitatea guvernanței instituțiilor publice, corporative și non-profit."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,14 +17,14 @@
     "login": "Conectează-te",
     "logout": "Deconectează-te",
     "privacyPolicy": "Politica de confidențialitate",
-    "termsOfUse": "Condiții de utilizare",
+    "termsOfUse": "Termeni și condiții",
     "loading": "Se încarcă...",
     "error": "A apărut o eroare",
     "save": "Salvează",
     "cancel": "Anulează",
-    "confirm": "Confirmă",
+    "confirm": "Confirma",
     "back": "Înapoi",
-    "next": "Înainte",
+    "next": "Următorul",
     "close": "Închide",
     "search": "Caută",
     "download": "Descarcă",
@@ -34,12 +34,12 @@
   },
   "Navigation": {
     "home": "Pagina principală",
-    "ratings": "Rating-uri",
+    "ratings": "Ratinguri",
     "reports": "Rapoarte",
     "analysis": "Analize",
     "about": "Despre Fundație",
     "contact": "Contact",
-    "dashboard": "Panou",
+    "dashboard": "Tablou de bord",
     "settings": "Setări"
   },
   "Auth": {
@@ -49,20 +49,20 @@
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
     "forgot_password": "Ai uitat parola?",
-    "no_account": "Nu ai cont?",
+    "no_account": "Nu ai un cont?",
     "register": "Înregistrează-te"
   },
   "Errors": {
     "404_title": "Pagina nu a fost găsită",
     "404_description": "Pagina pe care o cauți nu există sau a fost mutată.",
-    "500_title": "Eroare a serverului",
+    "500_title": "Eroare de server",
     "500_description": "A apărut o eroare neașteptată. Încearcă din nou mai târziu.",
     "unauthorized": "Acces refuzat. Conectează-te pentru a continua."
   },
   "Footer": {
     "rights": "Toate drepturile rezervate",
     "privacy": "Politica de confidențialitate",
-    "terms": "Condiții de utilizare",
+    "terms": "Termeni și condiții",
     "contact": "Contact"
   }
 }

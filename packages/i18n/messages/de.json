@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Unabhängiges Ratingorgan, das die Qualität der Unternehmensführung öffentlicher, korporativer und gemeinnütziger Institutionen bewertet."
+    "description": "Unabhängiges Ratingorgan zur Bewertung der Qualität der Unternehmensführung in öffentlichen, korporativen und gemeinnützigen Institutionen."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -39,7 +39,7 @@
     "analysis": "Analysen",
     "about": "Über die Stiftung",
     "contact": "Kontakt",
-    "dashboard": "Instrumententafel",
+    "dashboard": "Dashboard",
     "settings": "Einstellungen"
   },
   "Auth": {
@@ -49,14 +49,14 @@
     "email_label": "E-Mail-Adresse",
     "password_label": "Passwort",
     "forgot_password": "Passwort vergessen?",
-    "no_account": "Sie haben kein Konto?",
+    "no_account": "Haben Sie kein Konto?",
     "register": "Registrieren"
   },
   "Errors": {
     "404_title": "Seite nicht gefunden",
     "404_description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
     "500_title": "Serverfehler",
-    "500_description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+    "500_description": "Ein unerwarteter Fehler ist aufgetreten. Versuchen Sie es später erneut.",
     "unauthorized": "Zugriff verweigert. Melden Sie sich an, um fortzufahren."
   },
   "Footer": {

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton luottoluokituslaitos, joka arvioi julkisten, yritys- ja kolmannen sektorin organisaatioiden hallintokäytäntöjä."
+    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja voittoa tavoittelemattomien organisaatioiden hallintokäytäntöjen laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -26,26 +26,26 @@
     "back": "Takaisin",
     "next": "Seuraava",
     "close": "Sulje",
-    "search": "Hae",
+    "search": "Haku",
     "download": "Lataa",
     "verified": "Vahvistettu",
     "active": "Aktiivinen",
-    "inactive": "Passiivinen"
+    "inactive": "Ei aktiivinen"
   },
   "Navigation": {
-    "home": "Pääsivu",
-    "ratings": "Luottoluokitukset",
+    "home": "Etusivu",
+    "ratings": "Luokitukset",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Tietoa säätiöstä",
-    "contact": "Ota yhteyttä",
+    "about": "Säätiöstä",
+    "contact": "Yhteystiedot",
     "dashboard": "Hallintapaneeli",
     "settings": "Asetukset"
   },
   "Auth": {
     "login_title": "Kirjaudu sisään",
-    "login_subtitle": "Kirjaudu tilillesi",
-    "login_with_google": "Kirjaudu Google:n kautta",
+    "login_subtitle": "Kirjaudu sisään tilillesi",
+    "login_with_google": "Kirjaudu sisään Googlen avulla",
     "email_label": "Sähköpostiosoite",
     "password_label": "Salasana",
     "forgot_password": "Unohditko salasanasi?",
@@ -54,15 +54,15 @@
   },
   "Errors": {
     "404_title": "Sivua ei löytynyt",
-    "404_description": "Hakemasi sivu ei ole olemassa tai se on siirretty.",
+    "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
     "500_title": "Palvelimen virhe",
-    "500_description": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
-    "unauthorized": "Sinulla ei ole pääsyoikeutta. Kirjaudu sisään jatkaaksesi."
+    "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
+    "unauthorized": "Pääsy evätty. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Ota yhteyttä"
+    "contact": "Yhteystiedot"
   }
 }

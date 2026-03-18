@@ -25,8 +25,8 @@
     "add_delegate": "Add delegate",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "PRIMARY Link",
-    "failover_link": "FAILOVER Link",
+    "primary_link": "PRIMARY link",
+    "failover_link": "FAILOVER link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Tapatybės tikrinimas ir atitiktis teisinėms nuostatoms viešosioms ir korporacinėms institucijoms."
+  },
+  "Dashboard": {
+    "title": "Certo ID skydelis",
+    "welcome": "Sveiki, {name}",
+    "your_rating": "Jūsų Certo Rating",
+    "your_delegates": "Jūsų delegatai",
+    "your_accords": "Jūsų Certo Accord",
+    "recent_activity": "Pastaroji veikla",
+    "quick_actions": "Greitos operacijos"
+  },
+  "Profile": {
+    "title": "Profilis",
+    "organization": "Organizacija",
+    "contact_person": "Kontaktinis asmuo",
+    "sector": "Sektorius",
+    "edit_profile": "Redaguoti profilį",
+    "verified_badge": "Patikrintas subjektas"
+  },
+  "Delegates": {
+    "title": "Certo delegatai",
+    "add_delegate": "Pridėti delegatą",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Būsena",
+    "primary_link": "PRIMARY nuoroda",
+    "failover_link": "FAILOVER nuoroda",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

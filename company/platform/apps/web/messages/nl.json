@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteitsverificatie en compliance voor openbare instellingen en bedrijven."
+    "description": "Identiteitsverificatie en compliance voor openbare instellingen en ondernemingen."
   },
   "Dashboard": {
     "title": "Certo ID Dashboard",
@@ -22,11 +22,11 @@
   },
   "Delegates": {
     "title": "Certo Delegates",
-    "add_delegate": "Certo Delegate toevoegen",
+    "add_delegate": "Delegate toevoegen",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "PRIMARY link",
-    "failover_link": "FAILOVER link",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

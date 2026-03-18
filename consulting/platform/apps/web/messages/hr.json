@@ -1,35 +1,35 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Pronađite Savjetnika",
-    "description": "Akreditirani savjetnici Certo. Korporativni ured i sukladnost."
+    "title": "Certo Consulting — Pronađi Savjetnika",
+    "description": "Akreditirani savjetnici Certo. Korporativno upravljanje i usklađenost."
   },
   "Home": {
-    "hero_title": "Pronađite eksperta za governance",
-    "hero_subtitle": "Akreditirani savjetnici Certo pomažu institucijama da održe i podignu svoj Certo Rating.",
-    "hero_cta": "Pronađite savjetnika",
+    "hero_title": "Pronađi eksperta za governance",
+    "hero_subtitle": "Akreditirani savjetnici Certo pomagaju institucijama da održavaju i poboljšavaju svoj Certo Rating.",
+    "hero_cta": "Pronađi savjetnika",
     "step_1_title": "Navedite svoj sektor",
-    "step_1_text": "Odaberite sektor u kojem djeluje vaša institucija",
-    "step_2_title": "Opišite potrebu",
+    "step_1_text": "Odaberite sektor u kojem posluje vaša institucija",
+    "step_2_title": "Opišite svoju potrebu",
     "step_2_text": "Recite nam što vam je potrebno",
-    "step_3_title": "Dobijte podudaranje",
-    "step_3_text": "Sustav će odabrati akreditiranog savjetnika Certo"
+    "step_3_title": "Dobijte preporuku",
+    "step_3_text": "Sustav će vam dodijeliti akreditiranog savjetnika Certo"
   },
   "FindAdvisor": {
-    "title": "Pronađite savjetnika Certo",
+    "title": "Pronađi savjetnika Certo",
     "sector_label": "Sektor vaše institucije",
     "need_label": "Što vam je potrebno?",
-    "need_audit": "Revizija governance",
+    "need_audit": "Audit upravljanja",
     "need_advisory": "Strateško savjetovanje",
     "need_training": "Obuka i radionice",
-    "need_rating": "Priprema za Certo Rating",
+    "need_rating": "Priprema za rating",
     "region_label": "Regija",
-    "submit": "Traži savjetnika"
+    "submit": "Pretraži savjetnika"
   },
   "Advisor": {
-    "accredited_by": "Akreditiran od strane Certo",
+    "accredited_by": "Akreditiran od Certo",
     "specialization": "Specijalizacija",
     "sectors": "Sektori",
-    "contact_advisor": "Kontaktirajte",
-    "view_profile": "Pogledajte profil"
+    "contact_advisor": "Kontaktiraj",
+    "view_profile": "Pogledaj profil"
   }
 }

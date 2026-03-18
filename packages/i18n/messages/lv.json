@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neatkarīgs reitinga birojs, kas novērtē publisko, korporatīvo un nevalstisko organizāciju pārvaldības kvalitāti."
+    "description": "Neatkarīgs reitinga orgāns, kas novērtē publisko, korporatīvo un nevalstisko organismu pārvaldības kvalitāti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -35,7 +35,7 @@
   "Navigation": {
     "home": "Sākumlapa",
     "ratings": "Reitingi",
-    "reports": "Pārskati",
+    "reports": "Atskaites",
     "analysis": "Analīzes",
     "about": "Par Fondu",
     "contact": "Kontakti",
@@ -45,22 +45,22 @@
   "Auth": {
     "login_title": "Pierakstieties",
     "login_subtitle": "Pierakstieties savā kontā",
-    "login_with_google": "Pierakstieties, izmantojot Google",
+    "login_with_google": "Pierakstieties ar Google",
     "email_label": "E-pasta adrese",
     "password_label": "Parole",
     "forgot_password": "Aizmirsi paroli?",
-    "no_account": "Jums nav konta?",
-    "register": "Reģistrējieties"
+    "no_account": "Vai jums nav konta?",
+    "register": "Reģistrēties"
   },
   "Errors": {
     "404_title": "Lapa netika atrasta",
-    "404_description": "Lapa, kuru meklējat, neeksistē vai tā ir pārvietota.",
+    "404_description": "Lapa, ko meklējat, neeksistē vai tā ir pārvietota.",
     "500_title": "Servera kļūda",
-    "500_description": "Radās neparedzēta kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.",
+    "500_description": "Radās negaidīta kļūda. Vēlāk mēģiniet vēlreiz.",
     "unauthorized": "Pieeja liegta. Pierakstieties, lai turpinātu."
   },
   "Footer": {
-    "rights": "Visas tiesības aizsargātas",
+    "rights": "Visas tiesības paturētas",
     "privacy": "Privātuma politika",
     "terms": "Lietošanas noteikumi",
     "contact": "Kontakti"

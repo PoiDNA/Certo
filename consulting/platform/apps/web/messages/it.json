@@ -1,32 +1,32 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Trova un Consulente",
-    "description": "Consulenti accreditati Certo. Governance aziendale e conformità."
+    "description": "Consulenti acreditati Certo. Governance aziendale e conformità."
   },
   "Home": {
     "hero_title": "Trova un esperto di governance",
-    "hero_subtitle": "I consulenti accreditati Certo supportano le istituzioni nel mantenere e migliorare il rating Certo.",
+    "hero_subtitle": "I consulenti acreditati Certo supportano le istituzioni nel mantenimento e nel miglioramento del rating Certo.",
     "hero_cta": "Trova un consulente",
     "step_1_title": "Specifica il tuo settore",
     "step_1_text": "Seleziona il settore in cui opera la tua istituzione",
-    "step_2_title": "Descrivi il tuo fabbisogno",
-    "step_2_text": "Raccontaci di cosa hai bisogno",
-    "step_3_title": "Ricevi un abbinamento",
-    "step_3_text": "Il sistema individuerà un consulente Certo accreditato"
+    "step_2_title": "Descrivi la tua esigenza",
+    "step_2_text": "Dicci di che cosa hai bisogno",
+    "step_3_title": "Ricevi l'abbinamento",
+    "step_3_text": "Il sistema abbinerà un consulente Certo acreditato"
   },
   "FindAdvisor": {
     "title": "Trova un consulente Certo",
     "sector_label": "Settore della tua istituzione",
-    "need_label": "Di cosa hai bisogno?",
+    "need_label": "Di che cosa hai bisogno?",
     "need_audit": "Audit di governance",
     "need_advisory": "Consulenza strategica",
     "need_training": "Formazione e workshop",
     "need_rating": "Preparazione al rating",
     "region_label": "Regione",
-    "submit": "Cerca un consulente"
+    "submit": "Cerca consulente"
   },
   "Advisor": {
-    "accredited_by": "Accreditato da Certo",
+    "accredited_by": "Acreditato da Certo",
     "specialization": "Specializzazione",
     "sectors": "Settori",
     "contact_advisor": "Contatta",

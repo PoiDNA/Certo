@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton luokituslaitos, joka arvioi hallinnon laatua julkisen sektorin, yritys-, lääkintä- ja puolustussektorilla."
+    "description": "Riippumaton luokituslaitos, joka arvioi hallinnointikäytäntöjen laatua julkisella, yritys-, lääketieteellisellä ja puolustussektorilla."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo on maailman ensimmäinen luokituslaitos, jonka luokitukset ovat prosessin kryptografisia artefakteja – ei mielipiteitä. Jokainen luokituspäätös on ankkuroitu organisaation oman infrastruktuurin ulkopuolelle, offline-vahvistettavissa ja julkisesti auditoitavissa.",
+    "description": "Certo on maailman ensimmäinen luokituslaitos, jonka luokitukset ovat prosessin kryptografisia artefakteja — ei mielipiteitä. Jokainen luokituspäätös on ankkuroitu organisaation oman infrastruktuurin ulkopuolella, offline-todennettava ja julkisesti auditoitava.",
     "hero_cta_primary": "Tarkista luokitukset",
     "hero_cta_secondary": "Lue lisää",
-    "section_ratings_title": "Viimeisimmät Certo-luokitukset",
-    "section_reports_title": "Analyysit ja raportit",
-    "section_about_title": "Tietoa säätiöstä"
+    "section_ratings_title": "Uusimmat Certo-luokitukset",
+    "section_reports_title": "Analyysit ja Raportit",
+    "section_about_title": "Fundaatiosta"
   },
   "Ratings": {
     "title": "Certo-luokitukset",
-    "subtitle": "Hallinnon laadun arvioinnit laitoksissa",
-    "search_placeholder": "Etsi laitosta...",
+    "subtitle": "Instituutioiden hallinnointikäytäntöjen laadun arvioinnit",
+    "search_placeholder": "Etsi instituutiota...",
     "filter_sector": "Sektori",
     "sector_public": "Julkinen",
     "sector_corporate": "Yritys",
-    "sector_medical": "Lääkintä",
+    "sector_medical": "Lääketieteellinen",
     "sector_defense": "Puolustus",
-    "sector_ngo": "Kansalaisjärjestöt",
+    "sector_ngo": "Järjestöt",
     "rating_valid_until": "Luokitus voimassa",
     "rating_issued": "Julkaisupäivä",
     "no_results": "Tuloksia ei löytynyt",
@@ -30,16 +30,21 @@
   "Nav": {
     "ratings": "Luokitukset",
     "methodology": "Metodologia",
-    "about": "Tietoa säätiöstä",
+    "about": "Fundaatiosta",
     "login": "Kirjaudu sisään"
   },
+  "Footer": {
+    "copyright": "Certo Governance Institute © {year}",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot"
+  },
   "About": {
-    "title": "Tietoa Certo Governance Institutesta",
-    "mission_title": "Missio",
-    "mission_text": "Hyvän hallinnon kulttuurin rakentaminen riippumattoman arvioinnin ja hallinnon standardien edistämisen kautta Suomessa ja Euroopassa.",
+    "title": "Certo Governance Institute -fundaatiosta",
+    "mission_title": "Tehtävä",
+    "mission_text": "Hyvän hallinnointikäytännön kulttuurin rakentaminen riippumattoman arvioinnin ja hallinnointistandardien edistämisen kautta Suomessa ja Euroopassa.",
     "independence_title": "Riippumattomuus",
-    "independence_text": "Säätiö on riippumaton arvioiduista organisaatioista, julkisen vallan elimistä sekä kaupallisista intresseistä.",
+    "independence_text": "Fundaatio on riippumaton arvioitavista organisaatioista, julkisen vallan elimistä ja kaupallisista intresseistä.",
     "methodology_title": "Metodologia",
-    "methodology_text": "Certo-luokitukset perustuvat tiukkaaseen metodologiaan, joka perustuu ISO-standardeihin ja EU:n ohjeisiin."
+    "methodology_text": "Certo-luokitukset perustuvat tiukkaan metodologiaan, joka noudattaa ISO-standardeja ja EU:n ohjeita."
   }
 }
