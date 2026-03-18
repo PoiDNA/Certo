@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import AuthNav from "../../components/AuthNav";
+import SiteNav from "../../components/SiteNav";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -67,7 +68,10 @@ export default async function RootLayout({
                   </span>
                 </a>
               </div>
-              <AuthNav />
+              <div className="flex items-center gap-8">
+                <SiteNav />
+                <AuthNav />
+              </div>
             </div>
           </header>
           

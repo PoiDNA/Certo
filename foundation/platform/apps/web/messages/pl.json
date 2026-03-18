@@ -27,6 +27,12 @@
     "no_results": "Nie znaleziono wyników",
     "view_profile": "Zobacz profil"
   },
+  "Nav": {
+    "ratings": "Ratingi",
+    "methodology": "Metodologia",
+    "about": "O Fundacji",
+    "login": "Zaloguj się"
+  },
   "About": {
     "title": "O Fundacji Certo Governance Institute",
     "mission_title": "Misja",
