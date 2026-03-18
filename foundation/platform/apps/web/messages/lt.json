@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Nepriklausomas reitingų organas, vertinantis valdymo kokybę viešajame, korporatyviniame, medicinos ir gynybos sektoriuose."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai — ne nuomonės. Kiekvienas reitingo sprendimas yra įtvirtas už savos infrastruktūros ribų, patikrinamas neprisijungus ir viešai audituojamas.",
+    "hero_cta_primary": "Peržiūrėti reitingus",
+    "hero_cta_secondary": "Sužinoti daugiau",
+    "section_ratings_title": "Naujausi Certo Reitingai",
+    "section_reports_title": "Analizės ir Ataskaitai",
+    "section_about_title": "Apie Fondą"
+  },
+  "Ratings": {
+    "title": "Certo Reitingai",
+    "subtitle": "Institucijų valdymo kokybės vertinimai",
+    "search_placeholder": "Ieškoti institucijos...",
+    "filter_sector": "Sektorius",
+    "sector_public": "Viešasis",
+    "sector_corporate": "Korporatyvinis",
+    "sector_medical": "Medicinos",
+    "sector_defense": "Gynybos",
+    "sector_ngo": "Nevyriausybinis",
+    "rating_valid_until": "Reitingas galioja iki",
+    "rating_issued": "Išdavimo data",
+    "no_results": "Rezultatų nerasta",
+    "view_profile": "Peržiūrėti profilį"
+  },
+  "Nav": {
+    "ratings": "Reitingai",
+    "methodology": "Metodologija",
+    "about": "Apie Fondą",
+    "login": "Prisijungti"
+  },
+  "About": {
+    "title": "Apie Certo Governance Institute",
+    "mission_title": "Misija",
+    "mission_text": "Kurti gerojo valdymo kultūrą per nepriklausomą vertinimą ir valdymo standartų skatinimą Lietuvoje ir Europoje.",
+    "independence_title": "Nepriklausomumas",
+    "independence_text": "Fondas yra nepriklausomas nuo vertintų subjektų, viešosios valdžios organų ir komercinių interesų.",
+    "methodology_title": "Metodologija",
+    "methodology_text": "Certo reitingai grindžiami griežta metodologija, paremta ISO standartais ir ES gairėmis."
+  }
+}

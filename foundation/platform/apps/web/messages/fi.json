@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Riippumaton luokituslaitos, joka arvioi hallinnon laatua julkisen sektorin, yritys-, lääkintä- ja puolustussektorilla."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo on maailman ensimmäinen luokituslaitos, jonka luokitukset ovat prosessin kryptografisia artefakteja – ei mielipiteitä. Jokainen luokituspäätös on ankkuroitu organisaation oman infrastruktuurin ulkopuolelle, offline-vahvistettavissa ja julkisesti auditoitavissa.",
+    "hero_cta_primary": "Tarkista luokitukset",
+    "hero_cta_secondary": "Lue lisää",
+    "section_ratings_title": "Viimeisimmät Certo-luokitukset",
+    "section_reports_title": "Analyysit ja raportit",
+    "section_about_title": "Tietoa säätiöstä"
+  },
+  "Ratings": {
+    "title": "Certo-luokitukset",
+    "subtitle": "Hallinnon laadun arvioinnit laitoksissa",
+    "search_placeholder": "Etsi laitosta...",
+    "filter_sector": "Sektori",
+    "sector_public": "Julkinen",
+    "sector_corporate": "Yritys",
+    "sector_medical": "Lääkintä",
+    "sector_defense": "Puolustus",
+    "sector_ngo": "Kansalaisjärjestöt",
+    "rating_valid_until": "Luokitus voimassa",
+    "rating_issued": "Julkaisupäivä",
+    "no_results": "Tuloksia ei löytynyt",
+    "view_profile": "Näytä profiili"
+  },
+  "Nav": {
+    "ratings": "Luokitukset",
+    "methodology": "Metodologia",
+    "about": "Tietoa säätiöstä",
+    "login": "Kirjaudu sisään"
+  },
+  "About": {
+    "title": "Tietoa Certo Governance Institutesta",
+    "mission_title": "Missio",
+    "mission_text": "Hyvän hallinnon kulttuurin rakentaminen riippumattoman arvioinnin ja hallinnon standardien edistämisen kautta Suomessa ja Euroopassa.",
+    "independence_title": "Riippumattomuus",
+    "independence_text": "Säätiö on riippumaton arvioiduista organisaatioista, julkisen vallan elimistä sekä kaupallisista intresseistä.",
+    "methodology_title": "Metodologia",
+    "methodology_text": "Certo-luokitukset perustuvat tiukkaaseen metodologiaan, joka perustuu ISO-standardeihin ja EU:n ohjeisiin."
+  }
+}

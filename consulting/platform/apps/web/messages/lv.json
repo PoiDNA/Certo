@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Atrodiet Konsultantu",
+    "description": "Sertificēti Certo konsultanti. Korporatīvais pārvaldības un atbilstības nozare."
+  },
+  "Home": {
+    "hero_title": "Atrodiet governance ekspertu",
+    "hero_subtitle": "Sertificēti Certo konsultanti palīdz institūcijām saglabāt un paaugstināt Certo reitingu.",
+    "hero_cta": "Atrodiet konsultantu",
+    "step_1_title": "Norādiet savu nozari",
+    "step_1_text": "Izvēlieties nozari, kurā darbojas jūsu institūcija",
+    "step_2_title": "Aprakstiet jūsu vajadzību",
+    "step_2_text": "Pastāstiet mums, ko jums vajag",
+    "step_3_title": "Saņemiet atbilstošu rezultātu",
+    "step_3_text": "Sistēma atlasīs sertificētu Certo konsultantu"
+  },
+  "FindAdvisor": {
+    "title": "Atrodiet Certo konsultantu",
+    "sector_label": "Jūsu institūcijas nozare",
+    "need_label": "Ko jūs nepieciešat?",
+    "need_audit": "Governance audits",
+    "need_advisory": "Stratēģiskā konsultācija",
+    "need_training": "Apmācības un darbnīcas",
+    "need_rating": "Sagatavošanās reitingam",
+    "region_label": "Reģions",
+    "submit": "Meklēt konsultantu"
+  },
+  "Advisor": {
+    "accredited_by": "Sertificēts Certo",
+    "specialization": "Specializācija",
+    "sectors": "Nozares",
+    "contact_advisor": "Sazinies",
+    "view_profile": "Skatīt profilu"
+  }
+}

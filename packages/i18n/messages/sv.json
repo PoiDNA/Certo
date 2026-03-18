@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "sv",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Oberoende ratingorgan som bedömer styrningskvaliteten för offentliga, privata och ideella organisationer."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Logga in",
+    "logout": "Logga ut",
+    "privacyPolicy": "Sekretesspolicy",
+    "termsOfUse": "Användarvillkor",
+    "loading": "Laddar...",
+    "error": "Ett fel uppstod",
+    "save": "Spara",
+    "cancel": "Avbryt",
+    "confirm": "Bekräfta",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "close": "Stäng",
+    "search": "Sök",
+    "download": "Ladda ned",
+    "verified": "Verifierad",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "Navigation": {
+    "home": "Startsida",
+    "ratings": "Betyg",
+    "reports": "Rapporter",
+    "analysis": "Analyser",
+    "about": "Om Stiftelsen",
+    "contact": "Kontakt",
+    "dashboard": "Instrumentpanel",
+    "settings": "Inställningar"
+  },
+  "Auth": {
+    "login_title": "Logga in",
+    "login_subtitle": "Logga in på ditt konto",
+    "login_with_google": "Logga in med Google",
+    "email_label": "E-postadress",
+    "password_label": "Lösenord",
+    "forgot_password": "Glömt ditt lösenord?",
+    "no_account": "Har du inget konto?",
+    "register": "Registrera dig"
+  },
+  "Errors": {
+    "404_title": "Sidan kunde inte hittas",
+    "404_description": "Sidan du söker finns inte eller har flyttats.",
+    "500_title": "Serverfel",
+    "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
+    "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."
+  },
+  "Footer": {
+    "rights": "Alla rättigheter förbehållna",
+    "privacy": "Sekretesspolicy",
+    "terms": "Användarvillkor",
+    "contact": "Kontakt"
+  }
+}

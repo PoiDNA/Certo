@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "es",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Órgano de calificación independiente que evalúa la calidad de la gestión de instituciones públicas, corporativas y no gubernamentales."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Inicia sesión",
+    "logout": "Cerrar sesión",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfUse": "Términos de uso",
+    "loading": "Cargando...",
+    "error": "Se ha producido un error",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "download": "Descargar",
+    "verified": "Verificado",
+    "active": "Activo",
+    "inactive": "Inactivo"
+  },
+  "Navigation": {
+    "home": "Página principal",
+    "ratings": "Calificaciones",
+    "reports": "Informes",
+    "analysis": "Análisis",
+    "about": "Acerca de la Fundación",
+    "contact": "Contacto",
+    "dashboard": "Panel",
+    "settings": "Configuración"
+  },
+  "Auth": {
+    "login_title": "Inicia sesión",
+    "login_subtitle": "Inicia sesión en tu cuenta",
+    "login_with_google": "Inicia sesión con Google",
+    "email_label": "Correo electrónico",
+    "password_label": "Contraseña",
+    "forgot_password": "¿Olvidaste tu contraseña?",
+    "no_account": "¿No tienes cuenta?",
+    "register": "Regístrate"
+  },
+  "Errors": {
+    "404_title": "Página no encontrada",
+    "404_description": "La página que buscas no existe o ha sido movida.",
+    "500_title": "Error del servidor",
+    "500_description": "Se ha producido un error inesperado. Intenta de nuevo más tarde.",
+    "unauthorized": "Acceso denegado. Inicia sesión para continuar."
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "contact": "Contacto"
+  }
+}

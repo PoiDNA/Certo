@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Finden Sie einen Berater",
+    "description": "Akkreditierte Certo-Berater. Corporate Governance und Compliance."
+  },
+  "Home": {
+    "hero_title": "Finden Sie einen Governance-Experten",
+    "hero_subtitle": "Akkreditierte Certo-Berater unterstützen Institutionen dabei, ihr Certo Rating zu halten und zu verbessern.",
+    "hero_cta": "Berater finden",
+    "step_1_title": "Geben Sie Ihren Sektor an",
+    "step_1_text": "Wählen Sie den Sektor, in dem Ihre Institution tätig ist",
+    "step_2_title": "Beschreiben Sie Ihren Bedarf",
+    "step_2_text": "Sagen Sie uns, was Sie benötigen",
+    "step_3_title": "Erhalten Sie eine Empfehlung",
+    "step_3_text": "Das System wird einen akkreditierten Certo-Berater für Sie auswählen"
+  },
+  "FindAdvisor": {
+    "title": "Certo-Berater finden",
+    "sector_label": "Sektor Ihrer Institution",
+    "need_label": "Was benötigen Sie?",
+    "need_audit": "Governance-Audit",
+    "need_advisory": "Strategische Beratung",
+    "need_training": "Schulungen und Workshops",
+    "need_rating": "Vorbereitung auf das Rating",
+    "region_label": "Region",
+    "submit": "Berater suchen"
+  },
+  "Advisor": {
+    "accredited_by": "Akkreditiert durch Certo",
+    "specialization": "Spezialisierung",
+    "sectors": "Sektoren",
+    "contact_advisor": "Kontakt aufnehmen",
+    "view_profile": "Profil anzeigen"
+  }
+}

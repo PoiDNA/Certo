@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundacija Certo Governance Institute",
+    "description": "Neodvisna bonitetna agencija, ki ocenjuje kakovost upravljanja v javnem, korporativnem, medicinskem in obrambnem sektorju."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo je prva bonitetna agencija na svetu, katere ocene so kriptografski artefakti procesa – ne mnenja. Vsaka odločitev o oceni je zasidrana zunaj lastne infrastrukture, preverljiva brez povezave in javno revidirana.",
+    "hero_cta_primary": "Preglej ocene",
+    "hero_cta_secondary": "Več informacij",
+    "section_ratings_title": "Najnovejše Certo Ocene",
+    "section_reports_title": "Analize in Poročila",
+    "section_about_title": "O Ustanovi"
+  },
+  "Ratings": {
+    "title": "Certo Ocene",
+    "subtitle": "Ocene kakovosti upravljanja institucij",
+    "search_placeholder": "Iskanje institucije...",
+    "filter_sector": "Sektor",
+    "sector_public": "Javni",
+    "sector_corporate": "Korporativni",
+    "sector_medical": "Medicinski",
+    "sector_defense": "Obrambni",
+    "sector_ngo": "Nevladni",
+    "rating_valid_until": "Ocena veljavna do",
+    "rating_issued": "Datum izdaje",
+    "no_results": "Ni rezultatov",
+    "view_profile": "Ogledaj profil"
+  },
+  "Nav": {
+    "ratings": "Ocene",
+    "methodology": "Metodologija",
+    "about": "O Ustanovi",
+    "login": "Prijava"
+  },
+  "About": {
+    "title": "O Ustanovi Certo Governance Institute",
+    "mission_title": "Misija",
+    "mission_text": "Gradnja kulture dobrega upravljanja prek neodvisne ocene in promocije standardov upravljanja v Sloveniji in Evropi.",
+    "independence_title": "Neodvisnost",
+    "independence_text": "Ustanovа je neodvisna od ocenjenih subjektov, organov javne oblasti in komercialnih interesov.",
+    "methodology_title": "Metodologija",
+    "methodology_text": "Certo ocene temeljijo na strogi metodologiji, ki temelji na standardih ISO in smernicah EU."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundação Certo Governance Institute",
+    "description": "Órgão independente de ratings que avalia a qualidade de governança no setor público, corporativo, médico e de defesa."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo é a primeira agência de ratings do mundo cujos ratings são artefatos criptográficos do processo — não opiniões. Cada decisão de rating é ancorada fora de sua própria infraestrutura, verificável offline e auditável publicamente.",
+    "hero_cta_primary": "Consulte os ratings",
+    "hero_cta_secondary": "Saiba mais",
+    "section_ratings_title": "Ratings Certo Mais Recentes",
+    "section_reports_title": "Análises e Relatórios",
+    "section_about_title": "Sobre a Fundação"
+  },
+  "Ratings": {
+    "title": "Ratings Certo",
+    "subtitle": "Avaliações da qualidade de governança institucional",
+    "search_placeholder": "Procure por instituição...",
+    "filter_sector": "Setor",
+    "sector_public": "Público",
+    "sector_corporate": "Corporativo",
+    "sector_medical": "Médico",
+    "sector_defense": "Defesa",
+    "sector_ngo": "Organizações não governamentais",
+    "rating_valid_until": "Rating válido até",
+    "rating_issued": "Data de emissão",
+    "no_results": "Nenhum resultado encontrado",
+    "view_profile": "Ver perfil"
+  },
+  "Nav": {
+    "ratings": "Ratings",
+    "methodology": "Metodologia",
+    "about": "Sobre a Fundação",
+    "login": "Faça login"
+  },
+  "About": {
+    "title": "Sobre a Fundação Certo Governance Institute",
+    "mission_title": "Missão",
+    "mission_text": "Construir uma cultura de boa governança através da avaliação independente e promoção de padrões de governance na Polônia e Europa.",
+    "independence_title": "Independência",
+    "independence_text": "A Fundação é independente das entidades avaliadas, órgãos públicos e interesses comerciais.",
+    "methodology_title": "Metodologia",
+    "methodology_text": "Os ratings Certo baseiam-se em uma metodologia rigorosa alinhada aos padrões ISO e diretrizes da UE."
+  }
+}

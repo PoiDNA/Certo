@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Sõltumatu reitingiagentuuri, mis hindab valitsemise kvaliteeti avalikus sektoris, ettevõtete, meditsiini- ja kaitsetööstuse sektoris."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo on maailma esimene reitingiagentuuri, mille reitingud on protsessi krüptograafilised artefaktid – mitte arvamused. Iga reitinguotsus on ankurdatud väljaspool oma infrastruktuuri, võrguühenduseta kontrolli­tavad ja avalikult auditeeritavad.",
+    "hero_cta_primary": "Vaata reiting­uid",
+    "hero_cta_secondary": "Uuri lähemalt",
+    "section_ratings_title": "Uusimad Certo Reitingud",
+    "section_reports_title": "Analüüsid ja Aruanded",
+    "section_about_title": "Fondatsioonist"
+  },
+  "Ratings": {
+    "title": "Certo Reitingud",
+    "subtitle": "Asutuste valitsemise kvaliteedi hinnangud",
+    "search_placeholder": "Otsi asutust...",
+    "filter_sector": "Sektor",
+    "sector_public": "Avalik",
+    "sector_corporate": "Ettevõtete",
+    "sector_medical": "Meditsiiniline",
+    "sector_defense": "Kaitse",
+    "sector_ngo": "Mittetulunduslik",
+    "rating_valid_until": "Reiting kehtib kuni",
+    "rating_issued": "Väljastamise kuupäev",
+    "no_results": "Tulemusi ei leitud",
+    "view_profile": "Vaata profiili"
+  },
+  "Nav": {
+    "ratings": "Reitingud",
+    "methodology": "Metoodika",
+    "about": "Fondatsioonist",
+    "login": "Logi sisse"
+  },
+  "About": {
+    "title": "Certo Governance Institute'i Kohta",
+    "mission_title": "Missioon",
+    "mission_text": "Hea juhtimispraktika kultuuri loomine sõltumatu hinnangu ja valitsemise standardite edendamise kaudu Poolas ja Euroopas.",
+    "independence_title": "Sõltumatus",
+    "independence_text": "Fondatsioon on sõltumatu hinnatavatest üksustest, avaliku võimu organites ja kommertshuvidetest.",
+    "methodology_title": "Metoodika",
+    "methodology_text": "Certo reitingud põhinevad rangetel ISO standarditel ja EL juhistel baseeruvatel metoodikatel."
+  }
+}

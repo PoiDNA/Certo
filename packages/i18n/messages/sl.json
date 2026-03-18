@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "sl",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Neodvisni organ za kreditno ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "privacyPolicy": "Politika zasebnosti",
+    "termsOfUse": "Pogoji uporabe",
+    "loading": "Nalaganje...",
+    "error": "Prišlo je do napake",
+    "save": "Shrani",
+    "cancel": "Prekliči",
+    "confirm": "Potrdi",
+    "back": "Nazaj",
+    "next": "Naprej",
+    "close": "Zapri",
+    "search": "Iskanje",
+    "download": "Prenos",
+    "verified": "Preverjeno",
+    "active": "Aktivno",
+    "inactive": "Neaktivno"
+  },
+  "Navigation": {
+    "home": "Domača stran",
+    "ratings": "Ocene",
+    "reports": "Poročila",
+    "analysis": "Analize",
+    "about": "O Fundaciji",
+    "contact": "Kontakt",
+    "dashboard": "Nadzorna plošča",
+    "settings": "Nastavitve"
+  },
+  "Auth": {
+    "login_title": "Prijava",
+    "login_subtitle": "Prijavite se v svoj račun",
+    "login_with_google": "Prijava prek Googla",
+    "email_label": "Elektronski naslov",
+    "password_label": "Geslo",
+    "forgot_password": "Ste pozabili geslo?",
+    "no_account": "Nimate računa?",
+    "register": "Registracija"
+  },
+  "Errors": {
+    "404_title": "Stran ni bila najdena",
+    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premaknjena.",
+    "500_title": "Napaka strežnika",
+    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
+    "unauthorized": "Dostop je prepovedan. Prijavite se za nadaljevanje."
+  },
+  "Footer": {
+    "rights": "Vse pravice pridržane",
+    "privacy": "Politika zasebnosti",
+    "terms": "Pogoji uporabe",
+    "contact": "Kontakt"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "lt",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Nepriklausomas reitingavimo organas, vertinantis viešųjų, korporacinių ir nevyriausybinių institucijų valdymo kokybę."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Prisijungti",
+    "logout": "Atsijungti",
+    "privacyPolicy": "Privatumo politika",
+    "termsOfUse": "Naudojimosi sąlygos",
+    "loading": "Kraunama...",
+    "error": "Įvyko klaida",
+    "save": "Išsaugoti",
+    "cancel": "Atšaukti",
+    "confirm": "Patvirtinti",
+    "back": "Grįžti",
+    "next": "Toliau",
+    "close": "Uždaryti",
+    "search": "Paieška",
+    "download": "Atsisiųsti",
+    "verified": "Patvirtintas",
+    "active": "Aktyvus",
+    "inactive": "Neaktyvus"
+  },
+  "Navigation": {
+    "home": "Pradžia",
+    "ratings": "Reitingai",
+    "reports": "Ataskaitai",
+    "analysis": "Analizės",
+    "about": "Apie fондą",
+    "contact": "Kontaktai",
+    "dashboard": "Skydelis",
+    "settings": "Nustatymai"
+  },
+  "Auth": {
+    "login_title": "Prisijungti",
+    "login_subtitle": "Prisijunkite prie savo paskyros",
+    "login_with_google": "Prisijungti per Google",
+    "email_label": "El. pašto adresas",
+    "password_label": "Slaptažodis",
+    "forgot_password": "Pamiršai slaptažodį?",
+    "no_account": "Neturite paskyros?",
+    "register": "Registruotis"
+  },
+  "Errors": {
+    "404_title": "Puslapis nerastas",
+    "404_description": "Puslapis, kurį ieškote, neegzistuoja arba buvo perkeltas.",
+    "500_title": "Serverio klaida",
+    "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
+    "unauthorized": "Prieiga uždrausta. Prisijunkite norėdami tęsti."
+  },
+  "Footer": {
+    "rights": "Visos teisės saugomos",
+    "privacy": "Privatumo politika",
+    "terms": "Naudojimosi sąlygos",
+    "contact": "Kontaktai"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "hr",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Neovisni organ za ocjenu koja procjenjuje kvalitetu upravljanja javnih, korporativnih i neprofitnih institucija."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "privacyPolicy": "Politika privatnosti",
+    "termsOfUse": "Uvjeti korištenja",
+    "loading": "Učitavanje...",
+    "error": "Došlo je do greške",
+    "save": "Spremi",
+    "cancel": "Otkaži",
+    "confirm": "Potvrdi",
+    "back": "Natrag",
+    "next": "Dalje",
+    "close": "Zatvori",
+    "search": "Pretraži",
+    "download": "Preuzmi",
+    "verified": "Verificiran",
+    "active": "Aktivan",
+    "inactive": "Neaktivan"
+  },
+  "Navigation": {
+    "home": "Početna stranica",
+    "ratings": "Ocjene",
+    "reports": "Izvještaji",
+    "analysis": "Analize",
+    "about": "O Fondaciji",
+    "contact": "Kontakt",
+    "dashboard": "Ploča",
+    "settings": "Postavke"
+  },
+  "Auth": {
+    "login_title": "Prijava",
+    "login_subtitle": "Prijavite se na svoj račun",
+    "login_with_google": "Prijavite se putem Google-a",
+    "email_label": "Adresa e-pošte",
+    "password_label": "Lozinka",
+    "forgot_password": "Zaboravili ste lozinku?",
+    "no_account": "Nemate račun?",
+    "register": "Registrirajte se"
+  },
+  "Errors": {
+    "404_title": "Stranica nije pronađena",
+    "404_description": "Stranica koju tražite ne postoji ili je premještena.",
+    "500_title": "Greška servera",
+    "500_description": "Došlo je do neočekivane greške. Pokušajte ponovno kasnije.",
+    "unauthorized": "Nemate pristupa. Prijavite se da biste nastavili."
+  },
+  "Footer": {
+    "rights": "Sva prava zadržana",
+    "privacy": "Politika privatnosti",
+    "terms": "Uvjeti korištenja",
+    "contact": "Kontakt"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Găsiți Consilier",
+    "description": "Consilieri acreditați Certo. Ład korporacyjny și conformitate."
+  },
+  "Home": {
+    "hero_title": "Găsiți expert în governance",
+    "hero_subtitle": "Consilieri acreditați Certo sprijină instituțiile în menținerea și îmbunătățirea ratingului Certo.",
+    "hero_cta": "Găsiți consilier",
+    "step_1_title": "Specificați sectorul dumneavoastră",
+    "step_1_text": "Selectați sectorul în care activează instituția dumneavoastră",
+    "step_2_title": "Descrieți nevoia",
+    "step_2_text": "Spuneți-ne ce aveți nevoie",
+    "step_3_title": "Obțineți potrivire",
+    "step_3_text": "Sistemul va selecta un consilier acreditat Certo"
+  },
+  "FindAdvisor": {
+    "title": "Găsiți consilier Certo",
+    "sector_label": "Sectorul instituției dumneavoastră",
+    "need_label": "Ce aveți nevoie?",
+    "need_audit": "Audit de governance",
+    "need_advisory": "Consiliere strategică",
+    "need_training": "Cursuri și ateliere",
+    "need_rating": "Pregătire pentru rating",
+    "region_label": "Regiunea",
+    "submit": "Căutați consilier"
+  },
+  "Advisor": {
+    "accredited_by": "Acreditat de Certo",
+    "specialization": "Specializare",
+    "sectors": "Sectoare",
+    "contact_advisor": "Contactați",
+    "view_profile": "Vezi profil"
+  }
+}

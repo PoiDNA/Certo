@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundácia Certo Governance Institute",
+    "description": "Nezávislý ratingový orgán hodnotí kvalitu riadenia v public, korporačnom, zdravotníckom a obrannom sektore."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo je prvou svetovou ratingovou agentúrou, ktorej ratingy sú kryptografickými artefaktmi procesu — nie názormi. Každé ratingové rozhodnutie je zakotvené mimo jej vlastnej infraštruktúry, overiteľné offline a verejne auditovateľné.",
+    "hero_cta_primary": "Skontrolujte ratingy",
+    "hero_cta_secondary": "Dozvedieť sa viac",
+    "section_ratings_title": "Najnovšie Ratingy Certo",
+    "section_reports_title": "Analýzy a Správy",
+    "section_about_title": "O Fundácii"
+  },
+  "Ratings": {
+    "title": "Ratingy Certo",
+    "subtitle": "Hodnotenia kvality riadenia inštitúcií",
+    "search_placeholder": "Vyhľadajte inštitúciu...",
+    "filter_sector": "Sektor",
+    "sector_public": "Verejný",
+    "sector_corporate": "Korporačný",
+    "sector_medical": "Zdravotnícky",
+    "sector_defense": "Obranný",
+    "sector_ngo": "Neziskový",
+    "rating_valid_until": "Rating platný do",
+    "rating_issued": "Dátum vydania",
+    "no_results": "Žiadne výsledky sa nenašli",
+    "view_profile": "Zobraziť profil"
+  },
+  "Nav": {
+    "ratings": "Ratingy",
+    "methodology": "Metodológia",
+    "about": "O Fundácii",
+    "login": "Prihlasovanie"
+  },
+  "About": {
+    "title": "O Fundácii Certo Governance Institute",
+    "mission_title": "Misie",
+    "mission_text": "Budovanie kultúry dobrej správy prostredníctvom nezávislého hodnotenia a podpory štandardov riadenia v Poľsku a Európe.",
+    "independence_title": "Nezávislosť",
+    "independence_text": "Fundácia je nezávislá od hodnotených subjektov, orgánov verejnej moci a komerčných záujmov.",
+    "methodology_title": "Metodológia",
+    "methodology_text": "Ratingy Certo sú založené na prísnej metodológii vychádzajúcej z noriem ISO a smerníc EU."
+  }
+}

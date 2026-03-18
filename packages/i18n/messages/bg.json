@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "bg",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Независимо рейтингово агентство, което оценява качеството на управлението на публични, корпоративни и неправителствени институции."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Влезте",
+    "logout": "Излезте",
+    "privacyPolicy": "Политика за приватност",
+    "termsOfUse": "Условия за ползване",
+    "loading": "Зареждане...",
+    "error": "Възникна грешка",
+    "save": "Запазване",
+    "cancel": "Отмяна",
+    "confirm": "Потвърждение",
+    "back": "Назад",
+    "next": "Напред",
+    "close": "Затваряне",
+    "search": "Търсене",
+    "download": "Изтегляне",
+    "verified": "Проверен",
+    "active": "Активен",
+    "inactive": "Неактивен"
+  },
+  "Navigation": {
+    "home": "Начало",
+    "ratings": "Рейтинги",
+    "reports": "Доклади",
+    "analysis": "Анализи",
+    "about": "За Фундацията",
+    "contact": "Контакт",
+    "dashboard": "Табло",
+    "settings": "Настройки"
+  },
+  "Auth": {
+    "login_title": "Влезте",
+    "login_subtitle": "Влезте в своя акаунт",
+    "login_with_google": "Влезте с Google",
+    "email_label": "Имейл адрес",
+    "password_label": "Парола",
+    "forgot_password": "Забравили сте паролата си?",
+    "no_account": "Нямате акаунт?",
+    "register": "Регистрирайте се"
+  },
+  "Errors": {
+    "404_title": "Страницата не е намерена",
+    "404_description": "Страницата, която търсите, не съществува или е преместена.",
+    "500_title": "Грешка на сървъра",
+    "500_description": "Възникна непредвидена грешка. Моля, опитайте отново по-късно.",
+    "unauthorized": "Нямате достъп. Влезте, за да продължите."
+  },
+  "Footer": {
+    "rights": "Всички права запазени",
+    "privacy": "Политика за приватност",
+    "terms": "Условия за ползване",
+    "contact": "Контакт"
+  }
+}

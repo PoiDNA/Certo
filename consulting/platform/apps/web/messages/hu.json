@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Tanácsadó keresése",
+    "description": "Certo akkreditált tanácsadók. Corporate Governance és megfelelőség."
+  },
+  "Home": {
+    "hero_title": "Keress governance szakértőt",
+    "hero_subtitle": "A Certo akkreditált tanácsadói segítik az intézményeket a Certo Rating fenntartásában és javításában.",
+    "hero_cta": "Tanácsadó keresése",
+    "step_1_title": "Add meg a szektoredat",
+    "step_1_text": "Válaszd ki azt a szektort, amelyben az intézményed működik",
+    "step_2_title": "Írd le az igényed",
+    "step_2_text": "Mondd meg nekünk, mire van szükséged",
+    "step_3_title": "Kapj megfelelő tanácsadót",
+    "step_3_text": "A rendszer Certo akkreditált tanácsadót választ ki számodra"
+  },
+  "FindAdvisor": {
+    "title": "Certo tanácsadó keresése",
+    "sector_label": "Az intézményed szektora",
+    "need_label": "Mire van szükséged?",
+    "need_audit": "Governance audit",
+    "need_advisory": "Stratégiai tanácsadás",
+    "need_training": "Képzések és workshopok",
+    "need_rating": "Felkészülés a Certo Rating-ra",
+    "region_label": "Régió",
+    "submit": "Tanácsadó keresése"
+  },
+  "Advisor": {
+    "accredited_by": "Certo által akkreditált",
+    "specialization": "Szakosodás",
+    "sectors": "Szektorok",
+    "contact_advisor": "Lépj kapcsolatba",
+    "view_profile": "Profil megtekintése"
+  }
+}

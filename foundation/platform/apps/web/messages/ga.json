@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Gníomhaireacht rátála neamhspleách a dhéanann measúnú ar chaitheamh an rialachais i ngealadh poiblí, corparáideach, leighis agus dhífhostaithe."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Is é Certo an chéad ghníomhaireacht rátála ar domhan a bhfuil a rátaí ina n-artefachtaí cripteagrafacha an phróisis — ní tuairimí a bhíonn iontu. Tá gach cinneadh rátála fréamhaithe taobh amuigh dá bhonneagar féin, ináthúchláithe as líne agus infheasachta phoiblí.",
+    "hero_cta_primary": "Seiceáil na rátaí",
+    "hero_cta_secondary": "Faigh tuilleadh eolais",
+    "section_ratings_title": "Rátaí Certo is Nua",
+    "section_reports_title": "Anailísí agus Tuarascálacha",
+    "section_about_title": "Faoi an Bhunú"
+  },
+  "Ratings": {
+    "title": "Rátaí Certo",
+    "subtitle": "Measúnuithe ar chaighdeán an rialachais institiúidí",
+    "search_placeholder": "Cuardaigh institiúidí...",
+    "filter_sector": "Gealadh",
+    "sector_public": "Poiblí",
+    "sector_corporate": "Corparáideach",
+    "sector_medical": "Leighis",
+    "sector_defense": "Cosantachta",
+    "sector_ngo": "Neamhrialtasach",
+    "rating_valid_until": "Rátá bailí go dtí",
+    "rating_issued": "Dáta na n-eisiúna",
+    "no_results": "Nár fríthéadh aon torthaí",
+    "view_profile": "Féach ar an phróifíl"
+  },
+  "Nav": {
+    "ratings": "Rátaí",
+    "methodology": "Modheolaíocht",
+    "about": "Faoi an Bhunú",
+    "login": "Logáil isteach"
+  },
+  "About": {
+    "title": "Faoi Bhunú Certo Governance Institute",
+    "mission_title": "Misean",
+    "mission_text": "Cultúr an rialachais mhaith a thógáil trí mheasúnú neamhspleách agus caighdeáin rialachais a chur chun cinn in Éirinn agus san Eoraip.",
+    "independence_title": "Neamhspleáchas",
+    "independence_text": "Tá an Bhunú neamhspleách ó na gníomhaireachtaí á measúnú aici, ó orgáin an bhainisteoireachta phoiblí agus ó leasanna tráchtála.",
+    "methodology_title": "Modheolaíocht",
+    "methodology_text": "Tá rátaí Certo bunaithe ar mhodheolaíocht dhocht bunaithe ar chaighdeáin ISO agus treorach an AE."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "pt",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Órgão classificador independente que avalia a qualidade da governança de instituições públicas, corporativas e sem fins lucrativos."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Faça login",
+    "logout": "Sair",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "close": "Fechar",
+    "search": "Pesquisar",
+    "download": "Baixar",
+    "verified": "Verificado",
+    "active": "Ativo",
+    "inactive": "Inativo"
+  },
+  "Navigation": {
+    "home": "Página Inicial",
+    "ratings": "Classificações",
+    "reports": "Relatórios",
+    "analysis": "Análises",
+    "about": "Sobre a Fundação",
+    "contact": "Contato",
+    "dashboard": "Painel",
+    "settings": "Configurações"
+  },
+  "Auth": {
+    "login_title": "Faça login",
+    "login_subtitle": "Faça login em sua conta",
+    "login_with_google": "Faça login com Google",
+    "email_label": "Endereço de e-mail",
+    "password_label": "Senha",
+    "forgot_password": "Esqueceu sua senha?",
+    "no_account": "Não tem uma conta?",
+    "register": "Registre-se"
+  },
+  "Errors": {
+    "404_title": "Página não encontrada",
+    "404_description": "A página que você procura não existe ou foi movida.",
+    "500_title": "Erro do servidor",
+    "500_description": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
+    "unauthorized": "Acesso negado. Faça login para continuar."
+  },
+  "Footer": {
+    "rights": "Todos os direitos reservados",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
+    "contact": "Contato"
+  }
+}

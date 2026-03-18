@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identiteetin vahvistaminen ja compliance julkisten instituutioiden ja yritysten osalta."
+  },
+  "Dashboard": {
+    "title": "Certo ID -hallintapaneeli",
+    "welcome": "Tervetuloa, {name}",
+    "your_rating": "Sinun Certo Rating",
+    "your_delegates": "Sinun Delegaatit",
+    "your_accords": "Sinun Certo Accord",
+    "recent_activity": "Viimeinen aktiivisuus",
+    "quick_actions": "Pika-toiminnot"
+  },
+  "Profile": {
+    "title": "Profiili",
+    "organization": "Organisaatio",
+    "contact_person": "Yhteyshenkilö",
+    "sector": "Sektori",
+    "edit_profile": "Muokkaa profiilia",
+    "verified_badge": "Vahvistettu taho"
+  },
+  "Delegates": {
+    "title": "Certo Delegaatit",
+    "add_delegate": "Lisää delegaatti",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Tila",
+    "primary_link": "PRIMARY-linkki",
+    "failover_link": "FAILOVER-linkki",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

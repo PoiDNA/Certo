@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Unabhängige Ratingagentur zur Bewertung der Qualität der Unternehmensführung (Governance) im öffentlichen, korporativen, medizinischen und Verteidigungssektor."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo ist die erste Ratingagentur der Welt, deren Ratings kryptografische Artefakte des Prozesses sind – keine Meinungen. Jede Ratingentscheidung ist außerhalb der eigenen Infrastruktur verankert, offline verifizierbar und öffentlich prüfbar.",
+    "hero_cta_primary": "Überprüfen Sie die Ratings",
+    "hero_cta_secondary": "Weitere Informationen",
+    "section_ratings_title": "Neueste Certo Ratings",
+    "section_reports_title": "Analysen und Berichte",
+    "section_about_title": "Über die Stiftung"
+  },
+  "Ratings": {
+    "title": "Certo Ratings",
+    "subtitle": "Bewertungen der Qualität der Unternehmensführung von Institutionen",
+    "search_placeholder": "Institutionen durchsuchen...",
+    "filter_sector": "Sektor",
+    "sector_public": "Öffentlich",
+    "sector_corporate": "Korporativ",
+    "sector_medical": "Medizinisch",
+    "sector_defense": "Verteidigung",
+    "sector_ngo": "Nichtregierungsorganisationen",
+    "rating_valid_until": "Rating gültig bis",
+    "rating_issued": "Ausstellungsdatum",
+    "no_results": "Keine Ergebnisse gefunden",
+    "view_profile": "Profil anzeigen"
+  },
+  "Nav": {
+    "ratings": "Ratings",
+    "methodology": "Methodologie",
+    "about": "Über die Stiftung",
+    "login": "Anmelden"
+  },
+  "About": {
+    "title": "Über das Certo Governance Institute",
+    "mission_title": "Mission",
+    "mission_text": "Aufbau einer Kultur guter Unternehmensführung durch unabhängige Bewertung und Förderung von Governance-Standards in Polen und Europa.",
+    "independence_title": "Unabhängigkeit",
+    "independence_text": "Die Stiftung ist unabhängig von bewerteten Einrichtungen, staatlichen Behörden und kommerziellen Interessen.",
+    "methodology_title": "Methodologie",
+    "methodology_text": "Certo Ratings basieren auf einer strikten Methodik, die sich auf ISO-Standards und EU-Richtlinien stützt."
+  }
+}

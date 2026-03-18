@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "lv",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Neatkarīgs reitinga birojs, kas novērtē publisko, korporatīvo un nevalstisko organizāciju pārvaldības kvalitāti."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Pierakstieties",
+    "logout": "Izrakstieties",
+    "privacyPolicy": "Privātuma politika",
+    "termsOfUse": "Lietošanas noteikumi",
+    "loading": "Ielāde...",
+    "error": "Radās kļūda",
+    "save": "Saglabāt",
+    "cancel": "Atcelt",
+    "confirm": "Apstiprināt",
+    "back": "Atpakaļ",
+    "next": "Tālāk",
+    "close": "Aizvērt",
+    "search": "Meklēt",
+    "download": "Lejupielādēt",
+    "verified": "Verificēts",
+    "active": "Aktīvs",
+    "inactive": "Neaktīvs"
+  },
+  "Navigation": {
+    "home": "Sākumlapa",
+    "ratings": "Reitingi",
+    "reports": "Pārskati",
+    "analysis": "Analīzes",
+    "about": "Par Fondu",
+    "contact": "Kontakti",
+    "dashboard": "Vadības pults",
+    "settings": "Iestatījumi"
+  },
+  "Auth": {
+    "login_title": "Pierakstieties",
+    "login_subtitle": "Pierakstieties savā kontā",
+    "login_with_google": "Pierakstieties, izmantojot Google",
+    "email_label": "E-pasta adrese",
+    "password_label": "Parole",
+    "forgot_password": "Aizmirsi paroli?",
+    "no_account": "Jums nav konta?",
+    "register": "Reģistrējieties"
+  },
+  "Errors": {
+    "404_title": "Lapa netika atrasta",
+    "404_description": "Lapa, kuru meklējat, neeksistē vai tā ir pārvietota.",
+    "500_title": "Servera kļūda",
+    "500_description": "Radās neparedzēta kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.",
+    "unauthorized": "Pieeja liegta. Pierakstieties, lai turpinātu."
+  },
+  "Footer": {
+    "rights": "Visas tiesības aizsargātas",
+    "privacy": "Privātuma politika",
+    "terms": "Lietošanas noteikumi",
+    "contact": "Kontakti"
+  }
+}

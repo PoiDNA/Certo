@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "mt",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Organu ratingoù indipendenti li jevalwa l-kwalità tal-ġubbernanzi ta' istituzzjonijiet pubbliċi, korporattivi u mingħajr skop ta' profit."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Dħul",
+    "logout": "Ħruġ",
+    "privacyPolicy": "Politika tal-Privatezza",
+    "termsOfUse": "Kundizzjonijiet ta' Użu",
+    "loading": "Qed jitħammu...",
+    "error": "Ħoloq żball",
+    "save": "Ħiffex",
+    "cancel": "Neħħi",
+    "confirm": "Ikkonferma",
+    "back": "Lura",
+    "next": "Li jmiss",
+    "close": "Agħlaq",
+    "search": "Fittex",
+    "download": "Niżżel",
+    "verified": "Verifikat",
+    "active": "Attiv",
+    "inactive": "Inattiv"
+  },
+  "Navigation": {
+    "home": "Paġna Prinċipali",
+    "ratings": "Ratings",
+    "reports": "Rapporti",
+    "analysis": "Analiżi",
+    "about": "Dwar il-Fundazzjoni",
+    "contact": "Kontatt",
+    "dashboard": "Panel",
+    "settings": "Settings"
+  },
+  "Auth": {
+    "login_title": "Dħul",
+    "login_subtitle": "Dħul għal kontok",
+    "login_with_google": "Dħul permezz ta' Google",
+    "email_label": "Indirizz tal-email",
+    "password_label": "Passworda",
+    "forgot_password": "Int tinsejt il-passworda?",
+    "no_account": "M'għandek le konto?",
+    "register": "Irreġistra"
+  },
+  "Errors": {
+    "404_title": "Il-paġna ma nstabx",
+    "404_description": "Il-paġna li qed tfittex ma teżistix jew ġiet mtaqla.",
+    "500_title": "Żball tas-server",
+    "500_description": "Ħoloq żball mhux mistenni. Erġa' prova aktar tard.",
+    "unauthorized": "Ebda aċċess. Dħul biex tkompli."
+  },
+  "Footer": {
+    "rights": "Kollha d-drittijiet miċ-ċarr",
+    "privacy": "Politika tal-Privatezza",
+    "terms": "Kundizzjonijiet ta' Użu",
+    "contact": "Kontatt"
+  }
+}

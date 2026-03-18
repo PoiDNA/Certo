@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "de",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Unabhängiges Ratingorgan, das die Qualität der Unternehmensführung öffentlicher, korporativer und gemeinnütziger Institutionen bewertet."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfUse": "Nutzungsbedingungen",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "close": "Schließen",
+    "search": "Suchen",
+    "download": "Herunterladen",
+    "verified": "Verifiziert",
+    "active": "Aktiv",
+    "inactive": "Inaktiv"
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "ratings": "Ratings",
+    "reports": "Berichte",
+    "analysis": "Analysen",
+    "about": "Über die Stiftung",
+    "contact": "Kontakt",
+    "dashboard": "Instrumententafel",
+    "settings": "Einstellungen"
+  },
+  "Auth": {
+    "login_title": "Anmelden",
+    "login_subtitle": "Melden Sie sich bei Ihrem Konto an",
+    "login_with_google": "Mit Google anmelden",
+    "email_label": "E-Mail-Adresse",
+    "password_label": "Passwort",
+    "forgot_password": "Passwort vergessen?",
+    "no_account": "Sie haben kein Konto?",
+    "register": "Registrieren"
+  },
+  "Errors": {
+    "404_title": "Seite nicht gefunden",
+    "404_description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "500_title": "Serverfehler",
+    "500_description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+    "unauthorized": "Zugriff verweigert. Melden Sie sich an, um fortzufahren."
+  },
+  "Footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt"
+  }
+}

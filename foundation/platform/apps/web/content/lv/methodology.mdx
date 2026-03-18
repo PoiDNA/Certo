@@ -1,0 +1,75 @@
+json
+---
+title: Certo Metodoloģija — kā darbojas Rating Certo
+description: Rating Certo ir kriptografiski parakstīts ļaus novērtēšanas procesa artefakts. Katra reitinga lēmuma vērtības ir enkodētas ārpus infrastruktūras un pārbaudāmas bezsaistē.
+---
+
+## Kas ir Rating Certo
+
+Rating Certo nav viedoklis. Tas ir kriptografiski parakstīts procesa artefakts — lēmuma ieraksts, kas eksistē neatkarīgi no tā radītāja infrastruktūras. Katrs reitings ir:
+
+- **Pārbaudāms bezsaistē** — reitinga lēmuma heš ir enkodēts ārējos publisku reģistru
+- **Nemainīgs pēc izdošanas** — neviena no pusēm nevar vienpusēji atcelt vai mainīt izdoto reitingu bez redzama trauma veidošanas
+- **Publiski auditable** — pilnīgs lēmuma ceļš ir pieejams izskatīšanai pilnvarotu subjektu
+
+## Dual-Brain Engine
+
+Novērtēšanas sistēmas pamatā ir Dual-Brain Engine — divu virzienu analīzes arhitektūra, kas apvieno:
+
+**Kvantitatīvo analītiku**, kas ietver:
+- Vadības un pārraudzības orgānu struktūru
+- Orgānu sastāva izmaiņu vēsturi
+- Lēmuma pieņemšanas procesa dokumentāciju
+- Normatīvo atbilstības rādītājus
+
+**Kvalitatīvo analītiku**, kas ietver:
+- Organizācijas kultūras novērtējumu, pamatojoties uz iekšējiem dokumentiem
+- Deklarēto vērtību saskaņotības ar darbībām analīzi
+- Interešu konfliktu pārvaldības procedūru pārbaudi
+- Iekšējās kontroles sistēmas efektivitātes novērtējumu
+
+Abām analīzes nozarēm jāuzrāda neatkarīgi pietiekams pārvaldības kvalitātes līmenis, lai reitings varētu tikt izdots.
+
+## Hard Gates
+
+Hard Gates ir septiņi obligātie nosacījumi, kuru neizpilde automātiski izslēdz subjektu no reitinga procesa neatkarīgi no pārējā novērtējuma rezultātiem:
+
+1. Nav notiekošu kriminālo procesu pret vadības orgānu locekļiem
+2. Regulāras un dokumentētas likumīgo orgānu sēdes
+3. Nav nokavētu maksājumu pret publiskajiem orgāniem (sociālā apdrošināšana, nodokļu dienests, uzņēmumu reģistrs)
+4. Aktuāls un publiski pieejams faktisko īpašnieku reģistrs
+5. Nav interešu konflikta pārraudzības orgāna sastāvā
+6. Dokumentēta nepareizību ziņošanas procedūra
+7. Tiesiskās un organizatoriskās struktūras saskaņotība ar deklarēto pārvaldības modeli
+
+Jebkura Hard Gates neizpilde izraisa reitinga procesa apturēšanu līdz nepareizības novēršanai.
+
+## Compliance Engine
+
+Compliance Engine verificē institūcijas atbilstību spēkā esošajiem sektoru regulējumiem un kopējiem Eiropas Savienības regulējumiem. Dzinējs tiek nepārtraukti atjaunināts saskaņā ar Eiropas Savienības un Polijas tiesību izmaiņām.
+
+Atbilstības novērtējums ietver:
+- Sektora specifiskos regulējumus konkrētajai institūcijai
+- Direktīvas un regulas, kas attiecas uz konkrēto sektoru
+- Nacionālos transponēšanas noteikumus
+- Branšas standartus un labas prakses kodeksus
+
+## Break-Glass Protocol
+
+Break-Glass Protocol ir avārijas piekļuves procedūra reitinga ierakstiem krīzes situācijās — subjekta likvidēšana, konkursā iesniegšana, izmeklēšana no tiesībaizsargsorganiem.
+
+Protokols nosaka:
+- Kuriem ir piekļuve ierakstiem un kādu apstākļu dēļ
+- Kā tiek dokumentēts katrs piekļuves gadījums
+- Kādi ir notifikācijas mehānismi novērtēto subjektu informēšanai
+- Kā tiek nodrošināta datu integritāte informācijas ujauninājuma procesā
+
+## Certo Score un Certo Vector
+
+Katrs izdotais reitings sastāv no diviem elementiem:
+
+**Certo Score** — sintētisks pārvaldības kvalitātes novērtējums, kas izteikts ciparu skalā. Tas ļauj salīdzināt subjektus sektora ietvaros un laikā.
+
+**Certo Vector** — pārvaldības kvalitātes izmaiņu virziens pēdējā novērtējuma perioda laikā. Pieņem piecas vērtības: `++` (nozīmīgs uzlabojums), `+` (uzlabojums), bez izmaiņām, `−` (pasliktināšanās), `−−` (nozīmīga pasliktināšanās).
+
+Score un Vector kombinācija sniedz pilnīgu priekšstatu par pašreizējo pārvaldības stāvokli un tā dinamiku.

@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Oberoende ratingagency som bedömer kvaliteten på styrning inom offentlig, privat, medicinsk och försvarsindustri."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo är världens första ratingagency vars ratings är kryptografiska artefakter från processen — inte åsikter. Varje ratingbeslut är förankrat utanför vår egen infrastruktur, verifierbart offline och offentligt granskbart.",
+    "hero_cta_primary": "Kontrollera ratings",
+    "hero_cta_secondary": "Läs mer",
+    "section_ratings_title": "Senaste Certo Ratings",
+    "section_reports_title": "Analyser och Rapporter",
+    "section_about_title": "Om Stiftelsen"
+  },
+  "Ratings": {
+    "title": "Certo Ratings",
+    "subtitle": "Bedömningar av styrningskvalitet för institutioner",
+    "search_placeholder": "Sök institution...",
+    "filter_sector": "Sektor",
+    "sector_public": "Offentlig",
+    "sector_corporate": "Privat",
+    "sector_medical": "Medicinsk",
+    "sector_defense": "Försvarsindustri",
+    "sector_ngo": "Ideell",
+    "rating_valid_until": "Rating giltigt fram till",
+    "rating_issued": "Utgivningsdatum",
+    "no_results": "Inga resultat hittades",
+    "view_profile": "Se profil"
+  },
+  "Nav": {
+    "ratings": "Ratings",
+    "methodology": "Metodologi",
+    "about": "Om Stiftelsen",
+    "login": "Logga in"
+  },
+  "About": {
+    "title": "Om Certo Governance Institute",
+    "mission_title": "Uppdrag",
+    "mission_text": "Att bygga en kultur för god styrning genom oberoende bedömning och främjande av governancestandarder i Polen och Europa.",
+    "independence_title": "Oberoende",
+    "independence_text": "Stiftelsen är oberoende från bedömda enheter, offentliga myndigheter och kommersiella intressen.",
+    "methodology_title": "Metodologi",
+    "methodology_text": "Certo Ratings baseras på streng metodologi grundad på ISO-standarder och EU:s riktlinjer."
+  }
+}

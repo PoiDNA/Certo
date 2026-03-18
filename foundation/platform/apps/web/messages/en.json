@@ -1,4 +1,32 @@
 {
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "An independent rating agency assessing the quality of governance in the public, corporate, medical, and defense sectors."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo is the world's first rating agency whose ratings are cryptographic artifacts of the process — not opinions. Every rating decision is anchored outside its own infrastructure, verifiable offline, and publicly auditable.",
+    "hero_cta_primary": "View Ratings",
+    "hero_cta_secondary": "Learn More",
+    "section_ratings_title": "Latest Certo Ratings",
+    "section_reports_title": "Analysis and Reports",
+    "section_about_title": "About the Foundation"
+  },
+  "Ratings": {
+    "title": "Certo Ratings",
+    "subtitle": "Governance quality assessments of institutions",
+    "search_placeholder": "Search institutions...",
+    "filter_sector": "Sector",
+    "sector_public": "Public",
+    "sector_corporate": "Corporate",
+    "sector_medical": "Medical",
+    "sector_defense": "Defense",
+    "sector_ngo": "Non-Governmental",
+    "rating_valid_until": "Rating valid until",
+    "rating_issued": "Issue date",
+    "no_results": "No results found",
+    "view_profile": "View profile"
+  },
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Methodology",
@@ -10,8 +38,13 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
-  "Home": {
-    "title": "Certo Governance Institute",
-    "description": "Certo is the world's first rating agency whose ratings are cryptographic artifacts of the process—not opinions. Every rating decision is anchored outside its own infrastructure, verifiable offline, and publicly auditable."
+  "About": {
+    "title": "About Certo Governance Institute",
+    "mission_title": "Mission",
+    "mission_text": "Building a culture of good governance through independent assessment and promotion of governance standards in Poland and Europe.",
+    "independence_title": "Independence",
+    "independence_text": "The Foundation is independent from assessed entities, public authorities, and commercial interests.",
+    "methodology_title": "Methodology",
+    "methodology_text": "Certo Ratings are based on rigorous methodology grounded in ISO standards and EU guidelines."
   }
 }

@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Nájdite Poradcu",
+    "description": "Akreditovaní poradcovia Certo. Firemná správa a súlad."
+  },
+  "Home": {
+    "hero_title": "Nájdite experta na governance",
+    "hero_subtitle": "Akreditovaní poradcovia Certo podporujú inštitúcie pri udržiavaní a zlepšovaní ratingu Certo.",
+    "hero_cta": "Nájdite poradcu",
+    "step_1_title": "Uveďte svoj sektor",
+    "step_1_text": "Vyberte sektor, v ktorom pôsobí vaša inštitúcia",
+    "step_2_title": "Opíšte potrebu",
+    "step_2_text": "Povedzte nám, čo potrebujete",
+    "step_3_title": "Získajte zhodu",
+    "step_3_text": "Systém vám pridelí akreditovaného poradcu Certo"
+  },
+  "FindAdvisor": {
+    "title": "Nájdite poradcu Certo",
+    "sector_label": "Sektor vašej inštitúcie",
+    "need_label": "Čo potrebujete?",
+    "need_audit": "Audit správy",
+    "need_advisory": "Strategické poradenstvo",
+    "need_training": "Školenia a workshopy",
+    "need_rating": "Príprava na rating",
+    "region_label": "Región",
+    "submit": "Hľadať poradcu"
+  },
+  "Advisor": {
+    "accredited_by": "Akreditovaný spoločnosťou Certo",
+    "specialization": "Špecializácia",
+    "sectors": "Sektory",
+    "contact_advisor": "Kontaktujte",
+    "view_profile": "Zobraziť profil"
+  }
+}

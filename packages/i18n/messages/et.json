@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "et",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Sõltumatu reitinguagentuur, mis hindab avalik-õiguslike, ettevõtete ja mittetulunduslike asutuste juhtimise kvaliteeti."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Logi sisse",
+    "logout": "Logi välja",
+    "privacyPolicy": "Privaatsuspoliitika",
+    "termsOfUse": "Kasutamistingimused",
+    "loading": "Laadimise käigus...",
+    "error": "Tekkis viga",
+    "save": "Salvesta",
+    "cancel": "Tühista",
+    "confirm": "Kinnita",
+    "back": "Tagasi",
+    "next": "Edasi",
+    "close": "Sulge",
+    "search": "Otsi",
+    "download": "Laadi alla",
+    "verified": "Kontrollitud",
+    "active": "Aktiivne",
+    "inactive": "Mitteaktiivne"
+  },
+  "Navigation": {
+    "home": "Avaleht",
+    "ratings": "Reitingud",
+    "reports": "Aruanded",
+    "analysis": "Analüüsid",
+    "about": "Meie kohta",
+    "contact": "Kontakt",
+    "dashboard": "Juhtpaneel",
+    "settings": "Seadistused"
+  },
+  "Auth": {
+    "login_title": "Logi sisse",
+    "login_subtitle": "Logi sisse oma kontole",
+    "login_with_google": "Logi sisse Google'iga",
+    "email_label": "E-posti aadress",
+    "password_label": "Parool",
+    "forgot_password": "Unustasid parooli?",
+    "no_account": "Sinul puudub konto?",
+    "register": "Registreeri"
+  },
+  "Errors": {
+    "404_title": "Lehekülge ei leitud",
+    "404_description": "Otsitud lehekülg ei ole olemas või on teisaldatud.",
+    "500_title": "Serveri viga",
+    "500_description": "Tekkis ootamatu viga. Palun proovi hiljem uuesti.",
+    "unauthorized": "Juurdepääs keelatud. Jätka sisselogimisega."
+  },
+  "Footer": {
+    "rights": "Kõik õigused reserveeritud",
+    "privacy": "Privaatsuspoliitika",
+    "terms": "Kasutamistingimused",
+    "contact": "Kontakt"
+  }
+}

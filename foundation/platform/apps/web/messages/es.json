@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundación Certo Governance Institute",
+    "description": "Agencia de calificación independiente que evalúa la calidad de la gobernanza en los sectores público, corporativo, médico y de defensa."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo es la primera agencia de calificación del mundo cuyos ratings son artefactos criptográficos del proceso, no opiniones. Cada decisión de calificación está anclada fuera de su propia infraestructura, es verificable sin conexión y públicamente auditable.",
+    "hero_cta_primary": "Consultar calificaciones",
+    "hero_cta_secondary": "Más información",
+    "section_ratings_title": "Últimas Calificaciones Certo",
+    "section_reports_title": "Análisis e Informes",
+    "section_about_title": "Acerca de la Fundación"
+  },
+  "Ratings": {
+    "title": "Calificaciones Certo",
+    "subtitle": "Evaluaciones de la calidad de la gobernanza institucional",
+    "search_placeholder": "Buscar institución...",
+    "filter_sector": "Sector",
+    "sector_public": "Público",
+    "sector_corporate": "Corporativo",
+    "sector_medical": "Médico",
+    "sector_defense": "Defensa",
+    "sector_ngo": "Sociedad Civil",
+    "rating_valid_until": "Calificación válida hasta",
+    "rating_issued": "Fecha de emisión",
+    "no_results": "No se encontraron resultados",
+    "view_profile": "Ver perfil"
+  },
+  "Nav": {
+    "ratings": "Calificaciones",
+    "methodology": "Metodología",
+    "about": "Acerca de la Fundación",
+    "login": "Iniciar sesión"
+  },
+  "About": {
+    "title": "Acerca de la Fundación Certo Governance Institute",
+    "mission_title": "Misión",
+    "mission_text": "Construir una cultura de buena gobernanza mediante la evaluación independiente y la promoción de estándares de governance en Polonia y Europa.",
+    "independence_title": "Independencia",
+    "independence_text": "La Fundación es independiente de los sujetos evaluados, de los órganos de poder público y de intereses comerciales.",
+    "methodology_title": "Metodología",
+    "methodology_text": "Las calificaciones Certo se basan en una metodología rigurosa fundamentada en estándares ISO y directrices de la UE."
+  }
+}

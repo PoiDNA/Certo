@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "ga",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Orgán rátála neamhspleách ag measúnú ar chaighdeán an rialachais in institiúidí poiblí, corparáideacha agus neamhbhrabúis."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Logáil isteach",
+    "logout": "Logáil amach",
+    "privacyPolicy": "Polasaí Príobháideachta",
+    "termsOfUse": "Téarmaí Úsáide",
+    "loading": "Á Lódáil...",
+    "error": "Tharla earráid",
+    "save": "Sábháil",
+    "cancel": "Cealaigh",
+    "confirm": "Deimhnigh",
+    "back": "Ar ais",
+    "next": "Ar Aghaidh",
+    "close": "Dún",
+    "search": "Cuardaigh",
+    "download": "Íoslódáil",
+    "verified": "Fíoraithe",
+    "active": "Gníomhach",
+    "inactive": "Neamhghníomhach"
+  },
+  "Navigation": {
+    "home": "Leathanach Baile",
+    "ratings": "Rátálacha",
+    "reports": "Tuarascálacha",
+    "analysis": "Anailísí",
+    "about": "Maidir leis an bhFondúchán",
+    "contact": "Teagmháil",
+    "dashboard": "Painéal",
+    "settings": "Socruithe"
+  },
+  "Auth": {
+    "login_title": "Logáil isteach",
+    "login_subtitle": "Logáil isteach i do chuntas",
+    "login_with_google": "Logáil isteach trí Google",
+    "email_label": "Seoladh Ríomhphoist",
+    "password_label": "Focal Faire",
+    "forgot_password": "Ndearna tú dearmad ar do fhocal faire?",
+    "no_account": "Níl cuntas agat?",
+    "register": "Clárú"
+  },
+  "Errors": {
+    "404_title": "Níor aimsíodh an leathanach",
+    "404_description": "Níl an leathanach atá á lorg agat ann nó tugadh ar a bhealach.",
+    "500_title": "Earráid Freastalaí",
+    "500_description": "Tharla earráid gan súil aici. Déan iarracht arís níos déanaí.",
+    "unauthorized": "Níl rochtain agat. Logáil isteach chun leanúint ar aghaidh."
+  },
+  "Footer": {
+    "rights": "Gach ceart ar cosnamh",
+    "privacy": "Polasaí Príobháideachta",
+    "terms": "Téarmaí Úsáide",
+    "contact": "Teagmháil"
+  }
+}

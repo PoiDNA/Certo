@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Poiščite Svetovalca",
+    "description": "Akreditirani svetovalci Certo. Urejenost podjetja in skladnost."
+  },
+  "Home": {
+    "hero_title": "Poiščite strokovnjaka za governance",
+    "hero_subtitle": "Akreditirani svetovalci Certo podpirajo institucije pri vzdrževanju in izboljšanju ocene Certo Rating.",
+    "hero_cta": "Poiščite svetovalca",
+    "step_1_title": "Navedite svoj sektor",
+    "step_1_text": "Izberite sektor, v katerem deluje vaša institucija",
+    "step_2_title": "Opišite potrebo",
+    "step_2_text": "Povejte nam, kaj potrebujete",
+    "step_3_title": "Prejmite ujemanje",
+    "step_3_text": "Sistem bo izbral akreditiranega svetovalca Certo"
+  },
+  "FindAdvisor": {
+    "title": "Poiščite svetovalca Certo",
+    "sector_label": "Sektor vaše institucije",
+    "need_label": "Kaj potrebujete?",
+    "need_audit": "Revizija urejenosti podjetja",
+    "need_advisory": "Strateško svetovanje",
+    "need_training": "Izobraževanja in delavnice",
+    "need_rating": "Priprava na Certo Rating",
+    "region_label": "Regija",
+    "submit": "Poiščite svetovalca"
+  },
+  "Advisor": {
+    "accredited_by": "Akreditan pri Certo",
+    "specialization": "Specializacija",
+    "sectors": "Sektorji",
+    "contact_advisor": "Stopite v stik",
+    "view_profile": "Oglejte si profil"
+  }
+}
