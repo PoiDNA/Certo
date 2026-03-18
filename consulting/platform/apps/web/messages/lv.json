@@ -1,35 +1,47 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Atrodiet konsultantu",
-    "description": "Sertificēti Certo konsultanti. Pārvaldības ņemšana un atbilstība."
+    "title": "Certo Consulting — Atrodiet Konsultantu",
+    "description": "Sertificēti Certo konsultanti. Pārvaldības sistēma un atbilstība."
+  },
+  "Nav": {
+    "advisors": "Konsultanti",
+    "expertise": "Kompetence",
+    "login": "Pieslēgšanās"
+  },
+  "Footer": {
+    "description": "Eksperta konsultācijas pārvaldības sistēmas, atbilstības un drošības jomā vadošo tirgus dalībnieku vadībai.",
+    "ecosystem": "Certo Ekosistēma",
+    "accreditation": "Visi konsultanti ir sertificēti ar Certo Governance Institute Fondu",
+    "privacy": "Privātuma politika",
+    "terms": "Lietošanas noteikumi"
   },
   "Home": {
     "hero_title": "Atrodiet governance ekspertu",
-    "hero_subtitle": "Sertificēti Certo konsultanti palīdz institūcijām uzturēt un paaugstināt Certo reitingu.",
+    "hero_subtitle": "Sertificēti Certo konsultanti palīdz institūcijām uzturēt un paaugstināt savu Certo reitingu.",
     "hero_cta": "Atrodiet konsultantu",
     "step_1_title": "Norādiet savu nozari",
     "step_1_text": "Izvēlieties nozari, kurā darbojas jūsu institūcija",
     "step_2_title": "Aprakstiet savu vajadzību",
     "step_2_text": "Pastāstiet mums, ko jums nepieciešams",
-    "step_3_title": "Saņemiet atbilstību",
-    "step_3_text": "Sistēma atlasīs sertificētu Certo konsultantu"
+    "step_3_title": "Saņemiet atbilstošu atbilstību",
+    "step_3_text": "Sistēma izvēlēsies sertificētu Certo konsultantu"
   },
   "FindAdvisor": {
     "title": "Atrodiet Certo konsultantu",
     "sector_label": "Jūsu institūcijas nozare",
     "need_label": "Ko jums nepieciešams?",
     "need_audit": "Pārvaldības audits",
-    "need_advisory": "Stratēģisks konsultējums",
-    "need_training": "Apmācības un semināri",
-    "need_rating": "Sagatavošanās reitingam",
+    "need_advisory": "Stratēģiskās konsultācijas",
+    "need_training": "Apmācības un darbnīcas",
+    "need_rating": "Gatavošanās reitingam",
     "region_label": "Reģions",
     "submit": "Meklēt konsultantu"
   },
   "Advisor": {
-    "accredited_by": "Sertificēts Certo",
+    "accredited_by": "Sertificēts ar Certo",
     "specialization": "Specializācija",
     "sectors": "Nozares",
-    "contact_advisor": "Sazinies",
+    "contact_advisor": "Sazinieties",
     "view_profile": "Skatīt profilu"
   }
 }

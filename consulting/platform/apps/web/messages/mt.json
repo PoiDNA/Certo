@@ -1,35 +1,47 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Sib Konsulenti",
-    "description": "Konsulenti akkreditati Certo. Governance u dritja u kompjuter."
+    "description": "Konsulenti akkreditati ta' Certo. Corporate governance u konformità."
+  },
+  "Nav": {
+    "advisors": "Konsulenti",
+    "expertise": "Esperjenza",
+    "login": "Dħul"
+  },
+  "Footer": {
+    "description": "Konsultazzjoni esperti fil-qasam tal-governance korporattiv, konformità u sigurtà għal lideriet tas-suq.",
+    "ecosystem": "Ekosistema Certo",
+    "accreditation": "Il-konsulenti kollha huma akkreditati mill-Fundazzjoni Certo Governance Institute",
+    "privacy": "Politika tal-Privatezza",
+    "terms": "Termini u Kundizzjonijiet"
   },
   "Home": {
-    "hero_title": "Sib esperta fil-governance",
-    "hero_subtitle": "Il-konsulenti akkreditati Certo jgħinnu l-istituzzjonijiet biex jippreservaw u jirfgħu r-rating Certo tagħhom.",
-    "hero_cta": "Sib konsulenti",
-    "step_1_title": "Ipprovdi s-settur tiegħek",
+    "hero_title": "Sib espert fil-governance",
+    "hero_subtitle": "Konsulenti akkreditati ta' Certo jassistu l-istituzzjonijiet biex iżommu u jippruvaw jirfgħu r-rating Certo.",
+    "hero_cta": "Sib konsulent",
+    "step_1_title": "Stqarr is-settur tiegħek",
     "step_1_text": "Agħżel is-settur li fih taħdem l-istituzzjoni tiegħek",
     "step_2_title": "Iddeskrivi l-ħtieġa",
-    "step_2_text": "Qolna x'għandek bżonn",
-    "step_3_title": "Ikseb tqabbil",
-    "step_3_text": "Is-sistema tagħbor konsulenti akkreditat Certo għalik"
+    "step_2_text": "Għidilna xi ħtieġa għandek",
+    "step_3_title": "Rċievi l-qbil",
+    "step_3_text": "Is-sistema se tagħżel konsulent akkreditat ta' Certo"
   },
   "FindAdvisor": {
-    "title": "Sib konsulenti Certo",
+    "title": "Sib Konsulent Certo",
     "sector_label": "Is-settur tal-istituzzjoni tiegħek",
-    "need_label": "X'għandek bżonn?",
+    "need_label": "Xi ħtieġa għandek?",
     "need_audit": "Awdit tal-governance",
-    "need_advisory": "Konsulenza strateġika",
+    "need_advisory": "Konsultazzjoni strateġika",
     "need_training": "Taħriġ u workshops",
-    "need_rating": "Tħejjija għar-rating",
+    "need_rating": "Preparazzjoni għal rating",
     "region_label": "Reġjun",
-    "submit": "Fittex konsulenti"
+    "submit": "Fittex konsulent"
   },
   "Advisor": {
     "accredited_by": "Akkreditat minn Certo",
     "specialization": "Speċjalizzazzjoni",
     "sectors": "Setturi",
-    "contact_advisor": "Ikkontatja",
-    "view_profile": "Ara profil"
+    "contact_advisor": "Ikkuntattja",
+    "view_profile": "Ara l-profil"
   }
 }

@@ -1,30 +1,41 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Preverjanje identitete in skladnost za javne institucije in korporacije."
+    "description": "Preverjanje istovetnosti in skladnost za javne institucije in korporacije."
+  },
+  "Nav": {
+    "solutions": "Rešitve",
+    "technology": "Tehnologija",
+    "foundation": "Fundacija Certo",
+    "login": "Prijava"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Politika Zasebnosti",
+    "terms": "Pogoji Storitve"
   },
   "Dashboard": {
-    "title": "Nadzorna plošča Certo ID",
+    "title": "Nadzorna Plošča Certo ID",
     "welcome": "Dobrodošli, {name}",
-    "your_rating": "Vaša Certo Ocena",
+    "your_rating": "Vaš Rating Certo",
     "your_delegates": "Vaši Delegati",
     "your_accords": "Vaši Certo Accord",
-    "recent_activity": "Nedavna dejavnost",
-    "quick_actions": "Hitre akcije"
+    "recent_activity": "Nedavna Dejavnost",
+    "quick_actions": "Hitri Ukrepi"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizacija",
-    "contact_person": "Stična oseba",
+    "contact_person": "Oseba za Stike",
     "sector": "Sektor",
-    "edit_profile": "Uredi profil",
-    "verified_badge": "Preverjena oseba/subjekt"
+    "edit_profile": "Uredi Profil",
+    "verified_badge": "Preverjeni Subjekt"
   },
   "Delegates": {
     "title": "Delegati Certo",
-    "add_delegate": "Dodaj delegata",
+    "add_delegate": "Dodaj Delegata",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Stanje",
+    "delegate_status": "Status",
     "primary_link": "Povezava PRIMARY",
     "failover_link": "Povezava FAILOVER",
     "plan_basic": "Basic",

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organo di rating indipendente che valuta la qualità della gestione delle istituzioni pubbliche, aziendali e non profit."
+    "description": "Organo di rating indipendente che valuta la qualità della governance delle istituzioni pubbliche, aziendali e non profit."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,8 +16,8 @@
     "delegate": "Certo Delegate",
     "login": "Accedi",
     "logout": "Esci",
-    "privacyPolicy": "Politica sulla privacy",
-    "termsOfUse": "Condizioni d'uso",
+    "privacyPolicy": "Informativa sulla privacy",
+    "termsOfUse": "Condizioni di utilizzo",
     "loading": "Caricamento in corso...",
     "error": "Si è verificato un errore",
     "save": "Salva",
@@ -37,32 +37,32 @@
     "ratings": "Rating",
     "reports": "Rapporti",
     "analysis": "Analisi",
-    "about": "Chi siamo",
+    "about": "Sulla Fondazione",
     "contact": "Contatti",
-    "dashboard": "Pannello",
+    "dashboard": "Pannello di controllo",
     "settings": "Impostazioni"
   },
   "Auth": {
     "login_title": "Accedi",
     "login_subtitle": "Accedi al tuo account",
     "login_with_google": "Accedi con Google",
-    "email_label": "Indirizzo e-mail",
+    "email_label": "Indirizzo email",
     "password_label": "Password",
-    "forgot_password": "Hai dimenticato la password?",
+    "forgot_password": "Non ricordi la password?",
     "no_account": "Non hai un account?",
     "register": "Registrati"
   },
   "Errors": {
     "404_title": "Pagina non trovata",
-    "404_description": "La pagina che cerchi non esiste o è stata spostata.",
+    "404_description": "La pagina che stai cercando non esiste o è stata spostata.",
     "500_title": "Errore del server",
     "500_description": "Si è verificato un errore imprevisto. Riprova più tardi.",
     "unauthorized": "Accesso negato. Accedi per continuare."
   },
   "Footer": {
     "rights": "Tutti i diritti riservati",
-    "privacy": "Politica sulla privacy",
-    "terms": "Condizioni d'uso",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Condizioni di utilizzo",
     "contact": "Contatti"
   }
 }

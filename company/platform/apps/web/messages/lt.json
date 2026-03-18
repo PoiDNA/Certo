@@ -1,16 +1,27 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Tapatybės tikrinimas ir atitiktis teisinėms nuostatoms viešosioms ir korporacinėms institucijoms."
+    "description": "Tapatybės patvirtinimas ir compliance viešosioms institucijoms ir korporacijoms."
+  },
+  "Nav": {
+    "solutions": "Sprendimai",
+    "technology": "Technologija",
+    "foundation": "Certo Governance Institute",
+    "login": "Prisijungti"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Privatumo politika",
+    "terms": "Paslaugų sąlygos"
   },
   "Dashboard": {
-    "title": "Certo ID skydelis",
+    "title": "Certo ID prietaisų sritis",
     "welcome": "Sveiki, {name}",
     "your_rating": "Jūsų Certo Rating",
     "your_delegates": "Jūsų delegatai",
     "your_accords": "Jūsų Certo Accord",
-    "recent_activity": "Pastaroji veikla",
-    "quick_actions": "Greitos operacijos"
+    "recent_activity": "Neseniausia veikla",
+    "quick_actions": "Greiti veiksmai"
   },
   "Profile": {
     "title": "Profilis",
@@ -18,7 +29,7 @@
     "contact_person": "Kontaktinis asmuo",
     "sector": "Sektorius",
     "edit_profile": "Redaguoti profilį",
-    "verified_badge": "Patikrintas subjektas"
+    "verified_badge": "Patvirtintas subjektas"
   },
   "Delegates": {
     "title": "Certo delegatai",

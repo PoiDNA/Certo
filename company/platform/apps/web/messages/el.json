@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Επαλήθευση ταυτότητας και compliance για δημόσιες και εταιρικές θεσμικές δομές."
+  },
+  "Nav": {
+    "solutions": "Λύσεις",
+    "technology": "Τεχνολογία",
+    "foundation": "Certo Governance Institute",
+    "login": "Σύνδεσης"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Πολιτική Απορρήτου",
+    "terms": "Όροι Υπηρεσίας"
+  },
+  "Dashboard": {
+    "title": "Πίνακας Ελέγχου Certo ID",
+    "welcome": "Καλώς ήρθες, {name}",
+    "your_rating": "Η Αξιολόγησή σου Certo",
+    "your_delegates": "Οι Αντιπρόσωποί σου",
+    "your_accords": "Τα Certo Accord σου",
+    "recent_activity": "Πρόσφατη δραστηριότητα",
+    "quick_actions": "Γρήγορες ενέργειες"
+  },
+  "Profile": {
+    "title": "Προφίλ",
+    "organization": "Οργανισμός",
+    "contact_person": "Πρόσωπο Επικοινωνίας",
+    "sector": "Τομέας",
+    "edit_profile": "Επεξεργασία προφίλ",
+    "verified_badge": "Επαληθευμένος Φορέας"
+  },
+  "Delegates": {
+    "title": "Delegate ID",
+    "add_delegate": "Προσθήκη αντιπροσώπου",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Κατάσταση",
+    "primary_link": "Σύνδεσμος PRIMARY",
+    "failover_link": "Σύνδεσμος FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

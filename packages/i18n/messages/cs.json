@@ -8,23 +8,23 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných, korporativních a neziskových institucí."
+    "description": "Nezávislý orgán pro hodnocení kvality řízení veřejných, korporativních a neziskových institucí."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Přihlášení",
-    "logout": "Odhlášení",
+    "login": "Přihlásit se",
+    "logout": "Odhlásit se",
     "privacyPolicy": "Zásady ochrany osobních údajů",
-    "termsOfUse": "Podmínky použití",
+    "termsOfUse": "Podmínky používání",
     "loading": "Načítání...",
     "error": "Došlo k chybě",
     "save": "Uložit",
     "cancel": "Zrušit",
     "confirm": "Potvrdit",
     "back": "Zpět",
-    "next": "Dál",
+    "next": "Dalej",
     "close": "Zavřít",
     "search": "Hledat",
     "download": "Stáhnout",
@@ -34,35 +34,35 @@
   },
   "Navigation": {
     "home": "Domovská stránka",
-    "ratings": "Ratingy",
+    "ratings": "Hodnocení",
     "reports": "Zprávy",
     "analysis": "Analýzy",
-    "about": "O Nadaci",
+    "about": "O Fundaci",
     "contact": "Kontakt",
-    "dashboard": "Přehled",
+    "dashboard": "Přístrojová deska",
     "settings": "Nastavení"
   },
   "Auth": {
-    "login_title": "Přihlášení",
+    "login_title": "Přihlásit se",
     "login_subtitle": "Přihlaste se ke svému účtu",
-    "login_with_google": "Přihlášení pomocí Google",
+    "login_with_google": "Přihlásit se přes Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
     "no_account": "Nemáte účet?",
-    "register": "Registrace"
+    "register": "Registrovat se"
   },
   "Errors": {
     "404_title": "Stránka nenalezena",
     "404_description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
     "500_title": "Chyba serveru",
-    "500_description": "Došlo k neočekávané chybě. Zkuste prosím později.",
-    "unauthorized": "Přístup odepřen. Přihlaste se, abyste mohli pokračovat."
+    "500_description": "Došlo k neočekávané chybě. Zkuste to později.",
+    "unauthorized": "Přístup odepřen. Přihlaste se pro pokračování."
   },
   "Footer": {
     "rights": "Všechna práva vyhrazena",
     "privacy": "Zásady ochrany osobních údajů",
-    "terms": "Podmínky použití",
+    "terms": "Podmínky používání",
     "contact": "Kontakt"
   }
 }

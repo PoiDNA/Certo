@@ -1,27 +1,38 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteedi verifitseerimine ja vastavushoidmine avaliku sektori ja korporatsioonide jaoks."
+    "description": "Identiteedi tõendamine ja nõuetele vastavuse kontroll avaliku sektori ja korporatsiooni institutsioonidele."
+  },
+  "Nav": {
+    "solutions": "Lahendused",
+    "technology": "Tehnoloogia",
+    "foundation": "Certo Fundatsioon",
+    "login": "Logi sisse"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Privaatsuspoliitika",
+    "terms": "Teenuse tingimused"
   },
   "Dashboard": {
     "title": "Certo ID juhtpaneel",
-    "welcome": "Tere, {name}",
-    "your_rating": "Sinu Certo Rating",
-    "your_delegates": "Sinu Delegaadid",
-    "your_accords": "Sinu Certo Accord",
+    "welcome": "Tere tulemast, {name}",
+    "your_rating": "Teie Certo Rating",
+    "your_delegates": "Teie Delegaadid",
+    "your_accords": "Teie Certo Accord",
     "recent_activity": "Viimane tegevus",
-    "quick_actions": "Kiired toimingud"
+    "quick_actions": "Kiirtoimed"
   },
   "Profile": {
     "title": "Profiil",
     "organization": "Organisatsioon",
     "contact_person": "Kontaktisik",
     "sector": "Sektor",
-    "edit_profile": "Muuda profiili",
-    "verified_badge": "Verifieeritud subjekt"
+    "edit_profile": "Redigeeri profiili",
+    "verified_badge": "Tõendatud üksus"
   },
   "Delegates": {
-    "title": "Certo Delegaadid",
+    "title": "Certo delegaadid",
     "add_delegate": "Lisa delegaat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Olek",

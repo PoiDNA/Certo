@@ -1,14 +1,25 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteitsverificatie en compliance voor openbare instellingen en ondernemingen."
+    "description": "Identiteitsverificatie en compliance voor publieke instellingen en bedrijven."
+  },
+  "Nav": {
+    "solutions": "Oplossingen",
+    "technology": "Technologie",
+    "foundation": "Certo Governance Institute",
+    "login": "Inloggen"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden"
   },
   "Dashboard": {
-    "title": "Certo ID Dashboard",
+    "title": "Certo ID-dashboard",
     "welcome": "Welkom, {name}",
     "your_rating": "Uw Certo Rating",
-    "your_delegates": "Uw Certo Delegates",
-    "your_accords": "Uw Certo Accords",
+    "your_delegates": "Uw Delegate ID's",
+    "your_accords": "Uw Certo Accord",
     "recent_activity": "Recente activiteit",
     "quick_actions": "Snelle acties"
   },
@@ -18,15 +29,15 @@
     "contact_person": "Contactpersoon",
     "sector": "Sector",
     "edit_profile": "Profiel bewerken",
-    "verified_badge": "Geverifieerde entiteit"
+    "verified_badge": "Geverifieerde organisatie"
   },
   "Delegates": {
-    "title": "Certo Delegates",
+    "title": "Certo Delegate",
     "add_delegate": "Delegate toevoegen",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "PRIMARY-koppeling",
+    "failover_link": "FAILOVER-koppeling",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

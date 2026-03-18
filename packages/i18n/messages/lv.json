@@ -8,17 +8,17 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neatkarīgs reitinga orgāns, kas novērtē publisko, korporatīvo un nevalstisko organismu pārvaldības kvalitāti."
+    "description": "Neatkarīgs reitinga orgāns, kas novērtē publisko, korporatīvo un nevalstisko iestāžu pārvaldības kvalitāti."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Pierakstieties",
-    "logout": "Izrakstieties",
-    "privacyPolicy": "Privātuma politika",
+    "login": "Pierakstīties",
+    "logout": "Izrakstīties",
+    "privacyPolicy": "Konfidencialitātes politika",
     "termsOfUse": "Lietošanas noteikumi",
-    "loading": "Ielāde...",
+    "loading": "Ielādējas...",
     "error": "Radās kļūda",
     "save": "Saglabāt",
     "cancel": "Atcelt",
@@ -35,17 +35,17 @@
   "Navigation": {
     "home": "Sākumlapa",
     "ratings": "Reitingi",
-    "reports": "Atskaites",
+    "reports": "Pārskati",
     "analysis": "Analīzes",
     "about": "Par Fondu",
     "contact": "Kontakti",
-    "dashboard": "Vadības pults",
+    "dashboard": "Panelis",
     "settings": "Iestatījumi"
   },
   "Auth": {
-    "login_title": "Pierakstieties",
+    "login_title": "Pierakstīties",
     "login_subtitle": "Pierakstieties savā kontā",
-    "login_with_google": "Pierakstieties ar Google",
+    "login_with_google": "Pierakstīties caur Google",
     "email_label": "E-pasta adrese",
     "password_label": "Parole",
     "forgot_password": "Aizmirsi paroli?",
@@ -54,14 +54,14 @@
   },
   "Errors": {
     "404_title": "Lapa netika atrasta",
-    "404_description": "Lapa, ko meklējat, neeksistē vai tā ir pārvietota.",
+    "404_description": "Lapa, kuru meklējat, neeksistē vai ir pārvietota.",
     "500_title": "Servera kļūda",
-    "500_description": "Radās negaidīta kļūda. Vēlāk mēģiniet vēlreiz.",
-    "unauthorized": "Pieeja liegta. Pierakstieties, lai turpinātu."
+    "500_description": "Radās neparedzēta kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.",
+    "unauthorized": "Nav piekļuves. Pierakstieties, lai turpinātu."
   },
   "Footer": {
     "rights": "Visas tiesības paturētas",
-    "privacy": "Privātuma politika",
+    "privacy": "Konfidencialitātes politika",
     "terms": "Lietošanas noteikumi",
     "contact": "Kontakti"
   }

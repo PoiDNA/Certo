@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrningen av offentliga, privata och ideella organisationer."
+    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrningen av offentliga, privata och ideella institutioner."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,7 +16,7 @@
     "delegate": "Certo Delegate",
     "login": "Logga in",
     "logout": "Logga ut",
-    "privacyPolicy": "Integritetspolicy",
+    "privacyPolicy": "Sekretesspolicy",
     "termsOfUse": "Användarvillkor",
     "loading": "Läser in...",
     "error": "Ett fel uppstod",
@@ -27,7 +27,7 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ner",
+    "download": "Ladda ned",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
@@ -39,7 +39,7 @@
     "analysis": "Analyser",
     "about": "Om Stiftelsen",
     "contact": "Kontakt",
-    "dashboard": "Instrumentpanel",
+    "dashboard": "Kontrollpanel",
     "settings": "Inställningar"
   },
   "Auth": {
@@ -48,7 +48,7 @@
     "login_with_google": "Logga in via Google",
     "email_label": "E-postadress",
     "password_label": "Lösenord",
-    "forgot_password": "Glömt lösenordet?",
+    "forgot_password": "Glömt ditt lösenord?",
     "no_account": "Har du inget konto?",
     "register": "Registrera dig"
   },
@@ -57,11 +57,11 @@
     "404_description": "Sidan du söker finns inte eller har flyttats.",
     "500_title": "Serverfel",
     "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
-    "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."
+    "unauthorized": "Ingen åtkomst. Logga in för att fortsätta."
   },
   "Footer": {
     "rights": "Alla rättigheter förbehållna",
-    "privacy": "Integritetspolicy",
+    "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   }

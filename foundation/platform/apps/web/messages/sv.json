@@ -1,30 +1,30 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som utvärderar kvaliteten på styrning inom offentlig, företags-, medicin- och försvarssektorn."
+    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrning inom offentlig, företags-, medicin- och försvarssektorn."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo är världens första ratingbyrå vars ratings är kryptografiska artefakter från processen — inte åsikter. Varje ratingbeslut är förankrat utanför egen infrastruktur, verifierbar offline och offentligt granskning.",
+    "description": "Certo är världens första ratingbyrå vars ratings är kryptografiska artefakter från processen — inte åsikter. Varje ratingbeslut är förankrat utanför egen infrastruktur, verifierbar offline och offentligt granskningsbar.",
     "hero_cta_primary": "Kontrollera ratings",
     "hero_cta_secondary": "Läs mer",
-    "section_ratings_title": "Senaste Certo-ratings",
-    "section_reports_title": "Analyser och rapporter",
+    "section_ratings_title": "Senaste Certo Ratings",
+    "section_reports_title": "Analyser och Rapporter",
     "section_about_title": "Om Stiftelsen"
   },
   "Ratings": {
-    "title": "Certo-ratings",
-    "subtitle": "Utvärderingar av styrningskvalitet för institutioner",
-    "search_placeholder": "Sök efter institution...",
+    "title": "Certo Ratings",
+    "subtitle": "Bedömningar av styrningskvaliteten för institutioner",
+    "search_placeholder": "Sök institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
     "sector_corporate": "Företag",
     "sector_medical": "Medicin",
     "sector_defense": "Försvar",
     "sector_ngo": "Ideell",
-    "rating_valid_until": "Rating giltig till",
-    "rating_issued": "Utfärdandedatum",
-    "no_results": "Inga resultat hittades",
+    "rating_valid_until": "Rating giltigt till",
+    "rating_issued": "Utgivningsdatum",
+    "no_results": "Inga resultat funna",
     "view_profile": "Visa profil"
   },
   "Nav": {
@@ -41,10 +41,10 @@
   "About": {
     "title": "Om Certo Governance Institute",
     "mission_title": "Uppdrag",
-    "mission_text": "Bygga en kultur för god styrning genom oberoende utvärdering och främjande av styrningsstandarder i Polen och Europa.",
+    "mission_text": "Bygga en kultur för god styrning genom oberoende bedömning och främjande av styrningsstandarder i Polen och Europa.",
     "independence_title": "Oberoende",
-    "independence_text": "Stiftelsen är oberoende från de enheter som utvärderas, offentliga myndigheter och kommersiella intressen.",
+    "independence_text": "Stiftelsen är oberoende från de bedömda enheterna, offentliga myndigheter och kommersiella intressen.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo-ratings baseras på strikt metodologi grundad på ISO-standarder och EU-riktlinjer."
+    "methodology_text": "Certo Ratings baseras på en rigorös metodologi baserad på ISO-standarder och EU-riktlinjer."
   }
 }

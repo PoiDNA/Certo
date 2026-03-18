@@ -1,32 +1,43 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifika tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
+    "description": "Verifikazzjoni tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
+  },
+  "Nav": {
+    "solutions": "Soluzzjonijiet",
+    "technology": "Teknoloġija",
+    "foundation": "Fundazzjoni Certo",
+    "login": "Dħol"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Politika tal-Privatezza",
+    "terms": "Kondizzjonijiet tas-Servizz"
   },
   "Dashboard": {
-    "title": "Panel Certo ID",
+    "title": "Panell Certo ID",
     "welcome": "Merħba, {name}",
-    "your_rating": "Your Rating Certo",
+    "your_rating": "Il-Certo Rating Tiegħek",
     "your_delegates": "Id-Delegati Tiegħek",
-    "your_accords": "Your Certo Accord",
-    "recent_activity": "Attività reċenti",
-    "quick_actions": "Azzjonijiet malajr"
+    "your_accords": "Il-Certo Accord Tiegħek",
+    "recent_activity": "Attività riċenti",
+    "quick_actions": "Azzjonijiet mbriegħ"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizzazzjoni",
-    "contact_person": "Persuna ta' kuntatt",
+    "contact_person": "Persuna ta' Kuntatt",
     "sector": "Settur",
-    "edit_profile": "Immodifika l-profil",
-    "verified_badge": "Entità verifika"
+    "edit_profile": "Editja l-profil",
+    "verified_badge": "Entità Verifikata"
   },
   "Delegates": {
     "title": "Delegati Certo",
     "add_delegate": "Żid delegat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "Ligazzjoni PRIMARY",
+    "failover_link": "Ligazzjoni FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

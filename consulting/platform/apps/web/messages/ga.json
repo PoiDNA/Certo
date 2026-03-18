@@ -1,35 +1,47 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Faigh Comhairleoir",
-    "description": "Comhairleoirí creidiúnaithe Certo. Rian Chorparáideach agus Comhréireacht."
+    "description": "Comhairleoirí faofa ag Certo. Rialúchán Corparáideach agus comhréireacht."
+  },
+  "Nav": {
+    "advisors": "Comhairleoirí",
+    "expertise": "Saineolas",
+    "login": "Logáil Isteach"
+  },
+  "Footer": {
+    "description": "Comhairle shainiúil ar rialúchán corparáideach, comhréireacht agus slándáil do na ceannródaithe margaidh.",
+    "ecosystem": "Éiceachóras Certo",
+    "accreditation": "Tá gach comhairleoir faofa ag Fhondúireann Certo Governance Institute",
+    "privacy": "Polasaí Príobháideachta",
+    "terms": "Téarmaí agus Coinníollacha"
   },
   "Home": {
-    "hero_title": "Faigh saineolai ar governance",
-    "hero_subtitle": "Tacaíonn comhairleoirí creidiúnaithe Certo le heagraíochtaí chun a n-astar Certo a choimeád agus a fhéachaint ar dhul i bhfeidhm.",
+    "hero_title": "Faigh saineolaí rialúcháin",
+    "hero_subtitle": "Tacaíonn comhairleoirí faofa Certo le hinstitiúidí chun a n-rátáil Certo a choinneáil agus a fheabhasú.",
     "hero_cta": "Faigh comhairleoir",
-    "step_1_title": "Sonraigh do sheicteoir",
-    "step_1_text": "Roghnaigh an seicteoir ina bhfeidhmíonn do eagraíocht",
-    "step_2_title": "Déan cur síos ar an ngá",
-    "step_2_text": "Abair linn cad atá de dhíth ort",
+    "step_1_title": "Sonraigh do shektor",
+    "step_1_text": "Roghnaigh an sektor ina bhfeidhmíonn do bhunaidhm",
+    "step_2_title": "Déan cur síos ar an bhfíchiall",
+    "step_2_text": "Inis dúinn cad atá uait",
     "step_3_title": "Faigh meaitseáil",
-    "step_3_text": "Roghnaíonn an córas comhairleoir creidiúnaithe Certo a bheidh oiriúnach"
+    "step_3_text": "Roghnaíonn an córas comhairleoir faofa Certo duitseanna"
   },
   "FindAdvisor": {
-    "title": "Faigh comhairleoir Certo",
-    "sector_label": "Seicteoir do eagraíochta",
-    "need_label": "Cad atá de dhíth ort?",
-    "need_audit": "Iniúchadh governance",
+    "title": "Faigh Comhairleoir Certo",
+    "sector_label": "Sektor do bhunaidhm",
+    "need_label": "Cad atá uait?",
+    "need_audit": "Iniúchóireacht rialúcháin",
     "need_advisory": "Comhairle straitéiseach",
     "need_training": "Oiliúint agus ceardlanna",
-    "need_rating": "Ullmhú do astar",
+    "need_rating": "Ullmhúchán do rátáil",
     "region_label": "Réigiún",
     "submit": "Cuardaigh comhairleoir"
   },
   "Advisor": {
-    "accredited_by": "Creidiúnaithe ag Certo",
+    "accredited_by": "Faofa ag Certo",
     "specialization": "Speisialtóireacht",
-    "sectors": "Seicteoir",
+    "sectors": "Sectoranna",
     "contact_advisor": "Déan teagmháil",
-    "view_profile": "Féach ar an bpróifíl"
+    "view_profile": "Féach ar an Phróifíl"
   }
 }

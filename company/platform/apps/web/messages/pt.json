@@ -3,6 +3,17 @@
     "title": "Certo ID — Verified Digital Identity",
     "description": "Verificação de identidade e conformidade para instituições públicas e corporações."
   },
+  "Nav": {
+    "solutions": "Soluções",
+    "technology": "Tecnologia",
+    "foundation": "Fundação Certo",
+    "login": "Faça login"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
   "Dashboard": {
     "title": "Painel Certo ID",
     "welcome": "Bem-vindo, {name}",

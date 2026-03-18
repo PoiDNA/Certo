@@ -1,13 +1,24 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Provjera identiteta i usklađenost za javne institucije i korporacije."
+    "description": "Provjera identiteta i compliance za javne institucije i korporacije."
+  },
+  "Nav": {
+    "solutions": "Rješenja",
+    "technology": "Tehnologija",
+    "foundation": "Fundacija Certo",
+    "login": "Prijava"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Politika Privatnosti",
+    "terms": "Uvjeti Usluge"
   },
   "Dashboard": {
-    "title": "Kontrolna ploča Certo ID",
+    "title": "Ploča Certo ID",
     "welcome": "Dobrodošli, {name}",
-    "your_rating": "Vaša ocjena Certo",
-    "your_delegates": "Vaši delegati",
+    "your_rating": "Vaš Certo Rating",
+    "your_delegates": "Vaši Delegati",
     "your_accords": "Vaši Certo Accord",
     "recent_activity": "Nedavna aktivnost",
     "quick_actions": "Brze akcije"
@@ -18,15 +29,15 @@
     "contact_person": "Osoba za kontakt",
     "sector": "Sektor",
     "edit_profile": "Uredi profil",
-    "verified_badge": "Provjeren subjekt"
+    "verified_badge": "Verificirani subjekt"
   },
   "Delegates": {
     "title": "Delegati Certo",
     "add_delegate": "Dodaj delegata",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Stanje",
-    "primary_link": "PRIMARY poveznica",
-    "failover_link": "FAILOVER poveznica",
+    "delegate_status": "Status",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

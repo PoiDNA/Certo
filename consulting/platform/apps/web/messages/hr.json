@@ -1,35 +1,47 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Pronađi Savjetnika",
-    "description": "Akreditirani savjetnici Certo. Korporativno upravljanje i usklađenost."
+    "title": "Certo Consulting — Pronađite Savjetnika",
+    "description": "Akreditirani savjetnici Certo. Korporativni ład i usklađenost."
+  },
+  "Nav": {
+    "advisors": "Savjetnici",
+    "expertise": "Stručnost",
+    "login": "Prijava"
+  },
+  "Footer": {
+    "description": "Stručno savjetovanje u području korporativnog lada, usklađenosti i sigurnosti za tržišne lidere.",
+    "ecosystem": "Certo Ekosistem",
+    "accreditation": "Svi savjetnici su akreditirani od strane Fondacije Certo Governance Institute",
+    "privacy": "Politika privatnosti",
+    "terms": "Uvjeti korištenja"
   },
   "Home": {
-    "hero_title": "Pronađi eksperta za governance",
-    "hero_subtitle": "Akreditirani savjetnici Certo pomagaju institucijama da održavaju i poboljšavaju svoj Certo Rating.",
-    "hero_cta": "Pronađi savjetnika",
+    "hero_title": "Pronađite stručnjaka za governance",
+    "hero_subtitle": "Akreditirani savjetnici Certo prate institucije u održavanju i povećanju njihovog Certo Ratinga.",
+    "hero_cta": "Pronađite savjetnika",
     "step_1_title": "Navedite svoj sektor",
-    "step_1_text": "Odaberite sektor u kojem posluje vaša institucija",
+    "step_1_text": "Odaberite sektor u kojem vaša institucija posluje",
     "step_2_title": "Opišite svoju potrebu",
-    "step_2_text": "Recite nam što vam je potrebno",
-    "step_3_title": "Dobijte preporuku",
-    "step_3_text": "Sustav će vam dodijeliti akreditiranog savjetnika Certo"
+    "step_2_text": "Recite nam što vam trebate",
+    "step_3_title": "Dobijte podudaranje",
+    "step_3_text": "Sustav će vam pronaći akreditiranog savjetnika Certo"
   },
   "FindAdvisor": {
-    "title": "Pronađi savjetnika Certo",
+    "title": "Pronađite savjetnika Certo",
     "sector_label": "Sektor vaše institucije",
-    "need_label": "Što vam je potrebno?",
-    "need_audit": "Audit upravljanja",
+    "need_label": "Što vam trebate?",
+    "need_audit": "Auditi governance",
     "need_advisory": "Strateško savjetovanje",
     "need_training": "Obuka i radionice",
     "need_rating": "Priprema za rating",
     "region_label": "Regija",
-    "submit": "Pretraži savjetnika"
+    "submit": "Pronađi savjetnika"
   },
   "Advisor": {
-    "accredited_by": "Akreditiran od Certo",
+    "accredited_by": "Akreditiran od strane Certo",
     "specialization": "Specijalizacija",
     "sectors": "Sektori",
-    "contact_advisor": "Kontaktiraj",
-    "view_profile": "Pogledaj profil"
+    "contact_advisor": "Kontaktirajte",
+    "view_profile": "Pogledajte profil"
   }
 }

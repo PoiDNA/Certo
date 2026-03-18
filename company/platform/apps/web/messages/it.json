@@ -1,13 +1,24 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e società."
+    "description": "Verifica dell'identità e conformità normativa per istituzioni pubbliche e società."
+  },
+  "Nav": {
+    "solutions": "Soluzioni",
+    "technology": "Tecnologia",
+    "foundation": "Certo Governance Institute",
+    "login": "Accedi"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Politica sulla Privacy",
+    "terms": "Condizioni di Servizio"
   },
   "Dashboard": {
     "title": "Pannello Certo ID",
     "welcome": "Benvenuto, {name}",
     "your_rating": "Il tuo Rating Certo",
-    "your_delegates": "I tuoi Certo Delegate",
+    "your_delegates": "I tuoi Delegati",
     "your_accords": "I tuoi Certo Accord",
     "recent_activity": "Attività recente",
     "quick_actions": "Azioni rapide"
@@ -21,7 +32,7 @@
     "verified_badge": "Ente verificato"
   },
   "Delegates": {
-    "title": "Certo Delegate",
+    "title": "Delegati Certo",
     "add_delegate": "Aggiungi delegato",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stato",

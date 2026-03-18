@@ -3,11 +3,22 @@
     "title": "Certo ID — Verified Digital Identity",
     "description": "Identitetsverifikation og compliance for offentlige institutioner og virksomheder."
   },
+  "Nav": {
+    "solutions": "Løsninger",
+    "technology": "Teknologi",
+    "foundation": "Certo Governance Institute",
+    "login": "Log ind"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Privatlivspolitik",
+    "terms": "Servicevilkår"
+  },
   "Dashboard": {
     "title": "Certo ID-panel",
     "welcome": "Velkommen, {name}",
     "your_rating": "Dit Certo Rating",
-    "your_delegates": "Dine Certo Delegate",
+    "your_delegates": "Dine Delegater",
     "your_accords": "Dine Certo Accord",
     "recent_activity": "Seneste aktivitet",
     "quick_actions": "Hurtige handlinger"
@@ -21,12 +32,12 @@
     "verified_badge": "Verificeret enhed"
   },
   "Delegates": {
-    "title": "Certo Delegate",
+    "title": "Certo Delegater",
     "add_delegate": "Tilføj delegat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "PRIMARY-link",
+    "failover_link": "FAILOVER-link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

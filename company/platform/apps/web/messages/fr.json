@@ -1,13 +1,24 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Vérification d'identité et conformité pour les institutions publiques et les entreprises."
+    "description": "Vérification d'identité et conformité pour les institutions publiques et les corporations."
+  },
+  "Nav": {
+    "solutions": "Solutions",
+    "technology": "Technologie",
+    "foundation": "Fondation Certo",
+    "login": "Connexion"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
   },
   "Dashboard": {
-    "title": "Tableau de bord Certo ID",
+    "title": "Tableau de Bord Certo ID",
     "welcome": "Bienvenue, {name}",
-    "your_rating": "Votre Rating Certo",
-    "your_delegates": "Vos Delegates",
+    "your_rating": "Votre Certo Rating",
+    "your_delegates": "Vos Délégués",
     "your_accords": "Vos Certo Accord",
     "recent_activity": "Activité récente",
     "quick_actions": "Actions rapides"
@@ -15,14 +26,14 @@
   "Profile": {
     "title": "Profil",
     "organization": "Organisation",
-    "contact_person": "Personne de contact",
+    "contact_person": "Personne de Contact",
     "sector": "Secteur",
-    "edit_profile": "Modifier le profil",
-    "verified_badge": "Entité vérifiée"
+    "edit_profile": "Modifier le Profil",
+    "verified_badge": "Entité Vérifiée"
   },
   "Delegates": {
-    "title": "Delegates Certo",
-    "add_delegate": "Ajouter un delegate",
+    "title": "Délégués Certo",
+    "add_delegate": "Ajouter un Délégué",
     "delegate_id": "Delegate ID",
     "delegate_status": "Statut",
     "primary_link": "Lien PRIMARY",

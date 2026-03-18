@@ -3,33 +3,45 @@
     "title": "Certo Consulting — Trouvez un Conseiller",
     "description": "Conseillers accrédités Certo. Gouvernance d'entreprise et conformité."
   },
+  "Nav": {
+    "advisors": "Conseillers",
+    "expertise": "Expertise",
+    "login": "Connexion"
+  },
+  "Footer": {
+    "description": "Conseil expert en gouvernance d'entreprise, conformité et sécurité pour les leaders du marché.",
+    "ecosystem": "Écosystème Certo",
+    "accreditation": "Tous les conseillers sont accrédités par la Fondation Certo Governance Institute",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
   "Home": {
     "hero_title": "Trouvez un expert en gouvernance",
-    "hero_subtitle": "Les conseillers accrédités Certo soutiennent les institutions pour maintenir et améliorer leur notation Certo.",
-    "hero_cta": "Trouvez un conseiller",
+    "hero_subtitle": "Les conseillers accrédités Certo accompagnent les institutions pour maintenir et améliorer leur Certo Rating.",
+    "hero_cta": "Trouver un conseiller",
     "step_1_title": "Indiquez votre secteur",
-    "step_1_text": "Sélectionnez le secteur dans lequel opère votre institution",
+    "step_1_text": "Sélectionnez le secteur d'activité de votre institution",
     "step_2_title": "Décrivez votre besoin",
     "step_2_text": "Dites-nous ce dont vous avez besoin",
-    "step_3_title": "Recevez une correspondance",
-    "step_3_text": "Le système vous proposera un conseiller Certo accrédité"
+    "step_3_title": "Recevez une recommandation",
+    "step_3_text": "Le système vous proposera un conseiller accrédité Certo adapté"
   },
   "FindAdvisor": {
-    "title": "Trouvez un conseiller Certo",
+    "title": "Trouver un conseiller Certo",
     "sector_label": "Secteur de votre institution",
-    "need_label": "Que cherchez-vous?",
+    "need_label": "Quel est votre besoin ?",
     "need_audit": "Audit de gouvernance",
     "need_advisory": "Conseil stratégique",
     "need_training": "Formations et ateliers",
-    "need_rating": "Préparation à la notation",
+    "need_rating": "Préparation au rating",
     "region_label": "Région",
-    "submit": "Rechercher un conseiller"
+    "submit": "Chercher un conseiller"
   },
   "Advisor": {
     "accredited_by": "Accrédité par Certo",
     "specialization": "Spécialisation",
     "sectors": "Secteurs",
-    "contact_advisor": "Prendre contact",
+    "contact_advisor": "Contacter",
     "view_profile": "Voir le profil"
   }
 }

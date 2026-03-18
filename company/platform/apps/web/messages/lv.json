@@ -1,15 +1,26 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identitātes verifikācija un atbilstības nodrošināšana publiskajām iestādēm un korporācijām."
+    "description": "Identitātes pārbaude un atbilstības nodrošināšana valsts un korporatīvajām iestādēm."
+  },
+  "Nav": {
+    "solutions": "Risinājumi",
+    "technology": "Tehnoloģija",
+    "foundation": "Certo Fundācija",
+    "login": "Pierakstīties"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Privātuma politika",
+    "terms": "Pakalpojuma noteikumi"
   },
   "Dashboard": {
-    "title": "Certo ID kontrolpanelis",
+    "title": "Certo ID Pārskata pults",
     "welcome": "Sveiki, {name}",
     "your_rating": "Jūsu Certo Rating",
     "your_delegates": "Jūsu Delegāti",
     "your_accords": "Jūsu Certo Accord",
-    "recent_activity": "Jaunākā aktivitāte",
+    "recent_activity": "Nesenā aktivitāte",
     "quick_actions": "Ātras darbības"
   },
   "Profile": {
@@ -18,7 +29,7 @@
     "contact_person": "Kontaktpersona",
     "sector": "Nozare",
     "edit_profile": "Rediģēt profilu",
-    "verified_badge": "Verificēts subjekts"
+    "verified_badge": "Pārbaudīts subjekts"
   },
   "Delegates": {
     "title": "Certo Delegāti",

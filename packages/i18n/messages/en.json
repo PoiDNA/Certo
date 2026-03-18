@@ -14,8 +14,8 @@
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Log in",
-    "logout": "Log out",
+    "login": "Sign in",
+    "logout": "Sign out",
     "privacyPolicy": "Privacy Policy",
     "termsOfUse": "Terms of Use",
     "loading": "Loading...",
@@ -37,27 +37,27 @@
     "ratings": "Ratings",
     "reports": "Reports",
     "analysis": "Analysis",
-    "about": "About the Institute",
+    "about": "About Us",
     "contact": "Contact",
     "dashboard": "Dashboard",
     "settings": "Settings"
   },
   "Auth": {
-    "login_title": "Log in",
-    "login_subtitle": "Log in to your account",
-    "login_with_google": "Log in with Google",
+    "login_title": "Sign in",
+    "login_subtitle": "Sign in to your account",
+    "login_with_google": "Sign in with Google",
     "email_label": "Email address",
     "password_label": "Password",
     "forgot_password": "Forgot your password?",
     "no_account": "Don't have an account?",
-    "register": "Register"
+    "register": "Sign up"
   },
   "Errors": {
     "404_title": "Page not found",
     "404_description": "The page you are looking for does not exist or has been moved.",
     "500_title": "Server error",
     "500_description": "An unexpected error occurred. Please try again later.",
-    "unauthorized": "Access denied. Please log in to continue."
+    "unauthorized": "Access denied. Sign in to continue."
   },
   "Footer": {
     "rights": "All rights reserved",

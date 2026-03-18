@@ -1,21 +1,21 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van governance in de publieke, bedrijfs-, medische en defensiesector beoordeelt."
+    "description": "Onafhankelijk ratingbureau dat de kwaliteit van bestuur in de publieke, bedrijfs-, medische en defensiesector beoordeelt."
   },
   "Home": {
     "title": "Certo Governance Institute",
     "description": "Certo is 's werelds eerste ratingbureau waarvan de ratings cryptografische artefacten van het proces zijn — geen meningen. Elke ratingbeslissing is verankerd buiten de eigen infrastructuur, offline verifieerbaar en openbaar controleerbaar.",
     "hero_cta_primary": "Bekijk ratings",
     "hero_cta_secondary": "Meer informatie",
-    "section_ratings_title": "Nieuwste Certo Ratings",
+    "section_ratings_title": "Meest Recente Certo Ratings",
     "section_reports_title": "Analyses en Rapporten",
     "section_about_title": "Over het Instituut"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Beoordelingen van de kwaliteit van governance in instellingen",
-    "search_placeholder": "Zoek instelling...",
+    "subtitle": "Beoordelingen van de kwaliteit van bestuur in instellingen",
+    "search_placeholder": "Zoeken naar instelling...",
     "filter_sector": "Sector",
     "sector_public": "Publiek",
     "sector_corporate": "Bedrijfs",
@@ -41,10 +41,10 @@
   "About": {
     "title": "Over Certo Governance Institute",
     "mission_title": "Missie",
-    "mission_text": "Het bouwen van een cultuur van goed governance door middel van onafhankelijke beoordeling en promotie van governance-standaarden in Polen en Europa.",
+    "mission_text": "Het opbouwen van een cultuur van goed bestuur door onafhankelijke beoordeling en bevordering van governance-standaarden in Polen en Europa.",
     "independence_title": "Onafhankelijkheid",
-    "independence_text": "Het Instituut is onafhankelijk van de beoordeelde entiteiten, overheidsorganen en commerciële belangen.",
+    "independence_text": "Het Instituut is onafhankelijk van de beoordeelde entiteiten, openbare overheidsinstanties en commerciële belangen.",
     "methodology_title": "Methodologie",
-    "methodology_text": "Certo Ratings zijn gebaseerd op een rigoureuze methodologie die gebaseerd is op ISO-standaarden en EU-richtlijnen."
+    "methodology_text": "Certo Ratings zijn gebaseerd op rigoureuze methodologie conform ISO-standaarden en EU-richtlijnen."
   }
 }

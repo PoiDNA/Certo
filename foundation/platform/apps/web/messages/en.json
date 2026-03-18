@@ -1,15 +1,15 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Independent rating agency assessing governance quality in the public, corporate, medical and defense sectors."
+    "description": "Independent rating agency assessing the quality of governance in the public, corporate, medical and defense sectors."
   },
   "Home": {
     "title": "Certo Governance Institute",
     "description": "Certo is the world's first rating agency whose ratings are cryptographic artifacts of the process — not opinions. Every rating decision is anchored outside its own infrastructure, verifiable offline and publicly auditable.",
-    "hero_cta_primary": "Check ratings",
+    "hero_cta_primary": "View ratings",
     "hero_cta_secondary": "Learn more",
     "section_ratings_title": "Latest Certo Ratings",
-    "section_reports_title": "Analysis and Reports",
+    "section_reports_title": "Analytics and Reports",
     "section_about_title": "About the Foundation"
   },
   "Ratings": {
@@ -31,7 +31,7 @@
     "ratings": "Ratings",
     "methodology": "Methodology",
     "about": "About",
-    "login": "Log in"
+    "login": "Sign in"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

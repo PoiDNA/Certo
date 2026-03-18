@@ -1,27 +1,39 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Raskite Patarėją",
-    "description": "Sertifikuoti Certo patarėjai. Korporatyvinis valdymas ir atitiktis."
+    "description": "Sertifikuoti Certo patarėjai. Valdymo sistema ir atitiktis."
+  },
+  "Nav": {
+    "advisors": "Patarėjai",
+    "expertise": "Ekspertiza",
+    "login": "Prisijungimas"
+  },
+  "Footer": {
+    "description": "Ekspertinis konsultavimas valdymo sistemos, atitikties ir saugumo srityse lyderiausiems rinkos subjektams.",
+    "ecosystem": "Certo ekosistema",
+    "accreditation": "Visi patarėjai yra sertifikuoti Certo Governance Institute fondo",
+    "privacy": "Privatumo politika",
+    "terms": "Naudojimosi sąlygos"
   },
   "Home": {
-    "hero_title": "Raskite governance ekspertą",
-    "hero_subtitle": "Sertifikuoti Certo patarėjai padeda institucijoms išlaikyti ir pagerinti jų Certo reitingą.",
+    "hero_title": "Raskite valdymo sistemos ekspertą",
+    "hero_subtitle": "Sertifikuoti Certo patarėjai padeda institucijoms išlaikyti ir padidinti savo Certo reitingą.",
     "hero_cta": "Raskite patarėją",
-    "step_1_title": "Nurodykite savo sektorių",
-    "step_1_text": "Pasirinkite sektorių, kuriame veikia jūsų institucija",
+    "step_1_title": "Nurodykite savo sektorą",
+    "step_1_text": "Pasirinkite sektorą, kuriame veikia jūsų institucija",
     "step_2_title": "Aprašykite poreikį",
     "step_2_text": "Pasakykite mums, ko jums reikia",
     "step_3_title": "Gaukite atitikimą",
-    "step_3_text": "Sistema pasiūlys sertifikuotą Certo patarėją"
+    "step_3_text": "Sistema parinkins sertifikuotą Certo patarėją"
   },
   "FindAdvisor": {
     "title": "Raskite Certo patarėją",
     "sector_label": "Jūsų institucijos sektorius",
     "need_label": "Ko jums reikia?",
-    "need_audit": "Valdymo auditas",
-    "need_advisory": "Strateginis patarimas",
+    "need_audit": "Valdymo sistemos auditas",
+    "need_advisory": "Strateginis konsultavimas",
     "need_training": "Mokymai ir seminarai",
-    "need_rating": "Pasiruošimas reitingui",
+    "need_rating": "Pasirengimas reitingui",
     "region_label": "Regionas",
     "submit": "Ieškoti patarėjo"
   },

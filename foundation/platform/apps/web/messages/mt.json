@@ -1,50 +1,50 @@
 {
   "Metadata": {
     "title": "Fundazzjoni Certo Governance Institute",
-    "description": "Organu rating indipendenti li jevalwa l-kwalità tal-ġestjoni fis-settur pubbliku, korporattiv, mediku u ta' difiża."
+    "description": "Organu ratingu независимый li jivvaluta l-kwalità tal-governance fis-settur pubbliku, corporattiv, mediku u tas-settur tad-difiza."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo hija l-ewwel aġenzija rating fid-dinja li l-ratingi tagħha huma artifacts kripto tal-proċess — mhux opinjoni. Kull deċiżjoni rating hija ankrata barra mill-infrastruttura tagħha stess, verifikabbli offline u audittabbli pubblikament.",
-    "hero_cta_primary": "Iċċekkja r-ratingi",
-    "hero_cta_secondary": "Itgħallem aktar",
-    "section_ratings_title": "Akħar Ratingi Certo",
+    "description": "Certo hija l-ewwel aġenzija tal-rating fid-dinja li l-ratings tagħha huma artefatti kriptografiċi tal-proċess — mhux opinjonijiet. Kull deċiżjoni tal-rating hija ankrata barra mill-infrastruttura tagħha stessa, verifikabbli offline u pubblikament awditabbli.",
+    "hero_cta_primary": "Ikkontolla r-ratings",
+    "hero_cta_secondary": "Ikteb aktar",
+    "section_ratings_title": "Aqwa Ratings Certo",
     "section_reports_title": "Analiżi u Rapporti",
     "section_about_title": "Dwar il-Fundazzjoni"
   },
   "Ratings": {
-    "title": "Ratingi Certo",
-    "subtitle": "Evalwazzjonijiet tal-kwalità tal-ġestjoni tal-istituzzjonijiet",
-    "search_placeholder": "Fittex l-istituzzjoni...",
+    "title": "Ratings Certo",
+    "subtitle": "Valutazzjonijiet tal-kwalità tal-governance tal-istituzzjonijiet",
+    "search_placeholder": "Fittex istituzzjoni...",
     "filter_sector": "Settur",
     "sector_public": "Pubbliku",
-    "sector_corporate": "Korporattiv",
+    "sector_corporate": "Corporattiv",
     "sector_medical": "Mediku",
-    "sector_defense": "Difiża",
-    "sector_ngo": "Mħeġġeġ",
-    "rating_valid_until": "Rating validu sal",
+    "sector_defense": "Tad-Difiza",
+    "sector_ngo": "Organizazzjoni Mhux Governattiva",
+    "rating_valid_until": "Rating validu sa",
     "rating_issued": "Data tal-ħruġ",
-    "no_results": "L-ebda riżultati maqgħuda",
+    "no_results": "L-ebda riżultati ma nstabu",
     "view_profile": "Ara l-profil"
   },
   "Nav": {
-    "ratings": "Ratingi",
+    "ratings": "Ratings",
     "methodology": "Metodologija",
     "about": "Dwar il-Fundazzjoni",
-    "login": "Kolloq"
+    "login": "Daħħal"
   },
   "Footer": {
     "copyright": "Fundazzjoni Certo Governance Institute © {year}",
     "privacy": "Politika tal-Privatezza",
-    "terms": "Kundizzjonijiet tal-Użu"
+    "terms": "Termini tal-Użu"
   },
   "About": {
-    "title": "Dwar il-Fundazzjoni Certo Governance Institute",
+    "title": "Dwar Fundazzjoni Certo Governance Institute",
     "mission_title": "Missjoni",
-    "mission_text": "Li tibni kultura ta' ġestjoni tajba permezz ta' evalwazzjoni indipendenti u promozzjoni tal-istandards ta' governance fil-Malta u l-Ewropa.",
+    "mission_text": "Il-bini ta' kultura ta' governance tajjeb permezz ta' valutazzjoni независимый u l-promozzjoni ta' standards ta' governance fil-Polnja u l-Ewropa.",
     "independence_title": "Indipendenza",
-    "independence_text": "Il-Fundazzjoni hija indipendenti minn l-entitajiet li jevalwa, organi ta' awtorità pubblika u interessi kummerċjali.",
+    "independence_text": "Il-Fundazzjoni hija indipendenti mir-riċevituri tal-valutazzjonijiet, l-organi tal-awtorità pubblika u l-interessi kummerċjali.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Ir-ratingi Certo huma bbażati fuq metodologija rigoruża bbażata fuq istandards ISO u gwidi tal-UE."
+    "methodology_text": "Ir-ratings Certo huma bbażati fuq metodologija rigoruża bbażata fuq standards ISO u gwidi tal-EU."
   }
 }

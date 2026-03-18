@@ -1,35 +1,47 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Tanácsadó keresése",
-    "description": "Certo akkreditált tanácsadók. Vállalati ár és megfelelőség."
+    "description": "Akkreditált Certo tanácsadók. Corporate governance és compliance."
+  },
+  "Nav": {
+    "advisors": "Tanácsadók",
+    "expertise": "Szakterület",
+    "login": "Bejelentkezés"
+  },
+  "Footer": {
+    "description": "Szakértői tanácsadás a corporate governance, compliance és biztonság terén a piacvezető szervezetek számára.",
+    "ecosystem": "Certo ökoszisztéma",
+    "accreditation": "Minden tanácsadó akkreditált a Certo Governance Institute Alapítvány által",
+    "privacy": "Adatvédelmi nyilatkozat",
+    "terms": "Felhasználási feltételek"
   },
   "Home": {
     "hero_title": "Keressen governance szakértőt",
-    "hero_subtitle": "A Certo akkreditált tanácsadói segítik az intézményeket Certo ratinguk fenntartásában és javításában.",
+    "hero_subtitle": "Az akkreditált Certo tanácsadók segítik az intézményeket a Certo Rating fenntartásában és javításában.",
     "hero_cta": "Tanácsadó keresése",
     "step_1_title": "Adja meg szektorát",
-    "step_1_text": "Válassza ki azt a szektort, amelyben az intézmény működik",
+    "step_1_text": "Válassza ki azt a szektort, amelyben az intézménye működik",
     "step_2_title": "Írja le szükségletét",
     "step_2_text": "Mondja el, mire van szüksége",
-    "step_3_title": "Kapjon javaslatot",
-    "step_3_text": "A rendszer kiválaszt egy akkreditált Certo tanácsadót"
+    "step_3_title": "Kapjon egyeztetett javaslatot",
+    "step_3_text": "A rendszer akkreditált Certo tanácsadót fog ajánlani"
   },
   "FindAdvisor": {
     "title": "Certo tanácsadó keresése",
-    "sector_label": "Intézménye szektora",
+    "sector_label": "Az intézménye szektora",
     "need_label": "Mire van szüksége?",
     "need_audit": "Governance audit",
     "need_advisory": "Stratégiai tanácsadás",
-    "need_training": "Képzések és műhelymunkák",
-    "need_rating": "Ratingra való felkészülés",
+    "need_training": "Képzések és műhelyek",
+    "need_rating": "Felkészülés a minősítésre",
     "region_label": "Régió",
     "submit": "Tanácsadó keresése"
   },
   "Advisor": {
-    "accredited_by": "A Certo által akkreditált",
-    "specialization": "Specializáció",
+    "accredited_by": "Akkreditált a Certo által",
+    "specialization": "Szakterület",
     "sectors": "Szektorok",
-    "contact_advisor": "Lépjen kapcsolatba",
+    "contact_advisor": "Kapcsolatfelvétel",
     "view_profile": "Profil megtekintése"
   }
 }

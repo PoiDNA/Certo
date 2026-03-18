@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute fonds",
-    "description": "Neatkarīgs reitinga iestāde, kas novērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnas un aizsardzības sektorā."
+    "description": "Neatkarīgs reitinga orgāns, kas novērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnā un aizsardzības sektorā."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo ir pirmā pasaules reitinga aģentūra, kuras reitingi ir kriptografiskas procesa artefakts — nevis viedokļi. Katrs reitinga lēmums ir nostiprināts ārpus tās pašas infrastruktūras, verificējams bezsaistē un publiski auditorējams.",
-    "hero_cta_primary": "Pārbaudiet reitingus",
+    "description": "Certo ir pirmā pasaulē reitinga aģentūra, kuras reitingi ir kriptografiskas procesa artefakts — nevis viedokļi. Katrs reitinga lēmums ir ieankurots ārpus savām infrastruktūras, pārbaudāms bezsaistē un publicēti auditējams.",
+    "hero_cta_primary": "Skatīt reitingus",
     "hero_cta_secondary": "Uzziniet vairāk",
     "section_ratings_title": "Jaunākie Certo reitingi",
     "section_reports_title": "Analīzes un pārskati",
@@ -14,15 +14,15 @@
   },
   "Ratings": {
     "title": "Certo reitingi",
-    "subtitle": "Iestāžu pārvaldības kvalitātes novērtējumi",
-    "search_placeholder": "Meklējiet iestādi...",
+    "subtitle": "Institūciju pārvaldības kvalitātes novērtējumi",
+    "search_placeholder": "Meklēt institūciju...",
     "filter_sector": "Sektors",
     "sector_public": "Publiskais",
     "sector_corporate": "Korporatīvais",
-    "sector_medical": "Medicīnas",
+    "sector_medical": "Medicīnā",
     "sector_defense": "Aizsardzības",
-    "sector_ngo": "Nevalstiskais",
-    "rating_valid_until": "Reitings ir derīgs līdz",
+    "sector_ngo": "Nevalstiskās organizācijas",
+    "rating_valid_until": "Reitings derīgs līdz",
     "rating_issued": "Izdošanas datums",
     "no_results": "Rezultāti nav atrasti",
     "view_profile": "Skatīt profilu"
@@ -31,15 +31,20 @@
     "ratings": "Reitingi",
     "methodology": "Metodologija",
     "about": "Par fondu",
-    "login": "Pierakstieties"
+    "login": "Pieslēgties"
+  },
+  "Footer": {
+    "copyright": "Certo Governance Institute fonds © {year}",
+    "privacy": "Privātuma politika",
+    "terms": "Izmantošanas noteikumi"
   },
   "About": {
     "title": "Par Certo Governance Institute fondu",
     "mission_title": "Misija",
     "mission_text": "Labas pārvaldības kultūras veidošana, izmantojot neatkarīgu novērtējumu un pārvaldības standartu veicināšanu Polijā un Eiropā.",
     "independence_title": "Neatkarība",
-    "independence_text": "Fonds ir neatkarīgs no novērtējamo subjektu, valsts varas iestāžu un komerciālo interešu.",
+    "independence_text": "Fonds ir neatkarīgs no novērtējamo subjektu, valsts varas orgānu un komerciālu interešu.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo reitingi ir balstīti uz stingru metodologiju, kura pamatā ir ISO standarti un ES vadlīnijas."
+    "methodology_text": "Certo reitingi pamatojas uz stingru metodologiju, kas balstīta uz ISO standartiem un ES vadlīnijām."
   }
 }

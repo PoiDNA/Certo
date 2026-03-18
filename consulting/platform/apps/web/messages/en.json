@@ -1,19 +1,19 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Find Your Advisor",
-    "description": "Certo Accredited Advisors. Corporate Governance and Compliance."
+    "title": "Certo Consulting — Find an Advisor",
+    "description": "Accredited Certo advisors. Corporate governance and compliance."
   },
   "Nav": {
     "advisors": "Advisors",
     "expertise": "Expertise",
-    "login": "Log in"
+    "login": "Login"
   },
   "Footer": {
     "description": "Expert advisory in corporate governance, compliance and security for market leaders.",
     "ecosystem": "Certo Ecosystem",
-    "accreditation": "All advisors are accredited by the Certo Governance Institute Foundation",
+    "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms and Conditions"
   },
   "Home": {
     "hero_title": "Expert advisory\nat board level.",
@@ -46,9 +46,9 @@
     "need_audit": "Governance audit",
     "need_advisory": "Strategic advisory",
     "need_training": "Training and workshops",
-    "need_rating": "Preparation for rating",
+    "need_rating": "Rating preparation",
     "region_label": "Region",
-    "submit": "Search for advisor"
+    "submit": "Find an advisor"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",

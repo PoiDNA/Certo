@@ -1,15 +1,26 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Ověřování identity a compliance pro veřejné instituce a korporace."
+    "description": "Ověření identity a compliance pro veřejné instituce a korporace."
+  },
+  "Nav": {
+    "solutions": "Řešení",
+    "technology": "Technologie",
+    "foundation": "Fundace Certo",
+    "login": "Přihlášení"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky služby"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
-    "welcome": "Vítej, {name}",
-    "your_rating": "Tvůj Rating Certo",
-    "your_delegates": "Tvoji Delegáti",
-    "your_accords": "Tvoje Certo Accord",
-    "recent_activity": "Poslední aktivita",
+    "welcome": "Vítejte, {name}",
+    "your_rating": "Váš Rating Certo",
+    "your_delegates": "Vaši Delegáti",
+    "your_accords": "Vaše Certo Accord",
+    "recent_activity": "Nedávná aktivita",
     "quick_actions": "Rychlé akce"
   },
   "Profile": {
