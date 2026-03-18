@@ -24,7 +24,7 @@ export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) notFound();
 
   try {
-    const sharedMessages = (await import(`../../../../../packages/i18n/messages/${locale}.json`)).default;
+    const sharedMessages = (await import(`../../../../packages/i18n/messages/${locale}.json`)).default;
     
     let localMessages = {};
     try {
