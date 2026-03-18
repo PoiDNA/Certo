@@ -2,5 +2,14 @@
   "name": "@certo/i18n",
   "version": "1.0.0",
   "private": true,
-  "main": "config.ts"
+  "main": "config.ts",
+  "scripts": {
+    "translate": "tsx scripts/translate.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.26.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0"
+  }
 }

@@ -1,0 +1,41 @@
+name: 🌐 Translate i18n
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/messages/pl.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install i18n dependencies
+        run: npm install --workspace=packages/i18n
+
+      - name: Run translation pipeline
+        run: npx tsx packages/i18n/scripts/translate.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit translated files
+        run: |
+          git config user.email "pipeline@certo.pl"
+          git config user.name "Certo i18n Pipeline"
+          git add '*/messages/*.json'
+          git diff --staged --quiet && echo "No changes to commit" || {
+            git commit -m "i18n: auto-translate $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          }
