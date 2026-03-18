@@ -1,5 +1,5 @@
 import React from 'react';
-
+{/* */}
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-certo-teal-darker">
@@ -34,23 +34,6 @@ export default function Home() {
               USŁUGI
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="bg-certo-teal-darker text-white py-16 border-b border-certo-teal-darker/50">
-        <div className="mx-auto max-w-6xl grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { label: 'Standardy ISO', value: '27001 · 37301' },
-            { label: 'Zgodność regulacyjna', value: 'EU · PL GDPR' },
-            { label: 'Weryfikacja tożsamości', value: 'KYC / AML' },
-            { label: 'Ocena governance', value: 'Certo Vector' },
-          ].map((stat, i) => (
-            <div key={i} className="flex flex-col p-4 border-l-2 border-certo-teal/40">
-              <span className="text-xs font-mono font-bold text-certo-teal uppercase tracking-widest mb-2">{stat.label}</span>
-              <span className="text-xl md:text-2xl font-bold text-white">{stat.value}</span>
-            </div>
-          ))}
         </div>
       </section>
 
