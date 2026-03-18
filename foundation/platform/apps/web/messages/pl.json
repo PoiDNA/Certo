@@ -1,6 +1,39 @@
 {
+  "Metadata": {
+    "title": "Fundacja Certo Governance Institute",
+    "description": "Niezależny organ ratingowy oceniający jakość zarządzania w sektorze publicznym, korporacyjnym, medycznym i obronnym."
+  },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo jest pierwszą na świecie agencją ratingową, której ratingi są kryptograficznymi artefaktami procesu — nie opiniami. Każda decyzja ratingowa jest zakotwiczona poza własną infrastrukturą, weryfikowalna offline i publicznie audytowalna."
+    "description": "Certo jest pierwszą na świecie agencją ratingową, której ratingi są kryptograficznymi artefaktami procesu — nie opiniami. Każda decyzja ratingowa jest zakotwiczona poza własną infrastrukturą, weryfikowalna offline i publicznie audytowalna.",
+    "hero_cta_primary": "Sprawdź ratingi",
+    "hero_cta_secondary": "Dowiedz się więcej",
+    "section_ratings_title": "Najnowsze Ratingi Certo",
+    "section_reports_title": "Analizy i Raporty",
+    "section_about_title": "O Fundacji"
+  },
+  "Ratings": {
+    "title": "Ratingi Certo",
+    "subtitle": "Oceny jakości zarządzania instytucji",
+    "search_placeholder": "Szukaj instytucji...",
+    "filter_sector": "Sektor",
+    "sector_public": "Publiczny",
+    "sector_corporate": "Korporacyjny",
+    "sector_medical": "Medyczny",
+    "sector_defense": "Obronny",
+    "sector_ngo": "Pozarządowy",
+    "rating_valid_until": "Rating ważny do",
+    "rating_issued": "Data wydania",
+    "no_results": "Nie znaleziono wyników",
+    "view_profile": "Zobacz profil"
+  },
+  "About": {
+    "title": "O Fundacji Certo Governance Institute",
+    "mission_title": "Misja",
+    "mission_text": "Budowanie kultury dobrego zarządzania poprzez niezależną ocenę i promowanie standardów governance w Polsce i Europie.",
+    "independence_title": "Niezależność",
+    "independence_text": "Fundacja jest niezależna od podmiotów ocenianych, organów władzy publicznej oraz interesów komercyjnych.",
+    "methodology_title": "Metodologia",
+    "methodology_text": "Ratingi Certo opierają się na rygorystycznej metodologii opartej na standardach ISO i wytycznych EU."
   }
 }

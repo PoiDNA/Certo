@@ -1,5 +1,35 @@
 {
   "Metadata": {
+    "title": "Certo Consulting — Znajdź Doradcę",
     "description": "Akredytowani doradcy Certo. Ład korporacyjny i zgodność."
+  },
+  "Home": {
+    "hero_title": "Znajdź eksperta ds. governance",
+    "hero_subtitle": "Akredytowani doradcy Certo wspierają instytucje w utrzymaniu i podnoszeniu ratingu Certo.",
+    "hero_cta": "Znajdź doradcę",
+    "step_1_title": "Podaj swój sektor",
+    "step_1_text": "Wybierz sektor w którym działa Twoja instytucja",
+    "step_2_title": "Opisz potrzebę",
+    "step_2_text": "Powiedz nam czego potrzebujesz",
+    "step_3_title": "Otrzymaj dopasowanie",
+    "step_3_text": "System dobierze akredytowanego doradcę Certo"
+  },
+  "FindAdvisor": {
+    "title": "Znajdź doradcę Certo",
+    "sector_label": "Sektor Twojej instytucji",
+    "need_label": "Czego potrzebujesz?",
+    "need_audit": "Audyt governance",
+    "need_advisory": "Doradztwo strategiczne",
+    "need_training": "Szkolenia i warsztaty",
+    "need_rating": "Przygotowanie do ratingu",
+    "region_label": "Region",
+    "submit": "Szukaj doradcy"
+  },
+  "Advisor": {
+    "accredited_by": "Akredytowany przez Certo",
+    "specialization": "Specjalizacja",
+    "sectors": "Sektory",
+    "contact_advisor": "Skontaktuj się",
+    "view_profile": "Zobacz profil"
   }
 }

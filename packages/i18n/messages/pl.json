@@ -1,15 +1,66 @@
 {
+  "_meta": {
+    "language": "pl",
+    "status": "source",
+    "reviewed": true
+  },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Niezależny organ ratingowy."
+    "description": "Niezależny organ ratingowy oceniający jakość zarządzania instytucji publicznych, korporacyjnych i pozarządowych."
   },
   "Common": {
-    "rating": "Rating",
+    "rating": "Rating Certo",
     "score": "Certo Score",
-    "delegate": "Delegate",
+    "delegate": "Certo Delegate",
     "login": "Zaloguj się",
     "logout": "Wyloguj się",
-    "privacyPolicy": "Polityka Prywatności",
-    "termsOfUse": "Warunki Korzystania"
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfUse": "Warunki korzystania",
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "confirm": "Potwierdź",
+    "back": "Wróć",
+    "next": "Dalej",
+    "close": "Zamknij",
+    "search": "Szukaj",
+    "download": "Pobierz",
+    "verified": "Zweryfikowany",
+    "active": "Aktywny",
+    "inactive": "Nieaktywny"
+  },
+  "Navigation": {
+    "home": "Strona główna",
+    "ratings": "Ratingi",
+    "reports": "Raporty",
+    "analysis": "Analizy",
+    "about": "O Fundacji",
+    "contact": "Kontakt",
+    "dashboard": "Panel",
+    "settings": "Ustawienia"
+  },
+  "Auth": {
+    "login_title": "Zaloguj się",
+    "login_subtitle": "Zaloguj się do swojego konta",
+    "login_with_google": "Zaloguj się przez Google",
+    "email_label": "Adres e-mail",
+    "password_label": "Hasło",
+    "forgot_password": "Nie pamiętasz hasła?",
+    "no_account": "Nie masz konta?",
+    "register": "Zarejestruj się"
+  },
+  "Errors": {
+    "404_title": "Strona nie została znaleziona",
+    "404_description": "Strona której szukasz nie istnieje lub została przeniesiona.",
+    "500_title": "Błąd serwera",
+    "500_description": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie później.",
+    "unauthorized": "Brak dostępu. Zaloguj się aby kontynuować."
+  },
+  "Footer": {
+    "rights": "Wszelkie prawa zastrzeżone",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki korzystania",
+    "contact": "Kontakt"
   }
 }
