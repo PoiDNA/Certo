@@ -1,7 +1,7 @@
 'use client';
 
 import { createBrowserClient } from '@supabase/ssr';
-import { Suspense } from 'react';
+
 
 function LoginContent() {
   const supabase = createBrowserClient(
@@ -62,9 +62,5 @@ function LoginContent() {
 }
 
 export default function LoginPage() {
-  return (
-    <Suspense>
-      <LoginContent />
-    </Suspense>
-  );
+  return <LoginContent />;
 }
