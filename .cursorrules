@@ -64,6 +64,129 @@ pipeline/                          → GitHub Actions skrypty (Node.js)
 - Sekcje: naprzemiennie dark navy i cream/white
 - Elementy dekoracyjne: poziome linie gold, herb/logo eksponowane
 
+### Certo ID (certo.id) — styl: corporate / clean / international
+    - Tło: ciemny teal #1B4F5A lub #0D3340, białe sekcje content
+    - Akcenty: teal #2A7A8C, biały #FFFFFF, jasny szary #F4F6F7
+    - Typografia: sans-serif (system-ui, DM Sans, lub podobny)
+    - Styl: czysty, korporacyjny, nowoczesny, dużo whitespace
+    - Nawigacja: pozioma, prosta, bez ozdób
+    - CTA buttons: teal z białym tekstem, zaokrąglone rogi
+    - Zdjęcia: profesjonalne, biznesowe, architektura korporacyjna
+
+### Certo Foundation (certo.org.pl) — styl: prestiżowy / instytucjonalny / klasyczny
+    - Tło: głęboki navy #1A2744, cream #F5F0E8 dla sekcji jasnych
+    - Akcenty: złoto #C49A3C, złoto jasne #D4AF6A
+    - Typografia: serif (Georgia, Playfair Display lub podobny) dla nagłówków, sans dla body
+    - Styl: prestiżowy, instytucjonalny, ornamentyka subtelna (linie, separatory)
+    - Nawigacja: rozbudowana, z dropdownami, gold accents
+    - CTA buttons: gold z białym tekstem lub outline gold
+    - Ikony: cienkie linie, gold color
+    - Sekcje: naprzemiennie dark navy i cream/white
+    - Elementy dekoracyjne: poziome linie gold, herb/logo eksponowane
+
+### Certo Consulting (certo.consulting) — styl: premium / elegancki / doradczy
+
+**Display / nagłówki:**
+  - Font: Playfair Display lub Cormorant Garamond
+  - Weight: 300–400 (lekki, elegancki)
+  - Wielkość H1: 56–72px
+  - Letter-spacing: -0.02em
+
+**Body:**
+  - Font: DM Sans lub Libre Franklin
+  - Weight: 300–400
+  - Line-height: 1.7
+  - Wielkość: 16–18px
+
+**Akcenty / etykiety:**
+  - Font: ten sam co body, uppercase
+  - Letter-spacing: 0.15em
+  - Wielkość: 11–13px
+
+**Paleta kolorów (Tailwind CSS custom properties):**
+  - `--primary`:      #0A1628    /* granatowy głęboki — powaga */
+  - `--secondary`:    #1B3A6B    /* granatowy średni */
+  - `--accent`:       #CC7A00    /* złoty — prestiż, akcenty */
+  - `--accent-light`: #E8D5A3    /* złoty jasny — hover */
+  - `--surface`:      #F7F5F1    /* krem — tło sekcji */
+  - `--white`:        #FFFFFF
+  - `--text-primary`: #0A1628
+  - `--text-muted`:   #6B7280
+  - `--border`:       #E2DDD6
+
+**Layout:**
+  - Szerokość kontenera: max 1280px
+  - Padding boczny:      80px (desktop) / 24px (mobile)
+  - Grid: 12 kolumn z gutterem 24px
+
+**Sekcje:**
+  - Padding vertical: 120px (desktop)
+  - Padding vertical: 64px (mobile)
+
+**Proporcje (jak Bain):**
+  - hero pełnoekranowy z tekstem lewostronnym
+  - selektor branży jako interaktywny element
+  - duże zdjęcia po prawej stronie obok tekstu
+  - stopka ciemna (granatowa lub czarna)
+
+**Kluczowe komponenty:**
+
+**1 — Hero**
+  - Tło: ciemny gradient (granatowy → czarny) z subtelną teksturą geometryczną (linie, siatka)
+  - Tekst: biały, duży, lewostronny
+  - CTA: przycisk z złotym obramowaniem → wypełnienie złote on hover
+  - Animacja: fade-in z lekkim przesunięciem w górę (0.6s ease)
+
+**2 — Selektor doradcy (główna funkcja)**
+  - "Chcę porozmawiać z ekspertem ds.:"
+  - →  dropdown lub tagi klikalne z kategoriami: Ochrona zdrowia / JST / Obronność / Finanse / Edukacja
+  - →  po wyborze: formularz z danymi klienta
+  - →  wynik: profil akredytowanego doradcy Certo
+  - Styl tagów: obramowanie złote, tło transparentne; hover: wypełnienie złote, tekst ciemny
+
+**3 — Karty doradców**
+  - Zdjęcie: czarno-białe → kolor on hover
+  - Imię: Playfair Display, 20px
+  - Specjalizacja: uppercase, letter-spacing, muted
+  - Akredytacja Certo: złota odznaka z poziomem ratingu
+  - Border: 1px solid var(--border)
+  - Hover: cień 0 8px 32px rgba(0,0,0,0.12)
+
+**4 — Nawigacja**
+  - Górny pasek: biały / transparentny on scroll
+  - Logo: "Certo" w Playfair + "consulting" w DM Sans lowercase
+  - Menu: DM Sans uppercase, 12px, letter-spacing 0.1em
+  - CTA w nav: "Znajdź doradcę" — złoty przycisk
+
+**5 — Stopka**
+  - Tło: var(--primary) — głęboki granatowy
+  - Tekst: biały / kremowy
+  - Linki: złote on hover
+  - Separator: pozioma linia 1px złota z opacity 0.3
+  - Informacja o akredytacji Fundacji Certo
+
+**Animacje:**
+  - Page load:    staggered fade-in nagłówków (0.1s delay między elementami)
+  - Hover cards:  translateY(-4px) + shadow (0.2s ease)
+  - CTA buttons:  background-color transition 0.3s + subtle scale(1.02)
+  - Selektor:     smooth expand/collapse sekcji formularza
+  - Scroll:       parallax na hero image (subtelny, max 20px przesunięcie)
+
+**Czego NIE robić:**
+  - ❌  Purple gradients
+  - ❌  Inter / Roboto / Arial
+  - ❌  Rounded corners > 8px (zbyt "startup")
+  - ❌  Emoji w nagłówkach
+  - ❌  Animacje > 0.6s
+  - ❌  Więcej niż 3 kolory akcentu jednocześnie
+  - ❌  Karty z shadow na białym tle bez border
+
+**Benchmark wizualny:**
+  - Bain & Company     →  struktura layoutu, proporcje sekcji
+  - McKinsey.com       →  typografia display, białe przestrzenie
+  - Financial Times    →  paleta złoto + granat
+  - Monocle.com        →  editorial tone, selekcja fontów
+
 ### Wytyczne techniczne UI
 - Ikony (ogólnie): Lucide React (preferowane, o ile design nie wymaga inaczej)
 - UI Components: czysty HTML + Tailwind — brak zewnętrznej biblioteki komponentów.

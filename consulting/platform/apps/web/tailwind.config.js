@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         'certo-primary': '#0A1628',
         'certo-secondary': '#1B3A6B',
-        'certo-accent': '#C8A96E',
+        'certo-accent': '#CC7A00',
         'certo-accent-light': '#E8D5A3',
         'certo-surface': '#F7F5F1',
         'certo-muted': '#6B7280',
