@@ -1,0 +1,15 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Independent rating body."
+  },
+  "Common": {
+    "rating": "Rating",
+    "score": "Certo Score",
+    "delegate": "Delegate",
+    "login": "Login",
+    "logout": "Logout",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use"
+  }
+}

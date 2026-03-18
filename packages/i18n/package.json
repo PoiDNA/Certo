@@ -1,0 +1,6 @@
+{
+  "name": "@certo/i18n",
+  "version": "1.0.0",
+  "private": true,
+  "main": "config.ts"
+}

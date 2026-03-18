@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  },
+  "private": true,
+  "workspaces": [
+    "foundation/platform/apps/*",
+    "foundation/platform/packages/*",
+    "company/platform/apps/*",
+    "company/platform/packages/*",
+    "consulting/platform/apps/*",
+    "consulting/platform/packages/*",
+    "packages/*"
+  ]
+}
