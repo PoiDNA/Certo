@@ -1,21 +1,28 @@
-import React from 'react';
+import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Polityka prywatności | Certo Consulting',
-  description: 'Zasady przetwarzania danych osobowych w Certo Consulting.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Legal' });
+  return {
+    title: `${t('privacy_title')} | Certo Consulting`,
+    description: t('privacy_title'),
+  };
+}
 
-export default function PolitykaPrywatnosci() {
+export default async function PolitykaPrywatnosci({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Legal' });
+
   return (
     <>
       <section className="bg-certo-primary pt-32 pb-20 md:pt-40 md:pb-24">
         <div className="max-w-[1280px] mx-auto px-6 md:px-20">
           <h1 className="font-display text-4xl md:text-5xl text-white font-light tracking-[-0.02em] mb-6">
-            Polityka prywatności
+            {t('privacy_title')}
           </h1>
           <p className="text-certo-surface/80 text-lg font-light max-w-2xl">
-            Informacje dotyczące przetwarzania Twoich danych osobowych przez Certo Consulting.
+            {t('last_updated')}
           </p>
         </div>
       </section>
@@ -24,7 +31,6 @@ export default function PolitykaPrywatnosci() {
         <div className="max-w-[1280px] mx-auto px-6 md:px-20">
           <div className="bg-white p-8 md:p-16 border border-certo-border shadow-sm max-w-4xl">
             <div className="prose prose-lg prose-certo">
-              
               <h2 className="font-display text-2xl text-certo-primary mb-6">1. Administrator Danych</h2>
               <p className="text-certo-muted font-light leading-relaxed mb-8">
                 Administratorem Twoich danych osobowych jest Certo ID PSA. Dbamy o to, aby Twoje dane były przetwarzane w sposób bezpieczny i zgodny z obowiązującymi przepisami prawa, w tym RODO.
