@@ -1,21 +1,28 @@
-import React from 'react';
+import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Regulamin i Warunki Korzystania | Certo Consulting',
-  description: 'Regulamin świadczenia usług i korzystania z platformy Certo Consulting.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Legal' });
+  return {
+    title: `${t('terms_title')} | Certo Consulting`,
+    description: t('terms_title'),
+  };
+}
 
-export default function Regulamin() {
+export default async function Regulamin({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Legal' });
+
   return (
     <>
       <section className="bg-certo-primary pt-32 pb-20 md:pt-40 md:pb-24">
         <div className="max-w-[1280px] mx-auto px-6 md:px-20">
           <h1 className="font-display text-4xl md:text-5xl text-white font-light tracking-[-0.02em] mb-6">
-            Warunki korzystania z usług
+            {t('terms_title')}
           </h1>
           <p className="text-certo-surface/80 text-lg font-light max-w-2xl">
-            Zasady i regulamin świadczenia usług doradczych przez sieć akredytowanych ekspertów Certo.
+            {t('last_updated')}
           </p>
         </div>
       </section>
@@ -24,7 +31,6 @@ export default function Regulamin() {
         <div className="max-w-[1280px] mx-auto px-6 md:px-20">
           <div className="bg-white p-8 md:p-16 border border-certo-border shadow-sm max-w-4xl">
             <div className="prose prose-lg prose-certo">
-              
               <h2 className="font-display text-2xl text-certo-primary mb-6">1. Postanowienia ogólne</h2>
               <p className="text-certo-muted font-light leading-relaxed mb-8">
                 Niniejszy regulamin określa zasady korzystania z usług doradczych świadczonych przez platformę Certo Consulting. Wszyscy doradcy dostępni w serwisie są ściśle akredytowani i podlegają nadzorowi merytorycznemu Fundacji Certo Governance Institute.
@@ -48,14 +54,13 @@ export default function Regulamin() {
 
               <h2 className="font-display text-2xl text-certo-primary mb-6">4. Odpowiedzialność</h2>
               <p className="text-certo-muted font-light leading-relaxed mb-8">
-                Certo Consulting gwarantuje najwyższy standard usług doradczych oparty o wytyczne Fundacji. Ewentualna odpowiedzialność z tytułu realizowanych projektów doradczych jest szczegółowo określana w zawieranych z poszczególnymi podmiotami umowach zlecenia. 
+                Certo Consulting gwarantuje najwyższy standard usług doradczych oparty o wytyczne Fundacji. Ewentualna odpowiedzialność z tytułu realizowanych projektów doradczych jest szczegółowo określana w zawieranych z poszczególnymi podmiotami umowach zlecenia.
               </p>
 
               <h2 className="font-display text-2xl text-certo-primary mb-6">5. Postanowienia końcowe</h2>
               <p className="text-certo-muted font-light leading-relaxed">
                 Certo ID PSA zastrzega sobie prawo do wprowadzania zmian w niniejszym regulaminie. Zmiany wchodzą w życie z dniem ich publikacji na stronie internetowej Certo Consulting. Prawem właściwym dla wszelkich sporów jest prawo Rzeczypospolitej Polskiej.
               </p>
-              
             </div>
           </div>
         </div>

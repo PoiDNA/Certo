@@ -16,15 +16,28 @@
     "terms": "Terms of Service"
   },
   "Home": {
-    "hero_title": "Find a governance expert",
-    "hero_subtitle": "Certo Accredited Advisors support institutions in maintaining and improving their Certo Rating.",
-    "hero_cta": "Find an advisor",
-    "step_1_title": "Specify your sector",
-    "step_1_text": "Select the sector in which your institution operates",
-    "step_2_title": "Describe your need",
-    "step_2_text": "Tell us what you need",
-    "step_3_title": "Get a match",
-    "step_3_text": "The system will match you with an accredited Certo Advisor"
+    "hero_title": "Expert advisory\nat board level.",
+    "hero_subtitle": "We connect Certo accredited advisors with institutions requiring the highest standards of corporate governance and regulatory compliance.",
+    "hero_cta": "Find an expert",
+    "finder_title": "I want to speak with an expert in:",
+    "area_health": "Healthcare",
+    "area_local_gov": "Local Government",
+    "area_defense": "Defense",
+    "area_finance": "Finance",
+    "area_education": "Education",
+    "form_title": "Leave your contact details so we can match you with the right advisor in",
+    "form_name": "Full name",
+    "form_email": "Business email",
+    "form_org": "Organization / Position",
+    "form_submit": "Send inquiry",
+    "advisors_title": "Example experts from our network",
+    "advisor_bio": "Certo accredited advisor with extensive experience in process optimization for strategic market institutions."
+  },
+  "Legal": {
+    "back": "Back to home",
+    "last_updated": "Last updated: March 2026",
+    "privacy_title": "Privacy Policy",
+    "terms_title": "Terms of Service"
   },
   "FindAdvisor": {
     "title": "Find a Certo Advisor",

@@ -16,15 +16,28 @@
     "terms": "Regulamin"
   },
   "Home": {
-    "hero_title": "Znajdź eksperta ds. governance",
-    "hero_subtitle": "Akredytowani doradcy Certo wspierają instytucje w utrzymaniu i podnoszeniu ratingu Certo.",
-    "hero_cta": "Znajdź doradcę",
-    "step_1_title": "Podaj swój sektor",
-    "step_1_text": "Wybierz sektor w którym działa Twoja instytucja",
-    "step_2_title": "Opisz potrzebę",
-    "step_2_text": "Powiedz nam czego potrzebujesz",
-    "step_3_title": "Otrzymaj dopasowanie",
-    "step_3_text": "System dobierze akredytowanego doradcę Certo"
+    "hero_title": "Eksperckie doradztwo\nna poziomie zarządu.",
+    "hero_subtitle": "Łączymy akredytowanych doradców Certo z instytucjami wymagającymi najwyższych standardów ładu korporacyjnego i zgodności regulacyjnej.",
+    "hero_cta": "Znajdź eksperta",
+    "finder_title": "Chcę porozmawiać z ekspertem ds.:",
+    "area_health": "Ochrona zdrowia",
+    "area_local_gov": "JST",
+    "area_defense": "Obronność",
+    "area_finance": "Finanse",
+    "area_education": "Edukacja",
+    "form_title": "Zostaw kontakt, abyśmy dobrali odpowiedniego doradcę z obszaru",
+    "form_name": "Imię i nazwisko",
+    "form_email": "Adres email (służbowy)",
+    "form_org": "Nazwa organizacji / Stanowisko",
+    "form_submit": "Wyślij zapytanie",
+    "advisors_title": "Przykładowi eksperci z naszej sieci",
+    "advisor_bio": "Akredytowany doradca Certo z wieloletnim doświadczeniem w optymalizacji procesów dla strategicznych instytucji rynkowych."
+  },
+  "Legal": {
+    "back": "Wróć do strony głównej",
+    "last_updated": "Ostatnia aktualizacja: Marzec 2026",
+    "privacy_title": "Polityka Prywatności",
+    "terms_title": "Warunki korzystania"
   },
   "FindAdvisor": {
     "title": "Znajdź doradcę Certo",
