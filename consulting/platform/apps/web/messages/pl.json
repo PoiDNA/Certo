@@ -3,6 +3,18 @@
     "title": "Certo Consulting — Znajdź Doradcę",
     "description": "Akredytowani doradcy Certo. Ład korporacyjny i zgodność."
   },
+  "Nav": {
+    "advisors": "Doradcy",
+    "expertise": "Ekspertyza",
+    "login": "Logowanie"
+  },
+  "Footer": {
+    "description": "Eksperckie doradztwo w zakresie ładu korporacyjnego, zgodności i bezpieczeństwa dla liderów rynkowych.",
+    "ecosystem": "Ekosystem Certo",
+    "accreditation": "Wszyscy doradcy są akredytowani przez Fundację Certo Governance Institute",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin"
+  },
   "Home": {
     "hero_title": "Znajdź eksperta ds. governance",
     "hero_subtitle": "Akredytowani doradcy Certo wspierają instytucje w utrzymaniu i podnoszeniu ratingu Certo.",

@@ -1,5 +1,18 @@
 {
   "Metadata": {
+    "title": "Certo Consulting — Find Your Advisor",
     "description": "Certo Accredited Advisors. Corporate Governance and Compliance."
+  },
+  "Nav": {
+    "advisors": "Advisors",
+    "expertise": "Expertise",
+    "login": "Log in"
+  },
+  "Footer": {
+    "description": "Expert advisory in corporate governance, compliance and security for market leaders.",
+    "ecosystem": "Certo Ecosystem",
+    "accreditation": "All advisors are accredited by the Certo Governance Institute Foundation",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }
