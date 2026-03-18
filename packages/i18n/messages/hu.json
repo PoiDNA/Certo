@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "language": "hu",
+    "status": "machine_translated",
+    "reviewed": false,
+    "source": "pl",
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "Metadata": {
+    "title": "Certo Governance Institute",
+    "description": "Független minősítő szerv, amely a közintézmények, vállalati szervezetek és civil szervezetek irányítási minőségét értékeli."
+  },
+  "Common": {
+    "rating": "Rating Certo",
+    "score": "Certo Score",
+    "delegate": "Certo Delegate",
+    "login": "Bejelentkezés",
+    "logout": "Kijelentkezés",
+    "privacyPolicy": "Adatvédelmi szabályzat",
+    "termsOfUse": "Felhasználási feltételek",
+    "loading": "Betöltés folyamatban...",
+    "error": "Hiba történt",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "confirm": "Megerősítés",
+    "back": "Vissza",
+    "next": "Tovább",
+    "close": "Bezárás",
+    "search": "Keresés",
+    "download": "Letöltés",
+    "verified": "Ellenőrzött",
+    "active": "Aktív",
+    "inactive": "Inaktív"
+  },
+  "Navigation": {
+    "home": "Kezdőoldal",
+    "ratings": "Minősítések",
+    "reports": "Jelentések",
+    "analysis": "Elemzések",
+    "about": "Az Intézetről",
+    "contact": "Kapcsolat",
+    "dashboard": "Irányítópult",
+    "settings": "Beállítások"
+  },
+  "Auth": {
+    "login_title": "Bejelentkezés",
+    "login_subtitle": "Jelentkezzen be a fiókjába",
+    "login_with_google": "Bejelentkezés Google-lel",
+    "email_label": "E-mail cím",
+    "password_label": "Jelszó",
+    "forgot_password": "Elfelejtette a jelszavát?",
+    "no_account": "Még nincs fiókja?",
+    "register": "Regisztráció"
+  },
+  "Errors": {
+    "404_title": "Az oldal nem található",
+    "404_description": "A keresett oldal nem létezik vagy át lett helyezve.",
+    "500_title": "Szerverhiba",
+    "500_description": "Váratlan hiba történt. Kérjük, próbálkozzon később.",
+    "unauthorized": "Nincs hozzáférés. A folytatáshoz jelentkezzen be."
+  },
+  "Footer": {
+    "rights": "Minden jog fenntartva",
+    "privacy": "Adatvédelmi szabályzat",
+    "terms": "Felhasználási feltételek",
+    "contact": "Kapcsolat"
+  }
+}

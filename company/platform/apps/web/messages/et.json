@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identiteedi verifikatsioon ja compliance avaliku sektori asutustele ja korporatsioonidele."
+  },
+  "Dashboard": {
+    "title": "Certo ID juhtpaneel",
+    "welcome": "Tere, {name}",
+    "your_rating": "Teie Certo Rating",
+    "your_delegates": "Teie Delegaadid",
+    "your_accords": "Teie Certo Accord",
+    "recent_activity": "Viimane tegevus",
+    "quick_actions": "Kiirtoimingud"
+  },
+  "Profile": {
+    "title": "Profiil",
+    "organization": "Organisatsioon",
+    "contact_person": "Kontaktisik",
+    "sector": "Sektor",
+    "edit_profile": "Muuda profiili",
+    "verified_badge": "Verifieeritud subjekt"
+  },
+  "Delegates": {
+    "title": "Certo Delegaadid",
+    "add_delegate": "Lisa delegaat",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Olek",
+    "primary_link": "PRIMARY link",
+    "failover_link": "FAILOVER link",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

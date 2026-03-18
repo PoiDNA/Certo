@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundazjoni Certo Governance Institute",
+    "description": "Organu ta' rating indipendenti li jevalwa l-kwalità tal-governanza fis-settur pubbliku, korporattiv, mediku u difiża."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo hija l-ewwel aġenzija ta' rating fid-dinja li l-ratingi tagħha huma artefatti kriptografiċi tal-proċess — mhux opinjonijiet. Kull deċiżjoni ta' rating hija ntela' barra mill-infrastruttura stess tagħha, verifikabbli offline u pubblikament awditabbli.",
+    "hero_cta_primary": "Ċċeċka l-ratingi",
+    "hero_cta_secondary": "Tgħallem aktar",
+    "section_ratings_title": "Ir-Ratingi Certo l-Ġodda",
+    "section_reports_title": "Analiżi u Rapporti",
+    "section_about_title": "Dwar il-Fundazjoni"
+  },
+  "Ratings": {
+    "title": "Ratingi Certo",
+    "subtitle": "Evaluazzjonijiet tal-kwalità tal-governanza tal-istituzzjonijiet",
+    "search_placeholder": "Fittex istituzzjoni...",
+    "filter_sector": "Settur",
+    "sector_public": "Pubbliku",
+    "sector_corporate": "Korporattiv",
+    "sector_medical": "Mediku",
+    "sector_defense": "Difiża",
+    "sector_ngo": "Mhux Governattiv",
+    "rating_valid_until": "Rating validu sa",
+    "rating_issued": "Data tal-Ħruġ",
+    "no_results": "L-ebda riżultati ma nstabgħu",
+    "view_profile": "Ara l-Profil"
+  },
+  "Nav": {
+    "ratings": "Ratingi",
+    "methodology": "Metodoloġija",
+    "about": "Dwar il-Fundazjoni",
+    "login": "Dħol"
+  },
+  "About": {
+    "title": "Dwar il-Fundazjoni Certo Governance Institute",
+    "mission_title": "Missjoni",
+    "mission_text": "Ibnaġ tal-kultura ta' governanza tajba permezz ta' valutazzjoni indipendenti u promozzjoni ta' standards ta' governanza f'Malta u l-Ewropa.",
+    "independence_title": "Indipendenza",
+    "independence_text": "Il-Fundazjoni hija indipendenti mill-entitajiet li qed jiġu evalwati, mill-organi tal-awtorità pubblika u mill-interessi kummerċjali.",
+    "methodology_title": "Metodoloġija",
+    "methodology_text": "Ir-Ratingi Certo jibbu fuq metodoloġija rigoruża bbażata fuq standards ISO u gwidi EU."
+  }
+}

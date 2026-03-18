@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Verifika tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
+  },
+  "Dashboard": {
+    "title": "Panel Certo ID",
+    "welcome": "Merħba, {name}",
+    "your_rating": "Your Rating Certo",
+    "your_delegates": "Id-Delegati Tiegħek",
+    "your_accords": "Your Certo Accord",
+    "recent_activity": "Attività reċenti",
+    "quick_actions": "Azzjonijiet malajr"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Organizzazzjoni",
+    "contact_person": "Persuna ta' kuntatt",
+    "sector": "Settur",
+    "edit_profile": "Immodifika l-profil",
+    "verified_badge": "Entità verifika"
+  },
+  "Delegates": {
+    "title": "Delegati Certo",
+    "add_delegate": "Żid delegat",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Status",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

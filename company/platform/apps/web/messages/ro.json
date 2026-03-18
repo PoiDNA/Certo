@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Verificare identitate și compliance pentru instituții publice și corporații."
+  },
+  "Dashboard": {
+    "title": "Panou Certo ID",
+    "welcome": "Bine ai venit, {name}",
+    "your_rating": "Certo Rating-ul tău",
+    "your_delegates": "Delegații tăi",
+    "your_accords": "Certo Accord-urile tale",
+    "recent_activity": "Activitate recentă",
+    "quick_actions": "Acțiuni rapide"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Organizație",
+    "contact_person": "Persoană de contact",
+    "sector": "Sector",
+    "edit_profile": "Editează profil",
+    "verified_badge": "Entitate verificată"
+  },
+  "Delegates": {
+    "title": "Delegați Certo",
+    "add_delegate": "Adaugă delegat",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Stare",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

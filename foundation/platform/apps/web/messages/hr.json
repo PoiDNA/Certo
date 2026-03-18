@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundacija Certo Governance Institute",
+    "description": "Neovisna agencija za ratingiranje koja ocjenjuje kvalitetu upravljanja u javnom, korporativnom, medicinskom i obrambenom sektoru."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo je prva svjetska agencija za ratingiranje čiji su ratingi kriptografski artefakti procesa — nisu mišljenja. Svaka odluka o ratingiranju je usidrenjena izvan vlastite infrastrukture, verificira se offline i javno se može provjeriti.",
+    "hero_cta_primary": "Provjeri ratingе",
+    "hero_cta_secondary": "Saznaj više",
+    "section_ratings_title": "Najnoviji Certo Ratingi",
+    "section_reports_title": "Analize i Izvještaji",
+    "section_about_title": "O Fundaciji"
+  },
+  "Ratings": {
+    "title": "Certo Ratingi",
+    "subtitle": "Ocjene kvalitete upravljanja institucija",
+    "search_placeholder": "Pretraži instituciju...",
+    "filter_sector": "Sektor",
+    "sector_public": "Javni",
+    "sector_corporate": "Korporativni",
+    "sector_medical": "Medicinski",
+    "sector_defense": "Obramben",
+    "sector_ngo": "Nevladina organizacija",
+    "rating_valid_until": "Rating valjan do",
+    "rating_issued": "Datum izdavanja",
+    "no_results": "Nema rezultata",
+    "view_profile": "Pogledaj profil"
+  },
+  "Nav": {
+    "ratings": "Ratingi",
+    "methodology": "Metodologija",
+    "about": "O Fundaciji",
+    "login": "Prijava"
+  },
+  "About": {
+    "title": "O Fundaciji Certo Governance Institute",
+    "mission_title": "Misija",
+    "mission_text": "Izgradnja kulture dobrog upravljanja kroz neovisnu procjenu i promociju standarda upravljanja u Hrvatskoj i Europi.",
+    "independence_title": "Neovisnost",
+    "independence_text": "Fundacija je neovisna od ocijenjenih subjekata, organa javne vlasti i komercijalnih interesa.",
+    "methodology_title": "Metodologija",
+    "methodology_text": "Certo ratingi temelje se na strogoj metodologiji razrađenoj prema ISO standardima i smjernicama EU."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identiteitsverificatie en compliance voor openbare instellingen en bedrijven."
+  },
+  "Dashboard": {
+    "title": "Certo ID Dashboard",
+    "welcome": "Welkom, {name}",
+    "your_rating": "Uw Certo Rating",
+    "your_delegates": "Uw Certo Delegates",
+    "your_accords": "Uw Certo Accords",
+    "recent_activity": "Recente activiteit",
+    "quick_actions": "Snelle acties"
+  },
+  "Profile": {
+    "title": "Profiel",
+    "organization": "Organisatie",
+    "contact_person": "Contactpersoon",
+    "sector": "Sector",
+    "edit_profile": "Profiel bewerken",
+    "verified_badge": "Geverifieerde entiteit"
+  },
+  "Delegates": {
+    "title": "Certo Delegates",
+    "add_delegate": "Certo Delegate toevoegen",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Status",
+    "primary_link": "PRIMARY link",
+    "failover_link": "FAILOVER link",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

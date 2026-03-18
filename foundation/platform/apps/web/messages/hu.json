@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute Alapítvány",
+    "description": "Független minősítő szerv, amely a közszférában, a vállalati szektorban, az egészségügyi és védelmi szektorban értékeli a kormányzási minőséget."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "A Certo az első olyan minősítőügynökség a világon, amelynek minősítései a folyamat kriptográfiai lenyomatai — nem pedig vélemények. Minden minősítési döntés saját infrastruktúráján kívül van rögzítve, offline ellenőrizhető és nyilvánosan auditálható.",
+    "hero_cta_primary": "Nézze meg a minősítéseket",
+    "hero_cta_secondary": "Tudjon meg többet",
+    "section_ratings_title": "Legújabb Certo Minősítések",
+    "section_reports_title": "Elemzések és Jelentések",
+    "section_about_title": "Az Alapítványról"
+  },
+  "Ratings": {
+    "title": "Certo Minősítések",
+    "subtitle": "Intézmények kormányzási minőségének értékelése",
+    "search_placeholder": "Intézmény keresése...",
+    "filter_sector": "Szektor",
+    "sector_public": "Közszféra",
+    "sector_corporate": "Vállalati",
+    "sector_medical": "Egészségügyi",
+    "sector_defense": "Védelmi",
+    "sector_ngo": "Nonprofit",
+    "rating_valid_until": "Minősítés érvényes:",
+    "rating_issued": "Kiadás dátuma",
+    "no_results": "Nincs eredmény",
+    "view_profile": "Profil megtekintése"
+  },
+  "Nav": {
+    "ratings": "Minősítések",
+    "methodology": "Módszertan",
+    "about": "Az Alapítványról",
+    "login": "Bejelentkezés"
+  },
+  "About": {
+    "title": "A Certo Governance Institute Alapítványról",
+    "mission_title": "Missió",
+    "mission_text": "A jó kormányzás kultúrájának építése független értékelés és a governance standardok népszerűsítése révén Lengyelország és Európa egész területén.",
+    "independence_title": "Függetlenség",
+    "independence_text": "Az alapítvány független az értékelt szervezetektől, a közhatalmak szerveítől és a kereskedelmi érdekektől.",
+    "methodology_title": "Módszertan",
+    "methodology_text": "A Certo minősítések szigorú, ISO standardokra és EU iránymutatásokra épülő módszertanon alapulnak."
+  }
+}

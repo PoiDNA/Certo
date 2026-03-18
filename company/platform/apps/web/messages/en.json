@@ -1,5 +1,34 @@
 {
   "Metadata": {
-    "description": "Verified Digital Identity for public institutions and corporations."
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identity verification and compliance for public institutions and corporations."
+  },
+  "Dashboard": {
+    "title": "Certo ID Dashboard",
+    "welcome": "Welcome, {name}",
+    "your_rating": "Your Certo Rating",
+    "your_delegates": "Your Delegates",
+    "your_accords": "Your Certo Accord",
+    "recent_activity": "Recent activity",
+    "quick_actions": "Quick actions"
+  },
+  "Profile": {
+    "title": "Profile",
+    "organization": "Organization",
+    "contact_person": "Contact person",
+    "sector": "Sector",
+    "edit_profile": "Edit profile",
+    "verified_badge": "Verified entity"
+  },
+  "Delegates": {
+    "title": "Certo Delegates",
+    "add_delegate": "Add delegate",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Status",
+    "primary_link": "PRIMARY Link",
+    "failover_link": "FAILOVER Link",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
   }
 }

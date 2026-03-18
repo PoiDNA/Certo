@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Certo Governance Institute fonds",
+    "description": "Neatkarīgs reitinga iestāde, kas novērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnas un aizsardzības sektorā."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo ir pirmā pasaules reitinga aģentūra, kuras reitingi ir kriptografiskas procesa artefakts — nevis viedokļi. Katrs reitinga lēmums ir nostiprināts ārpus tās pašas infrastruktūras, verificējams bezsaistē un publiski auditorējams.",
+    "hero_cta_primary": "Pārbaudiet reitingus",
+    "hero_cta_secondary": "Uzziniet vairāk",
+    "section_ratings_title": "Jaunākie Certo reitingi",
+    "section_reports_title": "Analīzes un pārskati",
+    "section_about_title": "Par fondu"
+  },
+  "Ratings": {
+    "title": "Certo reitingi",
+    "subtitle": "Iestāžu pārvaldības kvalitātes novērtējumi",
+    "search_placeholder": "Meklējiet iestādi...",
+    "filter_sector": "Sektors",
+    "sector_public": "Publiskais",
+    "sector_corporate": "Korporatīvais",
+    "sector_medical": "Medicīnas",
+    "sector_defense": "Aizsardzības",
+    "sector_ngo": "Nevalstiskais",
+    "rating_valid_until": "Reitings ir derīgs līdz",
+    "rating_issued": "Izdošanas datums",
+    "no_results": "Rezultāti nav atrasti",
+    "view_profile": "Skatīt profilu"
+  },
+  "Nav": {
+    "ratings": "Reitingi",
+    "methodology": "Metodologija",
+    "about": "Par fondu",
+    "login": "Pierakstieties"
+  },
+  "About": {
+    "title": "Par Certo Governance Institute fondu",
+    "mission_title": "Misija",
+    "mission_text": "Labas pārvaldības kultūras veidošana, izmantojot neatkarīgu novērtējumu un pārvaldības standartu veicināšanu Polijā un Eiropā.",
+    "independence_title": "Neatkarība",
+    "independence_text": "Fonds ir neatkarīgs no novērtējamo subjektu, valsts varas iestāžu un komerciālo interešu.",
+    "methodology_title": "Metodologija",
+    "methodology_text": "Certo reitingi ir balstīti uz stingru metodologiju, kura pamatā ir ISO standarti un ES vadlīnijas."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Metadata": {
+    "title": "Fundace Certo Governance Institute",
+    "description": "Nezávislá ratingová agentura hodnotící kvalitu řízení ve veřejném, korporátním, zdravotnickém a obranném sektoru."
+  },
+  "Home": {
+    "title": "Certo Governance Institute",
+    "description": "Certo je první světovou ratingovou agenturou, jejíž ratingy jsou kryptografickými artefakty procesu – nikoli názory. Každé ratingové rozhodnutí je ukotveno mimo vlastní infrastrukturu, ověřitelné offline a veřejně auditovatelné.",
+    "hero_cta_primary": "Zobrazit ratingy",
+    "hero_cta_secondary": "Další informace",
+    "section_ratings_title": "Nejnovější Ratingy Certo",
+    "section_reports_title": "Analýzy a Zprávy",
+    "section_about_title": "O Fundaci"
+  },
+  "Ratings": {
+    "title": "Ratingy Certo",
+    "subtitle": "Hodnocení kvality řízení institucí",
+    "search_placeholder": "Hledejte instituci...",
+    "filter_sector": "Sektor",
+    "sector_public": "Veřejný",
+    "sector_corporate": "Korporátní",
+    "sector_medical": "Zdravotnický",
+    "sector_defense": "Obranný",
+    "sector_ngo": "Nevládní sektor",
+    "rating_valid_until": "Rating platný do",
+    "rating_issued": "Datum vydání",
+    "no_results": "Nebyly nalezeny žádné výsledky",
+    "view_profile": "Zobrazit profil"
+  },
+  "Nav": {
+    "ratings": "Ratingy",
+    "methodology": "Metodologie",
+    "about": "O Fundaci",
+    "login": "Přihlášení"
+  },
+  "About": {
+    "title": "O Fundaci Certo Governance Institute",
+    "mission_title": "Poslání",
+    "mission_text": "Budování kultury kvalitního řízení prostřednictvím nezávislého hodnocení a prosazování standardů governance v Polsku a Evropě.",
+    "independence_title": "Nezávislost",
+    "independence_text": "Fundace je nezávislá na subjektech, které jsou hodnoceny, veřejných orgánech a komerčních zájmech.",
+    "methodology_title": "Metodologie",
+    "methodology_text": "Ratingy Certo jsou založeny na přísné metodologii vycházející ze standardů ISO a směrnic EU."
+  }
+}
