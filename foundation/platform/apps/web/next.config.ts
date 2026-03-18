@@ -10,9 +10,14 @@ const nextConfig = {
   // Enable MDX if needed later
   pageExtensions: ["tsx", "ts", "mdx", "md"],
   
-  // Rewrite API to Supabase if needed
-  async rewrites() {
-    return [];
+  async redirects() {
+    return [
+      {
+        source: '/:locale/pp',
+        destination: '/:locale/privacy',
+        permanent: true,
+      },
+    ];
   },
 };
 

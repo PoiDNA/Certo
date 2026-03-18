@@ -13,23 +13,23 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const fm = getMdxFrontmatter('terms', locale);
+  const fm = getMdxFrontmatter('privacy', locale);
   return {
-    title: fm?.title ?? 'Warunki Korzystania',
+    title: fm?.title ?? 'Polityka Prywatności',
     description: fm?.description,
     alternates: {
-      canonical: `https://certogov.org/${locale}/terms`,
+      canonical: `https://certogov.org/${locale}/privacy`,
     },
   };
 }
 
-export default async function TermsPage({
+export default async function PrivacyPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const mdx = await getMdxContent('terms', locale);
+  const mdx = await getMdxContent('privacy', locale);
   if (!mdx) notFound();
 
   return (

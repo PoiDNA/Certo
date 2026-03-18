@@ -5,6 +5,11 @@
     "about": "About",
     "login": "Log in"
   },
+  "Footer": {
+    "copyright": "Certo Governance Institute Foundation © {year}",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
   "Home": {
     "title": "Certo Governance Institute",
     "description": "Certo is the world's first rating agency whose ratings are cryptographic artifacts of the process—not opinions. Every rating decision is anchored outside its own infrastructure, verifiable offline, and publicly auditable."
