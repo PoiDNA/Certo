@@ -1,4 +1,9 @@
 import { useTranslations } from 'next-intl';
+import { locales } from '@certo/i18n/config';
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default function Home() {
   const t = useTranslations('Home');
