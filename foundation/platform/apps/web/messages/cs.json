@@ -1,16 +1,16 @@
 {
   "Metadata": {
-    "title": "Fundace Certo Governance Institute",
+    "title": "Nadační Certo Governance Institute",
     "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení ve veřejném, korporátním, zdravotnickém a obranném sektoru."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je první na světě ratingovou agenturou, jejíž ratingy jsou kryptografickými artefakty procesu — nikoli názory. Každé ratingové rozhodnutí je zakotveno mimo vlastní infrastrukturu, ověřitelné offline a veřejně auditovatelné.",
+    "description": "Certo je první na světě ratingovou agenturou, jejíž ratingy jsou kryptografickými artefakty procesu — nikoli názory. Každé ratingové rozhodnutí je ukotveno mimo vlastní infrastrukturu, ověřitelné offline a veřejně auditovatelné.",
     "hero_cta_primary": "Zkontroluj ratingy",
-    "hero_cta_secondary": "Zjistit více",
+    "hero_cta_secondary": "Dozvídat se více",
     "section_ratings_title": "Nejnovější Ratingy Certo",
     "section_reports_title": "Analýzy a Zprávy",
-    "section_about_title": "O Fundaci"
+    "section_about_title": "O Nadaci"
   },
   "Ratings": {
     "title": "Ratingy Certo",
@@ -30,21 +30,21 @@
   "Nav": {
     "ratings": "Ratingy",
     "methodology": "Metodologie",
-    "about": "O Fundaci",
-    "login": "Přihlásit se"
+    "about": "O Nadaci",
+    "login": "Přihlášení"
   },
   "Footer": {
-    "copyright": "Fundace Certo Governance Institute © {year}",
-    "privacy": "Zásady Ochrany Osobních Údajů",
-    "terms": "Podmínky Používání"
+    "copyright": "Nadační Certo Governance Institute © {year}",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky používání"
   },
   "About": {
-    "title": "O Fundaci Certo Governance Institute",
+    "title": "O Nadační Certo Governance Institute",
     "mission_title": "Mise",
     "mission_text": "Budování kultury dobrého řízení prostřednictvím nezávislého hodnocení a prosazování standardů governance v Polsku a Evropě.",
     "independence_title": "Nezávislost",
-    "independence_text": "Fundace je nezávislá na hodnocených subjektech, orgánech veřejné moci a komerčních zájmech.",
+    "independence_text": "Nadace je nezávislá na hodnocených subjektech, orgánech veřejné moci a komerčních zájmech.",
     "methodology_title": "Metodologie",
-    "methodology_text": "Ratingy Certo jsou založeny na důsledné metodologii postavené na normách ISO a pokynech EU."
+    "methodology_text": "Ratingy Certo vycházejí z přísné metodologie založené na normách ISO a pokynech EU."
   }
 }

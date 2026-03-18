@@ -9,52 +9,52 @@
     "login": "Login"
   },
   "Footer": {
-    "description": "Expert advisory in corporate governance, compliance and security for market leaders.",
+    "description": "Expert advisory on corporate governance, compliance and security for market leaders.",
     "ecosystem": "Certo Ecosystem",
-    "accreditation": "All advisors are accredited by Certo Governance Institute",
+    "accreditation": "All advisors are accredited by the Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions"
+    "terms": "Terms of Service"
   },
   "Home": {
     "hero_title": "Expert advisory\nat board level.",
-    "hero_subtitle": "We connect Certo accredited advisors with institutions requiring the highest standards of corporate governance and regulatory compliance.",
+    "hero_subtitle": "We connect accredited Certo advisors with institutions requiring the highest standards of corporate governance and regulatory compliance.",
     "hero_cta": "Find an expert",
-    "finder_title": "I want to speak with an expert in:",
+    "finder_title": "I want to talk to an expert in:",
     "area_health": "Healthcare",
     "area_local_gov": "Local Government",
     "area_defense": "Defense",
     "area_finance": "Finance",
     "area_education": "Education",
-    "form_title": "Leave your contact details so we can match you with the right advisor in",
-    "form_name": "Full name",
-    "form_email": "Business email",
-    "form_org": "Organization / Position",
-    "form_submit": "Send inquiry",
-    "advisors_title": "Example experts from our network",
-    "advisor_bio": "Certo accredited advisor with extensive experience in process optimization for strategic market institutions."
+    "form_title": "Leave your contact details so we can match you with the right advisor from the area of",
+    "form_name": "Full Name",
+    "form_email": "Email Address (work)",
+    "form_org": "Organization Name / Position",
+    "form_submit": "Submit Query",
+    "advisors_title": "Sample experts from our network",
+    "advisor_bio": "Accredited Certo advisor with many years of experience in process optimization for strategic market institutions."
   },
   "Legal": {
-    "back": "Back to home",
+    "back": "Back to homepage",
     "last_updated": "Last updated: March 2026",
     "privacy_title": "Privacy Policy",
     "terms_title": "Terms of Service"
   },
   "FindAdvisor": {
     "title": "Find a Certo Advisor",
-    "sector_label": "Your institution's sector",
+    "sector_label": "Your Institution's Sector",
     "need_label": "What do you need?",
     "need_audit": "Governance audit",
     "need_advisory": "Strategic advisory",
     "need_training": "Training and workshops",
     "need_rating": "Rating preparation",
     "region_label": "Region",
-    "submit": "Find an advisor"
+    "submit": "Search for advisor"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",
     "specialization": "Specialization",
     "sectors": "Sectors",
     "contact_advisor": "Contact",
-    "view_profile": "View profile"
+    "view_profile": "View Profile"
   }
 }

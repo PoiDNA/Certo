@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ independent de rating care evaluează calitatea guvernanței instituțiilor publice, corporative și non-profit."
+    "description": "Organ de rating independent care evaluează calitatea managementului instituțiilor publice, corporative și neguvernamentale."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -33,34 +33,34 @@
     "inactive": "Inactiv"
   },
   "Navigation": {
-    "home": "Pagina principală",
+    "home": "Pagina de start",
     "ratings": "Ratinguri",
     "reports": "Rapoarte",
     "analysis": "Analize",
     "about": "Despre Fundație",
     "contact": "Contact",
-    "dashboard": "Panou de control",
+    "dashboard": "Tablou de bord",
     "settings": "Setări"
   },
   "Auth": {
     "login_title": "Conectare",
-    "login_subtitle": "Conectează-te la contul tău",
-    "login_with_google": "Conectare prin Google",
+    "login_subtitle": "Conectați-vă la contul dvs.",
+    "login_with_google": "Conectare cu Google",
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
-    "forgot_password": "Ai uitat parola?",
-    "no_account": "Nu ai un cont?",
+    "forgot_password": "Ați uitat parola?",
+    "no_account": "Nu aveți cont?",
     "register": "Înregistrare"
   },
   "Errors": {
     "404_title": "Pagina nu a fost găsită",
-    "404_description": "Pagina pe care o cauți nu există sau a fost mutată.",
-    "500_title": "Eroare de server",
-    "500_description": "A apărut o eroare neașteptată. Încearcă din nou mai târziu.",
-    "unauthorized": "Acces refuzat. Conectează-te pentru a continua."
+    "404_description": "Pagina pe care o căutați nu există sau a fost mutată.",
+    "500_title": "Eroare server",
+    "500_description": "A apărut o eroare neașteptată. Încercați din nou mai târziu.",
+    "unauthorized": "Acces refuzat. Conectați-vă pentru a continua."
   },
   "Footer": {
-    "rights": "Toate drepturile sunt rezervate",
+    "rights": "Toate drepturile rezervate",
     "privacy": "Politica de confidențialitate",
     "terms": "Condiții de utilizare",
     "contact": "Contact"

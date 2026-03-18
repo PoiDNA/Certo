@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nepriklausomas reitingavimo organas, vertinantis viešųjų, korporacinių ir nevyriausybinių institucijų valdymo kokybę."
+    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporatyvių ir nevyriausybinių institucijų valdymo kokybę."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,25 +17,25 @@
     "login": "Prisijungti",
     "logout": "Atsijungti",
     "privacyPolicy": "Privatumo politika",
-    "termsOfUse": "Naudojimo sąlygos",
-    "loading": "Įkeliama...",
+    "termsOfUse": "Naudojimosi sąlyga",
+    "loading": "Kraunasi...",
     "error": "Įvyko klaida",
     "save": "Išsaugoti",
     "cancel": "Atšaukti",
     "confirm": "Patvirtinti",
     "back": "Grįžti",
     "next": "Toliau",
-    "close": "Užverti",
-    "search": "Paieška",
+    "close": "Uždaryti",
+    "search": "Ieškoti",
     "download": "Atsisiųsti",
     "verified": "Patvirtinta",
     "active": "Aktyvus",
     "inactive": "Neaktyvus"
   },
   "Navigation": {
-    "home": "Pradžia",
+    "home": "Pagrindinis puslapis",
     "ratings": "Reitingai",
-    "reports": "Ataskaitės",
+    "reports": "Ataskaitos",
     "analysis": "Analizės",
     "about": "Apie Fondą",
     "contact": "Kontaktai",
@@ -45,16 +45,16 @@
   "Auth": {
     "login_title": "Prisijungti",
     "login_subtitle": "Prisijunkite prie savo paskyros",
-    "login_with_google": "Prisijungti naudojant Google",
+    "login_with_google": "Prisijungti per Google",
     "email_label": "El. pašto adresas",
     "password_label": "Slaptažodis",
     "forgot_password": "Pamiršai slaptažodį?",
-    "no_account": "Neturi paskyros?",
+    "no_account": "Neturite paskyros?",
     "register": "Registruotis"
   },
   "Errors": {
     "404_title": "Puslapis nerastas",
-    "404_description": "Ieškomas puslapis neegzistuoja arba buvo perkeltas.",
+    "404_description": "Puslapis, kurio ieškote, neegzistuoja arba buvo perkeltas.",
     "500_title": "Serverio klaida",
     "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
     "unauthorized": "Prieiga negalima. Prisijunkite norėdami tęsti."
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Visos teisės saugomos",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimo sąlygos",
+    "terms": "Naudojimosi sąlyga",
     "contact": "Kontaktai"
   }
 }

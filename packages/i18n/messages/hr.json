@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezavisni rejting organ koji ocjenjuje kvalitetu upravljanja javnih, korporativnih i nevladinih institucija."
+    "description": "Neovisni organ za ocjenjivanje koji procjenjuje kvalitetu upravljanja javnih, korporativnih i nevladinih institucija."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Prijavite se",
-    "logout": "Odjavite se",
+    "login": "Prijavi se",
+    "logout": "Odjava",
     "privacyPolicy": "Politika privatnosti",
     "termsOfUse": "Uvjeti korištenja",
     "loading": "Učitavanje...",
@@ -23,7 +23,7 @@
     "save": "Spremi",
     "cancel": "Otkaži",
     "confirm": "Potvrdi",
-    "back": "Nazad",
+    "back": "Natrag",
     "next": "Dalje",
     "close": "Zatvori",
     "search": "Pretraži",
@@ -34,30 +34,30 @@
   },
   "Navigation": {
     "home": "Početna stranica",
-    "ratings": "Ratingi",
-    "reports": "Izvješća",
+    "ratings": "Ocjene",
+    "reports": "Izvještaji",
     "analysis": "Analize",
-    "about": "O Fundaciji",
+    "about": "O Fondaciji",
     "contact": "Kontakt",
-    "dashboard": "Kontrolna ploča",
+    "dashboard": "Nadzorna ploča",
     "settings": "Postavke"
   },
   "Auth": {
-    "login_title": "Prijavite se",
-    "login_subtitle": "Prijavite se na svoj račun",
-    "login_with_google": "Prijavite se putem Googlea",
+    "login_title": "Prijavi se",
+    "login_subtitle": "Prijavi se u svoj račun",
+    "login_with_google": "Prijavi se kroz Google",
     "email_label": "Adresa e-pošte",
     "password_label": "Lozinka",
-    "forgot_password": "Zaboravili ste lozinku?",
-    "no_account": "Nemate račun?",
-    "register": "Registrirajte se"
+    "forgot_password": "Zaboravio si lozinku?",
+    "no_account": "Nemaš račun?",
+    "register": "Registriraj se"
   },
   "Errors": {
     "404_title": "Stranica nije pronađena",
-    "404_description": "Stranica koju tražite ne postoji ili je premještena.",
+    "404_description": "Stranica koju tražiš ne postoji ili je premještena.",
     "500_title": "Greška poslužitelja",
-    "500_description": "Došlo je do neočekivane greške. Pokušajte kasnije.",
-    "unauthorized": "Nema pristupa. Prijavite se da biste nastavili."
+    "500_description": "Došlo je do neočekivane greške. Pokušaj ponovno kasnije.",
+    "unauthorized": "Nemaš pristup. Prijavi se da bi nastavio."
   },
   "Footer": {
     "rights": "Sva prava zadržana",

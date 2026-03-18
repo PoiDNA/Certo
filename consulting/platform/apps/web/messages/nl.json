@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Vind een Adviseur",
-    "description": "Geaccrediteerde Certo-adviseurs. Corporate governance en compliance."
+    "description": "Geaccrediteerde Certo-adviseurs. Corporate Governance en naleving."
   },
   "Nav": {
     "advisors": "Adviseurs",
@@ -9,22 +9,35 @@
     "login": "Inloggen"
   },
   "Footer": {
-    "description": "Deskundig advies op het gebied van corporate governance, compliance en veiligheid voor marktleiders.",
+    "description": "Deskundig advies op het gebied van corporate governance, naleving en beveiliging voor marktleiders.",
     "ecosystem": "Certo Ecosysteem",
-    "accreditation": "Alle adviseurs zijn geaccrediteerd door Certo Governance Institute",
+    "accreditation": "Alle adviseurs zijn geaccrediteerd door de Certo Governance Institute",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden"
   },
   "Home": {
-    "hero_title": "Vind een governance-expert",
-    "hero_subtitle": "Geaccrediteerde Certo-adviseurs ondersteunen instellingen bij het behouden en verbeteren van hun Certo Rating.",
-    "hero_cta": "Vind een adviseur",
-    "step_1_title": "Geef uw sector op",
-    "step_1_text": "Selecteer de sector waarin uw instelling actief is",
-    "step_2_title": "Beschrijf uw behoefte",
-    "step_2_text": "Vertel ons wat u nodig hebt",
-    "step_3_title": "Ontvang een match",
-    "step_3_text": "Het systeem zal een geaccrediteerde Certo-adviseur voor u selecteren"
+    "hero_title": "Deskundig advies\nop directieniveau.",
+    "hero_subtitle": "Wij verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor corporate governance en regelgeving naleving vereisen.",
+    "hero_cta": "Vind een expert",
+    "finder_title": "Ik wil spreken met een expert op het gebied van:",
+    "area_health": "Gezondheidszorg",
+    "area_local_gov": "Lokale overheid",
+    "area_defense": "Defensie",
+    "area_finance": "Financiën",
+    "area_education": "Onderwijs",
+    "form_title": "Laat uw contactgegevens achter, zodat wij een passende adviseur uit het volgende gebied kunnen selecteren",
+    "form_name": "Volledige naam",
+    "form_email": "E-mailadres (zakelijk)",
+    "form_org": "Organisatienaam / Functie",
+    "form_submit": "Verzend aanvraag",
+    "advisors_title": "Voorbeelden van experts uit ons netwerk",
+    "advisor_bio": "Geaccrediteerde Certo-adviseur met jarenlange ervaring in het optimaliseren van processen voor strategische marktinstellingen."
+  },
+  "Legal": {
+    "back": "Terug naar startpagina",
+    "last_updated": "Laatst bijgewerkt: maart 2026",
+    "privacy_title": "Privacybeleid",
+    "terms_title": "Gebruiksvoorwaarden"
   },
   "FindAdvisor": {
     "title": "Vind een Certo-adviseur",
@@ -35,7 +48,7 @@
     "need_training": "Trainingen en workshops",
     "need_rating": "Voorbereiding op rating",
     "region_label": "Regio",
-    "submit": "Zoeken naar adviseur"
+    "submit": "Zoek adviseur"
   },
   "Advisor": {
     "accredited_by": "Geaccrediteerd door Certo",

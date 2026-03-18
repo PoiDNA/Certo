@@ -1,39 +1,52 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Encuentra tu Asesor",
-    "description": "Asesores acreditados de Certo. Ład korporacyjny y cumplimiento."
+    "description": "Asesores acreditados de Certo. Gobierno corporativo y cumplimiento normativo."
   },
   "Nav": {
     "advisors": "Asesores",
     "expertise": "Experiencia",
-    "login": "Inicio de sesión"
+    "login": "Iniciar sesión"
   },
   "Footer": {
-    "description": "Asesoramiento experto en ład korporacyjny, cumplimiento y seguridad para líderes del mercado.",
+    "description": "Asesoría experta en gobierno corporativo, cumplimiento normativo y seguridad para líderes del mercado.",
     "ecosystem": "Ecosistema Certo",
-    "accreditation": "Todos los asesores están acreditados por Certo Governance Institute",
+    "accreditation": "Todos los asesores están acreditados por la Fundación Certo Governance Institute",
     "privacy": "Política de privacidad",
-    "terms": "Términos y condiciones"
+    "terms": "Términos de servicio"
   },
   "Home": {
-    "hero_title": "Encuentra un experto en governance",
-    "hero_subtitle": "Los asesores acreditados de Certo apoyan a las instituciones en el mantenimiento y mejora de su Certo Rating.",
-    "hero_cta": "Encuentra un asesor",
-    "step_1_title": "Indica tu sector",
-    "step_1_text": "Selecciona el sector en el que opera tu institución",
-    "step_2_title": "Describe tu necesidad",
-    "step_2_text": "Cuéntanos qué necesitas",
-    "step_3_title": "Obtén una coincidencia",
-    "step_3_text": "El sistema te conectará con un asesor acreditado de Certo"
+    "hero_title": "Asesoría experta\na nivel de junta directiva.",
+    "hero_subtitle": "Conectamos asesores acreditados de Certo con instituciones que requieren los más altos estándares de gobierno corporativo y cumplimiento regulatorio.",
+    "hero_cta": "Encuentra un experto",
+    "finder_title": "Quiero hablar con un experto en:",
+    "area_health": "Sanidad",
+    "area_local_gov": "Administración local",
+    "area_defense": "Defensa",
+    "area_finance": "Finanzas",
+    "area_education": "Educación",
+    "form_title": "Déjanos tu contacto para que podamos asignarte el asesor adecuado del área de",
+    "form_name": "Nombre y apellidos",
+    "form_email": "Correo electrónico (institucional)",
+    "form_org": "Nombre de la organización / Cargo",
+    "form_submit": "Enviar solicitud",
+    "advisors_title": "Ejemplos de expertos de nuestra red",
+    "advisor_bio": "Asesor acreditado de Certo con amplia experiencia en optimización de procesos para instituciones estratégicas líderes del mercado."
+  },
+  "Legal": {
+    "back": "Volver a la página principal",
+    "last_updated": "Última actualización: Marzo de 2026",
+    "privacy_title": "Política de Privacidad",
+    "terms_title": "Términos de servicio"
   },
   "FindAdvisor": {
-    "title": "Encuentra un asesor de Certo",
+    "title": "Encuentra tu asesor Certo",
     "sector_label": "Sector de tu institución",
     "need_label": "¿Qué necesitas?",
-    "need_audit": "Auditoría de governance",
-    "need_advisory": "Asesoramiento estratégico",
+    "need_audit": "Auditoría de gobierno corporativo",
+    "need_advisory": "Asesoría estratégica",
     "need_training": "Capacitaciones y talleres",
-    "need_rating": "Preparación para el rating",
+    "need_rating": "Preparación para rating",
     "region_label": "Región",
     "submit": "Buscar asesor"
   },
@@ -41,7 +54,7 @@
     "accredited_by": "Acreditado por Certo",
     "specialization": "Especialización",
     "sectors": "Sectores",
-    "contact_advisor": "Contactar",
+    "contact_advisor": "Ponte en contacto",
     "view_profile": "Ver perfil"
   }
 }

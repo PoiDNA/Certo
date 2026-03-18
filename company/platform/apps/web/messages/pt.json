@@ -1,18 +1,56 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificação de identidade e conformidade para instituições públicas e corporações."
+    "description": "Verificação de identidade e compliance para instituições públicas e corporações."
   },
   "Nav": {
     "solutions": "Soluções",
     "technology": "Tecnologia",
     "foundation": "Fundação Certo",
-    "login": "Faça login"
+    "login": "Conectar-se"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço"
+  },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identidade.",
+    "hero_line2": "Conformidade.",
+    "hero_line3": "Segurança.",
+    "hero_description": "Infraestrutura de verificação e compliance para instituições públicas, corporações e entidades reguladas. Construída sobre os padrões",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "INICIAR IMPLEMENTAÇÃO",
+    "cta_secondary": "SERVIÇOS",
+    "services_label": "SERVIÇOS",
+    "services_title": "Três camadas de infraestrutura de compliance",
+    "service1_title": "Verificação de Identidade",
+    "service1_desc": "KYC/AML para entidades reguladas. Verificação automática de documentos, rastreamento de sanções e PEP, integração com registros estatais.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Pontuação automática de conformidade baseada na metodologia do Certo Governance Institute. Sistema de avaliação de cinco níveis com trilha de auditoria completa.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Planos de remediação automáticos e monitoramento de sua implementação. Integração com sistemas ERP, GRC e plataformas de gerenciamento de riscos.",
+    "arch_label": "ARQUITETURA",
+    "arch_title": "Como funciona Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Dados da entidade + documentos + contexto regulatório",
+    "step2_title": "Verify",
+    "step2_desc": "Verificação de identidade, rastreamento, registro público",
+    "step3_title": "Score",
+    "step3_desc": "Rating automático de conformidade Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "Relatório PDF + API + painel Certo Online",
+    "badge_iso": "Padrões ISO",
+    "badge_compliance": "Conformidade regulatória",
+    "badge_kyc": "Verificação de identidade",
+    "badge_governance": "Avaliação de governance"
+  },
+  "Legal": {
+    "back": "Voltar à página inicial",
+    "last_updated": "Última atualização: Março de 2026",
+    "privacy_title": "Política de Privacidade",
+    "terms_title": "Termos de Serviço"
   },
   "Dashboard": {
     "title": "Painel Certo ID",

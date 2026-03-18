@@ -15,7 +15,7 @@
     "score": "Certo Score",
     "delegate": "Certo Delegate",
     "login": "Faça login",
-    "logout": "Sair",
+    "logout": "Faça logout",
     "privacyPolicy": "Política de Privacidade",
     "termsOfUse": "Termos de Uso",
     "loading": "Carregando...",
@@ -44,17 +44,17 @@
   },
   "Auth": {
     "login_title": "Faça login",
-    "login_subtitle": "Faça login em sua conta",
+    "login_subtitle": "Faça login na sua conta",
     "login_with_google": "Faça login com Google",
     "email_label": "Endereço de e-mail",
     "password_label": "Senha",
-    "forgot_password": "Esqueceu sua senha?",
+    "forgot_password": "Esqueceu a senha?",
     "no_account": "Não tem uma conta?",
     "register": "Registre-se"
   },
   "Errors": {
     "404_title": "Página não encontrada",
-    "404_description": "A página que você procura não existe ou foi movida.",
+    "404_description": "A página que você está procurando não existe ou foi movida.",
     "500_title": "Erro do servidor",
     "500_description": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
     "unauthorized": "Acesso negado. Faça login para continuar."

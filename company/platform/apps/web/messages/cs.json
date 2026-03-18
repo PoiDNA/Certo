@@ -1,18 +1,56 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Ověření identity a compliance pro veřejné instituce a korporace."
+    "description": "Ověřování totožnosti a compliance pro veřejné instituce a korporace."
   },
   "Nav": {
     "solutions": "Řešení",
     "technology": "Technologie",
     "foundation": "Fundace Certo",
-    "login": "Přihlášení"
+    "login": "Přihlásit se"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Zásady ochrany osobních údajů",
-    "terms": "Podmínky služby"
+    "terms": "Podmínky poskytování služeb"
+  },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Totožnost.",
+    "hero_line2": "Soulad.",
+    "hero_line3": "Jistota.",
+    "hero_description": "Infrastruktura ověřování a compliance pro veřejné instituce, korporace a regulované subjekty. Vytvořena na standardech",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "ZAHÁJIT IMPLEMENTACI",
+    "cta_secondary": "SLUŽBY",
+    "services_label": "SLUŽBY",
+    "services_title": "Tři vrstvy infrastruktury compliance",
+    "service1_title": "Ověřování totožnosti",
+    "service1_desc": "KYC/AML pro regulované subjekty. Automatické ověřování dokumentů, screening sankcí a PEP, integrace s státními registry.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Automatické hodnocení souladu na základě metodologie Certo Governance Institute. Pětistupňový systém oceny s úplnou auditní stopou.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Automatické nápravné plány a monitoring jejich realizace. Integrace se systémy ERP, GRC a platformami pro řízení rizik.",
+    "arch_label": "ARCHITEKTURA",
+    "arch_title": "Jak funguje Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Data subjektu + dokumenty + regulační kontext",
+    "step2_title": "Verify",
+    "step2_desc": "Ověřování totožnosti, screening, veřejný registr",
+    "step3_title": "Score",
+    "step3_desc": "Automatické hodnocení souladu Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "Zpráva PDF + API + dashboard Certo Online",
+    "badge_iso": "Normy ISO",
+    "badge_compliance": "Regulační soulad",
+    "badge_kyc": "Ověřování totožnosti",
+    "badge_governance": "Hodnocení governance"
+  },
+  "Legal": {
+    "back": "Zpět na hlavní stránku",
+    "last_updated": "Poslední aktualizace: březen 2026",
+    "privacy_title": "Zásady ochrany osobních údajů",
+    "terms_title": "Podmínky poskytování služeb"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
@@ -36,8 +74,8 @@
     "add_delegate": "Přidat delegáta",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stav",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "Primární odkaz",
+    "failover_link": "Záložní odkaz",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

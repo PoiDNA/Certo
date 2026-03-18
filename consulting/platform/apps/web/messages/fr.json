@@ -16,20 +16,33 @@
     "terms": "Conditions d'utilisation"
   },
   "Home": {
-    "hero_title": "Trouvez un expert en gouvernance",
-    "hero_subtitle": "Les conseillers accrédités Certo accompagnent les institutions pour maintenir et améliorer leur Certo Rating.",
-    "hero_cta": "Trouver un conseiller",
-    "step_1_title": "Indiquez votre secteur",
-    "step_1_text": "Sélectionnez le secteur d'activité de votre institution",
-    "step_2_title": "Décrivez votre besoin",
-    "step_2_text": "Dites-nous ce dont vous avez besoin",
-    "step_3_title": "Recevez une recommandation",
-    "step_3_text": "Le système vous proposera un conseiller accrédité Certo adapté"
+    "hero_title": "Conseil expert\nau niveau de la direction.",
+    "hero_subtitle": "Nous mettons en relation les conseillers accrédités Certo avec les institutions exigeant les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
+    "hero_cta": "Trouvez un expert",
+    "finder_title": "Je souhaite discuter avec un expert en :",
+    "area_health": "Santé",
+    "area_local_gov": "Collectivités territoriales",
+    "area_defense": "Défense",
+    "area_finance": "Finance",
+    "area_education": "Éducation",
+    "form_title": "Laissez vos coordonnées afin que nous vous mettions en relation avec le conseiller approprié du domaine",
+    "form_name": "Nom et prénom",
+    "form_email": "Adresse e-mail (professionnelle)",
+    "form_org": "Nom de l'organisation / Fonction",
+    "form_submit": "Envoyer la demande",
+    "advisors_title": "Exemples d'experts de notre réseau",
+    "advisor_bio": "Conseiller accrédité Certo avec de nombreuses années d'expérience dans l'optimisation des processus pour les institutions stratégiques du marché."
+  },
+  "Legal": {
+    "back": "Retour à la page d'accueil",
+    "last_updated": "Dernière mise à jour : Mars 2026",
+    "privacy_title": "Politique de Confidentialité",
+    "terms_title": "Conditions d'utilisation"
   },
   "FindAdvisor": {
-    "title": "Trouver un conseiller Certo",
+    "title": "Trouvez un conseiller Certo",
     "sector_label": "Secteur de votre institution",
-    "need_label": "Quel est votre besoin ?",
+    "need_label": "De quoi avez-vous besoin ?",
     "need_audit": "Audit de gouvernance",
     "need_advisory": "Conseil stratégique",
     "need_training": "Formations et ateliers",
@@ -41,7 +54,7 @@
     "accredited_by": "Accrédité par Certo",
     "specialization": "Spécialisation",
     "sectors": "Secteurs",
-    "contact_advisor": "Contacter",
+    "contact_advisor": "Contactez",
     "view_profile": "Voir le profil"
   }
 }

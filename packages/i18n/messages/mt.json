@@ -8,61 +8,61 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organu ta' rating indipendenti li jevalwa l-kwalità tal-ġestjoni ta' istituzzjonijiet pubbliċi, korporattivi u mingħajr skop lu-qligħ."
+    "description": "Organu ratingarju indipendenti li jevalwa l-kwalità tal-ġustizzja tal-istituzzjonijiet pubbliċi, korporattivi u ta' organisazzjonijiet mingħajr profit."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Logja",
-    "logout": "Oħroġ",
+    "login": "Dħol",
+    "logout": "Ħruġ",
     "privacyPolicy": "Politika tal-Privatezza",
     "termsOfUse": "Termini ta' Użu",
-    "loading": "Qiegħed jitlοdi...",
-    "error": "Irriżulta żball",
-    "save": "Ikteb",
-    "cancel": "Ikkanċella",
+    "loading": "Qed tittieħel...",
+    "error": "Irqaċ żball",
+    "save": "Ħaffef",
+    "cancel": "Annulla",
     "confirm": "Ikkonferma",
-    "back": "Irġa' lura",
+    "back": "Lura",
     "next": "Li jmiss",
     "close": "Agħlaq",
     "search": "Fittex",
-    "download": "Niżżel",
+    "download": "Ħammen",
     "verified": "Vverifikat",
     "active": "Attiv",
     "inactive": "Inattiv"
   },
   "Navigation": {
-    "home": "Paġna Ewlenija",
+    "home": "Paġna Prinċipali",
     "ratings": "Ratings",
     "reports": "Rapporti",
     "analysis": "Analiżi",
-    "about": "Dwar il-Fundazzjoni",
-    "contact": "Ikkuntattja",
+    "about": "Dwar il-Fondazzjoni",
+    "contact": "Kuntatt",
     "dashboard": "Pannell",
-    "settings": "Setings"
+    "settings": "Issettjar"
   },
   "Auth": {
-    "login_title": "Logja",
-    "login_subtitle": "Logja fil-kont tiegħek",
-    "login_with_google": "Logja permezz ta' Google",
-    "email_label": "Indirizz tal-Email",
+    "login_title": "Dħol",
+    "login_subtitle": "Dħol għall-kont tiegħek",
+    "login_with_google": "Dħol permezz ta' Google",
+    "email_label": "Indirizz ta' Email",
     "password_label": "Password",
     "forgot_password": "Insejt il-password?",
-    "no_account": "M'għandekx kont?",
+    "no_account": "M'għandek l-ebda kont?",
     "register": "Irreġistra"
   },
   "Errors": {
-    "404_title": "Paġna ma nstabet",
-    "404_description": "Il-paġna li qed tfittex m'għandha l-ebda eżistenza jew ġiet mressqa.",
-    "500_title": "Żball tas-Server",
-    "500_description": "Irriżulta żball mhux mistenni. Erġa' pprova aktar tard.",
-    "unauthorized": "M'għandekx aċċess. Logja biex tkompli."
+    "404_title": "Paġna mhux misjuba",
+    "404_description": "Il-paġna li tfittex mhi eżistenti jew ġiet marja.",
+    "500_title": "Żball tas-server",
+    "500_description": "Irqaċ żball mhiex mistenni. Ipprova aktar tard.",
+    "unauthorized": "Ebda aċċess. Dħol biex tkompli."
   },
   "Footer": {
-    "rights": "Ir-rittjiet kollha riżervati",
+    "rights": "Ir-rittprevati kollha mħarrsa",
     "privacy": "Politika tal-Privatezza",
     "terms": "Termini ta' Użu",
-    "contact": "Ikkuntattja"
+    "contact": "Kuntatt"
   }
 }

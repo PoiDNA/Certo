@@ -1,50 +1,50 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute",
-    "description": "Gníomhaireacht rátála neamhspleách ag déanamh measúnú ar chaighdeán an rialacháin i ngéaga poiblí, corparáideacha, leighis agus cosantais."
+    "title": "Fondúireacht Certo Governance Institute",
+    "description": "Gníomhaireacht rátála neamhspleách a dhéanann measúnú ar an inchosúlacht a bhaineann le rialachas in earnálacha poiblí, corparáideacha, leighis agus dhífhostaithe."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Is é Certo an chéad ghníomhaireacht rátála ar domhan ar iad a rátálacha ina artefachtaí cripteagrafacha den phróiseas — ní tuairimí iad. Tá gach cinneadh rátála fite fuaite lasmuigh dá bhonneagar féin, infhíoraithe as líne agus inbhreithnithe go poiblí.",
+    "description": "Is é Certo an chéad ghníomhaireacht rátála ar domhan ar iad a rátálacha ina artefactaí cripteolaíocha den phróiseas — ní tuairimí iad. Tá gach cinneadh rátála fréamhaithe taobh amuigh dá bhonneagar féin, infhíoraithe as líne agus iniúchta go poiblí.",
     "hero_cta_primary": "Seiceáil na rátálacha",
-    "hero_cta_secondary": "Faigh tuilleadh eolais",
+    "hero_cta_secondary": "Faigh amach níos mó",
     "section_ratings_title": "Rátálacha Certo is Nua",
-    "section_reports_title": "Anailísí agus Tuairiscí",
-    "section_about_title": "Faoi an Bhunú"
+    "section_reports_title": "Anailísí agus Tuarascálacha",
+    "section_about_title": "Maidir Leis an Bhondúireacht"
   },
   "Ratings": {
     "title": "Rátálacha Certo",
-    "subtitle": "Measúnuithe ar chaighdeán rialacháin na n-institiúidí",
-    "search_placeholder": "Cuardaigh institiúidí...",
-    "filter_sector": "Gné",
+    "subtitle": "Measúnuithe ar inchosúlacht rialachais na n-institiúidí",
+    "search_placeholder": "Cuardaigh institiúid...",
+    "filter_sector": "Earnáil",
     "sector_public": "Poiblí",
     "sector_corporate": "Corparáideach",
     "sector_medical": "Leighis",
-    "sector_defense": "Cosantais",
+    "sector_defense": "Dífhostaithe",
     "sector_ngo": "Neamhrialtasach",
-    "rating_valid_until": "Rátáil bailí go",
-    "rating_issued": "Dáta eisithe",
-    "no_results": "Níor aimsíodh toradh ar bith",
-    "view_profile": "Féach ar an bpróifíl"
+    "rating_valid_until": "Rátáil bhailí go dtí",
+    "rating_issued": "Dáta an Eisithe",
+    "no_results": "Níor aimsíodh torthaí",
+    "view_profile": "Féach ar an phróifíl"
   },
   "Nav": {
     "ratings": "Rátálacha",
     "methodology": "Modheolaíocht",
-    "about": "Faoi an Bhunú",
+    "about": "Maidir Leis an Bhondúireacht",
     "login": "Logáil isteach"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute © {year}",
+    "copyright": "Fondúireacht Certo Governance Institute © {year}",
     "privacy": "Polasaí Príobháideachais",
     "terms": "Téarmaí Úsáide"
   },
   "About": {
-    "title": "Faoi Certo Governance Institute",
+    "title": "Maidir Leis an Bhondúireacht Certo Governance Institute",
     "mission_title": "Misean",
-    "mission_text": "Cultúr rialacháin bhreá a thógáil trí mheasúnú neamhspleách agus caighdeáin rialacháin a chur chun cinn in Éirinn agus san Eoraip.",
+    "mission_text": "Cultúr rialachas maithe a thógáil trí bhreithiúnú neamhspleách agus trí chaighdeáin ghobernance a chur chun cinn in Éirinn agus san Eoraip.",
     "independence_title": "Neamhspleáchas",
-    "independence_text": "Tá an Bunú neamhspleách ar na subáid atá á bhreithniú aici, ar orgáin an tsaoil phoiblí agus ar leas tráchtála.",
+    "independence_text": "Tá an Bhondúireacht neamhspleách ó na heintitis a dhéantar a mheasúnú, ó oibrithe údaráis phoiblí agus ó leasanna tráchtála.",
     "methodology_title": "Modheolaíocht",
-    "methodology_text": "Tá Rátálacha Certo bunaithe ar mhodheolaíocht dhocht atá bunaithe ar chaighdeáin ISO agus treorracha an AE."
+    "methodology_text": "Tá rátálacha Certo bunaithe ar mhodheolaíocht dhian atá bunaithe ar chaighdeáin ISO agus ar threoraithe an AE."
   }
 }

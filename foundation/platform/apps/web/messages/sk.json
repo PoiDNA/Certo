@@ -1,13 +1,13 @@
 {
   "Metadata": {
     "title": "Fundácia Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotiacu kvalitu riadenia v sektore verejnej správy, korporátnom, zdravotnickom a obrannom."
+    "description": "Nezávislý ratingový orgán hodnotiacu kvalitu riadenia v sektore verejnom, korporátnom, medicínskom a obrannom."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prvou svetovou ratingovou agentúrou, ktorej ratingy sú kryptografickými artefaktmi procesu – nie názormi. Každé rozhodnutie o ratingoch je zakotvené mimo vlastnej infraštruktúry, overiteľné offline a verejne auditovateľné.",
+    "description": "Certo je prvou svetovnou ratingovou agentúrou, ktorej ratingy sú kryptografickými artefaktmi procesu — nie názormi. Každé rozhodnutie o ratingu je zakotvené mimo vlastnej infraštruktúry, overiteľné offline a verejne auditovateľné.",
     "hero_cta_primary": "Skontroluj ratingy",
-    "hero_cta_secondary": "Viac informácií",
+    "hero_cta_secondary": "Zisti viac",
     "section_ratings_title": "Najnovšie Ratingy Certo",
     "section_reports_title": "Analýzy a Správy",
     "section_about_title": "O Fundácii"
@@ -15,11 +15,11 @@
   "Ratings": {
     "title": "Ratingy Certo",
     "subtitle": "Hodnotenia kvality riadenia inštitúcií",
-    "search_placeholder": "Vyhľadaj inštitúciu...",
+    "search_placeholder": "Hľadaj inštitúciu...",
     "filter_sector": "Sektor",
     "sector_public": "Verejný",
     "sector_corporate": "Korporátny",
-    "sector_medical": "Zdravotnícky",
+    "sector_medical": "Medicínsky",
     "sector_defense": "Obranný",
     "sector_ngo": "Nezisková organizácia",
     "rating_valid_until": "Rating platný do",
@@ -40,11 +40,11 @@
   },
   "About": {
     "title": "O Fundácii Certo Governance Institute",
-    "mission_title": "Poslanie",
-    "mission_text": "Budovanie kultúry dobrého riadenia prostredníctvom nezávislého hodnotenia a propagácie štandardov governance na Slovensku a v Európe.",
+    "mission_title": "Poslaním",
+    "mission_text": "Budovanie kultúry dobrého riadenia prostredníctvom nezávislého hodnotenia a podpory štandardov riadenia v Poľsku a Európe.",
     "independence_title": "Nezávislosť",
-    "independence_text": "Fundácia je nezávislá od hodnotených subjektov, orgánov verejnej moci a komerčných záujmov.",
+    "independence_text": "Fundácia je nezávislá od hodnotených subjektov, orgánov verejnej moci a obchodných záujmov.",
     "methodology_title": "Metodológia",
-    "methodology_text": "Ratingy Certo sú založené na prísnej metodológii postavenej na normách ISO a smernicích EÚ."
+    "methodology_text": "Ratingy Certo sú založené na prísnej metodológii postavenej na normách ISO a smernicách EÚ."
   }
 }

@@ -5,15 +5,15 @@
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai, o ne nuomonės. Kiekvienas reitingo sprendimas yra uklojtas už savosios infrastruktūros, patikrinamas biržoje ir viešai audituojamas.",
-    "hero_cta_primary": "Peržiūrėti reitingus",
-    "hero_cta_secondary": "Sužinoti daugiau",
-    "section_ratings_title": "Naujausi Certo reitingai",
+    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai — ne nuomonės. Kiekvienas reitingo sprendimas yra sutvirtintas už savos infrastruktūros ribų, patikrinamas offline ir viešai audituojamas.",
+    "hero_cta_primary": "Peržiūrėkite reitingus",
+    "hero_cta_secondary": "Sužinokite daugiau",
+    "section_ratings_title": "Naujausi Certo Reitingai",
     "section_reports_title": "Analizės ir Ataskaitai",
     "section_about_title": "Apie Fondą"
   },
   "Ratings": {
-    "title": "Certo reitingai",
+    "title": "Certo Reitingai",
     "subtitle": "Institucijų valdymo kokybės vertinimai",
     "search_placeholder": "Ieškoti institucijos...",
     "filter_sector": "Sektorius",
@@ -36,15 +36,15 @@
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimosi sąlygos"
+    "terms": "Naudojimo sąlygos"
   },
   "About": {
     "title": "Apie Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Gerojo valdymo kultūros kūrimas per nepriklausomą vertinimą ir valdymo standartų skatinimą Lietuvoje ir Europoje.",
-    "independence_title": "Nepriklausomybė",
-    "independence_text": "Fondacija yra nepriklausoma nuo vertintų subjektų, viešosios valdžios organų ir komercinių interesų.",
+    "mission_text": "Puikaus valdymo kultūros kūrimas per nepriklausomą vertinimą ir valdymo standartų skatinimą Lenkijoje ir Europoje.",
+    "independence_title": "Nepriklausomumas",
+    "independence_text": "Fondacija yra nepriklausoma nuo vertintų subjektų, valstybės valdžios organų ir komercinių interesų.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo reitingai pagrįsti griežta metodologija, paremta ISO standartais ir ES gairėmis."
+    "methodology_text": "Certo reitingai grindžiami griežta metodologija, paremta ISO standartais ir ES gairėmis."
   }
 }

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu riadenia verejných, korporatívnych a neziskových inštitúcií."
+    "description": "Nezávislý orgán hodnotenia kvality riadenia verejných, korporačných a mimovládnych inštitúcií."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,7 +16,7 @@
     "delegate": "Certo Delegate",
     "login": "Prihlásiť sa",
     "logout": "Odhlásiť sa",
-    "privacyPolicy": "Politika ochrany osobných údajov",
+    "privacyPolicy": "Zásady ochrany osobných údajov",
     "termsOfUse": "Podmienky používania",
     "loading": "Načítavanie...",
     "error": "Vyskytla sa chyba",
@@ -33,35 +33,35 @@
     "inactive": "Neaktívny"
   },
   "Navigation": {
-    "home": "Domovská stránka",
-    "ratings": "Ratingy",
+    "home": "Domov",
+    "ratings": "Hodnotenia",
     "reports": "Správy",
     "analysis": "Analýzy",
     "about": "O Fundácii",
     "contact": "Kontakt",
-    "dashboard": "Ovládací panel",
+    "dashboard": "Panel",
     "settings": "Nastavenia"
   },
   "Auth": {
     "login_title": "Prihlásiť sa",
     "login_subtitle": "Prihláste sa do svojho účtu",
     "login_with_google": "Prihlásiť sa cez Google",
-    "email_label": "Emailová adresa",
+    "email_label": "E-mailová adresa",
     "password_label": "Heslo",
-    "forgot_password": "Zabudli ste heslo?",
-    "no_account": "Nemáte účet?",
-    "register": "Zaregistrujte sa"
+    "forgot_password": "Zabudol si heslo?",
+    "no_account": "Nemáš účet?",
+    "register": "Registrácia"
   },
   "Errors": {
-    "404_title": "Stránka sa nenašla",
-    "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
+    "404_title": "Stránka nebola nájdená",
+    "404_description": "Stránka, ktorú hľadáš, neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
-    "500_description": "Vyskytla sa neočakávaná chyba. Skúste znovu neskôr.",
-    "unauthorized": "Prístup odmietnutý. Prihláste sa, aby ste pokračovali."
+    "500_description": "Vyskytla sa neočakávaná chyba. Skús to prosím neskôr.",
+    "unauthorized": "Prístup zamietnutý. Prihláste sa a pokračujte."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",
-    "privacy": "Politika ochrany osobných údajov",
+    "privacy": "Zásady ochrany osobných údajov",
     "terms": "Podmienky používania",
     "contact": "Kontakt"
   }

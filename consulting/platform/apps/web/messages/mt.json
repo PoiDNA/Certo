@@ -1,47 +1,60 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Sib Konsulenti",
-    "description": "Konsulenti akkreditati ta' Certo. Corporate governance u konformità."
+    "title": "Certo Consulting — Sib Konsulent",
+    "description": "Kunsillieri akkreditati ta' Certo. Ġovern korporattiv u konformità."
   },
   "Nav": {
-    "advisors": "Konsulenti",
-    "expertise": "Esperjenza",
+    "advisors": "Kunsillieri",
+    "expertise": "Espertiza",
     "login": "Dħul"
   },
   "Footer": {
-    "description": "Konsultazzjoni esperti fil-qasam tal-governance korporattiv, konformità u sigurtà għal lideriet tas-suq.",
+    "description": "Kunsulenza esperti fil-ġovern korporattiv, konformità u sigurtà għal liderI tal-merkati.",
     "ecosystem": "Ekosistema Certo",
-    "accreditation": "Il-konsulenti kollha huma akkreditati mill-Fundazzjoni Certo Governance Institute",
+    "accreditation": "Il-kunsillieri kollha huma akkreditati mill-Fondazzjoni Certo Governance Institute",
     "privacy": "Politika tal-Privatezza",
-    "terms": "Termini u Kundizzjonijiet"
+    "terms": "Termini ta' Użu"
   },
   "Home": {
-    "hero_title": "Sib espert fil-governance",
-    "hero_subtitle": "Konsulenti akkreditati ta' Certo jassistu l-istituzzjonijiet biex iżommu u jippruvaw jirfgħu r-rating Certo.",
-    "hero_cta": "Sib konsulent",
-    "step_1_title": "Stqarr is-settur tiegħek",
-    "step_1_text": "Agħżel is-settur li fih taħdem l-istituzzjoni tiegħek",
-    "step_2_title": "Iddeskrivi l-ħtieġa",
-    "step_2_text": "Għidilna xi ħtieġa għandek",
-    "step_3_title": "Rċievi l-qbil",
-    "step_3_text": "Is-sistema se tagħżel konsulent akkreditat ta' Certo"
+    "hero_title": "Kunsulenza esperti\nfil-livell tal-bord.",
+    "hero_subtitle": "Aħna nikkonettjaw il-kunsillieri akkreditati ta' Certo ma' istituzzjonijiet li jeħtieġu l-ogħla standards tal-ġovern korporattiv u konformità regolatorja.",
+    "hero_cta": "Sib espert",
+    "finder_title": "Jien nrid nitkellem mal-espert dwar:",
+    "area_health": "Ħeġja",
+    "area_local_gov": "Gvern Lokali",
+    "area_defense": "Difiża",
+    "area_finance": "Finanza",
+    "area_education": "Edukazzjoni",
+    "form_title": "Ħalli l-kontatt tiegħek, sabiex nikkonjugnaw il-kunsulent xieraq mill-qasam ta'",
+    "form_name": "Isem u Kunjom",
+    "form_email": "Indirizz email (uffiċjali)",
+    "form_org": "Isem tal-Organizzazzjoni / Pożizzjoni",
+    "form_submit": "Ibgħat ir-rikiresta",
+    "advisors_title": "Esperti eżempjari mill-network tagħna",
+    "advisor_bio": "Kunsulent akkreditat ta' Certo b'esperienza pluriennali fl-ottimizzazzjoni tal-proċessi għal istituzzjonijiet strateġiċi tal-merkati."
+  },
+  "Legal": {
+    "back": "Ritorna għall-paġna principale",
+    "last_updated": "L-aħħar aġġornament: Marzu 2026",
+    "privacy_title": "Politika tal-Privatezza",
+    "terms_title": "Termini ta' Użu"
   },
   "FindAdvisor": {
-    "title": "Sib Konsulent Certo",
-    "sector_label": "Is-settur tal-istituzzjoni tiegħek",
-    "need_label": "Xi ħtieġa għandek?",
-    "need_audit": "Awdit tal-governance",
-    "need_advisory": "Konsultazzjoni strateġika",
-    "need_training": "Taħriġ u workshops",
-    "need_rating": "Preparazzjoni għal rating",
+    "title": "Sib Kunsulent Certo",
+    "sector_label": "Settur tal-Istituzzjoni tiegħek",
+    "need_label": "X'għandek bżonn?",
+    "need_audit": "Awdit tal-ġovern",
+    "need_advisory": "Kunsulenza strateġika",
+    "need_training": "Taħriġ u Workshop",
+    "need_rating": "Preparazzjoni għall-rating",
     "region_label": "Reġjun",
-    "submit": "Fittex konsulent"
+    "submit": "Fittex Kunsulent"
   },
   "Advisor": {
     "accredited_by": "Akkreditat minn Certo",
     "specialization": "Speċjalizzazzjoni",
     "sectors": "Setturi",
-    "contact_advisor": "Ikkuntattja",
-    "view_profile": "Ara l-profil"
+    "contact_advisor": "Ikkuntattnaja",
+    "view_profile": "Ara l-Profil"
   }
 }

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Find Advisor",
-    "description": "Accredited Certo advisors. Corporate governance and compliance."
+    "description": "Akkrediterede Certo-rådgivere. Corporate governance og compliance."
   },
   "Nav": {
     "advisors": "Rådgivere",
@@ -9,22 +9,35 @@
     "login": "Login"
   },
   "Footer": {
-    "description": "Ekspertis inden for corporate governance, compliance og sikkerhed for markedsledere.",
-    "ecosystem": "Certo-økosystem",
+    "description": "Ekspertiseret rådgivning inden for corporate governance, compliance og sikkerhed for markedsledere.",
+    "ecosystem": "Certo-økosystemet",
     "accreditation": "Alle rådgivere er akkrediteret af Certo Governance Institute",
     "privacy": "Privatlivspolitik",
-    "terms": "Vilkår og betingelser"
+    "terms": "Vilkår"
   },
   "Home": {
-    "hero_title": "Find en governance-ekspert",
-    "hero_subtitle": "Akkrediterede Certo-rådgivere støtter institutioner i at opretholde og forbedre deres Certo Rating.",
-    "hero_cta": "Find rådgiver",
-    "step_1_title": "Angiv dit sektor",
-    "step_1_text": "Vælg den sektor, hvor din institution opererer",
-    "step_2_title": "Beskriv dit behov",
-    "step_2_text": "Fortæl os hvad du har brug for",
-    "step_3_title": "Få et match",
-    "step_3_text": "Systemet vil finde en akkrediteret Certo-rådgiver til dig"
+    "hero_title": "Ekspertiseret rådgivning\npa bestyrelsesniveau.",
+    "hero_subtitle": "Vi forbinder akkrediterede Certo-rådgivere med institutioner, der kræver højeste standarder for corporate governance og lovgivningsmæssig overholdelse.",
+    "hero_cta": "Find ekspert",
+    "finder_title": "Jeg vil gerne tale med en ekspert inden for:",
+    "area_health": "Sundhedsvæsen",
+    "area_local_gov": "Lokale myndigheder",
+    "area_defense": "Forsvar",
+    "area_finance": "Finans",
+    "area_education": "Uddannelse",
+    "form_title": "Efterlad dine kontaktoplysninger, så vi kan tilknytte den rigtige rådgiver fra området",
+    "form_name": "Navn",
+    "form_email": "E-mailadresse (arbejds)",
+    "form_org": "Organisationsnavn / Stilling",
+    "form_submit": "Indsend anmodning",
+    "advisors_title": "Eksempler på eksperter fra vores netværk",
+    "advisor_bio": "Akkrediteret Certo-rådgiver med mange års erfaring i optimering af processer for strategiske markedsinstitutioner."
+  },
+  "Legal": {
+    "back": "Tilbage til startside",
+    "last_updated": "Senest opdateret: Marts 2026",
+    "privacy_title": "Privatlivspolitik",
+    "terms_title": "Vilkår for brug"
   },
   "FindAdvisor": {
     "title": "Find Certo-rådgiver",
@@ -39,7 +52,7 @@
   },
   "Advisor": {
     "accredited_by": "Akkrediteret af Certo",
-    "specialization": "Speciale",
+    "specialization": "Specialisering",
     "sectors": "Sektorer",
     "contact_advisor": "Kontakt",
     "view_profile": "Se profil"

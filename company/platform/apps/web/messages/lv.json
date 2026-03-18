@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identitātes pārbaude un atbilstības nodrošināšana valsts un korporatīvajām iestādēm."
+    "description": "Identitātes verifikācija un compliance publiskajām iestādēm un korporācijām."
   },
   "Nav": {
     "solutions": "Risinājumi",
@@ -12,27 +12,65 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Privātuma politika",
-    "terms": "Pakalpojuma noteikumi"
+    "terms": "Pakalpojumu noteikumi"
+  },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identitāte.",
+    "hero_line2": "Atbilstība.",
+    "hero_line3": "Pārliecība.",
+    "hero_description": "Verifikācijas un compliance infrastruktūra publiskajām iestādēm, korporācijām un regulētajiem subjektiem. Veidota uz standartiem",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "SĀKT IEVIEŠANU",
+    "cta_secondary": "PAKALPOJUMI",
+    "services_label": "PAKALPOJUMI",
+    "services_title": "Trīs compliance infrastruktūras slāņi",
+    "service1_title": "Identitātes verifikācija",
+    "service1_desc": "KYC/AML regulētajiem subjektiem. Automātiska dokumentu verifikācija, sankciju un PEP pārbaude, integrācija ar valsts reģistriem.",
+    "service2_title": "Compliance reitings",
+    "service2_desc": "Automātisks atbilstības vērtējums, pamatojoties uz Certo Governance Institute metodiku. Piecstāvu novērtējuma sistēma ar pilnu audita pēdu.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Automātiski koriģējošie plāni un to realizācijas uzraudzība. Integrācija ar ERP, GRC sistēmām un riska pārvaldības platformām.",
+    "arch_label": "ARHITEKTŪRA",
+    "arch_title": "Kā darbojas Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Subjekta dati + dokumenti + regulācijas konteksts",
+    "step2_title": "Verify",
+    "step2_desc": "Identitātes verifikācija, pārbaude, publiskais reģistrs",
+    "step3_title": "Score",
+    "step3_desc": "Automātisks Certo Vector atbilstības reitings",
+    "step4_title": "Report",
+    "step4_desc": "PDF pārskats + API + Certo Online panelis",
+    "badge_iso": "ISO standarti",
+    "badge_compliance": "Normatīvā atbilstība",
+    "badge_kyc": "Identitātes verifikācija",
+    "badge_governance": "Pārvaldības novērtējums"
+  },
+  "Legal": {
+    "back": "Atpakaļ uz sākumlapu",
+    "last_updated": "Pēdējais atjauninājums: 2026. gads marts",
+    "privacy_title": "Privātuma politika",
+    "terms_title": "Pakalpojumu noteikumi"
   },
   "Dashboard": {
-    "title": "Certo ID Pārskata pults",
+    "title": "Certo ID panelis",
     "welcome": "Sveiki, {name}",
-    "your_rating": "Jūsu Certo Rating",
-    "your_delegates": "Jūsu Delegāti",
+    "your_rating": "Jūsu Certo reitings",
+    "your_delegates": "Jūsu delegāti",
     "your_accords": "Jūsu Certo Accord",
-    "recent_activity": "Nesenā aktivitāte",
-    "quick_actions": "Ātras darbības"
+    "recent_activity": "Pēdējā aktivitāte",
+    "quick_actions": "Ātri darbības"
   },
   "Profile": {
     "title": "Profils",
     "organization": "Organizācija",
     "contact_person": "Kontaktpersona",
-    "sector": "Nozare",
+    "sector": "Sektors",
     "edit_profile": "Rediģēt profilu",
-    "verified_badge": "Pārbaudīts subjekts"
+    "verified_badge": "Verificēts subjekts"
   },
   "Delegates": {
-    "title": "Certo Delegāti",
+    "title": "Certo delegāti",
     "add_delegate": "Pievienot delegātu",
     "delegate_id": "Delegate ID",
     "delegate_status": "Statuss",

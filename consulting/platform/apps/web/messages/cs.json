@@ -1,36 +1,49 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Najděte poradce",
-    "description": "Akreditovaní poradci Certo. Ład korporacyjny a compliance."
+    "description": "Akreditovaní poradcové Certo. Korporativní správa a compliance."
   },
   "Nav": {
-    "advisors": "Poradci",
+    "advisors": "Poradcové",
     "expertise": "Odbornost",
     "login": "Přihlášení"
   },
   "Footer": {
-    "description": "Odborné poradenství v oblasti řízení a kontroly, compliance a bezpečnosti pro tržní lídry.",
+    "description": "Odborné poradenství v oblasti korporativní správy, compliance a bezpečnosti pro průmyslové lídry.",
     "ecosystem": "Ekosystém Certo",
-    "accreditation": "Všichni poradci jsou akreditováni Fundací Certo Governance Institute",
+    "accreditation": "Všichni poradcové jsou akreditováni Nadací Certo Governance Institute",
     "privacy": "Zásady ochrany osobních údajů",
     "terms": "Podmínky používání"
   },
   "Home": {
-    "hero_title": "Najděte odborníka na governance",
-    "hero_subtitle": "Akreditovaní poradci Certo podporují instituce při udržování a zlepšování jejich Certo Rating.",
-    "hero_cta": "Najděte poradce",
-    "step_1_title": "Zadejte svůj sektor",
-    "step_1_text": "Vyberte sektor, ve kterém vaše instituce působí",
-    "step_2_title": "Popište svou potřebu",
-    "step_2_text": "Řekněte nám, co potřebujete",
-    "step_3_title": "Obdržejte doporučení",
-    "step_3_text": "Systém vám přiřadí akreditovaného poradce Certo"
+    "hero_title": "Odborné poradenství\nna úrovni vedení.",
+    "hero_subtitle": "Spojujeme akreditované poradce Certo s institucemi vyžadujícími nejvyšší standardy korporativní správy a regulační compliance.",
+    "hero_cta": "Najděte experta",
+    "finder_title": "Chci hovořit s expertem na:",
+    "area_health": "Zdravotnictví",
+    "area_local_gov": "Místní správa",
+    "area_defense": "Obrana",
+    "area_finance": "Finance",
+    "area_education": "Vzdělání",
+    "form_title": "Zanechte svůj kontakt, abychom vám vybrali správného poradce v oblasti",
+    "form_name": "Jméno a příjmení",
+    "form_email": "E-mailová adresa (služební)",
+    "form_org": "Název organizace / Pozice",
+    "form_submit": "Odeslat dotaz",
+    "advisors_title": "Příklady expertů z naší sítě",
+    "advisor_bio": "Akreditovaný poradce Certo s dlouholetými zkušenostmi v optimalizaci procesů pro strategické tržní instituce."
+  },
+  "Legal": {
+    "back": "Zpět na domovskou stránku",
+    "last_updated": "Poslední aktualizace: březen 2026",
+    "privacy_title": "Zásady ochrany osobních údajů",
+    "terms_title": "Podmínky používání"
   },
   "FindAdvisor": {
     "title": "Najděte poradce Certo",
     "sector_label": "Sektor vaší instituce",
     "need_label": "Co potřebujete?",
-    "need_audit": "Audit governance",
+    "need_audit": "Audit správy",
     "need_advisory": "Strategické poradenství",
     "need_training": "Školení a workshopy",
     "need_rating": "Příprava na rating",
@@ -38,7 +51,7 @@
     "submit": "Hledat poradce"
   },
   "Advisor": {
-    "accredited_by": "Akreditován Certo",
+    "accredited_by": "Akreditován společností Certo",
     "specialization": "Specializace",
     "sectors": "Sektory",
     "contact_advisor": "Kontaktujte",

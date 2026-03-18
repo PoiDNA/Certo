@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Orgán rátála neamhspleách ag déanamh measúnú ar chaighdeán rialachais in institiúidí poiblí, corparáideacha agus neamhbhristeacha."
+    "description": "Orgán rátála neamhspleách a dhéanann measúnú ar chaighdeán rialachais institiúidí poiblí, corparáideacha agus neamhbhriachtanach."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -33,31 +33,31 @@
     "inactive": "Neamhghníomhach"
   },
   "Navigation": {
-    "home": "Leathanach Baile",
+    "home": "Baile",
     "ratings": "Rátála",
     "reports": "Tuairiscí",
     "analysis": "Anailísí",
-    "about": "Maidir leis an bhFondúchán",
+    "about": "Faoin Bhunús",
     "contact": "Teagmháil",
-    "dashboard": "Painéal",
+    "dashboard": "Painéal Stiúrtha",
     "settings": "Socruithe"
   },
   "Auth": {
     "login_title": "Logáil isteach",
-    "login_subtitle": "Logáil isteach ar do chuntas",
+    "login_subtitle": "Logáil isteach i do chuntas",
     "login_with_google": "Logáil isteach trí Google",
-    "email_label": "Seoladh Ríomhphoist",
-    "password_label": "Pasfhocal",
-    "forgot_password": "Ndearna tú dearmad ar do phasfhocal?",
-    "no_account": "Nach bhfuil cuntas agat?",
-    "register": "Cláraitheoir"
+    "email_label": "Seoladh R-phoist",
+    "password_label": "Focal Faire",
+    "forgot_password": "Ndearna tú dearmad ar do bhocal faire?",
+    "no_account": "Níl cuntas agat?",
+    "register": "Cláraigh"
   },
   "Errors": {
     "404_title": "Níor aimsíodh an leathanach",
-    "404_description": "Níl an leathanach ar a bhfuil tú ag cuardach ann nó athsholáthadh a rinneadh air.",
-    "500_title": "Earráid Fhreastalaí",
-    "500_description": "Tharla earráid gan choinne. Déan iarracht arís níos déanaí.",
-    "unauthorized": "Níl rochtain agat. Logáil isteach chun a dhéanamh dul ar aghaidh."
+    "404_description": "Níl an leathanach atá á lorg agat ann nó rinneadh gluaiseacht air.",
+    "500_title": "Earráid Freastalaí",
+    "500_description": "Tharla earráid gan choinne. Triail arís níos déanaí.",
+    "unauthorized": "Níl rochtain agat. Logáil isteach chun leanúint ar aghaidh."
   },
   "Footer": {
     "rights": "Gach ceart ar cosaint",

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Overenie identity a compliance pre verejné inštitúcie a korporácie."
+    "description": "Overovanie identity a compliance pre verejné inštitúcie a korporácie."
   },
   "Nav": {
     "solutions": "Riešenia",
@@ -12,7 +12,45 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika Ochrany Osobných Údajov",
-    "terms": "Podmienky Poskytovania Služieb"
+    "terms": "Podmienky Služby"
+  },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identita.",
+    "hero_line2": "Súlad.",
+    "hero_line3": "Istota.",
+    "hero_description": "Infraštruktúra overovania a compliance pre verejné inštitúcie, korporácie a regulované subjekty. Vybudovaná na základe štandardov",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "ZAČAŤ S IMPLEMENTÁCIOU",
+    "cta_secondary": "SLUŽBY",
+    "services_label": "SLUŽBY",
+    "services_title": "Tri vrstvy infraštruktúry compliance",
+    "service1_title": "Overovanie Identity",
+    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overovanie dokumentov, screening sankcií a PEP, integrácia s vládnymi registrami.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Automatické skórovanie súladu na základe metodológie Certo Governance Institute. Päťstupňový systém hodnotenia s úplnou dráhou auditu.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Automatické nápravné plány a monitoring ich implementácie. Integrácia so systémami ERP, GRC a platformami na riadenie rizík.",
+    "arch_label": "ARCHITEKTÚRA",
+    "arch_title": "Ako funguje Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Údaje subjektu + dokumenty + regulačný kontext",
+    "step2_title": "Verify",
+    "step2_desc": "Overovanie identity, screening, verejný register",
+    "step3_title": "Score",
+    "step3_desc": "Automatický rating súladu Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "PDF správa + API + panel Certo Online",
+    "badge_iso": "Štandardy ISO",
+    "badge_compliance": "Regulačný súlad",
+    "badge_kyc": "Overovanie identity",
+    "badge_governance": "Hodnotenie governance"
+  },
+  "Legal": {
+    "back": "Návrat na úvodnú stránku",
+    "last_updated": "Posledná aktualizácia: Marec 2026",
+    "privacy_title": "Politika Ochrany Osobných Údajov",
+    "terms_title": "Podmienky Služby"
   },
   "Dashboard": {
     "title": "Panel Certo ID",

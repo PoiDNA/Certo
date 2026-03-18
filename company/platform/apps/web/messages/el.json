@@ -1,43 +1,81 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Επαλήθευση ταυτότητας και compliance για δημόσιες και εταιρικές θεσμικές δομές."
+    "description": "Επαλήθευση ταυτότητας και συμμόρφωση για δημόσιες και εταιρικές υπηρεσίες."
   },
   "Nav": {
     "solutions": "Λύσεις",
     "technology": "Τεχνολογία",
     "foundation": "Certo Governance Institute",
-    "login": "Σύνδεσης"
+    "login": "Σύνδεση"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Πολιτική Απορρήτου",
     "terms": "Όροι Υπηρεσίας"
   },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Ταυτότητα.",
+    "hero_line2": "Συμμόρφωση.",
+    "hero_line3": "Βεβαιότητα.",
+    "hero_description": "Υποδομή επαλήθευσης και συμμόρφωσης για δημόσιες υπηρεσίες, εταιρείες και ρυθμιζόμενους φορείς. Αναπτύχθηκε στη βάση των προτύπων",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "ΞΕΚΙΝΉΣΤΕ ΤΗΝ ΕΦΑΡΜΟΓΉ",
+    "cta_secondary": "ΥΠΗΡΕΣΊΕΣ",
+    "services_label": "ΥΠΗΡΕΣΊΕΣ",
+    "services_title": "Τρεις στρώσεις υποδομής συμμόρφωσης",
+    "service1_title": "Επαλήθευση Ταυτότητας",
+    "service1_desc": "KYC/AML για ρυθμιζόμενους φορείς. Αυτόματη επαλήθευση εγγράφων, έλεγχος κυρώσεων και PEP, ολοκλήρωση με κρατικά μητρώα.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Αυτόματη βαθμολόγηση συμμόρφωσης βάσει μεθοδολογίας Certo Governance Institute. Σύστημα αξιολόγησης πέντε επιπέδων με πλήρη διαδρομή ελέγχου.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Αυτόματα σχέδια διόρθωσης και παρακολούθηση της υλοποίησής τους. Ολοκλήρωση με συστήματα ERP, GRC και πλατφόρμες διαχείρισης κινδύνου.",
+    "arch_label": "ΑΡΧΙΤΕΚΤΟΝΙΚΉ",
+    "arch_title": "Πώς λειτουργεί το Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Δεδομένα φορέα + έγγραφα + ρυθμιστικό περιβάλλον",
+    "step2_title": "Verify",
+    "step2_desc": "Επαλήθευση ταυτότητας, έλεγχος, δημόσιο μητρώο",
+    "step3_title": "Score",
+    "step3_desc": "Αυτόματη βαθμολόγηση συμμόρφωσης Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "Έκθεση PDF + API + πίνακας ελέγχου Certo Online",
+    "badge_iso": "Πρότυπα ISO",
+    "badge_compliance": "Ρυθμιστική συμμόρφωση",
+    "badge_kyc": "Επαλήθευση ταυτότητας",
+    "badge_governance": "Αξιολόγηση governance"
+  },
+  "Legal": {
+    "back": "Επιστροφή στην αρχική σελίδα",
+    "last_updated": "Τελευταία ενημέρωση: Μάρτιος 2026",
+    "privacy_title": "Πολιτική Απορρήτου",
+    "terms_title": "Όροι Υπηρεσίας"
+  },
   "Dashboard": {
     "title": "Πίνακας Ελέγχου Certo ID",
     "welcome": "Καλώς ήρθες, {name}",
-    "your_rating": "Η Αξιολόγησή σου Certo",
-    "your_delegates": "Οι Αντιπρόσωποί σου",
-    "your_accords": "Τα Certo Accord σου",
+    "your_rating": "Το Rating Certo σας",
+    "your_delegates": "Οι Delegaci σας",
+    "your_accords": "Τα Certo Accord σας",
     "recent_activity": "Πρόσφατη δραστηριότητα",
     "quick_actions": "Γρήγορες ενέργειες"
   },
   "Profile": {
     "title": "Προφίλ",
     "organization": "Οργανισμός",
-    "contact_person": "Πρόσωπο Επικοινωνίας",
+    "contact_person": "Άτομο επικοινωνίας",
     "sector": "Τομέας",
     "edit_profile": "Επεξεργασία προφίλ",
-    "verified_badge": "Επαληθευμένος Φορέας"
+    "verified_badge": "Επαληθευμένος φορέας"
   },
   "Delegates": {
-    "title": "Delegate ID",
-    "add_delegate": "Προσθήκη αντιπροσώπου",
+    "title": "Certo Delegate",
+    "add_delegate": "Προσθήκη Delegate",
     "delegate_id": "Delegate ID",
     "delegate_status": "Κατάσταση",
-    "primary_link": "Σύνδεσμος PRIMARY",
-    "failover_link": "Σύνδεσμος FAILOVER",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

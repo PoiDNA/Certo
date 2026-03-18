@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Provjera identiteta i compliance za javne institucije i korporacije."
+    "description": "Verifikacija identiteta i compliance za javne institucije i korporacije."
   },
   "Nav": {
     "solutions": "Rješenja",
@@ -12,12 +12,50 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika Privatnosti",
-    "terms": "Uvjeti Usluge"
+    "terms": "Uvjeti Korištenja"
+  },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identitet.",
+    "hero_line2": "Sukladnost.",
+    "hero_line3": "Sigurnost.",
+    "hero_description": "Infrastruktura verifikacije i compliance za javne institucije, korporacije i regulirane subjekte. Izgrađena na standardima",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "ZAPOČNITE IMPLEMENTACIJU",
+    "cta_secondary": "USLUGE",
+    "services_label": "USLUGE",
+    "services_title": "Tri sloja compliance infrastrukture",
+    "service1_title": "Verifikacija Identiteta",
+    "service1_desc": "KYC/AML za regulirane subjekte. Automatska verifikacija dokumenata, screening sankcija i PEP, integracija sa državnim registrima.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Automatski scoring sukladnosti na osnovu metodologije Certo Governance Institute. Petostupanjski sustav ocjenjivanja s potpunom revizijskom stazom.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Automatski planovi sanacije i monitoring njihove provedbe. Integracija sa ERP sustavima, GRC platformama i sustavima upravljanja rizicima.",
+    "arch_label": "ARHITEKTURA",
+    "arch_title": "Kako funkcionira Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Podaci subjekta + dokumenti + regulatorni kontekst",
+    "step2_title": "Verify",
+    "step2_desc": "Verifikacija identiteta, screening, javni registar",
+    "step3_title": "Score",
+    "step3_desc": "Automatski rating sukladnosti Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "PDF izvještaj + API + kontrolna ploča Certo Online",
+    "badge_iso": "ISO Standardi",
+    "badge_compliance": "Regulatorna sukladnost",
+    "badge_kyc": "Verifikacija identiteta",
+    "badge_governance": "Procjena governance"
+  },
+  "Legal": {
+    "back": "Povratak na početnu stranicu",
+    "last_updated": "Zadnja ažuriranja: Ožujanj 2026",
+    "privacy_title": "Politika Privatnosti",
+    "terms_title": "Uvjeti Korištenja"
   },
   "Dashboard": {
-    "title": "Ploča Certo ID",
+    "title": "Kontrolna Ploča Certo ID",
     "welcome": "Dobrodošli, {name}",
-    "your_rating": "Vaš Certo Rating",
+    "your_rating": "Vaš Rating Certo",
     "your_delegates": "Vaši Delegati",
     "your_accords": "Vaši Certo Accord",
     "recent_activity": "Nedavna aktivnost",
@@ -32,12 +70,12 @@
     "verified_badge": "Verificirani subjekt"
   },
   "Delegates": {
-    "title": "Delegati Certo",
+    "title": "Certo Delegati",
     "add_delegate": "Dodaj delegata",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "PRIMARY Link",
+    "failover_link": "FAILOVER Link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

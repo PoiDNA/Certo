@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý orgán pro hodnocení kvality řízení veřejných, korporativních a neziskových institucí."
+    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných, korporátních a neziskových institucí."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,14 +17,14 @@
     "login": "Přihlásit se",
     "logout": "Odhlásit se",
     "privacyPolicy": "Zásady ochrany osobních údajů",
-    "termsOfUse": "Podmínky používání",
+    "termsOfUse": "Podmínky použití",
     "loading": "Načítání...",
     "error": "Došlo k chybě",
     "save": "Uložit",
     "cancel": "Zrušit",
     "confirm": "Potvrdit",
     "back": "Zpět",
-    "next": "Dalej",
+    "next": "Dále",
     "close": "Zavřít",
     "search": "Hledat",
     "download": "Stáhnout",
@@ -34,10 +34,10 @@
   },
   "Navigation": {
     "home": "Domovská stránka",
-    "ratings": "Hodnocení",
+    "ratings": "Ratingy",
     "reports": "Zprávy",
     "analysis": "Analýzy",
-    "about": "O Fundaci",
+    "about": "O Institutu",
     "contact": "Kontakt",
     "dashboard": "Přístrojová deska",
     "settings": "Nastavení"
@@ -50,19 +50,19 @@
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
     "no_account": "Nemáte účet?",
-    "register": "Registrovat se"
+    "register": "Zaregistrujte se"
   },
   "Errors": {
-    "404_title": "Stránka nenalezena",
+    "404_title": "Stránka nebyla nalezena",
     "404_description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
     "500_title": "Chyba serveru",
-    "500_description": "Došlo k neočekávané chybě. Zkuste to později.",
-    "unauthorized": "Přístup odepřen. Přihlaste se pro pokračování."
+    "500_description": "Došlo k neočekávané chybě. Zkuste to prosím později.",
+    "unauthorized": "Přístup odepřen. Přihlaste se, abyste mohli pokračovat."
   },
   "Footer": {
     "rights": "Všechna práva vyhrazena",
     "privacy": "Zásady ochrany osobních údajů",
-    "terms": "Podmínky používání",
+    "terms": "Podmínky použití",
     "contact": "Kontakt"
   }
 }

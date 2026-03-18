@@ -6,7 +6,7 @@
   "Nav": {
     "solutions": "Løsninger",
     "technology": "Teknologi",
-    "foundation": "Certo Governance Institute",
+    "foundation": "Certo Fundation",
     "login": "Log ind"
   },
   "Footer": {
@@ -14,8 +14,46 @@
     "privacy": "Privatlivspolitik",
     "terms": "Servicevilkår"
   },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identitet.",
+    "hero_line2": "Overholdelse.",
+    "hero_line3": "Sikkerhed.",
+    "hero_description": "Infrastruktur til verifikation og compliance for offentlige institutioner, virksomheder og regulerede enheder. Bygget på standarder fra",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "START IMPLEMENTERING",
+    "cta_secondary": "TJENESTER",
+    "services_label": "TJENESTER",
+    "services_title": "Tre lag af compliance-infrastruktur",
+    "service1_title": "Identitetsverifikation",
+    "service1_desc": "KYC/AML for regulerede enheder. Automatisk dokumentverifikation, sanktions- og PEP-screening, integration med statsregistre.",
+    "service2_title": "Compliance Rating",
+    "service2_desc": "Automatisk compliance-scoring baseret på Certo Governance Institute-metodologi. Fem-niveau vurderingssystem med fuldt revisionsslor.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Automatiske afhjælpsplaner og overvågning af deres gennemførelse. Integration med ERP-systemer, GRC og risikostyringsplatforme.",
+    "arch_label": "ARKITEKTUR",
+    "arch_title": "Sådan fungerer Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Enhedsdata + dokumenter + regulatorisk kontekst",
+    "step2_title": "Verify",
+    "step2_desc": "Identitetsverifikation, screening, offentligt register",
+    "step3_title": "Score",
+    "step3_desc": "Automatisk Certo Vector compliance-rating",
+    "step4_title": "Report",
+    "step4_desc": "PDF-rapport + API + Certo Online dashboard",
+    "badge_iso": "ISO-standarder",
+    "badge_compliance": "Regulatorisk overholdelse",
+    "badge_kyc": "Identitetsverifikation",
+    "badge_governance": "Governance-vurdering"
+  },
+  "Legal": {
+    "back": "Tilbage til forsiden",
+    "last_updated": "Sidst opdateret: Marts 2026",
+    "privacy_title": "Privatlivspolitik",
+    "terms_title": "Servicevilkår"
+  },
   "Dashboard": {
-    "title": "Certo ID-panel",
+    "title": "Certo ID Panel",
     "welcome": "Velkommen, {name}",
     "your_rating": "Dit Certo Rating",
     "your_delegates": "Dine Delegater",
@@ -36,8 +74,8 @@
     "add_delegate": "Tilføj delegat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "PRIMARY-link",
-    "failover_link": "FAILOVER-link",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

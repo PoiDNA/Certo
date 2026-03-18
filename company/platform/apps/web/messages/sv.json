@@ -5,20 +5,58 @@
   },
   "Nav": {
     "solutions": "Lösningar",
-    "technology": "Teknik",
+    "technology": "Teknologi",
     "foundation": "Certo Governance Institute",
     "login": "Logga in"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
-    "privacy": "Integritetspolicy",
+    "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor"
   },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identitet.",
+    "hero_line2": "Efterlevnad.",
+    "hero_line3": "Säkerhet.",
+    "hero_description": "Infrastruktur för identitetsverifiering och compliance för offentliga institutioner, företag och reglerade enheter. Byggt på standarder",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "STARTA IMPLEMENTERING",
+    "cta_secondary": "TJÄNSTER",
+    "services_label": "TJÄNSTER",
+    "services_title": "Tre lager av compliance-infrastruktur",
+    "service1_title": "Identitetsverifiering",
+    "service1_desc": "KYC/AML för reglerade enheter. Automatisk dokumentverifiering, sanktions- och PEP-screening, integration med statliga register.",
+    "service2_title": "Compliance-klassificering",
+    "service2_desc": "Automatisk efterlevnadspoäng baserad på Certo Governance Institute-metodiken. Fem-stegs klassificeringssystem med fullständig revisionsväg.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Automatiska åtgärdsplaner och övervakning av deras genomförande. Integration med ERP-system, GRC och riskhanteringsplattformar.",
+    "arch_label": "ARKITEKTUR",
+    "arch_title": "Hur Certo ID fungerar",
+    "step1_title": "Intake",
+    "step1_desc": "Enhetens data + dokument + regulatorisk kontext",
+    "step2_title": "Verify",
+    "step2_desc": "Identitetsverifiering, screening, offentlig register",
+    "step3_title": "Score",
+    "step3_desc": "Automatisk Certo Vector-klassificering",
+    "step4_title": "Report",
+    "step4_desc": "PDF-rapport + API + Certo Online-instrumentpanel",
+    "badge_iso": "ISO-standarder",
+    "badge_compliance": "Regelefterlevnad",
+    "badge_kyc": "Identitetsverifiering",
+    "badge_governance": "Governance-bedömning"
+  },
+  "Legal": {
+    "back": "Tillbaka till startsidan",
+    "last_updated": "Senast uppdaterad: Mars 2026",
+    "privacy_title": "Sekretesspolicy",
+    "terms_title": "Användarvillkor"
+  },
   "Dashboard": {
-    "title": "Certo ID-kontrollpanel",
+    "title": "Certo ID-panel",
     "welcome": "Välkommen, {name}",
-    "your_rating": "Ditt Certo Rating",
-    "your_delegates": "Dina Delegater",
+    "your_rating": "Din Certo Rating",
+    "your_delegates": "Dina delegater",
     "your_accords": "Dina Certo Accord",
     "recent_activity": "Senaste aktivitet",
     "quick_actions": "Snabbåtgärder"
@@ -29,7 +67,7 @@
     "contact_person": "Kontaktperson",
     "sector": "Sektor",
     "edit_profile": "Redigera profil",
-    "verified_badge": "Verifierad aktör"
+    "verified_badge": "Verifierad enhet"
   },
   "Delegates": {
     "title": "Certo-delegater",

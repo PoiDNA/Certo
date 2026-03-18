@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független ratingügynökség, amely nyilvános, vállalati és civil szervezetek irányítási minőségét értékeli."
+    "description": "Független értékelő szerv, amely közintézmények, vállalati és nonprofit szervezetek irányítási minőségét értékeli."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,12 +16,12 @@
     "delegate": "Certo Delegate",
     "login": "Bejelentkezés",
     "logout": "Kijelentkezés",
-    "privacyPolicy": "Adatvédelmi szabályzat",
+    "privacyPolicy": "Adatvédelmi nyilatkozat",
     "termsOfUse": "Felhasználási feltételek",
     "loading": "Betöltés...",
-    "error": "Hiba lépett fel",
+    "error": "Hiba történt",
     "save": "Mentés",
-    "cancel": "Mégsem",
+    "cancel": "Mégse",
     "confirm": "Megerősítés",
     "back": "Vissza",
     "next": "Tovább",
@@ -33,35 +33,35 @@
     "inactive": "Inaktív"
   },
   "Navigation": {
-    "home": "Kezdőoldal",
-    "ratings": "Ratingek",
+    "home": "Kezdőlap",
+    "ratings": "Értékelések",
     "reports": "Jelentések",
     "analysis": "Elemzések",
-    "about": "A Fundációról",
+    "about": "Az Alapítványról",
     "contact": "Kapcsolat",
-    "dashboard": "Vezérlőpult",
+    "dashboard": "Irányítópult",
     "settings": "Beállítások"
   },
   "Auth": {
     "login_title": "Bejelentkezés",
-    "login_subtitle": "Jelentkezzen be fiókjába",
+    "login_subtitle": "Bejelentkezés a saját fiókba",
     "login_with_google": "Bejelentkezés Google-lel",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
     "forgot_password": "Elfelejtette a jelszavát?",
-    "no_account": "Nincs fiókja?",
+    "no_account": "Még nincs fiókja?",
     "register": "Regisztráció"
   },
   "Errors": {
     "404_title": "Az oldal nem található",
     "404_description": "A keresett oldal nem létezik vagy át lett helyezve.",
     "500_title": "Szerverhiba",
-    "500_description": "Váratlan hiba lépett fel. Kérjük, próbálkozzon később.",
-    "unauthorized": "Nincs hozzáférés. Jelentkezzen be a folytatáshoz."
+    "500_description": "Váratlan hiba történt. Próbálja újra később.",
+    "unauthorized": "Nincs hozzáférése. Bejelentkezéshez adja meg a hitelesítő adatait."
   },
   "Footer": {
     "rights": "Minden jog fenntartva",
-    "privacy": "Adatvédelmi szabályzat",
+    "privacy": "Adatvédelmi nyilatkozat",
     "terms": "Felhasználási feltételek",
     "contact": "Kapcsolat"
   }

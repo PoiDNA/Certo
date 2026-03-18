@@ -1,25 +1,63 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificare identitate și conformitate pentru instituții publice și corporații."
+    "description": "Verificarea identității și conformitate pentru instituții publice și corporații."
   },
   "Nav": {
     "solutions": "Soluții",
     "technology": "Tehnologie",
     "foundation": "Fundația Certo",
-    "login": "Conectare"
+    "login": "Conectați-vă"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politica de Confidențialitate",
-    "terms": "Condiții de Utilizare"
+    "terms": "Termenii Serviciului"
+  },
+  "Home": {
+    "badge": "Compliance Infrastructure",
+    "hero_line1": "Identitate.",
+    "hero_line2": "Conformitate.",
+    "hero_line3": "Certitudine.",
+    "hero_description": "Infrastructura de verificare și conformitate pentru instituții publice, corporații și entități reglementate. Construită pe standarde",
+    "hero_built_on": "Certo Governance Institute",
+    "cta_primary": "INCEPE IMPLEMENTAREA",
+    "cta_secondary": "SERVICII",
+    "services_label": "SERVICII",
+    "services_title": "Trei straturi ale infrastructurii de conformitate",
+    "service1_title": "Verificarea Identității",
+    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată a documentelor, screening sanțiuni și PEP, integrare cu registrele de stat.",
+    "service2_title": "Rating Conformitate",
+    "service2_desc": "Scoring automat al conformității bazat pe metodologia Certo Governance Institute. Sistem de evaluare cu cinci niveluri cu audit trail complet.",
+    "service3_title": "Remediation Engine",
+    "service3_desc": "Planuri de corectare automată și monitorizarea implementării acestora. Integrare cu sisteme ERP, GRC și platforme de management al riscului.",
+    "arch_label": "ARHITECTURA",
+    "arch_title": "Cum funcționează Certo ID",
+    "step1_title": "Intake",
+    "step1_desc": "Date entitate + documente + context regulatoriu",
+    "step2_title": "Verify",
+    "step2_desc": "Verificarea identității, screening, registru public",
+    "step3_title": "Score",
+    "step3_desc": "Rating automat conformitate Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "Raport PDF + API + dashboard Certo Online",
+    "badge_iso": "Standarde ISO",
+    "badge_compliance": "Conformitate regulatorie",
+    "badge_kyc": "Verificarea identității",
+    "badge_governance": "Evaluare governance"
+  },
+  "Legal": {
+    "back": "Înapoi la pagina principală",
+    "last_updated": "Ultima actualizare: martie 2026",
+    "privacy_title": "Politica de Confidențialitate",
+    "terms_title": "Termenii Serviciului"
   },
   "Dashboard": {
-    "title": "Tabloul de Bord Certo ID",
-    "welcome": "Bine ai venit, {name}",
-    "your_rating": "Ratingul tău Certo",
-    "your_delegates": "Delegații tăi",
-    "your_accords": "Certo Accord-urile tale",
+    "title": "Panou Certo ID",
+    "welcome": "Bine ați venit, {name}",
+    "your_rating": "Ratingul dumneavoastră Certo",
+    "your_delegates": "Delegații dumneavoastră",
+    "your_accords": "Certo Accord-urile dumneavoastră",
     "recent_activity": "Activitate recentă",
     "quick_actions": "Acțiuni rapide"
   },
@@ -28,12 +66,12 @@
     "organization": "Organizație",
     "contact_person": "Persoană de contact",
     "sector": "Sector",
-    "edit_profile": "Editează profil",
+    "edit_profile": "Editați profil",
     "verified_badge": "Entitate verificată"
   },
   "Delegates": {
-    "title": "Delegații Certo",
-    "add_delegate": "Adaugă delegat",
+    "title": "Delegați Certo",
+    "add_delegate": "Adăugați delegat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stare",
     "primary_link": "Link PRIMARY",

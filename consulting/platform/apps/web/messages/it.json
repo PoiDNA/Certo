@@ -1,41 +1,54 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Trova il Consulente",
-    "description": "Consulenti accreditati di Certo. Corporate governance e conformità."
+    "title": "Certo Consulting — Trova il Tuo Consulente",
+    "description": "Consulenti accreditati Certo. Corporate governance e conformità."
   },
   "Nav": {
     "advisors": "Consulenti",
-    "expertise": "Expertise",
-    "login": "Accesso"
+    "expertise": "Competenze",
+    "login": "Accedi"
   },
   "Footer": {
-    "description": "Consulenza esperta in materia di corporate governance, conformità e sicurezza per i leader di mercato.",
+    "description": "Consulenza esperta in corporate governance, conformità e sicurezza per i leader di mercato.",
     "ecosystem": "Ecosistema Certo",
     "accreditation": "Tutti i consulenti sono accreditati dalla Fondazione Certo Governance Institute",
-    "privacy": "Informativa sulla privacy",
-    "terms": "Termini e condizioni"
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini di Servizio"
   },
   "Home": {
-    "hero_title": "Trova un esperto di governance",
-    "hero_subtitle": "I consulenti accreditati di Certo supportano le istituzioni nel mantenimento e nel miglioramento del Certo Rating.",
-    "hero_cta": "Trova un consulente",
-    "step_1_title": "Indicare il proprio settore",
-    "step_1_text": "Selezionare il settore in cui opera la vostra istituzione",
-    "step_2_title": "Descrivere l'esigenza",
-    "step_2_text": "Comunicare le proprie necessità",
-    "step_3_title": "Ricevere una corrispondenza",
-    "step_3_text": "Il sistema selezionerà un consulente Certo accreditato"
+    "hero_title": "Consulenza esperta\na livello di direzione.",
+    "hero_subtitle": "Colleghi consulenti Certo accreditati con istituzioni che richiedono i più alti standard di corporate governance e conformità normativa.",
+    "hero_cta": "Trova un esperto",
+    "finder_title": "Desidero parlare con un esperto di:",
+    "area_health": "Sanità",
+    "area_local_gov": "Enti locali",
+    "area_defense": "Difesa",
+    "area_finance": "Finanza",
+    "area_education": "Istruzione",
+    "form_title": "Lascia i tuoi dati di contatto affinché possiamo selezionare il consulente appropriato nel settore di",
+    "form_name": "Nome e cognome",
+    "form_email": "Indirizzo email (aziendale)",
+    "form_org": "Nome organizzazione / Posizione",
+    "form_submit": "Invia richiesta",
+    "advisors_title": "Esempi di esperti dalla nostra rete",
+    "advisor_bio": "Consulente accreditato Certo con esperienza pluriennale nell'ottimizzazione dei processi per istituzioni strategiche di mercato."
+  },
+  "Legal": {
+    "back": "Torna alla pagina principale",
+    "last_updated": "Ultimo aggiornamento: Marzo 2026",
+    "privacy_title": "Informativa sulla Privacy",
+    "terms_title": "Condizioni di Utilizzo"
   },
   "FindAdvisor": {
     "title": "Trova un consulente Certo",
-    "sector_label": "Settore della vostra istituzione",
-    "need_label": "Di cosa avete bisogno?",
+    "sector_label": "Settore della tua istituzione",
+    "need_label": "Di cosa hai bisogno?",
     "need_audit": "Audit di governance",
     "need_advisory": "Consulenza strategica",
     "need_training": "Formazione e workshop",
-    "need_rating": "Preparazione per il rating",
+    "need_rating": "Preparazione al rating",
     "region_label": "Regione",
-    "submit": "Cerca un consulente"
+    "submit": "Cerca consulente"
   },
   "Advisor": {
     "accredited_by": "Accreditato da Certo",

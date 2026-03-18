@@ -5,26 +5,39 @@
   },
   "Nav": {
     "advisors": "Berater",
-    "expertise": "Expertise",
+    "expertise": "Fachkompetenz",
     "login": "Anmelden"
   },
   "Footer": {
-    "description": "Fachmännische Beratung zu Corporate Governance, Compliance und Sicherheit für Marktführer.",
+    "description": "Fachberatung im Bereich Corporate Governance, Compliance und Sicherheit für Marktführer.",
     "ecosystem": "Certo Ökosystem",
-    "accreditation": "Alle Berater sind von der Certo Governance Institute Stiftung akkreditiert",
+    "accreditation": "Alle Berater sind von der Certo Governance Institute akkreditiert",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen"
   },
   "Home": {
-    "hero_title": "Finden Sie einen Governance-Experten",
-    "hero_subtitle": "Akkreditierte Certo-Berater unterstützen Institutionen dabei, ihr Certo Rating zu halten und zu verbessern.",
-    "hero_cta": "Berater finden",
-    "step_1_title": "Geben Sie Ihren Sektor an",
-    "step_1_text": "Wählen Sie den Sektor aus, in dem Ihre Institution tätig ist",
-    "step_2_title": "Beschreiben Sie Ihren Bedarf",
-    "step_2_text": "Teilen Sie uns mit, was Sie benötigen",
-    "step_3_title": "Erhalten Sie ein Matching",
-    "step_3_text": "Das System vermittelt einen akkreditierten Certo-Berater"
+    "hero_title": "Fachberatung\nauf Vorstandsebene.",
+    "hero_subtitle": "Wir verbinden akkreditierte Certo-Berater mit Institutionen, die höchste Standards der Corporate Governance und regulatorischen Compliance benötigen.",
+    "hero_cta": "Experten finden",
+    "finder_title": "Ich möchte mit einem Experten sprechen für:",
+    "area_health": "Gesundheitswesen",
+    "area_local_gov": "Lokale Verwaltung",
+    "area_defense": "Verteidigung",
+    "area_finance": "Finanzen",
+    "area_education": "Bildung",
+    "form_title": "Hinterlassen Sie Ihre Kontaktdaten, damit wir einen geeigneten Berater aus dem Bereich auswählen können",
+    "form_name": "Name und Vorname",
+    "form_email": "E-Mail-Adresse (geschäftlich)",
+    "form_org": "Organisationsname / Position",
+    "form_submit": "Anfrage absenden",
+    "advisors_title": "Beispiele von Experten aus unserem Netzwerk",
+    "advisor_bio": "Akkreditierter Certo-Berater mit langjähriger Erfahrung in der Optimierung von Prozessen für strategische Marktinstitutionen."
+  },
+  "Legal": {
+    "back": "Zur Startseite zurück",
+    "last_updated": "Zuletzt aktualisiert: März 2026",
+    "privacy_title": "Datenschutzrichtlinie",
+    "terms_title": "Nutzungsbedingungen"
   },
   "FindAdvisor": {
     "title": "Certo-Berater finden",
@@ -41,7 +54,7 @@
     "accredited_by": "Akkreditiert durch Certo",
     "specialization": "Spezialisierung",
     "sectors": "Sektoren",
-    "contact_advisor": "Kontaktieren",
+    "contact_advisor": "Kontakt aufnehmen",
     "view_profile": "Profil anzeigen"
   }
 }

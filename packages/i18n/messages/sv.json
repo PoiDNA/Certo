@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrningen av offentliga, privata och ideella institutioner."
+    "description": "Oberoende ratinginstitut som bedömer styrningskvaliteten hos offentliga, företags- och ideella organisationer."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,7 +16,7 @@
     "delegate": "Certo Delegate",
     "login": "Logga in",
     "logout": "Logga ut",
-    "privacyPolicy": "Sekretesspolicy",
+    "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor",
     "loading": "Läser in...",
     "error": "Ett fel uppstod",
@@ -27,25 +27,25 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ned",
+    "download": "Ladda ner",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
   },
   "Navigation": {
     "home": "Startsida",
-    "ratings": "Ratings",
+    "ratings": "Ratingar",
     "reports": "Rapporter",
     "analysis": "Analyser",
     "about": "Om Stiftelsen",
     "contact": "Kontakt",
-    "dashboard": "Kontrollpanel",
+    "dashboard": "Instrumentpanel",
     "settings": "Inställningar"
   },
   "Auth": {
     "login_title": "Logga in",
     "login_subtitle": "Logga in på ditt konto",
-    "login_with_google": "Logga in via Google",
+    "login_with_google": "Logga in med Google",
     "email_label": "E-postadress",
     "password_label": "Lösenord",
     "forgot_password": "Glömt ditt lösenord?",
@@ -54,14 +54,14 @@
   },
   "Errors": {
     "404_title": "Sidan hittades inte",
-    "404_description": "Sidan du söker finns inte eller har flyttats.",
+    "404_description": "Sidan du söker existerar inte eller har flyttats.",
     "500_title": "Serverfel",
     "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
-    "unauthorized": "Ingen åtkomst. Logga in för att fortsätta."
+    "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."
   },
   "Footer": {
     "rights": "Alla rättigheter förbehållna",
-    "privacy": "Sekretesspolicy",
+    "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   }
