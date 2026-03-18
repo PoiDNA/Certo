@@ -45,8 +45,8 @@ export default function RootLayout({
             <nav className="hidden md:flex items-center gap-8">
               <a href="#doradcy" className="text-white uppercase text-xs tracking-[0.1em] hover:text-certo-accent transition-colors duration-300">Doradcy</a>
               <a href="#ekspertyza" className="text-white uppercase text-xs tracking-[0.1em] hover:text-certo-accent transition-colors duration-300">Ekspertyza</a>
-              <a href="#kontakt" className="px-6 py-2 border border-certo-accent text-certo-accent hover:bg-certo-accent hover:text-white transition-colors duration-300 uppercase text-xs tracking-[0.1em]">
-                Znajdź doradcę
+              <a href="/login" className="text-white hover:text-certo-accent transition-colors duration-300 uppercase text-xs tracking-[0.1em] font-semibold">
+                Logowanie
               </a>
             </nav>
           </div>
