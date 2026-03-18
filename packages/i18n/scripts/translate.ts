@@ -118,10 +118,13 @@ async function translateJsonFile(relPath: string, instructions: string): Promise
 const MDX_EXTRA_RULES = `
 
 DODATKOWE REGUŁY DLA PLIKÓW MDX:
+- ZWRÓĆ WYNIK W FORMACIE MDX (Markdown z frontmatter YAML), NIE w JSON!
+- Format wyjściowy MUSI zaczynać się od --- (YAML frontmatter), potem nagłówki #, ##, paragrafy itd.
 - Zachowaj bez zmian: frontmatter keys (tytuły kluczy YAML), JSX komponenty i ich props, bloki kodu (\`\`\` i \`), import/export statements
 - Tłumacz TYLKO: wartości frontmatter (title, description), tekst paragrafów, tekst nagłówków (#, ##, ###), tekst list
-- Zwróć plik MDX w oryginalnym formacie — bez owijania w markdown code fence
-- Zachowaj wszystkie puste linie i formatowanie struktury MDX
+- Nie owijaj odpowiedzi w markdown code fence (\`\`\`mdx ... \`\`\`)
+- Zachowaj DOKŁADNIE taką samą strukturę MDX: te same nagłówki (#, ##, ###), te same listy (- / 1.), te same tabele (|), te same puste linie
+- NIE zmieniaj formatu na JSON, nie dodawaj kluczy "sections", nie twórz zagnieżdżonych obiektów
 `;
 
 async function translateMdx(
@@ -145,7 +148,14 @@ async function translateMdx(
   if (block.type !== 'text') throw new Error(`Unexpected response type: ${block.type}`);
 
   // Strip code fence if Claude wrapped output despite instructions
-  return block.text.replace(/^```(?:mdx?)?\n?|\n?```$/g, '').trim();
+  const result = block.text.replace(/^```(?:mdx?)?\n?|\n?```$/g, '').trim();
+
+  // Validate: MDX output must start with --- (frontmatter) or # (heading), not { (JSON)
+  if (result.startsWith('{') || result.startsWith('json')) {
+    throw new Error('Model returned JSON instead of MDX — skipping');
+  }
+
+  return result;
 }
 
 async function translateMdxDir(contentDir: string, instructions: string): Promise<void> {
