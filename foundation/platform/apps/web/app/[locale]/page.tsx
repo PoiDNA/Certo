@@ -1,4 +1,8 @@
+import { useTranslations } from 'next-intl';
+
 export default function Home() {
+  const t = useTranslations('Home');
+
   return (
     <div className="flex flex-col items-center justify-center text-center py-16 md:py-24">
       {/* Decorative separator */}
@@ -9,11 +13,11 @@ export default function Home() {
       </div>
 
       <h1 className="text-4xl md:text-6xl font-serif font-bold text-certo-navy mb-6 tracking-tight">
-        Certo Governance Institute
+        {t('title')}
       </h1>
       
       <p className="text-lg md:text-xl text-certo-navy/80 mb-12 max-w-2xl leading-relaxed">
-        Certo jest pierwszą na świecie agencją ratingową, której ratingi są kryptograficznymi artefaktami procesu — nie opiniami. Każda decyzja ratingowa jest zakotwiczona poza własną infrastrukturą, weryfikowalna offline i publicznie audytowalna.
+        {t('description')}
       </p>
 
       {/* Another decorative separator below */}
