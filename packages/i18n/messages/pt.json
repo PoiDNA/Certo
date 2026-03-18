@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgão de classificação independente que avalia a qualidade da governança de instituições públicas, corporativas e não-governamentais."
+    "description": "Órgão de classificação independente que avalia a qualidade da governança de instituições públicas, corporativas e sem fins lucrativos."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,8 +16,8 @@
     "delegate": "Certo Delegate",
     "login": "Faça login",
     "logout": "Sair",
-    "privacyPolicy": "Política de privacidade",
-    "termsOfUse": "Termos de uso",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
     "loading": "Carregando...",
     "error": "Ocorreu um erro",
     "save": "Salvar",
@@ -33,13 +33,13 @@
     "inactive": "Inativo"
   },
   "Navigation": {
-    "home": "Página inicial",
+    "home": "Página Inicial",
     "ratings": "Classificações",
     "reports": "Relatórios",
     "analysis": "Análises",
     "about": "Sobre a Fundação",
     "contact": "Contato",
-    "dashboard": "Painel de controle",
+    "dashboard": "Painel",
     "settings": "Configurações"
   },
   "Auth": {
@@ -61,8 +61,8 @@
   },
   "Footer": {
     "rights": "Todos os direitos reservados",
-    "privacy": "Política de privacidade",
-    "terms": "Termos de uso",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
     "contact": "Contato"
   }
 }

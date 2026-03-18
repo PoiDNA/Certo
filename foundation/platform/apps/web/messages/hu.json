@@ -1,34 +1,34 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Alapítvány",
-    "description": "Független értékelési szervezet, amely a közszféra, a vállalati, az egészségügyi és a védelmi szektor irányítási minőségét értékeli."
+    "description": "Független minősítő szerv, amely értékeli az irányítási (governance) minőségét a közszférában, vállalati szektorban, egészségügyi és védelmi szektorban."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "A Certo az első olyan világméretű értékelési ügynökség, amelynek értékelései a folyamat kriptográfiai lenyomatai — nem pedig vélemények. Minden értékelési döntés saját infrastruktúrán kívül van rögzítve, offline módon ellenőrizhető és nyilvánosan auditálható.",
-    "hero_cta_primary": "Ellenőrizze az értékeléseket",
+    "description": "A Certo az első olyan ratingügynökség a világon, amelynek ratingjei a folyamat kriptográfiai összetevői – nem pedig vélemények. Minden ratingdöntés a saját infrastruktúrán kívül van rögzítve, offline-ban ellenőrizhető és nyilvánosan auditálható.",
+    "hero_cta_primary": "Tekintse meg a ratingokat",
     "hero_cta_secondary": "Tudjon meg többet",
-    "section_ratings_title": "Legújabb Certo Értékelések",
+    "section_ratings_title": "Legújabb Certo Ratingok",
     "section_reports_title": "Elemzések és Jelentések",
     "section_about_title": "Az Alapítványról"
   },
   "Ratings": {
-    "title": "Certo Értékelések",
+    "title": "Certo Ratingok",
     "subtitle": "Intézmények irányítási minőségének értékelése",
-    "search_placeholder": "Intézmény keresése...",
+    "search_placeholder": "Keresse az intézményt...",
     "filter_sector": "Szektor",
     "sector_public": "Közszféra",
     "sector_corporate": "Vállalati",
     "sector_medical": "Egészségügyi",
     "sector_defense": "Védelmi",
-    "sector_ngo": "Nonprofit",
-    "rating_valid_until": "Az értékelés érvényes",
+    "sector_ngo": "Civil szervezetek",
+    "rating_valid_until": "Rating érvényes",
     "rating_issued": "Kibocsátás dátuma",
     "no_results": "Nincs találat",
     "view_profile": "Profil megtekintése"
   },
   "Nav": {
-    "ratings": "Értékelések",
+    "ratings": "Ratingok",
     "methodology": "Módszertan",
     "about": "Az Alapítványról",
     "login": "Bejelentkezés"
@@ -40,11 +40,11 @@
   },
   "About": {
     "title": "A Certo Governance Institute Alapítványról",
-    "mission_title": "Missió",
-    "mission_text": "Jó irányítás kultúrájának építése független értékelés és irányítási standardok promóciója révén Lengyelországban és Európában.",
+    "mission_title": "Misszió",
+    "mission_text": "A jó irányítás kultúrájának kialakítása független értékelésen és a governance standardok előmozdításán keresztül Lengyelországban és Európában.",
     "independence_title": "Függetlenség",
-    "independence_text": "Az alapítvány független az értékelt szervezetektől, a közhatalom szerveitől és a kereskedelmi érdekektől.",
+    "independence_text": "Az Alapítvány független az értékelt szervezetektől, a közhatalmú szervektől és a kereskedelmi érdekektől.",
     "methodology_title": "Módszertan",
-    "methodology_text": "A Certo Értékelések szigorú, az ISO standardokra és az EU iránymutatásokra alapozott módszertanon alapulnak."
+    "methodology_text": "A Certo ratingok szigorú, az ISO standardok és az EU irányelvek alapján elkészített módszertanon alapulnak."
   }
 }

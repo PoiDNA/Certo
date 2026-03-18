@@ -1,25 +1,25 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute Fondacija",
-    "description": "Nepriklausomas reitingų organas, įvertinantis valdymo kokybę viešajame, korporatyviniame, medicinos ir gynybos sektoriuose."
+    "title": "Certo Governance Institute",
+    "description": "Nepriklausomas reitingų organas, vertinantis valdymo kokybę viešajame, korporatyviniame, mediciniame ir gynybos sektoriuose."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai — ne nuomonės. Kiekvienas reitingo sprendimas yra įtvirtintas už savos infrastruktūros ribų, patikrinamas neprisijungus prie interneto ir viešai audituojamas.",
-    "hero_cta_primary": "Peržiūrėkite reitingus",
-    "hero_cta_secondary": "Sužinokite daugiau",
-    "section_ratings_title": "Naujausiai Certo Reitingai",
-    "section_reports_title": "Analizės ir Ataskaitos",
-    "section_about_title": "Apie Fondaciją"
+    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai, o ne nuomonės. Kiekvienas reitingo sprendimas yra uklojtas už savosios infrastruktūros, patikrinamas biržoje ir viešai audituojamas.",
+    "hero_cta_primary": "Peržiūrėti reitingus",
+    "hero_cta_secondary": "Sužinoti daugiau",
+    "section_ratings_title": "Naujausi Certo reitingai",
+    "section_reports_title": "Analizės ir Ataskaitai",
+    "section_about_title": "Apie Fondą"
   },
   "Ratings": {
-    "title": "Certo Reitingai",
+    "title": "Certo reitingai",
     "subtitle": "Institucijų valdymo kokybės vertinimai",
-    "search_placeholder": "Ieškokite institucijos...",
+    "search_placeholder": "Ieškoti institucijos...",
     "filter_sector": "Sektorius",
     "sector_public": "Viešasis",
     "sector_corporate": "Korporatyvinis",
-    "sector_medical": "Medicinos",
+    "sector_medical": "Medicinis",
     "sector_defense": "Gynybos",
     "sector_ngo": "Nevyriausybinis",
     "rating_valid_until": "Reitingas galioja iki",
@@ -30,21 +30,21 @@
   "Nav": {
     "ratings": "Reitingai",
     "methodology": "Metodologija",
-    "about": "Apie Fondaciją",
+    "about": "Apie Fondą",
     "login": "Prisijungti"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute Fondacija © {year}",
-    "privacy": "Privatumo Politika",
-    "terms": "Naudojimo Sąlygos"
+    "copyright": "Certo Governance Institute © {year}",
+    "privacy": "Privatumo politika",
+    "terms": "Naudojimosi sąlygos"
   },
   "About": {
-    "title": "Apie Certo Governance Institute Fondaciją",
+    "title": "Apie Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Gerojo valdymo kultūros kūrimas per nepriklausomą vertinimą ir valdymo standartų sklaidą Lietuvoje ir Europoje.",
+    "mission_text": "Gerojo valdymo kultūros kūrimas per nepriklausomą vertinimą ir valdymo standartų skatinimą Lietuvoje ir Europoje.",
     "independence_title": "Nepriklausomybė",
     "independence_text": "Fondacija yra nepriklausoma nuo vertintų subjektų, viešosios valdžios organų ir komercinių interesų.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo reitingai grindžiami griežta metodologija, paremta ISO standartais ir ES rekomendacijomis."
+    "methodology_text": "Certo reitingai pagrįsti griežta metodologija, paremta ISO standartais ir ES gairėmis."
   }
 }

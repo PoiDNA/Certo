@@ -1,14 +1,25 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identitásverifikáció és compliance intézmények és vállalatok számára."
+    "description": "Identitásellenőrzés és compliance intézmények és vállalatok számára."
+  },
+  "Nav": {
+    "solutions": "Megoldások",
+    "technology": "Technológia",
+    "foundation": "Certo Foundation",
+    "login": "Bejelentkezés"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Adatvédelmi irányelvek",
+    "terms": "Szolgáltatási feltételek"
   },
   "Dashboard": {
-    "title": "Certo ID Panel",
-    "welcome": "Üdvözlünk, {name}",
-    "your_rating": "Az Ön Certo Rating",
-    "your_delegates": "Az Ön Certo Delegátusai",
-    "your_accords": "Az Ön Certo Accord Megállapodásai",
+    "title": "Certo ID irányítópult",
+    "welcome": "Üdvözlöm, {name}",
+    "your_rating": "Az Ön Certo Rating értékelése",
+    "your_delegates": "Az Ön Delegate ID-i",
+    "your_accords": "Az Ön Certo Accord szerződések",
     "recent_activity": "Legutóbbi tevékenység",
     "quick_actions": "Gyors műveletek"
   },
@@ -18,15 +29,15 @@
     "contact_person": "Kapcsolattartó személy",
     "sector": "Szektor",
     "edit_profile": "Profil szerkesztése",
-    "verified_badge": "Ellenőrzött szervezet"
+    "verified_badge": "Ellenőrzött intézmény"
   },
   "Delegates": {
-    "title": "Certo Delegátusok",
-    "add_delegate": "Delegátus hozzáadása",
+    "title": "Certo Delegate-ek",
+    "add_delegate": "Delegate hozzáadása",
     "delegate_id": "Delegate ID",
     "delegate_status": "Állapot",
-    "primary_link": "PRIMARY Hivatkozás",
-    "failover_link": "FAILOVER Hivatkozás",
+    "primary_link": "PRIMARY link",
+    "failover_link": "FAILOVER link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

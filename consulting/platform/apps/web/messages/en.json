@@ -1,30 +1,30 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Find Your Advisor",
-    "description": "Certo Accredited Advisors. Corporate Governance and Compliance."
+    "title": "Certo Consulting — Find an Advisor",
+    "description": "Accredited Certo advisors. Corporate governance and compliance."
   },
   "Nav": {
     "advisors": "Advisors",
     "expertise": "Expertise",
-    "login": "Log in"
+    "login": "Login"
   },
   "Footer": {
     "description": "Expert advisory in corporate governance, compliance and security for market leaders.",
     "ecosystem": "Certo Ecosystem",
-    "accreditation": "All advisors are accredited by the Certo Governance Institute Foundation",
+    "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms and Conditions"
   },
   "Home": {
     "hero_title": "Find a governance expert",
-    "hero_subtitle": "Certo Accredited Advisors support institutions in maintaining and improving their Certo Rating.",
+    "hero_subtitle": "Accredited Certo advisors support institutions in maintaining and improving their Certo Rating.",
     "hero_cta": "Find an advisor",
     "step_1_title": "Specify your sector",
-    "step_1_text": "Select the sector in which your institution operates",
+    "step_1_text": "Select the sector your institution operates in",
     "step_2_title": "Describe your need",
     "step_2_text": "Tell us what you need",
     "step_3_title": "Get a match",
-    "step_3_text": "The system will match you with an accredited Certo Advisor"
+    "step_3_text": "The system will match you with an accredited Certo advisor"
   },
   "FindAdvisor": {
     "title": "Find a Certo Advisor",
@@ -33,9 +33,9 @@
     "need_audit": "Governance audit",
     "need_advisory": "Strategic advisory",
     "need_training": "Training and workshops",
-    "need_rating": "Preparation for rating",
+    "need_rating": "Rating preparation",
     "region_label": "Region",
-    "submit": "Search for advisor"
+    "submit": "Find an advisor"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független minősítő szerv, amely értékeli a közintézmények, vállalati szervezetek és nonprofit szervezetek irányítási minőségét."
+    "description": "Független ratingügynökség, amely nyilvános, vállalati és civil szervezetek irányítási minőségét értékeli."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -21,7 +21,7 @@
     "loading": "Betöltés...",
     "error": "Hiba lépett fel",
     "save": "Mentés",
-    "cancel": "Mégse",
+    "cancel": "Mégsem",
     "confirm": "Megerősítés",
     "back": "Vissza",
     "next": "Tovább",
@@ -33,30 +33,30 @@
     "inactive": "Inaktív"
   },
   "Navigation": {
-    "home": "Kezdőlap",
-    "ratings": "Minősítések",
+    "home": "Kezdőoldal",
+    "ratings": "Ratingek",
     "reports": "Jelentések",
     "analysis": "Elemzések",
     "about": "A Fundációról",
     "contact": "Kapcsolat",
-    "dashboard": "Irányítópult",
+    "dashboard": "Vezérlőpult",
     "settings": "Beállítások"
   },
   "Auth": {
     "login_title": "Bejelentkezés",
     "login_subtitle": "Jelentkezzen be fiókjába",
-    "login_with_google": "Bejelentkezés Google-lal",
+    "login_with_google": "Bejelentkezés Google-lel",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
     "forgot_password": "Elfelejtette a jelszavát?",
-    "no_account": "Még nincs fiókja?",
+    "no_account": "Nincs fiókja?",
     "register": "Regisztráció"
   },
   "Errors": {
     "404_title": "Az oldal nem található",
     "404_description": "A keresett oldal nem létezik vagy át lett helyezve.",
     "500_title": "Szerverhiba",
-    "500_description": "Váratlan hiba lépett fel. Kérjük, próbálja meg később.",
+    "500_description": "Váratlan hiba lépett fel. Kérjük, próbálkozzon később.",
     "unauthorized": "Nincs hozzáférés. Jelentkezzen be a folytatáshoz."
   },
   "Footer": {

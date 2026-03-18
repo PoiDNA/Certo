@@ -1,32 +1,44 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Etsi neuvonantaja",
-    "description": "Certo:n akkreditoidut neuvonantajat. Corporate governance ja vaatimustenmukaisuus."
+    "description": "Certon sertifioidut neuvonantajat. Hallinnon laatu ja vaatimustenmukaisuus."
+  },
+  "Nav": {
+    "advisors": "Neuvonantajat",
+    "expertise": "Asiantuntijuus",
+    "login": "Kirjaudu sisään"
+  },
+  "Footer": {
+    "description": "Asiantunteva neuvonta hallinnon laadusta, vaatimustenmukaisuudesta ja turvallisuudesta markkinajohtajille.",
+    "ecosystem": "Certo-ekosysteemi",
+    "accreditation": "Kaikki neuvonantajat ovat Certo Governance Institute -säätiön sertifioimia",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Käyttöehdot"
   },
   "Home": {
-    "hero_title": "Etsi governance-asiantuntijaa",
-    "hero_subtitle": "Certo:n akkreditoidut neuvonantajat tukevat instituutioita Certo-ratingin säilyttämisessä ja parantamisessa.",
+    "hero_title": "Etsi hallinnon asiantuntija",
+    "hero_subtitle": "Certon sertifioidut neuvonantajat auttavat laitoksia ylläpitämään ja parantamaan Certo-luokitustaan.",
     "hero_cta": "Etsi neuvonantaja",
     "step_1_title": "Ilmoita sektorisi",
-    "step_1_text": "Valitse sektori, jossa instituutiosi toimii",
-    "step_2_title": "Kuvaile tarpeesi",
+    "step_1_text": "Valitse sektori, jolla laitoksesi toimii",
+    "step_2_title": "Kuvaile tarvettasi",
     "step_2_text": "Kerro meille, mitä tarvitset",
     "step_3_title": "Saa sopiva vastine",
-    "step_3_text": "Järjestelmä valitsee akkreditoidun Certo-neuvonantajan sinulle"
+    "step_3_text": "Järjestelmä valitsee sinulle sertifioidun Certo-neuvonantajan"
   },
   "FindAdvisor": {
     "title": "Etsi Certo-neuvonantaja",
-    "sector_label": "Instituutiosi sektori",
+    "sector_label": "Laitoksesi sektori",
     "need_label": "Mitä tarvitset?",
-    "need_audit": "Governance-auditointi",
+    "need_audit": "Hallinnon laadun auditointi",
     "need_advisory": "Strateginen neuvonta",
-    "need_training": "Koulutus ja työpajat",
-    "need_rating": "Valmistautuminen ratingiin",
+    "need_training": "Koulutukset ja työpajat",
+    "need_rating": "Valmistautuminen luokitukseen",
     "region_label": "Alue",
     "submit": "Etsi neuvonantaja"
   },
   "Advisor": {
-    "accredited_by": "Akkreditoitu Certo:n toimesta",
+    "accredited_by": "Certon sertifioima",
     "specialization": "Erikoistuminen",
     "sectors": "Sektorit",
     "contact_advisor": "Ota yhteyttä",

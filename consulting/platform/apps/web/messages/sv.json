@@ -1,27 +1,39 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Hitta en Rådgivare",
-    "description": "Ackrediterade Certo-rådgivare. Corporate Governance och compliance."
+    "title": "Certo Consulting — Hitta Rådgivare",
+    "description": "Ackrediterade Certo-rådgivare. Corporate Governance och efterlevnad."
+  },
+  "Nav": {
+    "advisors": "Rådgivare",
+    "expertise": "Expertis",
+    "login": "Logga in"
+  },
+  "Footer": {
+    "description": "Expert rådgivning inom corporate governance, efterlevnad och säkerhet för marknadsledare.",
+    "ecosystem": "Certo-ekosystemet",
+    "accreditation": "Alla rådgivare är ackrediterade av Certo Governance Institute",
+    "privacy": "Sekretesspolicy",
+    "terms": "Användarvillkor"
   },
   "Home": {
     "hero_title": "Hitta en governance-expert",
     "hero_subtitle": "Ackrediterade Certo-rådgivare stöder institutioner i att upprätthålla och förbättra sitt Certo Rating.",
-    "hero_cta": "Hitta rådgivare",
+    "hero_cta": "Hitta en rådgivare",
     "step_1_title": "Ange din sektor",
     "step_1_text": "Välj den sektor där din institution är verksam",
     "step_2_title": "Beskriv ditt behov",
     "step_2_text": "Berätta för oss vad du behöver",
-    "step_3_title": "Få matchning",
+    "step_3_title": "Få en matchning",
     "step_3_text": "Systemet matchar dig med en ackrediterad Certo-rådgivare"
   },
   "FindAdvisor": {
-    "title": "Hitta Certo-rådgivare",
+    "title": "Hitta en Certo-rådgivare",
     "sector_label": "Din institutions sektor",
     "need_label": "Vad behöver du?",
     "need_audit": "Governance-revision",
     "need_advisory": "Strategisk rådgivning",
-    "need_training": "Utbildningar och workshops",
-    "need_rating": "Förberedelse för rating",
+    "need_training": "Utbildning och workshops",
+    "need_rating": "Förberedelse inför rating",
     "region_label": "Region",
     "submit": "Sök rådgivare"
   },
@@ -29,7 +41,7 @@
     "accredited_by": "Ackrediterad av Certo",
     "specialization": "Specialisering",
     "sectors": "Sektorer",
-    "contact_advisor": "Kontakta rådgivare",
-    "view_profile": "Se profil"
+    "contact_advisor": "Kontakta",
+    "view_profile": "Visa profil"
   }
 }

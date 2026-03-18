@@ -1,34 +1,34 @@
 {
   "Metadata": {
     "title": "Fundacija Certo Governance Institute",
-    "description": "Nezavisni rejting organ koji vrednuje kvalitetu upravljanja u javnom, korporativnom, medicinskom i obrambenom sektoru."
+    "description": "Nezavisna agencija za ocjenu kvalitete upravljanja u javnom, korporativnom, medicinskom i obrambenom sektoru."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prva svjetska rejting agencija čiji rejtinzi su kriptografski artefakti procesa — ne mišljenja. Svaka rejting odluka je usidrena izvan vlastite infrastrukture, provjeriva offline i javno revidirajuća.",
-    "hero_cta_primary": "Pregledajte rejtinge",
+    "description": "Certo je prva svjetska agencija za ocjenu čija ocjena predstavljaju kriptografske artefakte procesa — ne mišljenja. Svaka odluka o ocjeni je zakorijenjena izvan vlastite infrastrukture, provjera je moguća offline i javno je podložna reviziji.",
+    "hero_cta_primary": "Pogledajte ocjene",
     "hero_cta_secondary": "Saznajte više",
-    "section_ratings_title": "Najnoviji Certo Rejtinzi",
+    "section_ratings_title": "Najnovije Ocjene Certo",
     "section_reports_title": "Analize i Izvještaji",
     "section_about_title": "O Fundaciji"
   },
   "Ratings": {
-    "title": "Certo Rejtinzi",
-    "subtitle": "Ocjene kvalitete upravljanja institucija",
+    "title": "Ocjene Certo",
+    "subtitle": "Ocjena kvalitete upravljanja institucijama",
     "search_placeholder": "Pretražite instituciju...",
     "filter_sector": "Sektor",
     "sector_public": "Javni",
     "sector_corporate": "Korporativni",
     "sector_medical": "Medicinski",
     "sector_defense": "Obrambeni",
-    "sector_ngo": "Nevladin",
-    "rating_valid_until": "Rejting validan do",
+    "sector_ngo": "Nevladine organizacije",
+    "rating_valid_until": "Ocjena vrijedi do",
     "rating_issued": "Datum izdavanja",
-    "no_results": "Nisu pronađeni rezultati",
+    "no_results": "Nema pronađenih rezultata",
     "view_profile": "Pogledajte profil"
   },
   "Nav": {
-    "ratings": "Rejtinzi",
+    "ratings": "Ocjene",
     "methodology": "Metodologija",
     "about": "O Fundaciji",
     "login": "Prijavite se"
@@ -41,10 +41,10 @@
   "About": {
     "title": "O Fundaciji Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Izgradnja kulture dobrog upravljanja putem nezavisne ocjene i promicanja standarda governance u Hrvatskoj i Europi.",
+    "mission_text": "Izgradnja kulture dobrog upravljanja kroz nezavisnu ocjenu i promociju standarda upravljanja u Hrvatskoj, EU i šire.",
     "independence_title": "Nezavisnost",
-    "independence_text": "Fundacija je nezavisna od institucija koje se vrednuju, javnih vlasti i komercijalnih interesa.",
+    "independence_text": "Fundacija je nezavisna od ocjenjenih subjekata, organa javne vlasti i komercijalnih interesa.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo rejtinzi temelje se na strogoj metodologiji utemeljenoj na ISO standardima i EU smjernicama."
+    "methodology_text": "Ocjene Certo temelje se na rigoroznoj metodologiji zasnovnoj na ISO standardima i EU smjernicama."
   }
 }

@@ -1,14 +1,25 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificarea identității și conformitate pentru instituții publice și corporații."
+    "description": "Verificare identitate și conformitate pentru instituții publice și corporații."
+  },
+  "Nav": {
+    "solutions": "Soluții",
+    "technology": "Tehnologie",
+    "foundation": "Fundația Certo",
+    "login": "Conectare"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Condiții de Utilizare"
   },
   "Dashboard": {
-    "title": "Panou Certo ID",
+    "title": "Tabloul de Bord Certo ID",
     "welcome": "Bine ai venit, {name}",
-    "your_rating": "Rating-ul tău Certo",
+    "your_rating": "Ratingul tău Certo",
     "your_delegates": "Delegații tăi",
-    "your_accords": "Acordurile tale Certo Accord",
+    "your_accords": "Certo Accord-urile tale",
     "recent_activity": "Activitate recentă",
     "quick_actions": "Acțiuni rapide"
   },

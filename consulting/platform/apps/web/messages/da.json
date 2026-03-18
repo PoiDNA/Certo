@@ -1,35 +1,47 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Find Advisor",
-    "description": "Certo accredited advisors. Corporate governance and compliance."
+    "description": "Accredited Certo advisors. Corporate governance and compliance."
+  },
+  "Nav": {
+    "advisors": "Rådgivere",
+    "expertise": "Ekspertise",
+    "login": "Login"
+  },
+  "Footer": {
+    "description": "Ekspertis inden for corporate governance, compliance og sikkerhed for markedsledere.",
+    "ecosystem": "Certo-økosystem",
+    "accreditation": "Alle rådgivere er akkrediteret af Certo Governance Institute",
+    "privacy": "Privatlivspolitik",
+    "terms": "Vilkår og betingelser"
   },
   "Home": {
-    "hero_title": "Find a governance expert",
-    "hero_subtitle": "Certo accredited advisors support institutions in maintaining and improving their Certo Rating.",
-    "hero_cta": "Find advisor",
-    "step_1_title": "Specify your sector",
-    "step_1_text": "Select the sector in which your institution operates",
-    "step_2_title": "Describe your need",
-    "step_2_text": "Tell us what you need",
-    "step_3_title": "Get a match",
-    "step_3_text": "The system will select an accredited Certo advisor for you"
+    "hero_title": "Find en governance-ekspert",
+    "hero_subtitle": "Akkrediterede Certo-rådgivere støtter institutioner i at opretholde og forbedre deres Certo Rating.",
+    "hero_cta": "Find rådgiver",
+    "step_1_title": "Angiv dit sektor",
+    "step_1_text": "Vælg den sektor, hvor din institution opererer",
+    "step_2_title": "Beskriv dit behov",
+    "step_2_text": "Fortæl os hvad du har brug for",
+    "step_3_title": "Få et match",
+    "step_3_text": "Systemet vil finde en akkrediteret Certo-rådgiver til dig"
   },
   "FindAdvisor": {
-    "title": "Find a Certo advisor",
-    "sector_label": "Your institution's sector",
-    "need_label": "What do you need?",
-    "need_audit": "Governance audit",
-    "need_advisory": "Strategic advisory",
-    "need_training": "Training and workshops",
-    "need_rating": "Rating preparation",
+    "title": "Find Certo-rådgiver",
+    "sector_label": "Din institutions sektor",
+    "need_label": "Hvad har du brug for?",
+    "need_audit": "Governance-audit",
+    "need_advisory": "Strategisk rådgivning",
+    "need_training": "Træning og workshops",
+    "need_rating": "Forberedelse til rating",
     "region_label": "Region",
-    "submit": "Search for advisor"
+    "submit": "Søg efter rådgiver"
   },
   "Advisor": {
-    "accredited_by": "Accredited by Certo",
-    "specialization": "Specialization",
-    "sectors": "Sectors",
-    "contact_advisor": "Get in touch",
-    "view_profile": "View profile"
+    "accredited_by": "Akkrediteret af Certo",
+    "specialization": "Speciale",
+    "sectors": "Sektorer",
+    "contact_advisor": "Kontakt",
+    "view_profile": "Se profil"
   }
 }

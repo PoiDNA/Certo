@@ -1,27 +1,39 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Encontre um Consultor",
-    "description": "Consultores acreditados pela Certo. Governança corporativa e conformidade."
+    "description": "Consultores acreditados Certo. Governança corporativa e conformidade."
+  },
+  "Nav": {
+    "advisors": "Consultores",
+    "expertise": "Expertise",
+    "login": "Login"
+  },
+  "Footer": {
+    "description": "Consultoria especializada em governança corporativa, conformidade e segurança para líderes de mercado.",
+    "ecosystem": "Ecossistema Certo",
+    "accreditation": "Todos os consultores são acreditados pela Fundação Certo Governance Institute",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso"
   },
   "Home": {
-    "hero_title": "Encontre um especialista em governance",
-    "hero_subtitle": "Os consultores acreditados pela Certo apoiam instituições na manutenção e melhoria da avaliação Certo.",
+    "hero_title": "Encontre um especialista em governança",
+    "hero_subtitle": "Consultores acreditados Certo apoiam instituições na manutenção e melhoria de seu rating Certo.",
     "hero_cta": "Encontre um consultor",
-    "step_1_title": "Indique o seu setor",
-    "step_1_text": "Selecione o setor em que a sua instituição atua",
-    "step_2_title": "Descreva a sua necessidade",
-    "step_2_text": "Diga-nos do que precisa",
+    "step_1_title": "Indique seu setor",
+    "step_1_text": "Selecione o setor em que sua instituição atua",
+    "step_2_title": "Descreva sua necessidade",
+    "step_2_text": "Diga-nos do que você precisa",
     "step_3_title": "Receba a correspondência",
-    "step_3_text": "O sistema irá associá-lo a um consultor acreditado pela Certo"
+    "step_3_text": "O sistema identificará um consultor acreditado Certo adequado"
   },
   "FindAdvisor": {
     "title": "Encontre um consultor Certo",
-    "sector_label": "Setor da sua instituição",
-    "need_label": "Do que precisa?",
-    "need_audit": "Auditoria de governance",
+    "sector_label": "Setor de sua instituição",
+    "need_label": "Do que você precisa?",
+    "need_audit": "Auditoria de governança",
     "need_advisory": "Consultoria estratégica",
-    "need_training": "Formações e oficinas",
-    "need_rating": "Preparação para avaliação",
+    "need_training": "Treinamentos e workshops",
+    "need_rating": "Preparação para rating",
     "region_label": "Região",
     "submit": "Procurar consultor"
   },
@@ -29,7 +41,7 @@
     "accredited_by": "Acreditado pela Certo",
     "specialization": "Especialização",
     "sectors": "Setores",
-    "contact_advisor": "Entre em contacto",
+    "contact_advisor": "Entre em contato",
     "view_profile": "Ver perfil"
   }
 }

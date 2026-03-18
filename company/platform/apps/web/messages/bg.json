@@ -1,23 +1,34 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Верификация на идентичност и съответствие на нормативната база за публични институции и корпорации."
+    "description": "Верификация на самоличност и compliance за публични институции и корпорации."
+  },
+  "Nav": {
+    "solutions": "Решения",
+    "technology": "Технология",
+    "foundation": "Fundacja Certo",
+    "login": "Вход"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Политика за поверителност",
+    "terms": "Условия на услугата"
   },
   "Dashboard": {
-    "title": "Панел Certo ID",
+    "title": "Табло Certo ID",
     "welcome": "Добре дошли, {name}",
-    "your_rating": "Вашият Certo Rating",
-    "your_delegates": "Вашите Делегати",
-    "your_accords": "Вашите Certo Accord",
-    "recent_activity": "Последната активност",
+    "your_rating": "Ваш Rating Certo",
+    "your_delegates": "Ваши делегати",
+    "your_accords": "Ваши Certo Accord",
+    "recent_activity": "Последна активност",
     "quick_actions": "Бързи действия"
   },
   "Profile": {
     "title": "Профил",
     "organization": "Организация",
-    "contact_person": "Лице за контакт",
+    "contact_person": "Контактно лице",
     "sector": "Сектор",
-    "edit_profile": "Редактиране на профил",
+    "edit_profile": "Редактиране на профила",
     "verified_badge": "Верифициран субект"
   },
   "Delegates": {
@@ -25,8 +36,8 @@
     "add_delegate": "Добавяне на делегат",
     "delegate_id": "Delegate ID",
     "delegate_status": "Статус",
-    "primary_link": "PRIMARY линк",
-    "failover_link": "FAILOVER линк",
+    "primary_link": "PRIMARY връзка",
+    "failover_link": "FAILOVER връзка",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

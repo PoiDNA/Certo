@@ -1,13 +1,24 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Fíorú aitheantais agus coimhlíonadh do institiúidí poiblí agus corparáidí."
+    "description": "Fíorú céannachta agus comhlíonadh do dhúnasmaoineacht phoiblí agus chorparáideacha."
+  },
+  "Nav": {
+    "solutions": "Réitigh",
+    "technology": "Teicneolaíocht",
+    "foundation": "Certo Governance Institute",
+    "login": "Logáil isteach"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Polasaí Príobháideachta",
+    "terms": "Téarmaí an Tseirbhíse"
   },
   "Dashboard": {
     "title": "Painéal Certo ID",
     "welcome": "Fáilte, {name}",
-    "your_rating": "Do Certo Rating",
-    "your_delegates": "Do Chigirí",
+    "your_rating": "Do Rating Certo",
+    "your_delegates": "Do Dhelegáit",
     "your_accords": "Do Certo Accord",
     "recent_activity": "Gníomhaíocht dhéanach",
     "quick_actions": "Gníomhartha tapa"
@@ -17,16 +28,16 @@
     "organization": "Eagraíochta",
     "contact_person": "Duine Teagmhála",
     "sector": "Earnáil",
-    "edit_profile": "Cuir an próifíl in eagar",
+    "edit_profile": "Cuir do phróifíl in eagar",
     "verified_badge": "Gné Fhíoraithe"
   },
   "Delegates": {
-    "title": "Cigirí Certo",
-    "add_delegate": "Cuir cigire leis",
+    "title": "Delegáit Certo",
+    "add_delegate": "Cuir Delegáit Leis",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stádas",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "Nasc PRIMARY",
+    "failover_link": "Nasc FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

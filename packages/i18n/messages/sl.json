@@ -28,9 +28,9 @@
     "close": "Zapri",
     "search": "Iskanje",
     "download": "Prenos",
-    "verified": "Preverjen",
-    "active": "Aktiven",
-    "inactive": "Neaktiven"
+    "verified": "Preverjeno",
+    "active": "Aktivno",
+    "inactive": "Neaktivno"
   },
   "Navigation": {
     "home": "Domača stran",
@@ -45,7 +45,7 @@
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se v svoj račun",
-    "login_with_google": "Prijava prek Googla",
+    "login_with_google": "Prijava prek storitve Google",
     "email_label": "Naslov e-pošte",
     "password_label": "Geslo",
     "forgot_password": "Ste pozabili geslo?",
@@ -56,8 +56,8 @@
     "404_title": "Stran ni bila najdena",
     "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premaknjena.",
     "500_title": "Napaka strežnika",
-    "500_description": "Prišlo je do nepredvidene napake. Poskusite znova pozneje.",
-    "unauthorized": "Dostop zavrnjen. Prijavite se, da nadaljujete."
+    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
+    "unauthorized": "Dostop zavrnjen. Za nadaljevanje se prijavite."
   },
   "Footer": {
     "rights": "Vse pravice pridržane",

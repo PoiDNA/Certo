@@ -1,50 +1,50 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute Fond",
-    "description": "Sõltumatu reitinguagentuur, mis hindab hallatuse kvaliteeti avaliku, korporatiivse, meditsiini ja kaitsesektor."
+    "title": "Certo Governance Institute",
+    "description": "Sõltumatu reitingu andja, kes hindab juhtimise kvaliteeti avalikus, ettevõtte-, meditsiini- ja kaitssektoris."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo on maailma esimene reitinguagentuur, mille reitingud on protsessi krüptograafilised artefaktid — mitte arvamused. Iga reitingulahendus on ankurdatud väljaspool oma infrastruktuuri, verifieeritav võrguühenduseta ja avalikult auditeerimine.",
-    "hero_cta_primary": "Vaata reitingud",
-    "hero_cta_secondary": "Rohkem teavet",
-    "section_ratings_title": "Uusimad Certo Reitingud",
+    "description": "Certo on maailma esimene reitingiagentuuri, kelle reitingud on protsessi krüptograafilised artefaktid — mitte arvamused. Iga reitingute otsus on ankurdatud väljaspool oma infrastruktuuri, kontrolltav võrguühenduseta ja avalikult audiitav.",
+    "hero_cta_primary": "Vaata reitinguid",
+    "hero_cta_secondary": "Lisateave",
+    "section_ratings_title": "Viimased Certo reitingud",
     "section_reports_title": "Analüüsid ja Aruanded",
-    "section_about_title": "Fondi Kohta"
+    "section_about_title": "Fundatsiooni kohta"
   },
   "Ratings": {
-    "title": "Certo Reitingud",
-    "subtitle": "Institutsioonide hallatuse kvaliteedi hinnangud",
-    "search_placeholder": "Otsi institutsiooni...",
+    "title": "Certo reitingud",
+    "subtitle": "Institutsioonide juhtimise kvaliteedi hindamised",
+    "search_placeholder": "Otsi institutsioonist...",
     "filter_sector": "Sektor",
     "sector_public": "Avalik",
-    "sector_corporate": "Korporatiivne",
-    "sector_medical": "Meditsiini",
+    "sector_corporate": "Ettevõtte",
+    "sector_medical": "Meditsiin",
     "sector_defense": "Kaitse",
     "sector_ngo": "Mittetulunduslik",
     "rating_valid_until": "Reiting kehtib kuni",
-    "rating_issued": "Väljastamise kuupäev",
+    "rating_issued": "Väljaandmise kuupäev",
     "no_results": "Tulemusi ei leitud",
     "view_profile": "Vaata profiili"
   },
   "Nav": {
     "ratings": "Reitingud",
     "methodology": "Metodoloogia",
-    "about": "Fondi Kohta",
+    "about": "Fundatsiooni kohta",
     "login": "Logi sisse"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute Fond © {year}",
+    "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privaatsuspoliitika",
     "terms": "Kasutustingimused"
   },
   "About": {
-    "title": "Certo Governance Institute Fondi Kohta",
-    "mission_title": "Missioon",
-    "mission_text": "Hea hallatuse kultuuri arendamine sõltumatu hinnangu ja hallatuse standardite edendamise kaudu Poolas ja Euroopas.",
+    "title": "Certo Governance Institute'i kohta",
+    "mission_title": "Missoon",
+    "mission_text": "Hea juhtimise kultuuri arendamine sõltumatu hindamise ja governance standardite edendamisega Poolas ja Euroopas.",
     "independence_title": "Sõltumatus",
-    "independence_text": "Fond on sõltumatu hinnatavatest subjektidest, avaliku võimu organite ja kommertsilistest huvidest.",
+    "independence_text": "Fundatsioon on sõltumatu hinnatavatelt subjektidelt, avaliku võimu organitelt ja kommertsilistest huvidest.",
     "methodology_title": "Metodoloogia",
-    "methodology_text": "Certo reitingud põhinevad rangetel ISO standarditel ja ELi juhistel baseeruval metodoloogial."
+    "methodology_text": "Certo reitingud põhinevad rangetel metodoloogial, mis on põhinev ISO standarditel ja EL juhistel."
   }
 }

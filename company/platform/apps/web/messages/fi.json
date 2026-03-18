@@ -1,16 +1,27 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Henkilöllisyyden vahvistaminen ja vaatimustenmukaisuus julkisille laitoksille ja yrityksille."
+    "description": "Identiteetin varmistaminen ja compliance julkisille instituutioille ja yrityksille."
+  },
+  "Nav": {
+    "solutions": "Ratkaisut",
+    "technology": "Teknologia",
+    "foundation": "Certo Governance Institute",
+    "login": "Kirjaudu sisään"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Palvelun ehdot"
   },
   "Dashboard": {
-    "title": "Certo ID -hallintapaneeli",
+    "title": "Certo ID -paneeli",
     "welcome": "Tervetuloa, {name}",
     "your_rating": "Sinun Certo Rating",
-    "your_delegates": "Sinun Delegaatit",
+    "your_delegates": "Sinun Delegate ID:t",
     "your_accords": "Sinun Certo Accord",
-    "recent_activity": "Viimeaikainen toiminta",
-    "quick_actions": "Pika-toiminnot"
+    "recent_activity": "Viimeisin toiminta",
+    "quick_actions": "Pikavaihtoehdot"
   },
   "Profile": {
     "title": "Profiili",
@@ -18,11 +29,11 @@
     "contact_person": "Yhteyshenkilö",
     "sector": "Sektori",
     "edit_profile": "Muokkaa profiilia",
-    "verified_badge": "Vahvistettu taho"
+    "verified_badge": "Varmistettu toimija"
   },
   "Delegates": {
-    "title": "Certo Delegaatit",
-    "add_delegate": "Lisää delegaatti",
+    "title": "Certo Delegate",
+    "add_delegate": "Lisää Delegate ID",
     "delegate_id": "Delegate ID",
     "delegate_status": "Tila",
     "primary_link": "PRIMARY-linkki",

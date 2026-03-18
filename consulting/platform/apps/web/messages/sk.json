@@ -1,26 +1,38 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Nájdite Poradcu",
-    "description": "Akreditovaní poradcovia Certo. Správa podnikov a zhoda."
+    "title": "Certo Consulting — Nájdite poradcu",
+    "description": "Akreditovaní poradcovia Certo. Firemné riadenie a súlad."
+  },
+  "Nav": {
+    "advisors": "Poradcovia",
+    "expertise": "Odbornosť",
+    "login": "Prihlásenie"
+  },
+  "Footer": {
+    "description": "Odborné poradenstvo v oblasti firemného riadenia, súladu a bezpečnosti pre popredných lídrov na trhu.",
+    "ecosystem": "Ekosystém Certo",
+    "accreditation": "Všetci poradcovia sú akreditovaní Nadáciou Certo Governance Institute",
+    "privacy": "Politika ochrany osobných údajov",
+    "terms": "Podmienky používania"
   },
   "Home": {
     "hero_title": "Nájdite experta na governance",
-    "hero_subtitle": "Akreditovaní poradcovia Certo pomáhajú inštitúciám udržiavať a zvyšovať rating Certo.",
+    "hero_subtitle": "Akreditovaní poradcovia Certo pomáhajú inštitúciám udržiavať a zvyšovať ich Certo Rating.",
     "hero_cta": "Nájdite poradcu",
-    "step_1_title": "Zadajte svoj sektor",
+    "step_1_title": "Uveďte svoj sektor",
     "step_1_text": "Vyberte sektor, v ktorom pôsobí vaša inštitúcia",
-    "step_2_title": "Popíšte svoju potrebu",
-    "step_2_text": "Povedzte nám, čo potrebujete",
+    "step_2_title": "Popíšte vašu potrebu",
+    "step_2_text": "Povedzite nám, čo potrebujete",
     "step_3_title": "Získajte zhodu",
-    "step_3_text": "Systém vyberie akreditovaného poradcu Certo"
+    "step_3_text": "Systém vám pridelí akreditovaného poradcu Certo"
   },
   "FindAdvisor": {
     "title": "Nájdite poradcu Certo",
     "sector_label": "Sektor vašej inštitúcie",
     "need_label": "Čo potrebujete?",
-    "need_audit": "Audit správy podnikov",
+    "need_audit": "Audit riadenia",
     "need_advisory": "Strategické poradenstvo",
-    "need_training": "Školenia a workshopy",
+    "need_training": "Školenia a semináre",
     "need_rating": "Príprava na rating",
     "region_label": "Región",
     "submit": "Hľadať poradcu"

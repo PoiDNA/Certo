@@ -1,15 +1,26 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identitätsverifikation und Compliance für öffentliche Einrichtungen und Konzerne."
+    "description": "Identitätsverifizierung und Compliance für öffentliche Institutionen und Konzerne."
+  },
+  "Nav": {
+    "solutions": "Lösungen",
+    "technology": "Technologie",
+    "foundation": "Certo Governance Institute",
+    "login": "Anmelden"
+  },
+  "Footer": {
+    "copyright": "© {year} Certo ID PSA",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
   },
   "Dashboard": {
-    "title": "Certo ID Kontrollpanel",
+    "title": "Certo ID Dashboard",
     "welcome": "Willkommen, {name}",
-    "your_rating": "Dein Certo Rating",
+    "your_rating": "Deine Certo Rating",
     "your_delegates": "Deine Delegaten",
     "your_accords": "Deine Certo Accord",
-    "recent_activity": "Letzte Aktivität",
+    "recent_activity": "Aktuelle Aktivität",
     "quick_actions": "Schnellaktionen"
   },
   "Profile": {
@@ -18,15 +29,15 @@
     "contact_person": "Kontaktperson",
     "sector": "Sektor",
     "edit_profile": "Profil bearbeiten",
-    "verified_badge": "Verifizierter Akteur"
+    "verified_badge": "Verifizierte Institution"
   },
   "Delegates": {
     "title": "Certo Delegaten",
     "add_delegate": "Delegat hinzufügen",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "PRIMARY-Link",
+    "failover_link": "FAILOVER-Link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
