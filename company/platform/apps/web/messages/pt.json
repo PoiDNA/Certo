@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Verificação de identidade e conformidade para instituições públicas e corporações."
+  },
+  "Dashboard": {
+    "title": "Painel Certo ID",
+    "welcome": "Bem-vindo, {name}",
+    "your_rating": "Seu Rating Certo",
+    "your_delegates": "Seus Delegados",
+    "your_accords": "Seus Certo Accord",
+    "recent_activity": "Atividade recente",
+    "quick_actions": "Ações rápidas"
+  },
+  "Profile": {
+    "title": "Perfil",
+    "organization": "Organização",
+    "contact_person": "Pessoa de contato",
+    "sector": "Setor",
+    "edit_profile": "Editar perfil",
+    "verified_badge": "Entidade verificada"
+  },
+  "Delegates": {
+    "title": "Delegados Certo",
+    "add_delegate": "Adicionar delegado",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Status",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

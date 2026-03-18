@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Najděte poradce",
-    "description": "Akreditovaní poradci Certo. Správa řízení a dodržování předpisů."
+    "description": "Akreditovaní poradci Certo. Správa řízení a soulad."
   },
   "Home": {
-    "hero_title": "Najděte experta na governance",
-    "hero_subtitle": "Akreditovaní poradci Certo podporují instituce při udržování a zvyšování ratingu Certo.",
+    "hero_title": "Najděte experta na správu řízení",
+    "hero_subtitle": "Akreditovaní poradci Certo podporují instituce při udržování a zlepšování jejich hodnocení Certo.",
     "hero_cta": "Najděte poradce",
     "step_1_title": "Uveďte svůj sektor",
     "step_1_text": "Vyberte sektor, ve kterém vaše instituce působí",
-    "step_2_title": "Popište svou potřebu",
+    "step_2_title": "Popište své potřeby",
     "step_2_text": "Řekněte nám, co potřebujete",
-    "step_3_title": "Získejte doporučení",
-    "step_3_text": "Systém vám přiřadí akreditovaného poradce Certo"
+    "step_3_title": "Obdržejte doporučení",
+    "step_3_text": "Systém vybere akreditovaného poradce Certo"
   },
   "FindAdvisor": {
     "title": "Najděte poradce Certo",
     "sector_label": "Sektor vaší instituce",
     "need_label": "Co potřebujete?",
-    "need_audit": "Audit governance",
+    "need_audit": "Audit správy řízení",
     "need_advisory": "Strategické poradenství",
     "need_training": "Školení a workshopy",
-    "need_rating": "Příprava na rating",
+    "need_rating": "Příprava na hodnocení",
     "region_label": "Region",
     "submit": "Hledat poradce"
   },

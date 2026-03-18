@@ -39,7 +39,7 @@ export async function middleware(request: NextRequest) {
 
   // Omijamy autoryzację dla publicznych ścieżek
   // Sprawdzamy czy pathname pasuje do publicznych z uwzględnieniem locale
-  const isPublic = ['/', '/login', '/auth/callback', '/auth/logout', '/pp', '/terms'].some(p => {
+  const isPublic = ['/', '/login', '/auth/callback', '/auth/logout', '/pp', '/privacy', '/terms'].some(p => {
     // Sprawdzamy czy ścieżka zaczyna się od /locale/p lub jest równa /p
     if (pathname === p || pathname.startsWith(`${p}/`)) return true;
     return locales.some(l => pathname === `/${l}${p === '/' ? '' : p}` || pathname.startsWith(`/${l}${p}/`));

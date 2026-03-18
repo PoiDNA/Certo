@@ -5,23 +5,23 @@
   },
   "Home": {
     "hero_title": "Vind een governance-expert",
-    "hero_subtitle": "Gecertificeerde Certo-adviseurs ondersteunen instellingen bij het behoud en de verbetering van hun Certo Rating.",
+    "hero_subtitle": "Gecertificeerde Certo-adviseurs ondersteunen instellingen bij het handhaven en verbeteren van hun Certo Rating.",
     "hero_cta": "Vind een adviseur",
     "step_1_title": "Geef uw sector op",
     "step_1_text": "Selecteer de sector waarin uw instelling actief is",
     "step_2_title": "Beschrijf uw behoefte",
     "step_2_text": "Vertel ons wat u nodig hebt",
-    "step_3_title": "Ontvang een match",
-    "step_3_text": "Het systeem zal u een gecertificeerde Certo-adviseur aanbevelen"
+    "step_3_title": "Ontvang aanbevelingen",
+    "step_3_text": "Het systeem selecteert een gecertificeerde Certo-adviseur voor u"
   },
   "FindAdvisor": {
     "title": "Vind een Certo-adviseur",
     "sector_label": "Sector van uw instelling",
     "need_label": "Wat hebt u nodig?",
-    "need_audit": "Governance audit",
+    "need_audit": "Governance-audit",
     "need_advisory": "Strategisch advies",
     "need_training": "Trainingen en workshops",
-    "need_rating": "Voorbereiding op rating",
+    "need_rating": "Voorbereiding op Certo Rating",
     "region_label": "Regio",
     "submit": "Zoek adviseur"
   },

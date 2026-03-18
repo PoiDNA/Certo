@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Etsi neuvonantaja",
+    "description": "Certo:n akkreditoidut neuvonantajat. Corporate governance ja vaatimustenmukaisuus."
+  },
+  "Home": {
+    "hero_title": "Etsi governance-asiantuntijaa",
+    "hero_subtitle": "Certo:n akkreditoidut neuvonantajat tukevat instituutioita Certo-ratingin säilyttämisessä ja parantamisessa.",
+    "hero_cta": "Etsi neuvonantaja",
+    "step_1_title": "Ilmoita sektorisi",
+    "step_1_text": "Valitse sektori, jossa instituutiosi toimii",
+    "step_2_title": "Kuvaile tarpeesi",
+    "step_2_text": "Kerro meille, mitä tarvitset",
+    "step_3_title": "Saa sopiva vastine",
+    "step_3_text": "Järjestelmä valitsee akkreditoidun Certo-neuvonantajan sinulle"
+  },
+  "FindAdvisor": {
+    "title": "Etsi Certo-neuvonantaja",
+    "sector_label": "Instituutiosi sektori",
+    "need_label": "Mitä tarvitset?",
+    "need_audit": "Governance-auditointi",
+    "need_advisory": "Strateginen neuvonta",
+    "need_training": "Koulutus ja työpajat",
+    "need_rating": "Valmistautuminen ratingiin",
+    "region_label": "Alue",
+    "submit": "Etsi neuvonantaja"
+  },
+  "Advisor": {
+    "accredited_by": "Akkreditoitu Certo:n toimesta",
+    "specialization": "Erikoistuminen",
+    "sectors": "Sektorit",
+    "contact_advisor": "Ota yhteyttä",
+    "view_profile": "Näytä profiili"
+  }
+}

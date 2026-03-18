@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identitásverifikáció és compliance intézmények és vállalatok számára."
+  },
+  "Dashboard": {
+    "title": "Certo ID Panel",
+    "welcome": "Üdvözlünk, {name}",
+    "your_rating": "Az Ön Certo Rating",
+    "your_delegates": "Az Ön Certo Delegátusai",
+    "your_accords": "Az Ön Certo Accord Megállapodásai",
+    "recent_activity": "Legutóbbi tevékenység",
+    "quick_actions": "Gyors műveletek"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Szervezet",
+    "contact_person": "Kapcsolattartó személy",
+    "sector": "Szektor",
+    "edit_profile": "Profil szerkesztése",
+    "verified_badge": "Ellenőrzött szervezet"
+  },
+  "Delegates": {
+    "title": "Certo Delegátusok",
+    "add_delegate": "Delegátus hozzáadása",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Állapot",
+    "primary_link": "PRIMARY Hivatkozás",
+    "failover_link": "FAILOVER Hivatkozás",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Leidke nõustaja",
+    "description": "Certo akrediteeritud nõustajad. Ärijuhtimine ja vastavus nõuetele."
+  },
+  "Home": {
+    "hero_title": "Leidke governance ekspert",
+    "hero_subtitle": "Certo akrediteeritud nõustajad toetavad institutsioonide Certo reitingu säilitamist ja tõstmist.",
+    "hero_cta": "Leidke nõustaja",
+    "step_1_title": "Määrake oma sektor",
+    "step_1_text": "Valige sektor, milles teie institutsioon tegutseb",
+    "step_2_title": "Kirjeldage vajadust",
+    "step_2_text": "Öelge meile, mida te vajate",
+    "step_3_title": "Saate sobivuse",
+    "step_3_text": "Süsteem valib teile akrediteeritud Certo nõustaja"
+  },
+  "FindAdvisor": {
+    "title": "Leidke Certo nõustaja",
+    "sector_label": "Teie institutsiooni sektor",
+    "need_label": "Mida te vajate?",
+    "need_audit": "Juhtimise audit",
+    "need_advisory": "Strateegiline nõustamine",
+    "need_training": "Koolitused ja töötoad",
+    "need_rating": "Ettevalmistus reitingule",
+    "region_label": "Piirkond",
+    "submit": "Otsige nõustajat"
+  },
+  "Advisor": {
+    "accredited_by": "Akrediteeritud Certo poolt",
+    "specialization": "Spetsialiseerumine",
+    "sectors": "Sektorid",
+    "contact_advisor": "Võtke ühendust",
+    "view_profile": "Vaadake profiili"
+  }
+}

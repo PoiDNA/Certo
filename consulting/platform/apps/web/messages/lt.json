@@ -1,32 +1,32 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Raskite Patarėją",
-    "description": "Akredituoti Certo patarėjai. Korporatyvinis valdymas ir atitiktis."
+    "description": "Sertifikuoti Certo patarėjai. Korporatyvinis valdymas ir atitiktis."
   },
   "Home": {
     "hero_title": "Raskite governance ekspertą",
-    "hero_subtitle": "Akredituoti Certo patarėjai padeda institucijoms išlaikyti ir padidinti Certo reitingą.",
+    "hero_subtitle": "Sertifikuoti Certo patarėjai padeda institucijoms išlaikyti ir pagerinti jų Certo reitingą.",
     "hero_cta": "Raskite patarėją",
     "step_1_title": "Nurodykite savo sektorių",
-    "step_1_text": "Pasirinkite sektorių, kuriame veikia Jūsų institucija",
+    "step_1_text": "Pasirinkite sektorių, kuriame veikia jūsų institucija",
     "step_2_title": "Aprašykite poreikį",
     "step_2_text": "Pasakykite mums, ko jums reikia",
     "step_3_title": "Gaukite atitikimą",
-    "step_3_text": "Sistema parinkins akredituotą Certo patarėją"
+    "step_3_text": "Sistema pasiūlys sertifikuotą Certo patarėją"
   },
   "FindAdvisor": {
     "title": "Raskite Certo patarėją",
     "sector_label": "Jūsų institucijos sektorius",
     "need_label": "Ko jums reikia?",
-    "need_audit": "Governance auditas",
+    "need_audit": "Valdymo auditas",
     "need_advisory": "Strateginis patarimas",
     "need_training": "Mokymai ir seminarai",
-    "need_rating": "Pasiruošimas reitingavimui",
+    "need_rating": "Pasiruošimas reitingui",
     "region_label": "Regionas",
     "submit": "Ieškoti patarėjo"
   },
   "Advisor": {
-    "accredited_by": "Akredituota Certo",
+    "accredited_by": "Sertifikuota Certo",
     "specialization": "Specializacija",
     "sectors": "Sektoriai",
     "contact_advisor": "Susisiekite",

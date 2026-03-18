@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som bedömer styrningskvaliteten för offentliga, privata och ideella organisationer."
+    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrningen av offentliga, privata och ideella organisationer."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,9 +16,9 @@
     "delegate": "Certo Delegate",
     "login": "Logga in",
     "logout": "Logga ut",
-    "privacyPolicy": "Sekretesspolicy",
+    "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor",
-    "loading": "Laddar...",
+    "loading": "Läser in...",
     "error": "Ett fel uppstod",
     "save": "Spara",
     "cancel": "Avbryt",
@@ -27,14 +27,14 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ned",
+    "download": "Ladda ner",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
   },
   "Navigation": {
     "home": "Startsida",
-    "ratings": "Betyg",
+    "ratings": "Ratings",
     "reports": "Rapporter",
     "analysis": "Analyser",
     "about": "Om Stiftelsen",
@@ -45,15 +45,15 @@
   "Auth": {
     "login_title": "Logga in",
     "login_subtitle": "Logga in på ditt konto",
-    "login_with_google": "Logga in med Google",
+    "login_with_google": "Logga in via Google",
     "email_label": "E-postadress",
     "password_label": "Lösenord",
-    "forgot_password": "Glömt ditt lösenord?",
+    "forgot_password": "Glömt lösenordet?",
     "no_account": "Har du inget konto?",
     "register": "Registrera dig"
   },
   "Errors": {
-    "404_title": "Sidan kunde inte hittas",
+    "404_title": "Sidan hittades inte",
     "404_description": "Sidan du söker finns inte eller har flyttats.",
     "500_title": "Serverfel",
     "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
@@ -61,7 +61,7 @@
   },
   "Footer": {
     "rights": "Alla rättigheter förbehållna",
-    "privacy": "Sekretesspolicy",
+    "privacy": "Integritetspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   }

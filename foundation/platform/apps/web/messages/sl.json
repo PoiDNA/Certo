@@ -1,19 +1,19 @@
 {
   "Metadata": {
     "title": "Fundacija Certo Governance Institute",
-    "description": "Neodvisna bonitetna agencija, ki ocenjuje kakovost upravljanja v javnem, korporativnem, medicinskem in obrambnem sektorju."
+    "description": "Neodvisni bonitetni organ, ki ocenjuje kakovost upravljanja v javnem, korporativnem, medicinskem in obrambnem sektorju."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prva bonitetna agencija na svetu, katere ocene so kriptografski artefakti procesa – ne mnenja. Vsaka odločitev o oceni je zasidrana zunaj lastne infrastrukture, preverljiva brez povezave in javno revidirana.",
-    "hero_cta_primary": "Preglej ocene",
+    "description": "Certo je prva bonitetna agencija na svetu, katere bonitete so kriptografski artefakti procesa – ne mnenja. Vsaka bonitetna odločitev je usidrana izven lastne infrastrukture, preverljiva brez povezave in javno revidibi.",
+    "hero_cta_primary": "Preverite bonitete",
     "hero_cta_secondary": "Več informacij",
-    "section_ratings_title": "Najnovejše Certo Ocene",
+    "section_ratings_title": "Najnovejše Certo Bonitete",
     "section_reports_title": "Analize in Poročila",
-    "section_about_title": "O Ustanovi"
+    "section_about_title": "O Fundaciji"
   },
   "Ratings": {
-    "title": "Certo Ocene",
+    "title": "Certo Bonitete",
     "subtitle": "Ocene kakovosti upravljanja institucij",
     "search_placeholder": "Iskanje institucije...",
     "filter_sector": "Sektor",
@@ -22,24 +22,29 @@
     "sector_medical": "Medicinski",
     "sector_defense": "Obrambni",
     "sector_ngo": "Nevladni",
-    "rating_valid_until": "Ocena veljavna do",
+    "rating_valid_until": "Boniteta veljavna do",
     "rating_issued": "Datum izdaje",
     "no_results": "Ni rezultatov",
-    "view_profile": "Ogledaj profil"
+    "view_profile": "Oglejte si profil"
   },
   "Nav": {
-    "ratings": "Ocene",
+    "ratings": "Bonitete",
     "methodology": "Metodologija",
-    "about": "O Ustanovi",
+    "about": "O Fundaciji",
     "login": "Prijava"
   },
+  "Footer": {
+    "copyright": "Fundacija Certo Governance Institute © {year}",
+    "privacy": "Politika Zasebnosti",
+    "terms": "Pogoji Uporabe"
+  },
   "About": {
-    "title": "O Ustanovi Certo Governance Institute",
+    "title": "O Fundaciji Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Gradnja kulture dobrega upravljanja prek neodvisne ocene in promocije standardov upravljanja v Sloveniji in Evropi.",
+    "mission_text": "Izgradnja kulture dobrega upravljanja preko neodvisne ocene in spodbujanja standardov upravljanja v Sloveniji in Evropi.",
     "independence_title": "Neodvisnost",
-    "independence_text": "Ustanovа je neodvisna od ocenjenih subjektov, organov javne oblasti in komercialnih interesov.",
+    "independence_text": "Fundacija je neodvisna od ocenjenih subjektov, organov javne oblasti in komerčnih interesov.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo ocene temeljijo na strogi metodologiji, ki temelji na standardih ISO in smernicah EU."
+    "methodology_text": "Certo Bonitete temeljijo na strogi metodologiji, ki je skladna s standardi ISO in smernicami EU."
   }
 }

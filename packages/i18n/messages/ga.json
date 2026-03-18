@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Orgán rátála neamhspleách ag measúnú ar chaighdeán an rialachais in institiúidí poiblí, corparáideacha agus neamhbhrabúis."
+    "description": "Orgán rátála neamhspleách ag dréim ar dhea-rialachas institiúidí poiblí, corpraithe agus neamhrialtasacha."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,8 +17,8 @@
     "login": "Logáil isteach",
     "logout": "Logáil amach",
     "privacyPolicy": "Polasaí Príobháideachta",
-    "termsOfUse": "Téarmaí Úsáide",
-    "loading": "Á Lódáil...",
+    "termsOfUse": "Coinníollacha Úsáide",
+    "loading": "Á lódáil...",
     "error": "Tharla earráid",
     "save": "Sábháil",
     "cancel": "Cealaigh",
@@ -35,7 +35,7 @@
   "Navigation": {
     "home": "Leathanach Baile",
     "ratings": "Rátálacha",
-    "reports": "Tuarascálacha",
+    "reports": "Tuairiscí",
     "analysis": "Anailísí",
     "about": "Maidir leis an bhFondúchán",
     "contact": "Teagmháil",
@@ -47,22 +47,22 @@
     "login_subtitle": "Logáil isteach i do chuntas",
     "login_with_google": "Logáil isteach trí Google",
     "email_label": "Seoladh Ríomhphoist",
-    "password_label": "Focal Faire",
-    "forgot_password": "Ndearna tú dearmad ar do fhocal faire?",
-    "no_account": "Níl cuntas agat?",
+    "password_label": "Pasfhocal",
+    "forgot_password": "Ndearna tú dearmad ar do phasfhocal?",
+    "no_account": "Nach bhfuil cuntas agat?",
     "register": "Clárú"
   },
   "Errors": {
-    "404_title": "Níor aimsíodh an leathanach",
-    "404_description": "Níl an leathanach atá á lorg agat ann nó tugadh ar a bhealach.",
+    "404_title": "Leathanach gan aimsiú",
+    "404_description": "Níl an leathanach atá á lorg agat ann nó bhog sé.",
     "500_title": "Earráid Freastalaí",
-    "500_description": "Tharla earráid gan súil aici. Déan iarracht arís níos déanaí.",
+    "500_description": "Tharla earráid dhoshéachta. Bain triail eile as níos déanaí.",
     "unauthorized": "Níl rochtain agat. Logáil isteach chun leanúint ar aghaidh."
   },
   "Footer": {
-    "rights": "Gach ceart ar cosnamh",
+    "rights": "Gach ceart ar cosaint",
     "privacy": "Polasaí Príobháideachta",
-    "terms": "Téarmaí Úsáide",
+    "terms": "Coinníollacha Úsáide",
     "contact": "Teagmháil"
   }
 }

@@ -17,52 +17,52 @@
     "login": "Prisijungti",
     "logout": "Atsijungti",
     "privacyPolicy": "Privatumo politika",
-    "termsOfUse": "Naudojimosi sąlygos",
-    "loading": "Kraunama...",
+    "termsOfUse": "Naudojimo sąlygos",
+    "loading": "Įkeliama...",
     "error": "Įvyko klaida",
     "save": "Išsaugoti",
     "cancel": "Atšaukti",
     "confirm": "Patvirtinti",
     "back": "Grįžti",
     "next": "Toliau",
-    "close": "Uždaryti",
+    "close": "Užverti",
     "search": "Paieška",
     "download": "Atsisiųsti",
-    "verified": "Patvirtintas",
+    "verified": "Patvirtinta",
     "active": "Aktyvus",
     "inactive": "Neaktyvus"
   },
   "Navigation": {
     "home": "Pradžia",
     "ratings": "Reitingai",
-    "reports": "Ataskaitai",
+    "reports": "Ataskaitės",
     "analysis": "Analizės",
-    "about": "Apie fондą",
+    "about": "Apie Fondą",
     "contact": "Kontaktai",
-    "dashboard": "Skydelis",
+    "dashboard": "Valdymo skydas",
     "settings": "Nustatymai"
   },
   "Auth": {
     "login_title": "Prisijungti",
     "login_subtitle": "Prisijunkite prie savo paskyros",
-    "login_with_google": "Prisijungti per Google",
+    "login_with_google": "Prisijungti naudojant Google",
     "email_label": "El. pašto adresas",
     "password_label": "Slaptažodis",
     "forgot_password": "Pamiršai slaptažodį?",
-    "no_account": "Neturite paskyros?",
+    "no_account": "Neturi paskyros?",
     "register": "Registruotis"
   },
   "Errors": {
     "404_title": "Puslapis nerastas",
-    "404_description": "Puslapis, kurį ieškote, neegzistuoja arba buvo perkeltas.",
+    "404_description": "Ieškomas puslapis neegzistuoja arba buvo perkeltas.",
     "500_title": "Serverio klaida",
     "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
-    "unauthorized": "Prieiga uždrausta. Prisijunkite norėdami tęsti."
+    "unauthorized": "Prieiga negalima. Prisijunkite norėdami tęsti."
   },
   "Footer": {
     "rights": "Visos teisės saugomos",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimosi sąlygos",
+    "terms": "Naudojimo sąlygos",
     "contact": "Kontaktai"
   }
 }

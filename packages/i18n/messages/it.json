@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organo di rating indipendente che valuta la qualità della governance nelle istituzioni pubbliche, corporate e non profit."
+    "description": "Organo di rating indipendente che valuta la qualità della gestione delle istituzioni pubbliche, aziendali e non profit."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,7 +16,7 @@
     "delegate": "Certo Delegate",
     "login": "Accedi",
     "logout": "Esci",
-    "privacyPolicy": "Informativa sulla privacy",
+    "privacyPolicy": "Politica sulla privacy",
     "termsOfUse": "Condizioni d'uso",
     "loading": "Caricamento in corso...",
     "error": "Si è verificato un errore",
@@ -39,7 +39,7 @@
     "analysis": "Analisi",
     "about": "Chi siamo",
     "contact": "Contatti",
-    "dashboard": "Dashboard",
+    "dashboard": "Pannello",
     "settings": "Impostazioni"
   },
   "Auth": {
@@ -54,14 +54,14 @@
   },
   "Errors": {
     "404_title": "Pagina non trovata",
-    "404_description": "La pagina che stai cercando non esiste o è stata spostata.",
+    "404_description": "La pagina che cerchi non esiste o è stata spostata.",
     "500_title": "Errore del server",
     "500_description": "Si è verificato un errore imprevisto. Riprova più tardi.",
     "unauthorized": "Accesso negato. Accedi per continuare."
   },
   "Footer": {
     "rights": "Tutti i diritti riservati",
-    "privacy": "Informativa sulla privacy",
+    "privacy": "Politica sulla privacy",
     "terms": "Condizioni d'uso",
     "contact": "Contatti"
   }

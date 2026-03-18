@@ -1,35 +1,35 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Faigh Comhairleoir",
-    "description": "Comhairleoirí creidiúnaithe Certo. Rialachas corparáideach agus comréire."
+    "description": "Comhairleoirí creidiúnaithe Certo. Rian Chorparáideach agus Comhréireacht."
   },
   "Home": {
     "hero_title": "Faigh saineolai ar governance",
-    "hero_subtitle": "Tacaíonn comhairleoirí creidiúnaithe Certo le hinstitiúidí chun a rátáil Certo a choinneáil agus a fheabhasú.",
+    "hero_subtitle": "Tacaíonn comhairleoirí creidiúnaithe Certo le heagraíochtaí chun a n-astar Certo a choimeád agus a fhéachaint ar dhul i bhfeidhm.",
     "hero_cta": "Faigh comhairleoir",
-    "step_1_title": "Sonraigh do shektor",
-    "step_1_text": "Roghnaigh an sektor ina bhfeidhmíonn do institiúid",
-    "step_2_title": "Cur síos ar an ngá",
-    "step_2_text": "Inis dúinn cad atá de dhíth ort",
-    "step_3_title": "Faigh an meaitseáil",
-    "step_3_text": "Beidh an córas ábalta comhairleoir creidiúnaithe Certo a roghnú duit"
+    "step_1_title": "Sonraigh do sheicteoir",
+    "step_1_text": "Roghnaigh an seicteoir ina bhfeidhmíonn do eagraíocht",
+    "step_2_title": "Déan cur síos ar an ngá",
+    "step_2_text": "Abair linn cad atá de dhíth ort",
+    "step_3_title": "Faigh meaitseáil",
+    "step_3_text": "Roghnaíonn an córas comhairleoir creidiúnaithe Certo a bheidh oiriúnach"
   },
   "FindAdvisor": {
     "title": "Faigh comhairleoir Certo",
-    "sector_label": "Sektor do institiúide",
+    "sector_label": "Seicteoir do eagraíochta",
     "need_label": "Cad atá de dhíth ort?",
-    "need_audit": "Iniúchadh rialachais",
+    "need_audit": "Iniúchadh governance",
     "need_advisory": "Comhairle straitéiseach",
     "need_training": "Oiliúint agus ceardlanna",
-    "need_rating": "Ullmhú do rátáil",
+    "need_rating": "Ullmhú do astar",
     "region_label": "Réigiún",
     "submit": "Cuardaigh comhairleoir"
   },
   "Advisor": {
     "accredited_by": "Creidiúnaithe ag Certo",
-    "specialization": "Speisialtacht",
-    "sectors": "Sectoranna",
+    "specialization": "Speisialtóireacht",
+    "sectors": "Seicteoir",
     "contact_advisor": "Déan teagmháil",
-    "view_profile": "Féach ar an phróifíl"
+    "view_profile": "Féach ar an bpróifíl"
   }
 }

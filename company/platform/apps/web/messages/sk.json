@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Overenie totožnosti a compliance pre verejné inštitúcie a korporácie."
+  },
+  "Dashboard": {
+    "title": "Panel Certo ID",
+    "welcome": "Vitaj, {name}",
+    "your_rating": "Tvoje Certo Rating",
+    "your_delegates": "Tvoji Delegáti",
+    "your_accords": "Tvoje Certo Accord",
+    "recent_activity": "Nedávna aktivita",
+    "quick_actions": "Rýchle akcie"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Organizácia",
+    "contact_person": "Kontaktná osoba",
+    "sector": "Sektor",
+    "edit_profile": "Upraviť profil",
+    "verified_badge": "Overený subjekt"
+  },
+  "Delegates": {
+    "title": "Delegáti Certo",
+    "add_delegate": "Pridať delegáta",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Stav",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

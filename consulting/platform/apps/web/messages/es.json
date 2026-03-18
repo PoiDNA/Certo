@@ -1,0 +1,35 @@
+{
+  "Metadata": {
+    "title": "Certo Consulting — Encuentra tu Asesor",
+    "description": "Asesores acreditados de Certo. Gobierno corporativo y cumplimiento."
+  },
+  "Home": {
+    "hero_title": "Encuentra un experto en governance",
+    "hero_subtitle": "Los asesores acreditados de Certo apoyan a las instituciones en mantener y mejorar su Certo Rating.",
+    "hero_cta": "Encuentra un asesor",
+    "step_1_title": "Indica tu sector",
+    "step_1_text": "Selecciona el sector en el que opera tu institución",
+    "step_2_title": "Describe tu necesidad",
+    "step_2_text": "Cuéntanos qué necesitas",
+    "step_3_title": "Obtén una recomendación",
+    "step_3_text": "El sistema te asignará un asesor acreditado de Certo"
+  },
+  "FindAdvisor": {
+    "title": "Encuentra un asesor Certo",
+    "sector_label": "Sector de tu institución",
+    "need_label": "¿Qué necesitas?",
+    "need_audit": "Auditoría de governance",
+    "need_advisory": "Asesoramiento estratégico",
+    "need_training": "Formación y talleres",
+    "need_rating": "Preparación para el Certo Rating",
+    "region_label": "Región",
+    "submit": "Buscar asesor"
+  },
+  "Advisor": {
+    "accredited_by": "Acreditado por Certo",
+    "specialization": "Especialización",
+    "sectors": "Sectores",
+    "contact_advisor": "Contactar",
+    "view_profile": "Ver perfil"
+  }
+}

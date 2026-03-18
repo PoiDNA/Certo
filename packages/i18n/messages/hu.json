@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független minősítő szerv, amely a közintézmények, vállalati szervezetek és civil szervezetek irányítási minőségét értékeli."
+    "description": "Független minősítő szerv, amely értékeli a közintézmények, vállalati szervezetek és nonprofit szervezetek irányítási minőségét."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,8 +18,8 @@
     "logout": "Kijelentkezés",
     "privacyPolicy": "Adatvédelmi szabályzat",
     "termsOfUse": "Felhasználási feltételek",
-    "loading": "Betöltés folyamatban...",
-    "error": "Hiba történt",
+    "loading": "Betöltés...",
+    "error": "Hiba lépett fel",
     "save": "Mentés",
     "cancel": "Mégse",
     "confirm": "Megerősítés",
@@ -33,19 +33,19 @@
     "inactive": "Inaktív"
   },
   "Navigation": {
-    "home": "Kezdőoldal",
+    "home": "Kezdőlap",
     "ratings": "Minősítések",
     "reports": "Jelentések",
     "analysis": "Elemzések",
-    "about": "Az Intézetről",
+    "about": "A Fundációról",
     "contact": "Kapcsolat",
     "dashboard": "Irányítópult",
     "settings": "Beállítások"
   },
   "Auth": {
     "login_title": "Bejelentkezés",
-    "login_subtitle": "Jelentkezzen be a fiókjába",
-    "login_with_google": "Bejelentkezés Google-lel",
+    "login_subtitle": "Jelentkezzen be fiókjába",
+    "login_with_google": "Bejelentkezés Google-lal",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
     "forgot_password": "Elfelejtette a jelszavát?",
@@ -56,8 +56,8 @@
     "404_title": "Az oldal nem található",
     "404_description": "A keresett oldal nem létezik vagy át lett helyezve.",
     "500_title": "Szerverhiba",
-    "500_description": "Váratlan hiba történt. Kérjük, próbálkozzon később.",
-    "unauthorized": "Nincs hozzáférés. A folytatáshoz jelentkezzen be."
+    "500_description": "Váratlan hiba lépett fel. Kérjük, próbálja meg később.",
+    "unauthorized": "Nincs hozzáférés. Jelentkezzen be a folytatáshoz."
   },
   "Footer": {
     "rights": "Minden jog fenntartva",

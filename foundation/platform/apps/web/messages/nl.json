@@ -1,45 +1,50 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Onafhankelijk ratingbureau dat de kwaliteit van governance in de publieke, bedrijfs-, medische en defensiesector beoordeelt."
+    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van governance in de publieke, bedrijfs-, medische en defensiesector beoordeelt."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo is het eerste ratingbureau ter wereld waarvan de ratings cryptografische artefacten van het proces zijn — geen meningen. Elke ratingbeslissing is verankerd buiten de eigen infrastructuur, offline verifieerbaar en publiekelijk auditabel.",
+    "description": "Certo is 's werelds eerste ratingbureau waarvan de ratings cryptografische artefacten van het proces zijn — geen meningen. Elke ratingbeslissing is verankerd buiten de eigen infrastructuur, offline verifieerbaar en openbaar controleerbaar.",
     "hero_cta_primary": "Bekijk ratings",
     "hero_cta_secondary": "Meer informatie",
     "section_ratings_title": "Nieuwste Certo Ratings",
     "section_reports_title": "Analyses en Rapporten",
-    "section_about_title": "Over de Stichting"
+    "section_about_title": "Over het Instituut"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Beoordelingen van de kwaliteit van institutioneel governance",
+    "subtitle": "Beoordelingen van de kwaliteit van governance in instellingen",
     "search_placeholder": "Zoek instelling...",
     "filter_sector": "Sector",
     "sector_public": "Publiek",
     "sector_corporate": "Bedrijfs",
     "sector_medical": "Medisch",
     "sector_defense": "Defensie",
-    "sector_ngo": "Maatschappelijk middenveld",
+    "sector_ngo": "Non-gouvernementeel",
     "rating_valid_until": "Rating geldig tot",
-    "rating_issued": "Afleveringsdatum",
+    "rating_issued": "Uitgiftedatum",
     "no_results": "Geen resultaten gevonden",
     "view_profile": "Bekijk profiel"
   },
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Methodologie",
-    "about": "Over de Stichting",
+    "about": "Over ons",
     "login": "Inloggen"
+  },
+  "Footer": {
+    "copyright": "Certo Governance Institute © {year}",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden"
   },
   "About": {
     "title": "Over Certo Governance Institute",
     "mission_title": "Missie",
-    "mission_text": "Het opbouwen van een cultuur van goed governance door middel van onafhankelijke beoordeling en bevordering van governance-normen in Polen en Europa.",
+    "mission_text": "Het bouwen van een cultuur van goed governance door middel van onafhankelijke beoordeling en promotie van governance-standaarden in Polen en Europa.",
     "independence_title": "Onafhankelijkheid",
-    "independence_text": "De stichting is onafhankelijk van de beoordeelde entiteiten, openbare autoriteiten en commerciële belangen.",
+    "independence_text": "Het Instituut is onafhankelijk van de beoordeelde entiteiten, overheidsorganen en commerciële belangen.",
     "methodology_title": "Methodologie",
-    "methodology_text": "Certo Ratings zijn gebaseerd op rigoureuze methodologie gesteund op ISO-normen en EU-richtlijnen."
+    "methodology_text": "Certo Ratings zijn gebaseerd op een rigoureuze methodologie die gebaseerd is op ISO-standaarden en EU-richtlijnen."
   }
 }

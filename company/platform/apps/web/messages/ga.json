@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Fíorú aitheantais agus coimhlíonadh do institiúidí poiblí agus corparáidí."
+  },
+  "Dashboard": {
+    "title": "Painéal Certo ID",
+    "welcome": "Fáilte, {name}",
+    "your_rating": "Do Certo Rating",
+    "your_delegates": "Do Chigirí",
+    "your_accords": "Do Certo Accord",
+    "recent_activity": "Gníomhaíocht dhéanach",
+    "quick_actions": "Gníomhartha tapa"
+  },
+  "Profile": {
+    "title": "Próifíl",
+    "organization": "Eagraíochta",
+    "contact_person": "Duine Teagmhála",
+    "sector": "Earnáil",
+    "edit_profile": "Cuir an próifíl in eagar",
+    "verified_badge": "Gné Fhíoraithe"
+  },
+  "Delegates": {
+    "title": "Cigirí Certo",
+    "add_delegate": "Cuir cigire leis",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Stádas",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

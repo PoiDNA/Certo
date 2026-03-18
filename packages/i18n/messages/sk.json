@@ -8,17 +8,17 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu riadenia verejných, korporátnych a neziskových inštitúcií."
+    "description": "Nezávislý ratingový orgán hodnotiacu kvalitu správy verejných, korporátnych a neziskových inštitúcií."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Prihlásiť sa",
+    "login": "Prihláste sa",
     "logout": "Odhlásiť sa",
     "privacyPolicy": "Politika ochrany osobných údajov",
     "termsOfUse": "Podmienky používania",
-    "loading": "Načítavam...",
+    "loading": "Načítanie...",
     "error": "Vyskytla sa chyba",
     "save": "Uložiť",
     "cancel": "Zrušiť",
@@ -39,25 +39,25 @@
     "analysis": "Analýzy",
     "about": "O Nadácii",
     "contact": "Kontakt",
-    "dashboard": "Ústrednú dosku",
+    "dashboard": "Ovládací panel",
     "settings": "Nastavenia"
   },
   "Auth": {
-    "login_title": "Prihlásiť sa",
-    "login_subtitle": "Prihláste sa do svojho konta",
-    "login_with_google": "Prihlásiť sa cez Google",
+    "login_title": "Prihláste sa",
+    "login_subtitle": "Prihláste sa do svojho účtu",
+    "login_with_google": "Prihláste sa cez Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zabudli ste heslo?",
-    "no_account": "Nemáte konto?",
+    "no_account": "Nemáte účet?",
     "register": "Zaregistrujte sa"
   },
   "Errors": {
     "404_title": "Stránka nebola nájdená",
     "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
-    "500_description": "Vyskytla sa neočakávaná chyba. Skúste neskôr znova.",
-    "unauthorized": "Nemáte prístup. Prihlaste sa, aby ste mohli pokračovať."
+    "500_description": "Vyskytla sa neočakávaná chyba. Skúste to prosím neskôr.",
+    "unauthorized": "Nemáte prístup. Prihláste sa, aby ste mohli pokračovať."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",

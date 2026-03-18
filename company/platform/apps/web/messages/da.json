@@ -1,0 +1,34 @@
+{
+  "Metadata": {
+    "title": "Certo ID — Verified Digital Identity",
+    "description": "Identitetsverifikation og compliance for offentlige institutioner og virksomheder."
+  },
+  "Dashboard": {
+    "title": "Certo ID-panel",
+    "welcome": "Velkommen, {name}",
+    "your_rating": "Dit Certo Rating",
+    "your_delegates": "Dine Certo Delegate",
+    "your_accords": "Dine Certo Accord",
+    "recent_activity": "Seneste aktivitet",
+    "quick_actions": "Hurtige handlinger"
+  },
+  "Profile": {
+    "title": "Profil",
+    "organization": "Organisation",
+    "contact_person": "Kontaktperson",
+    "sector": "Sektor",
+    "edit_profile": "Rediger profil",
+    "verified_badge": "Verificeret enhed"
+  },
+  "Delegates": {
+    "title": "Certo Delegate",
+    "add_delegate": "Tilføj delegat",
+    "delegate_id": "Delegate ID",
+    "delegate_status": "Status",
+    "primary_link": "Link PRIMARY",
+    "failover_link": "Link FAILOVER",
+    "plan_basic": "Basic",
+    "plan_standard": "Standard",
+    "plan_premium": "Premium"
+  }
+}

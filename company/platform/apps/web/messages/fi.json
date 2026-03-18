@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteetin vahvistaminen ja compliance julkisten instituutioiden ja yritysten osalta."
+    "description": "Henkilöllisyyden vahvistaminen ja vaatimustenmukaisuus julkisille laitoksille ja yrityksille."
   },
   "Dashboard": {
     "title": "Certo ID -hallintapaneeli",
@@ -9,7 +9,7 @@
     "your_rating": "Sinun Certo Rating",
     "your_delegates": "Sinun Delegaatit",
     "your_accords": "Sinun Certo Accord",
-    "recent_activity": "Viimeinen aktiivisuus",
+    "recent_activity": "Viimeaikainen toiminta",
     "quick_actions": "Pika-toiminnot"
   },
   "Profile": {

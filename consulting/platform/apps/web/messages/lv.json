@@ -1,26 +1,26 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Atrodiet Konsultantu",
-    "description": "Sertificēti Certo konsultanti. Korporatīvais pārvaldības un atbilstības nozare."
+    "title": "Certo Consulting — Atrodiet konsultantu",
+    "description": "Sertificēti Certo konsultanti. Pārvaldības ņemšana un atbilstība."
   },
   "Home": {
     "hero_title": "Atrodiet governance ekspertu",
-    "hero_subtitle": "Sertificēti Certo konsultanti palīdz institūcijām saglabāt un paaugstināt Certo reitingu.",
+    "hero_subtitle": "Sertificēti Certo konsultanti palīdz institūcijām uzturēt un paaugstināt Certo reitingu.",
     "hero_cta": "Atrodiet konsultantu",
     "step_1_title": "Norādiet savu nozari",
     "step_1_text": "Izvēlieties nozari, kurā darbojas jūsu institūcija",
-    "step_2_title": "Aprakstiet jūsu vajadzību",
-    "step_2_text": "Pastāstiet mums, ko jums vajag",
-    "step_3_title": "Saņemiet atbilstošu rezultātu",
+    "step_2_title": "Aprakstiet savu vajadzību",
+    "step_2_text": "Pastāstiet mums, ko jums nepieciešams",
+    "step_3_title": "Saņemiet atbilstību",
     "step_3_text": "Sistēma atlasīs sertificētu Certo konsultantu"
   },
   "FindAdvisor": {
     "title": "Atrodiet Certo konsultantu",
     "sector_label": "Jūsu institūcijas nozare",
-    "need_label": "Ko jūs nepieciešat?",
-    "need_audit": "Governance audits",
-    "need_advisory": "Stratēģiskā konsultācija",
-    "need_training": "Apmācības un darbnīcas",
+    "need_label": "Ko jums nepieciešams?",
+    "need_audit": "Pārvaldības audits",
+    "need_advisory": "Stratēģisks konsultējums",
+    "need_training": "Apmācības un semināri",
     "need_rating": "Sagatavošanās reitingam",
     "region_label": "Reģions",
     "submit": "Meklēt konsultantu"
