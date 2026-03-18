@@ -8,3 +8,7 @@ node_modules/
 dist/
 artifacts/
 .DS_Store
+
+
+# Translation script local environment variables
+packages/i18n/scripts/.env

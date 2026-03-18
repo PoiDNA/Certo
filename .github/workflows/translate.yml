@@ -1,0 +1,45 @@
+name: Translation Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/i18n/messages/pl.json'
+      - 'packages/i18n/messages/en.json'
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    # Ochrona przed pętlą auto-commitów Github Action
+    if: github.actor != 'github-actions[bot]'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Token potrzebny, by commit wykonany przez GitHub Action
+          # wywołał np. build na Vercelu (często domyślnie actions bot ma ominięte CI hooks).
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run DeepL Translation Script
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        run: npm run translate
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add packages/i18n/messages/*.json
+          # Commituj tylko, jeśli nastąpiły zmiany
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(i18n): auto-translate [$(date -u +"%Y-%m-%dT%H:%M:%SZ")]" && git push)
