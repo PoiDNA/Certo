@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '**/messages/pl.json'
+      - '**/content/pl/**/*.mdx'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +35,7 @@ jobs:
         run: |
           git config user.email "pipeline@certo.pl"
           git config user.name "Certo i18n Pipeline"
-          git add '*/messages/*.json'
+          git add '*/messages/*.json' '*/content/**/*.mdx'
           git diff --staged --quiet && echo "No changes to commit" || {
             git commit -m "i18n: auto-translate $(date -u +%Y-%m-%d) [skip ci]"
             git push

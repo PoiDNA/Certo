@@ -117,10 +117,18 @@ ZASADY TŁUMACZENIA:
     właściwość "do_not_translate": true — 
     zachowaj wartość bez zmian.
 
-FORMAT ODPOWIEDZI:
+FORMAT ODPOWIEDZI (JSON):
 Zwróć WYŁĄCZNIE poprawny JSON.
 Bez komentarzy, bez markdown, bez wyjaśnień.
 Bez znaczników ```json.
 Zachowaj dokładną strukturę wejściowego JSON.
-Każda wartość string musi być przetłumaczona 
+Każda wartość string musi być przetłumaczona
 zgodnie z powyższymi zasadami.
+
+FORMAT ODPOWIEDZI (MDX):
+Zwróć WYŁĄCZNIE przetłumaczony plik MDX.
+Bez owijania w bloki kodu (``` lub ```mdx).
+Zachowaj oryginalny format: frontmatter (---), nagłówki, listy, akapity.
+Zachowaj bez zmian: JSX komponenty, import/export, bloki kodu.
+Tłumacz TYLKO: wartości frontmatter (title, description),
+tekst paragrafów, nagłówki, tekst list.
