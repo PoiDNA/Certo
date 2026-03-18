@@ -1,25 +1,32 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import createMiddleware from 'next-intl/middleware';
+import { routing } from './i18n-config';
+import { locales } from '@certo/i18n/config';
+
+const intlMiddleware = createMiddleware(routing);
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
-  const publicPaths = ['/', '/login', '/auth/callback', '/auth/logout', '/pp', '/terms'];
-  if (publicPaths.some(p => pathname.startsWith(p))) {
+  
+  // Zwróć od razu jeśli to statyki
+  if (pathname.includes('/_next/') || pathname.includes('/favicon.ico') || pathname.match(/\.(svg|png|jpg|jpeg|gif|webp)$/)) {
     return NextResponse.next();
   }
 
-  let supabaseResponse = NextResponse.next({ request });
+  // Uruchamiamy middleware i18n najpierw, on nadpisze cookies locale jeśli trzeba
+  const response = intlMiddleware(request);
+
+  let supabaseResponse = response;
 
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder',
     {
       cookies: {
         getAll() { return request.cookies.getAll(); },
         setAll(cookiesToSet) {
           cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
-          supabaseResponse = NextResponse.next({ request });
           cookiesToSet.forEach(({ name, value, options }) =>
             supabaseResponse.cookies.set(name, value, options)
           );
@@ -30,9 +37,19 @@ export async function middleware(request: NextRequest) {
 
   const { data: { user } } = await supabase.auth.getUser();
 
-  if (!user) {
+  // Omijamy autoryzację dla publicznych ścieżek
+  // Sprawdzamy czy pathname pasuje do publicznych z uwzględnieniem locale
+  const isPublic = ['/', '/login', '/auth/callback', '/auth/logout', '/pp', '/terms'].some(p => {
+    // Sprawdzamy czy ścieżka zaczyna się od /locale/p lub jest równa /p
+    if (pathname === p || pathname.startsWith(`${p}/`)) return true;
+    return locales.some(l => pathname === `/${l}${p === '/' ? '' : p}` || pathname.startsWith(`/${l}${p}/`));
+  });
+
+  if (!user && !isPublic && !pathname.includes('/auth/callback')) {
     const url = request.nextUrl.clone();
-    url.pathname = '/login';
+    const localeMatch = pathname.match(/^\/([a-z]{2})(?:\/|$)/);
+    const locale = localeMatch ? localeMatch[1] : routing.defaultLocale;
+    url.pathname = `/${locale}/login`;
     return NextResponse.redirect(url);
   }
 
@@ -40,5 +57,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'],
 };
