@@ -33,6 +33,11 @@
     "about": "About",
     "login": "Log in"
   },
+  "Footer": {
+    "copyright": "Certo Governance Institute Foundation © {year}",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
   "About": {
     "title": "About Certo Governance Institute",
     "mission_title": "Mission",

@@ -33,6 +33,11 @@
     "about": "O Fundacji",
     "login": "Zaloguj się"
   },
+  "Footer": {
+    "copyright": "Fundacja Certo Governance Institute © {year}",
+    "privacy": "Polityka Prywatności",
+    "terms": "Warunki Korzystania"
+  },
   "About": {
     "title": "O Fundacji Certo Governance Institute",
     "mission_title": "Misja",

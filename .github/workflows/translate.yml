@@ -38,5 +38,6 @@ jobs:
           git add '*/messages/*.json' '*/content/**/*.mdx'
           git diff --staged --quiet && echo "No changes to commit" || {
             git commit -m "i18n: auto-translate $(date -u +%Y-%m-%d) [skip ci]"
+            git pull --rebase
             git push
           }
