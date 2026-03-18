@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-certo-gray-light">
+    <div className="flex flex-col min-h-screen bg-certo-teal-darker">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-certo-teal-darker text-white py-24 md:py-32">
         <div className="absolute inset-0 opacity-10 bg-repeat" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/cubes.png')" }} />
