@@ -20,26 +20,31 @@ W zależności od aplikacji:
 
 ## Translation Pipeline
 
-Ekosystem korzysta z mechanizmu asynchronicznych tłumaczeń w oparciu o klucz API DeepL. 
+Ekosystem korzysta z mechanizmu asynchronicznych tłumaczeń w oparciu o Anthropic Claude API (model `claude-sonnet-4-6`). Zaletą tego podejścia (w porównaniu do tradycyjnego tłumaczenia maszynowego) jest pełna świadomość kontekstu instytucjonalnego Certo — model otrzymuje szczegółowy system prompt definiujący terminologię zastrzeżoną, ton instytucjonalny i zasady tłumaczenia specyficzne dla sektora governance.
 
 ### Flow działania
 Proces uruchamiany jest automatycznie przez regułę GitHub Actions.
 
 1. Deweloper, analityk lub tłumacz dokonuje modyfikacji i commita w pliku bazowym `packages/i18n/messages/pl.json` (lub `en.json`).
 2. GitHub Action nasłuchuje zdarzenia `push` na gałęzi `main`.
-3. Jeśli zmieniono język źródłowy, Action pobiera kod i uruchamia skrypt `packages/i18n/scripts/translate.ts` przy użyciu zaszyfrowanego secretu `DEEPL_API_KEY`.
-4. Skrypt tłumaczy cały strumień słów na 22 pozostałe języki (pomijając np. przestrzeń nazw `"Common"` oraz klucze ręcznie oznaczone `"do_not_translate": true`).
-5. Na końcu tworzony jest specjalny metadane `_meta` potwierdzający datę i flagę wygenerowania maszynowo. W tym: `"status": "machine_translated", "reviewed": false`.
+3. Jeśli zmieniono język źródłowy, Action pobiera kod i uruchamia skrypt `packages/i18n/scripts/translate.ts` przy użyciu zaszyfrowanego secretu `ANTHROPIC_API_KEY`.
+4. Skrypt wysyła cały JSON do Claude z rozbudowanym promptem systemowym, który:
+   - Zachowuje terminologię zastrzeżoną Certo (np. Certo Score, Certo Vector, Compliance Engine) w oryginale
+   - Pomija namespace `"Common"` (terminologia współdzielona)
+   - Pomija klucze z flagą `"do_not_translate": true`
+   - Zachowuje zmienne interpolacji (`{variable}`, `{{variable}}`) i tagi HTML/Markdown
+   - Stosuje ton instytucjonalny i terminologię prawną EU
+5. Na końcu tworzony jest specjalny metadane `_meta` potwierdzający datę i flagę wygenerowania maszynowo. W tym: `"status": "machine_translated", "source": "claude", "reviewed": false`.
 6. Automatyczny commit (`github-actions[bot]`) dorzuca resztę języków na gałąź `main`. Skrypt `translate.yml` zabezpieczony jest przed pętlą akcji dzięki regule `if: github.actor != 'github-actions[bot]'`.
 
 **Diagram:**
 ```mermaid
 graph LR
     A[Modyfikacja pl.json / en.json] -->|git push| B(GitHub Actions)
-    B --> C{DEEPL_API_KEY w secrets?}
+    B --> C{ANTHROPIC_API_KEY w secrets?}
     C -->|Tak| D(translate.ts)
-    D -->|Omijając 'Common'| E[DeepL API]
-    E --> F[Generowanie 22 plików: de.json, es.json...]
+    D -->|System prompt z kontekstem Certo| E[Claude claude-sonnet-4-6]
+    E -->|Omijając Common + terminologię| F[Generowanie 22 plików: de.json, es.json...]
     F -->|Dodanie metadanych: machine_translated| G[Auto-Commit]
     G --> H(Aktualizacja na GitHub)
 ```
@@ -49,15 +54,15 @@ Wygenerowane pliki posiadają sekcję `_meta` nałożoną na samą górę:
 | Klucz             | Opis                                                      | Przykład |
 |-------------------|-----------------------------------------------------------|----------|
 | `status`          | Znacznik określający jak powstał tekst                    | `machine_translated` |
-| `source`          | API lub źródło z którego zaciągnięto słowa                | `deepl`  |
+| `source`          | API lub źródło z którego zaciągnięto słowa                | `claude`  |
 | `reviewed`        | Flaga (boolean) weryfikacji przez Human / Native Speakera | `false`  |
 | `generated_at`    | ISO Timestamp daty utworzenia pliku JSON                  | `2026-03-18T12:00:00.000Z` |
 | `source_language` | Język stanowiący źródło translacji                        | `pl`     |
 
-### Dodawanie DEEPL_API_KEY
+### Dodawanie ANTHROPIC_API_KEY
 W celu poprawnego działania Pipeline'u w GitHub, wejdź w ustawienia repozytorium na Githubie (Repository Settings > Secrets and variables > Actions > **New repository secret**) i dodaj:
-* **Name:** `DEEPL_API_KEY`
-* **Secret:** Twój unikalny klucz autoryzacji do DeepL (np. dla wariantu Pro/Free).
+* **Name:** `ANTHROPIC_API_KEY`
+* **Secret:** Twój klucz API z platformy Anthropic (console.anthropic.com).
 Zapisz zmianę. Od tego momentu każde wypchnięcie zmian z `pl.json` wyzwoli poprawną procedurę.
 
 ### Omijanie tłumaczeń ("do_not_translate")
