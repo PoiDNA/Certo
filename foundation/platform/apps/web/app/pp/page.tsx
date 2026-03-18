@@ -2,7 +2,7 @@ export default function PolitykaPrywatnosci() {
   return (
     <main className="max-w-3xl mx-auto py-16 px-6 font-serif text-certo-navy">
       <div className="mb-12">
-        <a href="/" className="text-xs text-certo-gold hover:text-certo-gold-light no-underline tracking-widest font-sans font-bold uppercase transition-colors">← Certo.org.pl</a>
+        <a href="/" className="text-xs text-certo-gold hover:text-certo-gold-light no-underline tracking-widest font-sans font-bold uppercase transition-colors">← Certogov.org</a>
       </div>
       
       <h1 className="text-4xl font-bold mb-2 tracking-tight">Polityka Prywatności</h1>
@@ -12,7 +12,7 @@ export default function PolitykaPrywatnosci() {
         <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">1. Administrator danych</h2>
         <p className="leading-relaxed text-certo-navy/80 font-sans">
           Administratorem danych osobowych jest <strong>Fundacja Certo Governance Institute</strong> z siedzibą w Polsce. 
-          Kontakt: <a href="mailto:privacy@certo.org.pl" className="text-certo-gold hover:underline">privacy@certo.org.pl</a>
+          Kontakt: <a href="mailto:privacy@certogov.org" className="text-certo-gold hover:underline">privacy@certogov.org</a>
         </p>
       </section>
       
@@ -71,7 +71,7 @@ export default function PolitykaPrywatnosci() {
         <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">5. Prawa użytkownika</h2>
         <p className="leading-relaxed text-certo-navy/80 font-sans">
           Przysługuje Ci prawo dostępu, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz sprzeciwu. 
-          W celu skorzystania z praw: <a href="mailto:privacy@certo.org.pl" className="text-certo-gold hover:underline">privacy@certo.org.pl</a>. 
+          W celu skorzystania z praw: <a href="mailto:privacy@certogov.org" className="text-certo-gold hover:underline">privacy@certogov.org</a>. 
           Przysługuje Ci też prawo skargi do Prezesa UODO.
         </p>
       </section>

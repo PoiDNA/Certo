@@ -26,7 +26,7 @@ Monorepo (npm workspaces) ekosystemu Certo składającego się z dwóch podmiot�
 
 ## Struktura repo
 ```
-foundation/platform/apps/web/      → certo.org.pl (Next.js 15, React 19)
+foundation/platform/apps/web/      → certogov.org (Next.js 15, React 19)
 foundation/platform/packages/auth/ → shared auth package (czysty TS, niezależny od Next)
 company/platform/apps/web/         → certo.id (Next.js 14, React 18)
 pipeline/                          → GitHub Actions skrypty (Node.js)
@@ -53,7 +53,7 @@ pipeline/                          → GitHub Actions skrypty (Node.js)
 - CTA buttons: teal z białym tekstem, zaokrąglone rogi
 - Zdjęcia: profesjonalne, biznesowe, architektura korporacyjna
 
-### Certo Foundation (certo.org.pl) — styl: prestiżowy / instytucjonalny / klasyczny
+### Certo Foundation (certogov.org) — styl: prestiżowy / instytucjonalny / klasyczny
 - Tło: głęboki navy #1A2744, cream #F5F0E8 dla sekcji jasnych
 - Akcenty: złoto #C49A3C, złoto jasne #D4AF6A
 - Typografia: serif (Georgia, Playfair Display lub podobny) dla nagłówków, sans dla body
@@ -73,7 +73,7 @@ pipeline/                          → GitHub Actions skrypty (Node.js)
     - CTA buttons: teal z białym tekstem, zaokrąglone rogi
     - Zdjęcia: profesjonalne, biznesowe, architektura korporacyjna
 
-### Certo Foundation (certo.org.pl) — styl: prestiżowy / instytucjonalny / klasyczny
+### Certo Foundation (certogov.org) — styl: prestiżowy / instytucjonalny / klasyczny
     - Tło: głęboki navy #1A2744, cream #F5F0E8 dla sekcji jasnych
     - Akcenty: złoto #C49A3C, złoto jasne #D4AF6A
     - Typografia: serif (Georgia, Playfair Display lub podobny) dla nagłówków, sans dla body
@@ -244,7 +244,7 @@ Skrypty:
 ## Grafiki i assets (Cloudflare R2)
 Bucket: certo-docs (publiczny CDN)
 Struktura:
-- foundation/images/ → grafiki certo.org.pl
+- foundation/images/ → grafiki certogov.org
 - foundation/documents/ → DOCX Fundacja
 - company/images/ → grafiki certo.id
 - company/documents/ → DOCX Spółka
@@ -261,7 +261,7 @@ Upload przez: npx wrangler r2 object put certo-docs/foundation/images/nazwa.jpg 
 
 ## Loga (produkcyjne, R2)
 
-### Certo Foundation (certo.org.pl)
+### Certo Foundation (certogov.org)
 - Logo główne (białe): ${NEXT_PUBLIC_R2_FOUNDATION}/images/certo-logo-white-200-120.png [200×120]
 - Logo ciemne (czarne litery): ${NEXT_PUBLIC_R2_FOUNDATION}/images/certo-logo-black-200-120.png [200×120]
 - Logo z tagline: ${NEXT_PUBLIC_R2_FOUNDATION}/images/certo-cryptographic-rating-logo-200-120.png [200×120]

@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide items-center">
               <a href="#rozwiazania" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Rozwiązania</a>
               <a href="#technologia" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">Technologia</a>
-              <a href="https://certo.org.pl" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
+              <a href="https://certogov.org" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
                 Fundacja Certo →
               </a>
               <a href="/login" className="px-5 py-2 border border-certo-teal bg-certo-teal text-white rounded-[2px] hover:bg-certo-teal-dark hover:border-certo-teal-dark transition-colors duration-200">Zaloguj się</a>
@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-certo-teal-darker text-white border-t border-certo-teal-dark mt-auto">
           <div className="w-full px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-4">
-              <a href="https://www.certo.org.pl" target="_blank" rel="noreferrer" className="flex items-center gap-3">
+              <a href="https://www.certogov.org" target="_blank" rel="noreferrer" className="flex items-center gap-3">
                 <img 
                   src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
                   width={120} 

@@ -2,7 +2,7 @@ export default function WarunkiKorzystania() {
   return (
     <main className="max-w-3xl mx-auto py-16 px-6 font-serif text-certo-navy">
       <div className="mb-12">
-        <a href="/" className="text-xs text-certo-gold hover:text-certo-gold-light no-underline tracking-widest font-sans font-bold uppercase transition-colors">← Certo.org.pl</a>
+        <a href="/" className="text-xs text-certo-gold hover:text-certo-gold-light no-underline tracking-widest font-sans font-bold uppercase transition-colors">← Certogov.org</a>
       </div>
       
       <h1 className="text-4xl font-bold mb-2 tracking-tight">Warunki Korzystania z Serwisu</h1>
@@ -11,7 +11,7 @@ export default function WarunkiKorzystania() {
       <section className="mb-10">
         <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">1. Postanowienia ogólne</h2>
         <p className="leading-relaxed text-certo-navy/80 font-sans">
-          Niniejsze Warunki regulują zasady korzystania z serwisu <strong>certo.org.pl</strong> prowadzonego przez <strong>Fundację Certo Governance Institute</strong>. Korzystanie z Serwisu oznacza akceptację Warunków.
+          Niniejsze Warunki regulują zasady korzystania z serwisu <strong>certogov.org</strong> prowadzonego przez <strong>Fundację Certo Governance Institute</strong>. Korzystanie z Serwisu oznacza akceptację Warunków.
         </p>
       </section>
       
@@ -70,7 +70,7 @@ export default function WarunkiKorzystania() {
       <section>
         <h2 className="text-xl font-bold mb-4 pb-2 border-b border-certo-gold/30">9. Kontakt</h2>
         <p className="leading-relaxed text-certo-navy/80 font-sans">
-          <a href="mailto:kontakt@certo.org.pl" className="text-certo-gold hover:underline">kontakt@certo.org.pl</a>
+          <a href="mailto:kontakt@certogov.org" className="text-certo-gold hover:underline">kontakt@certogov.org</a>
         </p>
       </section>
     </main>
