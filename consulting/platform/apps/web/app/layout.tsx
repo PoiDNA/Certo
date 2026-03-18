@@ -17,6 +17,10 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: 'Certo Consulting | Eksperckie doradztwo',
   description: 'Akredytowani doradcy Certo. Ład korporacyjny i zgodność.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
