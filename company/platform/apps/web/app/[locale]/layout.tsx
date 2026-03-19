@@ -79,30 +79,32 @@ export default async function RootLayout({
           </main>
 
           <footer className="bg-certo-teal-darker text-white border-t border-certo-teal-dark mt-auto">
-            <div className="w-full px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
-              <div className="flex items-center gap-4">
-                <a href="https://www.certogov.org" target="_blank" rel="noreferrer" className="flex items-center gap-3">
-                  <img
-                    src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
-                    width={120}
-                    height={60}
-                    alt="Certo White Logo"
-                    className="h-auto w-auto max-h-10"
-                  />
-                  <img
-                    src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-cryptographic-rating-logo-200-120.png"
-                    width={160}
-                    height={48}
-                    alt="Certo Cryptographic Rating Logo"
-                    className="h-10 w-auto"
-                  />
-                </a>
+            <div className="w-full px-6 py-12">
+              <div className="flex flex-col md:flex-row justify-between gap-8 mb-8">
+                <div className="flex items-start gap-4">
+                  <a href="https://www.certogov.org" target="_blank" rel="noreferrer" className="flex items-center gap-3">
+                    <img
+                      src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-white-200-120.png"
+                      width={120}
+                      height={60}
+                      alt="Certo White Logo"
+                      className="h-auto w-auto max-h-10"
+                    />
+                  </a>
+                </div>
+                <div className="text-xs text-certo-gray-light/50 leading-relaxed">
+                  <p className="font-medium text-certo-gray-light/70 mb-1">Certo ID PSA</p>
+                  <p>02-566 Warszawa, ul. Puławska 2B</p>
+                  <a href="mailto:certo@certo.id" className="hover:text-certo-teal transition-colors">certo@certo.id</a>
+                </div>
+                <div className="flex flex-col items-start md:items-end gap-2 text-xs text-certo-gray-light/60 font-medium">
+                  <Link href={`/${locale}/privacy`} className="hover:text-certo-teal transition-colors">{tf('privacy')}</Link>
+                  <Link href={`/${locale}/terms`} className="hover:text-certo-teal transition-colors">{tf('terms')}</Link>
+                  <Link href={`/${locale}/contact`} className="hover:text-certo-teal transition-colors">{tf('contact')}</Link>
+                </div>
               </div>
-
-              <div className="flex gap-6 text-xs text-certo-gray-light/60 font-medium">
-                <span>{tf('copyright', { year: new Date().getFullYear() })}</span>
-                <Link href={`/${locale}/privacy`} className="hover:text-certo-teal transition-colors">{tf('privacy')}</Link>
-                <Link href={`/${locale}/terms`} className="hover:text-certo-teal transition-colors">{tf('terms')}</Link>
+              <div className="border-t border-certo-teal-dark pt-6 text-center">
+                <span className="text-xs text-certo-gray-light/40">{tf('copyright', { year: new Date().getFullYear() })}</span>
               </div>
             </div>
           </footer>

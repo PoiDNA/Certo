@@ -39,7 +39,8 @@
   "Footer": {
     "copyright": "Fundacja Certo Governance Institute © {year}",
     "privacy": "Politique de Confidentialité",
-    "terms": "Conditions d'Utilisation"
+    "terms": "Conditions d'Utilisation",
+    "contact": "Kontakt"
   },
   "About": {
     "title": "À propos de Certo Governance Institute",
@@ -49,5 +50,23 @@
     "independence_text": "La Fondation est indépendante des entités évaluées, des autorités publiques et des intérêts commerciaux.",
     "methodology_title": "Méthodologie",
     "methodology_text": "Les ratings Certo reposent sur une méthodologie rigoureuse basée sur les normes ISO et les directives de l'UE."
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Fundacja Certo Governance Institute",
+    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "email": "rating@certogov.org",
+    "form_title": "Napisz do nas",
+    "form_name": "Imię i nazwisko",
+    "form_email": "Adres email",
+    "form_subject": "Temat",
+    "form_message": "Wiadomość",
+    "form_submit": "Wyślij wiadomość",
+    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
+    "subject_general": "Zapytanie ogólne",
+    "subject_rating": "Rating Certo",
+    "subject_methodology": "Metodologia",
+    "subject_cooperation": "Współpraca",
+    "subject_media": "Media"
   }
 }

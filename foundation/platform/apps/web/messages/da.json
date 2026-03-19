@@ -39,7 +39,8 @@
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privatlivspolitik",
-    "terms": "Vilkår for Brug"
+    "terms": "Vilkår for Brug",
+    "contact": "Kontakt"
   },
   "About": {
     "title": "Om Certo Governance Institute",
@@ -49,5 +50,23 @@
     "independence_text": "Fundationen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
     "methodology_title": "Metodologi",
     "methodology_text": "Certo Ratings er baseret på stringent metodologi baseret på ISO-standarder og EU-retningslinjer."
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Fundacja Certo Governance Institute",
+    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "email": "rating@certogov.org",
+    "form_title": "Napisz do nas",
+    "form_name": "Imię i nazwisko",
+    "form_email": "Adres email",
+    "form_subject": "Temat",
+    "form_message": "Wiadomość",
+    "form_submit": "Wyślij wiadomość",
+    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
+    "subject_general": "Zapytanie ogólne",
+    "subject_rating": "Rating Certo",
+    "subject_methodology": "Metodologia",
+    "subject_cooperation": "Współpraca",
+    "subject_media": "Media"
   }
 }

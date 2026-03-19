@@ -12,7 +12,8 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Privātuma politika",
-    "terms": "Pakalpojuma noteikumi"
+    "terms": "Pakalpojuma noteikumi",
+    "contact": "Kontakt"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
@@ -79,5 +80,22 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Napisz do nas",
+    "form_name": "Imię i nazwisko",
+    "form_email": "Adres email",
+    "form_subject": "Temat",
+    "form_message": "Wiadomość",
+    "form_submit": "Wyślij wiadomość",
+    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
+    "subject_general": "Zapytanie ogólne",
+    "subject_implementation": "Wdrożenie",
+    "subject_technical": "Wsparcie techniczne",
+    "subject_cooperation": "Współpraca"
   }
 }
