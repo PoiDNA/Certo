@@ -1,6 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
-import { locales } from '@certo/i18n/config';
-import { notFound } from 'next/navigation';
+import { routing } from './i18n-config';
+import { hasLocale } from 'next-intl';
 
 function deepMerge(target: any, source: any) {
   if (typeof target !== 'object' || target === null) return source;
@@ -20,24 +20,23 @@ function deepMerge(target: any, source: any) {
   return result;
 }
 
-export default getRequestConfig(async ({ locale }) => {
-  if (!locales.includes(locale as any)) notFound();
+export default getRequestConfig(async ({ requestLocale }) => {
+  const requested = await requestLocale;
+  const locale = hasLocale(routing.locales, requested)
+    ? requested
+    : routing.defaultLocale;
 
+  const sharedMessages = (await import(`../../../../packages/i18n/messages/${locale}.json`)).default;
+
+  let localMessages = {};
   try {
-    const sharedMessages = (await import(`../../../../packages/i18n/messages/${locale}.json`)).default;
-    
-    let localMessages = {};
-    try {
-      localMessages = (await import(`./messages/${locale}.json`)).default;
-    } catch (e) {
-      // Ignore if no local overrides
-    }
-
-    return {
-      locale: locale as string,
-      messages: deepMerge(sharedMessages, localMessages)
-    };
-  } catch (error) {
-    notFound();
+    localMessages = (await import(`./messages/${locale}.json`)).default;
+  } catch {
+    // Brak lokalnych tłumaczeń — OK
   }
+
+  return {
+    locale,
+    messages: deepMerge(sharedMessages, localMessages)
+  };
 });
