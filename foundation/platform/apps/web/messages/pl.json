@@ -55,6 +55,8 @@
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Fundacja Certo Governance Institute",
+    "label_address": "Adres",
+    "label_email": "Email",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Napisz do nas",

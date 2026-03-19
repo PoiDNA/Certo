@@ -19,6 +19,8 @@
   "Contact": {
     "title": "Contact",
     "subtitle": "Certo ID PSA",
+    "label_address": "Address",
+    "label_email": "Email",
     "address": "02-566 Warsaw, ul. Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Write to Us",

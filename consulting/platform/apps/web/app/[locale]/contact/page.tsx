@@ -29,14 +29,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         <div className="grid md:grid-cols-5 gap-16">
           <div className="md:col-span-2 space-y-8">
             <div>
-              <h3 className="text-[11px] uppercase tracking-[0.15em] text-certo-accent font-semibold mb-3">Adres</h3>
+              <h3 className="text-[11px] uppercase tracking-[0.15em] text-certo-accent font-semibold mb-3">{t('label_address')}</h3>
               <p className="text-sm text-certo-muted leading-relaxed font-light">
                 Certo ID PSA<br />
                 {t('address')}
               </p>
             </div>
             <div>
-              <h3 className="text-[11px] uppercase tracking-[0.15em] text-certo-accent font-semibold mb-3">Email</h3>
+              <h3 className="text-[11px] uppercase tracking-[0.15em] text-certo-accent font-semibold mb-3">{t('label_email')}</h3>
               <a href={`mailto:${t('email')}`} className="text-sm text-certo-muted hover:text-certo-accent transition-colors duration-300 font-light">
                 {t('email')}
               </a>
