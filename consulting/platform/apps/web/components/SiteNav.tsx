@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default function SiteNav() {
   const locale = useLocale();
@@ -18,6 +19,7 @@ export default function SiteNav() {
         <a href="#ekspertyza" className="text-white uppercase text-xs tracking-[0.1em] hover:text-certo-accent transition-colors duration-300">
           {t('expertise')}
         </a>
+        <LocaleSwitcher />
         <a href={`/${locale}/login`} className="text-white hover:text-certo-accent transition-colors duration-300 uppercase text-xs tracking-[0.1em] font-semibold">
           {t('login')}
         </a>
@@ -71,6 +73,9 @@ export default function SiteNav() {
             >
               {t('login')}
             </a>
+            <div className="pt-2 border-t border-certo-accent/20">
+              <LocaleSwitcher />
+            </div>
           </nav>
         </div>
       )}

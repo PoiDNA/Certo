@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import LocaleSwitcher from './LocaleSwitcher';
 
 const links = [
   { href: '/ratings', key: 'ratings' as const },
@@ -36,6 +37,7 @@ export default function SiteNav() {
             </a>
           );
         })}
+        <LocaleSwitcher />
       </nav>
 
       {/* Mobile hamburger */}
@@ -83,6 +85,9 @@ export default function SiteNav() {
                 </a>
               );
             })}
+            <div className="pt-2 border-t border-certo-gold/20">
+              <LocaleSwitcher />
+            </div>
           </nav>
         </div>
       )}
