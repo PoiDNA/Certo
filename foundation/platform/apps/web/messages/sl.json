@@ -31,7 +31,10 @@
     "ratings": "Ocene",
     "methodology": "Metodologija",
     "about": "O Fundaciji",
-    "login": "Prijava"
+    "login": "Prijava",
+    "documents": "Dokumenti",
+    "pipeline": "Pipeline",
+    "dashboard": "Nadzorna plošča"
   },
   "Footer": {
     "copyright": "Fundacija Certo Governance Institute © {year}",

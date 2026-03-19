@@ -31,7 +31,10 @@
     "ratings": "Luokitukset",
     "methodology": "Metodologia",
     "about": "Tietoa Säätiöstä",
-    "login": "Kirjaudu sisään"
+    "login": "Kirjaudu sisään",
+    "documents": "Dokumentit",
+    "pipeline": "Pipeline",
+    "dashboard": "Kojelauta"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

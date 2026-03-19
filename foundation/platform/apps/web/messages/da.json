@@ -31,7 +31,10 @@
     "ratings": "Ratings",
     "methodology": "Metodologi",
     "about": "Om Fundationen",
-    "login": "Log ind"
+    "login": "Log ind",
+    "documents": "Dokumenter",
+    "pipeline": "Pipeline",
+    "dashboard": "Dashboard"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

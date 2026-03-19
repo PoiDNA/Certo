@@ -31,7 +31,10 @@
     "ratings": "Reitingai",
     "methodology": "Metodologija",
     "about": "Apie Fondą",
-    "login": "Prisijungti"
+    "login": "Prisijungti",
+    "documents": "Dokumentai",
+    "pipeline": "Pipeline",
+    "dashboard": "Valdymo skydelis"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

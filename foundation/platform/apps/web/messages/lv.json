@@ -31,7 +31,10 @@
     "ratings": "Reitingi",
     "methodology": "Metodologija",
     "about": "Par fondu",
-    "login": "Pierakstieties"
+    "login": "Pierakstieties",
+    "documents": "Dokumenti",
+    "pipeline": "Pipeline",
+    "dashboard": "Vadības panelis"
   },
   "Footer": {
     "copyright": "Certo Governance Institute fonds © {year}",

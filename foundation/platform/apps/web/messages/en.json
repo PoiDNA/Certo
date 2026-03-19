@@ -31,7 +31,10 @@
     "ratings": "Ratings",
     "methodology": "Methodology",
     "about": "About",
-    "login": "Log In"
+    "login": "Log In",
+    "documents": "Documents",
+    "pipeline": "Pipeline",
+    "dashboard": "Dashboard"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

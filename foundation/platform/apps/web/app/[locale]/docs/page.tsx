@@ -22,12 +22,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </div>
 
       <DocumentSection 
+        locale={locale}
         title="Fundacja Certo" 
         subtitle="Dokumenty instytucjonalne i governance" 
         docs={foundation} 
       />
       
       <DocumentSection 
+        locale={locale}
         title="Spółka Certo ID PSA" 
         subtitle="Dokumentacja techniczna i architektura" 
         docs={company} 
@@ -49,7 +51,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   );
 }
 
-function DocumentSection({ title, subtitle, docs }: { 
+function DocumentSection({ locale, title, subtitle, docs }: { 
+  locale: string;
   title: string; 
   subtitle: string;
   docs: ReturnType<typeof getAllDocuments>;
@@ -65,7 +68,7 @@ function DocumentSection({ title, subtitle, docs }: {
         {docs.map(doc => (
           <Link 
             key={doc.slug} 
-            href={`/documents/${doc.slug}`}
+            href={`/${locale}/documents/${doc.slug}`}
             className="block bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group"
           >
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">

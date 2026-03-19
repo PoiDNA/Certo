@@ -31,7 +31,10 @@
     "ratings": "Rating",
     "methodology": "Metodologia",
     "about": "Sulla Fondazione",
-    "login": "Accedi"
+    "login": "Accedi",
+    "documents": "Documenti",
+    "pipeline": "Pipeline",
+    "dashboard": "Pannello"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

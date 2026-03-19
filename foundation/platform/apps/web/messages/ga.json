@@ -31,7 +31,10 @@
     "ratings": "Rátálacha",
     "methodology": "Modheolaíocht",
     "about": "Faoin Fhondúireacht",
-    "login": "Logáil Isteach"
+    "login": "Logáil Isteach",
+    "documents": "Doiciméid",
+    "pipeline": "Pipeline",
+    "dashboard": "Painéal"
   },
   "Footer": {
     "copyright": "Fondúireacht Certo Governance Institute © {year}",

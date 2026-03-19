@@ -31,7 +31,10 @@
     "ratings": "Ratingi",
     "methodology": "Metodologija",
     "about": "Dwar il-Fundazzjoni",
-    "login": "Dħul"
+    "login": "Dħul",
+    "documents": "Dokumenti",
+    "pipeline": "Pipeline",
+    "dashboard": "Panel"
   },
   "Footer": {
     "copyright": "Fundazzjoni Certo Governance Institute © {year}",

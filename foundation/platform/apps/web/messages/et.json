@@ -31,7 +31,10 @@
     "ratings": "Reitingud",
     "methodology": "Metoodika",
     "about": "Fondist",
-    "login": "Logi sisse"
+    "login": "Logi sisse",
+    "documents": "Dokumendid",
+    "pipeline": "Pipeline",
+    "dashboard": "Armatuurlaud"
   },
   "Footer": {
     "copyright": "Certo Governance Institute Fond © {year}",

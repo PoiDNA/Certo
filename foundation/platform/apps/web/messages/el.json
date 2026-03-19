@@ -31,7 +31,10 @@
     "ratings": "Αξιολογήσεις",
     "methodology": "Μεθοδολογία",
     "about": "Σχετικά με τη Fundacja",
-    "login": "Σύνδεση"
+    "login": "Σύνδεση",
+    "documents": "Έγγραφα",
+    "pipeline": "Pipeline",
+    "dashboard": "Πίνακας ελέγχου"
   },
   "Footer": {
     "copyright": "Fundacja Certo Governance Institute © {year}",

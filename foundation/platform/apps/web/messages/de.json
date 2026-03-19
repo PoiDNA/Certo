@@ -31,7 +31,10 @@
     "ratings": "Ratings",
     "methodology": "Methodologie",
     "about": "Über die Stiftung",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "documents": "Dokumente",
+    "pipeline": "Pipeline",
+    "dashboard": "Dashboard"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

@@ -31,7 +31,10 @@
     "ratings": "Minősítések",
     "methodology": "Módszertan",
     "about": "Az Alapítványról",
-    "login": "Bejelentkezés"
+    "login": "Bejelentkezés",
+    "documents": "Dokumentumok",
+    "pipeline": "Pipeline",
+    "dashboard": "Vezérlőpult"
   },
   "Footer": {
     "copyright": "Certo Governance Institute Alapítvány © {year}",

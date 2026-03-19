@@ -31,7 +31,10 @@
     "ratings": "Ratings",
     "methodology": "Methodologie",
     "about": "Over de Stichting",
-    "login": "Inloggen"
+    "login": "Inloggen",
+    "documents": "Documenten",
+    "pipeline": "Pipeline",
+    "dashboard": "Dashboard"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

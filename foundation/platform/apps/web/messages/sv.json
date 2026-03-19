@@ -31,7 +31,10 @@
     "ratings": "Ratings",
     "methodology": "Metodologi",
     "about": "Om Stiftelsen",
-    "login": "Logga in"
+    "login": "Logga in",
+    "documents": "Dokument",
+    "pipeline": "Pipeline",
+    "dashboard": "Instrumentpanel"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
