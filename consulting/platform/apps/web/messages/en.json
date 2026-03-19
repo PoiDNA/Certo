@@ -13,7 +13,8 @@
     "ecosystem": "Certo Ecosystem",
     "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
+    "terms": "Terms of Use",
+    "contact": "Kontakt"
   },
   "Home": {
     "hero_title": "Expert advisory\nat board level.",
@@ -59,5 +60,22 @@
     "sectors": "Sectors",
     "contact_advisor": "Contact",
     "view_profile": "View profile"
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "email": "certo@certo.consulting",
+    "form_title": "Napisz do nas",
+    "form_name": "Imię i nazwisko",
+    "form_email": "Adres email",
+    "form_subject": "Temat",
+    "form_message": "Wiadomość",
+    "form_submit": "Wyślij wiadomość",
+    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
+    "subject_general": "Zapytanie ogólne",
+    "subject_advisory": "Doradztwo",
+    "subject_accreditation": "Akredytacja doradcy",
+    "subject_cooperation": "Współpraca"
   }
 }

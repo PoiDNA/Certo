@@ -89,7 +89,7 @@ export default async function RootLayout({
 
           <footer className="bg-certo-primary text-certo-surface pt-20 pb-10">
             <div className="max-w-[1280px] mx-auto px-6 md:px-20">
-              <div className="grid md:grid-cols-2 gap-12 mb-16">
+              <div className="grid md:grid-cols-3 gap-12 mb-16">
                 <div>
                   <img
                     src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/consulting/certo-consulting-logo-gold-800-120.png.png"
@@ -100,12 +100,18 @@ export default async function RootLayout({
                     {tf('description')}
                   </p>
                 </div>
-                <div className="flex gap-16 md:justify-end">
-                  <div className="flex flex-col gap-4">
-                    <h4 className="font-display text-lg text-certo-accent tracking-wide">{tf('ecosystem')}</h4>
+                <div>
+                  <h4 className="font-display text-lg text-certo-accent tracking-wide mb-4">{tf('ecosystem')}</h4>
+                  <div className="flex flex-col gap-3">
                     <a href="https://certogov.org" className="text-sm text-certo-surface/80 hover:text-certo-accent transition-colors duration-300">Fundacja CertoGov</a>
                     <a href="https://certo.id" className="text-sm text-certo-surface/80 hover:text-certo-accent transition-colors duration-300">Certo ID</a>
                   </div>
+                </div>
+                <div>
+                  <h4 className="font-display text-lg text-certo-accent tracking-wide mb-4">{tf('contact')}</h4>
+                  <p className="text-sm text-certo-muted font-light leading-relaxed">Certo ID PSA</p>
+                  <p className="text-sm text-certo-muted font-light">02-566 Warszawa, ul. Puławska 2B</p>
+                  <a href="mailto:certo@certo.consulting" className="text-sm text-certo-muted hover:text-certo-accent transition-colors duration-300 font-light">certo@certo.consulting</a>
                 </div>
               </div>
 
@@ -116,6 +122,7 @@ export default async function RootLayout({
                 <div className="flex gap-6">
                   <a href={`/${locale}/polityka`} className="text-[11px] uppercase tracking-wider text-certo-muted hover:text-certo-accent transition-colors duration-300">{tf('privacy')}</a>
                   <a href={`/${locale}/regulamin`} className="text-[11px] uppercase tracking-wider text-certo-muted hover:text-certo-accent transition-colors duration-300">{tf('terms')}</a>
+                  <a href={`/${locale}/contact`} className="text-[11px] uppercase tracking-wider text-certo-muted hover:text-certo-accent transition-colors duration-300">{tf('contact')}</a>
                 </div>
               </div>
             </div>
