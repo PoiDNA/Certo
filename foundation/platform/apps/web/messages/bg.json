@@ -1,20 +1,20 @@
 {
   "Metadata": {
-    "title": "Fundacja Certo Governance Institute",
-    "description": "Независим орган за рейтинг, който оценява качеството на управлението в публичния, корпоративния, медицински и отбранния сектор."
+    "title": "Фондация Certo Governance Institute",
+    "description": "Независимо рейтингово агентство, оценяващо качеството на управлението в публичния, корпоративния, медицинския и отбранния сектор."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo е първата в света рейтингова агенция, чиито рейтинги са криптографски артефакти на процеса — не мнения. Всяко решение за рейтинг е закотвено извън собствената инфраструктура, проверяемо офлайн и публично одитируемо.",
+    "description": "Certo е първото в света рейтингово агентство, чиито рейтинги са криптографски артефакти на процеса — не мнения. Всяко решение за рейтинг е закотвено извън собствената инфраструктура, верифицируемо офлайн и публично одитируемо.",
     "hero_cta_primary": "Проверете рейтингите",
     "hero_cta_secondary": "Научете повече",
-    "section_ratings_title": "Последни Certo Рейтинги",
-    "section_reports_title": "Анализи и Доклади",
-    "section_about_title": "За Фондацията"
+    "section_ratings_title": "Най-новите Certo рейтинги",
+    "section_reports_title": "Анализи и доклади",
+    "section_about_title": "За фондацията"
   },
   "Ratings": {
-    "title": "Certo Рейтинги",
-    "subtitle": "Оценки на качеството на управлението на институциите",
+    "title": "Certo рейтинги",
+    "subtitle": "Оценки на качеството на управлението в институции",
     "search_placeholder": "Търсене на институция...",
     "filter_sector": "Сектор",
     "sector_public": "Публичен",
@@ -25,47 +25,49 @@
     "rating_valid_until": "Рейтингът е валиден до",
     "rating_issued": "Дата на издаване",
     "no_results": "Не са намерени резултати",
-    "view_profile": "Вижте профил"
+    "view_profile": "Вижте профила"
   },
   "Nav": {
     "ratings": "Рейтинги",
     "methodology": "Методология",
-    "about": "За Фондацията",
+    "about": "За фондацията",
     "login": "Влезте",
     "documents": "Документи",
     "pipeline": "Pipeline",
-    "dashboard": "Контролна панел",
+    "dashboard": "Панел",
     "contact": "Контакт"
   },
   "Footer": {
-    "copyright": "Fundacja Certo Governance Institute © {year}",
-    "privacy": "Политика за Поверителност",
-    "terms": "Условия на Ползване",
+    "copyright": "Фондация Certo Governance Institute © {year}",
+    "privacy": "Политика за поверителност",
+    "terms": "Условия за ползване",
     "contact": "Контакт"
   },
   "About": {
-    "title": "За Fundacja Certo Governance Institute",
+    "title": "За Фондация Certo Governance Institute",
     "mission_title": "Мисия",
-    "mission_text": "Изграждане на култура на добро управление чрез независима оценка и популяризиране на стандартите за управление в Полша и Европа.",
+    "mission_text": "Изграждане на култура на добро управление чрез независима оценка и насърчаване на стандартите за управление в България и Европа.",
     "independence_title": "Независимост",
-    "independence_text": "Фондацията е независима от оценяваните субекти, органите на публичната власт и търговските интереси.",
+    "independence_text": "Фондацията е независима от оценяваните субекти, органите на държавната власт и търговските интереси.",
     "methodology_title": "Методология",
-    "methodology_text": "Certo рейтингите се основават на строга методология, основана на стандартите ISO и указанията на ЕС."
+    "methodology_text": "Рейтингите на Certo се основават на строга методология, основана на ISO стандартите и насоките на ЕС."
   },
   "Contact": {
     "title": "Контакт",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Варшава, ул. Рондо ООН 1",
+    "subtitle": "Фондация Certo Governance Institute",
+    "label_address": "Адрес",
+    "label_email": "Електронна поща",
+    "address": "00-124 Варшава, ул. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Напишете ни",
     "form_name": "Име и фамилия",
-    "form_email": "Имейл адрес",
+    "form_email": "Електронен адрес",
     "form_subject": "Тема",
     "form_message": "Съобщение",
     "form_submit": "Изпратете съобщението",
-    "form_success": "Съобщението е изпратено. Ще ви отговорим възможно най-скоро.",
+    "form_success": "Съобщението е изпратено. Ще отговорим възможно най-скоро.",
     "subject_general": "Общо запитване",
-    "subject_rating": "Certo Рейтинг",
+    "subject_rating": "Rating Certo",
     "subject_methodology": "Методология",
     "subject_cooperation": "Сътрудничество",
     "subject_media": "Медии"

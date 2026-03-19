@@ -1,37 +1,37 @@
 {
   "Metadata": {
     "title": "Fundação Certo Governance Institute",
-    "description": "Órgão de rating independente que avalia a qualidade de governança no setor público, corporativo, médico e de defesa."
+    "description": "Órgão de classificação independente que avalia a qualidade da governança nos setores público, corporativo, médico e de defesa."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo é a primeira agência de rating do mundo cujos ratings são artefatos criptográficos do processo — não opiniões. Cada decisão de rating é ancorada fora de sua própria infraestrutura, verificável offline e auditável publicamente.",
-    "hero_cta_primary": "Consulte os ratings",
+    "description": "Certo é a primeira agência de classificação do mundo cujas classificações são artefatos criptográficos do processo — não opiniões. Cada decisão de classificação é ancorada fora de sua própria infraestrutura, verificável offline e publicamente auditável.",
+    "hero_cta_primary": "Verifique as classificações",
     "hero_cta_secondary": "Saiba mais",
-    "section_ratings_title": "Ratings Certo mais recentes",
+    "section_ratings_title": "Classificações Certo Mais Recentes",
     "section_reports_title": "Análises e Relatórios",
     "section_about_title": "Sobre a Fundação"
   },
   "Ratings": {
-    "title": "Ratings Certo",
-    "subtitle": "Avaliações de qualidade de governança de instituições",
-    "search_placeholder": "Procure por instituição...",
+    "title": "Classificações Certo",
+    "subtitle": "Avaliações da qualidade de governança institucional",
+    "search_placeholder": "Pesquisar instituição...",
     "filter_sector": "Setor",
     "sector_public": "Público",
     "sector_corporate": "Corporativo",
     "sector_medical": "Médico",
     "sector_defense": "Defesa",
-    "sector_ngo": "Organizações não governamentais",
-    "rating_valid_until": "Rating válido até",
+    "sector_ngo": "Organização Não Governamental",
+    "rating_valid_until": "Classificação válida até",
     "rating_issued": "Data de emissão",
     "no_results": "Nenhum resultado encontrado",
     "view_profile": "Ver perfil"
   },
   "Nav": {
-    "ratings": "Ratings",
+    "ratings": "Classificações",
     "methodology": "Metodologia",
     "about": "Sobre a Fundação",
-    "login": "Faça login",
+    "login": "Entrar",
     "documents": "Documentos",
     "pipeline": "Pipeline",
     "dashboard": "Painel",
@@ -46,26 +46,28 @@
   "About": {
     "title": "Sobre a Fundação Certo Governance Institute",
     "mission_title": "Missão",
-    "mission_text": "Construir uma cultura de boa governança por meio de avaliação independente e promoção de padrões de governança na Polônia e na Europa.",
+    "mission_text": "Construir uma cultura de boa governança por meio da avaliação independente e promoção de padrões de governança na Polônia e na Europa.",
     "independence_title": "Independência",
-    "independence_text": "A Fundação é independente das entidades avaliadas, dos órgãos de poder público e de interesses comerciais.",
+    "independence_text": "A Fundação é independente das entidades avaliadas, dos órgãos de autoridade pública e dos interesses comerciais.",
     "methodology_title": "Metodologia",
-    "methodology_text": "Os ratings Certo baseiam-se em metodologia rigorosa fundamentada em padrões ISO e diretrizes da UE."
+    "methodology_text": "As Classificações Certo baseiam-se em uma metodologia rigorosa fundamentada em padrões ISO e diretrizes da EU."
   },
   "Contact": {
     "title": "Contato",
     "subtitle": "Fundação Certo Governance Institute",
+    "label_address": "Endereço",
+    "label_email": "Email",
     "address": "00-124 Varsóvia, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Fale conosco",
+    "form_title": "Fale Conosco",
     "form_name": "Nome completo",
     "form_email": "Endereço de email",
     "form_subject": "Assunto",
     "form_message": "Mensagem",
     "form_submit": "Enviar mensagem",
-    "form_success": "Sua mensagem foi enviada. Responderemos o mais breve possível.",
+    "form_success": "Mensagem enviada. Responderemos o mais breve possível.",
     "subject_general": "Consulta geral",
-    "subject_rating": "Rating Certo",
+    "subject_rating": "Classificação Certo",
     "subject_methodology": "Metodologia",
     "subject_cooperation": "Cooperação",
     "subject_media": "Mídia"

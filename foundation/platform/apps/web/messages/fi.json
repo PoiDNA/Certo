@@ -1,71 +1,73 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute -säätiö",
-    "description": "Riippumaton luokitusorgan, joka arvioi hallinnon laatua julkisella, yritys-, lääketieteen ja puolustussektorilla."
+    "description": "Riippumaton luottoluokituslaitos, joka arvioi hallintotapaa julkisella, yritys-, lääketieteen ja puolustussektorilla."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo on ensimmäinen maailman luokituslaitos, jonka luokitukset ovat prosessin kryptografisia artefakteja — eivät mielipiteitä. Jokainen luokituspäätös on ankkuroitu omaan infrastruktuuriin ulkopuolella, offline-verifiointikelpoinen ja julkisesti auditoitava.",
-    "hero_cta_primary": "Tarkista luokitukset",
+    "description": "Certo on maailman ensimmäinen luottoluokituslaitos, jonka luottoluokitukset ovat prosessin kryptografisia artefakteja – ei mielipiteitä. Jokainen luottoluokituspäätös on ankkuroitu organisaation oman infrastruktuurin ulkopuolelle, offline-tarkistettavissa ja julkisesti auditoitavissa.",
+    "hero_cta_primary": "Tarkista luottoluokitukset",
     "hero_cta_secondary": "Lue lisää",
-    "section_ratings_title": "Uusimmat Certo-luokitukset",
-    "section_reports_title": "Analyysit ja Raportit",
-    "section_about_title": "Säätiöstä"
+    "section_ratings_title": "Uusimmat Certo-luottoluokitukset",
+    "section_reports_title": "Analyysit ja raportit",
+    "section_about_title": "Tietoa säätiöstä"
   },
   "Ratings": {
-    "title": "Certo-luokitukset",
-    "subtitle": "Laitosten hallinnon laadun arviot",
-    "search_placeholder": "Etsi laitosta...",
+    "title": "Certo-luottoluokitukset",
+    "subtitle": "Instituutioiden hallintotavan arvioinnit",
+    "search_placeholder": "Etsi instituutiota...",
     "filter_sector": "Sektori",
     "sector_public": "Julkinen",
     "sector_corporate": "Yritys",
-    "sector_medical": "Lääketieteellinen",
+    "sector_medical": "Lääketieteen",
     "sector_defense": "Puolustus",
     "sector_ngo": "Kansalaisjärjestö",
-    "rating_valid_until": "Luokitus voimassa",
+    "rating_valid_until": "Luottoluokitus voimassa",
     "rating_issued": "Myöntämispäivä",
     "no_results": "Tuloksia ei löytynyt",
     "view_profile": "Näytä profiili"
   },
   "Nav": {
-    "ratings": "Luokitukset",
+    "ratings": "Luottoluokitukset",
     "methodology": "Metodologia",
-    "about": "Säätiöstä",
+    "about": "Tietoa säätiöstä",
     "login": "Kirjaudu sisään",
     "documents": "Asiakirjat",
     "pipeline": "Pipeline",
     "dashboard": "Hallintapaneeli",
-    "contact": "Ota yhteyttä"
+    "contact": "Yhteystiedot"
   },
   "Footer": {
     "copyright": "Certo Governance Institute -säätiö © {year}",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Ota yhteyttä"
+    "contact": "Yhteystiedot"
   },
   "About": {
-    "title": "Certo Governance Institute -säätiöstä",
+    "title": "Tietoa Certo Governance Institute -säätiöstä",
     "mission_title": "Tehtävä",
-    "mission_text": "Hyvän hallinnon kulttuurin rakentaminen riippumattoman arvioinnin ja hallinnon standardien edistämisen kautta Suomessa ja Euroopassa.",
+    "mission_text": "Hyvän hallintotavan kulttuurin rakentaminen riippumattoman arvioinnin ja hallintotapastandardien edistämisen kautta Suomessa ja Euroopassa.",
     "independence_title": "Riippumattomuus",
-    "independence_text": "Säätiö on riippumaton arvioiduista yksiköistä, julkisen vallan elimistä ja kaupallisista intresseistä.",
+    "independence_text": "Säätiö on riippumaton arvioiduista kohteista, julkisen vallan elimistä ja kaupallisista intresseistä.",
     "methodology_title": "Metodologia",
-    "methodology_text": "Certo-luokitukset perustuvat ISO-standardeihin ja EU:n ohjeisiin perustuvaan tiukkoihin metodologiaan."
+    "methodology_text": "Certo-luottoluokitukset perustuvat tiukkaan metodologiaan, joka noudattaa ISO-standardeja ja EU:n ohjeita."
   },
   "Contact": {
-    "title": "Ota yhteyttä",
+    "title": "Yhteystiedot",
     "subtitle": "Certo Governance Institute -säätiö",
-    "address": "00-124 Varsova, Rondo ONZ 1",
+    "label_address": "Osoite",
+    "label_email": "Sähköposti",
+    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Lähetä meille viesti",
+    "form_title": "Ota yhteyttä",
     "form_name": "Nimi",
     "form_email": "Sähköpostiosoite",
     "form_subject": "Aihe",
     "form_message": "Viesti",
     "form_submit": "Lähetä viesti",
     "form_success": "Viesti on lähetetty. Vastaamme mahdollisimman pian.",
-    "subject_general": "Yleinen kysymys",
-    "subject_rating": "Certo Rating",
+    "subject_general": "Yleinen tiedustelu",
+    "subject_rating": "Certo-luottoluokitus",
     "subject_methodology": "Metodologia",
     "subject_cooperation": "Yhteistyö",
     "subject_media": "Media"

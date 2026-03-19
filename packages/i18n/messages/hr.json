@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezavisan organ za ocjenjivanje koji procjenjuje kvalitetu upravljanja javnih, korporativnih i organizacija civilnog društva."
+    "description": "Nezavisni organ za ocjenjivanje koji procjenjuje kvalitetu upravljanja javnih, korporativnih i neprofitnih institucija."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Prijavite se",
-    "logout": "Odjavite se",
+    "login": "Prijavi se",
+    "logout": "Odjavi se",
     "privacyPolicy": "Politika privatnosti",
     "termsOfUse": "Uvjeti korištenja",
     "loading": "Učitavanje...",
@@ -39,28 +39,28 @@
     "analysis": "Analize",
     "about": "O Institutu",
     "contact": "Kontakt",
-    "dashboard": "Nadzorna ploča",
+    "dashboard": "Kontrolna ploča",
     "settings": "Postavke"
   },
   "Auth": {
-    "login_title": "Prijavite se",
-    "login_subtitle": "Prijavite se na svoj račun",
-    "login_with_google": "Prijavite se putem Googlea",
+    "login_title": "Prijavi se",
+    "login_subtitle": "Prijavi se na svoj račun",
+    "login_with_google": "Prijavi se preko Google-a",
     "email_label": "Adresa e-pošte",
     "password_label": "Lozinka",
-    "forgot_password": "Zaboravili ste lozinku?",
-    "no_account": "Nemate račun?",
-    "register": "Registrirajte se"
+    "forgot_password": "Zaboravio si lozinku?",
+    "no_account": "Nemaš račun?",
+    "register": "Registrirај se"
   },
   "Errors": {
     "404_title": "Stranica nije pronađena",
-    "404_description": "Stranica koju tražite ne postoji ili je premještena.",
+    "404_description": "Stranica koju tražiš ne postoji ili je premještena.",
     "500_title": "Greška servera",
-    "500_description": "Došlo je do neočekivane greške. Pokušajte ponovno kasnije.",
-    "unauthorized": "Nema pristupa. Prijavite se za nastavak."
+    "500_description": "Došlo je do neočekivane greške. Pokušaj ponovo kasnije.",
+    "unauthorized": "Nemaš pristup. Prijavi se kako bi nastavio."
   },
   "Footer": {
-    "rights": "Sva prava zadržana",
+    "rights": "Sva prava pridržana",
     "privacy": "Politika privatnosti",
     "terms": "Uvjeti korištenja",
     "contact": "Kontakt"

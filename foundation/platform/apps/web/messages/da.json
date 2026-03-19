@@ -1,36 +1,36 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingagentur, der vurderer kvaliteten af ledelse og styring (governance) i den offentlige, private, medicinske og forsvarssektor."
+    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af ledelse i den offentlige, private, medicinske og forsvarssektor."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter fra processen — ikke meninger. Hver ratingbeslutning er forankret uden for egen infrastruktur, kan verificeres offline og er offentligt revidérbar.",
+    "description": "Certo er verdens første ratingbureau, hvis ratings er kryptografiske artefakter fra processen — ikke meninger. Hver ratingbeslutning er forankret uden for egen infrastruktur, verificerbar offline og offentligt revidérbar.",
     "hero_cta_primary": "Se ratings",
-    "hero_cta_secondary": "Læs mere",
+    "hero_cta_secondary": "Lær mere",
     "section_ratings_title": "Seneste Certo Ratings",
     "section_reports_title": "Analyser og Rapporter",
-    "section_about_title": "Om Fundationen"
+    "section_about_title": "Om Fonden"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Vurderinger af ledelseskvalitet i institutioner",
+    "subtitle": "Vurderinger af institutioners ledelseskvalitet",
     "search_placeholder": "Søg efter institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
-    "sector_corporate": "Private",
+    "sector_corporate": "Private virksomheder",
     "sector_medical": "Medicin",
     "sector_defense": "Forsvar",
-    "sector_ngo": "Almennyttigt",
+    "sector_ngo": "Civilsamfund",
     "rating_valid_until": "Rating gyldig til",
-    "rating_issued": "Udstedelsesdato",
+    "rating_issued": "Udgivelsesdato",
     "no_results": "Ingen resultater fundet",
     "view_profile": "Se profil"
   },
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Metodologi",
-    "about": "Om Fundationen",
+    "about": "Om Fonden",
     "login": "Log ind",
     "documents": "Dokumenter",
     "pipeline": "Pipeline",
@@ -40,34 +40,36 @@
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privatlivspolitik",
-    "terms": "Betingelser for Brug",
+    "terms": "Vilkår for Brug",
     "contact": "Kontakt"
   },
   "About": {
     "title": "Om Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "At opbygge en kultur for god ledelse og styring gennem uafhængig vurdering og fremme af governance-standarder i Polen og Europa.",
+    "mission_text": "At opbygge en kultur for god ledelse gennem uafhængig vurdering og fremme af governance-standarder i Polen og Europa.",
     "independence_title": "Uafhængighed",
-    "independence_text": "Fundationen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
+    "independence_text": "Fonden er uafhængig af de institutioner, der vurderes, offentlige myndigheder og kommercielle interesser.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo Ratings er baseret på stringent metodologi, der bygger på ISO-standarder og EU-retningslinjer."
+    "methodology_text": "Certo Ratings er baseret på streng metodologi, der følger ISO-standarder og EU-retningslinjer."
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo Governance Institute",
+    "label_address": "Adresse",
+    "label_email": "Email",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Skriv til os",
-    "form_name": "Navn",
-    "form_email": "E-mailadresse",
+    "form_name": "Fuldt navn",
+    "form_email": "Email-adresse",
     "form_subject": "Emne",
     "form_message": "Besked",
     "form_submit": "Send besked",
-    "form_success": "Besked er blevet sendt. Vi vender tilbage hurtigst muligt.",
-    "subject_general": "Generel henvendelse",
+    "form_success": "Din besked er blevet sendt. Vi vender tilbage så hurtigt som muligt.",
+    "subject_general": "Generel forespørgsel",
     "subject_rating": "Certo Rating",
     "subject_methodology": "Metodologi",
     "subject_cooperation": "Samarbejde",
-    "subject_media": "Medier"
+    "subject_media": "Medie"
   }
 }

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af ledelsen i offentlige, private og non-profit institutioner."
+    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af styring i offentlige, korporative og almennyttige institutioner."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,7 +17,7 @@
     "login": "Log ind",
     "logout": "Log ud",
     "privacyPolicy": "Privatlivspolitik",
-    "termsOfUse": "Vilkår for brug",
+    "termsOfUse": "Betingelser for brug",
     "loading": "Indlæser...",
     "error": "Der opstod en fejl",
     "save": "Gem",
@@ -28,16 +28,16 @@
     "close": "Luk",
     "search": "Søg",
     "download": "Download",
-    "verified": "Bekræftet",
+    "verified": "Verificeret",
     "active": "Aktiv",
     "inactive": "Inaktiv"
   },
   "Navigation": {
-    "home": "Forside",
+    "home": "Startside",
     "ratings": "Ratings",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om Fonden",
+    "about": "Om Instituttet",
     "contact": "Kontakt",
     "dashboard": "Dashboard",
     "settings": "Indstillinger"
@@ -50,10 +50,10 @@
     "password_label": "Adgangskode",
     "forgot_password": "Glemt din adgangskode?",
     "no_account": "Har du ikke en konto?",
-    "register": "Opret en konto"
+    "register": "Tilmeld dig"
   },
   "Errors": {
-    "404_title": "Siden blev ikke fundet",
+    "404_title": "Side blev ikke fundet",
     "404_description": "Siden du søger efter eksisterer ikke eller er blevet flyttet.",
     "500_title": "Serverfejl",
     "500_description": "Der opstod en uventet fejl. Prøv igen senere.",
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Alle rettigheder forbeholdt",
     "privacy": "Privatlivspolitik",
-    "terms": "Vilkår for brug",
+    "terms": "Betingelser for brug",
     "contact": "Kontakt"
   }
 }

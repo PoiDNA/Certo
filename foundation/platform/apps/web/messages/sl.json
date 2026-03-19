@@ -1,31 +1,31 @@
 {
   "Metadata": {
     "title": "Fundacija Certo Governance Institute",
-    "description": "Neodvisna bonitetna agencija, ki ocenjuje kakovost upravljanja v javnem, korporativnem, zdravstvenem in obrambnem sektorju."
+    "description": "Neodvisen organ za ocenjevanje, ki ocenjuje kakovost upravljanja v javnem, korporativnem, medicinskem in obrambnem sektorju."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prva svetovana bonitetna agencija, katere ocene so kriptografski artefakti postopka — ne mnenja. Vsaka odločitev o oceni je zasidrana zunaj lastne infrastrukture, preverjiva brez povezave do interneta in javno revidibi.",
+    "description": "Certo je prva svetovalna agencija za ocenjevanje, katere ocene so kriptografski artefakti procesa — ne mnenja. Vsaka odločitev o ocenjevanju je zasidrana izven lastne infrastrukture, preverljiva brez povezave in javno pregledljiva.",
     "hero_cta_primary": "Preveri ocene",
-    "hero_cta_secondary": "Več informacij",
-    "section_ratings_title": "Najnovejše ocene Certo",
-    "section_reports_title": "Analize in poročila",
+    "hero_cta_secondary": "Izvedite več",
+    "section_ratings_title": "Najnovejše Certo ocene",
+    "section_reports_title": "Analize in Poročila",
     "section_about_title": "O Fundaciji"
   },
   "Ratings": {
-    "title": "Ocene Certo",
+    "title": "Certo ocene",
     "subtitle": "Ocene kakovosti upravljanja institucij",
     "search_placeholder": "Iskanje institucije...",
     "filter_sector": "Sektor",
     "sector_public": "Javni",
     "sector_corporate": "Korporativni",
-    "sector_medical": "Zdravstveni",
-    "sector_defense": "Obrambni",
+    "sector_medical": "Medicinski",
+    "sector_defense": "Obramben",
     "sector_ngo": "Nevladni",
     "rating_valid_until": "Ocena veljavna do",
     "rating_issued": "Datum izdaje",
     "no_results": "Ni rezultatov",
-    "view_profile": "Oglej si profil"
+    "view_profile": "Poglej profil"
   },
   "Nav": {
     "ratings": "Ocene",
@@ -35,37 +35,39 @@
     "documents": "Dokumenti",
     "pipeline": "Pipeline",
     "dashboard": "Nadzorna plošča",
-    "contact": "Stik"
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "Fundacija Certo Governance Institute © {year}",
-    "privacy": "Politika zasebnosti",
-    "terms": "Pogoji uporabe",
-    "contact": "Stik"
+    "privacy": "Politika Zasebnosti",
+    "terms": "Pogoji Uporabe",
+    "contact": "Kontakt"
   },
   "About": {
     "title": "O Fundaciji Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Gradnja kulture dobrega upravljanja preko neodvisnega ocenjevanja in spodbujanja standardov upravljanja v Sloveniji in Evropi.",
+    "mission_text": "Gradnja kulture dobrega upravljanja z neodvisno ocenitvijo in spodbujanjem standardov upravljanja v Sloveniji in Evropi.",
     "independence_title": "Neodvisnost",
-    "independence_text": "Fundacija je neodvisna od subjektov, ki se ocenjujejo, javnih oblasti in komercialni interesi.",
+    "independence_text": "Fundacija je neodvisna od ocenjenih subjektov, javnih oblasti in komercialni interesi.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Ocene Certo temeljijo na strogi metodologiji, ki se opira na standarde ISO in smernice EU."
+    "methodology_text": "Certo ocene temeljijo na strogi metodologiji, ki temelji na standardih ISO in smernicah EU."
   },
   "Contact": {
-    "title": "Stik",
+    "title": "Kontakt",
     "subtitle": "Fundacija Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "label_address": "Naslov",
+    "label_email": "Email",
+    "address": "00-124 Varšava, Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Piši nam",
-    "form_name": "Ime in priimek",
+    "form_title": "Napišite nam",
+    "form_name": "Ime in Priimek",
     "form_email": "Naslov e-pošte",
     "form_subject": "Zadeva",
     "form_message": "Sporočilo",
     "form_submit": "Pošlji sporočilo",
     "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo čim prej.",
-    "subject_general": "Splošna povpraševanja",
-    "subject_rating": "Ocena Certo",
+    "subject_general": "Splošno vprašanje",
+    "subject_rating": "Certo ocena",
     "subject_methodology": "Metodologija",
     "subject_cooperation": "Sodelovanje",
     "subject_media": "Mediji"

@@ -14,7 +14,7 @@
     "ecosystem": "Certo Ecosystem",
     "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions",
+    "terms": "Terms of Service",
     "contact": "Contact"
   },
   "Home": {
@@ -27,19 +27,19 @@
     "area_defense": "Defense",
     "area_finance": "Finance",
     "area_education": "Education",
-    "form_title": "Leave your contact details so we can match you with the right advisor in the field of",
+    "form_title": "Leave your contact details so we can match you with the right advisor from the area of",
     "form_name": "Full Name",
-    "form_email": "Email Address (business)",
+    "form_email": "Email Address (work)",
     "form_org": "Organization Name / Position",
     "form_submit": "Submit Inquiry",
     "experts_headline": "Our experts help\nmaintain and strengthen\nyour Certo Rating.",
     "experts_description": "Accredited advisors with years of experience in optimizing governance processes for strategic institutions."
   },
   "Legal": {
-    "back": "Back to Home",
+    "back": "Back to homepage",
     "last_updated": "Last updated: March 2026",
     "privacy_title": "Privacy Policy",
-    "terms_title": "Terms and Conditions"
+    "terms_title": "Terms of Service"
   },
   "FindAdvisor": {
     "title": "Find a Certo Advisor",
@@ -50,13 +50,13 @@
     "need_training": "Training and workshops",
     "need_rating": "Rating preparation",
     "region_label": "Region",
-    "submit": "Search for advisor"
+    "submit": "Search advisors"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",
     "specialization": "Specialization",
     "sectors": "Sectors",
-    "contact_advisor": "Contact",
+    "contact_advisor": "Get in Touch",
     "view_profile": "View Profile"
   },
   "Contact": {
@@ -72,7 +72,7 @@
     "form_subject": "Subject",
     "form_message": "Message",
     "form_submit": "Send Message",
-    "form_success": "Message sent successfully. We will respond as soon as possible.",
+    "form_success": "Your message has been sent. We will respond as soon as possible.",
     "subject_general": "General Inquiry",
     "subject_advisory": "Advisory",
     "subject_accreditation": "Advisor Accreditation",

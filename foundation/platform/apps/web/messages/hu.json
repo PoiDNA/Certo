@@ -1,30 +1,30 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Alapítvány",
-    "description": "Független minősítő szervezet, amely értékeli a kormányzási minőséget a közszférában, a vállalati szektorban, az egészségügyben és a védelmi szektorban."
+    "description": "Független minősítő szerv, amely a közszféra, a vállalati, az egészségügyi és a védelmi szektor governance-ának minőségét értékeli."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "A Certo az első olyan minősítő ügynökség a világon, amelynek minősítéseit kriptográfiai műtermékek képezik a folyamat — nem pedig vélemények. Minden minősítési döntés az infrastruktúráján kívül van rögzítve, offline ellenőrizhető és nyilvánosan auditálható.",
+    "description": "A Certo az első olyan minősítő ügynökség a világon, amelynek minősítései a folyamat kriptográfiai artifaktjai — nem vélemények. Minden minősítési döntés saját infrastruktúráján kívül van rögzítve, offline-ban ellenőrizhető és nyilvánosan auditálható.",
     "hero_cta_primary": "Minősítések megtekintése",
-    "hero_cta_secondary": "Tudjon meg többet",
+    "hero_cta_secondary": "További információ",
     "section_ratings_title": "Legújabb Certo Minősítések",
     "section_reports_title": "Elemzések és Jelentések",
-    "section_about_title": "Az Alapítvány Bemutatása"
+    "section_about_title": "Az Alapítvány Rövid Bemutatása"
   },
   "Ratings": {
     "title": "Certo Minősítések",
-    "subtitle": "Intézmények kormányzási minőségének értékelése",
-    "search_placeholder": "Intézmények keresése...",
+    "subtitle": "Intézmények governance-ának minőségét értékelő besorolások",
+    "search_placeholder": "Intézmény keresése...",
     "filter_sector": "Szektor",
     "sector_public": "Közszféra",
     "sector_corporate": "Vállalati",
     "sector_medical": "Egészségügyi",
     "sector_defense": "Védelmi",
     "sector_ngo": "Nonprofit",
-    "rating_valid_until": "Minősítés érvényes",
-    "rating_issued": "Kibocsátás dátuma",
-    "no_results": "Nincs találat",
+    "rating_valid_until": "Minősítés érvényes:",
+    "rating_issued": "Kiadás dátuma",
+    "no_results": "Nincsenek találatok",
     "view_profile": "Profil megtekintése"
   },
   "Nav": {
@@ -46,24 +46,26 @@
   "About": {
     "title": "A Certo Governance Institute Alapítványról",
     "mission_title": "Misszió",
-    "mission_text": "A jó kormányzási kultúra kialakítása független értékelés és a governance standardok előmozdítása révén Lengyelországban és Európában.",
+    "mission_text": "A jó governance kultúrájának kialakítása a független értékelés és a governance-standardok előmozdítása révén Lengyelországban és Európában.",
     "independence_title": "Függetlenség",
-    "independence_text": "Az Alapítvány független az értékelt szervezetektől, a közhatalmak szerveitől és kereskedelmi érdekektől.",
+    "independence_text": "Az Alapítvány független az értékelt alanyoktól, a közhatalom szerveitől és a kereskedelmi érdekeltségektől.",
     "methodology_title": "Módszertan",
-    "methodology_text": "A Certo minősítések szigorú módszertanon alapulnak, amely az ISO standardokra és az EU iránymutatásokra épül."
+    "methodology_text": "A Certo Minősítések szigorú, az ISO-standardok és az EU-irányelvek alapján készített módszertanon alapulnak."
   },
   "Contact": {
     "title": "Kapcsolat",
     "subtitle": "Certo Governance Institute Alapítvány",
+    "label_address": "Cím",
+    "label_email": "E-mail",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Írjon nekünk",
     "form_name": "Név",
-    "form_email": "Email cím",
+    "form_email": "E-mail cím",
     "form_subject": "Tárgy",
     "form_message": "Üzenet",
     "form_submit": "Üzenet küldése",
-    "form_success": "Az üzenet sikeresen elküldve. Válaszolunk olyan gyorsan, ahogy csak lehetséges.",
+    "form_success": "Az üzenet sikeresen elküldve. Leggyorsabban tudjuk időben válaszolunk.",
     "subject_general": "Általános megkeresés",
     "subject_rating": "Certo Minősítés",
     "subject_methodology": "Módszertan",

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, corporatives et non gouvernementales."
+    "description": "Organe indépendant de notation évaluant la qualité de la gouvernance des institutions publiques, privées et du secteur non gouvernemental."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -19,7 +19,7 @@
     "privacyPolicy": "Politique de confidentialité",
     "termsOfUse": "Conditions d'utilisation",
     "loading": "Chargement...",
-    "error": "Une erreur s'est produite",
+    "error": "Une erreur est survenue",
     "save": "Enregistrer",
     "cancel": "Annuler",
     "confirm": "Confirmer",
@@ -48,7 +48,7 @@
     "login_with_google": "Se connecter via Google",
     "email_label": "Adresse e-mail",
     "password_label": "Mot de passe",
-    "forgot_password": "Mot de passe oublié ?",
+    "forgot_password": "Vous avez oublié votre mot de passe ?",
     "no_account": "Vous n'avez pas de compte ?",
     "register": "S'inscrire"
   },

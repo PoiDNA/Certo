@@ -1,16 +1,16 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute fondacija",
-    "description": "Nepriklausomas reitingų organas, vertinantis vadybos kokybę viešajame, korporatyviniame, medicininių ir gynybos sektoriuose."
+    "title": "Certo Governance Institute",
+    "description": "Nepriklausoma reitingų agentūra, vertinanti vadybos kokybę viešajame, korporatyviniame, mediciniame ir gynybos sektoriuose."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai — ne nuomonės. Kiekvienas reitingų sprendimas yra uždengtas už savos infrastruktūros ribų, tikrinamasis neprisijungus internetu ir viešai audituojamas.",
+    "description": "Certo yra pirmoji pasaulyje reitingų agentūra, kurios reitingai yra kriptografiniai proceso artefaktai, o ne nuomonės. Kiekvienas reitingo sprendimas yra įsitvirtinęs už jos pačios infrastruktūros ribų, tikrinamasis neprisijungus ir viešai audituojamas.",
     "hero_cta_primary": "Peržiūrėti reitingus",
     "hero_cta_secondary": "Sužinoti daugiau",
     "section_ratings_title": "Naujausi Certo reitingai",
     "section_reports_title": "Analizės ir ataskaitai",
-    "section_about_title": "Apie fondaciją"
+    "section_about_title": "Apie fondą"
   },
   "Ratings": {
     "title": "Certo reitingai",
@@ -30,32 +30,34 @@
   "Nav": {
     "ratings": "Reitingai",
     "methodology": "Metodologija",
-    "about": "Apie fondaciją",
+    "about": "Apie fondą",
     "login": "Prisijungti",
     "documents": "Dokumentai",
     "pipeline": "Pipeline",
-    "dashboard": "Suvestinė",
-    "contact": "Kontaktas"
+    "dashboard": "Saugykla",
+    "contact": "Kontaktai"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute fondacija © {year}",
+    "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimosi sąlygos",
-    "contact": "Kontaktas"
+    "terms": "Naudojimo sąlygos",
+    "contact": "Kontaktai"
   },
   "About": {
-    "title": "Apie Certo Governance Institute fondaciją",
+    "title": "Apie Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Kurti gerų vadybos praktik kultūrą per nepriklausomą vertinimą ir valdymo standartų skatinimą Lietuvoje ir Europoje.",
+    "mission_text": "Kurti gerą vadybos kultūrą per nepriklausomą vertinimą ir governance standartų skatinimą Lietuvoje ir Europoje.",
     "independence_title": "Nepriklausomumas",
-    "independence_text": "Fondacija yra nepriklausoma nuo vertintų subjektų, viešosios valdžios organų ir komercinių interesų.",
+    "independence_text": "Fondas yra nepriklausomas nuo vertintų subjektų, viešosios valdžios organų ir komercinių interesų.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo reitingai pagrįsti griežta metodologija, paremta ISO standartais ir ES gairėmis."
+    "methodology_text": "Certo reitingai pagrįsti griežta metodologija, paremta ISO standartais ir ES gaidomis."
   },
   "Contact": {
-    "title": "Kontaktas",
-    "subtitle": "Certo Governance Institute fondacija",
-    "address": "00-124 Varšuva, Rondo ONZ g. 1",
+    "title": "Kontaktai",
+    "subtitle": "Certo Governance Institute",
+    "label_address": "Adresas",
+    "label_email": "El. paštas",
+    "address": "00-124 Varšuva, pl. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Parašykite mums",
     "form_name": "Vardas ir pavardė",
@@ -63,9 +65,9 @@
     "form_subject": "Tema",
     "form_message": "Žinutė",
     "form_submit": "Siųsti žinutę",
-    "form_success": "Žinutė išsiųsta. Atsakysime kuo greičiau.",
-    "subject_general": "Bendras klausimas",
-    "subject_rating": "Rating Certo",
+    "form_success": "Žinutė išsiųsta. Atsakysime kaip įmanoma greičiau.",
+    "subject_general": "Bendra užklausa",
+    "subject_rating": "Certo reitingas",
     "subject_methodology": "Metodologija",
     "subject_cooperation": "Bendradarbiavimas",
     "subject_media": "Medija"

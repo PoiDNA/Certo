@@ -1,21 +1,21 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Onafhankelijk ratingbureau dat de kwaliteit van bestuur in de publieke, bedrijfs-, medische en defensiesector beoordeelt."
+    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van bestuur in de publieke, bedrijfs-, medische en defensiesector evalueert."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo is 's werelds eerste ratingbureau waarvan de ratings cryptografische artefacten van het proces zijn — geen meningen. Elke ratingbeslissing is verankerd buiten de eigen infrastructuur, offline verifieerbaar en openbaar auditabel.",
+    "description": "Certo is het eerste ratingbureau ter wereld waarvan de ratings cryptografische artefacten van het proces zijn — geen opinies. Elke ratingbeslissing is verankerd buiten de eigen infrastructuur, offline verifieerbaar en publiekelijk auditabel.",
     "hero_cta_primary": "Bekijk ratings",
     "hero_cta_secondary": "Meer informatie",
-    "section_ratings_title": "Nieuwste Certo Ratings",
+    "section_ratings_title": "Recente Certo Ratings",
     "section_reports_title": "Analyses en Rapporten",
-    "section_about_title": "Over de Stichting"
+    "section_about_title": "Over het Instituut"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Beoordelingen van de kwaliteit van bestuur van instellingen",
-    "search_placeholder": "Zoek instelling...",
+    "subtitle": "Evaluaties van de kwaliteit van bestuur van instellingen",
+    "search_placeholder": "Zoeken naar instelling...",
     "filter_sector": "Sector",
     "sector_public": "Publiek",
     "sector_corporate": "Bedrijfs",
@@ -23,14 +23,14 @@
     "sector_defense": "Defensie",
     "sector_ngo": "Non-gouvernementeel",
     "rating_valid_until": "Rating geldig tot",
-    "rating_issued": "Uitgiftedatum",
+    "rating_issued": "Datum van uitgifte",
     "no_results": "Geen resultaten gevonden",
-    "view_profile": "Bekijk profiel"
+    "view_profile": "Profiel weergeven"
   },
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Methodologie",
-    "about": "Over ons",
+    "about": "Over het Instituut",
     "login": "Inloggen",
     "documents": "Documenten",
     "pipeline": "Pipeline",
@@ -46,24 +46,26 @@
   "About": {
     "title": "Over Certo Governance Institute",
     "mission_title": "Missie",
-    "mission_text": "Het opbouwen van een cultuur van goed bestuur door middel van onafhankelijke beoordeling en promotie van governance-standaarden in Polen en Europa.",
+    "mission_text": "Het opbouwen van een cultuur van goed bestuur door middel van onafhankelijke evaluatie en bevordering van governance-standaarden in Polen en Europa.",
     "independence_title": "Onafhankelijkheid",
-    "independence_text": "De Stichting is onafhankelijk van de beoordeelde instellingen, overheidsinstanties en commerciële belangen.",
+    "independence_text": "Het Instituut is onafhankelijk van de beoordeelde entiteiten, openbare autoriteiten en commerciële belangen.",
     "methodology_title": "Methodologie",
-    "methodology_text": "Certo Ratings zijn gebaseerd op een rigoureuze methodologie die aansluit bij ISO-standaarden en EU-richtlijnen."
+    "methodology_text": "Certo Ratings zijn gebaseerd op rigoureuze methodologie die is gebaseerd op ISO-standaarden en EU-richtlijnen."
   },
   "Contact": {
     "title": "Contact",
     "subtitle": "Certo Governance Institute",
+    "label_address": "Adres",
+    "label_email": "Email",
     "address": "00-124 Warschau, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Stuur ons een bericht",
-    "form_name": "Naam",
+    "form_name": "Voor- en achternaam",
     "form_email": "E-mailadres",
     "form_subject": "Onderwerp",
     "form_message": "Bericht",
     "form_submit": "Bericht versturen",
-    "form_success": "Uw bericht is verzonden. We nemen zo snel mogelijk contact met u op.",
+    "form_success": "Uw bericht is verzonden. Wij zullen zo snel mogelijk antwoorden.",
     "subject_general": "Algemene vraag",
     "subject_rating": "Certo Rating",
     "subject_methodology": "Methodologie",

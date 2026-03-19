@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nepriklausomas reitingavimo organas, vertinantis viešųjų institucijų, korporacijų ir nevyriausybinių organizacijų valdymo kokybę."
+    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporacinių ir nevyriausybinių institucijų valdymo kokybę."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -25,21 +25,21 @@
     "confirm": "Patvirtinti",
     "back": "Grįžti",
     "next": "Toliau",
-    "close": "Uždaryti",
-    "search": "Paieška",
+    "close": "Užverti",
+    "search": "Ieškoti",
     "download": "Atsisiųsti",
-    "verified": "Patvirtintas",
+    "verified": "Patikrintas",
     "active": "Aktyvus",
     "inactive": "Neaktyvus"
   },
   "Navigation": {
-    "home": "Pradžia",
+    "home": "Pagrindinis puslapis",
     "ratings": "Reitingai",
     "reports": "Ataskaitos",
     "analysis": "Analizės",
     "about": "Apie Fondą",
     "contact": "Kontaktai",
-    "dashboard": "Vadybinis skydelis",
+    "dashboard": "Panelė",
     "settings": "Nustatymai"
   },
   "Auth": {
@@ -50,14 +50,14 @@
     "password_label": "Slaptažodis",
     "forgot_password": "Pamiršai slaptažodį?",
     "no_account": "Neturi paskyros?",
-    "register": "Užsiregistruoti"
+    "register": "Registruotis"
   },
   "Errors": {
     "404_title": "Puslapis nerastas",
-    "404_description": "Ieškomas puslapis neegzistuoja arba buvo perkeltas.",
+    "404_description": "Puslapis, kurį ieškote, neegzistuoja arba buvo perkeltas.",
     "500_title": "Serverio klaida",
-    "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
-    "unauthorized": "Prieiga uždrausta. Prisijunkite, norėdami tęsti."
+    "500_description": "Įvyko nenumatyta klaida. Bandykite vėliau.",
+    "unauthorized": "Prieiga uždrausta. Prisijunkite, kad tęstumėte."
   },
   "Footer": {
     "rights": "Visos teisės saugomos",

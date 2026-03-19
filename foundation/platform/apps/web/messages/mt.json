@@ -1,72 +1,74 @@
 {
   "Metadata": {
-    "title": "Fundazzjoni Certo Governance Institute",
-    "description": "Aġenzija indipendenti ta' rating li tevalwa l-kwalità tal-governanza fis-settur pubbliku, korporattiv, mediku u difiżi."
+    "title": "Fundazjoni Certo Governance Institute",
+    "description": "Organu rating indipendenti li jevalwa l-kwalità tal-governanza fis-settur pubbliku, korporattiv, mediku u tad-difiza."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo hija l-ewwel aġenzija ta' rating fid-dinja li r-ratings tagħha huma artefatti kriptografiċi tal-proċess — mhux opinjonijiet. Kull deċiżjoni ta' rating hija ankrata barra mill-infrastruttura tagħha stess, verifikabbli offline u pubblikament auditable.",
+    "description": "Certo hija l-ewwel aġenzija rating fid-dinja li r-ratings tagħha huma artefatti kriptografiċi tal-proċess — mhux opinjonijiet. Kull deċiżjoni rating hija radjata barra mill-infrastruttura tagħha stess, verifikabbli offline u pubblikament audittabbli.",
     "hero_cta_primary": "Iċċekkja r-ratings",
-    "hero_cta_secondary": "Iftaħam aktar",
-    "section_ratings_title": "L-Aħħar Ratings ta' Certo",
+    "hero_cta_secondary": "Tgħallem aktar",
+    "section_ratings_title": "L-Aqħar Ratings ta' Certo",
     "section_reports_title": "Analiżi u Rapporti",
-    "section_about_title": "Dwar il-Fundazzjoni"
+    "section_about_title": "Dwar il-Fundazjoni"
   },
   "Ratings": {
     "title": "Ratings ta' Certo",
-    "subtitle": "Evaluazzjonijiet tal-kwalità tal-governanza tal-istituzzjonijiet",
+    "subtitle": "Evalwazzjonijiet tal-kwalità tal-governanza tal-istituzzjonijiet",
     "search_placeholder": "Fittex istituzzjoni...",
     "filter_sector": "Settur",
     "sector_public": "Pubbliku",
     "sector_corporate": "Korporattiv",
     "sector_medical": "Mediku",
-    "sector_defense": "Difiżi",
+    "sector_defense": "Tad-Difiza",
     "sector_ngo": "Mhux Governattiv",
     "rating_valid_until": "Rating validu sa",
-    "rating_issued": "Data tal-ħruġ",
-    "no_results": "L-ebda riżultati misjuba",
+    "rating_issued": "Data ta' Ħruġ",
+    "no_results": "Ebda riżultat misjuba",
     "view_profile": "Ara l-profil"
   },
   "Nav": {
     "ratings": "Ratings",
-    "methodology": "Metodolohija",
-    "about": "Dwar il-Fundazzjoni",
-    "login": "Dħol",
+    "methodology": "Metodologija",
+    "about": "Dwar il-Fundazjoni",
+    "login": "Oħloq",
     "documents": "Dokumenti",
     "pipeline": "Pipeline",
-    "dashboard": "Panel",
+    "dashboard": "Pannell",
     "contact": "Kontatt"
   },
   "Footer": {
-    "copyright": "Fundazzjoni Certo Governance Institute © {year}",
+    "copyright": "Fundazjoni Certo Governance Institute © {year}",
     "privacy": "Politika tal-Privatezza",
     "terms": "Kundizzjonijiet ta' Użu",
     "contact": "Kontatt"
   },
   "About": {
-    "title": "Dwar il-Fundazzjoni Certo Governance Institute",
+    "title": "Dwar il-Fundazjoni Certo Governance Institute",
     "mission_title": "Missjoni",
-    "mission_text": "Bini ta' kultura ta' governanza tajba permezz ta' valutazzjoni indipendenti u promozzjoni ta' standards ta' governance fil-Polonja u l-Ewropa.",
+    "mission_text": "Binjaħ kultura tal-governanza tajba permezz ta' evalwazzjoni indipendenti u promozzjoni tal-istandards ta' governanza fil-Pollanja u l-Ewropa.",
     "independence_title": "Indipendenza",
-    "independence_text": "Il-Fundazzjoni hija indipendenti mill-entitajiet li qed jiġu evaluati, minn organi tal-awtorità pubblika u minn interessi kummerċjali.",
-    "methodology_title": "Metodolohija",
-    "methodology_text": "Ir-Ratings ta' Certo huma bbażati fuq metodolohija rigunrawsa bbażata fuq standards ISO u gwidi ta' l-UE."
+    "independence_text": "Il-Fundazjoni hija indipendenti mill-entitajiet evalwati, l-organi tal-awtorità pubblika u l-interessi kummerċjali.",
+    "methodology_title": "Metodologija",
+    "methodology_text": "Ir-Ratings ta' Certo huma bbażati fuq metodologija rigoruża bbażata fuq l-istandards ISO u l-gwidi tal-UE."
   },
   "Contact": {
     "title": "Kontatt",
-    "subtitle": "Fundazzjoni Certo Governance Institute",
-    "address": "00-124 Varsjovja, ul. Rondo ONZ 1",
+    "subtitle": "Fundazjoni Certo Governance Institute",
+    "label_address": "Indirizz",
+    "label_email": "Email",
+    "address": "00-124 Varsavja, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Iktibrilna",
+    "form_title": "Iktibna",
     "form_name": "Isem u Kunjom",
-    "form_email": "Indirizz tal-email",
+    "form_email": "Indirizz tal-Email",
     "form_subject": "Suġġett",
     "form_message": "Messaġġ",
-    "form_submit": "Ibgħat il-messaġġ",
-    "form_success": "Il-messaġġ ġie mibgħut. Se nwieġbuk malajr kemm jista'.",
-    "subject_general": "Mistoqsija ġenerali",
+    "form_submit": "Ibgħat Messaġġ",
+    "form_success": "Il-messaġġ tiegħek ntbagħat. Se nirrispondu malajr kemm jista' jkun.",
+    "subject_general": "Mistoqsija Ġenerali",
     "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodolohija",
+    "subject_methodology": "Metodologija",
     "subject_cooperation": "Kooperazzjoni",
     "subject_media": "Media"
   }

@@ -1,38 +1,38 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Finden Sie einen Berater",
+    "title": "Certo Consulting — Berater finden",
     "description": "Akkreditierte Certo-Berater. Corporate Governance und Compliance."
   },
   "Nav": {
     "advisors": "Berater",
     "expertise": "Expertise",
-    "login": "Anmelden",
+    "login": "Anmeldung",
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Fachberatung im Bereich Corporate Governance, Compliance und Sicherheit für Marktführer.",
-    "ecosystem": "Certo Ökosystem",
+    "description": "Fachkundig-kompetente Beratung in den Bereichen Corporate Governance, Compliance und Sicherheit für Marktführer.",
+    "ecosystem": "Certo-Ökosystem",
     "accreditation": "Alle Berater sind von der Certo Governance Institute akkreditiert",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Fachberatung\nauf Vorstandsebene.",
-    "hero_subtitle": "Wir verbinden akkreditierte Certo-Berater mit Institutionen, die höchste Standards in Corporate Governance und regulatorischer Compliance erfordern.",
+    "hero_title": "Fachkundig-kompetente Beratung\nauf Vorstandsebene.",
+    "hero_subtitle": "Wir verbinden akkreditierte Certo-Berater mit Institutionen, die höchste Standards in Corporate Governance und regulatorischer Compliance benötigen.",
     "hero_cta": "Experten finden",
     "finder_title": "Ich möchte mit einem Experten sprechen für:",
     "area_health": "Gesundheitswesen",
     "area_local_gov": "Kommunalverwaltung",
-    "area_defense": "Verteidigungswirtschaft",
+    "area_defense": "Verteidigung",
     "area_finance": "Finanzen",
     "area_education": "Bildung",
-    "form_title": "Hinterlassen Sie Ihre Kontaktdaten, damit wir den passenden Berater für Ihren Bereich auswählen können",
-    "form_name": "Vor- und Nachname",
-    "form_email": "E-Mail-Adresse (Dienst-E-Mail)",
-    "form_org": "Name der Organisation / Position",
+    "form_title": "Hinterlassen Sie Ihre Kontaktdaten, damit wir den passenden Berater aus dem Bereich finden können",
+    "form_name": "Name und Vorname",
+    "form_email": "E-Mail-Adresse (dienstlich)",
+    "form_org": "Name der Organisation / Funktion",
     "form_submit": "Anfrage absenden",
-    "experts_headline": "Unsere Experten helfen dabei,\nIhr Certo Rating zu erhalten\nund zu verbessern.",
+    "experts_headline": "Unsere Experten helfen,\nIhren Certo Rating\nzu erhalten und zu stärken.",
     "experts_description": "Akkreditierte Berater mit langjähriger Erfahrung in der Optimierung von Governance-Prozessen für strategische Institutionen."
   },
   "Legal": {
@@ -42,7 +42,7 @@
     "terms_title": "Nutzungsbedingungen"
   },
   "FindAdvisor": {
-    "title": "Finden Sie einen Certo-Berater",
+    "title": "Certo-Berater finden",
     "sector_label": "Sektor Ihrer Institution",
     "need_label": "Was benötigen Sie?",
     "need_audit": "Governance-Audit",
@@ -56,24 +56,26 @@
     "accredited_by": "Akkreditiert durch Certo",
     "specialization": "Spezialisierung",
     "sectors": "Sektoren",
-    "contact_advisor": "Kontakt aufnehmen",
-    "view_profile": "Profil ansehen"
+    "contact_advisor": "Kontaktieren",
+    "view_profile": "Profil anzeigen"
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
+    "label_address": "Adresse",
+    "label_email": "E-Mail",
     "address": "02-566 Warschau, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Schreiben Sie uns",
-    "form_name": "Vor- und Nachname",
+    "form_name": "Name und Vorname",
     "form_email": "E-Mail-Adresse",
     "form_subject": "Betreff",
     "form_message": "Nachricht",
     "form_submit": "Nachricht absenden",
-    "form_success": "Ihre Nachricht wurde versendet. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "form_success": "Ihre Nachricht wurde versendet. Wir antworten schnellstmöglich.",
     "subject_general": "Allgemeine Anfrage",
     "subject_advisory": "Beratung",
-    "subject_accreditation": "Akkreditierung von Beratern",
-    "subject_cooperation": "Kooperation"
+    "subject_accreditation": "Beraterakkredit­ierung",
+    "subject_cooperation": "Zusammenarbeit"
   }
 }

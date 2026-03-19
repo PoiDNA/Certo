@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Find Advisor",
-    "description": "Akkrediterede Certo-rådgivere. Corporate governance og compliance."
+    "description": "Akkrediterede Certo-rådgivere. Corporate Governance og compliance."
   },
   "Nav": {
     "advisors": "Rådgivere",
@@ -10,47 +10,47 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Ekspert rådgivning inden for corporate governance, compliance og sikkerhed for markedsledere.",
+    "description": "Ekspertråd inden for corporate governance, compliance og sikkerhed til markedsledere.",
     "ecosystem": "Certo-økosystemet",
     "accreditation": "Alle rådgivere er akkrediteret af Certo Governance Institute",
     "privacy": "Privatlivspolitik",
-    "terms": "Vilkår",
+    "terms": "Vilkår og betingelser",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Ekspert rådgivning\npå bestyrelsesniveau.",
-    "hero_subtitle": "Vi forbinder akkrediterede Certo-rådgivere med institutioner, der kræver de højeste standarder for corporate governance og regulatorisk compliance.",
-    "hero_cta": "Find ekspert",
+    "hero_title": "Ekspertråd\npå bestyrelsesniveau.",
+    "hero_subtitle": "Vi forbinder akkrediterede Certo-rådgivere med institutioner, der kræver de højeste standarder for corporate governance og lovgivningsmæssig compliance.",
+    "hero_cta": "Find en ekspert",
     "finder_title": "Jeg vil gerne tale med en ekspert inden for:",
-    "area_health": "Sundhedssektoren",
+    "area_health": "Sundhedsvæsen",
     "area_local_gov": "Lokale myndigheder",
     "area_defense": "Forsvar",
-    "area_finance": "Finans",
+    "area_finance": "Finanser",
     "area_education": "Uddannelse",
-    "form_title": "Lad os få dine kontaktoplysninger, så vi kan matche dig med den rigtige rådgiver fra området",
+    "form_title": "Lad os vide, så vi kan matche dig med den rette rådgiver inden for",
     "form_name": "Fuldt navn",
-    "form_email": "E-mailadresse (arbejde)",
-    "form_org": "Organisationsnavn / Titel",
-    "form_submit": "Send forespørgsel",
-    "experts_headline": "Vores eksperter hjælper\nmed at vedligeholde og styrke\nCerto Rating.",
+    "form_email": "Email-adresse (arbejds-)",
+    "form_org": "Organisationens navn / Stilling",
+    "form_submit": "Indsend forespørgsel",
+    "experts_headline": "Vores eksperter hjælper med at\nopretholde og styrke\ndit Certo Rating.",
     "experts_description": "Akkrediterede rådgivere med mange års erfaring i optimering af governance-processer for strategiske institutioner."
   },
   "Legal": {
-    "back": "Tilbage til forsiden",
-    "last_updated": "Sidst opdateret: Marts 2026",
+    "back": "Tilbage til startside",
+    "last_updated": "Senest opdateret: Marts 2026",
     "privacy_title": "Privatlivspolitik",
     "terms_title": "Vilkår for brug"
   },
   "FindAdvisor": {
-    "title": "Find Certo-rådgiver",
+    "title": "Find en Certo-rådgiver",
     "sector_label": "Din institutions sektor",
     "need_label": "Hvad har du brug for?",
-    "need_audit": "Governance audit",
+    "need_audit": "Governance-revision",
     "need_advisory": "Strategisk rådgivning",
-    "need_training": "Uddannelse og workshops",
+    "need_training": "Træning og workshops",
     "need_rating": "Forberedelse til rating",
     "region_label": "Region",
-    "submit": "Søg efter rådgiver"
+    "submit": "Søg rådgiver"
   },
   "Advisor": {
     "accredited_by": "Akkrediteret af Certo",
@@ -62,15 +62,17 @@
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
+    "label_address": "Adresse",
+    "label_email": "Email",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Skriv til os",
     "form_name": "Fuldt navn",
-    "form_email": "E-mailadresse",
+    "form_email": "Email-adresse",
     "form_subject": "Emne",
     "form_message": "Besked",
     "form_submit": "Send besked",
-    "form_success": "Beskeden er sendt. Vi vender tilbage så hurtigt som muligt.",
+    "form_success": "Besked sendt. Vi vender tilbage så hurtigt som muligt.",
     "subject_general": "Generel forespørgsel",
     "subject_advisory": "Rådgivning",
     "subject_accreditation": "Rådgiverakkreditering",

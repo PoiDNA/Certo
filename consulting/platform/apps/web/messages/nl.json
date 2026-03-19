@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Een Adviseur Vinden",
-    "description": "Geaccrediteerde adviseurs van Certo. Corporate Governance en compliance."
+    "title": "Certo Consulting — Vind een Adviseur",
+    "description": "Geaccrediteerde Certo-adviseurs. Corporate governance en compliance."
   },
   "Nav": {
     "advisors": "Adviseurs",
@@ -10,29 +10,29 @@
     "contact": "Contact"
   },
   "Footer": {
-    "description": "Deskundig advies op het gebied van corporate governance, compliance en veiligheid voor marktleiders.",
-    "ecosystem": "Certo-ecosysteem",
-    "accreditation": "Alle adviseurs zijn geaccrediteerd door de Certo Governance Institute Foundation",
+    "description": "Deskundige advisering op het gebied van corporate governance, compliance en veiligheid voor marktleiders.",
+    "ecosystem": "Certo Ecosysteem",
+    "accreditation": "Alle adviseurs zijn geaccrediteerd door de Certo Governance Institute",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden",
     "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Deskundig advies\nop bestuursniveau.",
-    "hero_subtitle": "Wij verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste standaarden van corporate governance en regelgeving compliance vereisen.",
+    "hero_title": "Deskundige advisering\nop bestuursniveau.",
+    "hero_subtitle": "We verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor corporate governance en regelgevingsnavolging vereisen.",
     "hero_cta": "Vind een expert",
-    "finder_title": "Ik wil met een expert spreken op het gebied van:",
+    "finder_title": "Ik wil graag spreken met een specialist in:",
     "area_health": "Gezondheidszorg",
-    "area_local_gov": "Lokale overheid",
+    "area_local_gov": "Lokale overheden",
     "area_defense": "Defensie",
     "area_finance": "Financiën",
     "area_education": "Onderwijs",
-    "form_title": "Laat uw contactgegevens achter zodat wij een geschikte adviseur uit het volgende gebied kunnen selecteren",
+    "form_title": "Laat uw contactgegevens achter, zodat wij u kunnen koppelen aan de juiste adviseur uit het gebied",
     "form_name": "Naam",
     "form_email": "E-mailadres (zakelijk)",
     "form_org": "Organisatienaam / Functie",
-    "form_submit": "Verzoek indienen",
-    "experts_headline": "Onze experts helpen\nuw Certo Rating\nte behouden en te versterken.",
+    "form_submit": "Verzend verzoek",
+    "experts_headline": "Onze experts helpen\nuw Certo Rating\nop niveau houden en versterken.",
     "experts_description": "Geaccrediteerde adviseurs met jarenlange ervaring in het optimaliseren van governance-processen voor strategische instellingen."
   },
   "Legal": {
@@ -45,8 +45,8 @@
     "title": "Vind een Certo-adviseur",
     "sector_label": "Sector van uw instelling",
     "need_label": "Wat hebt u nodig?",
-    "need_audit": "Governance-audit",
-    "need_advisory": "Strategisch advies",
+    "need_audit": "Governance audit",
+    "need_advisory": "Strategische advisering",
     "need_training": "Trainingen en workshops",
     "need_rating": "Voorbereiding op rating",
     "region_label": "Regio",
@@ -62,6 +62,8 @@
   "Contact": {
     "title": "Contact",
     "subtitle": "Certo ID PSA",
+    "label_address": "Adres",
+    "label_email": "E-mail",
     "address": "02-566 Warschau, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Stuur ons een bericht",
@@ -69,10 +71,10 @@
     "form_email": "E-mailadres",
     "form_subject": "Onderwerp",
     "form_message": "Bericht",
-    "form_submit": "Bericht verzenden",
-    "form_success": "Uw bericht is verzonden. Wij reageren zo snel mogelijk.",
-    "subject_general": "Algemeen verzoek",
-    "subject_advisory": "Advies",
+    "form_submit": "Verzend bericht",
+    "form_success": "Uw bericht is verzonden. Wij zullen zo snel mogelijk reageren.",
+    "subject_general": "Algemene vraag",
+    "subject_advisory": "Advisering",
     "subject_accreditation": "Accreditatie adviseur",
     "subject_cooperation": "Samenwerking"
   }

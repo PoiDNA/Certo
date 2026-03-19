@@ -1,27 +1,27 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute",
-    "description": "Organo di rating indipendente che valuta la qualità della governance nel settore pubblico, aziendale, medico e della difesa."
+    "title": "Fundazione Certo Governance Institute",
+    "description": "Organismo di rating indipendente che valuta la qualità della governance nel settore pubblico, aziendale, medico e della difesa."
   },
   "Home": {
     "title": "Certo Governance Institute",
     "description": "Certo è la prima agenzia di rating al mondo i cui rating sono artefatti crittografici del processo — non opinioni. Ogni decisione di rating è ancorata al di fuori della propria infrastruttura, verificabile offline e sottoposta a controllo pubblico.",
-    "hero_cta_primary": "Consulta i rating",
+    "hero_cta_primary": "Visualizza i rating",
     "hero_cta_secondary": "Scopri di più",
-    "section_ratings_title": "Ultimi Rating Certo",
+    "section_ratings_title": "Rating Certo più recenti",
     "section_reports_title": "Analisi e Rapporti",
     "section_about_title": "Sulla Fondazione"
   },
   "Ratings": {
     "title": "Rating Certo",
     "subtitle": "Valutazioni della qualità della governance delle istituzioni",
-    "search_placeholder": "Cerca istituzione...",
+    "search_placeholder": "Ricerca istituzioni...",
     "filter_sector": "Settore",
     "sector_public": "Pubblico",
     "sector_corporate": "Aziendale",
     "sector_medical": "Medico",
     "sector_defense": "Difesa",
-    "sector_ngo": "Organizzazioni Non Governative",
+    "sector_ngo": "Organizzazioni non governative",
     "rating_valid_until": "Rating valido fino al",
     "rating_issued": "Data di emissione",
     "no_results": "Nessun risultato trovato",
@@ -38,23 +38,25 @@
     "contact": "Contatti"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute © {year}",
-    "privacy": "Politica sulla Privacy",
-    "terms": "Termini di Utilizzo",
+    "copyright": "Fondazione Certo Governance Institute © {year}",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Condizioni di Utilizzo",
     "contact": "Contatti"
   },
   "About": {
     "title": "Sulla Fondazione Certo Governance Institute",
     "mission_title": "Missione",
-    "mission_text": "Costruire una cultura di buona governance attraverso la valutazione indipendente e la promozione degli standard di governance in Polonia e in Europa.",
+    "mission_text": "Costruire una cultura della buona governance attraverso la valutazione indipendente e la promozione degli standard di governance in Polonia e in Europa.",
     "independence_title": "Indipendenza",
-    "independence_text": "La Fondazione è indipendente dalle istituzioni valutate, dagli organi dell'autorità pubblica e dai interessi commerciali.",
+    "independence_text": "La Fondazione è indipendente dagli enti valutati, dalle autorità pubbliche e dagli interessi commerciali.",
     "methodology_title": "Metodologia",
-    "methodology_text": "I Rating Certo si basano su una metodologia rigorosa fondata su standard ISO e linee guida UE."
+    "methodology_text": "I Rating Certo si basano su una metodologia rigorosa fondata su standard ISO e linee guida dell'UE."
   },
   "Contact": {
     "title": "Contatti",
-    "subtitle": "Certo Governance Institute",
+    "subtitle": "Fondazione Certo Governance Institute",
+    "label_address": "Indirizzo",
+    "label_email": "Email",
     "address": "00-124 Varsavia, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Scrivici",
@@ -63,11 +65,11 @@
     "form_subject": "Oggetto",
     "form_message": "Messaggio",
     "form_submit": "Invia messaggio",
-    "form_success": "Il messaggio è stato inviato. Ti risponderemo il prima possibile.",
-    "subject_general": "Domanda generale",
+    "form_success": "Il messaggio è stato inviato. Ti risponderemo al più presto.",
+    "subject_general": "Richiesta generale",
     "subject_rating": "Rating Certo",
     "subject_methodology": "Metodologia",
-    "subject_cooperation": "Cooperazione",
+    "subject_cooperation": "Collaborazione",
     "subject_media": "Media"
   }
 }

@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Tapatybės patvirtinimas ir compliance institucijoms ir korporacijoms."
+    "description": "Tapatybės patvirtinimas ir atitiktis viešosioms institucijoms ir korporacijoms."
   },
   "Nav": {
     "solutions": "Sprendimai",
     "technology": "Technologija",
-    "foundation": "Certo Fondas",
+    "foundation": "Certo Fondacija",
     "login": "Prisijungti",
     "contact": "Kontaktai"
   },
@@ -19,7 +19,9 @@
   "Contact": {
     "title": "Kontaktai",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Varšuva, Puławska g. 2B",
+    "label_address": "Adresas",
+    "label_email": "El. paštas",
+    "address": "02-566 Varšuva, ul. Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Parašykite mums",
     "form_name": "Vardas ir pavardė",
@@ -28,7 +30,7 @@
     "form_message": "Žinutė",
     "form_submit": "Siųsti žinutę",
     "form_success": "Žinutė išsiųsta. Atsakysime kuo greičiau.",
-    "subject_general": "Bendrasis klausimas",
+    "subject_general": "Bendras klausimas",
     "subject_implementation": "Diegimas",
     "subject_technical": "Techninis palaikymas",
     "subject_cooperation": "Bendradarbiavimas"
@@ -36,20 +38,20 @@
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Tapatybė.",
-    "hero_line2": "Compliance.",
-    "hero_line3": "Patikimumas.",
-    "hero_description": "Patvirtinimo ir compliance infrastruktūra viešosioms institucijoms, korporacijoms ir reguliuojamiems subjektams. Sukurta remiantis standartais",
+    "hero_line2": "Atitiktis.",
+    "hero_line3": "Tikrumas.",
+    "hero_description": "Tapatybės patvirtinimo ir atitikties infrastruktūra viešosioms institucijoms, korporacijoms ir reguliuojamoms subjektams. Pagrįsta standartais",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "PRADĖTI DIEGIMĄ",
     "cta_secondary": "PASLAUGOS",
     "services_label": "PASLAUGOS",
-    "services_title": "Trys compliance infrastruktūros sluoksniai",
+    "services_title": "Trys atitikties infrastruktūros sluoksniai",
     "service1_title": "Tapatybės patvirtinimas",
-    "service1_desc": "KYC/AML reguliuojamiems subjektams. Automatinis dokumentų patvirtinimas, sankcijų ir VVP screening, integracija su valstybiniais registrais.",
-    "service2_title": "Compliance reitingas",
-    "service2_desc": "Automatinis atitikties vertinimas remiantis Certo Governance Institute metodologija. Penkiastipnė vertinimo sistema su visišku audito šaltiniu.",
+    "service1_desc": "KYC/AML reguliuojamoms subjektams. Automatinis dokumentų patvirtinimas, sankcijų ir PEP screening, integracija su valstybės registrais.",
+    "service2_title": "Atitikties reitingas",
+    "service2_desc": "Automatinis atitikties vertinimas, pagrįstas Certo Governance Institute metodologija. Penkinė vertinimo sistema su pilnu audito keliu.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatiniai pataisymo planai ir jų vykdymo stebėjimas. Integracija su ERP sistemomis, GRC ir rizikos valdymo platformomis.",
+    "service3_desc": "Automatiniai šalinimo planai ir jų įgyvendinimo stebėjimas. Integracija su ERP, GRC sistemomis ir rizikos valdymo platformomis.",
     "arch_label": "ARCHITEKTŪRA",
     "arch_title": "Kaip veikia Certo ID",
     "step1_title": "Intake",
@@ -67,15 +69,15 @@
   },
   "Legal": {
     "back": "Grįžti į pagrindinį puslapį",
-    "last_updated": "Paskutinį kartą atnaujinta: kovas 2026",
+    "last_updated": "Paskutinį kartą atnaujinta: 2026 m. kovas",
     "privacy_title": "Privatumo politika",
     "terms_title": "Paslaugų sąlygos"
   },
   "Dashboard": {
     "title": "Certo ID skydelis",
     "welcome": "Sveiki, {name}",
-    "your_rating": "Jūsų Certo reitingas",
-    "your_delegates": "Jūsų delegatai",
+    "your_rating": "Jūsų Rating Certo",
+    "your_delegates": "Jūsų Delegati",
     "your_accords": "Jūsų Certo Accord",
     "recent_activity": "Naujausia veikla",
     "quick_actions": "Greiti veiksmai"
@@ -86,10 +88,10 @@
     "contact_person": "Kontaktinis asmuo",
     "sector": "Sektorius",
     "edit_profile": "Redaguoti profilį",
-    "verified_badge": "Patvirtintas subjektas"
+    "verified_badge": "Patvirtinta subjekto žymė"
   },
   "Delegates": {
-    "title": "Certo delegatai",
+    "title": "Certo Delegati",
     "add_delegate": "Pridėti delegatą",
     "delegate_id": "Delegate ID",
     "delegate_status": "Būsena",

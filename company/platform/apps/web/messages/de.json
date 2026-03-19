@@ -6,7 +6,7 @@
   "Nav": {
     "solutions": "Lösungen",
     "technology": "Technologie",
-    "foundation": "Certo Governance Institute",
+    "foundation": "Certo Stiftung",
     "login": "Anmelden",
     "contact": "Kontakt"
   },
@@ -19,15 +19,17 @@
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
+    "label_address": "Adresse",
+    "label_email": "E-Mail",
     "address": "02-566 Warschau, ul. Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Schreiben Sie uns",
-    "form_name": "Vor- und Nachname",
+    "form_name": "Name",
     "form_email": "E-Mail-Adresse",
     "form_subject": "Betreff",
     "form_message": "Nachricht",
     "form_submit": "Nachricht senden",
-    "form_success": "Ihre Nachricht wurde versendet. Wir antworten schnellstmöglich.",
+    "form_success": "Nachricht versendet. Wir werden uns schnellstmöglich bei Ihnen melden.",
     "subject_general": "Allgemeine Anfrage",
     "subject_implementation": "Implementierung",
     "subject_technical": "Technischer Support",
@@ -37,8 +39,8 @@
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identität.",
     "hero_line2": "Compliance.",
-    "hero_line3": "Gewissheit.",
-    "hero_description": "Infrastruktur zur Identitätsverifikation und Compliance für öffentliche Institutionen, Unternehmen und regulierte Einrichtungen. Aufgebaut auf Standards von",
+    "hero_line3": "Sicherheit.",
+    "hero_description": "Verifikations- und Compliance-Infrastruktur für öffentliche Institutionen, Unternehmen und regulierte Einrichtungen. Gebaut auf Standards von",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "IMPLEMENTIERUNG STARTEN",
     "cta_secondary": "DIENSTLEISTUNGEN",
@@ -46,19 +48,19 @@
     "services_title": "Drei Schichten der Compliance-Infrastruktur",
     "service1_title": "Identitätsverifikation",
     "service1_desc": "KYC/AML für regulierte Einrichtungen. Automatische Dokumentenverifizierung, Sanktions- und PEP-Screening, Integration mit staatlichen Registern.",
-    "service2_title": "Compliance Rating",
+    "service2_title": "Compliance-Rating",
     "service2_desc": "Automatische Compliance-Bewertung basierend auf der Methodik des Certo Governance Institute. Fünfstufiges Bewertungssystem mit vollständiger Audit-Spur.",
     "service3_title": "Remediation Engine",
     "service3_desc": "Automatische Abhilfepläne und Überwachung ihrer Umsetzung. Integration mit ERP-, GRC-Systemen und Risikomanagement-Plattformen.",
     "arch_label": "ARCHITEKTUR",
     "arch_title": "So funktioniert Certo ID",
-    "step1_title": "Intake",
-    "step1_desc": "Daten der Einrichtung + Dokumente + behördlicher Kontext",
-    "step2_title": "Verify",
+    "step1_title": "Erfassung",
+    "step1_desc": "Daten des Subjekts + Dokumente + regulatorischer Kontext",
+    "step2_title": "Verifikation",
     "step2_desc": "Identitätsverifikation, Screening, öffentliches Register",
-    "step3_title": "Score",
+    "step3_title": "Bewertung",
     "step3_desc": "Automatische Compliance-Bewertung Certo Vector",
-    "step4_title": "Report",
+    "step4_title": "Bericht",
     "step4_desc": "PDF-Bericht + API + Certo Online Dashboard",
     "badge_iso": "ISO-Standards",
     "badge_compliance": "Regulatorische Compliance",
@@ -66,7 +68,7 @@
     "badge_governance": "Governance-Bewertung"
   },
   "Legal": {
-    "back": "Zur Startseite zurück",
+    "back": "Zurück zur Startseite",
     "last_updated": "Zuletzt aktualisiert: März 2026",
     "privacy_title": "Datenschutzrichtlinie",
     "terms_title": "Nutzungsbedingungen"
@@ -77,8 +79,8 @@
     "your_rating": "Ihr Certo Rating",
     "your_delegates": "Ihre Delegaten",
     "your_accords": "Ihre Certo Accord",
-    "recent_activity": "Letzte Aktivität",
-    "quick_actions": "Schnellzugriffe"
+    "recent_activity": "Aktuelle Aktivität",
+    "quick_actions": "Schnellaktionen"
   },
   "Profile": {
     "title": "Profil",
@@ -86,7 +88,7 @@
     "contact_person": "Kontaktperson",
     "sector": "Sektor",
     "edit_profile": "Profil bearbeiten",
-    "verified_badge": "Verifizierte Einrichtung"
+    "verified_badge": "Verifiziertes Subjekt"
   },
   "Delegates": {
     "title": "Certo Delegaten",

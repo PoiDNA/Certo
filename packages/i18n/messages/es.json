@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgano de calificación independiente que evalúa la calidad de la gobernanza de instituciones públicas, corporativas y sin fines de lucro."
+    "description": "Órgano de calificación independiente que evalúa la calidad de la gobernanza de instituciones públicas, corporativas y sin ánimo de lucro."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -46,7 +46,7 @@
     "login_title": "Iniciar sesión",
     "login_subtitle": "Inicia sesión en tu cuenta",
     "login_with_google": "Iniciar sesión con Google",
-    "email_label": "Dirección de correo electrónico",
+    "email_label": "Correo electrónico",
     "password_label": "Contraseña",
     "forgot_password": "¿Olvidaste tu contraseña?",
     "no_account": "¿No tienes cuenta?",
@@ -54,7 +54,7 @@
   },
   "Errors": {
     "404_title": "Página no encontrada",
-    "404_description": "La página que buscas no existe o ha sido movida.",
+    "404_description": "La página que buscas no existe o ha sido trasladada.",
     "500_title": "Error del servidor",
     "500_description": "Se ha producido un error inesperado. Inténtalo de nuevo más tarde.",
     "unauthorized": "Acceso denegado. Inicia sesión para continuar."

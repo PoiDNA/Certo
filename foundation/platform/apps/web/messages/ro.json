@@ -1,44 +1,44 @@
 {
   "Metadata": {
-    "title": "Fundația Certo Governance Institute",
-    "description": "Organ de rating independent care evaluează calitatea guvernanței în sectoarele public, corporativ, medical și apărării."
+    "title": "Fundacja Certo Governance Institute",
+    "description": "Organ de rating independent care evaluează calitatea managementului în sectorul public, corporativ, medical și de apărare."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo este prima agenție de rating din lume ale cărei rating-uri sunt artefacte criptografice ale procesului — nu opinii. Fiecare decizie de rating este ancorat în afara propriei infrastructuri, verificabil offline și supus auditării publice.",
-    "hero_cta_primary": "Verifică rating-urile",
-    "hero_cta_secondary": "Află mai mult",
-    "section_ratings_title": "Rating-urile Certo Cea mai recente",
+    "description": "Certo este prima agenție de rating din lume ai cărei ratinguri sunt artefacte criptografice ale procesului — nu opinii. Fiecare decizie de rating este ancorată în afara propriei infrastructuri, verificabilă offline și audit publicabil.",
+    "hero_cta_primary": "Verifică ratingurile",
+    "hero_cta_secondary": "Aflați mai multe",
+    "section_ratings_title": "Cele mai recente Ratinguri Certo",
     "section_reports_title": "Analize și Rapoarte",
     "section_about_title": "Despre Fundație"
   },
   "Ratings": {
-    "title": "Rating-urile Certo",
-    "subtitle": "Evaluări ale calității guvernanței instituționale",
-    "search_placeholder": "Cauta instituție...",
+    "title": "Ratinguri Certo",
+    "subtitle": "Evaluări ale calității managementului instituțional",
+    "search_placeholder": "Căutați instituție...",
     "filter_sector": "Sector",
     "sector_public": "Public",
     "sector_corporate": "Corporativ",
     "sector_medical": "Medical",
-    "sector_defense": "Apărării",
-    "sector_ngo": "Neguvernamental",
-    "rating_valid_until": "Rating valid până la",
+    "sector_defense": "Apărare",
+    "sector_ngo": "Organizații neguvernamentale",
+    "rating_valid_until": "Rating valabil până la",
     "rating_issued": "Data emiterii",
     "no_results": "Nu au fost găsite rezultate",
-    "view_profile": "Vezi profilul"
+    "view_profile": "Vezi profil"
   },
   "Nav": {
-    "ratings": "Rating-uri",
+    "ratings": "Ratinguri",
     "methodology": "Metodologie",
     "about": "Despre Fundație",
-    "login": "Conectare",
+    "login": "Autentificare",
     "documents": "Documente",
     "pipeline": "Pipeline",
-    "dashboard": "Panou",
+    "dashboard": "Panou de bord",
     "contact": "Contact"
   },
   "Footer": {
-    "copyright": "Fundația Certo Governance Institute © {year}",
+    "copyright": "Fundacja Certo Governance Institute © {year}",
     "privacy": "Politica de Confidențialitate",
     "terms": "Condiții de Utilizare",
     "contact": "Contact"
@@ -46,16 +46,18 @@
   "About": {
     "title": "Despre Fundația Certo Governance Institute",
     "mission_title": "Misiune",
-    "mission_text": "Construirea unei culturi a bunei guvernanțe prin evaluarea independentă și promovarea standardelor de governance în Polonia și Europa.",
+    "mission_text": "Construirea unei culturi a bunului management prin evaluare independentă și promovarea standardelor de governance în Polonia și Europa.",
     "independence_title": "Independență",
     "independence_text": "Fundația este independentă de entitățile evaluate, organele autorității publice și interesele comerciale.",
     "methodology_title": "Metodologie",
-    "methodology_text": "Rating-urile Certo se bazează pe o metodologie riguroasă bazată pe standardele ISO și directivele UE."
+    "methodology_text": "Ratingurile Certo se bazează pe o metodologie riguroasă bazată pe standardele ISO și orientările UE."
   },
   "Contact": {
     "title": "Contact",
     "subtitle": "Fundația Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "label_address": "Adresă",
+    "label_email": "Email",
+    "address": "00-124 Varșovia, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Scrie-ne",
     "form_name": "Nume și prenume",
@@ -63,11 +65,11 @@
     "form_subject": "Subiect",
     "form_message": "Mesaj",
     "form_submit": "Trimite mesaj",
-    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât de curând posibil.",
+    "form_success": "Mesajul a fost trimis. Vom răspunde cât de curând posibil.",
     "subject_general": "Întrebare generală",
     "subject_rating": "Rating Certo",
     "subject_methodology": "Metodologie",
-    "subject_cooperation": "Colaborare",
+    "subject_cooperation": "Cooperare",
     "subject_media": "Media"
   }
 }

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som utvärderar kvaliteten på styrningen av offentliga institutioner, företag och ideella organisationer."
+    "description": "Oberoende ratinginstitution som bedömer kvaliteten på styrningen av offentliga, företags- och ideella institutioner."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Logga ut",
     "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor",
-    "loading": "Läser in...",
+    "loading": "Laddar...",
     "error": "Ett fel uppstod",
     "save": "Spara",
     "cancel": "Avbryt",
@@ -27,7 +27,7 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ned",
+    "download": "Ladda ner",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
@@ -37,7 +37,7 @@
     "ratings": "Betyg",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om stiftelsen",
+    "about": "Om Stiftelsen",
     "contact": "Kontakt",
     "dashboard": "Instrumentpanel",
     "settings": "Inställningar"
@@ -45,7 +45,7 @@
   "Auth": {
     "login_title": "Logga in",
     "login_subtitle": "Logga in på ditt konto",
-    "login_with_google": "Logga in med Google",
+    "login_with_google": "Logga in via Google",
     "email_label": "E-postadress",
     "password_label": "Lösenord",
     "forgot_password": "Glömt ditt lösenord?",

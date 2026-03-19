@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteitsverificatie en compliance voor publieke instellingen en bedrijven."
+    "description": "Identiteitsverificatie en compliance voor overheidsinstelling en bedrijven."
   },
   "Nav": {
     "solutions": "Oplossingen",
     "technology": "Technologie",
-    "foundation": "Certo Fundatie",
+    "foundation": "Certo Governance Institute",
     "login": "Inloggen",
     "contact": "Contact"
   },
@@ -19,6 +19,8 @@
   "Contact": {
     "title": "Contact",
     "subtitle": "Certo ID PSA",
+    "label_address": "Adres",
+    "label_email": "E-mail",
     "address": "02-566 Warschau, ul. Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Stuur ons een bericht",
@@ -27,8 +29,8 @@
     "form_subject": "Onderwerp",
     "form_message": "Bericht",
     "form_submit": "Bericht verzenden",
-    "form_success": "Uw bericht is verzonden. Wij zullen zo snel mogelijk reageren.",
-    "subject_general": "Algemeen verzoek",
+    "form_success": "Uw bericht is verzonden. Wij reageren zo snel mogelijk.",
+    "subject_general": "Algemene vraag",
     "subject_implementation": "Implementatie",
     "subject_technical": "Technische ondersteuning",
     "subject_cooperation": "Samenwerking"
@@ -36,34 +38,34 @@
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteit.",
-    "hero_line2": "Naleving.",
+    "hero_line2": "Compliance.",
     "hero_line3": "Zekerheid.",
-    "hero_description": "Verificatie- en compliance-infrastructuur voor publieke instellingen, bedrijven en gereglementeerde entiteiten. Gebouwd op standaarden van",
+    "hero_description": "Verificatie- en complianceinfrastructuur voor overheidsinstelling, bedrijven en gereglementeerde entiteiten. Gebouwd op normen van",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "START IMPLEMENTATIE",
     "cta_secondary": "DIENSTEN",
     "services_label": "DIENSTEN",
-    "services_title": "Drie lagen van compliance-infrastructuur",
+    "services_title": "Drie lagen van complianceinfrastructuur",
     "service1_title": "Identiteitsverificatie",
     "service1_desc": "KYC/AML voor gereglementeerde entiteiten. Automatische documentverificatie, sanctie- en PEP-screening, integratie met staatsregisters.",
     "service2_title": "Compliance Rating",
-    "service2_desc": "Automatische nalevingsscore op basis van de methodologie van het Certo Governance Institute. Vijfstaps waarderingssysteem met volledig audittrail.",
+    "service2_desc": "Automatische nalevingsscore op basis van de methodologie van Certo Governance Institute. Vijfvoudig beoordelingssysteem met volledig auditrail.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatische herstelplannen en monitoring van de uitvoering ervan. Integratie met ERP-, GRC- en risicobeheerplatforms.",
+    "service3_desc": "Automatische herstelplannen en monitoring van hun uitvoering. Integratie met ERP-systemen, GRC en risicobeheersplatforms.",
     "arch_label": "ARCHITECTUUR",
     "arch_title": "Hoe Certo ID werkt",
     "step1_title": "Intake",
-    "step1_desc": "Entiteitsgegevens + documenten + regelgevingscontext",
+    "step1_desc": "Entiteitsgegevens + documenten + regelgeving context",
     "step2_title": "Verify",
-    "step2_desc": "Identiteitsverificatie, screening, openbare register",
+    "step2_desc": "Identiteitsverificatie, screening, openbaar register",
     "step3_title": "Score",
-    "step3_desc": "Automatische Certo Vector nalevingswaardering",
+    "step3_desc": "Automatische Certo Vector nalevingsscore",
     "step4_title": "Report",
     "step4_desc": "PDF-rapport + API + Certo Online dashboard",
     "badge_iso": "ISO-normen",
-    "badge_compliance": "Regelgevingsnaleving",
+    "badge_compliance": "Regelgeving naleving",
     "badge_kyc": "Identiteitsverificatie",
-    "badge_governance": "Governance-evaluatie"
+    "badge_governance": "Governance beoordeling"
   },
   "Legal": {
     "back": "Terug naar startpagina",
@@ -75,7 +77,7 @@
     "title": "Certo ID Panel",
     "welcome": "Welkom, {name}",
     "your_rating": "Uw Certo Rating",
-    "your_delegates": "Uw Delegaci",
+    "your_delegates": "Uw Certo Delegate",
     "your_accords": "Uw Certo Accord",
     "recent_activity": "Recente activiteit",
     "quick_actions": "Snelle acties"
@@ -83,14 +85,14 @@
   "Profile": {
     "title": "Profiel",
     "organization": "Organisatie",
-    "contact_person": "Contactpersoon",
+    "contact_person": "Contactperson",
     "sector": "Sector",
     "edit_profile": "Profiel bewerken",
     "verified_badge": "Geverifieerde entiteit"
   },
   "Delegates": {
-    "title": "Certo Delegaci",
-    "add_delegate": "Delegaat toevoegen",
+    "title": "Certo Delegate",
+    "add_delegate": "Voeg delegaat toe",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
     "primary_link": "PRIMARY-link",

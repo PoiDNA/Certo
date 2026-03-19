@@ -1,78 +1,78 @@
 ---
-title: Certo metodologija — kaip veikia Rating Certo
-description: Rating Certo yra kriptografinis artefaktas iš valdymo kokybės vertinimo proceso. Kiekvienas reitingų sprendimas yra sutvirtintas už savos infrastruktūros ribų ir patikrinamas neprisijungus.
+title: Certo metodika — kaip veikia Rating Certo
+description: Rating Certo yra kriptografinis proceso artefaktas, vertinant governance. Kiekvienas reitingo sprendimas yra išorinėje infrastruktūroje sufiksavimas ir patikrinamas offline.
 ---
 
 ## Certo Rating Index
 
-Certo sukuria ir publikuoja periodinį, palyginamąjį viešo patikimumo indeksą remiantis valdymo kokybės principais — Certo Rating Index, apimantį subjektus, sektorius ar šalis, kuriuose vykdo Fondas vertinimo veiklą. Indeksas pagrįstas suvestais Fondo reitingavimo rezultatais, valdymo kokybės kaitos dinamikos duomenimis laikui bėgant ir viešai prieinamais lyginamaisiais duomenimis. Kiekvienas Indekso leidimas apima prognozavimo komponentą, nurodantį laukiamas pokyčių kryptis, remiantis vertintų subjektų deklaruotais plėtros tikslais ir nustatytomis tendencijomis.
+Certo kuria ir publikuoja periodinį, lyginamąjį viešos patikimumo indeksą, pagrįstą valdymo kokybe — Certo Rating Index, apimantį subjektus, sektorius arba šalis, kurias Fondas vertina. Indeksas grindžiamas suvestais Fondo reitingo rezultatais, duomenimis apie valdymo kokybės dinamiką laikui bėgant bei viešai prieinamais lyginamaisiais duomenimis. Kiekvienas indekso leidimas apima prognostinį komponentą, kuris rodo tikėtinas pokyčių kryptis, remiantis vertintų subjektų deklaruojamais plėtros tikslais ir nustatytais tendencijomis.
 
 ## Kas yra Rating Certo
 
-Rating Certo nėra nuomonė. Tai kriptografinis vertinimo proceso artefaktas — sprendimo įrašas, kuris egzistuoja nepriklausomai nuo jo autoriaus infrastruktūros. Kiekvienas reitingas yra:
+Rating Certo nėra nuomonė. Tai kriptografinis proceso artefaktas — sprendimo įrašas, kuris egzistuoja nepriklausomai nuo jo kūrėjo infrastruktūros. Kiekvienas reitingas yra:
 
-- **Patikrinamas neprisijungus** — reitingavimo sprendimo heš yra sutvirtintas išoriniuose viešuose registruose
-- **Neatsiskaitomas po išdavimo** — nė viena iš šalių negali vienpusiškai atšaukti ar pakeisti išduoto reitingo be matomo pėdsako sugeneravimo
-- **Viešai audituojamas** — pilna sprendimų seka yra prieinama patikrai įgaliotiems subjektams
+- **Patikrinamas offline** — reitingo sprendimo heš yra sufiksavimas išorinėse viešose registruose
+- **Nekintamas po išdavimo** — nei viena šalis negali vienašališkai atšaukti ar pakeisti išduoto reitingo be matomo pėdsako generavimo
+- **Viešai audituojamas** — visa sprendimo nustatymo seka yra prieinama peržiūrai suinteresuotiems subjektams
 
 ## Dual-Brain Engine
 
-Vertinimo sistemos širdis yra Dual-Brain Engine — dviguba analizės architektūra, jungianti:
+Vertinimo sistemos širdimi yra Dual-Brain Engine — dviejų linijų analizės architektūra, jungianti:
 
 **Kiekybinę analitiką**, apimančią:
-- Valdymo organų ir priežiūros organų struktūrą
-- Organų sudėties pasikeitimų istoriją
-- Sprendimų proceso dokumentaciją
-- Reglamentų atitikties rodiklius
+- Valdymo ir priežiūros organų struktūrą
+- Organų sudėties pakeitimų istoriją
+- Sprendimų priėmimo proceso dokumentaciją
+- Reguliavimo atitikties rodiklius
 
 **Kokybinę analitiką**, apimančią:
 - Organizacinės kultūros vertinimą remiantis vidiniais dokumentais
-- Deklaruojamų vertybių nuoseklumo su veiksmais analizę
-- Interesų konfliktų valdymo procedūrų verifikavimą
-- Vidinės kontrolės sistemos veiksmingumo vertinimą
+- Deklaruotų vertybių ir veiksmų nuoseklumo analizę
+- Interesų konfliktų valdymo procedūrų patikrinimą
+- Vidaus kontrolės sistemos efektyvumo vertinimą
 
 Abi analizės šakos turi nepriklausomai parodyti pakankamą valdymo kokybės lygį, kad reitingas galėtų būti išduotas.
 
 ## Hard Gates
 
-Hard Gates yra septyni būtini sąlygojai, kurių neišpildymas automatiškai iš reitingavimo proceso išima subjektą, neatsižvelgiant į likusios vertinimo rezultatus:
+Hard Gates yra septyni būtini sąlyčiai, kurių neįvykdymas automatiškai neįtraukia subjekto iš reitingo proceso, nepaisant likusios vertinimo rezultatų:
 
-1. Nėra vykdomų baudžiamųjų procesų prieš valdymo organų narius
+1. Nėra vykstančių baudžiamųjų procesų prieš valdymo organų narius
 2. Reguliarūs ir dokumentuoti statutinių organų posėdžiai
-3. Nėra skola viešiesiems organams (DUS, mokesčių tarnyba, registravimo centras)
-4. Aktualus ir viešai prieinamas tikrųjų savininko registras
+3. Nėra turto skolų viešiems organams (socialinio draudimo fondui, mokesčių inspektor, kompaniju registrui)
+4. Aktualus ir viešai prieinamas faktinių savininkų registras
 5. Nėra interesų konfliktų priežiūros organo sudėtyje
-6. Dokumentuota pažeidimų pranešimo procedūra (whistleblowing)
-7. Teisinės ir organizacinės struktūros nuoseklumas su deklaruotu valdymo modeliu
+6. Dokumentuota neteisėtų veiksmų pranešimo (whistleblowing) procedūra
+7. Teisinės ir organizacinės struktūros atitiktis deklaruotam valdymo modeliui
 
-Bet kurio iš Hard Gates neišpildymas lemia reitingavimo proceso sustabdymą, kol nepašalinami neatitikimai.
+Hard Gates bent kurio neįvykdymas sustabdo reitingo procesą, kol nepašalintos neatitiktys.
 
 ## Compliance Engine
 
-Compliance Engine patikrina institucijos atitiktį galiojančiems sektoriniam reguliavimui ir bendriesiems ES reglamentams. Variklis nuolat atnaujinamas, sekant ES ir Lietuvos teisės pokyčius.
+Compliance Engine patikrina institucijos atitiktį galiojančiems sektoriaus ir bendriems ES reguliavimams. Variklis yra nuolat atnaujinamas stebint ES ir Lietuvos įstatymo pokyčius.
 
 Atitikties vertinimas apima:
-- Sektorines nuostatas, taikytas konkrečiai institucijai
-- ES direktyvas ir reglamentus, taikomus tam tikrame sektoriuje
-- Nacionalinius įgyvendinimo nuostatuose
-- Pramonės standartus ir geros praktikos kodeksus
+- Sektoriaus reguliavimus, taikomus konkrečiai institucijai
+- ES direktyvas ir reglamentus, taikytinus atitinkamame sektoriuje
+- Nacionalines įgyvendinimo nuostatas
+- Pramonės standartus ir gerų praktikų kodeksus
 
 ## Break-Glass Protocol
 
-Break-Glass Protocol yra skubaus prieigos prie reitingavimo įrašų procedūra krizinėse situacijose — subjekto likvidavimas, bankroto procesas, baudžiamojo persekiojimo pradžia.
+Break-Glass Protocol yra skubaus prieigos prie reitingo įrašų procedūra krizės situacijose — subjekto likvidacija, bankroto procesas, ikiteisminis tyrimas.
 
-Protokolas nustato:
+Protokolas nurodo:
 - Kas turi prieigą prie įrašų ir kokiomis aplinkybėmis
 - Kaip dokumentuojamas kiekvienas prieigos atvejis
-- Kokie yra vertintų subjektų pranešimo mechanizmai
-- Kaip išlaikiama duomenų integralu ūs atskleidimo procese
+- Kokie yra subjektų pranešimo mechanizmai
+- Kaip užtikrinama duomenų vientisumas atskleidimo procese
 
 ## Certo Score ir Certo Vector
 
 Kiekvienas išduotas reitingas susideda iš dviejų elementų:
 
-**Certo Score** — sintetinis valdymo kokybės vertinimas, išreikštas skaitine skale. Leidžia palyginti subjektus sektoriuje ir laikui bėgant.
+**Certo Score** — sintetinis valdymo kokybės vertinimas, išreikštas skaičine skale. Jis leidžia lyginti subjektus sektoriuje ir laikui bėgant.
 
-**Certo Vector** — valdymo kokybės kaitos kryptis pastarojo vertinimo laikotarpio metu. Turi penkias reikšmes: `++` (reikšmingas pagerinimas), `+` (pagerinimas), be pasikeitimų, `−` (pablogėjimas), `−−` (reikšmingas pablogėjimas).
+**Certo Vector** — valdymo kokybės pasikeitimo kryptis per paskutinį vertinimo laikotarpį. Jis pima penkias reikšmes: `++` (reikšmingas pagerėjimas), `+` (pagerėjimas), jokių pokyčių, `−` (pablogėjimas), `−−` (reikšmingas pablogėjimas).
 
-Score ir Vector derinys suteikia pilną vaizdą tiek apie esamą valdymo stovį, tiek jo dinamiką.
+Score ir Vector derinys suteikia pilną vaizdą tiek esamos governance būsenos, tiek jos dinamikos.

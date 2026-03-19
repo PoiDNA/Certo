@@ -8,61 +8,61 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných, korporativních a neziskových institucí."
+    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných institucí, korporací a neziskových organizací."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Přihlaste se",
-    "logout": "Odhlaste se",
+    "login": "Přihlásit se",
+    "logout": "Odhlásit se",
     "privacyPolicy": "Zásady ochrany osobních údajů",
-    "termsOfUse": "Podmínky použití",
+    "termsOfUse": "Podmínky používání",
     "loading": "Načítání...",
     "error": "Došlo k chybě",
     "save": "Uložit",
     "cancel": "Zrušit",
     "confirm": "Potvrdit",
     "back": "Zpět",
-    "next": "Dále",
+    "next": "Další",
     "close": "Zavřít",
     "search": "Hledat",
     "download": "Stáhnout",
-    "verified": "Ověřeno",
+    "verified": "Ověřený",
     "active": "Aktivní",
     "inactive": "Neaktivní"
   },
   "Navigation": {
     "home": "Domovská stránka",
-    "ratings": "Ratingy",
+    "ratings": "Ratings",
     "reports": "Zprávy",
     "analysis": "Analýzy",
     "about": "O Nadaci",
     "contact": "Kontakt",
-    "dashboard": "Ovládací panel",
+    "dashboard": "Panel",
     "settings": "Nastavení"
   },
   "Auth": {
-    "login_title": "Přihlaste se",
+    "login_title": "Přihlásit se",
     "login_subtitle": "Přihlaste se ke svému účtu",
-    "login_with_google": "Přihlaste se přes Google",
+    "login_with_google": "Přihlásit se přes Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
     "no_account": "Nemáte účet?",
-    "register": "Zaregistrujte se"
+    "register": "Registrovat se"
   },
   "Errors": {
     "404_title": "Stránka nebyla nalezena",
-    "404_description": "Stránka kterou hledáte neexistuje nebo byla přesunuta.",
+    "404_description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
     "500_title": "Chyba serveru",
-    "500_description": "Došlo k neočekávané chybě. Zkuste to prosím později.",
-    "unauthorized": "Přístup odepřen. Přihlaste se prosím pro pokračování."
+    "500_description": "Došlo k neočekávané chybě. Zkuste to později.",
+    "unauthorized": "Přístup odepřen. Přihlaste se a pokračujte."
   },
   "Footer": {
     "rights": "Všechna práva vyhrazena",
     "privacy": "Zásady ochrany osobních údajů",
-    "terms": "Podmínky použití",
+    "terms": "Podmínky používání",
     "contact": "Kontakt"
   }
 }

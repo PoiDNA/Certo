@@ -1,12 +1,12 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute",
-    "description": "Oberoende ratinginstitution som utvärderar kvaliteten på styrning inom den offentliga, företags-, medicinska och försvarsrelaterade sektorn."
+    "title": "Fundacja Certo Governance Institute",
+    "description": "Oberoende ratingagentur som bedömer kvaliteten på styrning inom offentlig, korporativ, medicinsk och försvarssektorn."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo är världens första ratingbyrå vars ratings är kryptografiska artefakter från processen — inte åsikter. Varje ratingbeslut är förankrat utanför vår egen infrastruktur, verifierbar offline och offentligt granskbar.",
-    "hero_cta_primary": "Visa ratings",
+    "description": "Certo är världens första ratingagentur vars ratings är kryptografiska artefakter av processen — inte åsikter. Varje ratingbeslut är förankrat utanför egen infrastruktur, verifierbar offline och offentligt revisionsbar.",
+    "hero_cta_primary": "Kontrollera ratings",
     "hero_cta_secondary": "Läs mer",
     "section_ratings_title": "Senaste Certo Ratings",
     "section_reports_title": "Analyser och Rapporter",
@@ -14,18 +14,18 @@
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Bedömningar av styrningskvaliteten i institutioner",
+    "subtitle": "Bedömning av styrkvaliteten för institutioner",
     "search_placeholder": "Sök institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
-    "sector_corporate": "Företag",
+    "sector_corporate": "Korporativ",
     "sector_medical": "Medicinsk",
     "sector_defense": "Försvar",
     "sector_ngo": "Ideell",
-    "rating_valid_until": "Rating gälltig till",
-    "rating_issued": "Utfärdandedatum",
+    "rating_valid_until": "Rating gäller till",
+    "rating_issued": "Utgivningsdatum",
     "no_results": "Inga resultat hittades",
-    "view_profile": "Se profil"
+    "view_profile": "Visa profil"
   },
   "Nav": {
     "ratings": "Ratings",
@@ -38,33 +38,35 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute © {year}",
+    "copyright": "Fundacja Certo Governance Institute © {year}",
     "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   },
   "About": {
-    "title": "Om Certo Governance Institute",
-    "mission_title": "Mission",
-    "mission_text": "Bygga en kultur för god styrning genom oberoende bedömning och främjande av governance-standarder i Polen och Europa.",
-    "independence_title": "Oberoendet",
-    "independence_text": "Stiftelsen är oberoende från de institutioner som bedöms, offentliga myndigheter och kommersiella intressen.",
+    "title": "Om Fundacja Certo Governance Institute",
+    "mission_title": "Uppdrag",
+    "mission_text": "Bygga en kultur för god styrning genom oberoende bedömning och befrämjande av styrningsstandarder i Polen och Europa.",
+    "independence_title": "Oberoende",
+    "independence_text": "Stiftelsen är oberoende från bedömda enheter, offentliga myndigheter och kommersiella intressen.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo Ratings bygger på en rigoros metodologi baserad på ISO-standarder och EU-riktlinjer."
+    "methodology_text": "Certo Ratings baseras på en rigorös metodologi som bygger på ISO-standarder och EU-riktlinjer."
   },
   "Contact": {
     "title": "Kontakt",
-    "subtitle": "Certo Governance Institute",
+    "subtitle": "Fundacja Certo Governance Institute",
+    "label_address": "Adress",
+    "label_email": "E-post",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Kontakta oss",
-    "form_name": "För- och efternamn",
+    "form_title": "Skriv till oss",
+    "form_name": "Namn",
     "form_email": "E-postadress",
     "form_subject": "Ämne",
     "form_message": "Meddelande",
     "form_submit": "Skicka meddelande",
     "form_success": "Meddelandet har skickats. Vi svarar så snart som möjligt.",
-    "subject_general": "Allmän förfrågan",
+    "subject_general": "Allmän fråga",
     "subject_rating": "Certo Rating",
     "subject_methodology": "Metodologi",
     "subject_cooperation": "Samarbete",

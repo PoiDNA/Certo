@@ -1,40 +1,40 @@
 {
   "Metadata": {
     "title": "Fundacija Certo Governance Institute",
-    "description": "Nezavisna agencija za reitinge koja procjenjuje kvalitetu upravljanja u javnom, korporativnom, zdravstvenom i obrambenom sektoru."
+    "description": "Nezavisna agencija za ocjenjivanje koja vrednuje kvalitetu upravljanja u javnom, korporativnom, medicinskom i obrambeном sektoru."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prva na svijetu agencija za reitinge čiji su reitinzi kriptografski artefakti procesa — ne mišljenja. Svaka odluka o reitingu je usidren izvan vlastite infrastrukture, dostupan za provjeru izvan mreže i javno auditan.",
-    "hero_cta_primary": "Provjeri reitinge",
+    "description": "Certo je prva agencija za ocjenjivanje na svijetu čije su ocjene kriptografski artefakti procesa — ne mišljenja. Svaka odluka o ocjenjivanju je usidnena izvan vlastite infrastrukture, može se provjeriti bez interneta i podložna je javnoj reviziji.",
+    "hero_cta_primary": "Provjeri ocjene",
     "hero_cta_secondary": "Saznaj više",
-    "section_ratings_title": "Najnoviji Certo Reitinzi",
+    "section_ratings_title": "Najnovije Certo ocjene",
     "section_reports_title": "Analize i Izvještaji",
     "section_about_title": "O Fundaciji"
   },
   "Ratings": {
-    "title": "Certo Reitinzi",
-    "subtitle": "Procjene kvalitete upravljanja institucija",
-    "search_placeholder": "Pretraži instituciju...",
+    "title": "Certo ocjene",
+    "subtitle": "Vrednovanja kvalitete upravljanja institucija",
+    "search_placeholder": "Traži instituciju...",
     "filter_sector": "Sektor",
     "sector_public": "Javni",
     "sector_corporate": "Korporativni",
-    "sector_medical": "Zdravstveni",
-    "sector_defense": "Obramben",
-    "sector_ngo": "Nezavisan sektor",
-    "rating_valid_until": "Reitingz validan do",
+    "sector_medical": "Medicinski",
+    "sector_defense": "Obrambeni",
+    "sector_ngo": "Nevladin",
+    "rating_valid_until": "Ocjena važeća do",
     "rating_issued": "Datum izdavanja",
     "no_results": "Nema rezultata",
     "view_profile": "Vidi profil"
   },
   "Nav": {
-    "ratings": "Reitinzi",
+    "ratings": "Ocjene",
     "methodology": "Metodologija",
     "about": "O Fundaciji",
     "login": "Prijava",
     "documents": "Dokumenti",
     "pipeline": "Pipeline",
-    "dashboard": "Panel",
+    "dashboard": "Nadzorna ploča",
     "contact": "Kontakt"
   },
   "Footer": {
@@ -46,26 +46,28 @@
   "About": {
     "title": "O Fundaciji Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Izgrađivanje kulture dobrog upravljanja kroz nezavisnu procjenu i promicanje standarda upravljanja u Hrvatskoj i Europi.",
+    "mission_text": "Gradnja kulture dobrog upravljanja kroz nezavisno vrednovanje i promicanje standarda upravljanja u Hrvatskoj i Europi.",
     "independence_title": "Nezavisnost",
-    "independence_text": "Fundacija je nezavisna od ocjenjivanih subjekata, organa javne vlasti i komercijalnih interesa.",
+    "independence_text": "Fundacija je nezavisna od vredniranih subjekata, organa javne vlasti i komercijalnih interesa.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo Reitinzi temelje se na strogoj metodologiji temeljnoj na ISO standardima i EU smjernicama."
+    "methodology_text": "Certo ocjene temelje se na strogo primijenjenom metodologiji temeljeno na ISO standardima i EU smjernicama."
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Fundacija Certo Governance Institute",
-    "address": "00-124 Varšava, ul. Rondo ONZ 1",
+    "label_address": "Adresa",
+    "label_email": "Email",
+    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Piši nam",
     "form_name": "Ime i prezime",
     "form_email": "Email adresa",
-    "form_subject": "Tema",
+    "form_subject": "Naslov",
     "form_message": "Poruka",
     "form_submit": "Pošalji poruku",
-    "form_success": "Poruka je poslana. Odgovorit ćemo čim prije.",
+    "form_success": "Poruka je poslana. Odgovorit ćemo što je prije moguće.",
     "subject_general": "Opće pitanje",
-    "subject_rating": "Certo Reitingz",
+    "subject_rating": "Certo ocjena",
     "subject_methodology": "Metodologija",
     "subject_cooperation": "Suradnja",
     "subject_media": "Mediji"
