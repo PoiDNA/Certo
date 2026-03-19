@@ -7,12 +7,6 @@ const EXPERTISE_KEYS = ['area_health', 'area_local_gov', 'area_defense', 'area_f
 
 const R2_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev';
 
-const ADVISORS = [
-  { id: 1, name: 'Katarzyna Wiśniewska', spec: 'Ochrona zdrowia / Compliance', rating: 'A+', image: `${R2_BASE}/consulting/persona/PH1.png`, bioKey: 'advisor_1_bio' as const },
-  { id: 2, name: 'Michael Johnson', spec: 'Finanse / Audyt', rating: 'A', image: `${R2_BASE}/consulting/persona/PH2.png`, bioKey: 'advisor_2_bio' as const },
-  { id: 3, name: 'dr Piotr Nowicki', spec: 'Obronność / Cyberbezpieczeństwo', rating: 'A++', image: `${R2_BASE}/consulting/persona/PH3.png`, bioKey: 'advisor_3_bio' as const },
-];
-
 export default function HomeContent() {
   const t = useTranslations('Home');
   const [selectedArea, setSelectedArea] = useState<string | null>(null);
@@ -82,29 +76,25 @@ export default function HomeContent() {
             </div>
           </div>
 
-          <div className="mb-10">
-            <h3 className="font-display text-3xl text-certo-primary font-light mb-10 border-b border-certo-border pb-4">
-              {t('advisors_title')}
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {ADVISORS.map(adv => (
-                <div key={adv.id} className="group bg-white border border-certo-border hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full">
-                  <div className="aspect-[4/3] w-full bg-gray-100 overflow-hidden relative border-b border-certo-border">
-                    <img src={adv.image} alt={adv.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-                    <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                  <div className="p-8 flex-grow flex flex-col">
-                    <div className="flex justify-between items-start mb-6 gap-2">
-                      <span className="text-[11px] text-certo-muted uppercase tracking-[0.15em] leading-relaxed">{adv.spec}</span>
-                      <span className="bg-certo-surface text-certo-accent border border-certo-accent/30 text-[10px] px-2 py-1 uppercase font-bold whitespace-nowrap">RATING {adv.rating}</span>
-                    </div>
-                    <h4 className="font-display text-2xl text-certo-primary mb-4 group-hover:text-certo-accent transition-colors duration-300">{adv.name}</h4>
-                    <p className="text-sm text-certo-muted leading-relaxed mt-auto font-light">
-                      {t(adv.bioKey)}
-                    </p>
-                  </div>
+          {/* Experts hero image */}
+          <div className="relative overflow-hidden mb-10">
+            <div className="relative w-full aspect-[21/9] md:aspect-[3/1]">
+              <img
+                src={`${R2_BASE}/consulting/persona/3X.png`}
+                alt={t('experts_headline')}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-certo-primary/90 via-certo-primary/60 to-transparent" />
+              <div className="absolute inset-0 flex items-center">
+                <div className="max-w-xl px-8 md:px-16">
+                  <h3 className="font-display text-2xl md:text-4xl lg:text-5xl text-white font-light leading-[1.15] mb-4 md:mb-6">
+                    {t('experts_headline')}
+                  </h3>
+                  <p className="text-white/80 text-sm md:text-base lg:text-lg font-light leading-relaxed max-w-md">
+                    {t('experts_description')}
+                  </p>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>

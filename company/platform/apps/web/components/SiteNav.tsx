@@ -23,6 +23,9 @@ export default function SiteNav() {
         <a href="https://certogov.org" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
           {t('foundation')} →
         </a>
+        <a href={`/${locale}/contact`} className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">
+          {t('contact')}
+        </a>
         <LocaleSwitcher />
         <Link
           href={`/${locale}/login`}
@@ -78,6 +81,13 @@ export default function SiteNav() {
               className="text-sm font-semibold text-certo-teal hover:text-certo-teal-dark py-1"
             >
               {t('foundation')} →
+            </a>
+            <a
+              href={`/${locale}/contact`}
+              className="text-sm font-semibold text-certo-gray-dark hover:text-certo-teal py-1"
+              onClick={() => setOpen(false)}
+            >
+              {t('contact')}
             </a>
             <Link
               href={`/${locale}/login`}

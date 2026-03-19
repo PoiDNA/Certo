@@ -6,7 +6,8 @@
   "Nav": {
     "advisors": "Doradcy",
     "expertise": "Ekspertyza",
-    "login": "Logowanie"
+    "login": "Logowanie",
+    "contact": "Kontakt"
   },
   "Footer": {
     "description": "Eksperckie doradztwo w zakresie ładu korporacyjnego, zgodności i bezpieczeństwa dla liderów rynkowych.",
@@ -31,11 +32,8 @@
     "form_email": "Adres email (służbowy)",
     "form_org": "Nazwa organizacji / Stanowisko",
     "form_submit": "Wyślij zapytanie",
-    "advisors_title": "Przykładowi eksperci z naszej sieci",
-    "advisor_bio": "Akredytowany doradca Certo z wieloletnim doświadczeniem w optymalizacji procesów dla strategicznych instytucji rynkowych.",
-    "advisor_1_bio": "Ekspertka w obszarze ochrony zdrowia i compliance, odpowiedzialna za utrzymanie i wzmocnienie ratingu Certo w branży medycznej.",
-    "advisor_2_bio": "Specjalista w obszarze finansów i audytu, dbający o utrzymanie i wzmocnienie ratingu Certo w sektorze finansowym.",
-    "advisor_3_bio": "Doradca w zakresie obronności i cyberbezpieczeństwa, odpowiedzialny za wzmocnienie ratingu Certo w branży obronnej."
+    "experts_headline": "Nasi eksperci pomagają\nutrzymać i wzmocnić\nRating Certo.",
+    "experts_description": "Akredytowani doradcy z wieloletnim doświadczeniem w optymalizacji procesów governance dla strategicznych instytucji."
   },
   "Legal": {
     "back": "Wróć do strony głównej",
