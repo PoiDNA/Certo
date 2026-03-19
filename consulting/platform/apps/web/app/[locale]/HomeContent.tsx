@@ -76,25 +76,22 @@ export default function HomeContent() {
             </div>
           </div>
 
-          {/* Experts hero image */}
-          <div className="relative overflow-hidden mb-10">
-            <div className="relative w-full aspect-[16/9] md:aspect-[2/1]">
+          {/* Experts hero image + text below */}
+          <div className="mb-10">
+            <div className="relative w-full aspect-[16/9] md:aspect-[2/1] overflow-hidden">
               <img
                 src={`${R2_BASE}/consulting/persona/3X.png`}
                 alt={t('experts_headline')}
                 className="w-full h-full object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-certo-primary via-certo-primary/40 to-transparent" />
-              <div className="absolute inset-0 flex items-end">
-                <div className="w-full px-8 md:px-16 pb-10 md:pb-16 grid md:grid-cols-2 gap-6 md:gap-12 items-end">
-                  <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-white font-light leading-[1.15] whitespace-pre-line">
-                    {t('experts_headline')}
-                  </h3>
-                  <p className="text-white/80 text-sm md:text-base lg:text-lg font-light leading-relaxed max-w-md">
-                    {t('experts_description')}
-                  </p>
-                </div>
-              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start pt-8 md:pt-10">
+              <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-certo-primary font-light leading-[1.15]">
+                {t('experts_headline')}
+              </h3>
+              <p className="text-certo-muted text-sm md:text-base lg:text-lg font-light leading-relaxed">
+                {t('experts_description')}
+              </p>
             </div>
           </div>
         </div>
