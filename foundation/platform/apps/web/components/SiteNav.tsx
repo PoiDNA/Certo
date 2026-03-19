@@ -9,6 +9,7 @@ const links = [
   { href: '/ratings', key: 'ratings' as const },
   { href: '/methodology', key: 'methodology' as const },
   { href: '/about', key: 'about' as const },
+  { href: '/contact', key: 'contact' as const },
 ];
 
 export default function SiteNav() {

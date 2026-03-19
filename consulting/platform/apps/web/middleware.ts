@@ -36,7 +36,7 @@ export async function middleware(request: NextRequest) {
   const { data: { user } } = await supabase.auth.getUser();
 
   // Omijamy autoryzację dla publicznych ścieżek
-  const isPublic = ['/', '/login', '/auth/callback', '/auth/logout', '/polityka', '/regulamin'].some(p => {
+  const isPublic = ['/', '/login', '/auth/callback', '/auth/logout', '/polityka', '/regulamin', '/contact'].some(p => {
     if (pathname === p || pathname.startsWith(`${p}/`)) return true;
     return locales.some(l => pathname === `/${l}${p === '/' ? '' : p}` || pathname.startsWith(`/${l}${p}/`));
   });

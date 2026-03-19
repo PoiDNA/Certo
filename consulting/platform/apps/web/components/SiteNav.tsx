@@ -19,6 +19,9 @@ export default function SiteNav() {
         <a href="#ekspertyza" className="text-white uppercase text-xs tracking-[0.1em] hover:text-certo-accent transition-colors duration-300">
           {t('expertise')}
         </a>
+        <a href={`/${locale}/contact`} className="text-white uppercase text-xs tracking-[0.1em] hover:text-certo-accent transition-colors duration-300">
+          {t('contact')}
+        </a>
         <LocaleSwitcher />
         <a href={`/${locale}/login`} className="text-white hover:text-certo-accent transition-colors duration-300 uppercase text-xs tracking-[0.1em] font-semibold">
           {t('login')}
@@ -65,6 +68,13 @@ export default function SiteNav() {
               onClick={() => setOpen(false)}
             >
               {t('expertise')}
+            </a>
+            <a
+              href={`/${locale}/contact`}
+              className="text-white uppercase text-xs tracking-[0.1em] hover:text-certo-accent py-2"
+              onClick={() => setOpen(false)}
+            >
+              {t('contact')}
             </a>
             <a
               href={`/${locale}/login`}

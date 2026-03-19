@@ -34,7 +34,8 @@
     "login": "Zaloguj się",
     "documents": "Dokumenty",
     "pipeline": "Pipeline",
-    "dashboard": "Panel"
+    "dashboard": "Panel",
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "Fundacja Certo Governance Institute © {year}",

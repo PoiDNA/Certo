@@ -6,7 +6,8 @@
   "Nav": {
     "advisors": "Advisors",
     "expertise": "Expertise",
-    "login": "Login"
+    "login": "Login",
+    "contact": "Contact"
   },
   "Footer": {
     "description": "Expert advisory in corporate governance, compliance and security for market-leading organizations.",
@@ -31,11 +32,8 @@
     "form_email": "Email Address (work)",
     "form_org": "Organization Name / Position",
     "form_submit": "Submit Inquiry",
-    "advisors_title": "Example experts from our network",
-    "advisor_bio": "Accredited Certo advisor with extensive experience in process optimization for strategic market-leading organizations.",
-    "advisor_1_bio": "Healthcare and compliance expert responsible for maintaining and strengthening Certo Rating in the medical sector.",
-    "advisor_2_bio": "Finance and audit specialist dedicated to maintaining and strengthening Certo Rating in the financial sector.",
-    "advisor_3_bio": "Defense and cybersecurity advisor responsible for strengthening Certo Rating in the defense industry."
+    "experts_headline": "Our experts help\nmaintain and strengthen\nCerto Rating.",
+    "experts_description": "Accredited advisors with extensive experience in governance process optimization for strategic institutions."
   },
   "Legal": {
     "back": "Back to homepage",

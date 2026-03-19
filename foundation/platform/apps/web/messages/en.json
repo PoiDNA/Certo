@@ -34,7 +34,8 @@
     "login": "Log in",
     "documents": "Documents",
     "pipeline": "Pipeline",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "contact": "Contact"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
