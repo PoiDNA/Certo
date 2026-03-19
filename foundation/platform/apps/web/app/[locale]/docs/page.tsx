@@ -1,9 +1,12 @@
 import { getAllDocuments, ENTITY_LABELS, STATUS_CONFIG } from "@/lib/documents";
 import Link from "next/link";
+import { setRequestLocale } from 'next-intl/server';
 
 export const revalidate = 60; // ISR: revalidate every 60s
 
-export default function HomePage() {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const docs = getAllDocuments();
   
   const foundation = docs.filter(d => d.entity === "foundation");

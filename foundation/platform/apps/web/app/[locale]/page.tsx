@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { locales } from '@certo/i18n/config';
 import { getMdxContent } from '@/lib/mdx';
 
@@ -12,6 +12,7 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'Home' });
   const homeMdx = await getMdxContent('home', locale);
 

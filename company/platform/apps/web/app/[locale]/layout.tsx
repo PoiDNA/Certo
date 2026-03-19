@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import '../globals.css';
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { locales } from "@certo/i18n/config";
+import { routing } from "../../i18n-config";
 import SiteNav from "../../components/SiteNav";
 
 export function generateStaticParams() {
@@ -12,6 +15,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   const languages: Record<string, string> = {
@@ -44,6 +48,8 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+  setRequestLocale(locale);
   const messages = await getMessages();
   const tf = await getTranslations({ locale, namespace: 'Footer' });
 

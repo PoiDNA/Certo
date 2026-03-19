@@ -1,7 +1,7 @@
 import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './i18n-routing';
+import { routing } from './i18n-config';
 import { locales } from '@certo/i18n/config';
 
 const intlMiddleware = createMiddleware(routing);
@@ -13,8 +13,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // @ts-ignore
-  const response = intlMiddleware(request);
+  const response = await intlMiddleware(request);
 
   let supabaseResponse = response;
 
