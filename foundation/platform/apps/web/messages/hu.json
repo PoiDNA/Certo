@@ -31,7 +31,8 @@
     "ratings": "Minősítések",
     "methodology": "Módszertan",
     "about": "Az Alapítványról",
-    "login": "Bejelentkezés"
+    "login": "Bejelentkezés",
+    "login_with_google": "Bejelentkezés Google fiókkal"
   },
   "Footer": {
     "copyright": "Certo Governance Institute Alapítvány © {year}",

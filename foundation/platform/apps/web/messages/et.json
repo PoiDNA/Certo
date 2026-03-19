@@ -31,7 +31,8 @@
     "ratings": "Reitingud",
     "methodology": "Metoodika",
     "about": "Fondatsioonist",
-    "login": "Logi sisse"
+    "login": "Logi sisse",
+    "login_with_google": "Logi sisse Google'i kaudu"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

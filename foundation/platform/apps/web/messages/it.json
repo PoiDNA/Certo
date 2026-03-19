@@ -31,7 +31,8 @@
     "ratings": "Rating",
     "methodology": "Metodologia",
     "about": "Sulla Fondazione",
-    "login": "Accedi"
+    "login": "Accedi",
+    "login_with_google": "Accedi con Google"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

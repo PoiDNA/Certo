@@ -31,7 +31,8 @@
     "ratings": "Ratings",
     "methodology": "Methodologie",
     "about": "Über uns",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "login_with_google": "Mit Google anmelden"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

@@ -31,7 +31,8 @@
     "ratings": "Rátálacha",
     "methodology": "Modheolaíocht",
     "about": "Maidir Leis an Bhondúireacht",
-    "login": "Logáil isteach"
+    "login": "Logáil isteach",
+    "login_with_google": "Logáil isteach le Google"
   },
   "Footer": {
     "copyright": "Fondúireacht Certo Governance Institute © {year}",

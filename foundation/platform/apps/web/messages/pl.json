@@ -31,7 +31,8 @@
     "ratings": "Ratingi",
     "methodology": "Metodologia",
     "about": "O Fundacji",
-    "login": "Zaloguj się"
+    "login": "Zaloguj się",
+    "login_with_google": "Zaloguj przez Google"
   },
   "Footer": {
     "copyright": "Fundacja Certo Governance Institute © {year}",

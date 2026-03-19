@@ -31,7 +31,8 @@
     "ratings": "Luokitukset",
     "methodology": "Metodologia",
     "about": "Säätiöstä",
-    "login": "Kirjaudu sisään"
+    "login": "Kirjaudu sisään",
+    "login_with_google": "Kirjaudu sisään Google-tilillä"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",

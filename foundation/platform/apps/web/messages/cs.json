@@ -31,7 +31,8 @@
     "ratings": "Ratingy",
     "methodology": "Metodologie",
     "about": "O Nadaci",
-    "login": "Přihlášení"
+    "login": "Přihlášení",
+    "login_with_google": "Přihlásit se přes Google"
   },
   "Footer": {
     "copyright": "Nadační Certo Governance Institute © {year}",

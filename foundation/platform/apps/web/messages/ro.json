@@ -31,7 +31,8 @@
     "ratings": "Ratinguri",
     "methodology": "Metodologie",
     "about": "Despre Fundație",
-    "login": "Autentificare"
+    "login": "Autentificare",
+    "login_with_google": "Autentificare cu Google"
   },
   "Footer": {
     "copyright": "Fundația Certo Governance Institute © {year}",

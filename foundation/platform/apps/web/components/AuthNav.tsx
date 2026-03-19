@@ -2,10 +2,11 @@
 
 import { createBrowserClient } from '@supabase/ssr';
 import { useEffect, useState } from 'react';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function AuthNav() {
   const locale = useLocale();
+  const t = useTranslations('Nav');
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function AuthNav() {
     return (
       <nav className="flex gap-8 text-sm font-medium tracking-wide items-center">
         <a href={`/${locale}/login`} className="text-certo-gold hover:text-certo-gold-light transition-colors duration-300 uppercase">
-          Zaloguj się
+          {t('login')}
         </a>
       </nav>
     );

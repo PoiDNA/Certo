@@ -31,7 +31,8 @@
     "ratings": "Reitingi",
     "methodology": "Metodika",
     "about": "Par fondu",
-    "login": "Pierakstieties"
+    "login": "Pierakstieties",
+    "login_with_google": "Pierakstīties ar Google"
   },
   "Footer": {
     "copyright": "Certo Governance Institute fonds © {year}",

@@ -31,7 +31,8 @@
     "ratings": "Ratings",
     "methodology": "Metodologi",
     "about": "Om Fundationen",
-    "login": "Log ind"
+    "login": "Log ind",
+    "login_with_google": "Log ind med Google"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
