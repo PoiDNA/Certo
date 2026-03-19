@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független értékelő szerv, amely közintézmények, vállalati és nonprofit szervezetek irányítási minőségét értékeli."
+    "description": "Független minősítő szervezet, amely értékeli a közintézmények, vállalati szervezetek és nonprofit szervezetek irányítási minőségét."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,7 +16,7 @@
     "delegate": "Certo Delegate",
     "login": "Bejelentkezés",
     "logout": "Kijelentkezés",
-    "privacyPolicy": "Adatvédelmi nyilatkozat",
+    "privacyPolicy": "Adatvédelmi szabályzat",
     "termsOfUse": "Felhasználási feltételek",
     "loading": "Betöltés...",
     "error": "Hiba történt",
@@ -34,7 +34,7 @@
   },
   "Navigation": {
     "home": "Kezdőlap",
-    "ratings": "Értékelések",
+    "ratings": "Minősítések",
     "reports": "Jelentések",
     "analysis": "Elemzések",
     "about": "Az Alapítványról",
@@ -44,24 +44,24 @@
   },
   "Auth": {
     "login_title": "Bejelentkezés",
-    "login_subtitle": "Bejelentkezés a saját fiókba",
-    "login_with_google": "Bejelentkezés Google-lel",
+    "login_subtitle": "Bejelentkezés a fiókjához",
+    "login_with_google": "Bejelentkezés Google-lal",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
     "forgot_password": "Elfelejtette a jelszavát?",
-    "no_account": "Még nincs fiókja?",
+    "no_account": "Nincs fiókja?",
     "register": "Regisztráció"
   },
   "Errors": {
     "404_title": "Az oldal nem található",
-    "404_description": "A keresett oldal nem létezik vagy át lett helyezve.",
+    "404_description": "A keresett oldal nem létezik vagy áthelyezésre került.",
     "500_title": "Szerverhiba",
-    "500_description": "Váratlan hiba történt. Próbálja újra később.",
-    "unauthorized": "Nincs hozzáférése. Bejelentkezéshez adja meg a hitelesítő adatait."
+    "500_description": "Váratlan hiba történt. Próbálja meg később.",
+    "unauthorized": "Nincs hozzáférése. Bejelentkezés szükséges a folytatáshoz."
   },
   "Footer": {
     "rights": "Minden jog fenntartva",
-    "privacy": "Adatvédelmi nyilatkozat",
+    "privacy": "Adatvédelmi szabályzat",
     "terms": "Felhasználási feltételek",
     "contact": "Kapcsolat"
   }

@@ -1,63 +1,63 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Encontre um Assessor",
-    "description": "Assessores acreditados pela Certo. Governança corporativa e conformidade."
+    "title": "Certo Consulting — Encontre um Consultor",
+    "description": "Consultores credenciados Certo. Governança corporativa e conformidade."
   },
   "Nav": {
-    "advisors": "Assessores",
-    "expertise": "Expertise",
+    "advisors": "Consultores",
+    "expertise": "Experiência",
     "login": "Login"
   },
   "Footer": {
     "description": "Consultoria especializada em governança corporativa, conformidade e segurança para líderes de mercado.",
     "ecosystem": "Ecossistema Certo",
-    "accreditation": "Todos os assessores são acreditados pela Fundação Certo Governance Institute",
+    "accreditation": "Todos os consultores são credenciados pela Fundação Certo Governance Institute",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Uso"
   },
   "Home": {
-    "hero_title": "Consultoria especializada\nao nível de diretoria.",
-    "hero_subtitle": "Conectamos assessores acreditados pela Certo com instituições que exigem os mais altos padrões de governança corporativa e conformidade regulatória.",
+    "hero_title": "Consultoria especializada\nno nível de diretoria.",
+    "hero_subtitle": "Conectamos consultores credenciados Certo com instituições que exigem os mais altos padrões de governança corporativa e conformidade regulatória.",
     "hero_cta": "Encontre um especialista",
-    "finder_title": "Gostaria de conversar com um especialista em:",
+    "finder_title": "Desejo conversar com um especialista em:",
     "area_health": "Saúde",
     "area_local_gov": "Administração Local",
     "area_defense": "Defesa",
     "area_finance": "Finanças",
     "area_education": "Educação",
-    "form_title": "Deixe seus dados de contato para que possamos indicar um assessor apropriado da área de",
-    "form_name": "Nome completo",
-    "form_email": "Endereço de email (corporativo)",
-    "form_org": "Nome da organização / Cargo",
-    "form_submit": "Enviar solicitação",
+    "form_title": "Deixe seus dados de contato para que possamos selecionar o consultor apropriado da área de",
+    "form_name": "Nome Completo",
+    "form_email": "Endereço de Email (corporativo)",
+    "form_org": "Nome da Organização / Cargo",
+    "form_submit": "Enviar Solicitação",
     "advisors_title": "Exemplos de especialistas da nossa rede",
-    "advisor_bio": "Assessor acreditado pela Certo com longa experiência na otimização de processos para instituições estratégicas de mercado.",
-    "advisor_1_bio": "Especialista em saúde e conformidade, responsável pela manutenção e reforço do rating Certo no setor médico.",
-    "advisor_2_bio": "Especialista em finanças e auditoria, garantindo a manutenção e o reforço do rating Certo no setor financeiro.",
-    "advisor_3_bio": "Consultor em defesa e cibersegurança, responsável pelo reforço do rating Certo na indústria de defesa."
+    "advisor_bio": "Consultor credenciado Certo com muitos anos de experiência em otimização de processos para instituições estratégicas de mercado.",
+    "advisor_1_bio": "Especialista em saúde e conformidade, responsável por manter e fortalecer a avaliação Certo na indústria médica.",
+    "advisor_2_bio": "Especialista em finanças e auditoria, responsável por manter e fortalecer a avaliação Certo no setor financeiro.",
+    "advisor_3_bio": "Consultor em defesa e cibersegurança, responsável por fortalecer a avaliação Certo na indústria de defesa."
   },
   "Legal": {
-    "back": "Voltar para página inicial",
+    "back": "Voltar à página inicial",
     "last_updated": "Última atualização: Março de 2026",
     "privacy_title": "Política de Privacidade",
     "terms_title": "Termos de Uso"
   },
   "FindAdvisor": {
-    "title": "Encontre um assessor Certo",
+    "title": "Encontre um consultor Certo",
     "sector_label": "Setor da sua instituição",
     "need_label": "O que você precisa?",
     "need_audit": "Auditoria de governança",
     "need_advisory": "Consultoria estratégica",
     "need_training": "Treinamentos e workshops",
-    "need_rating": "Preparação para rating",
+    "need_rating": "Preparação para avaliação",
     "region_label": "Região",
-    "submit": "Procurar assessor"
+    "submit": "Buscar consultor"
   },
   "Advisor": {
-    "accredited_by": "Acreditado pela Certo",
+    "accredited_by": "Credenciado pelo Certo",
     "specialization": "Especialização",
     "sectors": "Setores",
-    "contact_advisor": "Entrar em contato",
+    "contact_advisor": "Entre em contato",
     "view_profile": "Ver perfil"
   }
 }

@@ -5,7 +5,7 @@
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo est la première agence de notation au monde dont les ratings sont des artefacts cryptographiques du processus — non des opinions. Chaque décision de notation est ancrée en dehors de sa propre infrastructure, vérifiable hors ligne et publiquement auditable.",
+    "description": "Certo est la première agence de notation au monde dont les ratings sont des artefacts cryptographiques du processus — et non des opinions. Chaque décision de notation est ancrée en dehors de sa propre infrastructure, vérifiable hors ligne et auditable publiquement.",
     "hero_cta_primary": "Consulter les ratings",
     "hero_cta_secondary": "En savoir plus",
     "section_ratings_title": "Derniers Ratings Certo",
@@ -14,14 +14,14 @@
   },
   "Ratings": {
     "title": "Ratings Certo",
-    "subtitle": "Évaluations de la qualité de gouvernance des institutions",
+    "subtitle": "Évaluations de la qualité de la gouvernance des institutions",
     "search_placeholder": "Rechercher une institution...",
     "filter_sector": "Secteur",
     "sector_public": "Public",
     "sector_corporate": "Corporatif",
     "sector_medical": "Médical",
     "sector_defense": "Défense",
-    "sector_ngo": "Organisations de la Société Civile",
+    "sector_ngo": "Organisations de la société civile",
     "rating_valid_until": "Rating valide jusqu'au",
     "rating_issued": "Date d'émission",
     "no_results": "Aucun résultat trouvé",
@@ -31,7 +31,7 @@
     "ratings": "Ratings",
     "methodology": "Méthodologie",
     "about": "À propos",
-    "login": "Se connecter"
+    "login": "Connexion"
   },
   "Footer": {
     "copyright": "Fundacja Certo Governance Institute © {year}",
@@ -39,12 +39,12 @@
     "terms": "Conditions d'Utilisation"
   },
   "About": {
-    "title": "À propos de Fundacja Certo Governance Institute",
+    "title": "À propos de Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "Construire une culture de bonne gouvernance par l'évaluation indépendante et la promotion des normes de gouvernance en Pologne et en Europe.",
+    "mission_text": "Construire une culture de bonne gouvernance par l'évaluation indépendante et la promotion des standards de gouvernance en Pologne et en Europe.",
     "independence_title": "Indépendance",
-    "independence_text": "La Fondation est indépendante des entités évaluées, des organes publics et des intérêts commerciaux.",
+    "independence_text": "La Fondation est indépendante des entités évaluées, des autorités publiques et des intérêts commerciaux.",
     "methodology_title": "Méthodologie",
-    "methodology_text": "Les Certo Ratings reposent sur une méthodologie rigoureuse fondée sur les normes ISO et les directives de l'UE."
+    "methodology_text": "Les ratings Certo reposent sur une méthodologie rigoureuse basée sur les normes ISO et les directives de l'UE."
   }
 }

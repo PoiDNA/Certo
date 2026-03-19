@@ -1,60 +1,60 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Leia Nõustaja",
-    "description": "Certo akrediteeritud nõustajad. Ühinguseadus ja vastavus."
+    "title": "Certo Consulting — Leia nõustajat",
+    "description": "Certo akrediteeritud nõustajad. Ühinguseadus ja nõuetele vastavus."
   },
   "Nav": {
     "advisors": "Nõustajad",
-    "expertise": "Kompetents",
+    "expertise": "Pädevus",
     "login": "Sisselogimine"
   },
   "Footer": {
-    "description": "Ekspertne nõustamine ühinguseaduse, vastavuse ja turvalisuse alal turujuhtide jaoks.",
+    "description": "Ekspertne nõustamine ühinguseaduse, nõuetele vastavuse ja turvalisuse alal turuliidrite jaoks.",
     "ecosystem": "Certo ökosüsteem",
-    "accreditation": "Kõik nõustajad on Certo Governance Institute'i poolt akrediteeritud",
-    "privacy": "Privaatsuseesmärgid",
-    "terms": "Tingimused"
+    "accreditation": "Kõik nõustajad on akrediteeritud Certo Governance Institute'i poolt",
+    "privacy": "Privaatsuseeskiri",
+    "terms": "Kasutustingimused"
   },
   "Home": {
-    "hero_title": "Ekspertne nõustamine\njuhatuse tasandil.",
-    "hero_subtitle": "Ühendame Certo akrediteeritud nõustajad institutsioonidega, kes nõuavad kõrgeimaid ühinguseaduse ja regulatiivse vastavuse standarde.",
+    "hero_title": "Ekspertne nõustamine\njuhtkonna tasandil.",
+    "hero_subtitle": "Ühendame Certo akrediteeritud nõustajad institutsioonidega, kes nõuavad ühinguseaduse ja regulatiivse nõuetele vastavuse kõrgeimaid standardeid.",
     "hero_cta": "Leia ekspert",
-    "finder_title": "Tahan rääkida ekspertiga järgmises valdkonnas:",
-    "area_health": "Tervishoiu",
-    "area_local_gov": "Kohalik valitsus",
-    "area_defense": "Kaitse",
-    "area_finance": "Finants",
+    "finder_title": "Sooviksin rääkida ekspertiga järgmises valdkonnas:",
+    "area_health": "Tervishoid",
+    "area_local_gov": "Kohalikud omavalitsused",
+    "area_defense": "Riigikaitse",
+    "area_finance": "Finantsteenused",
     "area_education": "Haridus",
-    "form_title": "Jätke oma kontakt, et saaksime valida sobiva nõustaja",
-    "form_name": "Ees- ja perekonnanimi",
-    "form_email": "E-posti aadress (töö)",
+    "form_title": "Jätke oma kontaktid, et saaksime valida sobiva nõustaja valdkonnast",
+    "form_name": "Nimi",
+    "form_email": "E-posti aadress (ametlik)",
     "form_org": "Organisatsiooni nimi / Ametikoht",
     "form_submit": "Saada päring",
-    "advisors_title": "Näited meie võrgustiku ekspertidest",
-    "advisor_bio": "Certo akrediteeritud nõustaja, kellel on põhjalik kogemus strateegilis­te turguinstitutsioonde protsesside optimeerimises.",
-    "advisor_1_bio": "Ekspert tervishoiu ja vastavuse valdkonnas, vastutab Certo reitingu säilitamise ja tugevdamise eest meditsiinitööstuses.",
-    "advisor_2_bio": "Spetsialist rahanduse ja auditi valdkonnas, tagab Certo reitingu säilitamise ja tugevdamise finantstööstuses.",
-    "advisor_3_bio": "Nõustaja kaitse ja küberturvalisuse valdkonnas, vastutab Certo reitingu tugevdamise eest kaitse tööstuses."
+    "advisors_title": "Näitlikud eksperdid meie võrgustikust",
+    "advisor_bio": "Certo akrediteeritud nõustaja, kellel on mitmeaastane kogemus strateegiliste turuinstitutsiooni protsesside optimeerimises.",
+    "advisor_1_bio": "Tervishoiu- ja nõuetele vastavuse valdkonna eksperdine, kes vastutab Certo reitingu säilitamise ja tugevdamise eest meditsiiniteoluses.",
+    "advisor_2_bio": "Finants- ja auditi valdkonna spetsialist, kes hooliteb Certo reitingu säilitamisest ja tugevdamisest finantssektoris.",
+    "advisor_3_bio": "Riigikaitse- ja küberjulgeoleku nõustaja, kes vastutab Certo reitingu tugevdamise eest kaitsetööstuses."
   },
   "Legal": {
     "back": "Tagasi avalehele",
-    "last_updated": "Viimati uuendatud: märts 2026",
-    "privacy_title": "Privaatsuspoliitika",
+    "last_updated": "Viimati värskendatud: märts 2026",
+    "privacy_title": "Privaatsuseeskiri",
     "terms_title": "Kasutustingimused"
   },
   "FindAdvisor": {
     "title": "Leia Certo nõustaja",
-    "sector_label": "Teie asutuse sektor",
-    "need_label": "Mida sa vajad?",
-    "need_audit": "Governance audit",
+    "sector_label": "Teie institutsiooni sektor",
+    "need_label": "Mida teil vaja on?",
+    "need_audit": "Juhtimise audit",
     "need_advisory": "Strateegiline nõustamine",
     "need_training": "Koolitused ja töötoad",
-    "need_rating": "Ettevalmistamine reitingule",
+    "need_rating": "Reiting ettevalmistus",
     "region_label": "Piirkond",
     "submit": "Otsi nõustajat"
   },
   "Advisor": {
-    "accredited_by": "Certo poolt akrediteeritud",
+    "accredited_by": "Akrediteeritud Certo poolt",
     "specialization": "Spetsialiseerumine",
     "sectors": "Sektorid",
     "contact_advisor": "Võta ühendust",

@@ -8,32 +8,32 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ de rating independent care evaluează calitatea managementului instituțiilor publice, corporative și neguvernamentale."
+    "description": "Organ de rating independent care evaluează calitatea guvernanței instituțiilor publice, corporative și non-profit."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Conectare",
-    "logout": "Deconectare",
+    "login": "Conectați-vă",
+    "logout": "Deconectați-vă",
     "privacyPolicy": "Politica de confidențialitate",
     "termsOfUse": "Condiții de utilizare",
     "loading": "Se încarcă...",
     "error": "A apărut o eroare",
-    "save": "Salvează",
-    "cancel": "Anulează",
-    "confirm": "Confirmă",
+    "save": "Salvați",
+    "cancel": "Anulați",
+    "confirm": "Confirmați",
     "back": "Înapoi",
-    "next": "Următorul",
-    "close": "Închide",
-    "search": "Caută",
-    "download": "Descarcă",
+    "next": "Înainte",
+    "close": "Închideți",
+    "search": "Căutați",
+    "download": "Descărcați",
     "verified": "Verificat",
     "active": "Activ",
     "inactive": "Inactiv"
   },
   "Navigation": {
-    "home": "Pagina de start",
+    "home": "Pagina principală",
     "ratings": "Ratinguri",
     "reports": "Rapoarte",
     "analysis": "Analize",
@@ -43,21 +43,21 @@
     "settings": "Setări"
   },
   "Auth": {
-    "login_title": "Conectare",
+    "login_title": "Conectați-vă",
     "login_subtitle": "Conectați-vă la contul dvs.",
-    "login_with_google": "Conectare cu Google",
+    "login_with_google": "Conectați-vă prin Google",
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
     "forgot_password": "Ați uitat parola?",
-    "no_account": "Nu aveți cont?",
-    "register": "Înregistrare"
+    "no_account": "Nu aveți un cont?",
+    "register": "Înregistrați-vă"
   },
   "Errors": {
     "404_title": "Pagina nu a fost găsită",
     "404_description": "Pagina pe care o căutați nu există sau a fost mutată.",
-    "500_title": "Eroare server",
+    "500_title": "Eroare de server",
     "500_description": "A apărut o eroare neașteptată. Încercați din nou mai târziu.",
-    "unauthorized": "Acces refuzat. Conectați-vă pentru a continua."
+    "unauthorized": "Acces interzis. Conectați-vă pentru a continua."
   },
   "Footer": {
     "rights": "Toate drepturile rezervate",

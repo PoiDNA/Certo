@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificación de identidad y compliance para instituciones públicas y corporaciones."
+    "description": "Verificación de identidad y cumplimiento normativo para instituciones públicas y corporaciones."
   },
   "Nav": {
     "solutions": "Soluciones",
@@ -19,16 +19,16 @@
     "hero_line1": "Identidad.",
     "hero_line2": "Cumplimiento.",
     "hero_line3": "Certeza.",
-    "hero_description": "Infraestructura de verificación y compliance para instituciones públicas, corporaciones y entidades reguladas. Construida sobre los estándares de",
+    "hero_description": "Infraestructura de verificación y cumplimiento normativo para instituciones públicas, corporaciones y entidades reguladas. Construida sobre estándares de",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "INICIAR IMPLEMENTACIÓN",
     "cta_secondary": "SERVICIOS",
     "services_label": "SERVICIOS",
-    "services_title": "Tres capas de infraestructura de compliance",
+    "services_title": "Tres capas de infraestructura de cumplimiento normativo",
     "service1_title": "Verificación de Identidad",
-    "service1_desc": "KYC/AML para entidades reguladas. Verificación automática de documentos, screening de sanciones y PEP, integración con registros estatales.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Puntuación automática de cumplimiento basada en la metodología de Certo Governance Institute. Sistema de evaluación de cinco niveles con traza de auditoría completa.",
+    "service1_desc": "KYC/AML para entidades reguladas. Verificación automática de documentos, análisis de sanciones y PEP, integración con registros estatales.",
+    "service2_title": "Rating de Cumplimiento",
+    "service2_desc": "Puntuación automática de cumplimiento basada en la metodología de Certo Governance Institute. Sistema de evaluación de cinco niveles con trazabilidad de auditoría completa.",
     "service3_title": "Remediation Engine",
     "service3_desc": "Planes de remediación automáticos y monitoreo de su implementación. Integración con sistemas ERP, GRC y plataformas de gestión de riesgos.",
     "arch_label": "ARQUITECTURA",
@@ -36,19 +36,19 @@
     "step1_title": "Intake",
     "step1_desc": "Datos de la entidad + documentos + contexto regulatorio",
     "step2_title": "Verify",
-    "step2_desc": "Verificación de identidad, screening, registro público",
+    "step2_desc": "Verificación de identidad, análisis, registro público",
     "step3_title": "Score",
     "step3_desc": "Rating automático de cumplimiento Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "Reporte PDF + API + dashboard Certo Online",
+    "step4_desc": "Informe PDF + API + panel de control Certo Online",
     "badge_iso": "Estándares ISO",
-    "badge_compliance": "Cumplimiento normativo",
+    "badge_compliance": "Cumplimiento regulatorio",
     "badge_kyc": "Verificación de identidad",
     "badge_governance": "Evaluación de governance"
   },
   "Legal": {
     "back": "Volver a la página principal",
-    "last_updated": "Última actualización: Marzo 2026",
+    "last_updated": "Última actualización: Marzo de 2026",
     "privacy_title": "Política de Privacidad",
     "terms_title": "Términos de Servicio"
   },
@@ -74,8 +74,8 @@
     "add_delegate": "Añadir delegado",
     "delegate_id": "Delegate ID",
     "delegate_status": "Estado",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "Enlace PRIMARY",
+    "failover_link": "Enlace FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

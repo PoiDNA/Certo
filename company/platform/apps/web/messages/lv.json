@@ -1,65 +1,65 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identitātes verifikācija un compliance publiskajām iestādēm un korporācijām."
+    "description": "Identitātes verifikācija un atbilstības nodrošināšana valsts un korporatīvajām institūcijām."
   },
   "Nav": {
     "solutions": "Risinājumi",
-    "technology": "Tehnoloģija",
+    "technology": "Tehnologija",
     "foundation": "Certo Fundācija",
-    "login": "Pierakstīties"
+    "login": "Pieslēgties"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Privātuma politika",
-    "terms": "Pakalpojumu noteikumi"
+    "terms": "Pakalpojuma noteikumi"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identitāte.",
     "hero_line2": "Atbilstība.",
     "hero_line3": "Pārliecība.",
-    "hero_description": "Verifikācijas un compliance infrastruktūra publiskajām iestādēm, korporācijām un regulētajiem subjektiem. Veidota uz standartiem",
+    "hero_description": "Verifikācijas un atbilstības infrastruktūra valsts institūcijām, korporācijām un regulēto subjektu pakļautībai. Veidota uz standartiem",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "SĀKT IEVIEŠANU",
     "cta_secondary": "PAKALPOJUMI",
     "services_label": "PAKALPOJUMI",
-    "services_title": "Trīs compliance infrastruktūras slāņi",
+    "services_title": "Trīs atbilstības infrastruktūras slāņi",
     "service1_title": "Identitātes verifikācija",
-    "service1_desc": "KYC/AML regulētajiem subjektiem. Automātiska dokumentu verifikācija, sankciju un PEP pārbaude, integrācija ar valsts reģistriem.",
-    "service2_title": "Compliance reitings",
-    "service2_desc": "Automātisks atbilstības vērtējums, pamatojoties uz Certo Governance Institute metodiku. Piecstāvu novērtējuma sistēma ar pilnu audita pēdu.",
+    "service1_desc": "KYC/AML regulētajiem subjektiem. Automātiska dokumentu verifikācija, sankciju un PEP screening, integrācija ar valsts reģistriem.",
+    "service2_title": "Atbilstības reitings",
+    "service2_desc": "Automātiski atbilstības reitingi, pamatojoties uz Certo Governance Institute metodiku. Piecu līmeņu novērtējuma sistēma ar pilnu revīzijas ceļu.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automātiski koriģējošie plāni un to realizācijas uzraudzība. Integrācija ar ERP, GRC sistēmām un riska pārvaldības platformām.",
+    "service3_desc": "Automātiski labojošie plāni un to īstenošanas uzraudzība. Integrācija ar ERP, GRC sistēmām un riska pārvaldības platformām.",
     "arch_label": "ARHITEKTŪRA",
     "arch_title": "Kā darbojas Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Subjekta dati + dokumenti + regulācijas konteksts",
+    "step1_desc": "Subjekta dati + dokumenti + regulatīvais konteksts",
     "step2_title": "Verify",
-    "step2_desc": "Identitātes verifikācija, pārbaude, publiskais reģistrs",
+    "step2_desc": "Identitātes verifikācija, screening, publiskais reģistrs",
     "step3_title": "Score",
     "step3_desc": "Automātisks Certo Vector atbilstības reitings",
     "step4_title": "Report",
-    "step4_desc": "PDF pārskats + API + Certo Online panelis",
+    "step4_desc": "PDF atskaite + API + Certo Online pūlis",
     "badge_iso": "ISO standarti",
     "badge_compliance": "Normatīvā atbilstība",
     "badge_kyc": "Identitātes verifikācija",
     "badge_governance": "Pārvaldības novērtējums"
   },
   "Legal": {
-    "back": "Atpakaļ uz sākumlapu",
+    "back": "Atpakaļ uz sākumlapas",
     "last_updated": "Pēdējais atjauninājums: 2026. gads marts",
     "privacy_title": "Privātuma politika",
-    "terms_title": "Pakalpojumu noteikumi"
+    "terms_title": "Pakalpojuma noteikumi"
   },
   "Dashboard": {
-    "title": "Certo ID panelis",
+    "title": "Certo ID pūlis",
     "welcome": "Sveiki, {name}",
-    "your_rating": "Jūsu Certo reitings",
+    "your_rating": "Jūsu Certo Rating",
     "your_delegates": "Jūsu delegāti",
     "your_accords": "Jūsu Certo Accord",
-    "recent_activity": "Pēdējā aktivitāte",
-    "quick_actions": "Ātri darbības"
+    "recent_activity": "Nesenā aktivitāte",
+    "quick_actions": "Ātrās darbības"
   },
   "Profile": {
     "title": "Profils",

@@ -1,60 +1,60 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Atrodiet Padomdevēju",
-    "description": "Sertificēti Certo padomdevēji. Korporatīvais pārvaldījums un atbilstība."
+    "title": "Certo Consulting — Atrodiet padomdevēju",
+    "description": "Akreditēti Certo padomdevēji. Korporatīvais pārvaldības modelis un atbilstība."
   },
   "Nav": {
     "advisors": "Padomdevēji",
     "expertise": "Kompetence",
-    "login": "Pierakstīšanās"
+    "login": "Pieteikšanās"
   },
   "Footer": {
-    "description": "Ekspertu konsultācijas korporatīvā pārvaldījuma, atbilstības un drošības jautājumos tirgus līderu vajadzībām.",
-    "ecosystem": "Certo Ekosistēma",
-    "accreditation": "Visi padomdevēji ir sertificēti ar Certo Governance Institute Fonda akredītāciju",
+    "description": "Ekspertu konsultācijas korporatīvās pārvaldības, atbilstības un drošības jomā tirgus līderiem.",
+    "ecosystem": "Certo ekosistēma",
+    "accreditation": "Visi padomdevēji ir akreditēti pēc Certo Governance Institute Fonda standartiem",
     "privacy": "Privātuma politika",
-    "terms": "Noteikumi un nosacījumi"
+    "terms": "Lietošanas noteikumi"
   },
   "Home": {
-    "hero_title": "Ekspertu konsultācijas\nuzņēmējdarbības vadības līmenī.",
-    "hero_subtitle": "Mēs savieno sertificētus Certo padomdevējus ar iestādēm, kurām nepieciešami augstākie korporatīvā pārvaldījuma un normatīvās atbilstības standarti.",
-    "hero_cta": "Atrodiet eksperta",
-    "finder_title": "Vēlos runāt ar eksperta par:",
+    "hero_title": "Ekspertu konsultācijas\nDirekcijas līmenī.",
+    "hero_subtitle": "Mēs savienojam akreditētus Certo padomdevējus ar institūcijām, kurām nepieciešami augstākie korporatīvās pārvaldības un normatīvās atbilstības standarti.",
+    "hero_cta": "Atrodiet ekspertos",
+    "finder_title": "Vēlos runāt ar speciālistu:",
     "area_health": "Veselības aprūpe",
     "area_local_gov": "Pašvaldības",
     "area_defense": "Aizsardzība",
     "area_finance": "Finanses",
     "area_education": "Izglītība",
-    "form_title": "Atstājiet kontaktinformāciju, lai mēs varētu izvēlēties piemērotu padomdevēju no",
+    "form_title": "Atstājiet savu kontaktu, un mēs atradīsim piemērotu padomdevēju no jūsu nozares",
     "form_name": "Vārds un uzvārds",
     "form_email": "E-pasta adrese (darba)",
     "form_org": "Organizācijas nosaukums / Amats",
-    "form_submit": "Nosūtīt pieprasījumu",
-    "advisors_title": "Piemēru padomdevēji no mūsu tīkla",
-    "advisor_bio": "Sertificēts Certo padomdevējs ar plašu pieredzi procesu optimizācijā stratēģiski svarīgām tirgus iestādēm.",
-    "advisor_1_bio": "Eksperte veselības aprūpes un atbilstības jomā, atbildīga par Certo reitinga uzturēšanu un stiprināšanu medicīnas nozarē.",
-    "advisor_2_bio": "Speciālists finanšu un audita jomā, rūpējas par Certo reitinga uzturēšanu un stiprināšanu finanšu nozarē.",
-    "advisor_3_bio": "Konsultants aizsardzības un kiberdrošības jomā, atbildīgs par Certo reitinga stiprināšanu aizsardzības nozarē."
+    "form_submit": "Nosūtīt vaicājumu",
+    "advisors_title": "Piemēram eksperti no mūsu tīkla",
+    "advisor_bio": "Akreditēts Certo padomdevējs ar ilgstošu pieredzi procesu optimizācijā stratēģiski svarīgām tirgus institūcijām.",
+    "advisor_1_bio": "Speciāliste veselības aprūpes un atbilstības jomā, kas atbildīga par Certo reitinga uzturēšanu un stiprināšanu medicīnas nozarē.",
+    "advisor_2_bio": "Speciālists finanšu un revīzijas jomā, kurš rūpējas par Certo reitinga uzturēšanu un stiprināšanu finanšu sektorā.",
+    "advisor_3_bio": "Konsultants aizsardzības un drošības jomā, kas atbildīgs par Certo reitinga stiprināšanu aizsardzības nozarē."
   },
   "Legal": {
     "back": "Atpakaļ uz sākumlapu",
-    "last_updated": "Pēdējais atjauninājums: marts 2026",
+    "last_updated": "Pēdējais atjauninājums: 2026. gads, marts",
     "privacy_title": "Privātuma politika",
     "terms_title": "Lietošanas noteikumi"
   },
   "FindAdvisor": {
     "title": "Atrodiet Certo padomdevēju",
-    "sector_label": "Jūsu iestādes sektors",
+    "sector_label": "Jūsu institūcijas sektors",
     "need_label": "Ko jums nepieciešams?",
-    "need_audit": "Pārvaldījuma audits",
-    "need_advisory": "Stratēģiskās konsultācijas",
+    "need_audit": "Pārvaldības audits",
+    "need_advisory": "Stratēģiskas konsultācijas",
     "need_training": "Apmācības un darbnīcas",
     "need_rating": "Sagatavošanās reitingam",
     "region_label": "Reģions",
     "submit": "Meklēt padomdevēju"
   },
   "Advisor": {
-    "accredited_by": "Sertificēts ar Certo",
+    "accredited_by": "Akreditēts pēc Certo",
     "specialization": "Specializācija",
     "sectors": "Sektori",
     "contact_advisor": "Sazinies",

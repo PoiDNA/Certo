@@ -1,20 +1,20 @@
 {
   "Metadata": {
     "title": "Fundação Certo Governance Institute",
-    "description": "Órgão de classificação independente que avalia a qualidade da governança nos setores público, corporativo, médico e de defesa."
+    "description": "Órgão de rating independente que avalia a qualidade da governança nos setores público, corporativo, médico e de defesa."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo é a primeira agência de classificação do mundo cujas classificações são artefatos criptográficos do processo — não opiniões. Cada decisão de classificação é ancorada fora de sua própria infraestrutura, verificável offline e publicamente auditável.",
-    "hero_cta_primary": "Confira as classificações",
+    "description": "Certo é a primeira agência de rating do mundo cujos ratings são artefatos criptográficos do processo — não opiniões. Cada decisão de rating está ancorada fora de sua própria infraestrutura, é verificável offline e publicamente auditável.",
+    "hero_cta_primary": "Confira os ratings",
     "hero_cta_secondary": "Saiba mais",
-    "section_ratings_title": "Classificações Certo Mais Recentes",
+    "section_ratings_title": "Ratings Certo Mais Recentes",
     "section_reports_title": "Análises e Relatórios",
     "section_about_title": "Sobre a Fundação"
   },
   "Ratings": {
-    "title": "Classificações Certo",
-    "subtitle": "Avaliações da qualidade da governança institucional",
+    "title": "Ratings Certo",
+    "subtitle": "Avaliações da qualidade de governança institucional",
     "search_placeholder": "Pesquisar instituição...",
     "filter_sector": "Setor",
     "sector_public": "Público",
@@ -22,15 +22,15 @@
     "sector_medical": "Médico",
     "sector_defense": "Defesa",
     "sector_ngo": "Organizações da Sociedade Civil",
-    "rating_valid_until": "Classificação válida até",
+    "rating_valid_until": "Rating válido até",
     "rating_issued": "Data de emissão",
     "no_results": "Nenhum resultado encontrado",
     "view_profile": "Ver perfil"
   },
   "Nav": {
-    "ratings": "Classificações",
+    "ratings": "Ratings",
     "methodology": "Metodologia",
-    "about": "Sobre a Fundação",
+    "about": "Sobre",
     "login": "Entrar"
   },
   "Footer": {
@@ -41,10 +41,10 @@
   "About": {
     "title": "Sobre a Fundação Certo Governance Institute",
     "mission_title": "Missão",
-    "mission_text": "Construir uma cultura de boa governança através de avaliação independente e promoção de padrões de governance na Polônia e na Europa.",
+    "mission_text": "Construir uma cultura de boa governança através da avaliação independente e promoção de padrões de governance na Polônia e na Europa.",
     "independence_title": "Independência",
-    "independence_text": "A Fundação é independente das entidades avaliadas, de órgãos da administração pública e de interesses comerciais.",
+    "independence_text": "A Fundação é independente das entidades avaliadas, dos órgãos públicos e de interesses comerciais.",
     "methodology_title": "Metodologia",
-    "methodology_text": "As classificações Certo baseiam-se em uma metodologia rigorosa fundamentada em normas ISO e diretrizes da UE."
+    "methodology_text": "Os ratings Certo baseiam-se em metodologia rigorosa fundamentada nas normas ISO e diretrizes da UE."
   }
 }

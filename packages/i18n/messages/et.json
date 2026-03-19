@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Sõltumatu reitinguagentuuri, mis hindab avaliku sektori, ettevõtete ja mittetulundusorganisatsioonide juhtimise kvaliteeti."
+    "description": "Sõltumatu reitingorgan, mis hindab avalik-õiguslike, äriotstarbelist ja mittetulunduslike asutuste juhtimise kvaliteeti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,8 +18,8 @@
     "logout": "Logi välja",
     "privacyPolicy": "Privaatsuspoliitika",
     "termsOfUse": "Kasutustingimused",
-    "loading": "Laadimise ajal...",
-    "error": "Ilmnes viga",
+    "loading": "Laadimise käigus...",
+    "error": "Ilmnes tõrge",
     "save": "Salvesta",
     "cancel": "Tühista",
     "confirm": "Kinnita",
@@ -37,7 +37,7 @@
     "ratings": "Reitingud",
     "reports": "Aruanded",
     "analysis": "Analüüsid",
-    "about": "Fondist",
+    "about": "Sihtasutusest",
     "contact": "Kontakt",
     "dashboard": "Juhtpaneel",
     "settings": "Seaded"
@@ -45,7 +45,7 @@
   "Auth": {
     "login_title": "Logi sisse",
     "login_subtitle": "Logi oma kontole sisse",
-    "login_with_google": "Logi sisse Google'i kaudu",
+    "login_with_google": "Logi sisse Google'iga",
     "email_label": "E-posti aadress",
     "password_label": "Parool",
     "forgot_password": "Unustasid parooli?",
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Lehte ei leitud",
-    "404_description": "Lehte, mida otsis, pole olemas või see on teisaldatud.",
+    "404_description": "Lehte, mida otsite, ei eksisteeri või see on teisaldatud.",
     "500_title": "Serveri viga",
     "500_description": "Ilmnes ootamatu viga. Proovi hiljem uuesti.",
-    "unauthorized": "Ligipääs puudub. Jätka saamiseks logi sisse."
+    "unauthorized": "Juurdepääs keelatud. Jätkamiseks logi sisse."
   },
   "Footer": {
     "rights": "Kõik õigused reserveeritud",

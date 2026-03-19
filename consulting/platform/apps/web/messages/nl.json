@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Vind een Adviseur",
-    "description": "Geaccrediteerde Certo-adviseurs. Corporate Governance en naleving."
+    "description": "Geaccrediteerde Certo-adviseurs. Corporate Governance en compliance."
   },
   "Nav": {
     "advisors": "Adviseurs",
@@ -9,32 +9,32 @@
     "login": "Inloggen"
   },
   "Footer": {
-    "description": "Deskundig advies op het gebied van corporate governance, naleving en beveiliging voor marktleiders.",
-    "ecosystem": "Certo Ecosysteem",
+    "description": "Deskundig advies op het gebied van Corporate Governance, compliance en veiligheid voor marktleiders.",
+    "ecosystem": "Certo Ecosystem",
     "accreditation": "Alle adviseurs zijn geaccrediteerd door de Certo Governance Institute",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden"
   },
   "Home": {
     "hero_title": "Deskundig advies\nop directieniveau.",
-    "hero_subtitle": "Wij verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor corporate governance en regelgeving naleving vereisen.",
+    "hero_subtitle": "We verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor Corporate Governance en regelgeving op het gebied van compliance stellen.",
     "hero_cta": "Vind een expert",
     "finder_title": "Ik wil spreken met een expert op het gebied van:",
     "area_health": "Gezondheidszorg",
-    "area_local_gov": "Lokale overheid",
+    "area_local_gov": "Lokale besturen",
     "area_defense": "Defensie",
     "area_finance": "Financiën",
     "area_education": "Onderwijs",
-    "form_title": "Laat uw contactgegevens achter, zodat wij een passende adviseur uit het volgende gebied kunnen selecteren",
-    "form_name": "Volledige naam",
+    "form_title": "Laat uw contactgegevens achter, zodat we de juiste adviseur uit het volgende gebied voor u kunnen selecteren",
+    "form_name": "Voor- en achternaam",
     "form_email": "E-mailadres (zakelijk)",
     "form_org": "Organisatienaam / Functie",
-    "form_submit": "Verzend aanvraag",
+    "form_submit": "Verzend verzoek",
     "advisors_title": "Voorbeelden van experts uit ons netwerk",
-    "advisor_bio": "Geaccrediteerde Certo-adviseur met jarenlange ervaring in het optimaliseren van processen voor strategische marktinstellingen.",
+    "advisor_bio": "Geaccrediteerde Certo-adviseur met jaren ervaring in procesoptimalisatie voor strategische marktinstellingen.",
     "advisor_1_bio": "Expert op het gebied van gezondheidszorg en compliance, verantwoordelijk voor het behoud en versterking van de Certo-rating in de medische sector.",
-    "advisor_2_bio": "Specialist op het gebied van financiën en audit, zorgt voor het behoud en versterking van de Certo-rating in de financiële sector.",
-    "advisor_3_bio": "Adviseur op het gebied van defensie en cybersecurity, verantwoordelijk voor de versterking van de Certo-rating in de defensie-industrie."
+    "advisor_2_bio": "Specialist op het gebied van financiën en audit, gericht op het behoud en versterking van de Certo-rating in de financiële sector.",
+    "advisor_3_bio": "Adviseur op het gebied van defensie en cyberbeveiliging, verantwoordelijk voor het versterken van de Certo-rating in de defensie-industrie."
   },
   "Legal": {
     "back": "Terug naar startpagina",
@@ -45,10 +45,10 @@
   "FindAdvisor": {
     "title": "Vind een Certo-adviseur",
     "sector_label": "Sector van uw instelling",
-    "need_label": "Wat hebt u nodig?",
+    "need_label": "Waar heeft u behoefte aan?",
     "need_audit": "Governance audit",
     "need_advisory": "Strategisch advies",
-    "need_training": "Trainingen en workshops",
+    "need_training": "Training en workshops",
     "need_rating": "Voorbereiding op rating",
     "region_label": "Regio",
     "submit": "Zoek adviseur"
@@ -57,7 +57,7 @@
     "accredited_by": "Geaccrediteerd door Certo",
     "specialization": "Specialisatie",
     "sectors": "Sectoren",
-    "contact_advisor": "Neem contact op",
-    "view_profile": "Bekijk profiel"
+    "contact_advisor": "Contact opnemen",
+    "view_profile": "Profiel bekijken"
   }
 }

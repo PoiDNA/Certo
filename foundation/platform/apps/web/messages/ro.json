@@ -1,30 +1,30 @@
 {
   "Metadata": {
     "title": "Fundația Certo Governance Institute",
-    "description": "Organism independent de rating care evaluează calitatea guvernanței în sectoarele public, corporativ, medical și apărării."
+    "description": "Organ independent de rating care evaluează calitatea managementului în sectorul public, corporativ, medical și de apărare."
   },
   "Home": {
     "title": "Certo Governance Institute",
     "description": "Certo este prima agenție de rating din lume ale cărei ratinguri sunt artefacte criptografice ale procesului — nu opinii. Fiecare decizie de rating este ancorat în afara propriei infrastructuri, verificabil offline și public auditabil.",
-    "hero_cta_primary": "Consultă ratingurile",
-    "hero_cta_secondary": "Află mai multe",
-    "section_ratings_title": "Cele mai recente ratinguri Certo",
+    "hero_cta_primary": "Verifică ratingurile",
+    "hero_cta_secondary": "Aflați mai multe",
+    "section_ratings_title": "Cele Mai Recente Ratinguri Certo",
     "section_reports_title": "Analize și Rapoarte",
     "section_about_title": "Despre Fundație"
   },
   "Ratings": {
     "title": "Ratinguri Certo",
-    "subtitle": "Evaluări ale calității guvernanței instituționale",
+    "subtitle": "Evaluări ale calității managementului instituțiilor",
     "search_placeholder": "Caută instituție...",
     "filter_sector": "Sector",
     "sector_public": "Public",
     "sector_corporate": "Corporativ",
     "sector_medical": "Medical",
     "sector_defense": "Apărare",
-    "sector_ngo": "Organizații non-profit",
-    "rating_valid_until": "Rating valabil până la",
+    "sector_ngo": "Organizații Neguvernamentale",
+    "rating_valid_until": "Rating valid până la",
     "rating_issued": "Data emiterii",
-    "no_results": "Nu au fost găsite rezultate",
+    "no_results": "Nu s-au găsit rezultate",
     "view_profile": "Vezi profil"
   },
   "Nav": {
@@ -36,15 +36,15 @@
   "Footer": {
     "copyright": "Fundația Certo Governance Institute © {year}",
     "privacy": "Politica de Confidențialitate",
-    "terms": "Condiții de Utilizare"
+    "terms": "Termeni și Condiții"
   },
   "About": {
     "title": "Despre Fundația Certo Governance Institute",
     "mission_title": "Misiune",
-    "mission_text": "Construirea unei culturi a bunei guvernanțe prin evaluare independentă și promovarea standardelor de governance în Polonia și Europa.",
+    "mission_text": "Construirea unei culturi de bun management prin evaluare independentă și promovarea standardelor de governance în Polonia și Europa.",
     "independence_title": "Independență",
-    "independence_text": "Fundația este independentă de entitățile evaluate, autorităților publice și intereselor comerciale.",
+    "independence_text": "Fundația este independentă de entitățile evaluate, de organele autorității publice și de interesele comerciale.",
     "methodology_title": "Metodologie",
-    "methodology_text": "Ratingurile Certo se bazează pe o metodologie riguroasă bazată pe standarde ISO și recomandări ale UE."
+    "methodology_text": "Ratingurile Certo se bazează pe o metodologie riguroasă bazată pe standarde ISO și directivele UE."
   }
 }

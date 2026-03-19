@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Overovanie identity a compliance pre verejné inštitúcie a korporácie."
+    "description": "Overenie totožnosti a compliance pre verejné inštitúcie a korporácie."
   },
   "Nav": {
     "solutions": "Riešenia",
@@ -12,59 +12,59 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika Ochrany Osobných Údajov",
-    "terms": "Podmienky Služby"
+    "terms": "Podmienky Poskytovania Služieb"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Identita.",
+    "hero_line1": "Totožnosť.",
     "hero_line2": "Súlad.",
     "hero_line3": "Istota.",
-    "hero_description": "Infraštruktúra overovania a compliance pre verejné inštitúcie, korporácie a regulované subjekty. Vybudovaná na základe štandardov",
+    "hero_description": "Infraštruktúra overenia a compliance pre verejné inštitúcie, korporácie a regulované subjekty. Postavená na štandardoch",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "ZAČAŤ S IMPLEMENTÁCIOU",
+    "cta_primary": "ZAČAŤ IMPLEMENTÁCIU",
     "cta_secondary": "SLUŽBY",
     "services_label": "SLUŽBY",
     "services_title": "Tri vrstvy infraštruktúry compliance",
-    "service1_title": "Overovanie Identity",
-    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overovanie dokumentov, screening sankcií a PEP, integrácia s vládnymi registrami.",
+    "service1_title": "Overenie Totožnosti",
+    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overenie dokumentov, screening sankcií a PEP, integrácia s štátnymi registrami.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Automatické skórovanie súladu na základe metodológie Certo Governance Institute. Päťstupňový systém hodnotenia s úplnou dráhou auditu.",
+    "service2_desc": "Automatické skórование súladu na základe metodológie Certo Governance Institute. Päťstupňový systém hodnotenia s plnou cestou auditu.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatické nápravné plány a monitoring ich implementácie. Integrácia so systémami ERP, GRC a platformami na riadenie rizík.",
+    "service3_desc": "Automatické nápravné plány a monitoring ich realizácie. Integrácia so systémami ERP, GRC a platformami riadenia rizík.",
     "arch_label": "ARCHITEKTÚRA",
     "arch_title": "Ako funguje Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Údaje subjektu + dokumenty + regulačný kontext",
     "step2_title": "Verify",
-    "step2_desc": "Overovanie identity, screening, verejný register",
+    "step2_desc": "Overenie totožnosti, screening, verejný register",
     "step3_title": "Score",
     "step3_desc": "Automatický rating súladu Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "PDF správa + API + panel Certo Online",
-    "badge_iso": "Štandardy ISO",
+    "step4_desc": "Správa PDF + API + dashboard Certo Online",
+    "badge_iso": "Normy ISO",
     "badge_compliance": "Regulačný súlad",
-    "badge_kyc": "Overovanie identity",
+    "badge_kyc": "Overenie totožnosti",
     "badge_governance": "Hodnotenie governance"
   },
   "Legal": {
-    "back": "Návrat na úvodnú stránku",
+    "back": "Späť na hlavnú stránku",
     "last_updated": "Posledná aktualizácia: Marec 2026",
     "privacy_title": "Politika Ochrany Osobných Údajov",
-    "terms_title": "Podmienky Služby"
+    "terms_title": "Podmienky Poskytovania Služieb"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
-    "welcome": "Vitajte, {name}",
-    "your_rating": "Váš Rating Certo",
-    "your_delegates": "Vaši Delegáti",
-    "your_accords": "Vaše Certo Accord",
+    "welcome": "Vitaj, {name}",
+    "your_rating": "Tvoj Rating Certo",
+    "your_delegates": "Tvojí Delegáti",
+    "your_accords": "Tvoje Certo Accord",
     "recent_activity": "Nedávna aktivita",
     "quick_actions": "Rýchle akcie"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizácia",
-    "contact_person": "Kontaktná osoba",
+    "contact_person": "Osoba na kontakt",
     "sector": "Sektor",
     "edit_profile": "Upraviť profil",
     "verified_badge": "Overený subjekt"
@@ -74,8 +74,8 @@
     "add_delegate": "Pridať delegáta",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stav",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "primary_link": "Odkaz PRIMARY",
+    "failover_link": "Odkaz FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

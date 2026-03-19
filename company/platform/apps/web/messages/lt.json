@@ -1,45 +1,45 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Tapatybės patvirtinimas ir atitiktis viešosioms ir korporatyviosioms institucijoms."
+    "description": "Tapatybės patvirtinimas ir atitiktis viešosioms institucijoms ir korporacijoms."
   },
   "Nav": {
     "solutions": "Sprendimai",
     "technology": "Technologija",
-    "foundation": "Certo Fundacija",
+    "foundation": "Certo Fondacija",
     "login": "Prisijungti"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Privatumo politika",
-    "terms": "Paslaugos sąlygos"
+    "terms": "Paslaugų sąlygos"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Tapatybė.",
     "hero_line2": "Atitiktis.",
-    "hero_line3": "Pasitikėjimas.",
+    "hero_line3": "Patikimumas.",
     "hero_description": "Patvirtinimo ir atitikties infrastruktūra viešosioms institucijoms, korporacijoms ir reguliuojamiems subjektams. Sukurta pagal standartus",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "PRADĖTI DIEGIMĄ",
     "cta_secondary": "PASLAUGOS",
     "services_label": "PASLAUGOS",
-    "services_title": "Trys atitikties infrastruktūros sluoksniai",
+    "services_title": "Trys atitikties infrastruktūros lygiai",
     "service1_title": "Tapatybės patvirtinimas",
-    "service1_desc": "KYC/AML reguliuojamiems subjektams. Automatinis dokumentų patvirtinimas, sankcijų ir PEP filtravimas, integracija su valstybiniais registrais.",
+    "service1_desc": "KYC/AML reguliuojamiems subjektams. Automatinis dokumentų patvirtinimas, sankcijų ir VIP asmenų peržiūra, integracija su valstybiniais registrais.",
     "service2_title": "Atitikties reitingas",
-    "service2_desc": "Automatinis atitikties vertinimas pagal Certo Governance Institute metodologiją. Penkiataškė vertinimo sistema su visa audito šlaite.",
+    "service2_desc": "Automatinis atitikties vertinimas pagal Certo Governance Institute metodologiją. Penkiataškė vertinimo sistema su visišku audito keliu.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatiniai taisymo planai ir jų įgyvendinimo stebėjimas. Integracija su ERP, GRC sistemomis ir rizikos valdymo platformomis.",
+    "service3_desc": "Automatiniai taisymo planai ir jų įgyvendinimo priežiūra. Integracija su ERP, GRC sistemomis ir rizikos valdymo platformomis.",
     "arch_label": "ARCHITEKTŪRA",
     "arch_title": "Kaip veikia Certo ID",
-    "step1_title": "Įvestis",
+    "step1_title": "Priėmimas",
     "step1_desc": "Subjekto duomenys + dokumentai + reguliacinis kontekstas",
     "step2_title": "Patvirtinti",
-    "step2_desc": "Tapatybės patvirtinimas, filtravimas, viešasis registras",
-    "step3_title": "Įvertinti",
-    "step3_desc": "Automatinis Certo Vector atitikties reitingas",
-    "step4_title": "Ataskaita",
+    "step2_desc": "Tapatybės patvirtinimas, peržiūra, viešasis registras",
+    "step3_title": "Vertinti",
+    "step3_desc": "Automatinis atitikties reitingas Certo Vector",
+    "step4_title": "Pranešimas",
     "step4_desc": "PDF ataskaita + API + Certo Online prietaisų sritis",
     "badge_iso": "ISO standartai",
     "badge_compliance": "Reguliacinė atitiktis",
@@ -50,16 +50,16 @@
     "back": "Grįžti į pagrindinį puslapį",
     "last_updated": "Paskutinis atnaujinimas: 2026 m. kovas",
     "privacy_title": "Privatumo politika",
-    "terms_title": "Paslaugos sąlygos"
+    "terms_title": "Paslaugų sąlygos"
   },
   "Dashboard": {
-    "title": "Certo ID prietaisų sritis",
+    "title": "Certo ID skydelis",
     "welcome": "Sveiki, {name}",
     "your_rating": "Jūsų Certo reitingas",
     "your_delegates": "Jūsų delegatai",
     "your_accords": "Jūsų Certo Accord",
-    "recent_activity": "Seniausia veikla",
-    "quick_actions": "Greitos akcijos"
+    "recent_activity": "Neseniausia veikla",
+    "quick_actions": "Greiti veiksmai"
   },
   "Profile": {
     "title": "Profilis",
@@ -74,8 +74,8 @@
     "add_delegate": "Pridėti delegatą",
     "delegate_id": "Delegate ID",
     "delegate_status": "Būsena",
-    "primary_link": "PRIMARY saitai",
-    "failover_link": "FAILOVER saitai",
+    "primary_link": "PRIMARY nuoroda",
+    "failover_link": "FAILOVER nuoroda",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

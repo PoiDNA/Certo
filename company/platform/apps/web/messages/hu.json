@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Azonosítás-ellenőrzés és compliance intézmények és vállalkozások számára."
+    "description": "Személyazonosság-ellenőrzés és compliance közintézmények és vállalatok számára."
   },
   "Nav": {
     "solutions": "Megoldások",
@@ -11,53 +11,53 @@
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
-    "privacy": "Adatvédelmi irányelvek",
-    "terms": "Szolgáltatási feltételek"
+    "privacy": "Adatvédelmi Irányelvek",
+    "terms": "Felhasználási Feltételek"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Identitás.",
-    "hero_line2": "Compliance.",
+    "hero_line1": "Személyazonosság.",
+    "hero_line2": "Megfelelőség.",
     "hero_line3": "Biztonság.",
-    "hero_description": "Ellenőrzési és compliance infrastruktúra közalkalmazottaknak, vállalkozásoknak és szabályozott szervezeteknek. Építve a standardokra",
+    "hero_description": "Ellenőrzési és compliance infrastruktúra közintézmények, vállalatok és szabályozott szervezetek számára. Az alábbi szabványokra épül",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "KEZDJE MEG A BEVEZETÉST",
+    "cta_primary": "MEGVALÓSÍTÁS INDÍTÁSA",
     "cta_secondary": "SZOLGÁLTATÁSOK",
     "services_label": "SZOLGÁLTATÁSOK",
     "services_title": "A compliance infrastruktúra három rétege",
-    "service1_title": "Azonosítás-ellenőrzés",
-    "service1_desc": "KYC/AML szabályozott szervezetek számára. Automatikus dokumentum-ellenőrzés, szankciók és PEP szűrés, integráció állami nyilvántartásokkal.",
+    "service1_title": "Személyazonosság-ellenőrzés",
+    "service1_desc": "KYC/AML szabályozott szervezetek számára. Automatikus dokumentum-ellenőrzés, szankciós és PEP screening, integráció az állami nyilvántartásokkal.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Automatikus megfelelőségi pontszámozás a Certo Governance Institute módszertana alapján. Ötfokozatú értékelési rendszer teljes auditnyommal.",
+    "service2_desc": "Automatikus megfelelőség-pontszámozás a Certo Governance Institute módszertanán alapulva. Ötfokozatú értékelési rendszer teljes auditúra-nyomvonallal.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatikus remedálási tervek és azok megvalósításának monitorozása. Integráció ERP, GRC rendszerekkel és kockázatkezelési platformokkal.",
+    "service3_desc": "Automatikus javítási tervek és azok megvalósításának monitorozása. Integráció az ERP, GRC és kockázatkezelési platformokkal.",
     "arch_label": "ARCHITEKTÚRA",
     "arch_title": "Hogyan működik a Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Szervezet adatai + dokumentumok + szabályozási kontextus",
+    "step1_desc": "Szervezeti adatok + dokumentumok + szabályozási kontextus",
     "step2_title": "Verify",
-    "step2_desc": "Azonosítás-ellenőrzés, szűrés, nyilvános nyilvántartás",
+    "step2_desc": "Személyazonosság-ellenőrzés, screening, nyilvános nyilvántartás",
     "step3_title": "Score",
-    "step3_desc": "Automatikus Certo Vector compliance rating",
+    "step3_desc": "Automatikus Certo Vector megfelelőség-rating",
     "step4_title": "Report",
-    "step4_desc": "PDF jelentés + API + Certo Online irányítópult",
-    "badge_iso": "ISO Standardok",
+    "step4_desc": "PDF-jelentés + API + Certo Online irányítópult",
+    "badge_iso": "ISO szabványok",
     "badge_compliance": "Szabályozási megfelelőség",
-    "badge_kyc": "Azonosítás-ellenőrzés",
+    "badge_kyc": "Személyazonosság-ellenőrzés",
     "badge_governance": "Governance értékelés"
   },
   "Legal": {
     "back": "Vissza a kezdőlapra",
     "last_updated": "Utolsó frissítés: 2026. március",
-    "privacy_title": "Adatvédelmi irányelvek",
-    "terms_title": "Szolgáltatási feltételek"
+    "privacy_title": "Adatvédelmi Irányelvek",
+    "terms_title": "Felhasználási Feltételek"
   },
   "Dashboard": {
-    "title": "Certo ID Panel",
-    "welcome": "Üdvözöljük, {name}",
-    "your_rating": "Az Ön Certo Rating",
-    "your_delegates": "Az Ön Certo Delegate-jei",
-    "your_accords": "Az Ön Certo Accord szerződései",
+    "title": "Certo ID Irányítópult",
+    "welcome": "Üdvözlünk, {name}",
+    "your_rating": "Az Ön Certo Rating értékelése",
+    "your_delegates": "Az Ön Delegátusai",
+    "your_accords": "Az Ön Certo Accord Megállapodásai",
     "recent_activity": "Legutóbbi tevékenység",
     "quick_actions": "Gyors műveletek"
   },
@@ -70,10 +70,10 @@
     "verified_badge": "Ellenőrzött szervezet"
   },
   "Delegates": {
-    "title": "Certo Delegate",
-    "add_delegate": "Certo Delegate hozzáadása",
+    "title": "Certo Delegátusok",
+    "add_delegate": "Delegátus hozzáadása",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Státusz",
+    "delegate_status": "Állapot",
     "primary_link": "PRIMARY Link",
     "failover_link": "FAILOVER Link",
     "plan_basic": "Basic",

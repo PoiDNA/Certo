@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton ratinglaitos, joka arvioi julkisten, yritys- ja järjestösektorin organisaatioiden hallintokäytäntöjen laatua."
+    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja kolmannen sektorin organisaatioiden hallintokäytäntöjen laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -26,38 +26,38 @@
     "back": "Takaisin",
     "next": "Seuraava",
     "close": "Sulje",
-    "search": "Hae",
+    "search": "Etsi",
     "download": "Lataa",
     "verified": "Vahvistettu",
     "active": "Aktiivinen",
     "inactive": "Passiivinen"
   },
   "Navigation": {
-    "home": "Etusivu",
-    "ratings": "Ratingit",
+    "home": "Pääsivu",
+    "ratings": "Luokitukset",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Tietoa säätiöstä",
+    "about": "Säätiöstä",
     "contact": "Ota yhteyttä",
-    "dashboard": "Hallintapaneeli",
+    "dashboard": "Kojelauta",
     "settings": "Asetukset"
   },
   "Auth": {
     "login_title": "Kirjaudu sisään",
-    "login_subtitle": "Kirjaudu tilillesi",
-    "login_with_google": "Kirjaudu Google-tilillä",
+    "login_subtitle": "Kirjaudu sisään tilillesi",
+    "login_with_google": "Kirjaudu sisään Googlella",
     "email_label": "Sähköpostiosoite",
     "password_label": "Salasana",
     "forgot_password": "Unohditko salasanasi?",
-    "no_account": "Eikö sinulla ole tiliä?",
+    "no_account": "Sinulla ei ole tiliä?",
     "register": "Rekisteröidy"
   },
   "Errors": {
     "404_title": "Sivua ei löytynyt",
     "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
-    "500_title": "Palvelimen virhe",
+    "500_title": "Palvelinvirhe",
     "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
-    "unauthorized": "Sinulla ei ole pääsyoikeutta. Kirjaudu sisään jatkaaksesi."
+    "unauthorized": "Pääsy kielletty. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",

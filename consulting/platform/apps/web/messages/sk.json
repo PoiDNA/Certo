@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Nájdite poradcu",
-    "description": "Akreditovaní poradcovia Certo. Firemné riadenie a compliance."
+    "description": "Akreditovaní poradcovia Certo. Firemné riadenie a súlad."
   },
   "Nav": {
     "advisors": "Poradcovia",
@@ -9,17 +9,17 @@
     "login": "Prihlásenie"
   },
   "Footer": {
-    "description": "Špecializované poradenstvo v oblasti firemného riadenia, compliance a bezpečnosti pre lídrov trhu.",
+    "description": "Odborné poradenstvo v oblasti firemného riadenia, súladu a bezpečnosti pre trhových lídrov.",
     "ecosystem": "Ekosystém Certo",
     "accreditation": "Všetci poradcovia sú akreditovaní Nadáciou Certo Governance Institute",
     "privacy": "Politika ochrany osobných údajov",
-    "terms": "Všeobecné podmienky"
+    "terms": "Podmienky používania"
   },
   "Home": {
-    "hero_title": "Špecializované poradenstvo\nna úrovni vedenia.",
-    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších štandardov firemného riadenia a regulačnej zhody.",
+    "hero_title": "Odborné poradenstvo\nna úrovni vedenia.",
+    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších noriem firemného riadenia a regulačnej zhody.",
     "hero_cta": "Nájdite experta",
-    "finder_title": "Chcem si poговoriť s odborníkom na:",
+    "finder_title": "Chcem hovoriť s odborníkom v oblasti:",
     "area_health": "Zdravotníctvo",
     "area_local_gov": "Samospráva",
     "area_defense": "Obrana",
@@ -29,12 +29,12 @@
     "form_name": "Meno a priezvisko",
     "form_email": "E-mailová adresa (pracovná)",
     "form_org": "Názov organizácie / Pozícia",
-    "form_submit": "Poslať dotaz",
-    "advisors_title": "Príkladní experti z našej siete",
-    "advisor_bio": "Akreditovaný poradca Certo s dlhoročnými skúsenosťami pri optimalizácii procesov pre strategické inštitúcie trhu.",
-    "advisor_1_bio": "Expertka v oblasti zdravotníctva a súladu, zodpovedná za udržanie a posilnenie ratingu Certo v lekárskej sfére.",
-    "advisor_2_bio": "Špecialista v oblasti financií a auditu, dbajúci o udržanie a posilnenie ratingu Certo vo finančnom sektore.",
-    "advisor_3_bio": "Poradca v oblasti obrany a kybernetickej bezpečnosti, zodpovedný za posilnenie ratingu Certo v obrannom priemysle."
+    "form_submit": "Odoslať dopyt",
+    "advisors_title": "Príklady expertov z našej siete",
+    "advisor_bio": "Akreditovaný poradca Certo s dlhoročnými skúsenosťami pri optimalizácii procesov pre strategické inštitúcie na trhu.",
+    "advisor_1_bio": "Špecialista v oblasti zdravotníctva a compliance, zodpovedná za udržiavanie a posilňovanie ratingu Certo v zdravotníckom priemysle.",
+    "advisor_2_bio": "Špecialista v oblasti financií a auditu starajúci sa o udržiavanie a posilňovanie ratingu Certo v finančnom sektore.",
+    "advisor_3_bio": "Poradca v oblasti obrany a kybernetickej bezpečnosti zodpovedný za posilňovanie ratingu Certo v obrannom priemysle."
   },
   "Legal": {
     "back": "Späť na hlavnú stránku",
@@ -46,7 +46,7 @@
     "title": "Nájdite poradcu Certo",
     "sector_label": "Sektor vašej inštitúcie",
     "need_label": "Čo potrebujete?",
-    "need_audit": "Audit firemného riadenia",
+    "need_audit": "Audit riadenia",
     "need_advisory": "Strategické poradenstvo",
     "need_training": "Školenia a workshopy",
     "need_rating": "Príprava na rating",

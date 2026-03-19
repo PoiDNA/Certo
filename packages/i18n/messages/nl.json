@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van bestuur van openbare, bedrijfs- en non-profitinstellingen beoordeelt."
+    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van bestuur van publieke, bedrijfs- en non-profitinstellingen beoordeelt."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
     "login": "Inloggen",
-    "logout": "Afmelden",
+    "logout": "Uitloggen",
     "privacyPolicy": "Privacybeleid",
     "termsOfUse": "Gebruiksvoorwaarden",
     "loading": "Laden...",
@@ -37,7 +37,7 @@
     "ratings": "Ratings",
     "reports": "Rapporten",
     "analysis": "Analyses",
-    "about": "Over het Instituut",
+    "about": "Over de Stichting",
     "contact": "Contact",
     "dashboard": "Dashboard",
     "settings": "Instellingen"
@@ -49,7 +49,7 @@
     "email_label": "E-mailadres",
     "password_label": "Wachtwoord",
     "forgot_password": "Wachtwoord vergeten?",
-    "no_account": "Heeft u geen account?",
+    "no_account": "Nog geen account?",
     "register": "Registreren"
   },
   "Errors": {

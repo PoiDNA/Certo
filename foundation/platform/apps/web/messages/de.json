@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Unabhängige Ratingagentur zur Bewertung der Qualität der Unternehmensführung im öffentlichen, privaten, medizinischen und Verteidigungssektor."
+    "description": "Unabhängige Ratingagentur zur Bewertung der Qualität der Unternehmensführung im öffentlichen, korporativen, medizinischen und Verteidigungssektor."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo ist die weltweit erste Ratingagentur, deren Ratings kryptografische Artefakte des Prozesses sind – keine Meinungen. Jede Ratingentscheidung ist außerhalb der eigenen Infrastruktur verankert, offline überprüfbar und öffentlich prüfbar.",
-    "hero_cta_primary": "Ratings anzeigen",
+    "description": "Certo ist die weltweit erste Ratingagentur, deren Ratings kryptographische Artefakte des Prozesses sind – keine Meinungen. Jede Ratingentscheidung ist außerhalb der eigenen Infrastruktur verankert, offline verifizierbar und öffentlich revidierbar.",
+    "hero_cta_primary": "Ratings ansehen",
     "hero_cta_secondary": "Mehr erfahren",
     "section_ratings_title": "Neueste Certo Ratings",
     "section_reports_title": "Analysen und Berichte",
@@ -18,7 +18,7 @@
     "search_placeholder": "Institution suchen...",
     "filter_sector": "Sektor",
     "sector_public": "Öffentlich",
-    "sector_corporate": "Privat",
+    "sector_corporate": "Korporativ",
     "sector_medical": "Medizinisch",
     "sector_defense": "Verteidigung",
     "sector_ngo": "Nichtregierungsorganisationen",
@@ -30,7 +30,7 @@
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Methodologie",
-    "about": "Über uns",
+    "about": "Über die Stiftung",
     "login": "Anmelden"
   },
   "Footer": {
@@ -43,8 +43,8 @@
     "mission_title": "Mission",
     "mission_text": "Aufbau einer Kultur guter Unternehmensführung durch unabhängige Bewertung und Förderung von Governance-Standards in Polen und Europa.",
     "independence_title": "Unabhängigkeit",
-    "independence_text": "Die Stiftung ist unabhängig von den bewerteten Einrichtungen, Behörden und kommerziellen Interessen.",
+    "independence_text": "Die Stiftung ist unabhängig von bewerteten Einrichtungen, öffentlichen Behörden und kommerziellen Interessen.",
     "methodology_title": "Methodologie",
-    "methodology_text": "Certo Ratings basieren auf einer strengen Methodik, die auf ISO-Standards und EU-Richtlinien basiert."
+    "methodology_text": "Certo Ratings basieren auf einer rigorosen Methodik, die auf ISO-Standards und EU-Richtlinien beruht."
   }
 }

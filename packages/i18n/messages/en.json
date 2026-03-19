@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Independent rating agency assessing the quality of governance in public, corporate and non-profit institutions."
+    "description": "Independent rating agency assessing the quality of governance in public, corporate, and non-governmental institutions."
   },
   "Common": {
     "rating": "Certo Rating",
@@ -37,7 +37,7 @@
     "ratings": "Ratings",
     "reports": "Reports",
     "analysis": "Analysis",
-    "about": "About",
+    "about": "About Foundation",
     "contact": "Contact",
     "dashboard": "Dashboard",
     "settings": "Settings"

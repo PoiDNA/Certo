@@ -1,64 +1,64 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Ověřování totožnosti a compliance pro veřejné instituce a korporace."
+    "description": "Ověření identity a compliance pro veřejné instituce a korporace."
   },
   "Nav": {
     "solutions": "Řešení",
     "technology": "Technologie",
-    "foundation": "Fundace Certo",
-    "login": "Přihlásit se"
+    "foundation": "Certo Governance Institute",
+    "login": "Přihlášení"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
-    "privacy": "Zásady ochrany osobních údajů",
-    "terms": "Podmínky poskytování služeb"
+    "privacy": "Zásady ochrany soukromí",
+    "terms": "Podmínky služby"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Totožnost.",
+    "hero_line1": "Identita.",
     "hero_line2": "Soulad.",
     "hero_line3": "Jistota.",
-    "hero_description": "Infrastruktura ověřování a compliance pro veřejné instituce, korporace a regulované subjekty. Vytvořena na standardech",
+    "hero_description": "Infrastruktura ověřování a compliance pro veřejné instituce, korporace a regulované subjekty. Postavena na standardech",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ZAHÁJIT IMPLEMENTACI",
     "cta_secondary": "SLUŽBY",
     "services_label": "SLUŽBY",
-    "services_title": "Tři vrstvy infrastruktury compliance",
-    "service1_title": "Ověřování totožnosti",
+    "services_title": "Tři vrstvy compliance infrastruktury",
+    "service1_title": "Ověření identity",
     "service1_desc": "KYC/AML pro regulované subjekty. Automatické ověřování dokumentů, screening sankcí a PEP, integrace s státními registry.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Automatické hodnocení souladu na základě metodologie Certo Governance Institute. Pětistupňový systém oceny s úplnou auditní stopou.",
+    "service2_desc": "Automatické skórování shody na základě metodologie Certo Governance Institute. Pětistupňový systém hodnocení s úplnou audit trail.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatické nápravné plány a monitoring jejich realizace. Integrace se systémy ERP, GRC a platformami pro řízení rizik.",
+    "service3_desc": "Automatické nápravné plány a monitoring jejich realizace. Integrace se systémy ERP, GRC a platformami pro správu rizik.",
     "arch_label": "ARCHITEKTURA",
     "arch_title": "Jak funguje Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Data subjektu + dokumenty + regulační kontext",
     "step2_title": "Verify",
-    "step2_desc": "Ověřování totožnosti, screening, veřejný registr",
+    "step2_desc": "Ověření identity, screening, veřejný registr",
     "step3_title": "Score",
-    "step3_desc": "Automatické hodnocení souladu Certo Vector",
+    "step3_desc": "Automatický rating souladu Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Zpráva PDF + API + dashboard Certo Online",
-    "badge_iso": "Normy ISO",
+    "badge_iso": "Standardy ISO",
     "badge_compliance": "Regulační soulad",
-    "badge_kyc": "Ověřování totožnosti",
+    "badge_kyc": "Ověření identity",
     "badge_governance": "Hodnocení governance"
   },
   "Legal": {
-    "back": "Zpět na hlavní stránku",
+    "back": "Zpět na domovskou stránku",
     "last_updated": "Poslední aktualizace: březen 2026",
-    "privacy_title": "Zásady ochrany osobních údajů",
-    "terms_title": "Podmínky poskytování služeb"
+    "privacy_title": "Zásady ochrany soukromí",
+    "terms_title": "Podmínky služby"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
     "welcome": "Vítejte, {name}",
     "your_rating": "Váš Rating Certo",
-    "your_delegates": "Vaši Delegáti",
+    "your_delegates": "Vaši delegáti",
     "your_accords": "Vaše Certo Accord",
-    "recent_activity": "Nedávná aktivita",
+    "recent_activity": "Poslední aktivita",
     "quick_actions": "Rychlé akce"
   },
   "Profile": {
@@ -74,8 +74,8 @@
     "add_delegate": "Přidat delegáta",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stav",
-    "primary_link": "Primární odkaz",
-    "failover_link": "Záložní odkaz",
+    "primary_link": "Odkaz PRIMARY",
+    "failover_link": "Odkaz FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

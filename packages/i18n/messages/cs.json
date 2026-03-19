@@ -37,9 +37,9 @@
     "ratings": "Ratingy",
     "reports": "Zprávy",
     "analysis": "Analýzy",
-    "about": "O Institutu",
+    "about": "O Nadaci",
     "contact": "Kontakt",
-    "dashboard": "Přístrojová deska",
+    "dashboard": "Přehled",
     "settings": "Nastavení"
   },
   "Auth": {
@@ -50,7 +50,7 @@
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
     "no_account": "Nemáte účet?",
-    "register": "Zaregistrujte se"
+    "register": "Zaregistrovat se"
   },
   "Errors": {
     "404_title": "Stránka nebyla nalezena",

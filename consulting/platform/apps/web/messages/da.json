@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Find Advisor",
-    "description": "Akkrediterede Certo-rådgivere. Corporate governance og compliance."
+    "title": "Certo Consulting — Find Adviser",
+    "description": "Accredited Certo advisers. Corporate governance and compliance."
   },
   "Nav": {
     "advisors": "Rådgivere",
@@ -9,36 +9,36 @@
     "login": "Login"
   },
   "Footer": {
-    "description": "Ekspertiseret rådgivning inden for corporate governance, compliance og sikkerhed for markedsledere.",
-    "ecosystem": "Certo-økosystemet",
+    "description": "Ekspertkonsulentering inden for corporate governance, compliance og sikkerhed for markedsledere.",
+    "ecosystem": "Certo-økosystem",
     "accreditation": "Alle rådgivere er akkrediteret af Certo Governance Institute",
     "privacy": "Privatlivspolitik",
-    "terms": "Vilkår"
+    "terms": "Vilkår og betingelser"
   },
   "Home": {
-    "hero_title": "Ekspertiseret rådgivning\npa bestyrelsesniveau.",
-    "hero_subtitle": "Vi forbinder akkrediterede Certo-rådgivere med institutioner, der kræver højeste standarder for corporate governance og lovgivningsmæssig overholdelse.",
-    "hero_cta": "Find ekspert",
+    "hero_title": "Ekspertkonsulentering\npå bestyrelsesniveau.",
+    "hero_subtitle": "Vi forbinder akkrediterede Certo-rådgivere med institutioner, der kræver de højeste standarder for corporate governance og regulatorisk compliance.",
+    "hero_cta": "Find en ekspert",
     "finder_title": "Jeg vil gerne tale med en ekspert inden for:",
     "area_health": "Sundhedsvæsen",
-    "area_local_gov": "Lokale myndigheder",
+    "area_local_gov": "Lokal selvstyre",
     "area_defense": "Forsvar",
     "area_finance": "Finans",
     "area_education": "Uddannelse",
-    "form_title": "Efterlad dine kontaktoplysninger, så vi kan tilknytte den rigtige rådgiver fra området",
+    "form_title": "Efterlad dine oplysninger, så finder vi den rigtige rådgiver fra området",
     "form_name": "Navn",
-    "form_email": "E-mailadresse (arbejds)",
+    "form_email": "E-mailadresse (arbejds-)",
     "form_org": "Organisationsnavn / Stilling",
-    "form_submit": "Indsend anmodning",
+    "form_submit": "Indsend forespørgsel",
     "advisors_title": "Eksempler på eksperter fra vores netværk",
     "advisor_bio": "Akkrediteret Certo-rådgiver med mange års erfaring i optimering af processer for strategiske markedsinstitutioner.",
-    "advisor_1_bio": "Ekspert inden for sundhedsvæsen og compliance, ansvarlig for opretholdelse og styrkelse af Certo-ratingen i den medicinske sektor.",
-    "advisor_2_bio": "Specialist inden for finans og revision, sørger for opretholdelse og styrkelse af Certo-ratingen i den finansielle sektor.",
-    "advisor_3_bio": "Rådgiver inden for forsvar og cybersikkerhed, ansvarlig for styrkelse af Certo-ratingen i forsvarsindustrien."
+    "advisor_1_bio": "Ekspert inden for sundhedsvæsen og compliance, ansvarlig for vedligeholdelse og styrkelse af Certo-rating i medicinalindustrien.",
+    "advisor_2_bio": "Specialist inden for finans og revision, der arbejder på at vedligeholde og styrke Certo-rating i finanssektoren.",
+    "advisor_3_bio": "Rådgiver inden for forsvar og cybersikkerhed, ansvarlig for styrkelse af Certo-rating i forsvarsministeriet."
   },
   "Legal": {
-    "back": "Tilbage til startside",
-    "last_updated": "Senest opdateret: Marts 2026",
+    "back": "Tilbage til startsiden",
+    "last_updated": "Sidste opdatering: marts 2026",
     "privacy_title": "Privatlivspolitik",
     "terms_title": "Vilkår for brug"
   },
@@ -46,12 +46,12 @@
     "title": "Find Certo-rådgiver",
     "sector_label": "Din institutions sektor",
     "need_label": "Hvad har du brug for?",
-    "need_audit": "Governance-audit",
+    "need_audit": "Governance-revision",
     "need_advisory": "Strategisk rådgivning",
     "need_training": "Træning og workshops",
     "need_rating": "Forberedelse til rating",
     "region_label": "Region",
-    "submit": "Søg efter rådgiver"
+    "submit": "Søg rådgiver"
   },
   "Advisor": {
     "accredited_by": "Akkrediteret af Certo",

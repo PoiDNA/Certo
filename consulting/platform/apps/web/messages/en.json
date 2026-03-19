@@ -9,47 +9,47 @@
     "login": "Login"
   },
   "Footer": {
-    "description": "Expert advisory on corporate governance, compliance and security for market leaders.",
+    "description": "Expert advisory services in corporate governance, compliance and security for market leaders.",
     "ecosystem": "Certo Ecosystem",
-    "accreditation": "All advisors are accredited by the Certo Governance Institute",
+    "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Use"
   },
   "Home": {
     "hero_title": "Expert advisory\nat board level.",
     "hero_subtitle": "We connect accredited Certo advisors with institutions requiring the highest standards of corporate governance and regulatory compliance.",
     "hero_cta": "Find an expert",
-    "finder_title": "I want to talk to an expert in:",
+    "finder_title": "I want to speak with an expert in:",
     "area_health": "Healthcare",
     "area_local_gov": "Local Government",
     "area_defense": "Defense",
     "area_finance": "Finance",
     "area_education": "Education",
-    "form_title": "Leave your contact details so we can match you with the right advisor from the area of",
+    "form_title": "Leave your contact details so we can match you with an appropriate advisor in the",
     "form_name": "Full Name",
-    "form_email": "Email Address (work)",
+    "form_email": "Email address (business)",
     "form_org": "Organization Name / Position",
-    "form_submit": "Submit Query",
+    "form_submit": "Send request",
     "advisors_title": "Sample experts from our network",
-    "advisor_bio": "Accredited Certo advisor with many years of experience in process optimization for strategic market institutions.",
-    "advisor_1_bio": "Expert in healthcare and compliance, responsible for maintaining and strengthening the Certo rating in the medical sector.",
-    "advisor_2_bio": "Specialist in finance and audit, ensuring the maintenance and strengthening of the Certo rating in the financial sector.",
-    "advisor_3_bio": "Advisor in defence and cybersecurity, responsible for strengthening the Certo rating in the defence industry."
+    "advisor_bio": "Accredited Certo advisor with extensive experience in process optimization for strategic market institutions.",
+    "advisor_1_bio": "Expert in healthcare and compliance, responsible for maintaining and strengthening Certo rating in the medical sector.",
+    "advisor_2_bio": "Specialist in finance and audit, ensuring the maintenance and strengthening of Certo rating in the financial sector.",
+    "advisor_3_bio": "Advisor in defense and cybersecurity, responsible for strengthening Certo rating in the defense industry."
   },
   "Legal": {
     "back": "Back to homepage",
     "last_updated": "Last updated: March 2026",
     "privacy_title": "Privacy Policy",
-    "terms_title": "Terms of Service"
+    "terms_title": "Terms of Use"
   },
   "FindAdvisor": {
-    "title": "Find a Certo Advisor",
-    "sector_label": "Your Institution's Sector",
+    "title": "Find a Certo advisor",
+    "sector_label": "Your institution's sector",
     "need_label": "What do you need?",
     "need_audit": "Governance audit",
     "need_advisory": "Strategic advisory",
     "need_training": "Training and workshops",
-    "need_rating": "Rating preparation",
+    "need_rating": "Preparation for rating",
     "region_label": "Region",
     "submit": "Search for advisor"
   },
@@ -58,6 +58,6 @@
     "specialization": "Specialization",
     "sectors": "Sectors",
     "contact_advisor": "Contact",
-    "view_profile": "View Profile"
+    "view_profile": "View profile"
   }
 }

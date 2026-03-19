@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organo di rating indipendente che valuta la qualità della governance delle istituzioni pubbliche, aziendali e non governative."
+    "description": "Organo di rating indipendente che valuta la qualità della governance delle istituzioni pubbliche, aziendali e no profit."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,8 +17,8 @@
     "login": "Accedi",
     "logout": "Esci",
     "privacyPolicy": "Informativa sulla privacy",
-    "termsOfUse": "Termini di utilizzo",
-    "loading": "Caricamento in corso...",
+    "termsOfUse": "Condizioni d'uso",
+    "loading": "Caricamento...",
     "error": "Si è verificato un errore",
     "save": "Salva",
     "cancel": "Annulla",
@@ -33,13 +33,13 @@
     "inactive": "Inattivo"
   },
   "Navigation": {
-    "home": "Pagina iniziale",
+    "home": "Home",
     "ratings": "Rating",
     "reports": "Rapporti",
     "analysis": "Analisi",
-    "about": "Chi siamo",
+    "about": "Su di noi",
     "contact": "Contatti",
-    "dashboard": "Pannello di controllo",
+    "dashboard": "Pannello",
     "settings": "Impostazioni"
   },
   "Auth": {
@@ -48,7 +48,7 @@
     "login_with_google": "Accedi con Google",
     "email_label": "Indirizzo e-mail",
     "password_label": "Password",
-    "forgot_password": "Hai dimenticato la password?",
+    "forgot_password": "Password dimenticata?",
     "no_account": "Non hai un account?",
     "register": "Registrati"
   },
@@ -56,13 +56,13 @@
     "404_title": "Pagina non trovata",
     "404_description": "La pagina che stai cercando non esiste o è stata spostata.",
     "500_title": "Errore del server",
-    "500_description": "Si è verificato un errore inaspettato. Riprova più tardi.",
+    "500_description": "Si è verificato un errore imprevisto. Riprova più tardi.",
     "unauthorized": "Accesso negato. Accedi per continuare."
   },
   "Footer": {
     "rights": "Tutti i diritti riservati",
     "privacy": "Informativa sulla privacy",
-    "terms": "Termini di utilizzo",
+    "terms": "Condizioni d'uso",
     "contact": "Contatti"
   }
 }

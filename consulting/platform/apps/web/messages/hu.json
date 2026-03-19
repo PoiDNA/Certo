@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Tanácsadó keresése",
-    "description": "Certo akkreditált tanácsadók. Vállalatirányítás és megfelelőség."
+    "description": "Certo akkreditált tanácsadók. Unternehmensführung és megfelelőség."
   },
   "Nav": {
     "advisors": "Tanácsadók",
@@ -9,47 +9,47 @@
     "login": "Bejelentkezés"
   },
   "Footer": {
-    "description": "Szakértői tanácsadás a vállalatirányításban, megfelelőségben és biztonságban a piacvezető szervezetek számára.",
+    "description": "Szakértői tanácsadás a társasági irányítás, megfelelőség és biztonság terén a piacvezető szervezetek számára.",
     "ecosystem": "Certo Ökoszisztéma",
-    "accreditation": "Minden tanácsadó a Certo Governance Institute Alapítvány által akkreditált",
+    "accreditation": "Minden tanácsadó a Certo Governance Institute által akkreditált",
     "privacy": "Adatvédelmi nyilatkozat",
     "terms": "Felhasználási feltételek"
   },
   "Home": {
-    "hero_title": "Szakértői tanácsadás\nvezetői szinten.",
-    "hero_subtitle": "Certo akkreditált tanácsadókat kapcsolunk össze azokkal az intézményekkel, amelyek a legmagasabb szintű vállalatirányítási és szabályozási megfelelőségi standardokat követelik meg.",
+    "hero_title": "Szakértői tanácsadás\nigazgatósági szinten.",
+    "hero_subtitle": "Certo akkreditált tanácsadókat kapcsolunk össze azokkal az intézményekkel, amelyek a legmagasabb szintű társasági irányítást és szabályozási megfelelőséget igénylik.",
     "hero_cta": "Szakértő keresése",
-    "finder_title": "Szakértővel szeretnék beszélni a következő területről:",
-    "area_health": "Egészségügyi ellátás",
-    "area_local_gov": "Helyi önkormányzat",
-    "area_defense": "Védelemgazdaság",
+    "finder_title": "Szeretnék beszélni egy szakértővel a következő területről:",
+    "area_health": "Egészségügy",
+    "area_local_gov": "Helyi közigazgatás",
+    "area_defense": "Honvédelem",
     "area_finance": "Pénzügyek",
     "area_education": "Oktatás",
-    "form_title": "Hagyjon kapcsolatot, hogy a megfelelő tanácsadót válasszuk ki az alábbi területről",
+    "form_title": "Adja meg elérhetőségeit, hogy a megfelelő tanácsadót tudjuk kijelölni a(z)",
     "form_name": "Név",
     "form_email": "E-mail cím (munkahelyi)",
     "form_org": "Szervezet neve / Beosztás",
-    "form_submit": "Lekérdezés küldése",
-    "advisors_title": "Példa szakértőink a hálózatunkból",
-    "advisor_bio": "Certo akkreditált tanácsadó, aki hosszú évek tapasztalatával rendelkezik a stratégiai piacvezető intézmények folyamatoptimalizálásában.",
-    "advisor_1_bio": "Szakértő az egészségügy és megfelelőség területén, felelős a Certo minősítés fenntartásáért és erősítéséért az egészségügyi szektorban.",
-    "advisor_2_bio": "Szakértő a pénzügyek és audit területén, gondoskodik a Certo minősítés fenntartásáról és erősítéséről a pénzügyi szektorban.",
-    "advisor_3_bio": "Tanácsadó a honvédelem és kiberbiztonság területén, felelős a Certo minősítés erősítéséért a védelmi iparban."
+    "form_submit": "Lekérdezés elküldése",
+    "advisors_title": "Példaértékű szakértők hálózatunkból",
+    "advisor_bio": "Certo akkreditált tanácsadó hosszú évek tapasztalatával a stratégiai piacvezetõ intézmények folyamatoptimalizálásában.",
+    "advisor_1_bio": "Egészségügyi és compliance szakértő, aki felelõs a Certo-rating fenntartásáért és erõsítéséért az egészségügyi szektorban.",
+    "advisor_2_bio": "Pénzügyi és audit szakember, aki gondoskodik a Certo-rating fenntartásáról és erõsítésérõl a pénzügyi szektorban.",
+    "advisor_3_bio": "Honvédelmi és kiberbiztonság tanácsadó, aki felelõs a Certo-rating erõsítéséért a védelmi iparban."
   },
   "Legal": {
-    "back": "Vissza a kezdőlapra",
-    "last_updated": "Utolsó frissítés: 2026. március",
+    "back": "Vissza a kezdõlapra",
+    "last_updated": "Legutóbbi frissítés: 2026. március",
     "privacy_title": "Adatvédelmi nyilatkozat",
-    "terms_title": "Felhasználási feltételek"
+    "terms_title": "Használati feltételek"
   },
   "FindAdvisor": {
     "title": "Certo tanácsadó keresése",
-    "sector_label": "Az Ön intézménye szektora",
+    "sector_label": "Az intézmény szektora",
     "need_label": "Mire van szüksége?",
-    "need_audit": "Governance audit",
+    "need_audit": "Irányítási audit",
     "need_advisory": "Stratégiai tanácsadás",
     "need_training": "Képzések és workshopok",
-    "need_rating": "Felkészülés a ratingra",
+    "need_rating": "Rating felkészítés",
     "region_label": "Régió",
     "submit": "Tanácsadó keresése"
   },

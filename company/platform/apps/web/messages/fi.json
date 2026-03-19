@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteetin vahvistus ja compliance julkisille instituutioille ja yhtiöille."
+    "description": "Identiteetin vahvistaminen ja compliance julkisille instituutioille ja yrityksille."
   },
   "Nav": {
     "solutions": "Ratkaisut",
@@ -19,59 +19,59 @@
     "hero_line1": "Identiteetti.",
     "hero_line2": "Vaatimustenmukaisuus.",
     "hero_line3": "Varmuus.",
-    "hero_description": "Vahvistus- ja compliance-infrastruktuuri julkisille instituutioille, yhtiöille ja säännellyille toimijoille. Rakennettu standardien pohjalle",
+    "hero_description": "Vahvistus- ja compliance-infrastruktuuri julkisille instituutioille, yrityksille ja säännellyille toimijoille. Rakennettu standardien pohjalle",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ALOITA KÄYTTÖÖNOTTO",
     "cta_secondary": "PALVELUT",
     "services_label": "PALVELUT",
     "services_title": "Kolme compliance-infrastruktuurin tasoa",
-    "service1_title": "Identiteetin vahvistus",
-    "service1_desc": "KYC/AML säännellyille toimijoille. Automaattinen asiakirjojen vahvistus, pakotteiden ja PEP-seulonta, integrointi valtion rekistereihin.",
+    "service1_title": "Identiteetin vahvistaminen",
+    "service1_desc": "KYC/AML säännellyille toimijoille. Automaattinen asiakirjojen vahvistaminen, pakotteiden ja PEP-seulonta, integraatio valtion rekistereihin.",
     "service2_title": "Compliance-arviointi",
-    "service2_desc": "Automaattinen vaatimustenmukaisuuspisteytys Certo Governance Instituten metodologian perusteella. Viisivaiheinen arviointijärjestelmä täydellä auditointi polulla.",
+    "service2_desc": "Automaattinen vaatimustenmukaisuuspisteytys Certo Governance Instituten metodologian perusteella. Viisitasoinen arviointijärjestelmä täydellä auditointiseurannalla.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automaattiset korjaussuunnitelmat ja niiden toteutuksen seuranta. Integrointi ERP-, GRC- ja riskienhallintaalustoihin.",
+    "service3_desc": "Automaattiset korjaussuunnitelmat ja niiden toteutuksen seuranta. Integraatio ERP-, GRC-järjestelmiin ja riskienhallintaalustoihin.",
     "arch_label": "ARKKITEHTUURI",
     "arch_title": "Kuinka Certo ID toimii",
     "step1_title": "Intake",
     "step1_desc": "Toimijan tiedot + asiakirjat + sääntelykonteksti",
     "step2_title": "Verify",
-    "step2_desc": "Identiteetin vahvistus, seulonta, julkinen rekisteri",
+    "step2_desc": "Identiteetin vahvistaminen, seulonta, julkinen rekisteri",
     "step3_title": "Score",
-    "step3_desc": "Automaattinen Certo Vector -vaatimustenmukaisuusarviointi",
+    "step3_desc": "Automaattinen Certo Vector -vaatimustenmukaisuusarvio",
     "step4_title": "Report",
     "step4_desc": "PDF-raportti + API + Certo Online -hallintapaneeli",
     "badge_iso": "ISO-standardit",
-    "badge_compliance": "Sääntelynmukaisuus",
-    "badge_kyc": "Identiteetin vahvistus",
-    "badge_governance": "Hallintotavan arviointi"
+    "badge_compliance": "Sääntelytasoinen vaatimustenmukaisuus",
+    "badge_kyc": "Identiteetin vahvistaminen",
+    "badge_governance": "Hallinnon arviointi"
   },
   "Legal": {
-    "back": "Palaa pääsivulle",
+    "back": "Takaisin etusivulle",
     "last_updated": "Viimeksi päivitetty: Maaliskuu 2026",
     "privacy_title": "Tietosuojakäytäntö",
     "terms_title": "Palvelun ehdot"
   },
   "Dashboard": {
-    "title": "Certo ID -paneeli",
+    "title": "Certo ID -hallintapaneeli",
     "welcome": "Tervetuloa, {name}",
     "your_rating": "Sinun Certo Rating",
-    "your_delegates": "Sinun Delegaatit",
+    "your_delegates": "Sinun Certo Delegate",
     "your_accords": "Sinun Certo Accord",
-    "recent_activity": "Viimeaikainen toiminta",
-    "quick_actions": "Pika-toiminnot"
+    "recent_activity": "Viimeaikaiset toiminnot",
+    "quick_actions": "Pikavalinta"
   },
   "Profile": {
     "title": "Profiili",
     "organization": "Organisaatio",
     "contact_person": "Yhteyshenkilö",
-    "sector": "Toimiala",
+    "sector": "Sektori",
     "edit_profile": "Muokkaa profiilia",
     "verified_badge": "Vahvistettu toimija"
   },
   "Delegates": {
-    "title": "Certo Delegaatit",
-    "add_delegate": "Lisää delegaatti",
+    "title": "Certo Delegate",
+    "add_delegate": "Lisää plenipotentiaari",
     "delegate_id": "Delegate ID",
     "delegate_status": "Tila",
     "primary_link": "PRIMARY-linkki",

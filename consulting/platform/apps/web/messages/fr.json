@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Trouvez un Conseiller",
+    "title": "Certo Consulting — Trouver un Conseiller",
     "description": "Conseillers accrédités Certo. Gouvernance d'entreprise et conformité."
   },
   "Nav": {
@@ -13,28 +13,28 @@
     "ecosystem": "Écosystème Certo",
     "accreditation": "Tous les conseillers sont accrédités par la Fondation Certo Governance Institute",
     "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation"
+    "terms": "Conditions générales"
   },
   "Home": {
     "hero_title": "Conseil expert\nau niveau de la direction.",
-    "hero_subtitle": "Nous mettons en relation les conseillers accrédités Certo avec les institutions exigeant les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
-    "hero_cta": "Trouvez un expert",
+    "hero_subtitle": "Nous connectons les conseillers accrédités Certo avec les institutions exigeant les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
+    "hero_cta": "Trouver un expert",
     "finder_title": "Je souhaite discuter avec un expert en :",
     "area_health": "Santé",
     "area_local_gov": "Collectivités territoriales",
     "area_defense": "Défense",
-    "area_finance": "Finance",
+    "area_finance": "Finances",
     "area_education": "Éducation",
-    "form_title": "Laissez vos coordonnées afin que nous vous mettions en relation avec le conseiller approprié du domaine",
+    "form_title": "Laissez vos coordonnées afin que nous sélectionnions le conseiller approprié dans le domaine",
     "form_name": "Nom et prénom",
-    "form_email": "Adresse e-mail (professionnelle)",
+    "form_email": "Adresse email (professionnelle)",
     "form_org": "Nom de l'organisation / Fonction",
     "form_submit": "Envoyer la demande",
     "advisors_title": "Exemples d'experts de notre réseau",
-    "advisor_bio": "Conseiller accrédité Certo avec de nombreuses années d'expérience dans l'optimisation des processus pour les institutions stratégiques du marché.",
-    "advisor_1_bio": "Experte en santé et conformité, responsable du maintien et du renforcement du rating Certo dans le secteur médical.",
-    "advisor_2_bio": "Spécialiste en finance et audit, veillant au maintien et au renforcement du rating Certo dans le secteur financier.",
-    "advisor_3_bio": "Conseiller en défense et cybersécurité, responsable du renforcement du rating Certo dans l'industrie de la défense."
+    "advisor_bio": "Conseiller accrédité Certo avec une expérience approfondie dans l'optimisation des processus pour les institutions stratégiques du marché.",
+    "advisor_1_bio": "Experte dans le domaine de la santé et de la conformité, responsable du maintien et du renforcement de la note Certo dans le secteur médical.",
+    "advisor_2_bio": "Spécialiste en finances et audit, chargé du maintien et du renforcement de la note Certo dans le secteur financier.",
+    "advisor_3_bio": "Conseiller en défense et cybersécurité, responsable du renforcement de la note Certo dans le secteur de la défense."
   },
   "Legal": {
     "back": "Retour à la page d'accueil",
@@ -43,15 +43,15 @@
     "terms_title": "Conditions d'utilisation"
   },
   "FindAdvisor": {
-    "title": "Trouvez un conseiller Certo",
+    "title": "Trouver un conseiller Certo",
     "sector_label": "Secteur de votre institution",
     "need_label": "De quoi avez-vous besoin ?",
     "need_audit": "Audit de gouvernance",
     "need_advisory": "Conseil stratégique",
     "need_training": "Formations et ateliers",
-    "need_rating": "Préparation au rating",
+    "need_rating": "Préparation à la notation",
     "region_label": "Région",
-    "submit": "Chercher un conseiller"
+    "submit": "Rechercher un conseiller"
   },
   "Advisor": {
     "accredited_by": "Accrédité par Certo",

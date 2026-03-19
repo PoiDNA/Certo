@@ -1,49 +1,49 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Raskite Konsultantą",
-    "description": "Certo akredituoti konsultantai. Korporatyvinis valdymas ir atitiktis."
+    "title": "Certo Consulting — Raskite patarėją",
+    "description": "Sertifikuoti Certo patarėjai. Korporatyvinis valdymas ir atitiktis."
   },
   "Nav": {
-    "advisors": "Konsultantai",
+    "advisors": "Patarėjai",
     "expertise": "Kompetencija",
     "login": "Prisijungimas"
   },
   "Footer": {
-    "description": "Ekspertinis konsultavimas korporatyvinio valdymo, atitikties ir saugumo srityse vedusiems rinkos lyderių.",
+    "description": "Ekspertinis konsultavimas korporatyvinio valdymo, atitikties ir saugumo srityse rinkos lyderių poreikiams.",
     "ecosystem": "Certo ekosistema",
-    "accreditation": "Visi konsultantai yra akredituoti Certo Governance Institute fondacijos",
+    "accreditation": "Visi patarėjai yra sertifikuoti Certo Governance Institute fondo",
     "privacy": "Privatumo politika",
     "terms": "Naudojimosi sąlygos"
   },
   "Home": {
-    "hero_title": "Ekspertinis konsultavimas\nvaldybos lygmeniu.",
-    "hero_subtitle": "Sujungiame akredituotus Certo konsultantus su institucijomis, reikalingomis aukščiausių korporatyvinio valdymo ir reguliacinio atitikties standartų.",
+    "hero_title": "Ekspertinis konsultavimas\nvaldybos lygiu.",
+    "hero_subtitle": "Sujungiame sertifikuotus Certo patarėjus su institucijomis, reikalavimais aukščiausių korporatyvinio valdymo ir reguliacinės atitikties standartų.",
     "hero_cta": "Raskite ekspertą",
-    "finder_title": "Norėčiau pasikalbėti su ekspertu dėl:",
-    "area_health": "Sveikatos priežiūra",
+    "finder_title": "Noriu pasikalbėti su eksperto iš:",
+    "area_health": "Sveikatos apsauga",
     "area_local_gov": "Savivaldybės",
-    "area_defense": "Gynybinė saugumas",
+    "area_defense": "Gynyba",
     "area_finance": "Finansai",
     "area_education": "Švietimas",
-    "form_title": "Palikite kontaktinę informaciją, kad galėtume parinkti tinkamą konsultantą srityje",
+    "form_title": "Palikite kontaktą, kad surastume tinkamą patarėją iš šios srities",
     "form_name": "Vardas ir pavardė",
-    "form_email": "Elektroninio pašto adresas (darbo)",
+    "form_email": "El. pašto adresas (darbo)",
     "form_org": "Organizacijos pavadinimas / Pareigos",
     "form_submit": "Siųsti užklausą",
-    "advisors_title": "Pavyzdiniai ekspertai iš mūsų tinklo",
-    "advisor_bio": "Certo akredituotas konsultantas, turintis daugelio metų patirtį optimizuojant strateginių rinkos institucijų procesus.",
-    "advisor_1_bio": "Ekspertė sveikatos apsaugos ir atitikties srityje, atsakinga už Certo reitingo išlaikymą ir stiprinimą medicinos sektoriuje.",
-    "advisor_2_bio": "Specialistas finansų ir audito srityje, rūpinantis Certo reitingo išlaikymu ir stiprinimu finansų sektoriuje.",
-    "advisor_3_bio": "Konsultantas gynybos ir kibernetinio saugumo srityje, atsakingas už Certo reitingo stiprinimą gynybos pramonėje."
+    "advisors_title": "Pavyzdžiai ekspertų iš mūsų tinklo",
+    "advisor_bio": "Sertifikuotas Certo patarėjas su daugiausia metų patirtimi optimizuojant procesus strateginėms rinkos institucijoms.",
+    "advisor_1_bio": "Ekspertė sveikatos apsaugos ir atitikties srityje, atsakinga už Certo reitingo išsaugojimą ir stiprinimą medicinos srityje.",
+    "advisor_2_bio": "Specialistas finansų ir audito srityje, rūpinantis Certo reitingo išsaugojimu ir stiprinimu finansų sektoriuje.",
+    "advisor_3_bio": "Patarėjas gynybos ir kibernetinio saugumo srityje, atsakingas už Certo reitingo stiprinimą gynybos pramonėje."
   },
   "Legal": {
     "back": "Grįžti į pagrindinį puslapį",
-    "last_updated": "Paskutinį kartą atnaujinta: 2026 m. kovas",
+    "last_updated": "Paskutinis atnaujinimas: 2026 m. kovas",
     "privacy_title": "Privatumo politika",
     "terms_title": "Naudojimosi sąlygos"
   },
   "FindAdvisor": {
-    "title": "Raskite Certo konsultantą",
+    "title": "Raskite Certo patarėją",
     "sector_label": "Jūsų institucijos sektorius",
     "need_label": "Ko jums reikia?",
     "need_audit": "Valdymo auditas",
@@ -51,13 +51,13 @@
     "need_training": "Mokymai ir seminarai",
     "need_rating": "Pasiruošimas reitingavimui",
     "region_label": "Regionas",
-    "submit": "Ieškoti konsultanto"
+    "submit": "Ieškoti patarėjo"
   },
   "Advisor": {
-    "accredited_by": "Akredituotas Certo",
+    "accredited_by": "Sertifikuotas Certo",
     "specialization": "Specializacija",
     "sectors": "Sektoriai",
     "contact_advisor": "Susisiekite",
-    "view_profile": "Peržiūrėti profilį"
+    "view_profile": "Žiūrėti profilį"
   }
 }

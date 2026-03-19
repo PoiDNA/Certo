@@ -9,37 +9,37 @@
     "login": "Logga in"
   },
   "Footer": {
-    "description": "Expertråd inom corporate governance, efterlevnad och säkerhet för marknadsledare.",
+    "description": "Expertis inom corporate governance, efterlevnad och säkerhet för marknadsledare.",
     "ecosystem": "Certo-ekosystemet",
     "accreditation": "Alla rådgivare är ackrediterade av Certo Governance Institute",
-    "privacy": "Sekretesspolicy",
+    "privacy": "Integritetspolicy",
     "terms": "Användarvillkor"
   },
   "Home": {
-    "hero_title": "Expertråd\npå styrelsenivå.",
-    "hero_subtitle": "Vi förbinder ackrediterade Certo-rådgivare med institutioner som kräver högsta standard för corporate governance och regelefterlevnad.",
+    "hero_title": "Expertis inom governance\npå ledningsnivå.",
+    "hero_subtitle": "Vi förbinder ackrediterade Certo-rådgivare med institutioner som kräver högsta standarder för corporate governance och regelefterlevnad.",
     "hero_cta": "Hitta expert",
     "finder_title": "Jag vill prata med expert inom:",
-    "area_health": "Hälsovård",
-    "area_local_gov": "Kommunal förvaltning",
+    "area_health": "Hälso- och sjukvård",
+    "area_local_gov": "Lokala myndigheter",
     "area_defense": "Försvar",
     "area_finance": "Finans",
     "area_education": "Utbildning",
-    "form_title": "Lämna dina kontaktuppgifter så hittar vi rätt rådgivare inom området",
-    "form_name": "För- och efternamn",
-    "form_email": "E-postadress (arbetsrelaterad)",
-    "form_org": "Organisationens namn / Position",
+    "form_title": "Lämna dina uppgifter så hittar vi rätt rådgivare från området",
+    "form_name": "Namn",
+    "form_email": "E-postadress (företag)",
+    "form_org": "Organisationsnamn / Befattning",
     "form_submit": "Skicka förfrågan",
     "advisors_title": "Exempel på experter från vårt nätverk",
     "advisor_bio": "Ackrediterad Certo-rådgivare med långt erfarenhet av processoptimering för strategiska marknadsinstitutioner.",
-    "advisor_1_bio": "Expert på hälso- och sjukvård och compliance, ansvarig för att upprätthålla och stärka Certo-ratingen i medicinska sektorn.",
-    "advisor_2_bio": "Specialist på finans och revision, säkerställer upprätthållande och stärkande av Certo-ratingen i den finansiella sektorn.",
-    "advisor_3_bio": "Rådgivare inom försvar och cybersäkerhet, ansvarig för att stärka Certo-ratingen i försvarsindustrin."
+    "advisor_1_bio": "Expert inom hälso- och sjukvård och compliance, ansvarig för att upprätthålla och stärka Certo-betyget inom sjukvårdsbranschen.",
+    "advisor_2_bio": "Specialist inom finans och revision, som säkerställer att Certo-betyget upprätthålls och stärks inom finanssektorn.",
+    "advisor_3_bio": "Rådgivare inom försvar och cybersäkerhet, ansvarig för att stärka Certo-betyget inom försvarsindustrin."
   },
   "Legal": {
     "back": "Tillbaka till startsidan",
     "last_updated": "Senast uppdaterad: Mars 2026",
-    "privacy_title": "Sekretesspolicy",
+    "privacy_title": "Integritetspolicy",
     "terms_title": "Användarvillkor"
   },
   "FindAdvisor": {
@@ -49,7 +49,7 @@
     "need_audit": "Governance-revision",
     "need_advisory": "Strategisk rådgivning",
     "need_training": "Utbildning och workshops",
-    "need_rating": "Förberedelse för bedömning",
+    "need_rating": "Förberedelse inför betygsättning",
     "region_label": "Region",
     "submit": "Sök rådgivare"
   },
@@ -58,6 +58,6 @@
     "specialization": "Specialisering",
     "sectors": "Sektorer",
     "contact_advisor": "Kontakta",
-    "view_profile": "Se profil"
+    "view_profile": "Visa profil"
   }
 }

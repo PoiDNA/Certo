@@ -5,36 +5,36 @@
   },
   "Nav": {
     "advisors": "Svetovalci",
-    "expertise": "Strokovnost",
+    "expertise": "Strokovna znanja",
     "login": "Prijava"
   },
   "Footer": {
-    "description": "Strokovne nasvete na področju korporativnega upravljanja, skladnosti in varnosti za tržne voditelje.",
+    "description": "Strokovno svetovanje na področju ładu korporacyjny, skladnosti in varnosti za tržne vodje.",
     "ecosystem": "Ekosistem Certo",
     "accreditation": "Vsi svetovalci so akreditirani s strani Fundacije Certo Governance Institute",
     "privacy": "Politika zasebnosti",
     "terms": "Pogoji uporabe"
   },
   "Home": {
-    "hero_title": "Strokovne nasvete\nna ravni uprave.",
-    "hero_subtitle": "Povezujemo akreditirane svetovalce Certo z institucijami, ki zahtevajo najvišje standarde korporativnega upravljanja in regulatorne skladnosti.",
+    "hero_title": "Strokovno svetovanje\nna ravni upravljanja.",
+    "hero_subtitle": "Povezujemo akreditirane svetovalce Certo z institucijami, ki zahtevajo najvišje standarde ładu korporacyjny in skladnosti s predpisi.",
     "hero_cta": "Poiščite strokovnjaka",
-    "finder_title": "Želim se pogovarjati s strokovnjakom na področju:",
-    "area_health": "Zdravstvena varnost",
-    "area_local_gov": "Lokalna samouprava",
+    "finder_title": "Rad bi se pogovoril s strokovnjakom za:",
+    "area_health": "Zdravstveno varstvo",
+    "area_local_gov": "Lokalne skupnosti",
     "area_defense": "Obrana",
     "area_finance": "Finance",
     "area_education": "Izobraževanje",
-    "form_title": "Pustite svoje podatke, da vam doberemo ustreznega svetovalca s področja",
+    "form_title": "Pustite svoje podatke in mi vam izbrane ustreznega svetovalca s področja",
     "form_name": "Ime in priimek",
-    "form_email": "E-naslov (službeni)",
-    "form_org": "Naziv institucije / Položaj",
-    "form_submit": "Pošlji povpraševanje",
+    "form_email": "Elektronski naslov (službeni)",
+    "form_org": "Naziv organizacije / Položaj",
+    "form_submit": "Pošlji poizvedbo",
     "advisors_title": "Primeri strokovnjakov iz naše mreže",
-    "advisor_bio": "Akreditirani svetovalec Certo z dolgoletnimi izkušnjami pri optimizaciji procesov za strateške tržne institucije.",
-    "advisor_1_bio": "Strokovnjakinja na področju zdravstva in skladnosti, odgovorna za ohranjanje in krepitev ratinga Certo v medicinskem sektorju.",
-    "advisor_2_bio": "Strokovnjak na področju financ in revizije, skrbi za ohranjanje in krepitev ratinga Certo v finančnem sektorju.",
-    "advisor_3_bio": "Svetovalec na področju obrambe in kibernetske varnosti, odgovoren za krepitev ratinga Certo v obrambni industriji."
+    "advisor_bio": "Akreditirani svetovalec Certo s trajnim izkušnjami pri optimizaciji procesov za strateške tržne institucije.",
+    "advisor_1_bio": "Strokovnjakinja na področju zdravstvene varnosti in skladnosti, odgovorna za vzdrževanje in krepitev ratinga Certo v medicinski industriji.",
+    "advisor_2_bio": "Specialist na področju financ in revizije, skrben za vzdrževanje in krepitev ratinga Certo v finančnem sektorju.",
+    "advisor_3_bio": "Svetovalec na področju obrane in kibernetske varnosti, odgovoren za krepitev ratinga Certo v obrambi."
   },
   "Legal": {
     "back": "Nazaj na glavno stran",
@@ -46,10 +46,10 @@
     "title": "Poiščite svetovalca Certo",
     "sector_label": "Sektor vaše institucije",
     "need_label": "Kaj potrebujete?",
-    "need_audit": "Revija upravljanja",
-    "need_advisory": "Strateške nasvete",
+    "need_audit": "Revizija governance",
+    "need_advisory": "Strateško svetovanje",
     "need_training": "Usposabljanja in delavnice",
-    "need_rating": "Priprava na ocenjevanje",
+    "need_rating": "Priprava na rating",
     "region_label": "Regija",
     "submit": "Poiščite svetovalca"
   },
@@ -57,7 +57,7 @@
     "accredited_by": "Akreditiran s strani Certo",
     "specialization": "Specializacija",
     "sectors": "Sektorji",
-    "contact_advisor": "Stopite v stik",
-    "view_profile": "Oglejte si profil"
+    "contact_advisor": "Kontaktirajte",
+    "view_profile": "Poglejte profil"
   }
 }

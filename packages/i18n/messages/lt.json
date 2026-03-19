@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporatyvių ir nevyriausybinių institucijų valdymo kokybę."
+    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporacinių ir nevyriausybinių institucijų valdymo kokybę."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,29 +17,29 @@
     "login": "Prisijungti",
     "logout": "Atsijungti",
     "privacyPolicy": "Privatumo politika",
-    "termsOfUse": "Naudojimosi sąlyga",
+    "termsOfUse": "Naudojimo sąlygos",
     "loading": "Kraunasi...",
     "error": "Įvyko klaida",
     "save": "Išsaugoti",
     "cancel": "Atšaukti",
     "confirm": "Patvirtinti",
-    "back": "Grįžti",
+    "back": "Atgal",
     "next": "Toliau",
     "close": "Uždaryti",
-    "search": "Ieškoti",
+    "search": "Paieška",
     "download": "Atsisiųsti",
-    "verified": "Patvirtinta",
+    "verified": "Patvirtintas",
     "active": "Aktyvus",
     "inactive": "Neaktyvus"
   },
   "Navigation": {
-    "home": "Pagrindinis puslapis",
+    "home": "Pradžia",
     "ratings": "Reitingai",
     "reports": "Ataskaitos",
     "analysis": "Analizės",
-    "about": "Apie Fondą",
+    "about": "Apie fondą",
     "contact": "Kontaktai",
-    "dashboard": "Valdymo skydas",
+    "dashboard": "Skydelis",
     "settings": "Nustatymai"
   },
   "Auth": {
@@ -49,20 +49,20 @@
     "email_label": "El. pašto adresas",
     "password_label": "Slaptažodis",
     "forgot_password": "Pamiršai slaptažodį?",
-    "no_account": "Neturite paskyros?",
+    "no_account": "Neturi paskyros?",
     "register": "Registruotis"
   },
   "Errors": {
     "404_title": "Puslapis nerastas",
-    "404_description": "Puslapis, kurio ieškote, neegzistuoja arba buvo perkeltas.",
+    "404_description": "Ieškomas puslapis neegzistuoja arba buvo perkeltas.",
     "500_title": "Serverio klaida",
     "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
-    "unauthorized": "Prieiga negalima. Prisijunkite norėdami tęsti."
+    "unauthorized": "Nėra prieigos. Prisijunkite, kad tęstumėte."
   },
   "Footer": {
     "rights": "Visos teisės saugomos",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimosi sąlyga",
+    "terms": "Naudojimo sąlygos",
     "contact": "Kontaktai"
   }
 }

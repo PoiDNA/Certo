@@ -1,77 +1,77 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Fíorú féiniúlachta agus comhréireachta do institiúidí poiblí agus corpaightí."
+    "description": "Fíorú céannachta agus comhlíonadh do bhonneagair phoiblí agus chorparáideach."
   },
   "Nav": {
     "solutions": "Réitigh",
     "technology": "Teicneolaíocht",
     "foundation": "Fondúireacht Certo",
-    "login": "Logáil isteach"
+    "login": "Logáil Isteach"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Polasaí Príobháideachta",
-    "terms": "Téarmaí an tSeirbhíse"
+    "terms": "Téarmaí an Tseirbhíse"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Féiniúlacht.",
-    "hero_line2": "Comhréireacht.",
+    "hero_line1": "Céannacht.",
+    "hero_line2": "Comhlíonadh.",
     "hero_line3": "Cinntacht.",
-    "hero_description": "Bonneagar fíorúcháin agus comhréireachta do institiúidí poiblí, corpaightí agus aonáin dhíreach faoi bhainistríochtaí. Tógtha ar chaighdeáin",
+    "hero_description": "Bonneagar fíoraithe agus comhlíonadh do bhonneagair phoiblí, chorparáideacha agus dhréachtóirí rialúcháin. Tógtha ar chaighdeáin",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "TOSÚ AR CHUR I BHFEIDHM",
+    "cta_primary": "TOSAIGH AN FHORGHNÍOMHÚ",
     "cta_secondary": "SEIRBHÍSÍ",
     "services_label": "SEIRBHÍSÍ",
-    "services_title": "Trí shraith an bhonneagair comhréireachta",
-    "service1_title": "Fíorú Féiniúlachta",
-    "service1_desc": "KYC/AML d'aonáin dhíreach faoi bhainistríochtaí. Fíorú doiciméad uathoibríoch, scagadh socrú agus PEP, comhtháthú le cláraithe stáit.",
-    "service2_title": "Rating Comhréireachta",
-    "service2_desc": "Scórála comhréireachta uathoibríoch bunaithe ar mhodhneolaíocht Certo Governance Institute. Córas measúnaithe cúig-stáit le conaire fiosraithe iomlán.",
+    "services_title": "Trí bhreac den bhonneagar comhlíonadh",
+    "service1_title": "Fíorú Céannachta",
+    "service1_desc": "KYC/AML do dhréachtóirí rialúcháin. Fíorú doiciméad uathoibríoch, scagadh fealltachais agus PEP, comhtháthú le cláranna an stáit.",
+    "service2_title": "Rating Comhlíonadh",
+    "service2_desc": "Scórála comhlíonadh uathoibríoch bunaithe ar mhodhnóireacht Certo Governance Institute. Córas measúnachta cúig-stáit le bealach iniúchta iomlán.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Pleananna leighis uathoibríocha agus monatóireacht a bhreachta. Comhtháthú le córais ERP, GRC agus ardáin bhainistríochta riosca.",
+    "service3_desc": "Pleananna ceartúcháin uathoibríocha agus monatóireacht a bhforghníomhú. Comhtháthú le córais ERP, GRC agus ardáin bhainistíochta riosca.",
     "arch_label": "AILTIREACHT",
     "arch_title": "Conas a oibríonn Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Sonraí na haonáin + doiciméid + comhthéacs rialachlóir",
+    "step1_desc": "Sonraí an dhréachtóra + doiciméid + comhthéacs rialúchóir",
     "step2_title": "Verify",
-    "step2_desc": "Fíorú féiniúlachta, scagadh, clár poiblí",
+    "step2_desc": "Fíorú céannachta, scagadh, clár poiblí",
     "step3_title": "Score",
-    "step3_desc": "Rating comhréireachta uathoibríoch Certo Vector",
+    "step3_desc": "Rating comhlíonadh uathoibríoch Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "Tuarascáil PDF + API + feidhmchlár Certo Online",
+    "step4_desc": "Tuarascáil PDF + API + fardal Certo Online",
     "badge_iso": "Caighdeáin ISO",
-    "badge_compliance": "Comhréireacht rialachlóir",
-    "badge_kyc": "Fíorú féiniúlachta",
-    "badge_governance": "Measúnú governance"
+    "badge_compliance": "Comhlíonadh rialúchóir",
+    "badge_kyc": "Fíorú céannachta",
+    "badge_governance": "Measúnacht governance"
   },
   "Legal": {
-    "back": "Fill ar an leathanach baile",
-    "last_updated": "Nuashonraithe ar dheireadh: Márta 2026",
+    "back": "Ar ais go dtí an leathanach baile",
+    "last_updated": "Nuashonrú ar dheireannas: Márta 2026",
     "privacy_title": "Polasaí Príobháideachta",
-    "terms_title": "Téarmaí an tSeirbhíse"
+    "terms_title": "Téarmaí an Tseirbhíse"
   },
   "Dashboard": {
     "title": "Painéal Certo ID",
     "welcome": "Fáilte, {name}",
     "your_rating": "Do Rating Certo",
-    "your_delegates": "Do Dhélagáidí",
+    "your_delegates": "Do Dhelegáití",
     "your_accords": "Do Certo Accord",
     "recent_activity": "Gníomhaíocht dhéanach",
-    "quick_actions": "Gníomhartha gasta"
+    "quick_actions": "Gníomhartha tapa"
   },
   "Profile": {
     "title": "Próifíl",
     "organization": "Eagraíochta",
     "contact_person": "Duine Teagmhála",
     "sector": "Earnáil",
-    "edit_profile": "Eagar a dhéanamh ar phróifíl",
-    "verified_badge": "Aonán fíoraithe"
+    "edit_profile": "Cuir do phróifíl in eagar",
+    "verified_badge": "Dréachtóir fíoraithe"
   },
   "Delegates": {
-    "title": "Délagáidí Certo",
-    "add_delegate": "Cuir délagáid leis",
+    "title": "Delegáití Certo",
+    "add_delegate": "Cuir delegáit leis",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stádas",
     "primary_link": "Link PRIMARY",

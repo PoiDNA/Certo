@@ -5,23 +5,23 @@
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo es la primera agencia calificadora del mundo cuyos ratings son artefactos criptográficos del proceso, no opiniones. Cada decisión de calificación está anclada fuera de su propia infraestructura, verificable sin conexión y públicamente auditable.",
+    "description": "Certo es la primera agencia calificadora del mundo cuyos ratings son artefactos criptográficos del proceso —no opiniones. Cada decisión de calificación está anclada fuera de su propia infraestructura, verificable sin conexión y sujeta a auditoría pública.",
     "hero_cta_primary": "Consulta los ratings",
-    "hero_cta_secondary": "Obtén más información",
+    "hero_cta_secondary": "Más información",
     "section_ratings_title": "Últimos Ratings Certo",
     "section_reports_title": "Análisis e Informes",
-    "section_about_title": "Acerca de la Fundación"
+    "section_about_title": "Sobre la Fundación"
   },
   "Ratings": {
     "title": "Ratings Certo",
-    "subtitle": "Evaluaciones de la calidad de gobernanza institucional",
+    "subtitle": "Evaluaciones de calidad de la gobernanza institucional",
     "search_placeholder": "Buscar institución...",
     "filter_sector": "Sector",
     "sector_public": "Público",
     "sector_corporate": "Corporativo",
     "sector_medical": "Médico",
     "sector_defense": "Defensa",
-    "sector_ngo": "Organizaciones No Gubernamentales",
+    "sector_ngo": "Organizaciones sin ánimo de lucro",
     "rating_valid_until": "Rating válido hasta",
     "rating_issued": "Fecha de emisión",
     "no_results": "No se encontraron resultados",
@@ -30,7 +30,7 @@
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Metodología",
-    "about": "Acerca de",
+    "about": "Sobre la Fundación",
     "login": "Iniciar sesión"
   },
   "Footer": {
@@ -39,9 +39,9 @@
     "terms": "Términos de Uso"
   },
   "About": {
-    "title": "Acerca de la Fundación Certo Governance Institute",
+    "title": "Sobre la Fundación Certo Governance Institute",
     "mission_title": "Misión",
-    "mission_text": "Construir una cultura de buena gobernanza mediante la evaluación independiente y la promoción de estándares de gobernanza en Polonia y Europa.",
+    "mission_text": "Construir una cultura de buena gobernanza mediante la evaluación independiente y la promoción de estándares de governance en Polonia y Europa.",
     "independence_title": "Independencia",
     "independence_text": "La Fundación es independiente de las entidades evaluadas, de los órganos de poder público y de intereses comerciales.",
     "methodology_title": "Metodología",

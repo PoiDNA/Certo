@@ -18,7 +18,7 @@
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteta.",
     "hero_line2": "Skladnost.",
-    "hero_line3": "Zaupanje.",
+    "hero_line3": "Zanesljivost.",
     "hero_description": "Infrastruktura preverjanja in skladnosti za javne institucije, korporacije in regulirane subjekte. Zgrajena na standardih",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ZAČNI Z UVEDBO",
@@ -26,25 +26,25 @@
     "services_label": "STORITVE",
     "services_title": "Tri plasti infrastrukture skladnosti",
     "service1_title": "Preverjanje identitete",
-    "service1_desc": "KYC/AML za regulirane subjekte. Samodejno preverjanje dokumentov, screening sankcij in PEP, integracija z državnimi registri.",
-    "service2_title": "Rating skladnosti",
-    "service2_desc": "Avtomatsko točkovanje skladnosti na podlagi metodologije Certo Governance Institute. Sistem ocene s petimi stopnjami s popolno revizijsko potjo.",
+    "service1_desc": "KYC/AML za regulirane subjekte. Samodejno preverjanje dokumentov, pregled sankcij in PEP-a, integracija z državnimi registri.",
+    "service2_title": "Ocena skladnosti",
+    "service2_desc": "Samodejno ocenjevanje skladnosti na podlagi metodologije Certo Governance Institute. Petistopenjski sistem ocenjevanja s polno revizijsko potjo.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Avtomatični načrti popravljanja in spremljanje njihovega izvajanja. Integracija s sistemi ERP, GRC in platformami upravljanja tveganja.",
+    "service3_desc": "Samodejni načrti sanacij in spremljanje njihove izvedbe. Integracija s sistemi ERP, GRC in platformami za upravljanje tveganj.",
     "arch_label": "ARHITEKTURA",
     "arch_title": "Kako deluje Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Podatki subjekta + dokumenti + regulativni kontekst",
+    "step1_desc": "Podatki subjekta + dokumenti + regulacijski kontekst",
     "step2_title": "Verify",
-    "step2_desc": "Preverjanje identitete, screening, javni register",
+    "step2_desc": "Preverjanje identitete, pregled, javni register",
     "step3_title": "Score",
-    "step3_desc": "Avtomatski rating skladnosti Certo Vector",
+    "step3_desc": "Samodejno ocenjevanje skladnosti Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Poročilo PDF + API + nadzorna plošča Certo Online",
     "badge_iso": "Standardi ISO",
-    "badge_compliance": "Regulativna skladnost",
+    "badge_compliance": "Regulacijska skladnost",
     "badge_kyc": "Preverjanje identitete",
-    "badge_governance": "Ocena governance"
+    "badge_governance": "Ocena lada korporativnega"
   },
   "Legal": {
     "back": "Nazaj na glavno stran",
@@ -55,11 +55,11 @@
   "Dashboard": {
     "title": "Nadzorna plošča Certo ID",
     "welcome": "Dobrodošli, {name}",
-    "your_rating": "Vaš Rating Certo",
+    "your_rating": "Vaša ocena Certo",
     "your_delegates": "Vaši delegati",
     "your_accords": "Vaši Certo Accord",
-    "recent_activity": "Nedavna aktivnost",
-    "quick_actions": "Hitre akcije"
+    "recent_activity": "Nedavna dejavnost",
+    "quick_actions": "Hitri ukrepi"
   },
   "Profile": {
     "title": "Profil",
@@ -67,15 +67,15 @@
     "contact_person": "Oseba za stike",
     "sector": "Sektor",
     "edit_profile": "Uredi profil",
-    "verified_badge": "Preverjeni subjekt"
+    "verified_badge": "Preverjen subjekt"
   },
   "Delegates": {
     "title": "Delegati Certo",
     "add_delegate": "Dodaj delegata",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Stanje",
-    "primary_link": "Povezava PRIMARY",
-    "failover_link": "Povezava FAILOVER",
+    "delegate_status": "Status",
+    "primary_link": "Primarni link",
+    "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

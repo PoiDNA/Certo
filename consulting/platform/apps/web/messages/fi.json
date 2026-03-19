@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Etsi Neuvonantaja",
-    "description": "Certon sertifioidut neuvonantajat. Hallintotapa ja vaatimustenmukaisuus."
+    "description": "Certon akkreditoidut neuvonantajat. Hallinnon laatu ja vaatimustenmukaisuus."
   },
   "Nav": {
     "advisors": "Neuvonantajat",
@@ -9,53 +9,53 @@
     "login": "Kirjautuminen"
   },
   "Footer": {
-    "description": "Asiantunteva neuvonta hallintotavasta, vaatimustenmukaisuudesta ja turvallisuudesta johtaville markkinajohtajille.",
+    "description": "Asiantunteva neuvonta hallinnon laadusta, vaatimustenmukaisuudesta ja turvallisuudesta markkinajohtajille.",
     "ecosystem": "Certon ekosysteemi",
-    "accreditation": "Kaikki neuvonantajat ovat sertifioitu Certo Governance Institute -säätiön toimesta",
+    "accreditation": "Kaikki neuvonantajat ovat akkreditoituja Certo Governance Institute -säätiön toimesta",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot"
   },
   "Home": {
-    "hero_title": "Asiantunteva neuvonta\njohtajiston tasolla.",
-    "hero_subtitle": "Yhdistämme sertifioidut Certon neuvonantajat instituutioihin, jotka vaativat korkeimpia hallintotavan ja säännösten vaatimustenmukaisuuden standardeja.",
+    "hero_title": "Asiantunteva neuvonta\nhallintoelimen tasolla.",
+    "hero_subtitle": "Yhdistämme Certon akkreditoidut neuvonantajat instituutioihin, jotka vaativat korkeimpia hallinnon laadun ja sääntelystenmukaisuuden standardeja.",
     "hero_cta": "Etsi asiantuntija",
     "finder_title": "Haluan keskustella asiantuntijan kanssa aiheesta:",
     "area_health": "Terveydenhuolto",
-    "area_local_gov": "Kunnat",
+    "area_local_gov": "Kunnat ja kuntaliiset",
     "area_defense": "Puolustus",
     "area_finance": "Rahoitus",
     "area_education": "Koulutus",
-    "form_title": "Jätä yhteystietosi, jotta voimme valita sopivan neuvonantajan alueelta",
-    "form_name": "Nimi ja sukunimi",
-    "form_email": "Sähköpostiosoite (työpaikan)",
-    "form_org": "Organisaation nimi / Asema",
-    "form_submit": "Lähetä kysely",
+    "form_title": "Jätä yhteystiedot, jotta löydämme sinulle sopivan neuvonantajan alueelta",
+    "form_name": "Nimi",
+    "form_email": "Sähköpostiosoite (työpostittain)",
+    "form_org": "Organisaation nimi / Tehtävänimike",
+    "form_submit": "Lähetä pyyntö",
     "advisors_title": "Esimerkkejä asiantuntijoista verkostostamme",
-    "advisor_bio": "Certon sertifioimaton neuvonantaja, jolla on pitkä kokemus prosessien optimoinnista strategisissa markkinajohtajissa.",
-    "advisor_1_bio": "Asiantuntija terveydenhuollon ja yhteensopivuuden alalla, vastuussa Certo-luokituksen ylläpidosta ja vahvistamisesta terveydenhuollon alalla.",
-    "advisor_2_bio": "Asiantuntija rahoituksen ja tarkastuksen alalla, varmistaa Certo-luokituksen ylläpidon ja vahvistamisen rahoitussektorilla.",
-    "advisor_3_bio": "Neuvonantaja puolustuksen ja kyberturvallisuuden alalla, vastuussa Certo-luokituksen vahvistamisesta puolustusteollisuudessa."
+    "advisor_bio": "Certon akkreditoitu neuvonantaja, jolla on pitkä kokemus prosessien optimoinnista strategisille markkinajohtajille.",
+    "advisor_1_bio": "Asiantuntija terveydenhuollon ja vaatimustenmukaisuuden alalla, vastuussa Certon arvioinnin ylläpidosta ja vahvistamisesta lääketieteen alalla.",
+    "advisor_2_bio": "Rahoituksen ja tilintarkastuksen erikoistunut neuvonantaja, vastuussa Certon arvioinnin ylläpidosta ja vahvistamisesta rahoitussektorilla.",
+    "advisor_3_bio": "Neuvonantaja puolustus- ja kyberturvallisuusalalla, vastuussa Certon arvioinnin vahvistamisesta puolustusalan teollisuudessa."
   },
   "Legal": {
-    "back": "Takaisin kotisivulle",
+    "back": "Palaa pääsivulle",
     "last_updated": "Viimeksi päivitetty: Maaliskuu 2026",
     "privacy_title": "Tietosuojakäytäntö",
     "terms_title": "Käyttöehdot"
   },
   "FindAdvisor": {
     "title": "Etsi Certon neuvonantaja",
-    "sector_label": "Laitoksesi sektori",
+    "sector_label": "Organisaatiosi sektori",
     "need_label": "Mitä tarvitset?",
-    "need_audit": "Hallintotavan auditointi",
+    "need_audit": "Hallinnon audit",
     "need_advisory": "Strateginen neuvonta",
-    "need_training": "Koulutus ja työpajat",
-    "need_rating": "Valmistautuminen ratingiin",
+    "need_training": "Koulutukset ja työpajat",
+    "need_rating": "Valmistautuminen arviointiin",
     "region_label": "Alue",
     "submit": "Etsi neuvonantaja"
   },
   "Advisor": {
-    "accredited_by": "Sertifioinut Certo",
-    "specialization": "Erikoistunut alue",
+    "accredited_by": "Akkreditoitu Certonin toimesta",
+    "specialization": "Erikoistuminen",
     "sectors": "Sektorit",
     "contact_advisor": "Ota yhteyttä",
     "view_profile": "Näytä profiili"

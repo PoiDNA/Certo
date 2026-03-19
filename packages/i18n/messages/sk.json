@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý orgán hodnotenia kvality riadenia verejných, korporačných a mimovládnych inštitúcií."
+    "description": "Nezávislý ratingový orgán hodnotí kvalitu správy verejných, korporačných a mimovládnych inštitúcií."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,10 +16,10 @@
     "delegate": "Certo Delegate",
     "login": "Prihlásiť sa",
     "logout": "Odhlásiť sa",
-    "privacyPolicy": "Zásady ochrany osobných údajov",
-    "termsOfUse": "Podmienky používania",
+    "privacyPolicy": "Politika ochrany osobných údajov",
+    "termsOfUse": "Podmienky použitia",
     "loading": "Načítavanie...",
-    "error": "Vyskytla sa chyba",
+    "error": "Došlo k chybe",
     "save": "Uložiť",
     "cancel": "Zrušiť",
     "confirm": "Potvrdiť",
@@ -28,18 +28,18 @@
     "close": "Zatvoriť",
     "search": "Hľadať",
     "download": "Stiahnuť",
-    "verified": "Overený",
-    "active": "Aktívny",
-    "inactive": "Neaktívny"
+    "verified": "Overené",
+    "active": "Aktívne",
+    "inactive": "Neaktívne"
   },
   "Navigation": {
-    "home": "Domov",
-    "ratings": "Hodnotenia",
+    "home": "Úvodná stránka",
+    "ratings": "Ratingy",
     "reports": "Správy",
     "analysis": "Analýzy",
-    "about": "O Fundácii",
+    "about": "O Nadácii",
     "contact": "Kontakt",
-    "dashboard": "Panel",
+    "dashboard": "Ovládací panel",
     "settings": "Nastavenia"
   },
   "Auth": {
@@ -48,21 +48,21 @@
     "login_with_google": "Prihlásiť sa cez Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
-    "forgot_password": "Zabudol si heslo?",
-    "no_account": "Nemáš účet?",
-    "register": "Registrácia"
+    "forgot_password": "Zabudli ste heslo?",
+    "no_account": "Nemáte účet?",
+    "register": "Zaregistrujte sa"
   },
   "Errors": {
-    "404_title": "Stránka nebola nájdená",
-    "404_description": "Stránka, ktorú hľadáš, neexistuje alebo bola presunutá.",
+    "404_title": "Stránka sa nenašla",
+    "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
-    "500_description": "Vyskytla sa neočakávaná chyba. Skús to prosím neskôr.",
-    "unauthorized": "Prístup zamietnutý. Prihláste sa a pokračujte."
+    "500_description": "Došlo k neočakávanej chybe. Skúste neskôr.",
+    "unauthorized": "Prístup zamietnutý. Prihláste sa prosím, aby ste pokračovali."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",
-    "privacy": "Zásady ochrany osobných údajov",
-    "terms": "Podmienky používania",
+    "privacy": "Politika ochrany osobných údajov",
+    "terms": "Podmienky použitia",
     "contact": "Kontakt"
   }
 }

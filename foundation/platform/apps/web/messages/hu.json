@@ -1,13 +1,13 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Alapítvány",
-    "description": "Független minősítő szerv, amely értékeli az irányítási minőséget a közszféra, vállalati, egészségügyi és védelmi szektorban."
+    "description": "Független minősítőintézmény, amely a közszféra, a vállalati, az egészségügyi és a védelmi szektor irányítási minőségét értékeli."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "A Certo az első olyan minősítőügynökség a világon, amelynek minősítései kriptográfiai folyomatok — nem vélemények. Minden minősítési döntés saját infrastruktúráján kívül rögzített, offline-ban ellenőrizhető és nyilvánosan auditálható.",
-    "hero_cta_primary": "Tekintsd meg a minősítéseket",
-    "hero_cta_secondary": "Tudj meg többet",
+    "description": "A Certo az első olyan minősítőügynökség a világon, amelynek minősítései a folyamat kriptográfiai összetevői — nem vélemények. Minden minősítési döntés a saját infrastruktúráján kívül van rögzítve, offline verifikálható és nyilvánosan ellenőrizhető.",
+    "hero_cta_primary": "Tekintse meg a minősítéseket",
+    "hero_cta_secondary": "Tudjon meg többet",
     "section_ratings_title": "Legújabb Certo Minősítések",
     "section_reports_title": "Elemzések és Jelentések",
     "section_about_title": "Az Alapítványról"
@@ -21,10 +21,10 @@
     "sector_corporate": "Vállalati",
     "sector_medical": "Egészségügyi",
     "sector_defense": "Védelmi",
-    "sector_ngo": "Nonprofit",
-    "rating_valid_until": "Minősítés érvényes",
+    "sector_ngo": "Civil",
+    "rating_valid_until": "Minősítés érvényes:",
     "rating_issued": "Kibocsátás dátuma",
-    "no_results": "Nincsenek találatok",
+    "no_results": "Nincsenek eredmények",
     "view_profile": "Profil megtekintése"
   },
   "Nav": {
@@ -35,16 +35,16 @@
   },
   "Footer": {
     "copyright": "Certo Governance Institute Alapítvány © {year}",
-    "privacy": "Adatvédelmi irányelvek",
+    "privacy": "Adatvédelmi Nyilatkozat",
     "terms": "Felhasználási Feltételek"
   },
   "About": {
     "title": "A Certo Governance Institute Alapítványról",
-    "mission_title": "Misszió",
+    "mission_title": "Küldetés",
     "mission_text": "A jó irányítási kultúra kialakítása független értékelés és a governance standardok előmozdítása révén Lengyelországban és Európában.",
     "independence_title": "Függetlenség",
-    "independence_text": "Az Alapítvány független az értékelt szervezetektől, a közhatalmak szerveitől és kereskedelmi érdekektől.",
+    "independence_text": "Az Alapítvány független az értékelt szervezetektől, az állami hatóságoktól és a kereskedelmi érdekektől.",
     "methodology_title": "Módszertan",
-    "methodology_text": "A Certo minősítések az ISO normákra és az EU iránymutatásokra épülő szigorú módszertanon alapulnak."
+    "methodology_text": "A Certo minősítések szigorú, az ISO szabványokra és az EU irányelvekre épülő módszertanon alapulnak."
   }
 }

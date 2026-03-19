@@ -1,79 +1,79 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifika tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
+    "description": "Verifikazzjoni tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
   },
   "Nav": {
     "solutions": "Soluzzjonijiet",
     "technology": "Teknoloġija",
     "foundation": "Fundazzjoni Certo",
-    "login": "Idħol"
+    "login": "Accedi"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika tal-Privatezza",
-    "terms": "Kundizzjonijiet tal-Servizz"
+    "terms": "Kundizzjonijiet tas-Servizz"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identità.",
     "hero_line2": "Konformità.",
-    "hero_line3": "Certezza.",
-    "hero_description": "Infrastruttura ta' verifika u compliance għal istituzzjonijiet pubbliċi, korporazzjonijiet u entitajiet regolati. Mibnija fuq l-istandards ta'",
+    "hero_line3": "Ċertezza.",
+    "hero_description": "Infrastruttura ta' verifikazzjoni u compliance għal istituzzjonijiet pubbliċi, korporazzjonijiet u entitajiet rregolati. Mibnija fuq standards ta'",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "IBDA' L-IMPLIMENTAZZJONI",
+    "cta_primary": "IBDA L-IMPLIMENTAZZJONI",
     "cta_secondary": "SERVIZZI",
     "services_label": "SERVIZZI",
-    "services_title": "Tliet saffi ta' infrastruttura compliance",
-    "service1_title": "Verifika tal-Identità",
-    "service1_desc": "KYC/AML għal entitajiet regolati. Verifika awtomatika ta' dokumenti, screening ta' sanzzjonijiet u PEP, integrazzjoni mar-reġistri pubbliċi.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring awtomatiku tal-konformità bbażat fuq il-metodoloġija ta' Certo Governance Institute. Sistema ta' klassifikazzjoni b'ħamsa livelli b'ħarsa ta' auditu kompleta.",
+    "services_title": "Tliet saffi tal-infrastruttura tal-compliance",
+    "service1_title": "Verifikazzjoni tal-Identità",
+    "service1_desc": "KYC/AML għal entitajiet rregolati. Verifikazzjoni awtomatika ta' dokumenti, screening ta' sanzzjonijiet u PEP, integrazione ma' reġistri statali.",
+    "service2_title": "Rating tal-Compliance",
+    "service2_desc": "Skoring awtomatiku tal-konformità bbażat fuq il-metodoloġija ta' Certo Governance Institute. Sistema ta' valutazzjoni b'ħamsa stati b'ċaħda sħiħa ta' awditazzjoni.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Pjanijiet ta' korrezzjoni awtomatiċi u monitoraġġ ta' l-implimentazzjoni tagħhom. Integrazzjoni ma' sistemi ERP, GRC u platformi ta' immaniġġjar tar-riskju.",
+    "service3_desc": "Pjanijiet ta' rettifikazzjoni awtomatiki u monitoraġġ tar-realizzazzjoni tagħhom. Integrazione ma' sistemi ERP, GRC u pjattaformi ta' ġestjoni tar-riskju.",
     "arch_label": "ARKITETTURA",
     "arch_title": "Kif jaħdem Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Data tal-entità + dokumenti + kuntest regolatorju",
     "step2_title": "Verify",
-    "step2_desc": "Verifika tal-identità, screening, reġistru pubbliku",
+    "step2_desc": "Verifikazzjoni tal-identità, screening, reġistru pubbliku",
     "step3_title": "Score",
-    "step3_desc": "Rating awtomatiku tal-konformità Certo Vector",
+    "step3_desc": "Rating awtomatiku ta' konformità Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Rapport PDF + API + dashboard Certo Online",
-    "badge_iso": "Istandards ISO",
+    "badge_iso": "Standards ISO",
     "badge_compliance": "Konformità regolatorja",
-    "badge_kyc": "Verifika tal-identità",
+    "badge_kyc": "Verifikazzjoni tal-identità",
     "badge_governance": "Valutazzjoni tal-governance"
   },
   "Legal": {
-    "back": "Ħur lill-paġna prinċipali",
-    "last_updated": "L-aħħar ġdida: Marzu 2026",
+    "back": "Ħarġa għall-paġna ewlenija",
+    "last_updated": "Aħħar aġġornament: Marzu 2026",
     "privacy_title": "Politika tal-Privatezza",
-    "terms_title": "Kundizzjonijiet tal-Servizz"
+    "terms_title": "Kundizzjonijiet tas-Servizz"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
     "welcome": "Merħba, {name}",
-    "your_rating": "Il-Rating Certo Tiegħek",
+    "your_rating": "Rating Certo Tiegħek",
     "your_delegates": "Id-Delegati Tiegħek",
-    "your_accords": "Il-Certo Accord Tiegħek",
+    "your_accords": "Certo Accord Tiegħek",
     "recent_activity": "Attività riċenti",
-    "quick_actions": "Azzjonijiet mbriexa"
+    "quick_actions": "Azzjonijiet veloċi"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizzazzjoni",
-    "contact_person": "Persuna ta' kuntatt",
+    "contact_person": "Persuna ta' Kuntatt",
     "sector": "Settur",
     "edit_profile": "Editja l-profil",
-    "verified_badge": "Entità verifikata"
+    "verified_badge": "Entità Verifikata"
   },
   "Delegates": {
     "title": "Delegati Certo",
     "add_delegate": "Żid delegat",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Status",
+    "delegate_status": "Stat",
     "primary_link": "Link PRIMARY",
     "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
