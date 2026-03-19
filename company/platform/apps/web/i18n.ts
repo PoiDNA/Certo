@@ -26,7 +26,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     ? requested
     : routing.defaultLocale;
 
-  const sharedMessages = (await import(`../../../packages/i18n/messages/${locale}.json`)).default;
+  const sharedMessages = (await import(`../../../../packages/i18n/messages/${locale}.json`)).default;
 
   let localMessages = {};
   try {
