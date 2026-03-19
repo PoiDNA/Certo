@@ -2,8 +2,10 @@
 
 import { createBrowserClient } from '@supabase/ssr';
 import { useEffect, useState } from 'react';
+import { useLocale } from 'next-intl';
 
 export default function AuthNav() {
+  const locale = useLocale();
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -32,7 +34,7 @@ export default function AuthNav() {
   if (!isAuthenticated) {
     return (
       <nav className="flex gap-8 text-sm font-medium tracking-wide items-center">
-        <a href="/login" className="text-certo-gold hover:text-certo-gold-light transition-colors duration-300 uppercase">
+        <a href={`/${locale}/login`} className="text-certo-gold hover:text-certo-gold-light transition-colors duration-300 uppercase">
           Zaloguj się
         </a>
       </nav>
@@ -41,9 +43,9 @@ export default function AuthNav() {
 
   return (
     <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide items-center">
-      <a href="/docs" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Dokumenty</a>
-      <a href="/pipeline" className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Pipeline</a>
-      <a href="/docs" className="border border-certo-gold/50 text-certo-gold bg-certo-navy px-5 py-2 hover:bg-certo-gold hover:text-white transition-colors duration-300 rounded-[2px] uppercase">
+      <a href={`/${locale}/docs`} className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Dokumenty</a>
+      <a href={`/${locale}/pipeline`} className="text-certo-cream hover:text-certo-gold transition-colors duration-200 uppercase">Pipeline</a>
+      <a href={`/${locale}/docs`} className="border border-certo-gold/50 text-certo-gold bg-certo-navy px-5 py-2 hover:bg-certo-gold hover:text-white transition-colors duration-300 rounded-[2px] uppercase">
         Panel
       </a>
     </nav>

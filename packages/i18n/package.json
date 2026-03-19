@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "main": "config.ts",
+  "exports": {
+    "./config": "./config.ts",
+    "./locale-display-names": "./locale-display-names.ts"
+  },
   "scripts": {
     "translate": "tsx scripts/translate.ts"
   },

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default function SiteNav() {
   const locale = useLocale();
@@ -22,6 +23,7 @@ export default function SiteNav() {
         <a href="https://certogov.org" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
           {t('foundation')} →
         </a>
+        <LocaleSwitcher />
         <Link
           href={`/${locale}/login`}
           className="px-5 py-2 border border-certo-teal bg-certo-teal text-white rounded-[2px] hover:bg-certo-teal-dark hover:border-certo-teal-dark transition-colors duration-200"
@@ -84,6 +86,9 @@ export default function SiteNav() {
             >
               {t('login')}
             </Link>
+            <div className="pt-2 border-t border-gray-200">
+              <LocaleSwitcher />
+            </div>
           </nav>
         </div>
       )}
