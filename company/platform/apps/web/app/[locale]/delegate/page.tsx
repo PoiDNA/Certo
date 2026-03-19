@@ -1,11 +1,12 @@
 import { locales } from '@certo/i18n/config';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 export default async function DelegatePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'Delegates' });
 
   return (

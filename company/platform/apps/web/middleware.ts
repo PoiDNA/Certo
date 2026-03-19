@@ -15,7 +15,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // Uruchamiamy middleware i18n najpierw, on nadpisze cookies locale jeśli trzeba
-  const response = intlMiddleware(request);
+  const response = await intlMiddleware(request);
 
   let supabaseResponse = response;
 

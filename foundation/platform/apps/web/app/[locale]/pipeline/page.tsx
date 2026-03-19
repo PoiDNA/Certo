@@ -1,8 +1,11 @@
 import { supabase } from "@/lib/documents";
+import { setRequestLocale } from 'next-intl/server';
 
 export const revalidate = 30;
 
-export default async function PipelinePage() {
+export default async function PipelinePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const { data: runs } = await supabase
     .from("pipeline_runs")
     .select("*")

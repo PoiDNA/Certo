@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import "../globals.css";
 import AuthNav from "../../components/AuthNav";
 import SiteNav from "../../components/SiteNav";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { locales } from "@certo/i18n/config";
+import { routing } from "../../i18n-config";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -13,6 +16,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   // Generate hreflang links based on all supported locales
@@ -46,6 +50,8 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
+  setRequestLocale(locale);
   const messages = await getMessages();
   const tf = await getTranslations({ locale, namespace: 'Footer' });
 
