@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://certogov.org';
 
   // Możemy mieć tu statyczną listę stron, jak w wytycznych
-  const routes = ['', '/pp', '/terms'];
+  const routes = ['', '/ratings', '/methodology', '/about', '/contact', '/privacy', '/terms'];
 
   const sitemapEntries: MetadataRoute.Sitemap = routes.map((route) => {
     const alternates: Record<string, string> = {

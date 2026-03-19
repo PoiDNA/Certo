@@ -4,7 +4,7 @@ import { locales } from '@certo/i18n/config';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://certo.id';
 
-  const routes = ['', '/login', '/dashboard', '/delegate', '/profile', '/settings'];
+  const routes = ['', '/contact', '/privacy', '/terms'];
 
   const sitemapEntries: MetadataRoute.Sitemap = routes.map((route) => {
     const alternates: Record<string, string> = {
