@@ -31,7 +31,10 @@
     "form_org": "Nombre de la organización / Cargo",
     "form_submit": "Enviar solicitud",
     "advisors_title": "Ejemplos de expertos de nuestra red",
-    "advisor_bio": "Asesor acreditado de Certo con amplia experiencia en optimización de procesos para instituciones estratégicas líderes del mercado."
+    "advisor_bio": "Asesor acreditado de Certo con amplia experiencia en optimización de procesos para instituciones estratégicas líderes del mercado.",
+    "advisor_1_bio": "Experta en salud y cumplimiento, responsable del mantenimiento y fortalecimiento del rating Certo en el sector médico.",
+    "advisor_2_bio": "Especialista en finanzas y auditoría, velando por el mantenimiento y fortalecimiento del rating Certo en el sector financiero.",
+    "advisor_3_bio": "Asesor en defensa y ciberseguridad, responsable del fortalecimiento del rating Certo en la industria de defensa."
   },
   "Legal": {
     "back": "Volver a la página principal",

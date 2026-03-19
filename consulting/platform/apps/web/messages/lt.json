@@ -31,7 +31,10 @@
     "form_org": "Organizacijos pavadinimas / Pareigos",
     "form_submit": "Siųsti užklausą",
     "advisors_title": "Pavyzdiniai ekspertai iš mūsų tinklo",
-    "advisor_bio": "Certo akredituotas konsultantas, turintis daugelio metų patirtį optimizuojant strateginių rinkos institucijų procesus."
+    "advisor_bio": "Certo akredituotas konsultantas, turintis daugelio metų patirtį optimizuojant strateginių rinkos institucijų procesus.",
+    "advisor_1_bio": "Ekspertė sveikatos apsaugos ir atitikties srityje, atsakinga už Certo reitingo išlaikymą ir stiprinimą medicinos sektoriuje.",
+    "advisor_2_bio": "Specialistas finansų ir audito srityje, rūpinantis Certo reitingo išlaikymu ir stiprinimu finansų sektoriuje.",
+    "advisor_3_bio": "Konsultantas gynybos ir kibernetinio saugumo srityje, atsakingas už Certo reitingo stiprinimą gynybos pramonėje."
   },
   "Legal": {
     "back": "Grįžti į pagrindinį puslapį",

@@ -31,7 +31,10 @@
     "form_org": "Nazwa organizacji / Stanowisko",
     "form_submit": "Wyślij zapytanie",
     "advisors_title": "Przykładowi eksperci z naszej sieci",
-    "advisor_bio": "Akredytowany doradca Certo z wieloletnim doświadczeniem w optymalizacji procesów dla strategicznych instytucji rynkowych."
+    "advisor_bio": "Akredytowany doradca Certo z wieloletnim doświadczeniem w optymalizacji procesów dla strategicznych instytucji rynkowych.",
+    "advisor_1_bio": "Ekspertka w obszarze ochrony zdrowia i compliance, odpowiedzialna za utrzymanie i wzmocnienie ratingu Certo w branży medycznej.",
+    "advisor_2_bio": "Specjalista w obszarze finansów i audytu, dbający o utrzymanie i wzmocnienie ratingu Certo w sektorze finansowym.",
+    "advisor_3_bio": "Doradca w zakresie obronności i cyberbezpieczeństwa, odpowiedzialny za wzmocnienie ratingu Certo w branży obronnej."
   },
   "Legal": {
     "back": "Wróć do strony głównej",

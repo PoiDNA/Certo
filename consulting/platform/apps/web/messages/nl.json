@@ -31,7 +31,10 @@
     "form_org": "Organisatienaam / Functie",
     "form_submit": "Verzend aanvraag",
     "advisors_title": "Voorbeelden van experts uit ons netwerk",
-    "advisor_bio": "Geaccrediteerde Certo-adviseur met jarenlange ervaring in het optimaliseren van processen voor strategische marktinstellingen."
+    "advisor_bio": "Geaccrediteerde Certo-adviseur met jarenlange ervaring in het optimaliseren van processen voor strategische marktinstellingen.",
+    "advisor_1_bio": "Expert op het gebied van gezondheidszorg en compliance, verantwoordelijk voor het behoud en versterking van de Certo-rating in de medische sector.",
+    "advisor_2_bio": "Specialist op het gebied van financiën en audit, zorgt voor het behoud en versterking van de Certo-rating in de financiële sector.",
+    "advisor_3_bio": "Adviseur op het gebied van defensie en cybersecurity, verantwoordelijk voor de versterking van de Certo-rating in de defensie-industrie."
   },
   "Legal": {
     "back": "Terug naar startpagina",

@@ -31,7 +31,10 @@
     "form_org": "Denumirea organizației / Funcție",
     "form_submit": "Trimiteți cererea",
     "advisors_title": "Exemplu de experți din rețeaua noastră",
-    "advisor_bio": "Consultant acreditat Certo cu experiență de mulți ani în optimizarea proceselor pentru instituții strategice pe piață."
+    "advisor_bio": "Consultant acreditat Certo cu experiență de mulți ani în optimizarea proceselor pentru instituții strategice pe piață.",
+    "advisor_1_bio": "Expertă în domeniul sănătății și conformității, responsabilă pentru menținerea și consolidarea ratingului Certo în sectorul medical.",
+    "advisor_2_bio": "Specialist în domeniul finanțelor și auditului, asigură menținerea și consolidarea ratingului Certo în sectorul financiar.",
+    "advisor_3_bio": "Consultant în domeniul apărării și securității cibernetice, responsabil pentru consolidarea ratingului Certo în industria de apărare."
   },
   "Legal": {
     "back": "Revenire la pagina principală",

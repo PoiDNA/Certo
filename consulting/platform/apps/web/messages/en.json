@@ -31,7 +31,10 @@
     "form_org": "Organization Name / Position",
     "form_submit": "Submit Query",
     "advisors_title": "Sample experts from our network",
-    "advisor_bio": "Accredited Certo advisor with many years of experience in process optimization for strategic market institutions."
+    "advisor_bio": "Accredited Certo advisor with many years of experience in process optimization for strategic market institutions.",
+    "advisor_1_bio": "Expert in healthcare and compliance, responsible for maintaining and strengthening the Certo rating in the medical sector.",
+    "advisor_2_bio": "Specialist in finance and audit, ensuring the maintenance and strengthening of the Certo rating in the financial sector.",
+    "advisor_3_bio": "Advisor in defence and cybersecurity, responsible for strengthening the Certo rating in the defence industry."
   },
   "Legal": {
     "back": "Back to homepage",

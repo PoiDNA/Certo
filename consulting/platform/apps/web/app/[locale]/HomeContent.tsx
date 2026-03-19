@@ -5,10 +5,12 @@ import { useTranslations } from 'next-intl';
 
 const EXPERTISE_KEYS = ['area_health', 'area_local_gov', 'area_defense', 'area_finance', 'area_education'] as const;
 
+const R2_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev';
+
 const ADVISORS = [
-  { id: 1, name: 'dr Anna Kowalska', spec: 'Ochrona zdrowia / Compliance', rating: 'A+' },
-  { id: 2, name: 'Michał Nowak', spec: 'Finanse / Audyt', rating: 'A' },
-  { id: 3, name: 'prof. Jan Wiśniewski', spec: 'Obronność / Cyberbezpieczeństwo', rating: 'A++' },
+  { id: 1, name: 'Katarzyna Wiśniewska', spec: 'Ochrona zdrowia / Compliance', rating: 'A+', image: `${R2_BASE}/consulting/persona/PH1.png`, bioKey: 'advisor_1_bio' as const },
+  { id: 2, name: 'Michael Johnson', spec: 'Finanse / Audyt', rating: 'A', image: `${R2_BASE}/consulting/persona/PH2.png`, bioKey: 'advisor_2_bio' as const },
+  { id: 3, name: 'dr Piotr Nowicki', spec: 'Obronność / Cyberbezpieczeństwo', rating: 'A++', image: `${R2_BASE}/consulting/persona/PH3.png`, bioKey: 'advisor_3_bio' as const },
 ];
 
 export default function HomeContent() {
@@ -88,7 +90,7 @@ export default function HomeContent() {
               {ADVISORS.map(adv => (
                 <div key={adv.id} className="group bg-white border border-certo-border hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full">
                   <div className="aspect-[4/3] w-full bg-gray-100 overflow-hidden relative border-b border-certo-border">
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-[10px] uppercase tracking-widest font-semibold">Fotografia (cz/b)</div>
+                    <img src={adv.image} alt={adv.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                     <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="p-8 flex-grow flex flex-col">
@@ -98,7 +100,7 @@ export default function HomeContent() {
                     </div>
                     <h4 className="font-display text-2xl text-certo-primary mb-4 group-hover:text-certo-accent transition-colors duration-300">{adv.name}</h4>
                     <p className="text-sm text-certo-muted leading-relaxed mt-auto font-light">
-                      {t('advisor_bio')}
+                      {t(adv.bioKey)}
                     </p>
                   </div>
                 </div>

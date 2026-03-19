@@ -31,7 +31,10 @@
     "form_org": "Naziv organizacije / Položaj",
     "form_submit": "Pošalji upite",
     "advisors_title": "Primjeri stručnjaka iz naše mreže",
-    "advisor_bio": "Akreditirani savjetnik Certo s dugogodišnjim iskustvom u optimizaciji procesa za strateške tržišne institucije."
+    "advisor_bio": "Akreditirani savjetnik Certo s dugogodišnjim iskustvom u optimizaciji procesa za strateške tržišne institucije.",
+    "advisor_1_bio": "Stručnjakinja u području zdravstva i usklađenosti, odgovorna za održavanje i jačanje Certo rejtinga u medicinskom sektoru.",
+    "advisor_2_bio": "Stručnjak u području financija i revizije, brine se o održavanju i jačanju Certo rejtinga u financijskom sektoru.",
+    "advisor_3_bio": "Savjetnik u području obrane i kibernetičke sigurnosti, odgovoran za jačanje Certo rejtinga u obrambenoj industriji."
   },
   "Legal": {
     "back": "Nazad na početnu stranicu",

@@ -31,7 +31,10 @@
     "form_org": "Organisatsiooni nimi / Ametikoht",
     "form_submit": "Saada päring",
     "advisors_title": "Näited meie võrgustiku ekspertidest",
-    "advisor_bio": "Certo akrediteeritud nõustaja, kellel on põhjalik kogemus strateegilis­te turguinstitutsioonde protsesside optimeerimises."
+    "advisor_bio": "Certo akrediteeritud nõustaja, kellel on põhjalik kogemus strateegilis­te turguinstitutsioonde protsesside optimeerimises.",
+    "advisor_1_bio": "Ekspert tervishoiu ja vastavuse valdkonnas, vastutab Certo reitingu säilitamise ja tugevdamise eest meditsiinitööstuses.",
+    "advisor_2_bio": "Spetsialist rahanduse ja auditi valdkonnas, tagab Certo reitingu säilitamise ja tugevdamise finantstööstuses.",
+    "advisor_3_bio": "Nõustaja kaitse ja küberturvalisuse valdkonnas, vastutab Certo reitingu tugevdamise eest kaitse tööstuses."
   },
   "Legal": {
     "back": "Tagasi avalehele",

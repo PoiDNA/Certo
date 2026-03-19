@@ -31,7 +31,10 @@
     "form_org": "Nome organizzazione / Posizione",
     "form_submit": "Invia richiesta",
     "advisors_title": "Esempi di esperti dalla nostra rete",
-    "advisor_bio": "Consulente accreditato Certo con esperienza pluriennale nell'ottimizzazione dei processi per istituzioni strategiche di mercato."
+    "advisor_bio": "Consulente accreditato Certo con esperienza pluriennale nell'ottimizzazione dei processi per istituzioni strategiche di mercato.",
+    "advisor_1_bio": "Esperta in sanità e compliance, responsabile del mantenimento e rafforzamento del rating Certo nel settore medico.",
+    "advisor_2_bio": "Specialista in finanza e audit, garantisce il mantenimento e il rafforzamento del rating Certo nel settore finanziario.",
+    "advisor_3_bio": "Consulente in difesa e cybersecurity, responsabile del rafforzamento del rating Certo nell'industria della difesa."
   },
   "Legal": {
     "back": "Torna alla pagina principale",

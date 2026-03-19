@@ -31,7 +31,10 @@
     "form_org": "Organisationsname / Position",
     "form_submit": "Anfrage absenden",
     "advisors_title": "Beispiele von Experten aus unserem Netzwerk",
-    "advisor_bio": "Akkreditierter Certo-Berater mit langjähriger Erfahrung in der Optimierung von Prozessen für strategische Marktinstitutionen."
+    "advisor_bio": "Akkreditierter Certo-Berater mit langjähriger Erfahrung in der Optimierung von Prozessen für strategische Marktinstitutionen.",
+    "advisor_1_bio": "Expertin für Gesundheitswesen und Compliance, verantwortlich für die Aufrechterhaltung und Stärkung des Certo-Ratings im medizinischen Sektor.",
+    "advisor_2_bio": "Spezialist für Finanzen und Audit, sorgt für die Aufrechterhaltung und Stärkung des Certo-Ratings im Finanzsektor.",
+    "advisor_3_bio": "Berater für Verteidigung und Cybersicherheit, verantwortlich für die Stärkung des Certo-Ratings in der Verteidigungsindustrie."
   },
   "Legal": {
     "back": "Zur Startseite zurück",

@@ -31,7 +31,10 @@
     "form_org": "Názov organizácie / Pozícia",
     "form_submit": "Poslať dotaz",
     "advisors_title": "Príkladní experti z našej siete",
-    "advisor_bio": "Akreditovaný poradca Certo s dlhoročnými skúsenosťami pri optimalizácii procesov pre strategické inštitúcie trhu."
+    "advisor_bio": "Akreditovaný poradca Certo s dlhoročnými skúsenosťami pri optimalizácii procesov pre strategické inštitúcie trhu.",
+    "advisor_1_bio": "Expertka v oblasti zdravotníctva a súladu, zodpovedná za udržanie a posilnenie ratingu Certo v lekárskej sfére.",
+    "advisor_2_bio": "Špecialista v oblasti financií a auditu, dbajúci o udržanie a posilnenie ratingu Certo vo finančnom sektore.",
+    "advisor_3_bio": "Poradca v oblasti obrany a kybernetickej bezpečnosti, zodpovedný za posilnenie ratingu Certo v obrannom priemysle."
   },
   "Legal": {
     "back": "Späť na hlavnú stránku",

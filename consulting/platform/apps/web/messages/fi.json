@@ -31,7 +31,10 @@
     "form_org": "Organisaation nimi / Asema",
     "form_submit": "Lähetä kysely",
     "advisors_title": "Esimerkkejä asiantuntijoista verkostostamme",
-    "advisor_bio": "Certon sertifioimaton neuvonantaja, jolla on pitkä kokemus prosessien optimoinnista strategisissa markkinajohtajissa."
+    "advisor_bio": "Certon sertifioimaton neuvonantaja, jolla on pitkä kokemus prosessien optimoinnista strategisissa markkinajohtajissa.",
+    "advisor_1_bio": "Asiantuntija terveydenhuollon ja yhteensopivuuden alalla, vastuussa Certo-luokituksen ylläpidosta ja vahvistamisesta terveydenhuollon alalla.",
+    "advisor_2_bio": "Asiantuntija rahoituksen ja tarkastuksen alalla, varmistaa Certo-luokituksen ylläpidon ja vahvistamisen rahoitussektorilla.",
+    "advisor_3_bio": "Neuvonantaja puolustuksen ja kyberturvallisuuden alalla, vastuussa Certo-luokituksen vahvistamisesta puolustusteollisuudessa."
   },
   "Legal": {
     "back": "Takaisin kotisivulle",

@@ -31,7 +31,10 @@
     "form_org": "Isem tal-Organizzazzjoni / Pożizzjoni",
     "form_submit": "Ibgħat ir-rikiresta",
     "advisors_title": "Esperti eżempjari mill-network tagħna",
-    "advisor_bio": "Kunsulent akkreditat ta' Certo b'esperienza pluriennali fl-ottimizzazzjoni tal-proċessi għal istituzzjonijiet strateġiċi tal-merkati."
+    "advisor_bio": "Kunsulent akkreditat ta' Certo b'esperienza pluriennali fl-ottimizzazzjoni tal-proċessi għal istituzzjonijiet strateġiċi tal-merkati.",
+    "advisor_1_bio": "Esperta fir-reġjun tas-saħħa u l-konformità, responsabbli għall-żamma u r-rikostruzzjoni tar-reiting Certo fis-settur medicu.",
+    "advisor_2_bio": "Speċjalista fir-reġjun tal-finanzji u l-awdit, jieħu ħsieb iż-żamma u r-rikostruzzjoni tar-reiting Certo fis-settur finanzjarju.",
+    "advisor_3_bio": "Kunsulent fir-reġjun tad-difiża u s-sigurtà ċibernetika, responsabbli għar-rikostruzzjoni tar-reiting Certo fl-industrija tad-difiża."
   },
   "Legal": {
     "back": "Ritorna għall-paġna principale",

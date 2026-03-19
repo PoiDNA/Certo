@@ -31,7 +31,10 @@
     "form_org": "Szervezet neve / Beosztás",
     "form_submit": "Lekérdezés küldése",
     "advisors_title": "Példa szakértőink a hálózatunkból",
-    "advisor_bio": "Certo akkreditált tanácsadó, aki hosszú évek tapasztalatával rendelkezik a stratégiai piacvezető intézmények folyamatoptimalizálásában."
+    "advisor_bio": "Certo akkreditált tanácsadó, aki hosszú évek tapasztalatával rendelkezik a stratégiai piacvezető intézmények folyamatoptimalizálásában.",
+    "advisor_1_bio": "Szakértő az egészségügy és megfelelőség területén, felelős a Certo minősítés fenntartásáért és erősítéséért az egészségügyi szektorban.",
+    "advisor_2_bio": "Szakértő a pénzügyek és audit területén, gondoskodik a Certo minősítés fenntartásáról és erősítéséről a pénzügyi szektorban.",
+    "advisor_3_bio": "Tanácsadó a honvédelem és kiberbiztonság területén, felelős a Certo minősítés erősítéséért a védelmi iparban."
   },
   "Legal": {
     "back": "Vissza a kezdőlapra",

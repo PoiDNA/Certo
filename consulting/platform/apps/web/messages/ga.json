@@ -31,7 +31,10 @@
     "form_org": "Ainm an Eagraíochta / Post",
     "form_submit": "Seol an Iarratas",
     "advisors_title": "Samplaí de shaineolaithe ó ár ngréasán",
-    "advisor_bio": "Comhairleoir creidiúnaithe Certo le taithí fada ar phróisis a bharrfheidhmiú do ionstitiúidí straitéiseacha margaidh."
+    "advisor_bio": "Comhairleoir creidiúnaithe Certo le taithí fada ar phróisis a bharrfheidhmiú do ionstitiúidí straitéiseacha margaidh.",
+    "advisor_1_bio": "Saineolaí i réimse sláinte agus comhlíonta, freagrach as rátáil Certo a chothabháil agus a neartú sa earnáil mhíochaine.",
+    "advisor_2_bio": "Speisialtóir i réimse airgeadais agus iniúchta, ag cinntiú go gcoinnítear agus go neartaítear rátáil Certo san earnáil airgeadais.",
+    "advisor_3_bio": "Comhairleoir i réimse cosanta agus cibearshlándála, freagrach as rátáil Certo a neartú sa tionscal cosanta."
   },
   "Legal": {
     "back": "Fill ar an Phleathduilleog",

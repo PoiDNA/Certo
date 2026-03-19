@@ -31,7 +31,10 @@
     "form_org": "Organisationens namn / Position",
     "form_submit": "Skicka förfrågan",
     "advisors_title": "Exempel på experter från vårt nätverk",
-    "advisor_bio": "Ackrediterad Certo-rådgivare med långt erfarenhet av processoptimering för strategiska marknadsinstitutioner."
+    "advisor_bio": "Ackrediterad Certo-rådgivare med långt erfarenhet av processoptimering för strategiska marknadsinstitutioner.",
+    "advisor_1_bio": "Expert på hälso- och sjukvård och compliance, ansvarig för att upprätthålla och stärka Certo-ratingen i medicinska sektorn.",
+    "advisor_2_bio": "Specialist på finans och revision, säkerställer upprätthållande och stärkande av Certo-ratingen i den finansiella sektorn.",
+    "advisor_3_bio": "Rådgivare inom försvar och cybersäkerhet, ansvarig för att stärka Certo-ratingen i försvarsindustrin."
   },
   "Legal": {
     "back": "Tillbaka till startsidan",

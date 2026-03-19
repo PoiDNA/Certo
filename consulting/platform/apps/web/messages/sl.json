@@ -31,7 +31,10 @@
     "form_org": "Naziv institucije / Položaj",
     "form_submit": "Pošlji povpraševanje",
     "advisors_title": "Primeri strokovnjakov iz naše mreže",
-    "advisor_bio": "Akreditirani svetovalec Certo z dolgoletnimi izkušnjami pri optimizaciji procesov za strateške tržne institucije."
+    "advisor_bio": "Akreditirani svetovalec Certo z dolgoletnimi izkušnjami pri optimizaciji procesov za strateške tržne institucije.",
+    "advisor_1_bio": "Strokovnjakinja na področju zdravstva in skladnosti, odgovorna za ohranjanje in krepitev ratinga Certo v medicinskem sektorju.",
+    "advisor_2_bio": "Strokovnjak na področju financ in revizije, skrbi za ohranjanje in krepitev ratinga Certo v finančnem sektorju.",
+    "advisor_3_bio": "Svetovalec na področju obrambe in kibernetske varnosti, odgovoren za krepitev ratinga Certo v obrambni industriji."
   },
   "Legal": {
     "back": "Nazaj na glavno stran",

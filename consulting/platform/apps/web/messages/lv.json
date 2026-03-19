@@ -31,7 +31,10 @@
     "form_org": "Organizācijas nosaukums / Amats",
     "form_submit": "Nosūtīt pieprasījumu",
     "advisors_title": "Piemēru padomdevēji no mūsu tīkla",
-    "advisor_bio": "Sertificēts Certo padomdevējs ar plašu pieredzi procesu optimizācijā stratēģiski svarīgām tirgus iestādēm."
+    "advisor_bio": "Sertificēts Certo padomdevējs ar plašu pieredzi procesu optimizācijā stratēģiski svarīgām tirgus iestādēm.",
+    "advisor_1_bio": "Eksperte veselības aprūpes un atbilstības jomā, atbildīga par Certo reitinga uzturēšanu un stiprināšanu medicīnas nozarē.",
+    "advisor_2_bio": "Speciālists finanšu un audita jomā, rūpējas par Certo reitinga uzturēšanu un stiprināšanu finanšu nozarē.",
+    "advisor_3_bio": "Konsultants aizsardzības un kiberdrošības jomā, atbildīgs par Certo reitinga stiprināšanu aizsardzības nozarē."
   },
   "Legal": {
     "back": "Atpakaļ uz sākumlapu",
