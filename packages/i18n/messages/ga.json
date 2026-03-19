@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Orgán rátála neamhspleách ag déanamh measúnú ar cháilíocht an rialachais i bhfostúchán phoiblí, corpraithe agus neamhbhraisteartha."
+    "description": "Gníomhaireacht rátála neamhspleách ag déanamh measúnú ar an gcaighdeán rialachais i gcomhlachtaí poiblí, corparáideacha agus neamhdheonach."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Logáil amach",
     "privacyPolicy": "Polasaí Príobháideachta",
     "termsOfUse": "Téarmaí Úsáide",
-    "loading": "Á Lódáil...",
+    "loading": "Á lódáil...",
     "error": "Tharla earráid",
     "save": "Sábháil",
     "cancel": "Cealaigh",
@@ -34,30 +34,30 @@
   },
   "Navigation": {
     "home": "Baile",
-    "ratings": "Rátálacha",
+    "ratings": "Rátaí",
     "reports": "Tuairiscí",
     "analysis": "Anailísí",
-    "about": "Faoin Bhunús",
+    "about": "Faoin Bhunú",
     "contact": "Teagmháil",
-    "dashboard": "Feidhmchláir",
+    "dashboard": "Painéal",
     "settings": "Socruithe"
   },
   "Auth": {
     "login_title": "Logáil isteach",
     "login_subtitle": "Logáil isteach ar do chuntas",
     "login_with_google": "Logáil isteach trí Google",
-    "email_label": "Seoladh Ríomhphoist",
-    "password_label": "Focal Faire",
-    "forgot_password": "Ndearna tú dearmad ar do bhocal faire?",
+    "email_label": "Seoladh ríomhphoist",
+    "password_label": "Pasfhocal",
+    "forgot_password": "Ndearna tú dearmad ar do phasfhocal?",
     "no_account": "Níl cuntas agat?",
-    "register": "Clárú"
+    "register": "Cláraigh"
   },
   "Errors": {
     "404_title": "Níor aimsíodh an leathanach",
-    "404_description": "Níl an leathanach a bhí tú a lorg ann nó go bhfuair sé bogadh.",
-    "500_title": "Earráid Fhreastalaí",
-    "500_description": "Tharla earráid dhochtuaithe. Bain triail as arís níos déanaí.",
-    "unauthorized": "Gan Chead Rochtana. Logáil isteach chun leanúint ar aghaidh."
+    "404_description": "Níl an leathanach atá á lorg agat ann nó bogadh a rinneadh air.",
+    "500_title": "Earráid an fhreastalaí",
+    "500_description": "Tharla earráid gan choinne. Déan iarracht arís níos déanaí.",
+    "unauthorized": "Gan rochtain. Logáil isteach chun a leanúint ar aghaidh."
   },
   "Footer": {
     "rights": "Gach ceart ar cosaint",

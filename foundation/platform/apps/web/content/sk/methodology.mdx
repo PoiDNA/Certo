@@ -1,75 +1,74 @@
-yaml
 ---
 title: Metodológia Certo — ako funguje Rating Certo
-description: Rating Certo je kryptografickým artefaktom procesu hodnotenia governance. Každé rozhodnutie ratingového procesu je zakotvené mimo vlastnú infraštruktúru a je overiteľné offline.
+description: Rating Certo je kryptografickým artefaktom procesu hodnotenia governance. Každé rozhodnutie o ratingu je zakotvené mimo vlastnú infraštruktúru a je verifikovateľné offline.
 ---
 
 ## Čo je Rating Certo
 
-Rating Certo nie je názor. Je kryptografickým artefaktom procesu — záznamom rozhodnutia, ktorý existuje nezávisle od infraštruktúry jeho tvcu. Každý rating je:
+Rating Certo nie je názor. Je kryptografickým artefaktom procesu — záznamom rozhodnutia, ktorý existuje nezávisle od infraštruktúry jeho tvorcov. Každý rating je:
 
-- **Overiteľný offline** — hash rozhodovania ratingového procesu je zakotvený v externých verejných registroch
-- **Nezmeniteľný po vydaní** — žiadna zo strán nemôže jednostranne odvolať ani zmeniť vydaný rating bez vytvorenia viditeľného stopy
-- **Verejne auditovateľný** — kompletná cesta rozhodovania je dostupná na kontrolu oprávneným subjektom
+- **Verifikovateľný offline** — haš rozhodnutia o ratingu je zakotvený v externých verejných registroch
+- **Nemenný po vydaní** — žiadna zo strán nemôže jednostranného zrušiť ani zmeniť vydaný rating bez vytvorenia viditeľnej stopy
+- **Verejne audítovateľný** — úplná rozhodovacia cesta je dostupná na prehliadnutie oprávneným subjektom
 
 ## Dual-Brain Engine
 
-Srdcom systému hodnotenia je Dual-Brain Engine — architektúra dvojitej analýzy spájajúca:
+Jadrom systému hodnotenia je Dual-Brain Engine — architektúra dvojitej analýzy kombinujúca:
 
-**Kvantitatívnu analýzu** zahŕňajúcu:
+**Kvantitatívna analýza** zahŕňa:
 - Štruktúru orgánov riadenia a dohľadu
-- História zmien v zložení orgánov
+- Históriu zmien v zložení orgánov
 - Dokumentáciu procesu rozhodovania
-- Ukazovatele dodržiavania nariadení
+- Ukazovatele súladu s reguláciami
 
-**Kvalitatívnu analýzu** zahŕňajúcu:
-- Hodnotenie organizačnej kultúry na základe interných dokumentov
+**Kvalitatívna analýza** zahŕňa:
+- Hodnotenie organizačnej kultúry na základe vnútorných dokumentov
 - Analýzu konzistentnosti deklarovaných hodnôt s činnosťami
-- Overenie postupov pri riadení konfliktov záujmov
+- Overenie postupov na riadenie konfliktu záujmov
 - Hodnotenie efektívnosti systému vnútornej kontroly
 
-Obe vetvy analýzy musia nezávisle preukázať dostatočnú úroveň kvality riadenia, aby sa rating mohol vydať.
+Obe vetvy analýzy musia nezávisle preukázať dostatočný stupeň kvality riadenia, aby sa rating mohol vydať.
 
 ## Hard Gates
 
-Hard Gates sú sedem nevyhnutných podmienok, ktorých nesplnenie automaticky vylučuje subjekt z procesu ratingovania bez ohľadu na výsledky zvyšnej hodnotenia:
+Hard Gates sú sedem povinných podmienok, ktorých nesplnenie automaticky vylúči subjekt z procesu hodnotenia nezávisle od výsledkov zvyšného hodnotenia:
 
-1. Absenciu trvajúcich trestných konaní voči členom orgánov riadenia
-2. Pravidelné a dokumentované zasadnutia statutárnych orgánov
-3. Absenciu záväzkov voči verejným orgánom (sociálna poisťovňa, finančný úrad, register)
+1. Absenčia prebiehajúcich trestných konaní voči členom orgánov riadenia
+2. Pravidelné a zdokumentované zasadnutia zákonných orgánov
+3. Absenčia dlhov voči verejným orgánom (sociálne poistenie, daňový úrad, registračný úrad)
 4. Aktuálny a verejne dostupný register skutočných vlastníkov
-5. Absenciu konfliktov záujmov v zložení orgánu dohľadu
-6. Zdokumentovaný postup na hlásenie nezrovnalostí (whistleblowing)
-7. Konzistentnosť právnej a organizačnej štruktúry s deklarovaným modelom riadenia
+5. Absenčia konfliktu záujmov v zložení orgánu dohľadu
+6. Zdokumentovaný postup na hlásenie podozrení na nepravidelnosti (whistleblowing)
+7. Konzistencia právnej a organizačnej štruktúry s deklarovaným modelom riadenia
 
-Nesplnenie ktorejkoľvek z Hard Gates má za následok pozastavenie procesu ratingovania až do doby zloženia nezrovnalostí.
+Nesplnenie ktorejkoľvek z Hard Gates vedie k pozastaveniu procesu hodnotenia až do času odstránenia nepravidelnosti.
 
 ## Compliance Engine
 
-Compliance Engine overuje zhodu inštitúcie s platnými sektorovými nariadeniami a všeobecnými nariadeniami EÚ. Motor sa aktualizuje nepretržite v súlade so zmenami v práve EÚ a slovenskom práve.
+Compliance Engine overuje súlad inštitúcie s platnými sektorovými a všeobecnými právnymi predpismi Únie. Modul sa aktualizuje nepretržite v súlade so zmenami v práve EÚ a slovenskom práve.
 
 Hodnotenie compliance zahŕňa:
-- Sektorové nariadenia relevantné pre danú inštitúciu
-- Smernice a nariadenia EÚ uplatniteľné v danom sektore
+- Sektorové regulácie relevantné pre danú inštitúciu
+- Direktívy a nariadenia EÚ vzťahujúce sa na daný sektor
 - Krajové implementačné predpisy
-- Priemyselné štandardy a kódexy dobrých praktík
+- Priemyselné štandardy a kódexu správnej praxe
 
 ## Break-Glass Protocol
 
-Break-Glass Protocol je postup núdzového prístupu k záznamom ratingovania v krízových situáciách — likvidácia subjektu, konkurzné konanie, iniciovanie vyšetrovania orgánmi činnými v trestnom konaní.
+Break-Glass Protocol je postup naliehavého prístupu k záznamom o ratingu v krízových situáciách — likvidácia subjektu, konkurzné konanie, zahájenie vyšetrovania orgánmi činými v trestnom konaní.
 
 Protokol určuje:
 - Kto má prístup k záznamom a za akých okolností
-- Ako sa dokumentuje každý prípad prístupu
-- Aké sú mechanizmy upozornenia hodnotených subjektov
-- Ako sa zaisťuje integritu údajov v procese zverejnenia
+- Ako je zdokumentovaný každý prípad prístupu
+- Aké sú mechanizmy na informovanie hodnotených subjektov
+- Ako je zabezpečená integrálnosť údajov v procese ujawniť
 
 ## Certo Score a Certo Vector
 
 Každý vydaný rating sa skladá z dvoch prvkov:
 
-**Certo Score** — syntetické hodnotenie kvality riadenia vyjadrené v numerickej škále. Umožňuje porovnanie subjektov v rámci sektora a v čase.
+**Certo Score** — syntetické hodnotenie kvality riadenia vyjadrené na číselnej škále. Umožňuje porovnávanie subjektov v rámci sektora a v čase.
 
-**Certo Vector** — smer zmeny kvality riadenia v poslednom období hodnotenia. Má päť hodnôt: `++` (významné zlepšenie), `+` (zlepšenie), bez zmeny, `−` (zhoršenie), `−−` (významné zhoršenie).
+**Certo Vector** — smer zmeny kvality riadenia v poslednom hodnotiacom období. Nadobúda päť hodnôt: `++` (značné zlepšenie), `+` (zlepšenie), bez zmeny, `−` (zhoršenie), `−−` (značné zhoršenie).
 
 Kombinácia Score a Vector poskytuje úplný obraz ako aktuálneho stavu governance, tak aj jeho dynamiky.

@@ -1,72 +1,72 @@
 {
   "Metadata": {
-    "title": "Fundacja Certo Governance Institute",
-    "description": "Ανεξάρτητος οργανισμός αξιολόγησης που αξιολογεί την ποιότητα της διακυβέρνησης στον δημόσιο, εταιρικό, ιατρικό και αμυντικό τομέα."
+    "title": "Ίδρυμα Certo Governance Institute",
+    "description": "Ανεξάρτητος φορέας αξιολόγησης που αξιολογεί την ποιότητα της διακυβέρνησης στον δημόσιο, εταιρικό, ιατρικό και άμυνα τομέα."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Το Certo είναι ο πρώτος οργανισμός αξιολόγησης στον κόσμο του οποίου οι αξιολογήσεις είναι κρυπτογραφικά αντικείμενα της διαδικασίας — όχι γνώμες. Κάθε απόφαση αξιολόγησης είναι αγκυρωμένη έξω από την δική της υποδομή, επαληθεύσιμη χωρίς σύνδεση και δημόσια ελέγξιμη.",
-    "hero_cta_primary": "Ελέγξτε τις αξιολογήσεις",
+    "description": "Η Certo είναι η πρώτη κατά τον κόσμο υπηρεσία αξιολόγησης της οποίας οι αξιολογήσεις είναι κρυπτογραφικά τεχνουργήματα της διαδικασίας — όχι απόψεις. Κάθε απόφαση αξιολόγησης είναι αγκυρωμένη έξω από τη δική της υποδομή, επαληθεύσιμη χωρίς σύνδεση και δημόσια ελέγξιμη.",
+    "hero_cta_primary": "Δείτε τις αξιολογήσεις",
     "hero_cta_secondary": "Μάθετε περισσότερα",
-    "section_ratings_title": "Οι Πιο Πρόσφατες Αξιολογήσεις Certo",
-    "section_reports_title": "Αναλύσεις και Αναφορές",
-    "section_about_title": "Σχετικά με τη Fundacja"
+    "section_ratings_title": "Τελευταίες Αξιολογήσεις Certo",
+    "section_reports_title": "Αναλύσεις και Εκθέσεις",
+    "section_about_title": "Σχετικά με το Ίδρυμα"
   },
   "Ratings": {
     "title": "Αξιολογήσεις Certo",
-    "subtitle": "Αξιολογήσεις ποιότητας διακυβέρνησης ιδρυμάτων",
-    "search_placeholder": "Αναζήτηση ιδρύματος...",
+    "subtitle": "Αξιολογήσεις ποιότητας διακυβέρνησης θεσμών",
+    "search_placeholder": "Αναζήτηση θεσμού...",
     "filter_sector": "Τομέας",
     "sector_public": "Δημόσιος",
     "sector_corporate": "Εταιρικός",
     "sector_medical": "Ιατρικός",
-    "sector_defense": "Αμυντικός",
+    "sector_defense": "Άμυνα",
     "sector_ngo": "Μη Κυβερνητικός",
     "rating_valid_until": "Αξιολόγηση ισχύει έως",
     "rating_issued": "Ημερομηνία έκδοσης",
     "no_results": "Δεν βρέθηκαν αποτελέσματα",
-    "view_profile": "Προβολή προφίλ"
+    "view_profile": "Δείτε το προφίλ"
   },
   "Nav": {
     "ratings": "Αξιολογήσεις",
     "methodology": "Μεθοδολογία",
-    "about": "Σχετικά με τη Fundacja",
+    "about": "Σχετικά με το Ίδρυμα",
     "login": "Σύνδεση",
     "documents": "Έγγραφα",
     "pipeline": "Pipeline",
-    "dashboard": "Πίνακας ελέγχου"
+    "dashboard": "Πίνακας Ελέγχου"
   },
   "Footer": {
-    "copyright": "Fundacja Certo Governance Institute © {year}",
+    "copyright": "Ίδρυμα Certo Governance Institute © {year}",
     "privacy": "Πολιτική Απορρήτου",
     "terms": "Όροι Χρήσης",
-    "contact": "Kontakt"
+    "contact": "Επικοινωνία"
   },
   "About": {
-    "title": "Σχετικά με τη Fundacja Certo Governance Institute",
+    "title": "Σχετικά με το Ίδρυμα Certo Governance Institute",
     "mission_title": "Αποστολή",
-    "mission_text": "Δημιουργία πολιτισμού καλής διακυβέρνησης μέσω ανεξάρτητης αξιολόγησης και προώθησης των προτύπων governance στην Πολωνία και την Ευρώπη.",
+    "mission_text": "Δημιουργία κουλτούρας καλής διακυβέρνησης μέσω της ανεξάρτητης αξιολόγησης και προώθησης των προτύπων διακυβέρνησης στην Πολωνία και την Ευρώπη.",
     "independence_title": "Ανεξαρτησία",
-    "independence_text": "Η Fundacja είναι ανεξάρτητη από τα αξιολογούμενα θέματα, τους φορείς δημόσιας εξουσίας και τα εμπορικά συμφέροντα.",
+    "independence_text": "Το Ίδρυμα είναι ανεξάρτητο από τους θεσμούς που αξιολογούνται, τις δημόσιες αρχές και τα εμπορικά συμφέροντα.",
     "methodology_title": "Μεθοδολογία",
     "methodology_text": "Οι αξιολογήσεις Certo βασίζονται σε αυστηρή μεθοδολογία που βασίζεται στα πρότυπα ISO και τις κατευθυντήριες γραμμές της ΕΕ."
   },
   "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "title": "Επικοινωνία",
+    "subtitle": "Ίδρυμα Certo Governance Institute",
+    "address": "00-124 Βαρσοβία, οδός Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
+    "form_title": "Γράψτε μας",
+    "form_name": "Όνομα και επώνυμο",
+    "form_email": "Διεύθυνση ηλεκτρονικού ταχυδρομείου",
+    "form_subject": "Θέμα",
+    "form_message": "Μήνυμα",
+    "form_submit": "Αποστολή μηνύματος",
+    "form_success": "Το μήνυμα σας έχει αποσταλεί. Θα σας απαντήσουμε το συντομότερο δυνατό.",
+    "subject_general": "Γενικό ερώτημα",
     "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "subject_methodology": "Μεθοδολογία",
+    "subject_cooperation": "Συνεργασία",
+    "subject_media": "Μέσα Ενημέρωσης"
   }
 }

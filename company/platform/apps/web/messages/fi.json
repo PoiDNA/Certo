@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteetin vahvistaminen ja compliance julkisille instituutioille ja yrityksille."
+    "description": "Henkilöllisyyden varmistus ja vaatimustenmukaisuus julkisen hallinnon ja yritysinstituutioille."
   },
   "Nav": {
     "solutions": "Ratkaisut",
@@ -11,56 +11,73 @@
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
-    "privacy": "Tietosuojakäytäntö",
+    "privacy": "Tietosuojakausi",
     "terms": "Palvelun ehdot",
-    "contact": "Kontakt"
+    "contact": "Yhteystiedot"
+  },
+  "Contact": {
+    "title": "Yhteystiedot",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Ota meihin yhteyttä",
+    "form_name": "Nimi",
+    "form_email": "Sähköpostiosoite",
+    "form_subject": "Aihe",
+    "form_message": "Viesti",
+    "form_submit": "Lähetä viesti",
+    "form_success": "Viesti on lähetetty. Vastaamme mahdollisimman pian.",
+    "subject_general": "Yleinen kysymys",
+    "subject_implementation": "Käyttöönotto",
+    "subject_technical": "Tekninen tuki",
+    "subject_cooperation": "Yhteistyö"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Identiteetti.",
+    "hero_line1": "Henkilöllisyys.",
     "hero_line2": "Vaatimustenmukaisuus.",
     "hero_line3": "Varmuus.",
-    "hero_description": "Vahvistus- ja compliance-infrastruktuuri julkisille instituutioille, yrityksille ja säännellyille toimijoille. Rakennettu standardien pohjalle",
+    "hero_description": "Varmistus- ja vaatimustenmukaisuusinfrastruktuuri julkisen hallinnon instituutioille, yrityksille ja säännellyille yhteisöille. Rakennettu standardeihin",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ALOITA KÄYTTÖÖNOTTO",
     "cta_secondary": "PALVELUT",
     "services_label": "PALVELUT",
     "services_title": "Kolme compliance-infrastruktuurin tasoa",
-    "service1_title": "Identiteetin vahvistaminen",
-    "service1_desc": "KYC/AML säännellyille toimijoille. Automaattinen asiakirjojen vahvistaminen, pakotteiden ja PEP-seulonta, integraatio valtion rekistereihin.",
-    "service2_title": "Compliance-arviointi",
-    "service2_desc": "Automaattinen vaatimustenmukaisuuspisteytys Certo Governance Instituten metodologian perusteella. Viisitasoinen arviointijärjestelmä täydellä auditointiseurannalla.",
+    "service1_title": "Henkilöllisyyden varmistus",
+    "service1_desc": "KYC/AML säännellyille yhteisöille. Automaattinen asiakirjaverifikaatio, pakotteiden ja PEP-seulonta, integrointi valtion rekistereihin.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Automaattinen vaatimustenmukaisuuspistemäärä Certo Governance Instituten metodologiaan perustuen. Viisitasoinen arviointijärjestelmä täydellä tarkastuspolulla.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automaattiset korjaussuunnitelmat ja niiden toteutuksen seuranta. Integraatio ERP-, GRC-järjestelmiin ja riskienhallintaalustoihin.",
+    "service3_desc": "Automaattiset korjaavat suunnitelmat ja niiden toteutuksen seuranta. Integrointi ERP-, GRC-järjestelmiin ja riskienhallintaalustoihin.",
     "arch_label": "ARKKITEHTUURI",
     "arch_title": "Kuinka Certo ID toimii",
     "step1_title": "Intake",
-    "step1_desc": "Toimijan tiedot + asiakirjat + sääntelykonteksti",
+    "step1_desc": "Yhteisön tiedot + asiakirjat + sääntelykonteksti",
     "step2_title": "Verify",
-    "step2_desc": "Identiteetin vahvistaminen, seulonta, julkinen rekisteri",
+    "step2_desc": "Henkilöllisyyden varmistus, seulonta, julkinen rekisteri",
     "step3_title": "Score",
-    "step3_desc": "Automaattinen Certo Vector -vaatimustenmukaisuusarvio",
+    "step3_desc": "Automaattinen Certo Vector -vaatimustenmukaisuusrating",
     "step4_title": "Report",
-    "step4_desc": "PDF-raportti + API + Certo Online -hallintapaneeli",
+    "step4_desc": "PDF-raportti + API + Certo Online -koontinäyttö",
     "badge_iso": "ISO-standardit",
-    "badge_compliance": "Sääntelytasoinen vaatimustenmukaisuus",
-    "badge_kyc": "Identiteetin vahvistaminen",
-    "badge_governance": "Hallinnon arviointi"
+    "badge_compliance": "Sääntelynmukaisuus",
+    "badge_kyc": "Henkilöllisyyden varmistus",
+    "badge_governance": "Governance-arviointi"
   },
   "Legal": {
     "back": "Takaisin etusivulle",
     "last_updated": "Viimeksi päivitetty: Maaliskuu 2026",
-    "privacy_title": "Tietosuojakäytäntö",
+    "privacy_title": "Tietosuojakausi",
     "terms_title": "Palvelun ehdot"
   },
   "Dashboard": {
-    "title": "Certo ID -hallintapaneeli",
+    "title": "Certo ID -paneeli",
     "welcome": "Tervetuloa, {name}",
     "your_rating": "Sinun Certo Rating",
-    "your_delegates": "Sinun Certo Delegate",
+    "your_delegates": "Sinun Delegaatit",
     "your_accords": "Sinun Certo Accord",
-    "recent_activity": "Viimeaikaiset toiminnot",
-    "quick_actions": "Pikavalinta"
+    "recent_activity": "Viimeinen aktiviteetti",
+    "quick_actions": "Pika-toiminnot"
   },
   "Profile": {
     "title": "Profiili",
@@ -68,11 +85,11 @@
     "contact_person": "Yhteyshenkilö",
     "sector": "Sektori",
     "edit_profile": "Muokkaa profiilia",
-    "verified_badge": "Vahvistettu toimija"
+    "verified_badge": "Varmennettu yhteisö"
   },
   "Delegates": {
-    "title": "Certo Delegate",
-    "add_delegate": "Lisää plenipotentiaari",
+    "title": "Certo Delegaatit",
+    "add_delegate": "Lisää delegaatti",
     "delegate_id": "Delegate ID",
     "delegate_status": "Tila",
     "primary_link": "PRIMARY-linkki",
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

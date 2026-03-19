@@ -8,17 +8,17 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organe indépendant de notation évaluant la qualité de la gouvernance des institutions publiques, d'entreprises et des organisations de la société civile."
+    "description": "Organe indépendant de notation évaluant la qualité de la gouvernance d'entreprise des institutions publiques, privées et à but non lucratif."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Se connecter",
-    "logout": "Se déconnecter",
+    "login": "Connectez-vous",
+    "logout": "Déconnectez-vous",
     "privacyPolicy": "Politique de confidentialité",
     "termsOfUse": "Conditions d'utilisation",
-    "loading": "Chargement en cours...",
+    "loading": "Chargement...",
     "error": "Une erreur s'est produite",
     "save": "Enregistrer",
     "cancel": "Annuler",
@@ -33,8 +33,8 @@
     "inactive": "Inactif"
   },
   "Navigation": {
-    "home": "Accueil",
-    "ratings": "Évaluations",
+    "home": "Page d'accueil",
+    "ratings": "Notations",
     "reports": "Rapports",
     "analysis": "Analyses",
     "about": "À propos de la Fondation",
@@ -43,19 +43,19 @@
     "settings": "Paramètres"
   },
   "Auth": {
-    "login_title": "Se connecter",
+    "login_title": "Connectez-vous",
     "login_subtitle": "Connectez-vous à votre compte",
-    "login_with_google": "Se connecter avec Google",
+    "login_with_google": "Connectez-vous avec Google",
     "email_label": "Adresse e-mail",
     "password_label": "Mot de passe",
-    "forgot_password": "Vous avez oublié votre mot de passe ?",
-    "no_account": "Vous n'avez pas encore de compte ?",
+    "forgot_password": "Mot de passe oublié ?",
+    "no_account": "Vous n'avez pas de compte ?",
     "register": "S'inscrire"
   },
   "Errors": {
     "404_title": "Page non trouvée",
     "404_description": "La page que vous recherchez n'existe pas ou a été déplacée.",
-    "500_title": "Erreur du serveur",
+    "500_title": "Erreur serveur",
     "500_description": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
     "unauthorized": "Accès refusé. Connectez-vous pour continuer."
   },

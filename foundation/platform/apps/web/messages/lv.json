@@ -1,72 +1,72 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute fonds",
-    "description": "Neatkarīgs reitinga aģentūra, kas novērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnas un aizsardzības sektorā."
+    "title": "Certo Governance Institute Fonds",
+    "description": "Neatkarīga reitinga aģentūra, kas vērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnas un aizsardzības sektorā."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo ir pirmā pasaulē reitinga aģentūra, kuras reitingi ir kriptografiski procesu artefakti — nevis viedokļi. Katrs reitinga lēmums ir ieenkurots ārpus tās paša infrastruktūras, pārbaudāms bezsaistē un publiski auditmājams.",
+    "description": "Certo ir pasaules pirmā reitinga aģentūra, kuras reitingi ir kriptogrāfiski procesa artefakti — nevis viedokļi. Katrs reitinga lēmums ir fiksēts ārpus viņu pašas infrastruktūras, pārbaudāms bezsaistē un publiski revizējams.",
     "hero_cta_primary": "Pārbaudiet reitingus",
     "hero_cta_secondary": "Uzziniet vairāk",
-    "section_ratings_title": "Jaunākie Certo reitingi",
-    "section_reports_title": "Analīzes un pārskati",
-    "section_about_title": "Par fondu"
+    "section_ratings_title": "Jaunākie Certo Reitingi",
+    "section_reports_title": "Analīzes un Ziņojumi",
+    "section_about_title": "Par Fondu"
   },
   "Ratings": {
-    "title": "Certo reitingi",
-    "subtitle": "Institūciju pārvaldības kvalitātes novērtējumi",
-    "search_placeholder": "Meklēt institūciju...",
+    "title": "Certo Reitingi",
+    "subtitle": "Iestāžu pārvaldības kvalitātes vērtējumi",
+    "search_placeholder": "Meklējiet iestādi...",
     "filter_sector": "Sektors",
     "sector_public": "Publiskais",
     "sector_corporate": "Korporatīvais",
     "sector_medical": "Medicīnas",
     "sector_defense": "Aizsardzības",
-    "sector_ngo": "Nevalstiskās organizācijas",
-    "rating_valid_until": "Reitings derīgs līdz",
+    "sector_ngo": "Nevalstiskais",
+    "rating_valid_until": "Reitings spēkā līdz",
     "rating_issued": "Izdošanas datums",
-    "no_results": "Rezultāti nav atrasti",
+    "no_results": "Rezultātu nav atrasts",
     "view_profile": "Skatīt profilu"
   },
   "Nav": {
     "ratings": "Reitingi",
     "methodology": "Metodologija",
-    "about": "Par fondu",
-    "login": "Pierakstieties",
+    "about": "Par Fondu",
+    "login": "Piesakieties",
     "documents": "Dokumenti",
     "pipeline": "Pipeline",
-    "dashboard": "Vadības panelis"
+    "dashboard": "Panelis"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute fonds © {year}",
-    "privacy": "Privātuma politika",
-    "terms": "Lietošanas noteikumi",
-    "contact": "Kontakt"
+    "copyright": "Certo Governance Institute Fonds © {year}",
+    "privacy": "Privātuma Politika",
+    "terms": "Lietošanas Noteikumi",
+    "contact": "Kontakts"
   },
   "About": {
-    "title": "Par Certo Governance Institute fondu",
+    "title": "Par Certo Governance Institute Fondu",
     "mission_title": "Misija",
-    "mission_text": "Labas pārvaldības kultūras veidošana, veicot neatkarīgu novērtējumu un veicinātas governance standartus Latvijā un Eiropā.",
+    "mission_text": "Labas pārvaldības kultūras veidošana, izmantojot neatkarīgu vērtējumu un governance standartu veicināšanu Polijā un Eiropā.",
     "independence_title": "Neatkarība",
-    "independence_text": "Fonds ir neatkarīgs no novērtētajiem subjektiem, publiskās varas iestādēm un komerciālajiem interesiem.",
+    "independence_text": "Fonds ir neatkarīgs no vērtēto subjektiem, valsts varas orgāniem un komerciāliem interesēm.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo reitingi ir balstīti uz stingru metodologiju, kura pamatota uz ISO standartiem un ES vadlīnijām."
+    "methodology_text": "Certo reitingi ir balstīti uz stingrāju metodologiju, kas balstīta uz ISO standartiem un ES vadlīnijām."
   },
   "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "title": "Kontakts",
+    "subtitle": "Certo Governance Institute Fonds",
+    "address": "00-124 Varšava, Rondo ONZ 1. iela",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "form_title": "Rakstiet mums",
+    "form_name": "Vārds un Uzvārds",
+    "form_email": "E-pasta adrese",
+    "form_subject": "Tēma",
+    "form_message": "Ziņojums",
+    "form_submit": "Sūtīt ziņojumu",
+    "form_success": "Jūsu ziņojums ir nosūtīts. Mēs atbildēsim pēc iespējas ātrāk.",
+    "subject_general": "Vispārējs jautājums",
+    "subject_rating": "Certo Reitings",
+    "subject_methodology": "Metodologija",
+    "subject_cooperation": "Sadarbība",
+    "subject_media": "Mediji"
   }
 }

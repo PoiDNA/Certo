@@ -1,55 +1,72 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifikazzjoni tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
+    "description": "Verifika tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
   },
   "Nav": {
     "solutions": "Soluzzjonijiet",
     "technology": "Teknoloġija",
     "foundation": "Fundazzjoni Certo",
-    "login": "Accedi"
+    "login": "Idħol"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika tal-Privatezza",
     "terms": "Kundizzjonijiet tas-Servizz",
-    "contact": "Kontakt"
+    "contact": "Kontatt"
+  },
+  "Contact": {
+    "title": "Kontatt",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Varsjа, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Kitibna",
+    "form_name": "Isem u Prenomen",
+    "form_email": "Indirizz e-mail",
+    "form_subject": "Suġġett",
+    "form_message": "Messaġġ",
+    "form_submit": "Ibgħat il-Messaġġ",
+    "form_success": "Il-messaġġ ġie mibgħut. Se nwieġbuk malajr kemm jista'.",
+    "subject_general": "Mistoqsija Ġenerali",
+    "subject_implementation": "Implementazzjoni",
+    "subject_technical": "Appoġġ Tekniku",
+    "subject_cooperation": "Kooperazzjoni"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identità.",
     "hero_line2": "Konformità.",
     "hero_line3": "Ċertezza.",
-    "hero_description": "Infrastruttura ta' verifikazzjoni u compliance għal istituzzjonijiet pubbliċi, korporazzjonijiet u entitajiet rregolati. Mibnija fuq standards ta'",
+    "hero_description": "Infrastruttura ta' verifika u compliance għal istituzzjonijiet pubbliċi, korporazzjonijiet u entitajiet regolati. Mibnija fuq l-istandards ta'",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "IBDA L-IMPLIMENTAZZJONI",
+    "cta_primary": "IBDA' L-IMPLEMENTAZZJONI",
     "cta_secondary": "SERVIZZI",
     "services_label": "SERVIZZI",
-    "services_title": "Tliet saffi tal-infrastruttura tal-compliance",
-    "service1_title": "Verifikazzjoni tal-Identità",
-    "service1_desc": "KYC/AML għal entitajiet rregolati. Verifikazzjoni awtomatika ta' dokumenti, screening ta' sanzzjonijiet u PEP, integrazione ma' reġistri statali.",
-    "service2_title": "Rating tal-Compliance",
-    "service2_desc": "Skoring awtomatiku tal-konformità bbażat fuq il-metodoloġija ta' Certo Governance Institute. Sistema ta' valutazzjoni b'ħamsa stati b'ċaħda sħiħa ta' awditazzjoni.",
+    "services_title": "Tliet saffi ta' infrastruttura compliance",
+    "service1_title": "Verifika tal-Identità",
+    "service1_desc": "KYC/AML għal entitajiet regolati. Verifika awtomatika ta' dokumenti, screening ta' sanzzjonijiet u PEP, integrazzjoni ma' reġistri statali.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Skor awtomatiku ta' konformità bbażat fuq il-metodoloġija ta' Certo Governance Institute. Sistema ta' valutazzjoni ta' ħamsa stadji b'sPath ta' awdit kompleta.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Pjanijiet ta' rettifikazzjoni awtomatiki u monitoraġġ tar-realizzazzjoni tagħhom. Integrazione ma' sistemi ERP, GRC u pjattaformi ta' ġestjoni tar-riskju.",
+    "service3_desc": "Pjanijiet ta' rimiedju awtomatiċi u monitoraġġ tal-implimentazzjoni tagħhom. Integrazzjoni ma' sistemi ERP, GRC u pjattaformi ta' ġestjoni tar-riskju.",
     "arch_label": "ARKITETTURA",
-    "arch_title": "Kif jaħdem Certo ID",
+    "arch_title": "Kif taħdem Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Data tal-entità + dokumenti + kuntest regolatorju",
     "step2_title": "Verify",
-    "step2_desc": "Verifikazzjoni tal-identità, screening, reġistru pubbliku",
+    "step2_desc": "Verifika tal-identità, screening, reġistru pubbliku",
     "step3_title": "Score",
     "step3_desc": "Rating awtomatiku ta' konformità Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Rapport PDF + API + dashboard Certo Online",
-    "badge_iso": "Standards ISO",
+    "badge_iso": "Istandards ISO",
     "badge_compliance": "Konformità regolatorja",
-    "badge_kyc": "Verifikazzjoni tal-identità",
+    "badge_kyc": "Verifika tal-identità",
     "badge_governance": "Valutazzjoni tal-governance"
   },
   "Legal": {
-    "back": "Ħarġa għall-paġna ewlenija",
-    "last_updated": "Aħħar aġġornament: Marzu 2026",
+    "back": "Ħarġa lil-paġna prinċipali",
+    "last_updated": "L-aħħar aġġornament: Marzu 2026",
     "privacy_title": "Politika tal-Privatezza",
     "terms_title": "Kundizzjonijiet tas-Servizz"
   },
@@ -58,44 +75,27 @@
     "welcome": "Merħba, {name}",
     "your_rating": "Rating Certo Tiegħek",
     "your_delegates": "Id-Delegati Tiegħek",
-    "your_accords": "Certo Accord Tiegħek",
-    "recent_activity": "Attività riċenti",
-    "quick_actions": "Azzjonijiet veloċi"
+    "your_accords": "Il-Certo Accord Tiegħek",
+    "recent_activity": "Attività Riċenti",
+    "quick_actions": "Azzjonijiet Veloċi"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizzazzjoni",
-    "contact_person": "Persuna ta' Kuntatt",
+    "contact_person": "Persuna ta' Kontatt",
     "sector": "Settur",
-    "edit_profile": "Editja l-profil",
-    "verified_badge": "Entità Verifikata"
+    "edit_profile": "Editja l-Profil",
+    "verified_badge": "Entità Vverifikata"
   },
   "Delegates": {
     "title": "Delegati Certo",
-    "add_delegate": "Żid delegat",
+    "add_delegate": "Żid Delegat",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Stat",
+    "delegate_status": "Status",
     "primary_link": "Link PRIMARY",
     "failover_link": "Link FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

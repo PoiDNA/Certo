@@ -18,7 +18,7 @@
     "logout": "Logga ut",
     "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor",
-    "loading": "Läser in...",
+    "loading": "Laddar...",
     "error": "Ett fel uppstod",
     "save": "Spara",
     "cancel": "Avbryt",
@@ -27,7 +27,7 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Hämta",
+    "download": "Ladda ned",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
@@ -39,13 +39,13 @@
     "analysis": "Analyser",
     "about": "Om Stiftelsen",
     "contact": "Kontakt",
-    "dashboard": "Kontrollpanel",
+    "dashboard": "Instrumentpanel",
     "settings": "Inställningar"
   },
   "Auth": {
     "login_title": "Logga in",
     "login_subtitle": "Logga in på ditt konto",
-    "login_with_google": "Logga in med Google",
+    "login_with_google": "Logga in via Google",
     "email_label": "E-postadress",
     "password_label": "Lösenord",
     "forgot_password": "Glömt ditt lösenord?",
@@ -54,7 +54,7 @@
   },
   "Errors": {
     "404_title": "Sidan hittades inte",
-    "404_description": "Sidan du söker finns inte eller har flyttats.",
+    "404_description": "Sidan du söker existerar inte eller har flyttats.",
     "500_title": "Serverfel",
     "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
     "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."

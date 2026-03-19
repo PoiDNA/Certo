@@ -1,37 +1,37 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Encuentra un Asesor",
+    "title": "Certo Consulting — Encuentra tu Asesor",
     "description": "Asesores acreditados de Certo. Gobierno corporativo y cumplimiento normativo."
   },
   "Nav": {
     "advisors": "Asesores",
     "expertise": "Experiencia",
-    "login": "Iniciar sesión"
+    "login": "Acceso"
   },
   "Footer": {
-    "description": "Asesoramiento experto en gobierno corporativo, cumplimiento normativo y seguridad para líderes del mercado.",
+    "description": "Asesoramiento experto en gobierno corporativo, cumplimiento normativo y seguridad para líderes de mercado.",
     "ecosystem": "Ecosistema Certo",
     "accreditation": "Todos los asesores están acreditados por la Fundación Certo Governance Institute",
-    "privacy": "Política de privacidad",
-    "terms": "Términos y condiciones",
-    "contact": "Kontakt"
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "contact": "Contacto"
   },
   "Home": {
     "hero_title": "Asesoramiento experto\na nivel de junta directiva.",
     "hero_subtitle": "Conectamos asesores acreditados de Certo con instituciones que requieren los más altos estándares de gobierno corporativo y cumplimiento normativo.",
     "hero_cta": "Encuentra un experto",
-    "finder_title": "Quiero hablar con un experto en:",
+    "finder_title": "Deseo hablar con un experto en:",
     "area_health": "Sanidad",
     "area_local_gov": "Administración Local",
     "area_defense": "Defensa",
     "area_finance": "Finanzas",
     "area_education": "Educación",
-    "form_title": "Déjanos tus datos de contacto para que podamos asignar el asesor adecuado en el área de",
-    "form_name": "Nombre y apellidos",
-    "form_email": "Correo electrónico (laboral)",
-    "form_org": "Nombre de la organización / Puesto",
+    "form_title": "Deja tus datos de contacto para que seleccionemos el asesor adecuado en el área de",
+    "form_name": "Nombre y Apellidos",
+    "form_email": "Correo electrónico (corporativo)",
+    "form_org": "Nombre de la organización / Cargo",
     "form_submit": "Enviar consulta",
-    "advisors_title": "Expertos de ejemplo de nuestra red",
+    "advisors_title": "Ejemplos de expertos de nuestra red",
     "advisor_bio": "Asesor acreditado de Certo con amplia experiencia en optimización de procesos para instituciones estratégicas del mercado.",
     "advisor_1_bio": "Experta en sanidad y cumplimiento normativo, responsable de mantener y fortalecer la calificación de Certo en el sector sanitario.",
     "advisor_2_bio": "Especialista en finanzas y auditoría, encargado de mantener y fortalecer la calificación de Certo en el sector financiero.",
@@ -39,17 +39,17 @@
   },
   "Legal": {
     "back": "Volver a la página principal",
-    "last_updated": "Última actualización: marzo de 2026",
+    "last_updated": "Última actualización: Marzo 2026",
     "privacy_title": "Política de Privacidad",
-    "terms_title": "Condiciones de uso"
+    "terms_title": "Términos de Uso"
   },
   "FindAdvisor": {
-    "title": "Encuentra un asesor de Certo",
+    "title": "Encuentra tu asesor Certo",
     "sector_label": "Sector de tu institución",
     "need_label": "¿Qué necesitas?",
     "need_audit": "Auditoría de gobierno corporativo",
     "need_advisory": "Asesoramiento estratégico",
-    "need_training": "Cursos y talleres",
+    "need_training": "Formación y talleres",
     "need_rating": "Preparación para calificación",
     "region_label": "Región",
     "submit": "Buscar asesor"
@@ -62,20 +62,20 @@
     "view_profile": "Ver perfil"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Contacto",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varsovia, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Escríbenos",
+    "form_name": "Nombre y Apellidos",
+    "form_email": "Correo electrónico",
+    "form_subject": "Asunto",
+    "form_message": "Mensaje",
+    "form_submit": "Enviar mensaje",
+    "form_success": "Tu mensaje ha sido enviado. Responderemos lo antes posible.",
+    "subject_general": "Consulta general",
+    "subject_advisory": "Asesoramiento",
+    "subject_accreditation": "Acreditación de asesor",
+    "subject_cooperation": "Cooperación"
   }
 }

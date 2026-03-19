@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných, korporátních a neziskových institucí."
+    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných institucí, korporací a neziskových organizací."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -39,7 +39,7 @@
     "analysis": "Analýzy",
     "about": "O Nadaci",
     "contact": "Kontakt",
-    "dashboard": "Přehled",
+    "dashboard": "Přístrojová deska",
     "settings": "Nastavení"
   },
   "Auth": {
@@ -50,14 +50,14 @@
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
     "no_account": "Nemáte účet?",
-    "register": "Zaregistrovat se"
+    "register": "Zaregistrujte se"
   },
   "Errors": {
     "404_title": "Stránka nebyla nalezena",
     "404_description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
     "500_title": "Chyba serveru",
-    "500_description": "Došlo k neočekávané chybě. Zkuste to prosím později.",
-    "unauthorized": "Přístup odepřen. Přihlaste se, abyste mohli pokračovat."
+    "500_description": "Došlo k neočekávané chybě. Zkuste to později.",
+    "unauthorized": "Nemáte přístup. Přihlaste se pro pokračování."
   },
   "Footer": {
     "rights": "Všechna práva vyhrazena",

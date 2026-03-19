@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Személyazonosság-ellenőrzés és compliance közintézmények és vállalatok számára."
+    "description": "Személyazonossági és compliance-ellenőrzés közszféra intézményei és vállalatok számára."
   },
   "Nav": {
     "solutions": "Megoldások",
@@ -12,55 +12,72 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Adatvédelmi Irányelvek",
-    "terms": "Felhasználási Feltételek",
-    "contact": "Kontakt"
+    "terms": "Szolgáltatási Feltételek",
+    "contact": "Kapcsolat"
+  },
+  "Contact": {
+    "title": "Kapcsolat",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Írjon nekünk",
+    "form_name": "Név",
+    "form_email": "E-mail cím",
+    "form_subject": "Tárgy",
+    "form_message": "Üzenet",
+    "form_submit": "Üzenet küldése",
+    "form_success": "Az üzenetet elküldtük. Amint lehetséges, válaszolunk.",
+    "subject_general": "Általános megkeresés",
+    "subject_implementation": "Implementáció",
+    "subject_technical": "Technikai támogatás",
+    "subject_cooperation": "Együttműködés"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Személyazonosság.",
-    "hero_line2": "Megfelelőség.",
-    "hero_line3": "Biztonság.",
-    "hero_description": "Ellenőrzési és compliance infrastruktúra közintézmények, vállalatok és szabályozott szervezetek számára. Az alábbi szabványokra épül",
+    "hero_line1": "Személyazonossság.",
+    "hero_line2": "Compliance.",
+    "hero_line3": "Bizalom.",
+    "hero_description": "Verifikációs és compliance infrastruktúra közszféra intézményei, vállalatok és szabályozott szervezetek számára. Alapozva a standardokra",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "MEGVALÓSÍTÁS INDÍTÁSA",
+    "cta_primary": "IMPLEMENTÁCIÓ MEGKEZDÉSE",
     "cta_secondary": "SZOLGÁLTATÁSOK",
     "services_label": "SZOLGÁLTATÁSOK",
     "services_title": "A compliance infrastruktúra három rétege",
-    "service1_title": "Személyazonosság-ellenőrzés",
-    "service1_desc": "KYC/AML szabályozott szervezetek számára. Automatikus dokumentum-ellenőrzés, szankciós és PEP screening, integráció az állami nyilvántartásokkal.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Automatikus megfelelőség-pontszámozás a Certo Governance Institute módszertanán alapulva. Ötfokozatú értékelési rendszer teljes auditúra-nyomvonallal.",
+    "service1_title": "Személyazonossági Verifikáció",
+    "service1_desc": "KYC/AML szabályozott szervezetek számára. Automatikus dokumentumverifikáció, szankciós listás és PEP-szűrés, integrálás állami nyilvántartásokkal.",
+    "service2_title": "Compliance Értékelés",
+    "service2_desc": "Automatikus compliance-pontszámozás a Certo Governance Institute módszertanára alapozva. Ötfokozatú értékelési rendszer teljes auditnyommal.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatikus javítási tervek és azok megvalósításának monitorozása. Integráció az ERP, GRC és kockázatkezelési platformokkal.",
+    "service3_desc": "Automatikus szanálási tervek és megvalósításuk monitorozása. Integrálás ERP, GRC és kockázatkezelési platformokkal.",
     "arch_label": "ARCHITEKTÚRA",
-    "arch_title": "Hogyan működik a Certo ID",
-    "step1_title": "Intake",
+    "arch_title": "A Certo ID működése",
+    "step1_title": "Bevitel",
     "step1_desc": "Szervezeti adatok + dokumentumok + szabályozási kontextus",
-    "step2_title": "Verify",
-    "step2_desc": "Személyazonosság-ellenőrzés, screening, nyilvános nyilvántartás",
-    "step3_title": "Score",
-    "step3_desc": "Automatikus Certo Vector megfelelőség-rating",
-    "step4_title": "Report",
+    "step2_title": "Verifikáció",
+    "step2_desc": "Személyazonossági verifikáció, szűrés, nyilvános nyilvántartás",
+    "step3_title": "Pontszámozás",
+    "step3_desc": "Automatikus Certo Vector compliance-értékelés",
+    "step4_title": "Jelentés",
     "step4_desc": "PDF-jelentés + API + Certo Online irányítópult",
-    "badge_iso": "ISO szabványok",
-    "badge_compliance": "Szabályozási megfelelőség",
-    "badge_kyc": "Személyazonosság-ellenőrzés",
-    "badge_governance": "Governance értékelés"
+    "badge_iso": "ISO-szabványok",
+    "badge_compliance": "Szabályozási compliance",
+    "badge_kyc": "Személyazonossági verifikáció",
+    "badge_governance": "Governance-értékelés"
   },
   "Legal": {
     "back": "Vissza a kezdőlapra",
     "last_updated": "Utolsó frissítés: 2026. március",
     "privacy_title": "Adatvédelmi Irányelvek",
-    "terms_title": "Felhasználási Feltételek"
+    "terms_title": "Szolgáltatási Feltételek"
   },
   "Dashboard": {
     "title": "Certo ID Irányítópult",
-    "welcome": "Üdvözlünk, {name}",
-    "your_rating": "Az Ön Certo Rating értékelése",
+    "welcome": "Üdvözöljük, {name}",
+    "your_rating": "Az Ön Certo Rating-je",
     "your_delegates": "Az Ön Delegátusai",
-    "your_accords": "Az Ön Certo Accord Megállapodásai",
+    "your_accords": "Az Ön Certo Accord-jai",
     "recent_activity": "Legutóbbi tevékenység",
-    "quick_actions": "Gyors műveletek"
+    "quick_actions": "Gyorsműveletek"
   },
   "Profile": {
     "title": "Profil",
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

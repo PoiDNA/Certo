@@ -15,6 +15,23 @@
     "terms": "Uvjeti Korištenja",
     "contact": "Kontakt"
   },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Pišite nam",
+    "form_name": "Ime i prezime",
+    "form_email": "Email adresa",
+    "form_subject": "Predmet",
+    "form_message": "Poruka",
+    "form_submit": "Pošalji poruku",
+    "form_success": "Poruka je poslana. Odgovorit ćemo čim je moguće.",
+    "subject_general": "Opća pitanja",
+    "subject_implementation": "Implementacija",
+    "subject_technical": "Tehnička podrška",
+    "subject_cooperation": "Suradnja"
+  },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identitet.",
@@ -29,9 +46,9 @@
     "service1_title": "Provjera Identiteta",
     "service1_desc": "KYC/AML za regulirane subjekte. Automatska provjera dokumenata, screening sankcija i PEP-a, integracija s državnim registrima.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Automatski scoring usklađenosti na temelju metodologije Certo Governance Institute. Petostupanjski sustav ocjenjivanja s punom audit stazom.",
+    "service2_desc": "Automatski scoring usklađenosti na osnovu metodologije Certo Governance Institute. Petostupnjevni sustav ocjenjivanja s punom putanjom revizije.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatski planovi sanacije i praćenje njihove realizacije. Integracija s ERP sustavima, GRC platformama i sustavima upravljanja rizikom.",
+    "service3_desc": "Automatski planovi sanacije i praćenje njihove provedbe. Integracija sa sustavima ERP, GRC i platformama upravljanja rizikom.",
     "arch_label": "ARHITEKTURA",
     "arch_title": "Kako funkcionira Certo ID",
     "step1_title": "Intake",
@@ -39,22 +56,22 @@
     "step2_title": "Verify",
     "step2_desc": "Provjera identiteta, screening, javni registar",
     "step3_title": "Score",
-    "step3_desc": "Automatski Certo Vector rating usklađenosti",
+    "step3_desc": "Automatski rating usklađenosti Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "PDF izvještaj + API + nadzorna ploča Certo Online",
+    "step4_desc": "PDF izvještaj + API + kontrolna ploča Certo Online",
     "badge_iso": "ISO standardi",
     "badge_compliance": "Regulatorna usklađenost",
     "badge_kyc": "Provjera identiteta",
-    "badge_governance": "Ocjena governance-a"
+    "badge_governance": "Ocjena governance"
   },
   "Legal": {
     "back": "Povratak na početnu stranicu",
-    "last_updated": "Zadnja ažuriranja: Ožujak 2026",
+    "last_updated": "Zadnja aktualizacija: Ožujak 2026",
     "privacy_title": "Politika Privatnosti",
     "terms_title": "Uvjeti Korištenja"
   },
   "Dashboard": {
-    "title": "Nadzorna Ploča Certo ID",
+    "title": "Kontrolna Ploča Certo ID",
     "welcome": "Dobrodošli, {name}",
     "your_rating": "Vaš Rating Certo",
     "your_delegates": "Vaši Delegati",
@@ -68,34 +85,17 @@
     "contact_person": "Osoba za kontakt",
     "sector": "Sektor",
     "edit_profile": "Uredi profil",
-    "verified_badge": "Provjeren subjekt"
+    "verified_badge": "Verificirani subjekt"
   },
   "Delegates": {
     "title": "Certo Delegati",
     "add_delegate": "Dodaj delegata",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",
-    "primary_link": "PRIMARY link",
-    "failover_link": "FAILOVER link",
+    "primary_link": "PRIMARY veza",
+    "failover_link": "FAILOVER veza",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

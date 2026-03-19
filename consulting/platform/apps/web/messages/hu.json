@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Tanácsadó keresése",
-    "description": "Certo akkreditált tanácsadók. Unternehmensführung és megfelelőség."
+    "description": "Akkreditált Certo tanácsadók. Vállalatirányítás és megfelelőség."
   },
   "Nav": {
     "advisors": "Tanácsadók",
@@ -9,73 +9,73 @@
     "login": "Bejelentkezés"
   },
   "Footer": {
-    "description": "Szakértői tanácsadás a társasági irányítás, megfelelőség és biztonság terén a piacvezető szervezetek számára.",
-    "ecosystem": "Certo Ökoszisztéma",
-    "accreditation": "Minden tanácsadó a Certo Governance Institute által akkreditált",
-    "privacy": "Adatvédelmi nyilatkozat",
+    "description": "Szakértői tanácsadás a vállalatirányítás, megfelelőség és biztonság terén a piacvezető szervezetek számára.",
+    "ecosystem": "Certo ökoszisztéma",
+    "accreditation": "Minden tanácsadó akkreditált a Certo Governance Institute Alapítvány által",
+    "privacy": "Adatvédelmi irányelvek",
     "terms": "Felhasználási feltételek",
-    "contact": "Kontakt"
+    "contact": "Kapcsolat"
   },
   "Home": {
-    "hero_title": "Szakértői tanácsadás\nigazgatósági szinten.",
-    "hero_subtitle": "Certo akkreditált tanácsadókat kapcsolunk össze azokkal az intézményekkel, amelyek a legmagasabb szintű társasági irányítást és szabályozási megfelelőséget igénylik.",
+    "hero_title": "Szakértői tanácsadás\nvezetői szinten.",
+    "hero_subtitle": "Akkreditált Certo tanácsadókat kapcsolunk össze azokkal az intézményekkel, amelyek a legmagasabb szintű vállalatirányítási és szabályozási megfelelőségi standardokat követelik meg.",
     "hero_cta": "Szakértő keresése",
-    "finder_title": "Szeretnék beszélni egy szakértővel a következő területről:",
-    "area_health": "Egészségügy",
-    "area_local_gov": "Helyi közigazgatás",
-    "area_defense": "Honvédelem",
+    "finder_title": "Szeretnék beszélni egy szakértővel a következő területen:",
+    "area_health": "Egészségügyi ellátás",
+    "area_local_gov": "Helyi önkormányzatok",
+    "area_defense": "Védelmi és biztonsági ipar",
     "area_finance": "Pénzügyek",
     "area_education": "Oktatás",
-    "form_title": "Adja meg elérhetőségeit, hogy a megfelelő tanácsadót tudjuk kijelölni a(z)",
-    "form_name": "Név",
+    "form_title": "Hagyjon vissza kapcsolattartási adatokat, hogy a megfelelő tanácsadót válasszuk ki Önnek a következő területről",
+    "form_name": "Teljes név",
     "form_email": "E-mail cím (munkahelyi)",
     "form_org": "Szervezet neve / Beosztás",
     "form_submit": "Lekérdezés elküldése",
-    "advisors_title": "Példaértékű szakértők hálózatunkból",
-    "advisor_bio": "Certo akkreditált tanácsadó hosszú évek tapasztalatával a stratégiai piacvezetõ intézmények folyamatoptimalizálásában.",
-    "advisor_1_bio": "Egészségügyi és compliance szakértő, aki felelõs a Certo-rating fenntartásáért és erõsítéséért az egészségügyi szektorban.",
-    "advisor_2_bio": "Pénzügyi és audit szakember, aki gondoskodik a Certo-rating fenntartásáról és erõsítésérõl a pénzügyi szektorban.",
-    "advisor_3_bio": "Honvédelmi és kiberbiztonság tanácsadó, aki felelõs a Certo-rating erõsítéséért a védelmi iparban."
+    "advisors_title": "Példa szakértőink a hálózatunkból",
+    "advisor_bio": "Akkreditált Certo tanácsadó több év tapasztalattal a stratégiai piacvezető intézmények folyamatoptimalizációjában.",
+    "advisor_1_bio": "Szakértő az egészségügyi ellátás és megfelelőség területén, felelős a Certo minősítés fenntartásáért és erősítéséért az orvosi szektorban.",
+    "advisor_2_bio": "Pénzügyek és auditálás specialistája, aki gondoskodik a Certo minősítés fenntartásáról és erősítéséről a pénzügyi szektorban.",
+    "advisor_3_bio": "Tanácsadó a védelmi és biztonsági ipar és kiberbiztonsági terén, felelős a Certo minősítés erősítéséért a védelmi szektorban."
   },
   "Legal": {
-    "back": "Vissza a kezdõlapra",
-    "last_updated": "Legutóbbi frissítés: 2026. március",
-    "privacy_title": "Adatvédelmi nyilatkozat",
-    "terms_title": "Használati feltételek"
+    "back": "Vissza a főoldalra",
+    "last_updated": "Utolsó frissítés: 2026. március",
+    "privacy_title": "Adatvédelmi irányelvek",
+    "terms_title": "Felhasználási feltételek"
   },
   "FindAdvisor": {
     "title": "Certo tanácsadó keresése",
-    "sector_label": "Az intézmény szektora",
+    "sector_label": "Szervezete szektora",
     "need_label": "Mire van szüksége?",
-    "need_audit": "Irányítási audit",
+    "need_audit": "Vállalatirányítási auditálás",
     "need_advisory": "Stratégiai tanácsadás",
-    "need_training": "Képzések és workshopok",
-    "need_rating": "Rating felkészítés",
+    "need_training": "Képzések és műhelyek",
+    "need_rating": "Minősítésre való felkészülés",
     "region_label": "Régió",
     "submit": "Tanácsadó keresése"
   },
   "Advisor": {
-    "accredited_by": "Certo által akkreditált",
-    "specialization": "Specializáció",
+    "accredited_by": "Akkreditált a Certo által",
+    "specialization": "Specializmusa",
     "sectors": "Szektorok",
     "contact_advisor": "Kapcsolatfelvétel",
     "view_profile": "Profil megtekintése"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Kapcsolat",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varsó, Puławska utca 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Írjon nekünk",
+    "form_name": "Teljes név",
+    "form_email": "E-mail cím",
+    "form_subject": "Tárgy",
+    "form_message": "Üzenet",
+    "form_submit": "Üzenet elküldése",
+    "form_success": "Az üzenet elküldésre került. Hamarosan válaszolunk.",
+    "subject_general": "Általános lekérdezés",
+    "subject_advisory": "Tanácsadás",
+    "subject_accreditation": "Tanácsadó akkreditáció",
+    "subject_cooperation": "Együttműködés"
   }
 }

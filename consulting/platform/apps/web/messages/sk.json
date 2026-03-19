@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Nájdite poradcu",
-    "description": "Akreditovaní poradcovia Certo. Firemné riadenie a súlad."
+    "description": "Akreditovaní poradcovia Certo. Správa korporácií a súlad."
   },
   "Nav": {
     "advisors": "Poradcovia",
@@ -9,45 +9,45 @@
     "login": "Prihlásenie"
   },
   "Footer": {
-    "description": "Odborné poradenstvo v oblasti firemného riadenia, súladu a bezpečnosti pre trhových lídrov.",
+    "description": "Odborné poradenstvo v oblasti správy korporácií, súladu a bezpečnosti pre trhových lídrov.",
     "ecosystem": "Ekosystém Certo",
     "accreditation": "Všetci poradcovia sú akreditovaní Nadáciou Certo Governance Institute",
-    "privacy": "Politika ochrany osobných údajov",
-    "terms": "Podmienky používania",
+    "privacy": "Politika súkromia",
+    "terms": "Podmienky použitia",
     "contact": "Kontakt"
   },
   "Home": {
     "hero_title": "Odborné poradenstvo\nna úrovni vedenia.",
-    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších noriem firemného riadenia a regulačnej zhody.",
+    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších štandardov správy korporácií a regulačného súladu.",
     "hero_cta": "Nájdite experta",
-    "finder_title": "Chcem hovoriť s odborníkom v oblasti:",
+    "finder_title": "Chcem sa poporozprávať s odborníkom na:",
     "area_health": "Zdravotníctvo",
     "area_local_gov": "Samospráva",
     "area_defense": "Obrana",
     "area_finance": "Financie",
-    "area_education": "Vzdelávanie",
-    "form_title": "Zanechajte kontakt, aby sme vám vybrali vhodného poradcu z oblasti",
+    "area_education": "Vzdelanie",
+    "form_title": "Zanechajte kontakt, aby sme vám pridelili vhodného poradcu z oblasti",
     "form_name": "Meno a priezvisko",
     "form_email": "E-mailová adresa (pracovná)",
     "form_org": "Názov organizácie / Pozícia",
     "form_submit": "Odoslať dopyt",
     "advisors_title": "Príklady expertov z našej siete",
-    "advisor_bio": "Akreditovaný poradca Certo s dlhoročnými skúsenosťami pri optimalizácii procesov pre strategické inštitúcie na trhu.",
-    "advisor_1_bio": "Špecialista v oblasti zdravotníctva a compliance, zodpovedná za udržiavanie a posilňovanie ratingu Certo v zdravotníckom priemysle.",
-    "advisor_2_bio": "Špecialista v oblasti financií a auditu starajúci sa o udržiavanie a posilňovanie ratingu Certo v finančnom sektore.",
-    "advisor_3_bio": "Poradca v oblasti obrany a kybernetickej bezpečnosti zodpovedný za posilňovanie ratingu Certo v obrannom priemysle."
+    "advisor_bio": "Akreditovaný poradca Certo s dlhodobými skúsenosťami v optimalizácii procesov pre strategické trhové inštitúcie.",
+    "advisor_1_bio": "Špecialista v oblasti zdravotníctva a súladu, zodpovedná za udržiavanie a posilňovanie ratingu Certo v zdravotníckom priemysle.",
+    "advisor_2_bio": "Špecialista v oblasti financií a auditu, starajúci sa o udržiavanie a posilňovanie ratingu Certo vo finančnom sektore.",
+    "advisor_3_bio": "Poradca v oblasti obrany a kybernetickej bezpečnosti, zodpovedný za posilňovanie ratingu Certo v obrannom priemysle."
   },
   "Legal": {
-    "back": "Späť na hlavnú stránku",
+    "back": "Späť na domovskú stránku",
     "last_updated": "Posledná aktualizácia: Marec 2026",
-    "privacy_title": "Politika ochrany osobných údajov",
-    "terms_title": "Podmienky používania"
+    "privacy_title": "Politika súkromia",
+    "terms_title": "Podmienky použitia"
   },
   "FindAdvisor": {
     "title": "Nájdite poradcu Certo",
     "sector_label": "Sektor vašej inštitúcie",
     "need_label": "Čo potrebujete?",
-    "need_audit": "Audit riadenia",
+    "need_audit": "Audit správy",
     "need_advisory": "Strategické poradenstvo",
     "need_training": "Školenia a workshopy",
     "need_rating": "Príprava na rating",
@@ -55,7 +55,7 @@
     "submit": "Hľadať poradcu"
   },
   "Advisor": {
-    "accredited_by": "Akreditovaný spoločnosťou Certo",
+    "accredited_by": "Akreditovaný Certo",
     "specialization": "Špecializácia",
     "sectors": "Sektory",
     "contact_advisor": "Kontaktujte",
@@ -64,18 +64,18 @@
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varšava, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Napíšte nám",
+    "form_name": "Meno a priezvisko",
+    "form_email": "E-mailová adresa",
+    "form_subject": "Predmet",
+    "form_message": "Správa",
+    "form_submit": "Odoslať správu",
+    "form_success": "Správa bola odoslaná. Odpovieme čo najskôr.",
+    "subject_general": "Všeobecný dopyt",
+    "subject_advisory": "Poradenstvo",
+    "subject_accreditation": "Akreditácia poradcu",
+    "subject_cooperation": "Spolupráca"
   }
 }

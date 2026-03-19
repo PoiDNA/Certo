@@ -24,7 +24,7 @@
     "cancel": "Anulați",
     "confirm": "Confirmați",
     "back": "Înapoi",
-    "next": "Înainte",
+    "next": "Următorul",
     "close": "Închideți",
     "search": "Căutați",
     "download": "Descărcați",
@@ -33,7 +33,7 @@
     "inactive": "Inactiv"
   },
   "Navigation": {
-    "home": "Pagina principală",
+    "home": "Pagina de start",
     "ratings": "Ratinguri",
     "reports": "Rapoarte",
     "analysis": "Analize",
@@ -44,12 +44,12 @@
   },
   "Auth": {
     "login_title": "Conectați-vă",
-    "login_subtitle": "Conectați-vă la contul dvs.",
+    "login_subtitle": "Conectați-vă la contul dumneavoastră",
     "login_with_google": "Conectați-vă prin Google",
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
     "forgot_password": "Ați uitat parola?",
-    "no_account": "Nu aveți un cont?",
+    "no_account": "Nu aveți cont?",
     "register": "Înregistrați-vă"
   },
   "Errors": {

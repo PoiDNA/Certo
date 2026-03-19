@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Fundace Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu správy v sektoru veřejné správy, korporátním, zdravotnickém a obranném."
+    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení ve veřejném, korporátním, medicínském a obranném sektoru."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je první světovou ratingovou agenturou, jejíž ratingy jsou kryptografickými artefakty procesu — nikoliv názory. Každé rozhodnutí o ratingu je ukotveno mimo vlastní infrastrukturu, ověřitelné offline a veřejně auditovatelné.",
-    "hero_cta_primary": "Prohlédněte si ratingy",
-    "hero_cta_secondary": "Dozvědět se více",
+    "description": "Certo je první světovou ratingovou agenturou, jejíž ratingy jsou kryptografickými artefakty procesu — nikoli názory. Každé rozhodnutí o ratingu je ukotveno mimo vlastní infrastrukturu, ověřitelné offline a veřejně auditovatelné.",
+    "hero_cta_primary": "Zkontrolujte ratingy",
+    "hero_cta_secondary": "Zjistěte více",
     "section_ratings_title": "Nejnovější Ratingy Certo",
     "section_reports_title": "Analýzy a Zprávy",
-    "section_about_title": "O Fundaci"
+    "section_about_title": "O Nadaci"
   },
   "Ratings": {
     "title": "Ratingy Certo",
-    "subtitle": "Hodnocení kvality správy institucí",
-    "search_placeholder": "Hledat instituci...",
+    "subtitle": "Hodnocení kvality řízení institucí",
+    "search_placeholder": "Hledejte instituci...",
     "filter_sector": "Sektor",
     "sector_public": "Veřejný",
     "sector_corporate": "Korporátní",
-    "sector_medical": "Zdravotnický",
+    "sector_medical": "Medicínský",
     "sector_defense": "Obranný",
-    "sector_ngo": "Neziskový",
+    "sector_ngo": "Nevládní",
     "rating_valid_until": "Rating platný do",
     "rating_issued": "Datum vydání",
     "no_results": "Nebyly nalezeny žádné výsledky",
@@ -30,7 +30,7 @@
   "Nav": {
     "ratings": "Ratingy",
     "methodology": "Metodologie",
-    "about": "O Fundaci",
+    "about": "O Nadaci",
     "login": "Přihlásit se",
     "documents": "Dokumenty",
     "pipeline": "Pipeline",
@@ -38,35 +38,35 @@
   },
   "Footer": {
     "copyright": "Fundace Certo Governance Institute © {year}",
-    "privacy": "Zásady Ochrany Osobních Údajů",
-    "terms": "Podmínky Použití",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky používání",
     "contact": "Kontakt"
   },
   "About": {
     "title": "O Fundaci Certo Governance Institute",
     "mission_title": "Mise",
-    "mission_text": "Budování kultury dobré správy prostřednictvím nezávislého hodnocení a propagace standardů správy v České republice a Evropě.",
+    "mission_text": "Budování kultury kvalitního řízení prostřednictvím nezávislého hodnocení a propagace standardů governance v České republice a Evropě.",
     "independence_title": "Nezávislost",
-    "independence_text": "Fundace je nezávislá na hodnocených subjektech, orgánech veřejné správy a komerčních zájmech.",
+    "independence_text": "Nadace je nezávislá na hodnocených subjektech, státních orgánech a komerčních zájmech.",
     "methodology_title": "Metodologie",
-    "methodology_text": "Ratingy Certo jsou založeny na přísné metodologii vycházející ze standardů ISO a pokynů EU."
+    "methodology_text": "Ratingy Certo jsou založeny na přísné metodologii vycházející z norem ISO a pokynů EU."
   },
   "Contact": {
     "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "subtitle": "Fundace Certo Governance Institute",
+    "address": "00-124 Praha, ul. Rondo OSN 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
+    "form_title": "Napište nám",
+    "form_name": "Jméno a příjmení",
+    "form_email": "E-mailová adresa",
+    "form_subject": "Předmět",
+    "form_message": "Zpráva",
+    "form_submit": "Odeslat zprávu",
+    "form_success": "Zpráva byla odeslána. Odpovíme co nejdříve.",
+    "subject_general": "Obecný dotaz",
     "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "subject_methodology": "Metodologie",
+    "subject_cooperation": "Spolupráce",
+    "subject_media": "Média"
   }
 }

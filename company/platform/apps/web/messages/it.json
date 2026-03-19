@@ -1,37 +1,54 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e società."
+    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e aziende."
   },
   "Nav": {
     "solutions": "Soluzioni",
     "technology": "Tecnologia",
-    "foundation": "Fundazione Certo",
+    "foundation": "Fundacja Certo",
     "login": "Accedi"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Informativa sulla Privacy",
     "terms": "Condizioni di Servizio",
-    "contact": "Kontakt"
+    "contact": "Contatti"
+  },
+  "Contact": {
+    "title": "Contatti",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Varsavia, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Scrivici",
+    "form_name": "Nome e cognome",
+    "form_email": "Indirizzo email",
+    "form_subject": "Oggetto",
+    "form_message": "Messaggio",
+    "form_submit": "Invia messaggio",
+    "form_success": "Il messaggio è stato inviato. Ti risponderemo il prima possibile.",
+    "subject_general": "Domanda generale",
+    "subject_implementation": "Implementazione",
+    "subject_technical": "Supporto tecnico",
+    "subject_cooperation": "Cooperazione"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identità.",
     "hero_line2": "Conformità.",
     "hero_line3": "Certezza.",
-    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, società e soggetti regolamentati. Costruita secondo gli standard",
+    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, aziende e soggetti regolamentati. Costruita secondo gli standard",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "AVVIA L'IMPLEMENTAZIONE",
+    "cta_primary": "INIZIA L'IMPLEMENTAZIONE",
     "cta_secondary": "SERVIZI",
     "services_label": "SERVIZI",
-    "services_title": "Tre livelli di infrastruttura compliance",
+    "services_title": "Tre livelli dell'infrastruttura compliance",
     "service1_title": "Verifica dell'Identità",
-    "service1_desc": "KYC/AML per soggetti regolamentati. Verifica automatica dei documenti, screening delle sanzioni e PEP, integrazione con i registri pubblici.",
+    "service1_desc": "KYC/AML per soggetti regolamentati. Verifica automatica dei documenti, screening delle sanzioni e PEP, integrazione con i registri statali.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring automatico della conformità basato sulla metodologia del Certo Governance Institute. Sistema di valutazione a cinque livelli con traccia di audit completa.",
+    "service2_desc": "Scoring automatico della conformità basato sulla metodologia Certo Governance Institute. Sistema di valutazione a cinque livelli con tracciamento completo dell'audit.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Piani di rimedio automatici e monitoraggio della loro attuazione. Integrazione con sistemi ERP, GRC e piattaforme di gestione del rischio.",
+    "service3_desc": "Piani di rimedio automatici e monitoraggio della loro attuazione. Integrazione con i sistemi ERP, GRC e piattaforme di gestione del rischio.",
     "arch_label": "ARCHITETTURA",
     "arch_title": "Come funziona Certo ID",
     "step1_title": "Intake",
@@ -45,20 +62,20 @@
     "badge_iso": "Standard ISO",
     "badge_compliance": "Conformità normativa",
     "badge_kyc": "Verifica dell'identità",
-    "badge_governance": "Valutazione della governance"
+    "badge_governance": "Valutazione governance"
   },
   "Legal": {
-    "back": "Torna alla home",
+    "back": "Torna alla home page",
     "last_updated": "Ultimo aggiornamento: Marzo 2026",
     "privacy_title": "Informativa sulla Privacy",
     "terms_title": "Condizioni di Servizio"
   },
   "Dashboard": {
-    "title": "Pannello Certo ID",
+    "title": "Dashboard Certo ID",
     "welcome": "Benvenuto, {name}",
-    "your_rating": "Tuo Rating Certo",
-    "your_delegates": "Tuoi Delegati",
-    "your_accords": "Tuoi Certo Accord",
+    "your_rating": "Il Tuo Rating Certo",
+    "your_delegates": "I Tuoi Delegati",
+    "your_accords": "I Tuoi Certo Accord",
     "recent_activity": "Attività recente",
     "quick_actions": "Azioni rapide"
   },
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

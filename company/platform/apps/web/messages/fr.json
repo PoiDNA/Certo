@@ -13,7 +13,24 @@
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
-    "contact": "Kontakt"
+    "contact": "Contact"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Varsovie, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Écrivez-nous",
+    "form_name": "Nom et prénom",
+    "form_email": "Adresse e-mail",
+    "form_subject": "Sujet",
+    "form_message": "Message",
+    "form_submit": "Envoyer le message",
+    "form_success": "Votre message a été envoyé. Nous vous répondrons dès que possible.",
+    "subject_general": "Demande générale",
+    "subject_implementation": "Mise en œuvre",
+    "subject_technical": "Support technique",
+    "subject_cooperation": "Coopération"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
@@ -22,22 +39,22 @@
     "hero_line3": "Certitude.",
     "hero_description": "Infrastructure de vérification et de conformité pour les institutions publiques, les entreprises et les entités réglementées. Construite selon les normes",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "DÉMARRER L'IMPLÉMENTATION",
+    "cta_primary": "DÉMARRER LA MISE EN ŒUVRE",
     "cta_secondary": "SERVICES",
     "services_label": "SERVICES",
-    "services_title": "Trois couches d'infrastructure de conformité",
+    "services_title": "Trois niveaux d'infrastructure de conformité",
     "service1_title": "Vérification d'Identité",
-    "service1_desc": "KYC/AML pour les entités réglementées. Vérification automatique des documents, contrôle des sanctions et PPE, intégration aux registres publics.",
-    "service2_title": "Rating Compliance",
+    "service1_desc": "KYC/AML pour les entités réglementées. Vérification automatique des documents, filtrage des sanctions et des PPE, intégration aux registres d'État.",
+    "service2_title": "Rating Conformité",
     "service2_desc": "Scoring automatique de conformité basé sur la méthodologie de Certo Governance Institute. Système d'évaluation à cinq niveaux avec traçabilité complète d'audit.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Plans de correction automatiques et monitoring de leur mise en œuvre. Intégration aux systèmes ERP, GRC et plateformes de gestion des risques.",
+    "service3_desc": "Plans d'action corrective automatiques et suivi de leur mise en œuvre. Intégration aux systèmes ERP, GRC et plateformes de gestion des risques.",
     "arch_label": "ARCHITECTURE",
     "arch_title": "Comment fonctionne Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Données de l'entité + documents + contexte réglementaire",
     "step2_title": "Verify",
-    "step2_desc": "Vérification d'identité, contrôle, registre public",
+    "step2_desc": "Vérification d'identité, filtrage, registre public",
     "step3_title": "Score",
     "step3_desc": "Rating automatique de conformité Certo Vector",
     "step4_title": "Report",
@@ -45,7 +62,7 @@
     "badge_iso": "Normes ISO",
     "badge_compliance": "Conformité réglementaire",
     "badge_kyc": "Vérification d'identité",
-    "badge_governance": "Évaluation de la gouvernance"
+    "badge_governance": "Évaluation de gouvernance"
   },
   "Legal": {
     "back": "Retour à la page d'accueil",
@@ -57,7 +74,7 @@
     "title": "Tableau de Bord Certo ID",
     "welcome": "Bienvenue, {name}",
     "your_rating": "Votre Rating Certo",
-    "your_delegates": "Vos Délégués",
+    "your_delegates": "Vos Delegati Certo",
     "your_accords": "Vos Certo Accord",
     "recent_activity": "Activité récente",
     "quick_actions": "Actions rapides"
@@ -71,7 +88,7 @@
     "verified_badge": "Entité vérifiée"
   },
   "Delegates": {
-    "title": "Délégués Certo",
+    "title": "Delegati Certo",
     "add_delegate": "Ajouter un délégué",
     "delegate_id": "Delegate ID",
     "delegate_status": "Statut",
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

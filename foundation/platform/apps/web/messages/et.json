@@ -1,25 +1,25 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute Fond",
-    "description": "Sõltumatu reitingagentuuri, mis hindab juhtimise kvaliteeti avalikus, ettevõtte-, meditsiini- ja kaitseseisundis."
+    "title": "Certo Governance Institute",
+    "description": "Sõltumatu reitingiagentuuri, mis hindab juhtimise kvaliteeti avaliku, korporatiivse, meditsiinilise ja kaitsesektor."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo on maailma esimene reitingagentuuri, mille reitingud on protsessi krüptograafilised artefaktid – mitte arvamused. Iga reitingotsus on ankurdatud väljaspool oma infrastruktuuri, kontrolltavad võrguühenduseta ja avalikult auditeeritavad.",
+    "description": "Certo on esimene maailmas reitingiagentuuri, mille reitingud on protsessi krüptograafilised artefaktid — mitte arvamused. Iga reitingu otsus on ankurdatud väljaspool oma infrastruktuuri, verifieeritav võrguühenduseta ja avalikult auditeeritav.",
     "hero_cta_primary": "Vaata reitinguid",
-    "hero_cta_secondary": "Teada rohkem",
+    "hero_cta_secondary": "Lisateabe saamiseks",
     "section_ratings_title": "Uusimad Certo Reitingud",
     "section_reports_title": "Analüüsid ja Aruanded",
-    "section_about_title": "Fondist"
+    "section_about_title": "Fondatsioonist"
   },
   "Ratings": {
     "title": "Certo Reitingud",
     "subtitle": "Institutsioonide juhtimise kvaliteedi hinnangud",
-    "search_placeholder": "Otsi asutust...",
+    "search_placeholder": "Otsi institutsioonist...",
     "filter_sector": "Sektor",
     "sector_public": "Avalik",
-    "sector_corporate": "Ettevõtte",
-    "sector_medical": "Meditsiini",
+    "sector_corporate": "Korporatiivne",
+    "sector_medical": "Meditsiiniline",
     "sector_defense": "Kaitse",
     "sector_ngo": "Mittetulunduslik",
     "rating_valid_until": "Reiting kehtib kuni",
@@ -30,43 +30,43 @@
   "Nav": {
     "ratings": "Reitingud",
     "methodology": "Metoodika",
-    "about": "Fondist",
+    "about": "Fondatsioonist",
     "login": "Logi sisse",
     "documents": "Dokumendid",
     "pipeline": "Pipeline",
-    "dashboard": "Armatuurlaud"
+    "dashboard": "Juhtpaneel"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute Fond © {year}",
+    "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privaatsuspoliitika",
-    "terms": "Kasutamistingimused",
+    "terms": "Kasutustingimused",
     "contact": "Kontakt"
   },
   "About": {
-    "title": "Certo Governance Institute Fondist",
-    "mission_title": "Missoon",
-    "mission_text": "Hea juhtimise kultuuri ehitamine sõltumatu hindamise ja juhtimise standardite edendamise kaudu Poolas ja Euroopas.",
+    "title": "Certo Governance Institute'i Kohta",
+    "mission_title": "Missiooni",
+    "mission_text": "Hea juhtimise kultuuri loomine sõltumatu hindamise ja governance'i standardite edendamise kaudu Poolas ja Euroopas.",
     "independence_title": "Sõltumatus",
-    "independence_text": "Fond on sõltumatu hinnatavatele üksustele, avaliku võimu organitele ja kaubanduslikele huvidele.",
+    "independence_text": "Fond on sõltumatu hindamise objektidest, avaliku võimu organitest ja kommertsilistest huvidest.",
     "methodology_title": "Metoodika",
-    "methodology_text": "Certo reitingud põhinevad rangel metoodika tal, mis põhineb ISO standarditel ja EL suunistel."
+    "methodology_text": "Certo reitingud põhinevad range metoodika alusel, mis on vastavuses ISO standardite ja EU juhiste nõuetega."
   },
   "Contact": {
     "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "subtitle": "Certo Governance Institute",
+    "address": "00-124 Varssavi, Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "form_title": "Kirjuta meile",
+    "form_name": "Nimi ja perekonnanimi",
+    "form_email": "E-posti aadress",
+    "form_subject": "Teema",
+    "form_message": "Sõnum",
+    "form_submit": "Saada sõnum",
+    "form_success": "Sõnum on saadetud. Vastame nii pian kui võimalik.",
+    "subject_general": "Üldine päring",
+    "subject_rating": "Certo Reiting",
+    "subject_methodology": "Metoodika",
+    "subject_cooperation": "Koostöö",
+    "subject_media": "Meedia"
   }
 }

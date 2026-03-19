@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgão classificador independente que avalia a qualidade de governança de instituições públicas, corporativas e não-governamentais."
+    "description": "Órgão de classificação independente que avalia a qualidade de gestão de instituições públicas, corporativas e não-governamentais."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Faça login",
-    "logout": "Sair",
+    "login": "Fazer login",
+    "logout": "Fazer logout",
     "privacyPolicy": "Política de privacidade",
     "termsOfUse": "Termos de uso",
     "loading": "Carregando...",
@@ -43,14 +43,14 @@
     "settings": "Configurações"
   },
   "Auth": {
-    "login_title": "Faça login",
-    "login_subtitle": "Faça login na sua conta",
-    "login_with_google": "Faça login com Google",
+    "login_title": "Fazer login",
+    "login_subtitle": "Faça login em sua conta",
+    "login_with_google": "Fazer login com Google",
     "email_label": "Endereço de e-mail",
     "password_label": "Senha",
     "forgot_password": "Esqueceu sua senha?",
     "no_account": "Não tem uma conta?",
-    "register": "Cadastre-se"
+    "register": "Registre-se"
   },
   "Errors": {
     "404_title": "Página não encontrada",

@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Hitta Rådgivare",
-    "description": "Ackrediterade Certo-rådgivare. Corporate Governance och efterlevnad."
+    "title": "Certo Consulting — Hitta en Rådgivare",
+    "description": "Ackrediterade Certo-rådgivare. Corporate Governance och regelefterlevnad."
   },
   "Nav": {
     "advisors": "Rådgivare",
@@ -9,7 +9,7 @@
     "login": "Logga in"
   },
   "Footer": {
-    "description": "Expertis inom corporate governance, efterlevnad och säkerhet för marknadsledare.",
+    "description": "Expertrådgivning inom corporate governance, regelefterlevnad och säkerhet för marknadsledande organisationer.",
     "ecosystem": "Certo-ekosystemet",
     "accreditation": "Alla rådgivare är ackrediterade av Certo Governance Institute",
     "privacy": "Integritetspolicy",
@@ -17,25 +17,25 @@
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Expertis inom governance\npå ledningsnivå.",
-    "hero_subtitle": "Vi förbinder ackrediterade Certo-rådgivare med institutioner som kräver högsta standarder för corporate governance och regelefterlevnad.",
-    "hero_cta": "Hitta expert",
-    "finder_title": "Jag vill prata med expert inom:",
-    "area_health": "Hälso- och sjukvård",
-    "area_local_gov": "Lokala myndigheter",
+    "hero_title": "Expertrådgivning\npå ledningsnivå.",
+    "hero_subtitle": "Vi förbinder ackrediterade Certo-rådgivare med organisationer som kräver högsta standard för corporate governance och regelefterlevnad.",
+    "hero_cta": "Hitta en expert",
+    "finder_title": "Jag vill prata med en expert inom:",
+    "area_health": "Hälsovård",
+    "area_local_gov": "Lokal förvaltning",
     "area_defense": "Försvar",
-    "area_finance": "Finans",
+    "area_finance": "Finanser",
     "area_education": "Utbildning",
-    "form_title": "Lämna dina uppgifter så hittar vi rätt rådgivare från området",
+    "form_title": "Lämna dina uppgifter så att vi kan matcha dig med rätt rådgivare inom området",
     "form_name": "Namn",
-    "form_email": "E-postadress (företag)",
+    "form_email": "E-postadress (arbets)",
     "form_org": "Organisationsnamn / Befattning",
     "form_submit": "Skicka förfrågan",
     "advisors_title": "Exempel på experter från vårt nätverk",
-    "advisor_bio": "Ackrediterad Certo-rådgivare med långt erfarenhet av processoptimering för strategiska marknadsinstitutioner.",
-    "advisor_1_bio": "Expert inom hälso- och sjukvård och compliance, ansvarig för att upprätthålla och stärka Certo-betyget inom sjukvårdsbranschen.",
-    "advisor_2_bio": "Specialist inom finans och revision, som säkerställer att Certo-betyget upprätthålls och stärks inom finanssektorn.",
-    "advisor_3_bio": "Rådgivare inom försvar och cybersäkerhet, ansvarig för att stärka Certo-betyget inom försvarsindustrin."
+    "advisor_bio": "Ackrediterad Certo-rådgivare med långvarig erfarenhet av att optimera processer för strategiska marknadsorganisationer.",
+    "advisor_1_bio": "Expert inom hälsovård och regelefterlevnad, ansvarig för att upprätthålla och stärka Certo Rating inom medicinbranschen.",
+    "advisor_2_bio": "Specialist inom finanser och revision, som säkerställer att upprätthålla och stärka Certo Rating inom finanssektorn.",
+    "advisor_3_bio": "Rådgivare inom försvar och cybersäkerhet, ansvarig för att stärka Certo Rating inom försvarsindustrin."
   },
   "Legal": {
     "back": "Tillbaka till startsidan",
@@ -44,13 +44,13 @@
     "terms_title": "Användarvillkor"
   },
   "FindAdvisor": {
-    "title": "Hitta Certo-rådgivare",
-    "sector_label": "Din institutions sektor",
+    "title": "Hitta en Certo-rådgivare",
+    "sector_label": "Din organisations sektor",
     "need_label": "Vad behöver du?",
     "need_audit": "Governance-revision",
     "need_advisory": "Strategisk rådgivning",
-    "need_training": "Utbildning och workshops",
-    "need_rating": "Förberedelse inför betygsättning",
+    "need_training": "Utbildningar och workshops",
+    "need_rating": "Förberedelse för rating",
     "region_label": "Region",
     "submit": "Sök rådgivare"
   },
@@ -59,23 +59,23 @@
     "specialization": "Specialisering",
     "sectors": "Sektorer",
     "contact_advisor": "Kontakta",
-    "view_profile": "Visa profil"
+    "view_profile": "Se profil"
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Skriv till oss",
+    "form_name": "Namn",
+    "form_email": "E-postadress",
+    "form_subject": "Ämne",
+    "form_message": "Meddelande",
+    "form_submit": "Skicka meddelande",
+    "form_success": "Meddelandet har skickats. Vi svarar så snart som möjligt.",
+    "subject_general": "Allmän förfrågan",
+    "subject_advisory": "Rådgivning",
+    "subject_accreditation": "Rådgivarackreditering",
+    "subject_cooperation": "Samarbete"
   }
 }

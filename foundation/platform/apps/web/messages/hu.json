@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Alapítvány",
-    "description": "Független minősítőintézmény, amely a közszféra, a vállalati, az egészségügyi és a védelmi szektor irányítási minőségét értékeli."
+    "description": "Független minősítő szerv, amely értékeli a közszféra, vállalati, egészségügyi és védelmi szektor irányítási minőségét."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "A Certo az első olyan minősítőügynökség a világon, amelynek minősítései a folyamat kriptográfiai összetevői — nem vélemények. Minden minősítési döntés a saját infrastruktúráján kívül van rögzítve, offline verifikálható és nyilvánosan ellenőrizhető.",
-    "hero_cta_primary": "Tekintse meg a minősítéseket",
+    "description": "A Certo az első olyan minősítőügynökség a világon, amelynek minősítései kriptográfiai artifaktumok a folyamatból — nem pedig vélemények. Minden minősítési döntés az intézmény saját infrastruktúráján kívül rögzített, offline-ban ellenőrizhető és nyilvánosan auditálható.",
+    "hero_cta_primary": "Nézzen meg minősítéseket",
     "hero_cta_secondary": "Tudjon meg többet",
     "section_ratings_title": "Legújabb Certo Minősítések",
     "section_reports_title": "Elemzések és Jelentések",
@@ -14,7 +14,7 @@
   },
   "Ratings": {
     "title": "Certo Minősítések",
-    "subtitle": "Az intézmények irányítási minőségének értékelése",
+    "subtitle": "Intézmények irányítási minőségének értékelése",
     "search_placeholder": "Intézmény keresése...",
     "filter_sector": "Szektor",
     "sector_public": "Közszféra",
@@ -22,51 +22,51 @@
     "sector_medical": "Egészségügyi",
     "sector_defense": "Védelmi",
     "sector_ngo": "Civil",
-    "rating_valid_until": "Minősítés érvényes:",
+    "rating_valid_until": "Minősítés érvényes",
     "rating_issued": "Kibocsátás dátuma",
-    "no_results": "Nincsenek eredmények",
+    "no_results": "Nincs találat",
     "view_profile": "Profil megtekintése"
   },
   "Nav": {
     "ratings": "Minősítések",
-    "methodology": "Módszertan",
+    "methodology": "Módszertani alapok",
     "about": "Az Alapítványról",
     "login": "Bejelentkezés",
     "documents": "Dokumentumok",
-    "pipeline": "Pipeline",
-    "dashboard": "Vezérlőpult"
+    "pipeline": "Folyamat",
+    "dashboard": "Irányítópult"
   },
   "Footer": {
     "copyright": "Certo Governance Institute Alapítvány © {year}",
-    "privacy": "Adatvédelmi Nyilatkozat",
+    "privacy": "Adatvédelmi Szabályzat",
     "terms": "Felhasználási Feltételek",
-    "contact": "Kontakt"
+    "contact": "Kapcsolat"
   },
   "About": {
     "title": "A Certo Governance Institute Alapítványról",
-    "mission_title": "Küldetés",
-    "mission_text": "A jó irányítási kultúra kialakítása független értékelés és a governance standardok előmozdítása révén Lengyelországban és Európában.",
+    "mission_title": "Misszió",
+    "mission_text": "A jó irányítási gyakorlat kultúrájának építése független értékelés révén, valamint a governance standardok előmozdítása Lengyelországban és Európában.",
     "independence_title": "Függetlenség",
-    "independence_text": "Az Alapítvány független az értékelt szervezetektől, az állami hatóságoktól és a kereskedelmi érdekektől.",
-    "methodology_title": "Módszertan",
-    "methodology_text": "A Certo minősítések szigorú, az ISO szabványokra és az EU irányelvekre épülő módszertanon alapulnak."
+    "independence_text": "Az Alapítvány független az értékelt szervezetektől, a közhatalmi szervektől és a kereskedelmi érdekektől.",
+    "methodology_title": "Módszertani alapok",
+    "methodology_text": "A Certo minősítések szigorú módszertanon alapulnak, amely az ISO szabványok és az EU irányelvek alapján készült."
   },
   "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
+    "title": "Kapcsolat",
+    "subtitle": "Certo Governance Institute Alapítvány",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "form_title": "Írjon nekünk",
+    "form_name": "Név",
+    "form_email": "E-mail cím",
+    "form_subject": "Tárgy",
+    "form_message": "Üzenet",
+    "form_submit": "Üzenet küldése",
+    "form_success": "Az üzenet sikeresen el lett küldve. A lehető leghamarabb válaszolunk.",
+    "subject_general": "Általános kérdés",
+    "subject_rating": "Certo Minősítés",
+    "subject_methodology": "Módszertani alapok",
+    "subject_cooperation": "Együttműködés",
+    "subject_media": "Média"
   }
 }

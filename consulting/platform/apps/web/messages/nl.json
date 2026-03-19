@@ -9,36 +9,36 @@
     "login": "Inloggen"
   },
   "Footer": {
-    "description": "Deskundig advies op het gebied van Corporate Governance, compliance en veiligheid voor marktleiders.",
-    "ecosystem": "Certo Ecosystem",
+    "description": "Deskundig advies op het gebied van corporate governance, compliance en veiligheid voor marktleiders.",
+    "ecosystem": "Certo Ecosysteem",
     "accreditation": "Alle adviseurs zijn geaccrediteerd door de Certo Governance Institute",
     "privacy": "Privacybeleid",
-    "terms": "Gebruiksvoorwaarden",
-    "contact": "Kontakt"
+    "terms": "Algemene voorwaarden",
+    "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Deskundig advies\nop directieniveau.",
-    "hero_subtitle": "We verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor Corporate Governance en regelgeving op het gebied van compliance stellen.",
+    "hero_title": "Deskundig advies\nop bestuursniveau.",
+    "hero_subtitle": "Wij verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor corporate governance en regelgeving naleven.",
     "hero_cta": "Vind een expert",
     "finder_title": "Ik wil spreken met een expert op het gebied van:",
     "area_health": "Gezondheidszorg",
-    "area_local_gov": "Lokale besturen",
+    "area_local_gov": "Lokale overheid",
     "area_defense": "Defensie",
     "area_finance": "Financiën",
     "area_education": "Onderwijs",
-    "form_title": "Laat uw contactgegevens achter, zodat we de juiste adviseur uit het volgende gebied voor u kunnen selecteren",
-    "form_name": "Voor- en achternaam",
+    "form_title": "Laat uw gegevens achter zodat we de juiste adviseur uit het gebied kunnen selecteren",
+    "form_name": "Naam",
     "form_email": "E-mailadres (zakelijk)",
     "form_org": "Organisatienaam / Functie",
-    "form_submit": "Verzend verzoek",
-    "advisors_title": "Voorbeelden van experts uit ons netwerk",
-    "advisor_bio": "Geaccrediteerde Certo-adviseur met jaren ervaring in procesoptimalisatie voor strategische marktinstellingen.",
-    "advisor_1_bio": "Expert op het gebied van gezondheidszorg en compliance, verantwoordelijk voor het behoud en versterking van de Certo-rating in de medische sector.",
-    "advisor_2_bio": "Specialist op het gebied van financiën en audit, gericht op het behoud en versterking van de Certo-rating in de financiële sector.",
-    "advisor_3_bio": "Adviseur op het gebied van defensie en cyberbeveiliging, verantwoordelijk voor het versterken van de Certo-rating in de defensie-industrie."
+    "form_submit": "Verzend vraag",
+    "advisors_title": "Voorbeeldexperts uit ons netwerk",
+    "advisor_bio": "Geaccrediteerde Certo-adviseur met jarenlange ervaring in optimalisatie van processen voor strategische marktinstellingen.",
+    "advisor_1_bio": "Expert op het gebied van gezondheidszorg en compliance, verantwoordelijk voor het handhaven en versterken van de Certo-rating in de medische sector.",
+    "advisor_2_bio": "Specialist op het gebied van financiën en audit, gericht op het handhaven en versterken van de Certo-rating in de financiële sector.",
+    "advisor_3_bio": "Adviseur op het gebied van defensie en cyberbeveiliging, verantwoordelijk voor het versterken van de Certo-rating in de defensiebranches."
   },
   "Legal": {
-    "back": "Terug naar startpagina",
+    "back": "Terug naar homepage",
     "last_updated": "Laatst bijgewerkt: maart 2026",
     "privacy_title": "Privacybeleid",
     "terms_title": "Gebruiksvoorwaarden"
@@ -46,7 +46,7 @@
   "FindAdvisor": {
     "title": "Vind een Certo-adviseur",
     "sector_label": "Sector van uw instelling",
-    "need_label": "Waar heeft u behoefte aan?",
+    "need_label": "Wat heeft u nodig?",
     "need_audit": "Governance audit",
     "need_advisory": "Strategisch advies",
     "need_training": "Training en workshops",
@@ -58,24 +58,24 @@
     "accredited_by": "Geaccrediteerd door Certo",
     "specialization": "Specialisatie",
     "sectors": "Sectoren",
-    "contact_advisor": "Contact opnemen",
-    "view_profile": "Profiel bekijken"
+    "contact_advisor": "Neem contact op",
+    "view_profile": "Bekijk profiel"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Contact",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Warschau, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Schrijf ons",
+    "form_name": "Naam",
+    "form_email": "E-mailadres",
+    "form_subject": "Onderwerp",
+    "form_message": "Bericht",
+    "form_submit": "Verzend bericht",
+    "form_success": "Het bericht is verzonden. We reageren zo snel mogelijk.",
+    "subject_general": "Algemene vraag",
+    "subject_advisory": "Advies",
+    "subject_accreditation": "Adviseur accreditatie",
+    "subject_cooperation": "Samenwerking"
   }
 }

@@ -1,41 +1,41 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Găsește Consilierul",
-    "description": "Consilieri acreditați Certo. Guvernanță corporativă și conformitate."
+    "title": "Certo Consulting — Găsește Consultant",
+    "description": "Consultanți acreditați Certo. Governance corporativ și conformitate."
   },
   "Nav": {
-    "advisors": "Consilieri",
-    "expertise": "Expertise",
+    "advisors": "Consultanți",
+    "expertise": "Expertiză",
     "login": "Autentificare"
   },
   "Footer": {
-    "description": "Consiliere expertă în guvernanță corporativă, conformitate și securitate pentru liderii pieței.",
+    "description": "Consultanță expertă în materie de governance corporativ, conformitate și securitate pentru liderii de piață.",
     "ecosystem": "Ecosistemul Certo",
-    "accreditation": "Toți consilerii sunt acreditați de Fundația Certo Governance Institute",
+    "accreditation": "Toți consultanții sunt acreditați de Fundația Certo Governance Institute",
     "privacy": "Politica de confidențialitate",
     "terms": "Termeni și condiții",
-    "contact": "Kontakt"
+    "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Consiliere expertă\nla nivel de conducere executivă.",
-    "hero_subtitle": "Conectăm consilieri acreditați Certo cu instituții care necesită cele mai înalte standarde de guvernanță corporativă și conformitate regulatorie.",
-    "hero_cta": "Găsește un expert",
-    "finder_title": "Vreau să vorbesc cu un expert în:",
+    "hero_title": "Consultanță expertă\nla nivel de management.",
+    "hero_subtitle": "Conectăm consultanții acreditați Certo cu instituții care necesită cele mai înalte standarde de governance corporativ și conformitate reglementară.",
+    "hero_cta": "Găsește expert",
+    "finder_title": "Doresc să vorbesc cu un expert în:",
     "area_health": "Sănătate",
-    "area_local_gov": "Administrație locală",
+    "area_local_gov": "Administrația locală",
     "area_defense": "Apărare",
     "area_finance": "Finanțe",
     "area_education": "Educație",
-    "form_title": "Lasă datele de contact pentru a alege consilierul potrivit din domeniul",
+    "form_title": "Lăsați datele de contact pentru a selecta consultantul potrivit din domeniu",
     "form_name": "Nume și prenume",
-    "form_email": "Adresa de email (profesională)",
-    "form_org": "Nume organizație / Poziție",
-    "form_submit": "Trimite solicitarea",
+    "form_email": "Adresă de e-mail (profesională)",
+    "form_org": "Denumirea organizației / Poziție",
+    "form_submit": "Trimiteți interogare",
     "advisors_title": "Exemple de experți din rețeaua noastră",
-    "advisor_bio": "Consilier acreditat Certo cu experiență multilaterală în optimizarea proceselor pentru instituții strategice de pe piață.",
+    "advisor_bio": "Consultant acreditat Certo cu experiență de lungă durată în optimizarea proceselor pentru instituții strategice de piață.",
     "advisor_1_bio": "Expertă în domeniul sănătății și conformității, responsabilă de menținerea și consolidarea ratingului Certo în industria medicală.",
-    "advisor_2_bio": "Specialist în finanțe și audit, dedicat menținerii și consolidării ratingului Certo în sectorul financiar.",
-    "advisor_3_bio": "Consilier în domeniul apărării și securității cibernetice, responsabil de consolidarea ratingului Certo în industria apărării."
+    "advisor_2_bio": "Specialist în finanțe și audit, grijind menținerea și consolidarea ratingului Certo în sectorul financiar.",
+    "advisor_3_bio": "Consultant în materie de apărare și securitate cibernetică, responsabil de consolidarea ratingului Certo în industria apărării."
   },
   "Legal": {
     "back": "Înapoi la pagina principală",
@@ -44,15 +44,15 @@
     "terms_title": "Condiții de utilizare"
   },
   "FindAdvisor": {
-    "title": "Găsește consilierul Certo",
-    "sector_label": "Sectorul instituției tale",
-    "need_label": "Ce ai nevoie?",
-    "need_audit": "Audit de guvernanță",
-    "need_advisory": "Consiliere strategică",
-    "need_training": "Antrenamente și ateliere",
+    "title": "Găsește consultant Certo",
+    "sector_label": "Sectorul instituției dumneavoastră",
+    "need_label": "Ce aveți nevoie?",
+    "need_audit": "Audit governance",
+    "need_advisory": "Consultanță strategică",
+    "need_training": "Formări și ateliere",
     "need_rating": "Pregătire pentru rating",
     "region_label": "Regiune",
-    "submit": "Caută consilier"
+    "submit": "Caută consultant"
   },
   "Advisor": {
     "accredited_by": "Acreditat de Certo",
@@ -62,20 +62,20 @@
     "view_profile": "Vezi profil"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Contact",
     "subtitle": "Certo ID PSA",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Scrieți-ne",
+    "form_name": "Nume și prenume",
+    "form_email": "Adresă de e-mail",
+    "form_subject": "Subiect",
+    "form_message": "Mesaj",
+    "form_submit": "Trimiteți mesaj",
+    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând posibil.",
+    "subject_general": "Interogare generală",
+    "subject_advisory": "Consultanță",
+    "subject_accreditation": "Acreditare consultant",
+    "subject_cooperation": "Cooperare"
   }
 }

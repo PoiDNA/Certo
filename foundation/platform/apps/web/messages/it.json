@@ -1,29 +1,29 @@
 {
   "Metadata": {
-    "title": "Certo Governance Institute",
-    "description": "Agenzia di rating indipendente che valuta la qualità della governance nel settore pubblico, aziendale, medico e della difesa."
+    "title": "Fondazione Certo Governance Institute",
+    "description": "Organo di rating indipendente che valuta la qualità della governance nel settore pubblico, aziendale, sanitario e della difesa."
   },
   "Home": {
     "title": "Certo Governance Institute",
     "description": "Certo è la prima agenzia di rating al mondo i cui rating sono artefatti crittografici del processo — non opinioni. Ogni decisione di rating è ancorata al di fuori della propria infrastruttura, verificabile offline e pubblicamente controllabile.",
-    "hero_cta_primary": "Visualizza i rating",
+    "hero_cta_primary": "Consulta i rating",
     "hero_cta_secondary": "Scopri di più",
     "section_ratings_title": "Rating Certo più recenti",
-    "section_reports_title": "Analisi e Relazioni",
+    "section_reports_title": "Analisi e Rapporti",
     "section_about_title": "Sulla Fondazione"
   },
   "Ratings": {
     "title": "Rating Certo",
-    "subtitle": "Valutazioni della qualità della governance istituzionale",
-    "search_placeholder": "Ricerca istituzione...",
+    "subtitle": "Valutazioni della qualità della governance delle istituzioni",
+    "search_placeholder": "Cerca un'istituzione...",
     "filter_sector": "Settore",
     "sector_public": "Pubblico",
     "sector_corporate": "Aziendale",
-    "sector_medical": "Medico",
+    "sector_medical": "Sanitario",
     "sector_defense": "Difesa",
-    "sector_ngo": "Organizzazioni Non Governative",
+    "sector_ngo": "Organizzazioni non profit",
     "rating_valid_until": "Rating valido fino al",
-    "rating_issued": "Data di emissione",
+    "rating_issued": "Data di rilascio",
     "no_results": "Nessun risultato trovato",
     "view_profile": "Visualizza profilo"
   },
@@ -37,36 +37,36 @@
     "dashboard": "Pannello"
   },
   "Footer": {
-    "copyright": "Certo Governance Institute © {year}",
+    "copyright": "Fondazione Certo Governance Institute © {year}",
     "privacy": "Informativa sulla Privacy",
-    "terms": "Condizioni d'Uso",
-    "contact": "Kontakt"
+    "terms": "Condizioni di Utilizzo",
+    "contact": "Contatti"
   },
   "About": {
     "title": "Sulla Fondazione Certo Governance Institute",
     "mission_title": "Missione",
-    "mission_text": "Costruire una cultura della buona governance attraverso valutazioni indipendenti e promuovere standard di governance in Polonia e in Europa.",
+    "mission_text": "Costruire una cultura di buona governance attraverso la valutazione indipendente e la promozione degli standard di governance in Polonia e in Europa.",
     "independence_title": "Indipendenza",
-    "independence_text": "La Fondazione è indipendente dai soggetti valutati, dagli organi pubblici e da interessi commerciali.",
+    "independence_text": "La Fondazione è indipendente dagli enti valutati, dagli organi della pubblica amministrazione e dai interessi commerciali.",
     "methodology_title": "Metodologia",
-    "methodology_text": "I rating Certo si basano su una metodologia rigorosa fondata sui standard ISO e sulle linee guida dell'UE."
+    "methodology_text": "I rating Certo si basano su una metodologia rigorosa fondata sui standard ISO e sulle linee guida UE."
   },
   "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "title": "Contatti",
+    "subtitle": "Fondazione Certo Governance Institute",
+    "address": "00-124 Varsavia, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
+    "form_title": "Scrivici",
+    "form_name": "Nome e cognome",
+    "form_email": "Indirizzo email",
+    "form_subject": "Oggetto",
+    "form_message": "Messaggio",
+    "form_submit": "Invia messaggio",
+    "form_success": "Il messaggio è stato inviato. Ti risponderemo al più presto.",
+    "subject_general": "Richiesta generale",
     "subject_rating": "Rating Certo",
     "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
+    "subject_cooperation": "Collaborazione",
     "subject_media": "Media"
   }
 }

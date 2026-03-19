@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Pronađite Savjetnika",
-    "description": "Akreditirani savjetnici Certo. Korporativni lade i usklađenost."
+    "title": "Certo Consulting — Pronađite savjetnika",
+    "description": "Akreditirani savjetnici Certo. Korporativni ured i usklađenost."
   },
   "Nav": {
     "advisors": "Savjetnici",
@@ -9,16 +9,16 @@
     "login": "Prijava"
   },
   "Footer": {
-    "description": "Stručno savjetovanje u području korporativnog lada, usklađenosti i sigurnosti za tržišne lidere.",
-    "ecosystem": "Ekosustav Certo",
-    "accreditation": "Svi savjetnici su akreditirani od strane Certo Governance Institute Fondacije",
+    "description": "Stručno savjetovanje u području korporativnog uređenja, usklađenosti i sigurnosti za tržišne lidere.",
+    "ecosystem": "Certo ekosistem",
+    "accreditation": "Svi su savjetnici akreditirani od strane Certo Governance Institute zaklada",
     "privacy": "Politika privatnosti",
     "terms": "Uvjeti korištenja",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Stručno savjetovanje\nna razini upravnog odbora.",
-    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativnog lada i regulatorne usklađenosti.",
+    "hero_title": "Stručno savjetovanje\nna razini uprave.",
+    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativnog uređenja i regulatorne usklađenosti.",
     "hero_cta": "Pronađi stručnjaka",
     "finder_title": "Želim razgovarati sa stručnjakom za:",
     "area_health": "Zdravstvena zaštita",
@@ -26,56 +26,56 @@
     "area_defense": "Obrana",
     "area_finance": "Financije",
     "area_education": "Obrazovanje",
-    "form_title": "Ostavite kontakt kako bismo vam dodijelili odgovarajućeg savjetnika iz područja",
+    "form_title": "Ostavite podatke kako bismo odabrali odgovarajućeg savjetnika iz područja",
     "form_name": "Ime i prezime",
-    "form_email": "Email adresa (poslovni)",
+    "form_email": "Službena email adresa",
     "form_org": "Naziv organizacije / Položaj",
     "form_submit": "Pošalji upit",
     "advisors_title": "Primjeri stručnjaka iz naše mreže",
-    "advisor_bio": "Akreditirani savjetnik Certo s dugogodišnjim iskustvom u optimizaciji procesa za strateške tržišne institucije.",
-    "advisor_1_bio": "Stručnjakinja u području zdravstvene zaštite i usklađenosti, odgovorna za održavanje i jačanje Certo ratinga u zdravstvenom sektoru.",
-    "advisor_2_bio": "Specijalist u području financija i revizije, zadužen za održavanje i jačanje Certo ratinga u financijskom sektoru.",
-    "advisor_3_bio": "Savjetnik u području obrane i kibernetičke sigurnosti, odgovoran za jačanje Certo ratinga u obrambenom sektoru."
+    "advisor_bio": "Akreditirani savjetnik Certo s višegodišnjim iskustvom u optimizaciji procesa za strateške tržišne institucije.",
+    "advisor_1_bio": "Stručnjakinja u području zdravstvene zaštite i usklađenosti, odgovorna za održavanje i ojačanje Certo ratinga u medicinskoj industriji.",
+    "advisor_2_bio": "Stručnjak u području financija i revizije, brinući o održavanju i ojačanju Certo ratinga u financijskom sektoru.",
+    "advisor_3_bio": "Savjetnik u području obrane i kibernetske sigurnosti, odgovoran za ojačanje Certo ratinga u branši obrane."
   },
   "Legal": {
-    "back": "Povratak na početnu stranicu",
-    "last_updated": "Zadnja aktualizacija: Ožujak 2026",
-    "privacy_title": "Politika Privatnosti",
+    "back": "Vrati se na početnu stranicu",
+    "last_updated": "Zadnja ažuriranja: ožujanj 2026.",
+    "privacy_title": "Politika privatnosti",
     "terms_title": "Uvjeti korištenja"
   },
   "FindAdvisor": {
-    "title": "Pronađi savjetnika Certo",
+    "title": "Pronađi Certo savjetnika",
     "sector_label": "Sektor vaše institucije",
-    "need_label": "Što vam je potrebno?",
-    "need_audit": "Audit lada",
+    "need_label": "Što trebate?",
+    "need_audit": "Revizija uređenja",
     "need_advisory": "Strateško savjetovanje",
-    "need_training": "Obuka i radionice",
+    "need_training": "Školenja i radionice",
     "need_rating": "Priprema za rating",
     "region_label": "Regija",
-    "submit": "Traži savjetnika"
+    "submit": "Pretraži savjetnika"
   },
   "Advisor": {
     "accredited_by": "Akreditiran od strane Certo",
     "specialization": "Specijalizacija",
     "sectors": "Sektori",
     "contact_advisor": "Kontaktiraj",
-    "view_profile": "Vidi profil"
+    "view_profile": "Pogledaj profil"
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varšava, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Napišite nam",
+    "form_name": "Ime i prezime",
+    "form_email": "Email adresa",
+    "form_subject": "Tema",
+    "form_message": "Poruka",
+    "form_submit": "Pošalji poruku",
+    "form_success": "Poruka je poslana. Odgovorit ćemo čim je moguće.",
+    "subject_general": "Opšta pitanja",
+    "subject_advisory": "Savjetovanje",
+    "subject_accreditation": "Akreditacija savjetnika",
+    "subject_cooperation": "Suradnja"
   }
 }

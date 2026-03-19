@@ -1,55 +1,72 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Fíorú céannachta agus comhlíonadh do bhonneagair phoiblí agus chorparáideach."
+    "description": "Fíorú aitheantais agus comhlíonadh do institiúidí poiblí agus chorparáidí."
   },
   "Nav": {
     "solutions": "Réitigh",
     "technology": "Teicneolaíocht",
     "foundation": "Fondúireacht Certo",
-    "login": "Logáil Isteach"
+    "login": "Logáil isteach"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Polasaí Príobháideachta",
     "terms": "Téarmaí an Tseirbhíse",
-    "contact": "Kontakt"
+    "contact": "Teagmháil"
+  },
+  "Contact": {
+    "title": "Teagmháil",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Vársá, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Scríobh chugainn",
+    "form_name": "Ainm",
+    "form_email": "Seoladh ríomhphoist",
+    "form_subject": "Ábhar",
+    "form_message": "Teachtaireacht",
+    "form_submit": "Seol an teachtaireacht",
+    "form_success": "Cuireadh an teachtaireacht ar aghaidh. Tabharfaimid freagra chomh tapa agus is féidir.",
+    "subject_general": "Fiosrúchán ginearálta",
+    "subject_implementation": "Cur i bhfeidhm",
+    "subject_technical": "Tacaíochta thicniúla",
+    "subject_cooperation": "Comhoibriú"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Céannacht.",
+    "hero_line1": "Aitheantais.",
     "hero_line2": "Comhlíonadh.",
-    "hero_line3": "Cinntacht.",
-    "hero_description": "Bonneagar fíoraithe agus comhlíonadh do bhonneagair phoiblí, chorparáideacha agus dhréachtóirí rialúcháin. Tógtha ar chaighdeáin",
+    "hero_line3": "Cinnteas.",
+    "hero_description": "Bonneagar fíorúcháin agus comhlíonadh do institiúidí poiblí, corparáidí agus eintitis rialaithe. Tógtha ar chaighdeáin",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "TOSAIGH AN FHORGHNÍOMHÚ",
+    "cta_primary": "TOSÚ AR CHUR I BHFEIDHM",
     "cta_secondary": "SEIRBHÍSÍ",
     "services_label": "SEIRBHÍSÍ",
-    "services_title": "Trí bhreac den bhonneagar comhlíonadh",
-    "service1_title": "Fíorú Céannachta",
-    "service1_desc": "KYC/AML do dhréachtóirí rialúcháin. Fíorú doiciméad uathoibríoch, scagadh fealltachais agus PEP, comhtháthú le cláranna an stáit.",
+    "services_title": "Trí chiseal den bhonneagar comhlíonadh",
+    "service1_title": "Fíorú Aitheantais",
+    "service1_desc": "KYC/AML do eintitis rialaithe. Fíorú doiciméad uathoibríoch, scagadh socrú agus PEP, comhtháthú le cláranna an Stáit.",
     "service2_title": "Rating Comhlíonadh",
-    "service2_desc": "Scórála comhlíonadh uathoibríoch bunaithe ar mhodhnóireacht Certo Governance Institute. Córas measúnachta cúig-stáit le bealach iniúchta iomlán.",
+    "service2_desc": "Scóráil choimhéadúcháin uathoibríoch bunaithe ar mhodhnóireacht Certo Governance Institute. Córas measúnaithe cúig-chéim le tacar iomlán iniúchta.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Pleananna ceartúcháin uathoibríocha agus monatóireacht a bhforghníomhú. Comhtháthú le córais ERP, GRC agus ardáin bhainistíochta riosca.",
-    "arch_label": "AILTIREACHT",
+    "service3_desc": "Pleananna leighis uathoibríocha agus monatóireacht a bhaint amach. Comhtháthú le córais ERP, GRC agus ardáin bhainistithe riosca.",
+    "arch_label": "AILTIREACHTA",
     "arch_title": "Conas a oibríonn Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Sonraí an dhréachtóra + doiciméid + comhthéacs rialúchóir",
+    "step1_desc": "Sonraí an eintitis + doiciméid + comhthéacs rialála",
     "step2_title": "Verify",
-    "step2_desc": "Fíorú céannachta, scagadh, clár poiblí",
+    "step2_desc": "Fíorú aitheantais, scagadh, clár poiblí",
     "step3_title": "Score",
     "step3_desc": "Rating comhlíonadh uathoibríoch Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "Tuarascáil PDF + API + fardal Certo Online",
+    "step4_desc": "Tuarascáil PDF + API + feidhmchlár Certo Online",
     "badge_iso": "Caighdeáin ISO",
-    "badge_compliance": "Comhlíonadh rialúchóir",
-    "badge_kyc": "Fíorú céannachta",
-    "badge_governance": "Measúnacht governance"
+    "badge_compliance": "Comhlíonadh rialála",
+    "badge_kyc": "Fíorú aitheantais",
+    "badge_governance": "Measúnú ar rialáil"
   },
   "Legal": {
     "back": "Ar ais go dtí an leathanach baile",
-    "last_updated": "Nuashonrú ar dheireannas: Márta 2026",
+    "last_updated": "Nuashonrú deireanach: Márta 2026",
     "privacy_title": "Polasaí Príobháideachta",
     "terms_title": "Téarmaí an Tseirbhíse"
   },
@@ -57,22 +74,22 @@
     "title": "Painéal Certo ID",
     "welcome": "Fáilte, {name}",
     "your_rating": "Do Rating Certo",
-    "your_delegates": "Do Dhelegáití",
+    "your_delegates": "Do Delegáidí",
     "your_accords": "Do Certo Accord",
-    "recent_activity": "Gníomhaíocht dhéanach",
+    "recent_activity": "Gníomhaíochta dhéanaigh",
     "quick_actions": "Gníomhartha tapa"
   },
   "Profile": {
     "title": "Próifíl",
     "organization": "Eagraíochta",
-    "contact_person": "Duine Teagmhála",
-    "sector": "Earnáil",
-    "edit_profile": "Cuir do phróifíl in eagar",
-    "verified_badge": "Dréachtóir fíoraithe"
+    "contact_person": "Duine teagmhála",
+    "sector": "Earnála",
+    "edit_profile": "Cuir an próifíl in eagar",
+    "verified_badge": "Eintitis fhíoraithe"
   },
   "Delegates": {
-    "title": "Delegáití Certo",
-    "add_delegate": "Cuir delegáit leis",
+    "title": "Delegáidí Certo",
+    "add_delegate": "Cuir delegáid",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stádas",
     "primary_link": "Link PRIMARY",
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

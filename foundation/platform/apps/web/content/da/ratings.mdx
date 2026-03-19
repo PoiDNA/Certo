@@ -1,53 +1,51 @@
-yaml
 ---
-title: Certo Ratings — evalueringer af ledelseskvalitet
-description: Database over aktive Certo Ratings. Hver rating er kryptografisk signeret og verificerbar offline. Evalueringerne omfatter den offentlige sektor, den private sektor, sundhedssektoren, forsvarsindustrien og civilsamfundsorganisationer.
+title: Certo Ratings — vurderinger af ledelseskvalitet
+description: Database over aktive Certo Ratings. Hver rating er kryptografisk signeret og kan verificeres offline. Vurderingerne omfatter offentlig sektor, erhvervssektor, sundhedssektor, forsvarssektor og nonprofit-sektor.
 ---
-```
 
-## Sådan læser du en Certo Rating
+## Sådan læses en Certo Rating
 
 Hver Certo Rating består af tre elementer:
 
-**Certo Score** — syntetisk evaluering af ledelseskvalitet på en skala fra 0 til 100. Et resultat over 70 betyder, at de minimale governance-standarder, der kræves af Fundationen, er opfyldt.
+**Certo Score** — en syntetisk vurdering af ledelseskvalitet på en skala fra 0 til 100. Et resultat over 70 betyder, at de minimale governance-standarder, som Fundationen kræver, er opfyldt.
 
-**Certo Vector** — retningen af ændringer i ledelseskvalitet siden den seneste evaluering:
-- `++` — væsentlig forbedring af ledelseskvalitet
+**Certo Vector** — retningen af ændringen i ledelseskvalitet siden sidste vurdering:
+- `++` — betydelig forbedring af ledelseskvalitet
 - `+` — forbedring
 - `→` — ingen væsentlig ændring
 - `−` — forværring
-- `−−` — væsentlig forværring, der kræver handling
+- `−−` — betydelig forværring, der kræver handling
 
-**Gyldighedsdato** — En Certo Rating udstedes for en periode på 12 måneder. Efter denne periode skal enheden gennemgå en ny evaluering for at bevare aktiv status.
+**Gyldighedsdato** — En Certo Rating udstedes for en periode på 12 måneder. Efter udløbet af denne periode skal enheden gennemgå en ny vurdering for at bevare aktiv status.
 
-## Verificering af rating
+## Ratingverificering
 
-Hver aktiv rating er offentligt verificerbar. Sådan verificerer du en rating:
+Hver aktiv rating kan offentligt verificeres. Sådan verificeres en rating:
 
 1. Find enheden i databasen nedenfor
 2. Klik på Trust Badge Certo ved enhedens navn
-3. Systemet viser det kryptografiske bevis for ratingen sammen med udstedelsesdato og evalueringsomfang
+3. Systemet viser et kryptografisk bevis for ratingen sammen med udstedelsesdato og vurderingsomfang
 
-Verificering kræver ikke login eller registrering. Det er tilgængeligt for alle, til enhver tid.
+Verificering kræver ikke login eller registrering. Den er tilgængelig for alle, til enhver tid.
 
-## Sektorer og evalueringskriterier
+## Sektorer og vurderingskriterier
 
 ### Offentlig sektor
 
-Evalueringen omfatter: struktur af ledelsesorganer, transparens i beslutningsprocessen, adgang til offentlig information, forvaltning af offentlige aktiver, interessenthåndtering.
+Vurderingen omfatter: struktur af styrelsesorgan, transparens i beslutningsprocessen, adgang til offentlig information, forvaltning af offentlige aktiver, interessenthåndtering.
 
-### Private sektor
+### Erhvervssektor
 
-Evalueringen omfatter: sammensætning og uafhængighed af bestyrelse, aflønningspolitik for ledelse, håndtering af interessekonflikter, forhold til minoritetsaktionærer, ESG-rapportering.
+Vurderingen omfatter: sammensætning og uafhængighed af bestyrelse, aflønningspolitik for ledelse, håndtering af interessekonflikter, relationer til minoritetsaktionærer, ESG-rapportering.
 
 ### Sundhedssektor
 
-Evalueringen omfatter: struktur for ledelse af sundhedsfaciliteter, patientsikkerhedsprocedurer, medicinsk risikostyring, overholdelse af NFZ-regler og sundhedsministeriet-regler.
+Vurderingen omfatter: struktur for ledelse af institutionen, patientsikkerhedsprocedurer, medicinsk risikostyring, overholdelse af NFZ- og sundhedsministeriums regulativer.
 
-### Forsvarsindustri
+### Forsvarssektor
 
-Evalueringen omfatter: informationssikkerhedsprocedurer, styring af forsyningskæden, overholdelse af krav for offentlige kontrahenter, interne revisioner.
+Vurderingen omfatter: informationssikkerhedsprocedurer, styring af forsyningskæde, overholdelse af krav til offentlig kontrahent, intern revision.
 
-### Civilsamfundssektor
+### Nonprofit-sektor
 
-Evalueringen omfatter: transparens i finansiering, struktur af vedtægtsorganer, gennemførelse af organisationens mission, styring af relationer med donorer.
+Vurderingen omfatter: finansieringstransparens, struktur af statutariske organer, organisationens missiongennemførelse, styring af donørrelationer.

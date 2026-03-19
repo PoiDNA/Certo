@@ -5,15 +5,15 @@
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo est la première agence de notation au monde dont les ratings sont des artefacts cryptographiques du processus — et non des opinions. Chaque décision de notation est ancrée en dehors de sa propre infrastructure, vérifiable hors ligne et auditable publiquement.",
-    "hero_cta_primary": "Consulter les ratings",
+    "description": "Certo est la première agence de notation au monde dont les notations sont des artefacts cryptographiques du processus — non des opinions. Chaque décision de notation est ancrée en dehors de sa propre infrastructure, vérifiable hors ligne et publiquement auditable.",
+    "hero_cta_primary": "Consulter les notations",
     "hero_cta_secondary": "En savoir plus",
-    "section_ratings_title": "Derniers Ratings Certo",
+    "section_ratings_title": "Dernières Notations Certo",
     "section_reports_title": "Analyses et Rapports",
     "section_about_title": "À propos de la Fondation"
   },
   "Ratings": {
-    "title": "Ratings Certo",
+    "title": "Notations Certo",
     "subtitle": "Évaluations de la qualité de la gouvernance des institutions",
     "search_placeholder": "Rechercher une institution...",
     "filter_sector": "Secteur",
@@ -21,17 +21,17 @@
     "sector_corporate": "Corporatif",
     "sector_medical": "Médical",
     "sector_defense": "Défense",
-    "sector_ngo": "Organisations de la société civile",
-    "rating_valid_until": "Rating valide jusqu'au",
+    "sector_ngo": "Organisations non gouvernementales",
+    "rating_valid_until": "Notation valide jusqu'au",
     "rating_issued": "Date d'émission",
     "no_results": "Aucun résultat trouvé",
     "view_profile": "Voir le profil"
   },
   "Nav": {
-    "ratings": "Ratings",
+    "ratings": "Notations",
     "methodology": "Méthodologie",
     "about": "À propos",
-    "login": "Connexion",
+    "login": "Se connecter",
     "documents": "Documents",
     "pipeline": "Pipeline",
     "dashboard": "Tableau de bord"
@@ -40,33 +40,33 @@
     "copyright": "Fundacja Certo Governance Institute © {year}",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
-    "contact": "Kontakt"
+    "contact": "Contact"
   },
   "About": {
-    "title": "À propos de Certo Governance Institute",
+    "title": "À propos de la Fundacja Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "Construire une culture de bonne gouvernance par l'évaluation indépendante et la promotion des standards de gouvernance en Pologne et en Europe.",
+    "mission_text": "Construire une culture de bonne gouvernance par l'évaluation indépendante et la promotion des normes de gouvernance en Pologne et en Europe.",
     "independence_title": "Indépendance",
-    "independence_text": "La Fondation est indépendante des entités évaluées, des autorités publiques et des intérêts commerciaux.",
+    "independence_text": "La Fondation est indépendante des institutions évaluées, des organes du pouvoir public et des intérêts commerciaux.",
     "methodology_title": "Méthodologie",
-    "methodology_text": "Les ratings Certo reposent sur une méthodologie rigoureuse basée sur les normes ISO et les directives de l'UE."
+    "methodology_text": "Les notations Certo sont fondées sur une méthodologie rigoureuse basée sur les normes ISO et les directives de l'UE."
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Contact",
     "subtitle": "Fundacja Certo Governance Institute",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
+    "form_title": "Nous écrire",
+    "form_name": "Nom et prénom",
+    "form_email": "Adresse e-mail",
+    "form_subject": "Sujet",
+    "form_message": "Message",
+    "form_submit": "Envoyer le message",
+    "form_success": "Votre message a été envoyé. Nous vous répondrons dès que possible.",
+    "subject_general": "Demande générale",
     "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "subject_methodology": "Méthodologie",
+    "subject_cooperation": "Coopération",
+    "subject_media": "Médias"
   }
 }

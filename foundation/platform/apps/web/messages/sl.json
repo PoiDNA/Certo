@@ -5,24 +5,24 @@
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prva svetovna agencija za ocenjevanje, katere ocene so kriptografski artefakti procesa — ne mnenja. Vsaka odločitev o ocenjevanju je zasidrana zunaj lastne infrastrukture, preverljiva brez interneta in javno revidibitna.",
-    "hero_cta_primary": "Preglejte ocene",
-    "hero_cta_secondary": "Izvedite več",
-    "section_ratings_title": "Najnovejše Certo Ocene",
-    "section_reports_title": "Analize in Poročila",
-    "section_about_title": "O Fundaciji"
+    "description": "Certo je prva svjetska agencija za ocenjevanje, katere ocene so kriptografski artefakti procesa — ne mnenja. Vsaka odločitev o ocenjevanju je zasidrana zunaj lastne infrastrukture, preverljiva brez povezave z internetom in javno revidirana.",
+    "hero_cta_primary": "Oglejte si ocene",
+    "hero_cta_secondary": "Več informacij",
+    "section_ratings_title": "Najnovejše ocene Certo",
+    "section_reports_title": "Analize in poročila",
+    "section_about_title": "O fundaciji"
   },
   "Ratings": {
-    "title": "Certo Ocene",
+    "title": "Ocene Certo",
     "subtitle": "Ocene kakovosti upravljanja institucij",
-    "search_placeholder": "Poiščite institucijo...",
+    "search_placeholder": "Iščite institucijo...",
     "filter_sector": "Sektor",
     "sector_public": "Javni",
     "sector_corporate": "Korporativni",
     "sector_medical": "Zdravstveni",
     "sector_defense": "Obrambni",
-    "sector_ngo": "Neprofitni",
-    "rating_valid_until": "Ocena veljavna do",
+    "sector_ngo": "Nevladni",
+    "rating_valid_until": "Ocena velja do",
     "rating_issued": "Datum izdaje",
     "no_results": "Ni rezultatov",
     "view_profile": "Oglejte si profil"
@@ -30,7 +30,7 @@
   "Nav": {
     "ratings": "Ocene",
     "methodology": "Metodologija",
-    "about": "O Fundaciji",
+    "about": "O fundaciji",
     "login": "Prijava",
     "documents": "Dokumenti",
     "pipeline": "Pipeline",
@@ -38,35 +38,35 @@
   },
   "Footer": {
     "copyright": "Fundacija Certo Governance Institute © {year}",
-    "privacy": "Politika Zasebnosti",
-    "terms": "Pogoji Uporabe",
-    "contact": "Kontakt"
+    "privacy": "Politika zasebnosti",
+    "terms": "Pogoji uporabe",
+    "contact": "Stik"
   },
   "About": {
     "title": "O Fundaciji Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Gradnja kulture dobrega upravljanja preko neodvisnega ocenjevanja in spodbujanja standardov governance v Sloveniji in Evropi.",
+    "mission_text": "Gradnja kulture dobrih praks upravljanja prek neodvisnega ocenjevanja in spodbujanja standardov governance v Sloveniji in Evropi.",
     "independence_title": "Neodvisnost",
-    "independence_text": "Fundacija je neodvisna od ocenjenih subjektov, organov javne oblasti in komercialni interesov.",
+    "independence_text": "Fundacija je neodvisna od subjektov, ki jih ocenjuje, javnih oblasti in komercialni interesi.",
     "methodology_title": "Metodologija",
-    "methodology_text": "Certo Ocene temeljijo na strogih metodologijah, ki se opirajo na standarde ISO in smernice EU."
+    "methodology_text": "Ocene Certo temeljijo na strogi metodologiji, ki temelji na ISO standardih in smernicah EU."
   },
   "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "title": "Stik",
+    "subtitle": "Fundacija Certo Governance Institute",
+    "address": "00-124 Varšava, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "form_title": "Napišite nam",
+    "form_name": "Ime in priimek",
+    "form_email": "E-poštni naslov",
+    "form_subject": "Naslov",
+    "form_message": "Sporočilo",
+    "form_submit": "Pošlji sporočilo",
+    "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo v najkrajšem možnem času.",
+    "subject_general": "Splošna vprašanja",
+    "subject_rating": "Certo Rating",
+    "subject_methodology": "Metodologija",
+    "subject_cooperation": "Sodelovanje",
+    "subject_media": "Mediji"
   }
 }

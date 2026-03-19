@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af styring i offentlige, erhvervsmæssige og non-profit institutioner."
+    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af styring i offentlige, private og almennyttige institutioner."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -37,9 +37,9 @@
     "ratings": "Ratings",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om Fundationen",
+    "about": "Om Instituttet",
     "contact": "Kontakt",
-    "dashboard": "Dashboard",
+    "dashboard": "Instrumentbræt",
     "settings": "Indstillinger"
   },
   "Auth": {
@@ -50,11 +50,11 @@
     "password_label": "Adgangskode",
     "forgot_password": "Glemt din adgangskode?",
     "no_account": "Har du ikke en konto?",
-    "register": "Tilmeld dig"
+    "register": "Opret konto"
   },
   "Errors": {
     "404_title": "Siden blev ikke fundet",
-    "404_description": "Siden, du søger efter, eksisterer ikke eller er blevet flyttet.",
+    "404_description": "Siden du søger efter findes ikke eller er blevet flyttet.",
     "500_title": "Serverfejl",
     "500_description": "Der opstod en uventet fejl. Prøv igen senere.",
     "unauthorized": "Ingen adgang. Log ind for at fortsætte."

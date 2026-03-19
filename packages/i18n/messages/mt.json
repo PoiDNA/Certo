@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organu ratingu indipendenti li jevalwa l-kwalità tal-ġestjoni tal-istituzzjonijiet pubbliċi, korporattivi u mingħajr skop lu-qligħ."
+    "description": "Organu rating indipendenti li jevalwa l-kwalità tal-ġestjoni ta' istituzzjonijiet pubbliċi, korporattivi u mhux għall-profitt."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,34 +17,34 @@
     "login": "Dħol",
     "logout": "Oħroġ",
     "privacyPolicy": "Politika tal-Privatezza",
-    "termsOfUse": "Kundizzjonijiet tal-Użu",
-    "loading": "Qed tlaħħin...",
-    "error": "Seħħa żball",
-    "save": "Ħifx",
-    "cancel": "Ikkancella",
+    "termsOfUse": "Kundizzjonijiet ta' Użu",
+    "loading": "Qed jiċċarika...",
+    "error": "Ħdith żball",
+    "save": "Issalva",
+    "cancel": "Ikkanċella",
     "confirm": "Ikkonferma",
     "back": "Lura",
-    "next": "Li jmiss",
+    "next": "Minn hawn",
     "close": "Agħlaq",
     "search": "Fittex",
-    "download": "Nzil",
-    "verified": "Vverifikat",
+    "download": "Niżżel",
+    "verified": "Verifikat",
     "active": "Attiv",
     "inactive": "Inattiv"
   },
   "Navigation": {
-    "home": "Paġna Ewlenija",
+    "home": "Paġna Prinċipali",
     "ratings": "Ratings",
     "reports": "Rapporti",
     "analysis": "Analiżi",
     "about": "Dwar il-Fondazzjoni",
     "contact": "Kontatt",
-    "dashboard": "Tabella tal-Kontroll",
-    "settings": "Issettjonamenti"
+    "dashboard": "Pannell",
+    "settings": "Settings"
   },
   "Auth": {
     "login_title": "Dħol",
-    "login_subtitle": "Dħol għall-kont tiegħek",
+    "login_subtitle": "Idħol għall-kont tiegħek",
     "login_with_google": "Dħol permezz ta' Google",
     "email_label": "Indirizz ta' Posta Elettronika",
     "password_label": "Password",
@@ -53,16 +53,16 @@
     "register": "Irreġistra"
   },
   "Errors": {
-    "404_title": "Il-Paġna ma nstabx",
-    "404_description": "Il-paġna li qed tfittex ma teżistix jew nġiet imwegħda.",
+    "404_title": "Paġna ma nstabx",
+    "404_description": "Il-paġna li inti qed tfittex ma tistax eżisti jew ġiet moxxa.",
     "500_title": "Żball tas-Server",
-    "500_description": "Seħħa żball mhux mistennija. Prova mill-ġdid aktar tard.",
-    "unauthorized": "L-ebda aċċess. Dħol biex tkompli."
+    "500_description": "Ħdith żball mhux mistenni. Pprova għal darb'oħra aktar tard.",
+    "unauthorized": "Ebda aċċess. Idħol biex tkompli."
   },
   "Footer": {
-    "rights": "Drittijiet riservati",
+    "rights": "Kollha d-drittijiet huma riservati",
     "privacy": "Politika tal-Privatezza",
-    "terms": "Kundizzjonijiet tal-Użu",
+    "terms": "Kundizzjonijiet ta' Użu",
     "contact": "Kontatt"
   }
 }

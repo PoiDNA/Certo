@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja kolmannen sektorin organisaatioiden hallintokäytäntöjen laatua."
+    "description": "Riippumaton ratingingantoelin, joka arvioi julkisten, yritys- ja kansalaisjärjestöjen hallinnon laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -26,30 +26,30 @@
     "back": "Takaisin",
     "next": "Seuraava",
     "close": "Sulje",
-    "search": "Etsi",
+    "search": "Hae",
     "download": "Lataa",
     "verified": "Vahvistettu",
     "active": "Aktiivinen",
     "inactive": "Passiivinen"
   },
   "Navigation": {
-    "home": "Pääsivu",
-    "ratings": "Luokitukset",
+    "home": "Etusivu",
+    "ratings": "Ratingit",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Säätiöstä",
-    "contact": "Ota yhteyttä",
-    "dashboard": "Kojelauta",
+    "about": "Tietoja säätiöstä",
+    "contact": "Yhteystiedot",
+    "dashboard": "Kojetaulu",
     "settings": "Asetukset"
   },
   "Auth": {
     "login_title": "Kirjaudu sisään",
-    "login_subtitle": "Kirjaudu sisään tilillesi",
+    "login_subtitle": "Kirjaudu sisään tiliisi",
     "login_with_google": "Kirjaudu sisään Googlella",
     "email_label": "Sähköpostiosoite",
     "password_label": "Salasana",
     "forgot_password": "Unohditko salasanasi?",
-    "no_account": "Sinulla ei ole tiliä?",
+    "no_account": "Eikö sinulla ole tiliä?",
     "register": "Rekisteröidy"
   },
   "Errors": {
@@ -57,12 +57,12 @@
     "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
     "500_title": "Palvelinvirhe",
     "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
-    "unauthorized": "Pääsy kielletty. Kirjaudu sisään jatkaaksesi."
+    "unauthorized": "Käyttöoikeus estetty. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Ota yhteyttä"
+    "contact": "Yhteystiedot"
   }
 }

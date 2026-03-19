@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteedi verifitseerimine ja compliance avalike institutsioonide ja korporatsioonide jaoks."
+    "description": "Identiteedi kontrollimine ja vastavusesse juhtimine avalik-õiguslike asutuste ja ettevõtete jaoks."
   },
   "Nav": {
     "solutions": "Lahendused",
     "technology": "Tehnoloogia",
-    "foundation": "Certo Fundatsioon",
+    "foundation": "Certo Governance Institute",
     "login": "Logi sisse"
   },
   "Footer": {
@@ -15,48 +15,65 @@
     "terms": "Teenuse tingimused",
     "contact": "Kontakt"
   },
+  "Contact": {
+    "title": "Kontakt",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Varssavi, Puławska tn 2B",
+    "email": "certo@certo.id",
+    "form_title": "Kirjuta meile",
+    "form_name": "Nimi",
+    "form_email": "Meiliaadress",
+    "form_subject": "Teema",
+    "form_message": "Sõnum",
+    "form_submit": "Saada sõnum",
+    "form_success": "Sõnum on saadetud. Vastame esimesel võimalusel.",
+    "subject_general": "Üldine pärimine",
+    "subject_implementation": "Juurutamine",
+    "subject_technical": "Tehniline tugi",
+    "subject_cooperation": "Koostöö"
+  },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteet.",
     "hero_line2": "Vastavus.",
     "hero_line3": "Kindlus.",
-    "hero_description": "Verifitseerimis- ja compliance infrastruktuur avalike institutsioonide, korporatsioonide ja reguleeritud üksuste jaoks. Ehitatud standarditele",
+    "hero_description": "Kontrolli- ja vastavusinfrastruktuur avalik-õiguslike asutuste, ettevõtete ja reguleeritud üksuste jaoks. Ehitatud standardite alusel",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "ALUSTA RAKENDAMIST",
+    "cta_primary": "ALUSTA JUURUTAMIST",
     "cta_secondary": "TEENUSED",
     "services_label": "TEENUSED",
-    "services_title": "Compliance infrastruktuuri kolm kihti",
-    "service1_title": "Identiteedi verifitseerimine",
-    "service1_desc": "KYC/AML reguleeritud üksuste jaoks. Automaatne dokumentide verifitseerimine, sanktsioonide ja PEP-ide screening, integreerimine riiklike registritega.",
-    "service2_title": "Compliance'i rating",
-    "service2_desc": "Automaatne vastavuse skoorimisüsteem, mis põhineb Certo Governance Institute'i metoodoloogial. Viietasandiline hindamissüsteem täieliku auditijäljega.",
+    "services_title": "Kolm vastavusinfrastruktuuri kihti",
+    "service1_title": "Identiteedi kontrollimine",
+    "service1_desc": "KYC/AML reguleeritud üksuste jaoks. Dokumentide automaatne kontroll, sanktsioonide ja PEP-i screening, integratsioon riigireistritega.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Automaatne vastavuse hindamine, mis põhineb Certo Governance Institute'i metodoloogial. Viietasandiline hindamissüsteem täieliku auditi rajaga.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automaatsed parandusplaanid ja nende rakendamise monitooring. Integreerimine ERP-, GRC-süsteemide ja riskijuhtimise platvormidega.",
+    "service3_desc": "Automaatsed parandusplaanid ja nende täitmise jälgimine. Integratsioon ERP-, GRC- ja riskijuhtimisplatvormidega.",
     "arch_label": "ARHITEKTUUR",
-    "arch_title": "Kuidas Certo ID toimib",
-    "step1_title": "Sisestus",
+    "arch_title": "Kuidas Certo ID töötab",
+    "step1_title": "Intake",
     "step1_desc": "Üksuse andmed + dokumendid + regulatiivne kontekst",
-    "step2_title": "Verifitseerimine",
-    "step2_desc": "Identiteedi verifitseerimine, screening, avalik register",
-    "step3_title": "Skoorimisüsteem",
-    "step3_desc": "Automaatne compliance rating Certo Vector",
-    "step4_title": "Aruanne",
-    "step4_desc": "PDF-aruanne + API + Certo Online dashboard",
+    "step2_title": "Verify",
+    "step2_desc": "Identiteedi kontroll, screening, avalik register",
+    "step3_title": "Score",
+    "step3_desc": "Automaatne vastavuse rating Certo Vector",
+    "step4_title": "Report",
+    "step4_desc": "PDF-aruanne + API + Certo Online juhtpaneel",
     "badge_iso": "ISO standardid",
     "badge_compliance": "Regulatiivne vastavus",
-    "badge_kyc": "Identiteedi verifitseerimine",
-    "badge_governance": "Governance hindamine"
+    "badge_kyc": "Identiteedi kontrollimine",
+    "badge_governance": "Juhtimise hindamine"
   },
   "Legal": {
     "back": "Tagasi avalehele",
-    "last_updated": "Viimane värskendus: märts 2026",
+    "last_updated": "Viimati värskendatud: märts 2026",
     "privacy_title": "Privaatsuspoliitika",
     "terms_title": "Teenuse tingimused"
   },
   "Dashboard": {
-    "title": "Certo ID paneeli",
+    "title": "Certo ID juhtpaneel",
     "welcome": "Tere, {name}",
-    "your_rating": "Teie Certo Rating",
+    "your_rating": "Teie Rating Certo",
     "your_delegates": "Teie Delegaadid",
     "your_accords": "Teie Certo Accord",
     "recent_activity": "Viimane tegevus",
@@ -68,34 +85,17 @@
     "contact_person": "Kontaktisik",
     "sector": "Sektor",
     "edit_profile": "Redigeeri profiili",
-    "verified_badge": "Verifitseeritud üksus"
+    "verified_badge": "Kontrollitud üksus"
   },
   "Delegates": {
     "title": "Certo Delegaadid",
     "add_delegate": "Lisa delegaat",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Olek",
+    "delegate_status": "Staatus",
     "primary_link": "PRIMARY link",
     "failover_link": "FAILOVER link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

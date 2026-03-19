@@ -1,41 +1,41 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Trouver un Conseiller",
-    "description": "Conseillers accrédités Certo. Gouvernance d'entreprise et conformité."
+    "title": "Certo Consulting — Trouver un Consultant",
+    "description": "Consultants accrédités Certo. Gouvernance d'entreprise et conformité."
   },
   "Nav": {
-    "advisors": "Conseillers",
+    "advisors": "Consultants",
     "expertise": "Expertise",
     "login": "Connexion"
   },
   "Footer": {
     "description": "Conseil expert en gouvernance d'entreprise, conformité et sécurité pour les leaders du marché.",
     "ecosystem": "Écosystème Certo",
-    "accreditation": "Tous les conseillers sont accrédités par la Fondation Certo Governance Institute",
+    "accreditation": "Tous les consultants sont accrédités par la Fondation Certo Governance Institute",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions générales",
-    "contact": "Kontakt"
+    "contact": "Contact"
   },
   "Home": {
     "hero_title": "Conseil expert\nau niveau de la direction.",
-    "hero_subtitle": "Nous connectons les conseillers accrédités Certo avec les institutions exigeant les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
+    "hero_subtitle": "Nous connectons les consultants accrédités Certo avec les institutions exigeant les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
     "hero_cta": "Trouver un expert",
-    "finder_title": "Je souhaite discuter avec un expert en :",
+    "finder_title": "Je souhaite parler avec un expert en :",
     "area_health": "Santé",
     "area_local_gov": "Collectivités territoriales",
     "area_defense": "Défense",
     "area_finance": "Finances",
     "area_education": "Éducation",
-    "form_title": "Laissez vos coordonnées afin que nous sélectionnions le conseiller approprié dans le domaine",
+    "form_title": "Laissez vos coordonnées afin que nous sélectionnions le consultant approprié dans le domaine",
     "form_name": "Nom et prénom",
-    "form_email": "Adresse email (professionnelle)",
-    "form_org": "Nom de l'organisation / Fonction",
+    "form_email": "Adresse e-mail (professionnelle)",
+    "form_org": "Nom de l'organisation / Poste",
     "form_submit": "Envoyer la demande",
     "advisors_title": "Exemples d'experts de notre réseau",
-    "advisor_bio": "Conseiller accrédité Certo avec une expérience approfondie dans l'optimisation des processus pour les institutions stratégiques du marché.",
-    "advisor_1_bio": "Experte dans le domaine de la santé et de la conformité, responsable du maintien et du renforcement de la note Certo dans le secteur médical.",
-    "advisor_2_bio": "Spécialiste en finances et audit, chargé du maintien et du renforcement de la note Certo dans le secteur financier.",
-    "advisor_3_bio": "Conseiller en défense et cybersécurité, responsable du renforcement de la note Certo dans le secteur de la défense."
+    "advisor_bio": "Consultant accrédité Certo ayant une expérience approfondie dans l'optimisation des processus pour les institutions stratégiques du marché.",
+    "advisor_1_bio": "Experte dans le domaine de la santé et de la conformité, responsable du maintien et du renforcement de la notation Certo dans le secteur médical.",
+    "advisor_2_bio": "Spécialiste des finances et de l'audit, soucieux de maintenir et renforcer la notation Certo dans le secteur financier.",
+    "advisor_3_bio": "Consultant en défense et cybersécurité, responsable du renforcement de la notation Certo dans l'industrie de la défense."
   },
   "Legal": {
     "back": "Retour à la page d'accueil",
@@ -44,7 +44,7 @@
     "terms_title": "Conditions d'utilisation"
   },
   "FindAdvisor": {
-    "title": "Trouver un conseiller Certo",
+    "title": "Trouver un consultant Certo",
     "sector_label": "Secteur de votre institution",
     "need_label": "De quoi avez-vous besoin ?",
     "need_audit": "Audit de gouvernance",
@@ -52,30 +52,30 @@
     "need_training": "Formations et ateliers",
     "need_rating": "Préparation à la notation",
     "region_label": "Région",
-    "submit": "Rechercher un conseiller"
+    "submit": "Chercher un consultant"
   },
   "Advisor": {
     "accredited_by": "Accrédité par Certo",
     "specialization": "Spécialisation",
     "sectors": "Secteurs",
-    "contact_advisor": "Contactez",
+    "contact_advisor": "Contacter",
     "view_profile": "Voir le profil"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Contact",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varsovie, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Nous écrire",
+    "form_name": "Nom et prénom",
+    "form_email": "Adresse e-mail",
+    "form_subject": "Objet",
+    "form_message": "Message",
+    "form_submit": "Envoyer le message",
+    "form_success": "Le message a été envoyé. Nous vous répondrons dès que possible.",
+    "subject_general": "Demande générale",
+    "subject_advisory": "Conseil",
+    "subject_accreditation": "Accréditation de consultant",
+    "subject_cooperation": "Coopération"
   }
 }

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificarea identității și conformitate pentru instituții publice și corporații."
+    "description": "Verificare identitate și compliance pentru instituții publice și corporații."
   },
   "Nav": {
     "solutions": "Soluții",
@@ -13,25 +13,42 @@
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politica de Confidențialitate",
     "terms": "Termeni și Condiții",
-    "contact": "Kontakt"
+    "contact": "Contact"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Varșovia, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Scrie-ne",
+    "form_name": "Nume și prenume",
+    "form_email": "Adresă de e-mail",
+    "form_subject": "Subiect",
+    "form_message": "Mesaj",
+    "form_submit": "Trimite mesaj",
+    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând.",
+    "subject_general": "Întrebare generală",
+    "subject_implementation": "Implementare",
+    "subject_technical": "Suport tehnic",
+    "subject_cooperation": "Cooperare"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identitate.",
     "hero_line2": "Conformitate.",
     "hero_line3": "Certitudine.",
-    "hero_description": "Infrastructura de verificare și conformitate pentru instituții publice, corporații și entități reglementate. Construită pe standarde",
+    "hero_description": "Infrastructură de verificare și compliance pentru instituții publice, corporații și entități reglementate. Construită pe standarde",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "INIȚIAȚI IMPLEMENTAREA",
+    "cta_primary": "ÎNCEPE IMPLEMENTAREA",
     "cta_secondary": "SERVICII",
     "services_label": "SERVICII",
-    "services_title": "Trei straturi ale infrastructurii de conformitate",
-    "service1_title": "Verificarea Identității",
-    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată a documentelor, screening sancțiuni și PEP, integrare cu registrele statului.",
-    "service2_title": "Rating Conformitate",
-    "service2_desc": "Scoring automat al conformității bazat pe metodologia Certo Governance Institute. Sistem de evaluare cu cinci niveluri cu trasabilitate audit completă.",
+    "services_title": "Trei niveluri ale infrastructurii de compliance",
+    "service1_title": "Verificare Identitate",
+    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată a documentelor, screening de sancțiuni și PEP, integrare cu registrele de stat.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Scoring automat de conformitate bazat pe metodologia Certo Governance Institute. Sistem de evaluare în cinci trepte cu audit trail complet.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Planuri corective automate și monitorizarea implementării acestora. Integrare cu sistemele ERP, GRC și platformele de management al riscurilor.",
+    "service3_desc": "Planuri de remediere automată și monitorizarea implementării lor. Integrare cu sisteme ERP, GRC și platforme de gestionare a riscurilor.",
     "arch_label": "ARHITECTURĂ",
     "arch_title": "Cum funcționează Certo ID",
     "step1_title": "Intake",
@@ -44,7 +61,7 @@
     "step4_desc": "Raport PDF + API + dashboard Certo Online",
     "badge_iso": "Standarde ISO",
     "badge_compliance": "Conformitate regulatorie",
-    "badge_kyc": "Verificarea identității",
+    "badge_kyc": "Verificare identitate",
     "badge_governance": "Evaluare governance"
   },
   "Legal": {
@@ -54,18 +71,18 @@
     "terms_title": "Termeni și Condiții"
   },
   "Dashboard": {
-    "title": "Panou Certo ID",
-    "welcome": "Bun venit, {name}",
-    "your_rating": "Ratingul tău Certo",
+    "title": "Tablou Certo ID",
+    "welcome": "Bine ai venit, {name}",
+    "your_rating": "Rating-ul tău Certo",
     "your_delegates": "Delegații tăi",
-    "your_accords": "Certo Accord ale tale",
+    "your_accords": "Certo Accord-urile tale",
     "recent_activity": "Activitate recentă",
     "quick_actions": "Acțiuni rapide"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizație",
-    "contact_person": "Persoană de contact",
+    "contact_person": "Persoană contact",
     "sector": "Sector",
     "edit_profile": "Editează profil",
     "verified_badge": "Entitate verificată"
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }

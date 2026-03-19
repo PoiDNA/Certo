@@ -9,50 +9,50 @@
     "login": "Login"
   },
   "Footer": {
-    "description": "Expert advisory services in corporate governance, compliance and security for market leaders.",
+    "description": "Expert advisory in corporate governance, compliance and security for market-leading organizations.",
     "ecosystem": "Certo Ecosystem",
     "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use",
-    "contact": "Kontakt"
+    "terms": "Terms of Service",
+    "contact": "Contact"
   },
   "Home": {
     "hero_title": "Expert advisory\nat board level.",
-    "hero_subtitle": "We connect accredited Certo advisors with institutions requiring the highest standards of corporate governance and regulatory compliance.",
+    "hero_subtitle": "We connect accredited Certo advisors with organizations requiring the highest standards of corporate governance and regulatory compliance.",
     "hero_cta": "Find an expert",
-    "finder_title": "I want to speak with an expert in:",
+    "finder_title": "I want to talk to an expert in:",
     "area_health": "Healthcare",
     "area_local_gov": "Local Government",
     "area_defense": "Defense",
     "area_finance": "Finance",
     "area_education": "Education",
-    "form_title": "Leave your contact details so we can match you with an appropriate advisor in the",
+    "form_title": "Leave your contact details so we can match you with the right advisor from the area of",
     "form_name": "Full Name",
-    "form_email": "Email address (business)",
+    "form_email": "Email Address (work)",
     "form_org": "Organization Name / Position",
-    "form_submit": "Send request",
-    "advisors_title": "Sample experts from our network",
-    "advisor_bio": "Accredited Certo advisor with extensive experience in process optimization for strategic market institutions.",
-    "advisor_1_bio": "Expert in healthcare and compliance, responsible for maintaining and strengthening Certo rating in the medical sector.",
-    "advisor_2_bio": "Specialist in finance and audit, ensuring the maintenance and strengthening of Certo rating in the financial sector.",
-    "advisor_3_bio": "Advisor in defense and cybersecurity, responsible for strengthening Certo rating in the defense industry."
+    "form_submit": "Submit Inquiry",
+    "advisors_title": "Example experts from our network",
+    "advisor_bio": "Accredited Certo advisor with extensive experience in process optimization for strategic market-leading organizations.",
+    "advisor_1_bio": "Healthcare and compliance expert responsible for maintaining and strengthening Certo Rating in the medical sector.",
+    "advisor_2_bio": "Finance and audit specialist dedicated to maintaining and strengthening Certo Rating in the financial sector.",
+    "advisor_3_bio": "Defense and cybersecurity advisor responsible for strengthening Certo Rating in the defense industry."
   },
   "Legal": {
     "back": "Back to homepage",
     "last_updated": "Last updated: March 2026",
     "privacy_title": "Privacy Policy",
-    "terms_title": "Terms of Use"
+    "terms_title": "Terms of Service"
   },
   "FindAdvisor": {
-    "title": "Find a Certo advisor",
+    "title": "Find a Certo Advisor",
     "sector_label": "Your institution's sector",
     "need_label": "What do you need?",
     "need_audit": "Governance audit",
     "need_advisory": "Strategic advisory",
     "need_training": "Training and workshops",
-    "need_rating": "Preparation for rating",
+    "need_rating": "Rating preparation",
     "region_label": "Region",
-    "submit": "Search for advisor"
+    "submit": "Search advisor"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",
@@ -62,20 +62,20 @@
     "view_profile": "View profile"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Contact",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Warsaw, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Write to us",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_subject": "Subject",
+    "form_message": "Message",
+    "form_submit": "Send Message",
+    "form_success": "Your message has been sent. We will respond as soon as possible.",
+    "subject_general": "General Inquiry",
+    "subject_advisory": "Advisory",
+    "subject_accreditation": "Advisor Accreditation",
+    "subject_cooperation": "Cooperation"
   }
 }

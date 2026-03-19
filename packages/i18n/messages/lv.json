@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neatkarīgs reitinga organs, kas vērtē publisko, korporatīvo un bezpeļņas organizāciju pārvaldības kvalitāti."
+    "description": "Neatkarīgs reitinga organs, kas novērtē publisko, korporatīvo un bezpeļņas organizāciju pārvaldības kvalitāti."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Pierakstieties",
-    "logout": "Izrakstieties",
+    "login": "Pierakstīties",
+    "logout": "Izrakstīties",
     "privacyPolicy": "Privātuma politika",
     "termsOfUse": "Lietošanas noteikumi",
     "loading": "Ielāde...",
@@ -28,7 +28,7 @@
     "close": "Aizvērt",
     "search": "Meklēt",
     "download": "Lejupielādēt",
-    "verified": "Pārbaudīts",
+    "verified": "Verificēts",
     "active": "Aktīvs",
     "inactive": "Neaktīvs"
   },
@@ -39,25 +39,25 @@
     "analysis": "Analīzes",
     "about": "Par Fondu",
     "contact": "Kontakti",
-    "dashboard": "Panelis",
+    "dashboard": "Vadības panelis",
     "settings": "Iestatījumi"
   },
   "Auth": {
-    "login_title": "Pierakstieties",
+    "login_title": "Pierakstīties",
     "login_subtitle": "Pierakstieties savā kontā",
-    "login_with_google": "Pierakstieties, izmantojot Google",
+    "login_with_google": "Pierakstīties ar Google",
     "email_label": "E-pasta adrese",
     "password_label": "Parole",
-    "forgot_password": "Aizmirsāt paroli?",
-    "no_account": "Jums nav konta?",
-    "register": "Reģistrējieties"
+    "forgot_password": "Aizmirsi paroli?",
+    "no_account": "Vēl nav konta?",
+    "register": "Reģistrēties"
   },
   "Errors": {
-    "404_title": "Lapa nav atrasta",
-    "404_description": "Meklētā lapa neeksistē vai ir pārvietota.",
+    "404_title": "Lapa netika atrasta",
+    "404_description": "Lapa, kuru meklē, neeksistē vai tā ir pārvietota.",
     "500_title": "Servera kļūda",
-    "500_description": "Radās neparedzēta kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.",
-    "unauthorized": "Pieeja liegta. Pierakstieties, lai turpinātu."
+    "500_description": "Radās negaidīta kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.",
+    "unauthorized": "Piekļuve liegta. Pierakstieties, lai turpinātu."
   },
   "Footer": {
     "rights": "Visas tiesības paturētas",

@@ -1,44 +1,44 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Poiščite svetovalca",
-    "description": "Akreditirani svetovalci Certo. Ład korporacyjny in skladnost."
+    "description": "Akreditirani svetovalci Certo. Corporate governance in skladnost."
   },
   "Nav": {
     "advisors": "Svetovalci",
-    "expertise": "Strokovna znanja",
+    "expertise": "Strokovnost",
     "login": "Prijava"
   },
   "Footer": {
-    "description": "Strokovno svetovanje na področju ładu korporacyjny, skladnosti in varnosti za tržne vodje.",
+    "description": "Strokovno svetovanje na področju corporate governance, skladnosti in varnosti za vodilne na trgu.",
     "ecosystem": "Ekosistem Certo",
     "accreditation": "Vsi svetovalci so akreditirani s strani Fundacije Certo Governance Institute",
     "privacy": "Politika zasebnosti",
     "terms": "Pogoji uporabe",
-    "contact": "Kontakt"
+    "contact": "Stik"
   },
   "Home": {
-    "hero_title": "Strokovno svetovanje\nna ravni upravljanja.",
-    "hero_subtitle": "Povezujemo akreditirane svetovalce Certo z institucijami, ki zahtevajo najvišje standarde ładu korporacyjny in skladnosti s predpisi.",
+    "hero_title": "Strokovno svetovanje\nna ravni uprave.",
+    "hero_subtitle": "Povezujemo akreditirane svetovalce Certo z institucijami, ki zahtevajo najvišje standarde corporate governance in regulativne skladnosti.",
     "hero_cta": "Poiščite strokovnjaka",
-    "finder_title": "Rad bi se pogovoril s strokovnjakom za:",
-    "area_health": "Zdravstveno varstvo",
-    "area_local_gov": "Lokalne skupnosti",
+    "finder_title": "Želim se pogovoriti s strokovnjakom za:",
+    "area_health": "Zdravstvo",
+    "area_local_gov": "Lokalna samouprava",
     "area_defense": "Obrana",
     "area_finance": "Finance",
     "area_education": "Izobraževanje",
-    "form_title": "Pustite svoje podatke in mi vam izbrane ustreznega svetovalca s področja",
+    "form_title": "Pustite kontakt, da vam izberemo ustreznega svetovalca s področja",
     "form_name": "Ime in priimek",
     "form_email": "Elektronski naslov (službeni)",
     "form_org": "Naziv organizacije / Položaj",
-    "form_submit": "Pošlji poizvedbo",
+    "form_submit": "Pošlji povpraševanje",
     "advisors_title": "Primeri strokovnjakov iz naše mreže",
-    "advisor_bio": "Akreditirani svetovalec Certo s trajnim izkušnjami pri optimizaciji procesov za strateške tržne institucije.",
-    "advisor_1_bio": "Strokovnjakinja na področju zdravstvene varnosti in skladnosti, odgovorna za vzdrževanje in krepitev ratinga Certo v medicinski industriji.",
-    "advisor_2_bio": "Specialist na področju financ in revizije, skrben za vzdrževanje in krepitev ratinga Certo v finančnem sektorju.",
+    "advisor_bio": "Akreditirani svetovalec Certo z dolgoletnimi izkušnjami pri optimizaciji procesov za strateške tržne institucije.",
+    "advisor_1_bio": "Strokovnjakinja na področju zdravstva in skladnosti, odgovorna za vzdrževanje in krepitev ratinga Certo v medicinski branži.",
+    "advisor_2_bio": "Specialist na področju financ in revizije, zadolžen za vzdrževanje in krepitev ratinga Certo v finančnem sektorju.",
     "advisor_3_bio": "Svetovalec na področju obrane in kibernetske varnosti, odgovoren za krepitev ratinga Certo v obrambi."
   },
   "Legal": {
-    "back": "Nazaj na glavno stran",
+    "back": "Nazaj na domačo stran",
     "last_updated": "Zadnja posodobitev: Marec 2026",
     "privacy_title": "Politika zasebnosti",
     "terms_title": "Pogoji uporabe"
@@ -52,30 +52,30 @@
     "need_training": "Usposabljanja in delavnice",
     "need_rating": "Priprava na rating",
     "region_label": "Regija",
-    "submit": "Poiščite svetovalca"
+    "submit": "Išči svetovalca"
   },
   "Advisor": {
     "accredited_by": "Akreditiran s strani Certo",
     "specialization": "Specializacija",
     "sectors": "Sektorji",
     "contact_advisor": "Kontaktirajte",
-    "view_profile": "Poglejte profil"
+    "view_profile": "Oglejte si profil"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Stik",
     "subtitle": "Certo ID PSA",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Napišite nam",
+    "form_name": "Ime in priimek",
+    "form_email": "Elektronski naslov",
+    "form_subject": "Zadeva",
+    "form_message": "Sporočilo",
+    "form_submit": "Pošlji sporočilo",
+    "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo čim prejšnje.",
+    "subject_general": "Splošno povpraševanje",
+    "subject_advisory": "Svetovanje",
+    "subject_accreditation": "Akreditacija svetovalca",
+    "subject_cooperation": "Sodelovanje"
   }
 }

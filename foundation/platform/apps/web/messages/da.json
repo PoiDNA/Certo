@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af styring inden for den offentlige, private, medicinske og forsvarssektor."
+    "description": "Uafhængigt ratingagentur, der vurderer kvaliteten af styring inden for den offentlige, private, medicinske og forsvarssektorer."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter fra processen — ikke udtalelser. Hver ratingbeslutning er forankret uden for egen infrastruktur, kan verificeres offline og er offentligt reviderbar.",
+    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter af processen – ikke meninger. Hver ratingbeslutning er forankret uden for vores egen infrastruktur, offline-verificerbar og offentligt revisionerbar.",
     "hero_cta_primary": "Se ratings",
     "hero_cta_secondary": "Få mere at vide",
-    "section_ratings_title": "Nyeste Certo Ratings",
+    "section_ratings_title": "Seneste Certo Ratings",
     "section_reports_title": "Analyser og Rapporter",
-    "section_about_title": "Om Fundationen"
+    "section_about_title": "Om Stiftelsen"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Vurderinger af institutioners styrelseskvalitet",
+    "subtitle": "Vurderinger af institutioners styringskvalitet",
     "search_placeholder": "Søg efter institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
-    "sector_corporate": "Private",
-    "sector_medical": "Medicin",
+    "sector_corporate": "Privat",
+    "sector_medical": "Medicinsk",
     "sector_defense": "Forsvar",
-    "sector_ngo": "Ikke-statslig",
+    "sector_ngo": "Nonprofit",
     "rating_valid_until": "Rating gyldig til",
     "rating_issued": "Udstedelsesdato",
     "no_results": "Ingen resultater fundet",
@@ -30,7 +30,7 @@
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Metodologi",
-    "about": "Om Fundationen",
+    "about": "Om Stiftelsen",
     "login": "Log ind",
     "documents": "Dokumenter",
     "pipeline": "Pipeline",
@@ -39,34 +39,34 @@
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
     "privacy": "Privatlivspolitik",
-    "terms": "Vilkår for Brug",
+    "terms": "Betingelser for Brug",
     "contact": "Kontakt"
   },
   "About": {
     "title": "Om Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "Opbygning af en kultur for god styring gennem uafhængig vurdering og fremme af governance-standarder i Polen og Europa.",
+    "mission_text": "At opbygge en kultur for god styring gennem uafhængig vurdering og fremme af styringsstandarder i Polen og Europa.",
     "independence_title": "Uafhængighed",
-    "independence_text": "Fundationen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
+    "independence_text": "Stiftelsen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo Ratings er baseret på stringent metodologi baseret på ISO-standarder og EU-retningslinjer."
+    "methodology_text": "Certo Ratings er baseret på streng metodologi baseret på ISO-standarder og EU-retningslinjer."
   },
   "Contact": {
     "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
+    "subtitle": "Certo Governance Institute",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "form_title": "Skriv til os",
+    "form_name": "Navn",
+    "form_email": "E-mailadresse",
+    "form_subject": "Emne",
+    "form_message": "Besked",
+    "form_submit": "Send besked",
+    "form_success": "Besked blev sendt. Vi vender tilbage så hurtigt som muligt.",
+    "subject_general": "Generel forespørgsel",
+    "subject_rating": "Certo Rating",
+    "subject_methodology": "Metodologi",
+    "subject_cooperation": "Samarbejde",
+    "subject_media": "Medier"
   }
 }

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független minősítő szervezet, amely értékeli a közintézmények, vállalati szervezetek és nonprofit szervezetek irányítási minőségét."
+    "description": "Független minősítő szerv, amely az intézmények – közszféra, vállalati és civil szervezetek – irányítási minőségét értékeli."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -33,31 +33,31 @@
     "inactive": "Inaktív"
   },
   "Navigation": {
-    "home": "Kezdőlap",
+    "home": "Kezdőoldal",
     "ratings": "Minősítések",
     "reports": "Jelentések",
     "analysis": "Elemzések",
-    "about": "Az Alapítványról",
+    "about": "A Alapítványról",
     "contact": "Kapcsolat",
-    "dashboard": "Irányítópult",
+    "dashboard": "Műszerfal",
     "settings": "Beállítások"
   },
   "Auth": {
     "login_title": "Bejelentkezés",
-    "login_subtitle": "Bejelentkezés a fiókjához",
-    "login_with_google": "Bejelentkezés Google-lal",
+    "login_subtitle": "Jelentkezzen be saját fiókjába",
+    "login_with_google": "Bejelentkezés Google-lel",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
     "forgot_password": "Elfelejtette a jelszavát?",
     "no_account": "Nincs fiókja?",
-    "register": "Regisztráció"
+    "register": "Regisztráljon"
   },
   "Errors": {
     "404_title": "Az oldal nem található",
     "404_description": "A keresett oldal nem létezik vagy áthelyezésre került.",
     "500_title": "Szerverhiba",
     "500_description": "Váratlan hiba történt. Próbálja meg később.",
-    "unauthorized": "Nincs hozzáférése. Bejelentkezés szükséges a folytatáshoz."
+    "unauthorized": "Nincs hozzáférés. Bejelentkezéssel folytathatja."
   },
   "Footer": {
     "rights": "Minden jog fenntartva",

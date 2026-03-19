@@ -1,81 +1,81 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Etsi Neuvonantaja",
-    "description": "Certon akkreditoidut neuvonantajat. Hallinnon laatu ja vaatimustenmukaisuus."
+    "title": "Certo Consulting — Löydä Neuvonantaja",
+    "description": "Certo-akkreditoidut neuvonantajat. Hallintotapa ja vaatimustenmukaisuus."
   },
   "Nav": {
     "advisors": "Neuvonantajat",
-    "expertise": "Asiantuntemus",
+    "expertise": "Asiantuntijuus",
     "login": "Kirjautuminen"
   },
   "Footer": {
-    "description": "Asiantunteva neuvonta hallinnon laadusta, vaatimustenmukaisuudesta ja turvallisuudesta markkinajohtajille.",
-    "ecosystem": "Certon ekosysteemi",
+    "description": "Asiantunteva neuvonta hallintotavasta, vaatimustenmukaisuudesta ja turvallisuudesta markkinajohtajille.",
+    "ecosystem": "Certo-ekosysteemi",
     "accreditation": "Kaikki neuvonantajat ovat akkreditoituja Certo Governance Institute -säätiön toimesta",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Kontakt"
+    "contact": "Yhteystiedot"
   },
   "Home": {
-    "hero_title": "Asiantunteva neuvonta\nhallintoelimen tasolla.",
-    "hero_subtitle": "Yhdistämme Certon akkreditoidut neuvonantajat instituutioihin, jotka vaativat korkeimpia hallinnon laadun ja sääntelystenmukaisuuden standardeja.",
-    "hero_cta": "Etsi asiantuntija",
+    "hero_title": "Asiantunteva neuvonta\nhallintoelintasolla.",
+    "hero_subtitle": "Yhdistämme akkreditoidut Certo-neuvonantajat instituutioihin, jotka vaativat hallintotavan ja sääntelyvaatimustenmukaisuuden korkeimpia standardeja.",
+    "hero_cta": "Löydä asiantuntija",
     "finder_title": "Haluan keskustella asiantuntijan kanssa aiheesta:",
     "area_health": "Terveydenhuolto",
-    "area_local_gov": "Kunnat ja kuntaliiset",
+    "area_local_gov": "Paikallishallinto",
     "area_defense": "Puolustus",
     "area_finance": "Rahoitus",
     "area_education": "Koulutus",
-    "form_title": "Jätä yhteystiedot, jotta löydämme sinulle sopivan neuvonantajan alueelta",
+    "form_title": "Jätä yhteystiedot, jotta voimme valita sinulle sopivan neuvonantajan alalta",
     "form_name": "Nimi",
-    "form_email": "Sähköpostiosoite (työpostittain)",
-    "form_org": "Organisaation nimi / Tehtävänimike",
-    "form_submit": "Lähetä pyyntö",
-    "advisors_title": "Esimerkkejä asiantuntijoista verkostostamme",
-    "advisor_bio": "Certon akkreditoitu neuvonantaja, jolla on pitkä kokemus prosessien optimoinnista strategisille markkinajohtajille.",
-    "advisor_1_bio": "Asiantuntija terveydenhuollon ja vaatimustenmukaisuuden alalla, vastuussa Certon arvioinnin ylläpidosta ja vahvistamisesta lääketieteen alalla.",
-    "advisor_2_bio": "Rahoituksen ja tilintarkastuksen erikoistunut neuvonantaja, vastuussa Certon arvioinnin ylläpidosta ja vahvistamisesta rahoitussektorilla.",
-    "advisor_3_bio": "Neuvonantaja puolustus- ja kyberturvallisuusalalla, vastuussa Certon arvioinnin vahvistamisesta puolustusalan teollisuudessa."
+    "form_email": "Sähköpostiosoite (työpostiosoite)",
+    "form_org": "Organisaation nimi / Asema",
+    "form_submit": "Lähetä kysely",
+    "advisors_title": "Esimerkkejä verkkossamme toimivista asiantuntijoista",
+    "advisor_bio": "Certo-akkreditoitu neuvonantaja, jolla on pitkäaikainen kokemus prosessien optimoinnista strategisille markkinalaitoille.",
+    "advisor_1_bio": "Terveydenhuollon ja vaatimustenmukaisuuden asiantuntija, joka vastaa Certon ratingin säilyttämisestä ja parantamisesta lääketieteellisessä alalla.",
+    "advisor_2_bio": "Rahoitus- ja tilintarkastusalan asiantuntija, joka huolehtii Certon ratingin säilyttämisestä ja parantamisesta rahoitussektorilla.",
+    "advisor_3_bio": "Puolustus- ja kyberturvallisuusneuvonantaja, joka vastaa Certon ratingin parantamisesta puolustusalalla."
   },
   "Legal": {
-    "back": "Palaa pääsivulle",
-    "last_updated": "Viimeksi päivitetty: Maaliskuu 2026",
+    "back": "Takaisin pääsivulle",
+    "last_updated": "Päivitetty viimeksi: Maaliskuu 2026",
     "privacy_title": "Tietosuojakäytäntö",
     "terms_title": "Käyttöehdot"
   },
   "FindAdvisor": {
-    "title": "Etsi Certon neuvonantaja",
+    "title": "Löydä Certo-neuvonantaja",
     "sector_label": "Organisaatiosi sektori",
     "need_label": "Mitä tarvitset?",
-    "need_audit": "Hallinnon audit",
+    "need_audit": "Hallintotavan auditointi",
     "need_advisory": "Strateginen neuvonta",
     "need_training": "Koulutukset ja työpajat",
-    "need_rating": "Valmistautuminen arviointiin",
+    "need_rating": "Valmistelu ratingille",
     "region_label": "Alue",
-    "submit": "Etsi neuvonantaja"
+    "submit": "Etsi neuvonantajaa"
   },
   "Advisor": {
-    "accredited_by": "Akkreditoitu Certonin toimesta",
-    "specialization": "Erikoistuminen",
+    "accredited_by": "Akkreditoitu Certon toimesta",
+    "specialization": "Erikoistumisala",
     "sectors": "Sektorit",
     "contact_advisor": "Ota yhteyttä",
-    "view_profile": "Näytä profiili"
+    "view_profile": "Katso profiili"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Yhteystiedot",
     "subtitle": "Certo ID PSA",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_advisory": "Doradztwo",
-    "subject_accreditation": "Akredytacja doradcy",
-    "subject_cooperation": "Współpraca"
+    "form_title": "Ota meihin yhteyttä",
+    "form_name": "Nimi",
+    "form_email": "Sähköpostiosoite",
+    "form_subject": "Aihe",
+    "form_message": "Viesti",
+    "form_submit": "Lähetä viesti",
+    "form_success": "Viesti on lähetetty. Vastaamme mahdollisimman pian.",
+    "subject_general": "Yleinen kysely",
+    "subject_advisory": "Neuvonta",
+    "subject_accreditation": "Neuvonantajan akkreditointi",
+    "subject_cooperation": "Yhteistyö"
   }
 }

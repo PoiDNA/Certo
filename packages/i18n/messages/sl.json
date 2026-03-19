@@ -37,7 +37,7 @@
     "ratings": "Ocene",
     "reports": "Poročila",
     "analysis": "Analize",
-    "about": "O Fundaciji",
+    "about": "O fundaciji",
     "contact": "Kontakt",
     "dashboard": "Nadzorna plošča",
     "settings": "Nastavitve"
@@ -45,19 +45,19 @@
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se v svoj račun",
-    "login_with_google": "Prijava prek Google",
-    "email_label": "E-poštni naslov",
+    "login_with_google": "Prijava prek družbe Google",
+    "email_label": "Naslov e-pošte",
     "password_label": "Geslo",
-    "forgot_password": "Pozabljeno geslo?",
+    "forgot_password": "Ste pozabili geslo?",
     "no_account": "Nimate računa?",
     "register": "Registracija"
   },
   "Errors": {
     "404_title": "Stran ni bila najdena",
-    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premaknjena.",
+    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila prestavljena.",
     "500_title": "Napaka strežnika",
-    "500_description": "Prišlo je do nepričakovane napake. Poskusite znova pozneje.",
-    "unauthorized": "Dostop ni dovoljen. Prijavite se za nadaljevanje."
+    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno kasneje.",
+    "unauthorized": "Brez dostopa. Prijavite se za nadaljevanje."
   },
   "Footer": {
     "rights": "Vse pravice pridržane",

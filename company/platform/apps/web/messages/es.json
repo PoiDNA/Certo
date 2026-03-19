@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificación de identidad y cumplimiento normativo para instituciones públicas y corporaciones."
+    "description": "Verificación de identidad y compliance para instituciones públicas y corporaciones."
   },
   "Nav": {
     "solutions": "Soluciones",
@@ -13,23 +13,40 @@
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Servicio",
-    "contact": "Kontakt"
+    "contact": "Contacto"
+  },
+  "Contact": {
+    "title": "Contacto",
+    "subtitle": "Certo ID PSA",
+    "address": "02-566 Varsovia, ul. Puławska 2B",
+    "email": "certo@certo.id",
+    "form_title": "Escribenos",
+    "form_name": "Nombre y apellido",
+    "form_email": "Correo electrónico",
+    "form_subject": "Asunto",
+    "form_message": "Mensaje",
+    "form_submit": "Enviar mensaje",
+    "form_success": "El mensaje ha sido enviado. Responderemos lo antes posible.",
+    "subject_general": "Consulta general",
+    "subject_implementation": "Implementación",
+    "subject_technical": "Soporte técnico",
+    "subject_cooperation": "Cooperación"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identidad.",
     "hero_line2": "Cumplimiento.",
     "hero_line3": "Certeza.",
-    "hero_description": "Infraestructura de verificación y cumplimiento normativo para instituciones públicas, corporaciones y entidades reguladas. Construida sobre estándares de",
+    "hero_description": "Infraestructura de verificación y compliance para instituciones públicas, corporaciones y entidades reguladas. Construida en los estándares de",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "INICIAR IMPLEMENTACIÓN",
     "cta_secondary": "SERVICIOS",
     "services_label": "SERVICIOS",
-    "services_title": "Tres capas de infraestructura de cumplimiento normativo",
+    "services_title": "Tres capas de infraestructura de compliance",
     "service1_title": "Verificación de Identidad",
-    "service1_desc": "KYC/AML para entidades reguladas. Verificación automática de documentos, análisis de sanciones y PEP, integración con registros estatales.",
-    "service2_title": "Rating de Cumplimiento",
-    "service2_desc": "Puntuación automática de cumplimiento basada en la metodología de Certo Governance Institute. Sistema de evaluación de cinco niveles con trazabilidad de auditoría completa.",
+    "service1_desc": "KYC/AML para entidades reguladas. Verificación automática de documentos, screening de sanciones y PEP, integración con registros estatales.",
+    "service2_title": "Rating Compliance",
+    "service2_desc": "Puntuación automática de cumplimiento basada en la metodología de Certo Governance Institute. Sistema de evaluación de cinco niveles con auditoría completa.",
     "service3_title": "Remediation Engine",
     "service3_desc": "Planes de remediación automáticos y monitoreo de su implementación. Integración con sistemas ERP, GRC y plataformas de gestión de riesgos.",
     "arch_label": "ARQUITECTURA",
@@ -37,7 +54,7 @@
     "step1_title": "Intake",
     "step1_desc": "Datos de la entidad + documentos + contexto regulatorio",
     "step2_title": "Verify",
-    "step2_desc": "Verificación de identidad, análisis, registro público",
+    "step2_desc": "Verificación de identidad, screening, registro público",
     "step3_title": "Score",
     "step3_desc": "Rating automático de cumplimiento Certo Vector",
     "step4_title": "Report",
@@ -80,22 +97,5 @@
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"
-  },
-  "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
-    "email": "certo@certo.id",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_implementation": "Wdrożenie",
-    "subject_technical": "Wsparcie techniczne",
-    "subject_cooperation": "Współpraca"
   }
 }
