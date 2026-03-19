@@ -6,7 +6,9 @@ import type { NextRequest } from 'next/server';
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get('code');
-  const redirectTo = searchParams.get('redirectTo') || '/docs';
+  const rawRedirect = searchParams.get('redirectTo') || '/docs';
+  // Prevent open redirect — only allow relative paths, block protocol-relative URLs
+  const redirectTo = rawRedirect.startsWith('/') && !rawRedirect.startsWith('//') ? rawRedirect : '/docs';
 
   if (code) {
     const cookieStore = await cookies();
