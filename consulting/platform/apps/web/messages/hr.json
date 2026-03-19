@@ -1,55 +1,53 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Pronađite savjetnika",
-    "description": "Akreditirani savjetnici Certo. Korporativni ured i usklađenost."
+    "title": "Certo Consulting — Pronađi savjetnika",
+    "description": "Akreditirani savjetnici Certo. Korporativno upravljanje i usklađenost."
   },
   "Nav": {
     "advisors": "Savjetnici",
-    "expertise": "Stručnost",
-    "login": "Prijava"
+    "expertise": "Stručnjačka znanja",
+    "login": "Prijava",
+    "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Stručno savjetovanje u području korporativnog uređenja, usklađenosti i sigurnosti za tržišne lidere.",
-    "ecosystem": "Certo ekosistem",
-    "accreditation": "Svi su savjetnici akreditirani od strane Certo Governance Institute zaklada",
+    "description": "Stručno savjetovanje u području korporativnog upravljanja, usklađenosti i sigurnosti za tržišne lidere.",
+    "ecosystem": "Ekosistem Certo",
+    "accreditation": "Svi savjetnici su akreditirani od strane Fundacije Certo Governance Institute",
     "privacy": "Politika privatnosti",
     "terms": "Uvjeti korištenja",
     "contact": "Kontakt"
   },
   "Home": {
     "hero_title": "Stručno savjetovanje\nna razini uprave.",
-    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativnog uređenja i regulatorne usklađenosti.",
-    "hero_cta": "Pronađi stručnjaka",
-    "finder_title": "Želim razgovarati sa stručnjakom za:",
+    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativnog upravljanja i regulatorne usklađenosti.",
+    "hero_cta": "Pronađi experta",
+    "finder_title": "Želim razgovarati sa stručnjakom iz:",
     "area_health": "Zdravstvena zaštita",
-    "area_local_gov": "Lokalna samouprava",
+    "area_local_gov": "Lokalne javne uprave",
     "area_defense": "Obrana",
     "area_finance": "Financije",
     "area_education": "Obrazovanje",
-    "form_title": "Ostavite podatke kako bismo odabrali odgovarajućeg savjetnika iz područja",
+    "form_title": "Ostavite kontakt kako bi smo vam dodijelili odgovarajućeg savjetnika iz područja",
     "form_name": "Ime i prezime",
-    "form_email": "Službena email adresa",
-    "form_org": "Naziv organizacije / Položaj",
+    "form_email": "Adresa e-pošte (službena)",
+    "form_org": "Naziv organizacije / Pozicija",
     "form_submit": "Pošalji upit",
-    "advisors_title": "Primjeri stručnjaka iz naše mreže",
-    "advisor_bio": "Akreditirani savjetnik Certo s višegodišnjim iskustvom u optimizaciji procesa za strateške tržišne institucije.",
-    "advisor_1_bio": "Stručnjakinja u području zdravstvene zaštite i usklađenosti, odgovorna za održavanje i ojačanje Certo ratinga u medicinskoj industriji.",
-    "advisor_2_bio": "Stručnjak u području financija i revizije, brinući o održavanju i ojačanju Certo ratinga u financijskom sektoru.",
-    "advisor_3_bio": "Savjetnik u području obrane i kibernetske sigurnosti, odgovoran za ojačanje Certo ratinga u branši obrane."
+    "experts_headline": "Naši stručnjaci pomažu\nodržati i pojačati\nRating Certo.",
+    "experts_description": "Akreditirani savjetnici s višegodišnjim iskustvom u optimizaciji governance procesa za strateške institucije."
   },
   "Legal": {
-    "back": "Vrati se na početnu stranicu",
-    "last_updated": "Zadnja ažuriranja: ožujanj 2026.",
+    "back": "Natrag na početnu stranicu",
+    "last_updated": "Zadnja ažuriranja: ožujak 2026.",
     "privacy_title": "Politika privatnosti",
     "terms_title": "Uvjeti korištenja"
   },
   "FindAdvisor": {
-    "title": "Pronađi Certo savjetnika",
+    "title": "Pronađi savjetnika Certo",
     "sector_label": "Sektor vaše institucije",
-    "need_label": "Što trebate?",
-    "need_audit": "Revizija uređenja",
+    "need_label": "Što vam je potrebno?",
+    "need_audit": "Governance audit",
     "need_advisory": "Strateško savjetovanje",
-    "need_training": "Školenja i radionice",
+    "need_training": "Obuka i radionice",
     "need_rating": "Priprema za rating",
     "region_label": "Regija",
     "submit": "Pretraži savjetnika"
@@ -68,12 +66,12 @@
     "email": "certo@certo.consulting",
     "form_title": "Napišite nam",
     "form_name": "Ime i prezime",
-    "form_email": "Email adresa",
+    "form_email": "Adresa e-pošte",
     "form_subject": "Tema",
     "form_message": "Poruka",
     "form_submit": "Pošalji poruku",
     "form_success": "Poruka je poslana. Odgovorit ćemo čim je moguće.",
-    "subject_general": "Opšta pitanja",
+    "subject_general": "Opća pitanja",
     "subject_advisory": "Savjetovanje",
     "subject_accreditation": "Akreditacija savjetnika",
     "subject_cooperation": "Suradnja"

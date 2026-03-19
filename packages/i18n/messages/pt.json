@@ -8,16 +8,16 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgão de classificação independente que avalia a qualidade de gestão de instituições públicas, corporativas e não-governamentais."
+    "description": "Órgão de classificação independente que avalia a qualidade de governança de instituições públicas, corporativas e sem fins lucrativos."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Fazer login",
-    "logout": "Fazer logout",
-    "privacyPolicy": "Política de privacidade",
-    "termsOfUse": "Termos de uso",
+    "login": "Faça login",
+    "logout": "Saia",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
     "loading": "Carregando...",
     "error": "Ocorreu um erro",
     "save": "Salvar",
@@ -33,7 +33,7 @@
     "inactive": "Inativo"
   },
   "Navigation": {
-    "home": "Página inicial",
+    "home": "Página Inicial",
     "ratings": "Classificações",
     "reports": "Relatórios",
     "analysis": "Análises",
@@ -43,9 +43,9 @@
     "settings": "Configurações"
   },
   "Auth": {
-    "login_title": "Fazer login",
-    "login_subtitle": "Faça login em sua conta",
-    "login_with_google": "Fazer login com Google",
+    "login_title": "Faça login",
+    "login_subtitle": "Faça login na sua conta",
+    "login_with_google": "Faça login com Google",
     "email_label": "Endereço de e-mail",
     "password_label": "Senha",
     "forgot_password": "Esqueceu sua senha?",
@@ -61,8 +61,8 @@
   },
   "Footer": {
     "rights": "Todos os direitos reservados",
-    "privacy": "Política de privacidade",
-    "terms": "Termos de uso",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
     "contact": "Contato"
   }
 }

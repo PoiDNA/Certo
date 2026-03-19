@@ -8,24 +8,24 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotiaci kvalitu riadenia verejných, korporátnych a neziskových inštitúcií."
+    "description": "Nezávislý ratingový orgán hodnotiacu kvalitu správy verejných, korporatívnych a mimovládnych inštitúcií."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Prihlásiť sa",
-    "logout": "Odhlásiť sa",
+    "login": "Prihláste sa",
+    "logout": "Odhláste sa",
     "privacyPolicy": "Politika ochrany osobných údajov",
     "termsOfUse": "Podmienky používania",
     "loading": "Načítavanie...",
-    "error": "Vyskytla sa chyba",
+    "error": "Došlo k chybe",
     "save": "Uložiť",
     "cancel": "Zrušiť",
     "confirm": "Potvrdiť",
     "back": "Späť",
     "next": "Ďalej",
-    "close": "Zatvoriť",
+    "close": "Zavrieť",
     "search": "Hľadať",
     "download": "Stiahnuť",
     "verified": "Overené",
@@ -33,31 +33,31 @@
     "inactive": "Neaktívne"
   },
   "Navigation": {
-    "home": "Domovská stránka",
+    "home": "Úvodná stránka",
     "ratings": "Ratingy",
     "reports": "Správy",
     "analysis": "Analýzy",
-    "about": "O Fundácii",
+    "about": "O Nadácii",
     "contact": "Kontakt",
     "dashboard": "Panel",
     "settings": "Nastavenia"
   },
   "Auth": {
-    "login_title": "Prihlásiť sa",
+    "login_title": "Prihláste sa",
     "login_subtitle": "Prihláste sa do svojho účtu",
-    "login_with_google": "Prihlásiť sa cez Google",
+    "login_with_google": "Prihláste sa cez Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zabudli ste heslo?",
     "no_account": "Nemáte účet?",
-    "register": "Registrácia"
+    "register": "Zaregistrujte sa"
   },
   "Errors": {
     "404_title": "Stránka nebola nájdená",
     "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
-    "500_description": "Vyskytla sa neočakávaná chyba. Skúste znova neskôr.",
-    "unauthorized": "Prístup odmietnutý. Prihláste sa, aby ste pokračovali."
+    "500_description": "Došlo k neočakávanej chybe. Skúste neskôr.",
+    "unauthorized": "Prístup odmietnutý. Prihláste sa pre pokračovanie."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",

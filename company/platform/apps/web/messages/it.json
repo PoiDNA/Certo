@@ -6,8 +6,9 @@
   "Nav": {
     "solutions": "Soluzioni",
     "technology": "Tecnologia",
-    "foundation": "Fundacja Certo",
-    "login": "Accedi"
+    "foundation": "Fondazione Certo",
+    "login": "Accedi",
+    "contact": "Contatti"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
@@ -26,29 +27,29 @@
     "form_subject": "Oggetto",
     "form_message": "Messaggio",
     "form_submit": "Invia messaggio",
-    "form_success": "Il messaggio è stato inviato. Ti risponderemo il prima possibile.",
+    "form_success": "Messaggio inviato. Ti risponderemo al più presto.",
     "subject_general": "Domanda generale",
     "subject_implementation": "Implementazione",
     "subject_technical": "Supporto tecnico",
-    "subject_cooperation": "Cooperazione"
+    "subject_cooperation": "Partnership"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identità.",
     "hero_line2": "Conformità.",
     "hero_line3": "Certezza.",
-    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, aziende e soggetti regolamentati. Costruita secondo gli standard",
+    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, aziende e soggetti regolati. Costruita secondo gli standard",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "INIZIA L'IMPLEMENTAZIONE",
+    "cta_primary": "AVVIA L'IMPLEMENTAZIONE",
     "cta_secondary": "SERVIZI",
     "services_label": "SERVIZI",
     "services_title": "Tre livelli dell'infrastruttura compliance",
     "service1_title": "Verifica dell'Identità",
-    "service1_desc": "KYC/AML per soggetti regolamentati. Verifica automatica dei documenti, screening delle sanzioni e PEP, integrazione con i registri statali.",
+    "service1_desc": "KYC/AML per soggetti regolati. Verifica automatica dei documenti, screening di sanzioni e PEP, integrazione con registri statali.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring automatico della conformità basato sulla metodologia Certo Governance Institute. Sistema di valutazione a cinque livelli con tracciamento completo dell'audit.",
+    "service2_desc": "Scoring automatico della conformità basato sulla metodologia Certo Governance Institute. Sistema di valutazione a cinque livelli con traccia di audit completa.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Piani di rimedio automatici e monitoraggio della loro attuazione. Integrazione con i sistemi ERP, GRC e piattaforme di gestione del rischio.",
+    "service3_desc": "Piani di correzione automatici e monitoraggio della loro attuazione. Integrazione con sistemi ERP, GRC e piattaforme di gestione del rischio.",
     "arch_label": "ARCHITETTURA",
     "arch_title": "Come funziona Certo ID",
     "step1_title": "Intake",
@@ -58,20 +59,20 @@
     "step3_title": "Score",
     "step3_desc": "Rating automatico della conformità Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "Report PDF + API + dashboard Certo Online",
+    "step4_desc": "Rapporto PDF + API + dashboard Certo Online",
     "badge_iso": "Standard ISO",
     "badge_compliance": "Conformità normativa",
     "badge_kyc": "Verifica dell'identità",
-    "badge_governance": "Valutazione governance"
+    "badge_governance": "Valutazione della governance"
   },
   "Legal": {
-    "back": "Torna alla home page",
+    "back": "Torna alla home",
     "last_updated": "Ultimo aggiornamento: Marzo 2026",
     "privacy_title": "Informativa sulla Privacy",
     "terms_title": "Condizioni di Servizio"
   },
   "Dashboard": {
-    "title": "Dashboard Certo ID",
+    "title": "Pannello Certo ID",
     "welcome": "Benvenuto, {name}",
     "your_rating": "Il Tuo Rating Certo",
     "your_delegates": "I Tuoi Delegati",

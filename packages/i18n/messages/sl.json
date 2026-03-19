@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neodvisen organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
+    "description": "Neodvisni organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in neprofitnih institucij."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -26,27 +26,27 @@
     "back": "Nazaj",
     "next": "Naprej",
     "close": "Zapri",
-    "search": "Iskanje",
-    "download": "Prenos",
-    "verified": "Preverjeno",
-    "active": "Aktivno",
-    "inactive": "Neaktivno"
+    "search": "Iskalnik",
+    "download": "Prenesi",
+    "verified": "Preverjen",
+    "active": "Aktiven",
+    "inactive": "Neaktiven"
   },
   "Navigation": {
     "home": "Domača stran",
     "ratings": "Ocene",
     "reports": "Poročila",
     "analysis": "Analize",
-    "about": "O fundaciji",
-    "contact": "Kontakt",
+    "about": "O Fundaciji",
+    "contact": "Stik",
     "dashboard": "Nadzorna plošča",
     "settings": "Nastavitve"
   },
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se v svoj račun",
-    "login_with_google": "Prijava prek družbe Google",
-    "email_label": "Naslov e-pošte",
+    "login_with_google": "Prijava prek Googlovih storitev",
+    "email_label": "E-naslov",
     "password_label": "Geslo",
     "forgot_password": "Ste pozabili geslo?",
     "no_account": "Nimate računa?",
@@ -56,13 +56,13 @@
     "404_title": "Stran ni bila najdena",
     "404_description": "Stran, ki jo iščete, ne obstaja ali je bila prestavljena.",
     "500_title": "Napaka strežnika",
-    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno kasneje.",
-    "unauthorized": "Brez dostopa. Prijavite se za nadaljevanje."
+    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
+    "unauthorized": "Dostop zavrnjen. Prijavite se za nadaljevanje."
   },
   "Footer": {
     "rights": "Vse pravice pridržane",
     "privacy": "Politika zasebnosti",
     "terms": "Pogoji uporabe",
-    "contact": "Kontakt"
+    "contact": "Stik"
   }
 }

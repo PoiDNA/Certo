@@ -1,40 +1,41 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Sõltumatu reitingiagentuuri, mis hindab juhtimise kvaliteeti avaliku, korporatiivse, meditsiinilise ja kaitsesektor."
+    "description": "Sõltumatu reitingagentuur, mis hindab juhtimise kvaliteeti avalikus sektoris, ettevõtete, meditsiini- ja kaitsesektoris."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo on esimene maailmas reitingiagentuuri, mille reitingud on protsessi krüptograafilised artefaktid — mitte arvamused. Iga reitingu otsus on ankurdatud väljaspool oma infrastruktuuri, verifieeritav võrguühenduseta ja avalikult auditeeritav.",
-    "hero_cta_primary": "Vaata reitinguid",
-    "hero_cta_secondary": "Lisateabe saamiseks",
-    "section_ratings_title": "Uusimad Certo Reitingud",
-    "section_reports_title": "Analüüsid ja Aruanded",
+    "description": "Certo on esimene maailma reitingagentuur, kelle reItingud on protsessi krüptograafilised artefaktid – mitte arvamused. Iga reitingu otsus on ankurdatud väljaspool oma infrastruktuuri, kontrolltavav võrguühenduseta ja avalikult auditeeritav.",
+    "hero_cta_primary": "Vaata reItinguid",
+    "hero_cta_secondary": "Uuri lisaks",
+    "section_ratings_title": "Uusimad Certo reItingud",
+    "section_reports_title": "Analüüsid ja aruanded",
     "section_about_title": "Fondatsioonist"
   },
   "Ratings": {
-    "title": "Certo Reitingud",
+    "title": "Certo reItingud",
     "subtitle": "Institutsioonide juhtimise kvaliteedi hinnangud",
-    "search_placeholder": "Otsi institutsioonist...",
+    "search_placeholder": "Otsige asutust...",
     "filter_sector": "Sektor",
     "sector_public": "Avalik",
-    "sector_corporate": "Korporatiivne",
-    "sector_medical": "Meditsiiniline",
+    "sector_corporate": "Ärisektor",
+    "sector_medical": "Meditsiini",
     "sector_defense": "Kaitse",
     "sector_ngo": "Mittetulunduslik",
-    "rating_valid_until": "Reiting kehtib kuni",
+    "rating_valid_until": "Reitingu kehtivus kuni",
     "rating_issued": "Väljastamise kuupäev",
     "no_results": "Tulemusi ei leitud",
     "view_profile": "Vaata profiili"
   },
   "Nav": {
-    "ratings": "Reitingud",
+    "ratings": "ReItingud",
     "methodology": "Metoodika",
     "about": "Fondatsioonist",
     "login": "Logi sisse",
     "documents": "Dokumendid",
     "pipeline": "Pipeline",
-    "dashboard": "Juhtpaneel"
+    "dashboard": "Juhtpaneel",
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
@@ -43,28 +44,28 @@
     "contact": "Kontakt"
   },
   "About": {
-    "title": "Certo Governance Institute'i Kohta",
-    "mission_title": "Missiooni",
-    "mission_text": "Hea juhtimise kultuuri loomine sõltumatu hindamise ja governance'i standardite edendamise kaudu Poolas ja Euroopas.",
+    "title": "Certo Governance Institute'i fondatsiooni kohta",
+    "mission_title": "Missioon",
+    "mission_text": "Hea juhtimise kultuuri arendamine sõltumatu hinnangu kaudu ning governance standardite edendamine Poolas ja Euroopas.",
     "independence_title": "Sõltumatus",
-    "independence_text": "Fond on sõltumatu hindamise objektidest, avaliku võimu organitest ja kommertsilistest huvidest.",
+    "independence_text": "Fondatsioon on sõltumatu hinnatavatelt subjektidelt, avalike riigiasutustelt ja kaubanduslikest huvidest.",
     "methodology_title": "Metoodika",
-    "methodology_text": "Certo reitingud põhinevad range metoodika alusel, mis on vastavuses ISO standardite ja EU juhiste nõuetega."
+    "methodology_text": "Certo reItingud põhinevad rangel metoodikal, mis tugineb ISO standarditele ja EU juhisele."
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo Governance Institute",
-    "address": "00-124 Varssavi, Rondo ONZ 1",
+    "address": "00-124 Varssavi, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Kirjuta meile",
+    "form_title": "Kirjutage meile",
     "form_name": "Nimi ja perekonnanimi",
     "form_email": "E-posti aadress",
     "form_subject": "Teema",
     "form_message": "Sõnum",
     "form_submit": "Saada sõnum",
-    "form_success": "Sõnum on saadetud. Vastame nii pian kui võimalik.",
-    "subject_general": "Üldine päring",
-    "subject_rating": "Certo Reiting",
+    "form_success": "Sõnum on saadetud. Vastame võimalikult kiiresti.",
+    "subject_general": "Üldine pärimine",
+    "subject_rating": "Certo reitingu",
     "subject_methodology": "Metoodika",
     "subject_cooperation": "Koostöö",
     "subject_media": "Meedia"

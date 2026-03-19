@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Alapítvány",
-    "description": "Független minősítő szerv, amely értékeli a közszféra, vállalati, egészségügyi és védelmi szektor irányítási minőségét."
+    "description": "Független minősítő szervezet, amely értékeli a kormányzási minőséget a közszférában, a vállalati szektorban, az egészségügyben és a védelmi szektorban."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "A Certo az első olyan minősítőügynökség a világon, amelynek minősítései kriptográfiai artifaktumok a folyamatból — nem pedig vélemények. Minden minősítési döntés az intézmény saját infrastruktúráján kívül rögzített, offline-ban ellenőrizhető és nyilvánosan auditálható.",
-    "hero_cta_primary": "Nézzen meg minősítéseket",
+    "description": "A Certo az első olyan minősítő ügynökség a világon, amelynek minősítéseit kriptográfiai műtermékek képezik a folyamat — nem pedig vélemények. Minden minősítési döntés az infrastruktúráján kívül van rögzítve, offline ellenőrizhető és nyilvánosan auditálható.",
+    "hero_cta_primary": "Minősítések megtekintése",
     "hero_cta_secondary": "Tudjon meg többet",
     "section_ratings_title": "Legújabb Certo Minősítések",
     "section_reports_title": "Elemzések és Jelentések",
-    "section_about_title": "Az Alapítványról"
+    "section_about_title": "Az Alapítvány Bemutatása"
   },
   "Ratings": {
     "title": "Certo Minősítések",
-    "subtitle": "Intézmények irányítási minőségének értékelése",
-    "search_placeholder": "Intézmény keresése...",
+    "subtitle": "Intézmények kormányzási minőségének értékelése",
+    "search_placeholder": "Intézmények keresése...",
     "filter_sector": "Szektor",
     "sector_public": "Közszféra",
     "sector_corporate": "Vállalati",
     "sector_medical": "Egészségügyi",
     "sector_defense": "Védelmi",
-    "sector_ngo": "Civil",
+    "sector_ngo": "Nonprofit",
     "rating_valid_until": "Minősítés érvényes",
     "rating_issued": "Kibocsátás dátuma",
     "no_results": "Nincs találat",
@@ -29,12 +29,13 @@
   },
   "Nav": {
     "ratings": "Minősítések",
-    "methodology": "Módszertani alapok",
-    "about": "Az Alapítványról",
+    "methodology": "Módszertan",
+    "about": "Az Alapítvány",
     "login": "Bejelentkezés",
     "documents": "Dokumentumok",
-    "pipeline": "Folyamat",
-    "dashboard": "Irányítópult"
+    "pipeline": "Pipeline",
+    "dashboard": "Irányítópult",
+    "contact": "Kapcsolat"
   },
   "Footer": {
     "copyright": "Certo Governance Institute Alapítvány © {year}",
@@ -45,11 +46,11 @@
   "About": {
     "title": "A Certo Governance Institute Alapítványról",
     "mission_title": "Misszió",
-    "mission_text": "A jó irányítási gyakorlat kultúrájának építése független értékelés révén, valamint a governance standardok előmozdítása Lengyelországban és Európában.",
+    "mission_text": "A jó kormányzási kultúra kialakítása független értékelés és a governance standardok előmozdítása révén Lengyelországban és Európában.",
     "independence_title": "Függetlenség",
-    "independence_text": "Az Alapítvány független az értékelt szervezetektől, a közhatalmi szervektől és a kereskedelmi érdekektől.",
-    "methodology_title": "Módszertani alapok",
-    "methodology_text": "A Certo minősítések szigorú módszertanon alapulnak, amely az ISO szabványok és az EU irányelvek alapján készült."
+    "independence_text": "Az Alapítvány független az értékelt szervezetektől, a közhatalmak szerveitől és kereskedelmi érdekektől.",
+    "methodology_title": "Módszertan",
+    "methodology_text": "A Certo minősítések szigorú módszertanon alapulnak, amely az ISO standardokra és az EU iránymutatásokra épül."
   },
   "Contact": {
     "title": "Kapcsolat",
@@ -58,14 +59,14 @@
     "email": "rating@certogov.org",
     "form_title": "Írjon nekünk",
     "form_name": "Név",
-    "form_email": "E-mail cím",
+    "form_email": "Email cím",
     "form_subject": "Tárgy",
     "form_message": "Üzenet",
     "form_submit": "Üzenet küldése",
-    "form_success": "Az üzenet sikeresen el lett küldve. A lehető leghamarabb válaszolunk.",
-    "subject_general": "Általános kérdés",
+    "form_success": "Az üzenet sikeresen elküldve. Válaszolunk olyan gyorsan, ahogy csak lehetséges.",
+    "subject_general": "Általános megkeresés",
     "subject_rating": "Certo Minősítés",
-    "subject_methodology": "Módszertani alapok",
+    "subject_methodology": "Módszertan",
     "subject_cooperation": "Együttműködés",
     "subject_media": "Média"
   }

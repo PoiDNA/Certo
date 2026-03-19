@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Sõltumatu reitingasuutus, mis hindab avalike, korporatiivsete ja mittetulunduslike asutuste juhtimise kvaliteeti."
+    "description": "Sõltumatu reitinguasutus, mis hindab avaliku sektori, ettevõtete ja mittetulunduslike organisatsioonide juhtimise kvaliteeti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Logi välja",
     "privacyPolicy": "Privaatsuspoliitika",
     "termsOfUse": "Kasutustingimused",
-    "loading": "Laadima...",
+    "loading": "Laadimise käigus...",
     "error": "Ilmnes viga",
     "save": "Salvesta",
     "cancel": "Tühista",
@@ -37,30 +37,30 @@
     "ratings": "Reitingud",
     "reports": "Aruanded",
     "analysis": "Analüüsid",
-    "about": "Fundatsiooni kohta",
+    "about": "Selle kohta",
     "contact": "Kontakt",
-    "dashboard": "Juhtpaneel",
+    "dashboard": "Armatuurlaud",
     "settings": "Seaded"
   },
   "Auth": {
     "login_title": "Logi sisse",
-    "login_subtitle": "Logi oma kontosse",
-    "login_with_google": "Logi sisse Googliga",
+    "login_subtitle": "Logi oma kontole sisse",
+    "login_with_google": "Logi sisse Google'i abil",
     "email_label": "E-posti aadress",
     "password_label": "Parool",
     "forgot_password": "Unustasid parooli?",
-    "no_account": "Sinul puudub konto?",
+    "no_account": "Kontot pole?",
     "register": "Registreeru"
   },
   "Errors": {
     "404_title": "Lehte ei leitud",
-    "404_description": "Lehte, mida otsingus, ei eksisteeri või see on teisaldatud.",
+    "404_description": "Lehte, mida ottsid, pole olemas või see on teisaldatud.",
     "500_title": "Serveri viga",
     "500_description": "Ilmnes ootamatu viga. Palun proovi hiljem uuesti.",
-    "unauthorized": "Juurdepääs keelatud. Jätkamiseks logi sisse."
+    "unauthorized": "Ligipääs keelatud. Jätka sisselogimisega."
   },
   "Footer": {
-    "rights": "Kõik õigused reserveeritud",
+    "rights": "Kõik õigused kaitstud",
     "privacy": "Privaatsuspoliitika",
     "terms": "Kasutustingimused",
     "contact": "Kontakt"

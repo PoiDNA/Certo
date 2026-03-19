@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független minősítő szerv, amely az intézmények – közszféra, vállalati és civil szervezetek – irányítási minőségét értékeli."
+    "description": "Független minősítő szerv, amely nyilvános, vállalati és nonprofit intézmények irányítási minőségét értékeli."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,9 +17,9 @@
     "login": "Bejelentkezés",
     "logout": "Kijelentkezés",
     "privacyPolicy": "Adatvédelmi szabályzat",
-    "termsOfUse": "Felhasználási feltételek",
+    "termsOfUse": "Használati feltételek",
     "loading": "Betöltés...",
-    "error": "Hiba történt",
+    "error": "Hiba lépett fel",
     "save": "Mentés",
     "cancel": "Mégse",
     "confirm": "Megerősítés",
@@ -37,32 +37,32 @@
     "ratings": "Minősítések",
     "reports": "Jelentések",
     "analysis": "Elemzések",
-    "about": "A Alapítványról",
+    "about": "Az Alapítványról",
     "contact": "Kapcsolat",
-    "dashboard": "Műszerfal",
+    "dashboard": "Irányítópult",
     "settings": "Beállítások"
   },
   "Auth": {
     "login_title": "Bejelentkezés",
-    "login_subtitle": "Jelentkezzen be saját fiókjába",
-    "login_with_google": "Bejelentkezés Google-lel",
+    "login_subtitle": "Jelentkezzen be a fiókjába",
+    "login_with_google": "Bejelentkezés Google-lal",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
-    "forgot_password": "Elfelejtette a jelszavát?",
+    "forgot_password": "Elfelejtette jelszavát?",
     "no_account": "Nincs fiókja?",
-    "register": "Regisztráljon"
+    "register": "Regisztráció"
   },
   "Errors": {
     "404_title": "Az oldal nem található",
-    "404_description": "A keresett oldal nem létezik vagy áthelyezésre került.",
+    "404_description": "Az oldal, amit keres, nem létezik vagy át lett helyezve.",
     "500_title": "Szerverhiba",
-    "500_description": "Váratlan hiba történt. Próbálja meg később.",
-    "unauthorized": "Nincs hozzáférés. Bejelentkezéssel folytathatja."
+    "500_description": "Váratlan hiba lépett fel. Próbálja meg később.",
+    "unauthorized": "Nincs hozzáférés. Jelentkezzen be a folytatáshoz."
   },
   "Footer": {
     "rights": "Minden jog fenntartva",
     "privacy": "Adatvédelmi szabályzat",
-    "terms": "Felhasználási feltételek",
+    "terms": "Használati feltételek",
     "contact": "Kapcsolat"
   }
 }

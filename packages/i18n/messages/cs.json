@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných institucí, korporací a neziskových organizací."
+    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných, korporativních a neziskových institucí."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Přihlásit se",
-    "logout": "Odhlásit se",
+    "login": "Přihlaste se",
+    "logout": "Odhlaste se",
     "privacyPolicy": "Zásady ochrany osobních údajů",
     "termsOfUse": "Podmínky použití",
     "loading": "Načítání...",
@@ -39,13 +39,13 @@
     "analysis": "Analýzy",
     "about": "O Nadaci",
     "contact": "Kontakt",
-    "dashboard": "Přístrojová deska",
+    "dashboard": "Ovládací panel",
     "settings": "Nastavení"
   },
   "Auth": {
-    "login_title": "Přihlásit se",
+    "login_title": "Přihlaste se",
     "login_subtitle": "Přihlaste se ke svému účtu",
-    "login_with_google": "Přihlásit se přes Google",
+    "login_with_google": "Přihlaste se přes Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Stránka nebyla nalezena",
-    "404_description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
+    "404_description": "Stránka kterou hledáte neexistuje nebo byla přesunuta.",
     "500_title": "Chyba serveru",
-    "500_description": "Došlo k neočekávané chybě. Zkuste to později.",
-    "unauthorized": "Nemáte přístup. Přihlaste se pro pokračování."
+    "500_description": "Došlo k neočekávané chybě. Zkuste to prosím později.",
+    "unauthorized": "Přístup odepřen. Přihlaste se prosím pro pokračování."
   },
   "Footer": {
     "rights": "Všechna práva vyhrazena",

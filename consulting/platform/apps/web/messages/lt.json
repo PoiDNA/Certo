@@ -1,56 +1,54 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Raskite konsultantą",
-    "description": "Akredituoti Certo konsultantai. Valdymo sistema ir atitiktis."
+    "title": "Certo Consulting — Raskite Konsultantą",
+    "description": "Akredituoti Certo konsultantai. Korporatyvinis valdymas ir atitiktis."
   },
   "Nav": {
     "advisors": "Konsultantai",
-    "expertise": "Kompetencija",
-    "login": "Prisijungimas"
+    "expertise": "Ekspertizė",
+    "login": "Prisijungimas",
+    "contact": "Kontaktai"
   },
   "Footer": {
-    "description": "Ekspertinis konsultavimas valdymo sistemos, atitikties ir saugumo klausimais rinkos lyderėms.",
+    "description": "Ekspertinis konsultavimas korporatyvinio valdymo, atitikties ir saugumo srityse rinkos lyderėms.",
     "ecosystem": "Certo ekosistema",
-    "accreditation": "Visi konsultantai yra akredituoti Certo Governance Institute Fondo",
+    "accreditation": "Visi konsultantai yra akredituoti Certo Governance Institute fondo",
     "privacy": "Privatumo politika",
     "terms": "Naudojimosi sąlygos",
     "contact": "Kontaktai"
   },
   "Home": {
-    "hero_title": "Ekspertinis konsultavimas\nboard lygyje.",
-    "hero_subtitle": "Mes susimoduosime akredituotus Certo konsultantus su institucijomis, reikalavusiomis aukščiausių valdymo sistemos ir normatyvinės atitikties standartų.",
+    "hero_title": "Ekspertinis konsultavimas\nvadovybės lygiu.",
+    "hero_subtitle": "Sujungiame akredituotus Certo konsultantus su institucijomis, kurioms reikalingi aukščiausi korporatyvinio valdymo ir reguliacinio atitikimo standartai.",
     "hero_cta": "Raskite ekspertą",
-    "finder_title": "Norėčiau pasikalbėti su eksperto dėl:",
+    "finder_title": "Norėčiau pakalbėti su eksperto dėl:",
     "area_health": "Sveikatos apsauga",
-    "area_local_gov": "Savivaldybės",
-    "area_defense": "Gynybos sektoras",
+    "area_local_gov": "Savivaldos institucijos",
+    "area_defense": "Gynyba",
     "area_finance": "Finansai",
     "area_education": "Švietimas",
-    "form_title": "Palikite savo kontaktą, kad galėtume pasirinkti tinkamą konsultantą iš srities",
+    "form_title": "Palikite kontaktą, kad galėtume atrinkti tinkamą konsultantą iš srities",
     "form_name": "Vardas ir pavardė",
     "form_email": "El. pašto adresas (darbo)",
     "form_org": "Organizacijos pavadinimas / Pareigos",
     "form_submit": "Siųsti užklausą",
-    "advisors_title": "Pavyzdiniai ekspertai iš mūsų tinklo",
-    "advisor_bio": "Akredituotas Certo konsultantas su daugel metų patirtimi optimizuojant procesus strateginėms rinkos institucijoms.",
-    "advisor_1_bio": "Sveikatos apsaugos ir compliance srities ekspertė, atsakinga už Certo reitingo palaikymą ir stiprinimą medicinos pramonėje.",
-    "advisor_2_bio": "Finansų ir audito srities specialistas, slaugantis Certo reitingo palaikymą ir stiprinimą finansų sektoriuje.",
-    "advisor_3_bio": "Konsultantas gynybos ir kibernetinio saugumo klausimais, atsakingas už Certo reitingo stiprinimą gynybos pramonėje."
+    "experts_headline": "Mūsų ekspertai padeda\nišlaikyti ir stiprinti\nCerto Rating.",
+    "experts_description": "Akredituoti konsultantai su daugiametine patirtimi optimizuojant valdymo procesus strateginėms institucijoms."
   },
   "Legal": {
     "back": "Grįžti į pagrindinį puslapį",
-    "last_updated": "Paskutinį kartą atnaujinta: kovas 2026",
+    "last_updated": "Paskutinis atnaujinimas: 2026 m. kovas",
     "privacy_title": "Privatumo politika",
     "terms_title": "Naudojimosi sąlygos"
   },
   "FindAdvisor": {
     "title": "Raskite Certo konsultantą",
-    "sector_label": "Jūsų institucijos sektoras",
+    "sector_label": "Jūsų institucijos sektorius",
     "need_label": "Ko jums reikia?",
-    "need_audit": "Valdymo sistemos auditas",
+    "need_audit": "Valdymo auditas",
     "need_advisory": "Strateginis konsultavimas",
     "need_training": "Mokymai ir seminarai",
-    "need_rating": "Pasiruošimas reitingui",
+    "need_rating": "Pasiruošimas reitingavimui",
     "region_label": "Regionas",
     "submit": "Ieškoti konsultanto"
   },
@@ -64,7 +62,7 @@
   "Contact": {
     "title": "Kontaktai",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Varšuva, ul. Puławska 2B",
+    "address": "02-566 Varšuva, Puławska g. 2B",
     "email": "certo@certo.consulting",
     "form_title": "Parašykite mums",
     "form_name": "Vardas ir pavardė",
@@ -72,7 +70,7 @@
     "form_subject": "Tema",
     "form_message": "Žinutė",
     "form_submit": "Siųsti žinutę",
-    "form_success": "Žinutė buvo išsiųsta. Atsakysime kuo greičiau.",
+    "form_success": "Žinutė buvo nusiųsta. Atsakysime kuo greičiau.",
     "subject_general": "Bendra užklausa",
     "subject_advisory": "Konsultavimas",
     "subject_accreditation": "Konsultanto akreditacija",

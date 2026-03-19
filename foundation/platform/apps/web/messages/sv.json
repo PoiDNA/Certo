@@ -1,11 +1,11 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som bedömer styrningskvaliteten inom offentlig, privat, medicinsk och försvarssektorn."
+    "description": "Oberoende ratinginstitution som utvärderar kvaliteten på styrning inom den offentliga, företags-, medicinska och försvarsrelaterade sektorn."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo är världens första ratingbyrå vars ratings är kryptografiska artefakter från processen — inte åsikter. Varje ratingbeslut är förankrat utanför egen infrastruktur, verifierbar offline och offentligt granskningsbar.",
+    "description": "Certo är världens första ratingbyrå vars ratings är kryptografiska artefakter från processen — inte åsikter. Varje ratingbeslut är förankrat utanför vår egen infrastruktur, verifierbar offline och offentligt granskbar.",
     "hero_cta_primary": "Visa ratings",
     "hero_cta_secondary": "Läs mer",
     "section_ratings_title": "Senaste Certo Ratings",
@@ -14,18 +14,18 @@
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Bedömningar av styrningskvalitet hos institutioner",
-    "search_placeholder": "Sök efter institution...",
+    "subtitle": "Bedömningar av styrningskvaliteten i institutioner",
+    "search_placeholder": "Sök institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
-    "sector_corporate": "Privat",
+    "sector_corporate": "Företag",
     "sector_medical": "Medicinsk",
     "sector_defense": "Försvar",
     "sector_ngo": "Ideell",
-    "rating_valid_until": "Rating giltigt till",
-    "rating_issued": "Utgivningsdatum",
+    "rating_valid_until": "Rating gälltig till",
+    "rating_issued": "Utfärdandedatum",
     "no_results": "Inga resultat hittades",
-    "view_profile": "Visa profil"
+    "view_profile": "Se profil"
   },
   "Nav": {
     "ratings": "Ratings",
@@ -34,30 +34,31 @@
     "login": "Logga in",
     "documents": "Dokument",
     "pipeline": "Pipeline",
-    "dashboard": "Instrumentpanel"
+    "dashboard": "Instrumentpanel",
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
-    "privacy": "Integritetspolicy",
+    "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   },
   "About": {
     "title": "Om Certo Governance Institute",
-    "mission_title": "Uppdrag",
-    "mission_text": "Att bygga en kultur för god styrning genom oberoende bedömning och främjande av styrningsstandarder i Polen och Europa.",
-    "independence_title": "Oberoende",
-    "independence_text": "Stiftelsen är oberoende från bedömda enheter, offentliga myndigheter och kommersiella intressen.",
+    "mission_title": "Mission",
+    "mission_text": "Bygga en kultur för god styrning genom oberoende bedömning och främjande av governance-standarder i Polen och Europa.",
+    "independence_title": "Oberoendet",
+    "independence_text": "Stiftelsen är oberoende från de institutioner som bedöms, offentliga myndigheter och kommersiella intressen.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo Ratings baseras på en strikt metodologi grundad på ISO-standarder och EU-riktlinjer."
+    "methodology_text": "Certo Ratings bygger på en rigoros metodologi baserad på ISO-standarder och EU-riktlinjer."
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo Governance Institute",
     "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Skriv till oss",
-    "form_name": "Namn",
+    "form_title": "Kontakta oss",
+    "form_name": "För- och efternamn",
     "form_email": "E-postadress",
     "form_subject": "Ämne",
     "form_message": "Meddelande",

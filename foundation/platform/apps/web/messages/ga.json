@@ -1,72 +1,73 @@
 {
   "Metadata": {
     "title": "Fondúireacht Certo Governance Institute",
-    "description": "Gníomhaireacht rátála neamhspleách a dhéanann measúnú ar bhailchéim an rialachais i ngeirí an tSector Poiblí, Corpráideach, Leighis agus Dhífhostaithe."
+    "description": "Gníomhaireacht rátála neamhspleách a dhéanann measúnú ar cháilíocht rialúcháin sa tsector poiblí, corprúthach, leighis agus cosantais."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Is í Certo an chéad ghníomhaireacht rátála ar domhan arb iad a rátálacha ná artefacts cripteagrafacha an phróisis — ní tuairimí iad. Tá gach cinneadh rátála fréamhaithe taobh amuigh dá bhonneagar féin, infhíoraithe as líne agus inrianúil poiblí.",
-    "hero_cta_primary": "Seiceáil an rátálacha",
+    "description": "Is é Certo an chéad ghníomhaireacht rátála ar domhan ar gur ealaíona cripteagrafacha de phróiseas iad a rátaí — ní tuairimí. Tá gach cinneadh rátála fréamhaithe lasmuigh dá bhonneagar féin, infhíoruithe as líne agus infheasachta go poiblí.",
+    "hero_cta_primary": "Seiceáil na rátaí",
     "hero_cta_secondary": "Faigh tuilleadh eolais",
-    "section_ratings_title": "Na Rátálacha Certo is Déanaí",
-    "section_reports_title": "Anailísí agus Tuarascálacha",
-    "section_about_title": "Faoin Fhondúireacht"
+    "section_ratings_title": "Rátaí Certo is Nuaí",
+    "section_reports_title": "Anailísí agus Tuairiscí",
+    "section_about_title": "Fúinn"
   },
   "Ratings": {
-    "title": "Rátálacha Certo",
-    "subtitle": "Measúnuithe ar bhailchéim an rialachais i institiúidí",
+    "title": "Rátaí Certo",
+    "subtitle": "Measúnaithe ar cháilíocht rialúcháin institiúidí",
     "search_placeholder": "Cuardaigh institiúid...",
-    "filter_sector": "Gréine",
+    "filter_sector": "Earnáil",
     "sector_public": "Poiblí",
-    "sector_corporate": "Corpráideach",
+    "sector_corporate": "Corprúthach",
     "sector_medical": "Leighis",
-    "sector_defense": "Dífhostaithe",
+    "sector_defense": "Cosantais",
     "sector_ngo": "Neamhrialtasach",
-    "rating_valid_until": "Rátála bailí go dtí",
-    "rating_issued": "Dáta Eisíointe",
+    "rating_valid_until": "Rátá bailí go dtí",
+    "rating_issued": "Dáta an Eisiúna",
     "no_results": "Níor aimsíodh torthaí",
-    "view_profile": "Féach ar an phróifíl"
+    "view_profile": "Féach ar an Phróifíl"
   },
   "Nav": {
-    "ratings": "Rátálacha",
+    "ratings": "Rátaí",
     "methodology": "Modheolaíocht",
-    "about": "Faoin Fhondúireacht",
+    "about": "Fúinn",
     "login": "Logáil Isteach",
     "documents": "Doiciméid",
-    "pipeline": "Pipeline",
-    "dashboard": "Painéal"
+    "pipeline": "Píoplaline",
+    "dashboard": "Painéal",
+    "contact": "Teagmháil"
   },
   "Footer": {
     "copyright": "Fondúireacht Certo Governance Institute © {year}",
-    "privacy": "Polasaí Príobháideachais",
+    "privacy": "Polasaí Príobháideachta",
     "terms": "Téarmaí Úsáide",
-    "contact": "Kontakt"
+    "contact": "Teagmháil"
   },
   "About": {
-    "title": "Faoin Fhondúireacht Certo Governance Institute",
+    "title": "Fúinn Fondúireacht Certo Governance Institute",
     "mission_title": "Misean",
-    "mission_text": "Cultúr rialachais mhaith a thógáil trí mheasúnú neamhspleách agus trí chaighdeáin rialachais a chur chun cinn in Éirinn agus san Eoraip.",
+    "mission_text": "Cultúr rialúcháin maithe a thógáil trí mheasúnú neamhspleách agus caighdeáin rialúcháin a chur chun cinn in Éirinn agus san Eoraip.",
     "independence_title": "Neamhspleáchas",
-    "independence_text": "Tá an Fhondúireacht neamhspleách ar na heintitis a dhéantar measúnú orthu, ar chomhlachtaí an rialtais poiblí agus ar leasanna tráchtála.",
+    "independence_text": "Tá an Fhondúireacht neamhspleách ó na heintitis a dhéantar measúnú orthu, ó orgáin an chumhachta poiblí agus ó leasanna tráchtála.",
     "methodology_title": "Modheolaíocht",
-    "methodology_text": "Braitheann Rátálacha Certo ar modheolaíocht dhocht bunaithe ar chaighdeáin ISO agus ar threoraithe an AE."
+    "methodology_text": "Tá Rátaí Certo bunaithe ar mhodheolaíocht dhian atá bunaithe ar chaighdeáin ISO agus treoraithe AE."
   },
   "Contact": {
-    "title": "Kontakt",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "title": "Teagmháil",
+    "subtitle": "Fondúireacht Certo Governance Institute",
+    "address": "00-124 Baile Átha Cliath, Sráid Rondo Náisiúnta 1",
     "email": "rating@certogov.org",
-    "form_title": "Napisz do nas",
-    "form_name": "Imię i nazwisko",
-    "form_email": "Adres email",
-    "form_subject": "Temat",
-    "form_message": "Wiadomość",
-    "form_submit": "Wyślij wiadomość",
-    "form_success": "Wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.",
-    "subject_general": "Zapytanie ogólne",
-    "subject_rating": "Rating Certo",
-    "subject_methodology": "Metodologia",
-    "subject_cooperation": "Współpraca",
-    "subject_media": "Media"
+    "form_title": "Scríobh chugainn",
+    "form_name": "Ainm agus Sloinne",
+    "form_email": "Seoladh Ríomhphoist",
+    "form_subject": "Ábhar",
+    "form_message": "Teachtaireacht",
+    "form_submit": "Seol an Teachtaireacht",
+    "form_success": "Cuireadh an teachtaireacht ar fáil. Freagróimid chomh tapa agus is féidir.",
+    "subject_general": "Fiosrúchán Ginearálta",
+    "subject_rating": "Rátá Certo",
+    "subject_methodology": "Modheolaíocht",
+    "subject_cooperation": "Comhoibriú",
+    "subject_media": "Meáin"
   }
 }

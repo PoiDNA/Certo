@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Fundacja Certo Governance Institute",
-    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance dans les secteurs public, corporatif, médical et de la défense."
+    "title": "Fondation Certo Governance Institute",
+    "description": "Organisme de notation indépendant évaluant la qualité de la gouvernance dans les secteurs public, corporatif, médical et de la défense."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -10,7 +10,7 @@
     "hero_cta_secondary": "En savoir plus",
     "section_ratings_title": "Dernières Notations Certo",
     "section_reports_title": "Analyses et Rapports",
-    "section_about_title": "À propos de la Fondation"
+    "section_about_title": "À Propos de la Fondation"
   },
   "Ratings": {
     "title": "Notations Certo",
@@ -21,7 +21,7 @@
     "sector_corporate": "Corporatif",
     "sector_medical": "Médical",
     "sector_defense": "Défense",
-    "sector_ngo": "Organisations non gouvernementales",
+    "sector_ngo": "Secteur non gouvernemental",
     "rating_valid_until": "Notation valide jusqu'au",
     "rating_issued": "Date d'émission",
     "no_results": "Aucun résultat trouvé",
@@ -30,41 +30,42 @@
   "Nav": {
     "ratings": "Notations",
     "methodology": "Méthodologie",
-    "about": "À propos",
+    "about": "À Propos",
     "login": "Se connecter",
     "documents": "Documents",
     "pipeline": "Pipeline",
-    "dashboard": "Tableau de bord"
+    "dashboard": "Tableau de bord",
+    "contact": "Contact"
   },
   "Footer": {
-    "copyright": "Fundacja Certo Governance Institute © {year}",
+    "copyright": "Fondation Certo Governance Institute © {year}",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
     "contact": "Contact"
   },
   "About": {
-    "title": "À propos de la Fundacja Certo Governance Institute",
+    "title": "À Propos de la Fondation Certo Governance Institute",
     "mission_title": "Mission",
     "mission_text": "Construire une culture de bonne gouvernance par l'évaluation indépendante et la promotion des normes de gouvernance en Pologne et en Europe.",
     "independence_title": "Indépendance",
-    "independence_text": "La Fondation est indépendante des institutions évaluées, des organes du pouvoir public et des intérêts commerciaux.",
+    "independence_text": "La Fondation est indépendante des entités évaluées, des autorités publiques et des intérêts commerciaux.",
     "methodology_title": "Méthodologie",
-    "methodology_text": "Les notations Certo sont fondées sur une méthodologie rigoureuse basée sur les normes ISO et les directives de l'UE."
+    "methodology_text": "Les notations Certo reposent sur une méthodologie rigoureuse basée sur les normes ISO et les directives de l'UE."
   },
   "Contact": {
     "title": "Contact",
-    "subtitle": "Fundacja Certo Governance Institute",
-    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
+    "subtitle": "Fondation Certo Governance Institute",
+    "address": "00-124 Varsovie, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Nous écrire",
+    "form_title": "Écrivez-nous",
     "form_name": "Nom et prénom",
     "form_email": "Adresse e-mail",
     "form_subject": "Sujet",
     "form_message": "Message",
     "form_submit": "Envoyer le message",
-    "form_success": "Votre message a été envoyé. Nous vous répondrons dès que possible.",
+    "form_success": "Votre message a été envoyé. Nous vous répondrons au plus vite.",
     "subject_general": "Demande générale",
-    "subject_rating": "Rating Certo",
+    "subject_rating": "Notation Certo",
     "subject_methodology": "Méthodologie",
     "subject_cooperation": "Coopération",
     "subject_media": "Médias"

@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organe indépendant de notation évaluant la qualité de la gouvernance d'entreprise des institutions publiques, privées et à but non lucratif."
+    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, corporatives et non gouvernementales."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Connectez-vous",
-    "logout": "Déconnectez-vous",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
     "privacyPolicy": "Politique de confidentialité",
     "termsOfUse": "Conditions d'utilisation",
     "loading": "Chargement...",
@@ -33,7 +33,7 @@
     "inactive": "Inactif"
   },
   "Navigation": {
-    "home": "Page d'accueil",
+    "home": "Accueil",
     "ratings": "Notations",
     "reports": "Rapports",
     "analysis": "Analyses",
@@ -43,9 +43,9 @@
     "settings": "Paramètres"
   },
   "Auth": {
-    "login_title": "Connectez-vous",
+    "login_title": "Se connecter",
     "login_subtitle": "Connectez-vous à votre compte",
-    "login_with_google": "Connectez-vous avec Google",
+    "login_with_google": "Se connecter via Google",
     "email_label": "Adresse e-mail",
     "password_label": "Mot de passe",
     "forgot_password": "Mot de passe oublié ?",

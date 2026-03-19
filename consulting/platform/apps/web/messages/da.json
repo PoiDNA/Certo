@@ -6,57 +6,55 @@
   "Nav": {
     "advisors": "Rådgivere",
     "expertise": "Ekspertise",
-    "login": "Log ind"
+    "login": "Login",
+    "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Ekspertråd inden for corporate governance, compliance og sikkerhed for markedsledere.",
-    "ecosystem": "Certo-økosystem",
+    "description": "Ekspert rådgivning inden for corporate governance, compliance og sikkerhed for markedsledere.",
+    "ecosystem": "Certo-økosystemet",
     "accreditation": "Alle rådgivere er akkrediteret af Certo Governance Institute",
     "privacy": "Privatlivspolitik",
     "terms": "Vilkår",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Ekspertråd\npå ledelsesniveau.",
+    "hero_title": "Ekspert rådgivning\npå bestyrelsesniveau.",
     "hero_subtitle": "Vi forbinder akkrediterede Certo-rådgivere med institutioner, der kræver de højeste standarder for corporate governance og regulatorisk compliance.",
     "hero_cta": "Find ekspert",
-    "finder_title": "Jeg ønsker at tale med en ekspert inden for:",
-    "area_health": "Sundhedsvæsen",
+    "finder_title": "Jeg vil gerne tale med en ekspert inden for:",
+    "area_health": "Sundhedssektoren",
     "area_local_gov": "Lokale myndigheder",
     "area_defense": "Forsvar",
     "area_finance": "Finans",
     "area_education": "Uddannelse",
-    "form_title": "Efterlad dine kontaktoplysninger, så matcher vi dig med den rette rådgiver fra området",
-    "form_name": "Navn",
-    "form_email": "E-mailadresse (arbejdsmail)",
+    "form_title": "Lad os få dine kontaktoplysninger, så vi kan matche dig med den rigtige rådgiver fra området",
+    "form_name": "Fuldt navn",
+    "form_email": "E-mailadresse (arbejde)",
     "form_org": "Organisationsnavn / Titel",
     "form_submit": "Send forespørgsel",
-    "advisors_title": "Eksempler på eksperter fra vores netværk",
-    "advisor_bio": "Akkrediteret Certo-rådgiver med mange års erfaring i optimering af processer for strategiske markedsinstitutioner.",
-    "advisor_1_bio": "Ekspert inden for sundhedsvæsen og compliance, ansvarlig for vedligeholdelse og styrkning af Certo-ratinget i medicinsk sektor.",
-    "advisor_2_bio": "Specialist inden for finans og revision, som sørger for vedligeholdelse og styrkning af Certo-ratinget i finanssektoren.",
-    "advisor_3_bio": "Rådgiver inden for forsvar og cybersikkerhed, ansvarlig for styrkelse af Certo-ratinget i forsvarsindustrien."
+    "experts_headline": "Vores eksperter hjælper\nmed at vedligeholde og styrke\nCerto Rating.",
+    "experts_description": "Akkrediterede rådgivere med mange års erfaring i optimering af governance-processer for strategiske institutioner."
   },
   "Legal": {
-    "back": "Tilbage til startside",
-    "last_updated": "Senest opdateret: Marts 2026",
+    "back": "Tilbage til forsiden",
+    "last_updated": "Sidst opdateret: Marts 2026",
     "privacy_title": "Privatlivspolitik",
-    "terms_title": "Betingelser for brug"
+    "terms_title": "Vilkår for brug"
   },
   "FindAdvisor": {
     "title": "Find Certo-rådgiver",
     "sector_label": "Din institutions sektor",
     "need_label": "Hvad har du brug for?",
-    "need_audit": "Governance-revision",
+    "need_audit": "Governance audit",
     "need_advisory": "Strategisk rådgivning",
-    "need_training": "Kurser og workshops",
+    "need_training": "Uddannelse og workshops",
     "need_rating": "Forberedelse til rating",
     "region_label": "Region",
-    "submit": "Søg rådgiver"
+    "submit": "Søg efter rådgiver"
   },
   "Advisor": {
     "accredited_by": "Akkrediteret af Certo",
-    "specialization": "Speciale",
+    "specialization": "Specialisering",
     "sectors": "Sektorer",
     "contact_advisor": "Kontakt",
     "view_profile": "Se profil"
@@ -67,15 +65,15 @@
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Skriv til os",
-    "form_name": "Navn",
+    "form_name": "Fuldt navn",
     "form_email": "E-mailadresse",
     "form_subject": "Emne",
     "form_message": "Besked",
     "form_submit": "Send besked",
-    "form_success": "Beskeden blev sendt. Vi vender tilbage så hurtigt som muligt.",
+    "form_success": "Beskeden er sendt. Vi vender tilbage så hurtigt som muligt.",
     "subject_general": "Generel forespørgsel",
     "subject_advisory": "Rådgivning",
-    "subject_accreditation": "Rådgiverakreditering",
+    "subject_accreditation": "Rådgiverakkreditering",
     "subject_cooperation": "Samarbejde"
   }
 }

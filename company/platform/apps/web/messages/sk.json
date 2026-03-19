@@ -1,41 +1,42 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Overenie totožnosti a compliance pre verejné inštitúcie a korporácie."
+    "description": "Overovanie totožnosti a compliance pre verejné inštitúcie a korporácie."
   },
   "Nav": {
     "solutions": "Riešenia",
     "technology": "Technológia",
     "foundation": "Fundácia Certo",
-    "login": "Prihlásiť sa"
+    "login": "Prihlásiť sa",
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika Ochrany Osobných Údajov",
-    "terms": "Podmienky Služby",
+    "terms": "Podmienky Poskytovania Služieb",
     "contact": "Kontakt"
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
-    "address": "02-566 Warszava, ul. Puławska 2B",
+    "address": "02-566 Varšava, ul. Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Napíšte nám",
-    "form_name": "Meno a priezvisko",
-    "form_email": "E-mailová adresa",
+    "form_name": "Meno a Priezvisko",
+    "form_email": "E-mailová Adresa",
     "form_subject": "Predmet",
     "form_message": "Správa",
-    "form_submit": "Odoslať správu",
-    "form_success": "Správa bola odoslaná. Odpovieme čo najskôr.",
-    "subject_general": "Všeobecná otázka",
+    "form_submit": "Poslať Správu",
+    "form_success": "Správa bola odoslaná. Odpovedíme čo najskôr.",
+    "subject_general": "Všeobecná Otázka",
     "subject_implementation": "Implementácia",
-    "subject_technical": "Technická podpora",
+    "subject_technical": "Technická Podpora",
     "subject_cooperation": "Spolupráca"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Totožnosť.",
-    "hero_line2": "Compliance.",
+    "hero_line2": "Súlad.",
     "hero_line3": "Istota.",
     "hero_description": "Infraštruktúra overovania a compliance pre verejné inštitúcie, korporácie a regulované subjekty. Postavená na štandardoch",
     "hero_built_on": "Certo Governance Institute",
@@ -43,32 +44,32 @@
     "cta_secondary": "SLUŽBY",
     "services_label": "SLUŽBY",
     "services_title": "Tri vrstvy infraštruktúry compliance",
-    "service1_title": "Overenie Totožnosti",
-    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overenie dokumentov, skrínning sankcií a PEP, integrácia so štátnymi registrami.",
+    "service1_title": "Overovanie Totožnosti",
+    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overovanie dokumentov, screening sankcií a PEP, integrácia s register štátnymi.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Automatické bodovanie zhody postavené na metodológii Certo Governance Institute. Päťstupňový systém hodnotenia s úplnou audítnou stopou.",
+    "service2_desc": "Automatické skórovanie súladu na základe metodológie Certo Governance Institute. Päťstupňový systém hodnotenia s úplnou audítnou stopou.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatické plány náprav a monitoring ich implementácie. Integrácia so systémami ERP, GRC a platformami na riadenie rizík.",
+    "service3_desc": "Automatické plány náprav a monitoring ich realizácie. Integrácia so systémami ERP, GRC a platformami správy rizík.",
     "arch_label": "ARCHITEKTÚRA",
-    "arch_title": "Ako funguje Certo ID",
+    "arch_title": "Ako Funguje Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Údaje subjektu + dokumenty + regulačný kontext",
     "step2_title": "Verify",
-    "step2_desc": "Overenie totožnosti, skrínning, verejný register",
+    "step2_desc": "Overovanie totožnosti, screening, verejný register",
     "step3_title": "Score",
-    "step3_desc": "Automatický rating zhody Certo Vector",
+    "step3_desc": "Automatický rating súladu Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "Správa PDF + API + dashboard Certo Online",
+    "step4_desc": "Správa PDF + API + Dashboard Certo Online",
     "badge_iso": "Štandardy ISO",
-    "badge_compliance": "Regulačná zhoda",
-    "badge_kyc": "Overenie totožnosti",
-    "badge_governance": "Hodnotenie governance"
+    "badge_compliance": "Regulačný Súlad",
+    "badge_kyc": "Overovanie Totožnosti",
+    "badge_governance": "Hodnotenie Governance"
   },
   "Legal": {
-    "back": "Späť na úvodnú stránku",
-    "last_updated": "Posledná aktualizácia: Marec 2026",
+    "back": "Návrat na Domovskú Stránku",
+    "last_updated": "Posledná Aktualizácia: Marec 2026",
     "privacy_title": "Politika Ochrany Osobných Údajov",
-    "terms_title": "Podmienky Služby"
+    "terms_title": "Podmienky Poskytovania Služieb"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
@@ -76,20 +77,20 @@
     "your_rating": "Váš Rating Certo",
     "your_delegates": "Vaši Delegáti",
     "your_accords": "Vaše Certo Accord",
-    "recent_activity": "Nedávna aktivita",
-    "quick_actions": "Rýchle akcie"
+    "recent_activity": "Nedávna Aktivita",
+    "quick_actions": "Rýchle Akcie"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizácia",
-    "contact_person": "Kontaktná osoba",
+    "contact_person": "Osoba Kontaktu",
     "sector": "Sektor",
-    "edit_profile": "Upraviť profil",
-    "verified_badge": "Overený subjekt"
+    "edit_profile": "Upraviť Profil",
+    "verified_badge": "Overený Subjekt"
   },
   "Delegates": {
     "title": "Delegáti Certo",
-    "add_delegate": "Pridať delegáta",
+    "add_delegate": "Pridať Delegáta",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stav",
     "primary_link": "Odkaz PRIMARY",

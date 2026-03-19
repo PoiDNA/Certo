@@ -1,27 +1,27 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingagentur, der vurderer kvaliteten af styring inden for den offentlige, private, medicinske og forsvarssektorer."
+    "description": "Uafhængigt ratingagentur, der vurderer kvaliteten af ledelse og styring (governance) i den offentlige, private, medicinske og forsvarssektor."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter af processen – ikke meninger. Hver ratingbeslutning er forankret uden for vores egen infrastruktur, offline-verificerbar og offentligt revisionerbar.",
+    "description": "Certo er verdens første ratingagentur, hvis ratings er kryptografiske artefakter fra processen — ikke meninger. Hver ratingbeslutning er forankret uden for egen infrastruktur, kan verificeres offline og er offentligt revidérbar.",
     "hero_cta_primary": "Se ratings",
-    "hero_cta_secondary": "Få mere at vide",
+    "hero_cta_secondary": "Læs mere",
     "section_ratings_title": "Seneste Certo Ratings",
     "section_reports_title": "Analyser og Rapporter",
-    "section_about_title": "Om Stiftelsen"
+    "section_about_title": "Om Fundationen"
   },
   "Ratings": {
     "title": "Certo Ratings",
-    "subtitle": "Vurderinger af institutioners styringskvalitet",
+    "subtitle": "Vurderinger af ledelseskvalitet i institutioner",
     "search_placeholder": "Søg efter institution...",
     "filter_sector": "Sektor",
     "sector_public": "Offentlig",
-    "sector_corporate": "Privat",
-    "sector_medical": "Medicinsk",
+    "sector_corporate": "Private",
+    "sector_medical": "Medicin",
     "sector_defense": "Forsvar",
-    "sector_ngo": "Nonprofit",
+    "sector_ngo": "Almennyttigt",
     "rating_valid_until": "Rating gyldig til",
     "rating_issued": "Udstedelsesdato",
     "no_results": "Ingen resultater fundet",
@@ -30,11 +30,12 @@
   "Nav": {
     "ratings": "Ratings",
     "methodology": "Metodologi",
-    "about": "Om Stiftelsen",
+    "about": "Om Fundationen",
     "login": "Log ind",
     "documents": "Dokumenter",
     "pipeline": "Pipeline",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "Certo Governance Institute © {year}",
@@ -45,11 +46,11 @@
   "About": {
     "title": "Om Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "At opbygge en kultur for god styring gennem uafhængig vurdering og fremme af styringsstandarder i Polen og Europa.",
+    "mission_text": "At opbygge en kultur for god ledelse og styring gennem uafhængig vurdering og fremme af governance-standarder i Polen og Europa.",
     "independence_title": "Uafhængighed",
-    "independence_text": "Stiftelsen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
+    "independence_text": "Fundationen er uafhængig af de vurderede enheder, offentlige myndigheder og kommercielle interesser.",
     "methodology_title": "Metodologi",
-    "methodology_text": "Certo Ratings er baseret på streng metodologi baseret på ISO-standarder og EU-retningslinjer."
+    "methodology_text": "Certo Ratings er baseret på stringent metodologi, der bygger på ISO-standarder og EU-retningslinjer."
   },
   "Contact": {
     "title": "Kontakt",
@@ -62,8 +63,8 @@
     "form_subject": "Emne",
     "form_message": "Besked",
     "form_submit": "Send besked",
-    "form_success": "Besked blev sendt. Vi vender tilbage så hurtigt som muligt.",
-    "subject_general": "Generel forespørgsel",
+    "form_success": "Besked er blevet sendt. Vi vender tilbage hurtigst muligt.",
+    "subject_general": "Generel henvendelse",
     "subject_rating": "Certo Rating",
     "subject_methodology": "Metodologi",
     "subject_cooperation": "Samarbejde",

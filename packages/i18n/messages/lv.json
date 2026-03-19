@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neatkarīgs reitinga organs, kas novērtē publisko, korporatīvo un bezpeļņas organizāciju pārvaldības kvalitāti."
+    "description": "Neatkarīgs reitinga orgāns, kas novērtē publisko, korporatīvo un bezpeļņas organizāciju pārvaldības kvalitāti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,8 +18,8 @@
     "logout": "Izrakstīties",
     "privacyPolicy": "Privātuma politika",
     "termsOfUse": "Lietošanas noteikumi",
-    "loading": "Ielāde...",
-    "error": "Radās kļūda",
+    "loading": "Ielādē...",
+    "error": "Radusies kļūda",
     "save": "Saglabāt",
     "cancel": "Atcelt",
     "confirm": "Apstiprināt",
@@ -35,7 +35,7 @@
   "Navigation": {
     "home": "Sākumlapa",
     "ratings": "Reitingi",
-    "reports": "Pārskati",
+    "reports": "Ziņojumi",
     "analysis": "Analīzes",
     "about": "Par Fondu",
     "contact": "Kontakti",
@@ -45,22 +45,22 @@
   "Auth": {
     "login_title": "Pierakstīties",
     "login_subtitle": "Pierakstieties savā kontā",
-    "login_with_google": "Pierakstīties ar Google",
+    "login_with_google": "Pierakstieties ar Google",
     "email_label": "E-pasta adrese",
     "password_label": "Parole",
-    "forgot_password": "Aizmirsi paroli?",
-    "no_account": "Vēl nav konta?",
+    "forgot_password": "Aizmirsāt paroli?",
+    "no_account": "Vai jums nav konta?",
     "register": "Reģistrēties"
   },
   "Errors": {
-    "404_title": "Lapa netika atrasta",
-    "404_description": "Lapa, kuru meklē, neeksistē vai tā ir pārvietota.",
+    "404_title": "Lapa nav atrasta",
+    "404_description": "Meklētā lapa neeksistē vai tā ir pārvietota.",
     "500_title": "Servera kļūda",
-    "500_description": "Radās negaidīta kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.",
-    "unauthorized": "Piekļuve liegta. Pierakstieties, lai turpinātu."
+    "500_description": "Radusies negaidīta kļūda. Vēlāk mēģiniet vēlreiz.",
+    "unauthorized": "Jums nav piekļuves. Pierakstieties, lai turpinātu."
   },
   "Footer": {
-    "rights": "Visas tiesības paturētas",
+    "rights": "Visi tiesības aizsargātas",
     "privacy": "Privātuma politika",
     "terms": "Lietošanas noteikumi",
     "contact": "Kontakti"

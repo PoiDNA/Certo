@@ -1,53 +1,51 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Nájdite poradcu",
-    "description": "Akreditovaní poradcovia Certo. Správa korporácií a súlad."
+    "title": "Certo Consulting — Nájdite Poradcu",
+    "description": "Akreditovaní poradcovia Certo. Správa podnikov a súlad."
   },
   "Nav": {
     "advisors": "Poradcovia",
     "expertise": "Odbornosť",
-    "login": "Prihlásenie"
+    "login": "Prihlásenie",
+    "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Odborné poradenstvo v oblasti správy korporácií, súladu a bezpečnosti pre trhových lídrov.",
+    "description": "Špecializované poradenstvo v oblasti správy podnikov, súladu a bezpečnosti pre lídrov trhu.",
     "ecosystem": "Ekosystém Certo",
     "accreditation": "Všetci poradcovia sú akreditovaní Nadáciou Certo Governance Institute",
-    "privacy": "Politika súkromia",
-    "terms": "Podmienky použitia",
+    "privacy": "Politika ochrany osobných údajov",
+    "terms": "Podmienky používania",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Odborné poradenstvo\nna úrovni vedenia.",
-    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších štandardov správy korporácií a regulačného súladu.",
+    "hero_title": "Špecializované poradenstvo\nna úrovni vedenia.",
+    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších štandardov správy podnikov a regulačnej zhody.",
     "hero_cta": "Nájdite experta",
-    "finder_title": "Chcem sa poporozprávať s odborníkom na:",
+    "finder_title": "Chcem si popovedať s odborníkom na:",
     "area_health": "Zdravotníctvo",
     "area_local_gov": "Samospráva",
     "area_defense": "Obrana",
     "area_finance": "Financie",
-    "area_education": "Vzdelanie",
-    "form_title": "Zanechajte kontakt, aby sme vám pridelili vhodného poradcu z oblasti",
+    "area_education": "Vzdelávanie",
+    "form_title": "Zanechajte svoje údaje, aby sme vám vybrali vhodného poradcu z oblasti",
     "form_name": "Meno a priezvisko",
     "form_email": "E-mailová adresa (pracovná)",
     "form_org": "Názov organizácie / Pozícia",
-    "form_submit": "Odoslať dopyt",
-    "advisors_title": "Príklady expertov z našej siete",
-    "advisor_bio": "Akreditovaný poradca Certo s dlhodobými skúsenosťami v optimalizácii procesov pre strategické trhové inštitúcie.",
-    "advisor_1_bio": "Špecialista v oblasti zdravotníctva a súladu, zodpovedná za udržiavanie a posilňovanie ratingu Certo v zdravotníckom priemysle.",
-    "advisor_2_bio": "Špecialista v oblasti financií a auditu, starajúci sa o udržiavanie a posilňovanie ratingu Certo vo finančnom sektore.",
-    "advisor_3_bio": "Poradca v oblasti obrany a kybernetickej bezpečnosti, zodpovedný za posilňovanie ratingu Certo v obrannom priemysle."
+    "form_submit": "Odoslať otázku",
+    "experts_headline": "Naši experti vám pomáhajú\nzachovať a posilniť\nRating Certo.",
+    "experts_description": "Akreditovaní poradcovia s dlhoročnými skúsenosťami v optimalizácii procesov governance pre strategické inštitúcie."
   },
   "Legal": {
-    "back": "Späť na domovskú stránku",
+    "back": "Vrátiť sa na úvodnú stránku",
     "last_updated": "Posledná aktualizácia: Marec 2026",
-    "privacy_title": "Politika súkromia",
-    "terms_title": "Podmienky použitia"
+    "privacy_title": "Politika ochrany osobných údajov",
+    "terms_title": "Podmienky používania"
   },
   "FindAdvisor": {
     "title": "Nájdite poradcu Certo",
     "sector_label": "Sektor vašej inštitúcie",
     "need_label": "Čo potrebujete?",
-    "need_audit": "Audit správy",
+    "need_audit": "Audit správy podnikov",
     "need_advisory": "Strategické poradenstvo",
     "need_training": "Školenia a workshopy",
     "need_rating": "Príprava na rating",
@@ -55,10 +53,10 @@
     "submit": "Hľadať poradcu"
   },
   "Advisor": {
-    "accredited_by": "Akreditovaný Certo",
+    "accredited_by": "Akreditovaný spoločnosťou Certo",
     "specialization": "Špecializácia",
     "sectors": "Sektory",
-    "contact_advisor": "Kontaktujte",
+    "contact_advisor": "Kontaktovať",
     "view_profile": "Zobraziť profil"
   },
   "Contact": {
@@ -72,8 +70,8 @@
     "form_subject": "Predmet",
     "form_message": "Správa",
     "form_submit": "Odoslať správu",
-    "form_success": "Správa bola odoslaná. Odpovieme čo najskôr.",
-    "subject_general": "Všeobecný dopyt",
+    "form_success": "Správa bola odoslaná. Odpovedíme čo najskôr.",
+    "subject_general": "Všeobecná otázka",
     "subject_advisory": "Poradenstvo",
     "subject_accreditation": "Akreditácia poradcu",
     "subject_cooperation": "Spolupráca"

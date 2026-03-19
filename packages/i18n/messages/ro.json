@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ de rating independent care evaluează calitatea guvernanței instituțiilor publice, corporative și non-profit."
+    "description": "Organ independent de rating care evaluează calitatea gouvernanței instituțiilor publice, corporative și non-profit."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -33,13 +33,13 @@
     "inactive": "Inactiv"
   },
   "Navigation": {
-    "home": "Pagina de start",
+    "home": "Pagina principală",
     "ratings": "Ratinguri",
     "reports": "Rapoarte",
     "analysis": "Analize",
     "about": "Despre Fundație",
     "contact": "Contact",
-    "dashboard": "Tablou de bord",
+    "dashboard": "Panou de control",
     "settings": "Setări"
   },
   "Auth": {
@@ -57,7 +57,7 @@
     "404_description": "Pagina pe care o căutați nu există sau a fost mutată.",
     "500_title": "Eroare de server",
     "500_description": "A apărut o eroare neașteptată. Încercați din nou mai târziu.",
-    "unauthorized": "Acces interzis. Conectați-vă pentru a continua."
+    "unauthorized": "Acces refuzat. Conectați-vă pentru a continua."
   },
   "Footer": {
     "rights": "Toate drepturile rezervate",

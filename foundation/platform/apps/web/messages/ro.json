@@ -1,60 +1,61 @@
 {
   "Metadata": {
     "title": "Fundația Certo Governance Institute",
-    "description": "Organ independent de rating care evaluează calitatea governanței în sectorul public, corporativ, medical și de apărare."
+    "description": "Organ de rating independent care evaluează calitatea guvernanței în sectoarele public, corporativ, medical și apărării."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo este prima agenție de rating din lume al cărei ratinguri sunt artefacte criptografice ale procesului — nu opinii. Fiecare decizie de rating este ancorat în afara propriei infrastructuri, verificabil offline și auditabil public.",
-    "hero_cta_primary": "Verifică ratingurile",
-    "hero_cta_secondary": "Află mai multe",
-    "section_ratings_title": "Cele mai recente Ratinguri Certo",
+    "description": "Certo este prima agenție de rating din lume ale cărei rating-uri sunt artefacte criptografice ale procesului — nu opinii. Fiecare decizie de rating este ancorat în afara propriei infrastructuri, verificabil offline și supus auditării publice.",
+    "hero_cta_primary": "Verifică rating-urile",
+    "hero_cta_secondary": "Află mai mult",
+    "section_ratings_title": "Rating-urile Certo Cea mai recente",
     "section_reports_title": "Analize și Rapoarte",
     "section_about_title": "Despre Fundație"
   },
   "Ratings": {
-    "title": "Ratinguri Certo",
-    "subtitle": "Evaluări ale calității governanței instituțiilor",
-    "search_placeholder": "Caută instituție...",
+    "title": "Rating-urile Certo",
+    "subtitle": "Evaluări ale calității guvernanței instituționale",
+    "search_placeholder": "Cauta instituție...",
     "filter_sector": "Sector",
     "sector_public": "Public",
     "sector_corporate": "Corporativ",
     "sector_medical": "Medical",
-    "sector_defense": "Apărare",
-    "sector_ngo": "Organizații Neguvernamentale",
-    "rating_valid_until": "Rating valabil până la",
-    "rating_issued": "Data eliberării",
+    "sector_defense": "Apărării",
+    "sector_ngo": "Neguvernamental",
+    "rating_valid_until": "Rating valid până la",
+    "rating_issued": "Data emiterii",
     "no_results": "Nu au fost găsite rezultate",
-    "view_profile": "Vezi profil"
+    "view_profile": "Vezi profilul"
   },
   "Nav": {
-    "ratings": "Ratinguri",
+    "ratings": "Rating-uri",
     "methodology": "Metodologie",
     "about": "Despre Fundație",
     "login": "Conectare",
     "documents": "Documente",
     "pipeline": "Pipeline",
-    "dashboard": "Tablou de Bord"
+    "dashboard": "Panou",
+    "contact": "Contact"
   },
   "Footer": {
     "copyright": "Fundația Certo Governance Institute © {year}",
     "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
+    "terms": "Condiții de Utilizare",
     "contact": "Contact"
   },
   "About": {
     "title": "Despre Fundația Certo Governance Institute",
     "mission_title": "Misiune",
-    "mission_text": "Construirea unei culturi a unei bune guvernanțe prin evaluare independentă și promovarea standardelor de governance în Polonia și Europa.",
+    "mission_text": "Construirea unei culturi a bunei guvernanțe prin evaluarea independentă și promovarea standardelor de governance în Polonia și Europa.",
     "independence_title": "Independență",
     "independence_text": "Fundația este independentă de entitățile evaluate, organele autorității publice și interesele comerciale.",
     "methodology_title": "Metodologie",
-    "methodology_text": "Ratingurile Certo se bazează pe o metodologie riguroasă fundamentată pe standardele ISO și pe orientările UE."
+    "methodology_text": "Rating-urile Certo se bazează pe o metodologie riguroasă bazată pe standardele ISO și directivele UE."
   },
   "Contact": {
     "title": "Contact",
     "subtitle": "Fundația Certo Governance Institute",
-    "address": "00-124 Varșovia, ul. Rondo ONZ 1",
+    "address": "00-124 Warszawa, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
     "form_title": "Scrie-ne",
     "form_name": "Nume și prenume",
@@ -62,11 +63,11 @@
     "form_subject": "Subiect",
     "form_message": "Mesaj",
     "form_submit": "Trimite mesaj",
-    "form_success": "Mesajul a fost trimis. Vom răspunde cât mai curând posibil.",
+    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât de curând posibil.",
     "subject_general": "Întrebare generală",
     "subject_rating": "Rating Certo",
     "subject_methodology": "Metodologie",
-    "subject_cooperation": "Cooperare",
+    "subject_cooperation": "Colaborare",
     "subject_media": "Media"
   }
 }

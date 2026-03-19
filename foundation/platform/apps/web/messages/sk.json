@@ -1,31 +1,31 @@
 {
   "Metadata": {
     "title": "Fundácia Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotí kvalitu riadenia v sektore verejnej správy, korporátnom, zdravotnickom a obrannom."
+    "description": "Nezávislý ratingový orgán hodnotiacej kvalitu riadenia vo verejnom, korporátnom, medicínskom a obrannom sektore."
   },
   "Home": {
     "title": "Certo Governance Institute",
-    "description": "Certo je prvou svetovou ratingovou agentúrou, ktorej ratingy sú kryptografickými artefaktmi procesu — nie názormi. Každé rozhodnutie o ratingu je zakotvené mimo vlastnej infraštruktúry, overiteľné offline a verejne auditovateľné.",
-    "hero_cta_primary": "Pozri si ratingy",
-    "hero_cta_secondary": "Zisti viac",
-    "section_ratings_title": "Najnovšie Ratingy Certo",
+    "description": "Certo je prvou na svete ratingovou agentúrou, ktorej ratingy sú kryptografickými artefaktmi procesu — nie názormi. Každé rozhodnutie o ratingu je ukotvené mimo vlastnú infraštruktúru, overiteľné offline a verejne auditovateľné.",
+    "hero_cta_primary": "Pozrite si ratingy",
+    "hero_cta_secondary": "Zistite viac",
+    "section_ratings_title": "Najnovšie Certo Ratingy",
     "section_reports_title": "Analýzy a Správy",
     "section_about_title": "O Fundácii"
   },
   "Ratings": {
-    "title": "Ratingy Certo",
+    "title": "Certo Ratingy",
     "subtitle": "Hodnotenia kvality riadenia inštitúcií",
-    "search_placeholder": "Vyhľadaj inštitúciu...",
+    "search_placeholder": "Vyhľadávať inštitúciu...",
     "filter_sector": "Sektor",
     "sector_public": "Verejný",
     "sector_corporate": "Korporátny",
-    "sector_medical": "Zdravotnícky",
+    "sector_medical": "Medicínsky",
     "sector_defense": "Obranný",
     "sector_ngo": "Nezisková organizácia",
     "rating_valid_until": "Rating platný do",
     "rating_issued": "Dátum vydania",
     "no_results": "Neboli nájdené žiadne výsledky",
-    "view_profile": "Pozri profil"
+    "view_profile": "Zobraziť profil"
   },
   "Nav": {
     "ratings": "Ratingy",
@@ -34,7 +34,8 @@
     "login": "Prihlásiť sa",
     "documents": "Dokumenty",
     "pipeline": "Pipeline",
-    "dashboard": "Panel"
+    "dashboard": "Panel",
+    "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "Fundácia Certo Governance Institute © {year}",
@@ -49,22 +50,22 @@
     "independence_title": "Nezávislosť",
     "independence_text": "Fundácia je nezávislá od hodnotených subjektov, orgánov verejnej moci a komerčných záujmov.",
     "methodology_title": "Metodológia",
-    "methodology_text": "Ratingy Certo sú založené na prísnej metodológii vychádzajúcej zo štandardov ISO a usmernení EU."
+    "methodology_text": "Certo Ratingy sú založené na prísnej metodológii vychádzajúcej z noriem ISO a smerníc EU."
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Fundácia Certo Governance Institute",
-    "address": "00-124 Varšava, ul. Rondo OSN 1",
+    "address": "00-124 Varšava, ul. Rondo ONZ 1",
     "email": "rating@certogov.org",
-    "form_title": "Napíš nám",
+    "form_title": "Napíšte nám",
     "form_name": "Meno a Priezvisko",
     "form_email": "E-mailová Adresa",
     "form_subject": "Predmet",
     "form_message": "Správa",
-    "form_submit": "Odoslať Správu",
-    "form_success": "Správa bola odoslaná. Odpovieme vám čo najskôr.",
-    "subject_general": "Všeobecný dotaz",
-    "subject_rating": "Rating Certo",
+    "form_submit": "Poslať Správu",
+    "form_success": "Správa bola odoslaná. Odpovedáme čo najskôr.",
+    "subject_general": "Všeobecná Otázka",
+    "subject_rating": "Certo Rating",
     "subject_methodology": "Metodológia",
     "subject_cooperation": "Spolupráca",
     "subject_media": "Médiá"

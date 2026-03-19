@@ -1,18 +1,19 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificare identitate și compliance pentru instituții publice și corporații."
+    "description": "Verificare identității și compliance pentru instituții publice și corporații."
   },
   "Nav": {
     "solutions": "Soluții",
     "technology": "Tehnologie",
     "foundation": "Fundația Certo",
-    "login": "Conectare"
+    "login": "Conectare",
+    "contact": "Contact"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
+    "terms": "Condiții de Utilizare",
     "contact": "Contact"
   },
   "Contact": {
@@ -20,13 +21,13 @@
     "subtitle": "Certo ID PSA",
     "address": "02-566 Varșovia, ul. Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Scrie-ne",
+    "form_title": "Trimite-ne un mesaj",
     "form_name": "Nume și prenume",
-    "form_email": "Adresă de e-mail",
+    "form_email": "Adresă de email",
     "form_subject": "Subiect",
     "form_message": "Mesaj",
     "form_submit": "Trimite mesaj",
-    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând.",
+    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând posibil.",
     "subject_general": "Întrebare generală",
     "subject_implementation": "Implementare",
     "subject_technical": "Suport tehnic",
@@ -42,25 +43,25 @@
     "cta_primary": "ÎNCEPE IMPLEMENTAREA",
     "cta_secondary": "SERVICII",
     "services_label": "SERVICII",
-    "services_title": "Trei niveluri ale infrastructurii de compliance",
+    "services_title": "Trei straturi ale infrastructurii compliance",
     "service1_title": "Verificare Identitate",
-    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată a documentelor, screening de sancțiuni și PEP, integrare cu registrele de stat.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring automat de conformitate bazat pe metodologia Certo Governance Institute. Sistem de evaluare în cinci trepte cu audit trail complet.",
+    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată de documente, screening sancțiuni și PEP, integrare cu registre de stat.",
+    "service2_title": "Rating Conformitate",
+    "service2_desc": "Scoring automat al conformității bazat pe metodologia Certo Governance Institute. Sistem de evaluare cu cinci niveluri cu pist de audit complet.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Planuri de remediere automată și monitorizarea implementării lor. Integrare cu sisteme ERP, GRC și platforme de gestionare a riscurilor.",
+    "service3_desc": "Planuri de remediere automată și monitorizare a implementării. Integrare cu sisteme ERP, GRC și platforme de management al riscului.",
     "arch_label": "ARHITECTURĂ",
     "arch_title": "Cum funcționează Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Date entitate + documente + context regulatoriu",
+    "step1_desc": "Date entitate + documente + context reglementar",
     "step2_title": "Verify",
     "step2_desc": "Verificare identitate, screening, registru public",
     "step3_title": "Score",
-    "step3_desc": "Rating automat de conformitate Certo Vector",
+    "step3_desc": "Rating automat conformitate Certo Vector",
     "step4_title": "Report",
-    "step4_desc": "Raport PDF + API + dashboard Certo Online",
+    "step4_desc": "Raport PDF + API + panou de bord Certo Online",
     "badge_iso": "Standarde ISO",
-    "badge_compliance": "Conformitate regulatorie",
+    "badge_compliance": "Conformitate reglementară",
     "badge_kyc": "Verificare identitate",
     "badge_governance": "Evaluare governance"
   },
@@ -68,12 +69,12 @@
     "back": "Înapoi la pagina principală",
     "last_updated": "Ultima actualizare: martie 2026",
     "privacy_title": "Politica de Confidențialitate",
-    "terms_title": "Termeni și Condiții"
+    "terms_title": "Condiții de Utilizare"
   },
   "Dashboard": {
-    "title": "Tablou Certo ID",
-    "welcome": "Bine ai venit, {name}",
-    "your_rating": "Rating-ul tău Certo",
+    "title": "Panou Certo ID",
+    "welcome": "Bun venit, {name}",
+    "your_rating": "Ratingul tău Certo",
     "your_delegates": "Delegații tăi",
     "your_accords": "Certo Accord-urile tale",
     "recent_activity": "Activitate recentă",
@@ -82,7 +83,7 @@
   "Profile": {
     "title": "Profil",
     "organization": "Organizație",
-    "contact_person": "Persoană contact",
+    "contact_person": "Persoană de contact",
     "sector": "Sector",
     "edit_profile": "Editează profil",
     "verified_badge": "Entitate verificată"
