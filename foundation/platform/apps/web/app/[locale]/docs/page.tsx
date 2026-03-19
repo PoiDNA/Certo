@@ -1,12 +1,42 @@
 import { getAllDocuments, ENTITY_LABELS, STATUS_CONFIG } from "@/lib/documents";
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 import Link from "next/link";
 import { setRequestLocale } from 'next-intl/server';
 
 export const revalidate = 60; // ISR: revalidate every 60s
 
+async function getUser() {
+  const cookieStore = await cookies();
+  const sb = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() { return cookieStore.getAll(); },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value, options }) =>
+            cookieStore.set(name, value, options)
+          );
+        },
+      },
+    }
+  );
+  const { data: { user } } = await sb.auth.getUser();
+  return user;
+}
+
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  // Require authentication — internal documentation
+  const user = await getUser();
+  if (!user) {
+    redirect(`/${locale}/login`);
+  }
+
   const docs = getAllDocuments();
   
   const foundation = docs.filter(d => d.entity === "foundation");
