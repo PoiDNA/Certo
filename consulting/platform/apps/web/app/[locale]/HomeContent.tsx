@@ -78,16 +78,16 @@ export default function HomeContent() {
 
           {/* Experts hero image */}
           <div className="relative overflow-hidden mb-10">
-            <div className="relative w-full aspect-[21/9] md:aspect-[3/1]">
+            <div className="relative w-full aspect-[16/9] md:aspect-[2/1]">
               <img
                 src={`${R2_BASE}/consulting/persona/3X.png`}
                 alt={t('experts_headline')}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-certo-primary/90 via-certo-primary/60 to-transparent" />
-              <div className="absolute inset-0 flex items-center">
-                <div className="max-w-xl px-8 md:px-16">
-                  <h3 className="font-display text-2xl md:text-4xl lg:text-5xl text-white font-light leading-[1.15] mb-4 md:mb-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-certo-primary via-certo-primary/40 to-transparent" />
+              <div className="absolute inset-0 flex items-end">
+                <div className="w-full px-8 md:px-16 pb-10 md:pb-16 grid md:grid-cols-2 gap-6 md:gap-12 items-end">
+                  <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-white font-light leading-[1.15] whitespace-pre-line">
                     {t('experts_headline')}
                   </h3>
                   <p className="text-white/80 text-sm md:text-base lg:text-lg font-light leading-relaxed max-w-md">
