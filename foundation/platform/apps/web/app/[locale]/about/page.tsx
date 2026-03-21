@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import OrgChart from '../../../components/about/OrgChart';
 import PrinciplesSection from '../../../components/about/PrinciplesSection';
+import { images } from '../../../lib/images';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -40,14 +41,38 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         {/* Organizational structure */}
         <OrgChart />
 
-        {/* Founder */}
-        <div className="bg-certo-cream border-l-4 border-certo-gold p-8 mb-16">
-          <p className="text-lg font-serif italic text-certo-navy leading-relaxed mb-4">
-            {t('founder_quote')}
-          </p>
-          <p className="text-sm text-certo-navy/60">
-            — {t('founder_name')}, {t('founder_role')}
-          </p>
+        {/* Founder — Preambuła */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-serif font-bold text-certo-navy mb-8">
+            {t('founder_section_title')}
+          </h2>
+          <div className="flex flex-col md:flex-row gap-10 items-start">
+            {/* Portrait */}
+            <div className="flex-shrink-0 flex flex-col items-center gap-3">
+              <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-certo-gold/30 shadow-lg">
+                <img
+                  src={images.founderPortrait}
+                  alt={t('founder_name')}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="text-center">
+                <p className="font-serif font-bold text-certo-navy">{t('founder_name')}</p>
+                <p className="text-sm text-certo-navy/60">{t('founder_role')}</p>
+              </div>
+            </div>
+            {/* Preamble text */}
+            <div className="flex-1">
+              <div className="text-certo-gold/30 text-6xl font-serif leading-none mb-4">&ldquo;</div>
+              <p className="text-lg font-serif text-certo-navy leading-relaxed mb-6">
+                {t('founder_preamble')}
+              </p>
+              <blockquote className="text-lg font-serif italic text-certo-gold leading-relaxed border-l-4 border-certo-gold pl-6">
+                {t('founder_quote')}
+              </blockquote>
+            </div>
+          </div>
         </div>
 
         {/* Principles */}

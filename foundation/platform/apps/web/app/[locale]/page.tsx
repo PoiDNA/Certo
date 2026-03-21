@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import HeroSection from '../../components/home/HeroSection';
 import WhySection from '../../components/home/WhySection';
 import PhotoDivider from '../../components/home/PhotoDivider';
-import FounderPreamble from '../../components/home/FounderPreamble';
 import PillarsPreview from '../../components/home/PillarsPreview';
 import FactDeNoiserSection from '../../components/home/FactDeNoiserSection';
 import RhetoricalBreak from '../../components/home/RhetoricalBreak';
@@ -32,7 +31,6 @@ export default async function Home({
         imageUrl={images.dividerParliament}
         alt="Panorama europejskiego budynku instytucjonalnego"
       />
-      <FounderPreamble />
       <PillarsPreview />
       <FactDeNoiserSection />
       <RhetoricalBreak question={t('rhetorical_standard')} />

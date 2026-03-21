@@ -11,7 +11,7 @@ export const images = {
   dividerParliament: `${R2}/3.1%20divider-parliament.png`,
   founderPortrait: `${R2}/4.%20-%20founder-portrait.png`,
   dataAnalysis: `${R2}/5.1%20data-analysis.png`,
-  dividerCollaboration: `${R2}/6.%20-%20divider-collaboration.png`,
+  dividerCollaboration: `${R2}/6.1%20divider-collaboration.png`,
   pilotHero: `${R2}/7.%20pilot-hero.png`,
   expertsHero: `${R2}/8.%20experts-hero.png`,
 } as const;
