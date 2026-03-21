@@ -1,19 +1,19 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e corporazioni."
+    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e società."
   },
   "Nav": {
     "solutions": "Soluzioni",
     "technology": "Tecnologia",
-    "foundation": "Fundacja Certo",
+    "foundation": "Certo Governance Institute",
     "login": "Accedi",
     "contact": "Contatti"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
-    "privacy": "Politica sulla Privacy",
-    "terms": "Condizioni di Servizio",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini di Servizio",
     "contact": "Contatti"
   },
   "Contact": {
@@ -33,33 +33,33 @@
     "subject_general": "Richiesta generale",
     "subject_implementation": "Implementazione",
     "subject_technical": "Supporto tecnico",
-    "subject_cooperation": "Cooperazione"
+    "subject_cooperation": "Collaborazione"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identità.",
     "hero_line2": "Conformità.",
     "hero_line3": "Certezza.",
-    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, corporazioni ed enti regolamentati. Costruita secondo gli standard",
+    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, società e organismi regolamentati. Costruita secondo gli standard di",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "AVVIA L'IMPLEMENTAZIONE",
+    "cta_primary": "INIZIA L'IMPLEMENTAZIONE",
     "cta_secondary": "SERVIZI",
     "services_label": "SERVIZI",
-    "services_title": "Tre livelli dell'infrastruttura di compliance",
+    "services_title": "Tre livelli di infrastruttura compliance",
     "service1_title": "Verifica dell'Identità",
-    "service1_desc": "KYC/AML per enti regolamentati. Verifica automatica dei documenti, screening delle sanzioni e PEP, integrazione con registri statali.",
+    "service1_desc": "KYC/AML per organismi regolamentati. Verifica automatica dei documenti, screening delle sanzioni e verifica PEP, integrazione con i registri pubblici.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring automatico della conformità basato sulla metodologia Certo Governance Institute. Sistema di valutazione a cinque livelli con traccia di audit completa.",
+    "service2_desc": "Scoring automatico della conformità basato sulla metodologia di Certo Governance Institute. Sistema di valutazione a cinque livelli con traccia di audit completa.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Piani di rimedio automatici e monitoraggio della loro realizzazione. Integrazione con sistemi ERP, GRC e piattaforme di gestione del rischio.",
+    "service3_desc": "Piani di rimedio automatici e monitoraggio della loro attuazione. Integrazione con sistemi ERP, GRC e piattaforme di gestione del rischio.",
     "arch_label": "ARCHITETTURA",
     "arch_title": "Come funziona Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Dati dell'ente + documenti + contesto normativo",
+    "step1_desc": "Dati dell'organismo + documenti + contesto normativo",
     "step2_title": "Verify",
     "step2_desc": "Verifica dell'identità, screening, registro pubblico",
     "step3_title": "Score",
-    "step3_desc": "Valutazione automatica della conformità Certo Vector",
+    "step3_desc": "Rating automatico della conformità Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Report PDF + API + dashboard Certo Online",
     "badge_iso": "Standard ISO",
@@ -68,16 +68,16 @@
     "badge_governance": "Valutazione della governance"
   },
   "Legal": {
-    "back": "Torna alla homepage",
+    "back": "Torna alla pagina principale",
     "last_updated": "Ultimo aggiornamento: Marzo 2026",
-    "privacy_title": "Politica sulla Privacy",
-    "terms_title": "Condizioni di Servizio"
+    "privacy_title": "Informativa sulla Privacy",
+    "terms_title": "Termini di Servizio"
   },
   "Dashboard": {
     "title": "Pannello Certo ID",
     "welcome": "Benvenuto, {name}",
     "your_rating": "Il Tuo Rating Certo",
-    "your_delegates": "I Tuoi Delegati",
+    "your_delegates": "I Tuoi Certo Delegate",
     "your_accords": "I Tuoi Certo Accord",
     "recent_activity": "Attività recente",
     "quick_actions": "Azioni rapide"
@@ -88,10 +88,10 @@
     "contact_person": "Persona di contatto",
     "sector": "Settore",
     "edit_profile": "Modifica profilo",
-    "verified_badge": "Ente verificato"
+    "verified_badge": "Organismo verificato"
   },
   "Delegates": {
-    "title": "Delegati Certo",
+    "title": "Certo Delegate",
     "add_delegate": "Aggiungi delegato",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stato",

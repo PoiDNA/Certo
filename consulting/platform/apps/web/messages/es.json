@@ -10,45 +10,45 @@
     "contact": "Contacto"
   },
   "Footer": {
-    "description": "Asesoramiento experto en gobierno corporativo, cumplimiento normativo y seguridad para líderes del mercado.",
+    "description": "Asesoría experta en gobierno corporativo, cumplimiento normativo y seguridad para líderes del mercado.",
     "ecosystem": "Ecosistema Certo",
-    "accreditation": "Todos los asesores están acreditados por Certo Governance Institute",
+    "accreditation": "Todos los asesores están acreditados por la Fundación Certo Governance Institute",
     "privacy": "Política de privacidad",
-    "terms": "Términos y condiciones",
+    "terms": "Términos de servicio",
     "contact": "Contacto"
   },
   "Home": {
-    "hero_title": "Asesoramiento experto\nal nivel de junta directiva.",
-    "hero_subtitle": "Conectamos asesores acreditados de Certo con instituciones que requieren los más altos estándares de gobierno corporativo y cumplimiento regulatorio.",
+    "hero_title": "Asesoría experta\na nivel de junta directiva.",
+    "hero_subtitle": "Conectamos asesores acreditados de Certo con instituciones que requieren los más altos estándares de gobierno corporativo y cumplimiento normativo.",
     "hero_cta": "Encuentra un experto",
     "finder_title": "Quiero hablar con un experto en:",
-    "area_health": "Sector sanitario",
-    "area_local_gov": "Administración local",
+    "area_health": "Sanidad",
+    "area_local_gov": "Administración Local",
     "area_defense": "Defensa",
     "area_finance": "Finanzas",
     "area_education": "Educación",
-    "form_title": "Déjanos tus datos para que seleccionemos el asesor adecuado en el área de",
+    "form_title": "Déjanos tus datos de contacto para que podamos asignarte el asesor adecuado del área de",
     "form_name": "Nombre y apellidos",
     "form_email": "Correo electrónico (corporativo)",
     "form_org": "Nombre de la organización / Cargo",
-    "form_submit": "Enviar solicitud",
-    "experts_headline": "Nuestros expertos ayudan a\nmantener y fortalecer\nCerto Rating.",
+    "form_submit": "Enviar consulta",
+    "experts_headline": "Nuestros expertos ayudan\na mantener y fortalecer\ntu Rating Certo.",
     "experts_description": "Asesores acreditados con amplia experiencia en la optimización de procesos de gobierno corporativo para instituciones estratégicas."
   },
   "Legal": {
     "back": "Volver a la página principal",
     "last_updated": "Última actualización: Marzo de 2026",
-    "privacy_title": "Política de privacidad",
-    "terms_title": "Términos de uso"
+    "privacy_title": "Política de Privacidad",
+    "terms_title": "Condiciones de uso"
   },
   "FindAdvisor": {
-    "title": "Encuentra tu asesor Certo",
+    "title": "Encuentra un asesor de Certo",
     "sector_label": "Sector de tu institución",
     "need_label": "¿Qué necesitas?",
     "need_audit": "Auditoría de gobierno corporativo",
-    "need_advisory": "Asesoramiento estratégico",
-    "need_training": "Capacitaciones y talleres",
-    "need_rating": "Preparación para rating",
+    "need_advisory": "Asesoría estratégica",
+    "need_training": "Capacitación y talleres",
+    "need_rating": "Preparación para Rating Certo",
     "region_label": "Región",
     "submit": "Buscar asesor"
   },
@@ -74,7 +74,7 @@
     "form_submit": "Enviar mensaje",
     "form_success": "El mensaje ha sido enviado. Responderemos lo antes posible.",
     "subject_general": "Consulta general",
-    "subject_advisory": "Asesoramiento",
+    "subject_advisory": "Asesoría",
     "subject_accreditation": "Acreditación de asesor",
     "subject_cooperation": "Colaboración"
   }

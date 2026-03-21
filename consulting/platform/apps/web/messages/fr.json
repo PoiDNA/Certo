@@ -10,33 +10,33 @@
     "contact": "Contact"
   },
   "Footer": {
-    "description": "Conseils experts en gouvernance d'entreprise, conformité et sécurité pour les leaders du marché.",
+    "description": "Conseil expert en gouvernance d'entreprise, conformité et sécurité pour les leaders du marché.",
     "ecosystem": "Écosystème Certo",
     "accreditation": "Tous les conseillers sont accrédités par la Fondation Certo Governance Institute",
     "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation",
+    "terms": "Conditions générales",
     "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Conseils experts\nau niveau du conseil d'administration.",
-    "hero_subtitle": "Nous connectons les conseillers accrédités Certo avec les institutions qui exigent les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
+    "hero_title": "Conseil expert\nau niveau exécutif.",
+    "hero_subtitle": "Nous relions les conseillers accrédités Certo aux institutions exigeant les plus hauts standards de gouvernance d'entreprise et de conformité réglementaire.",
     "hero_cta": "Trouver un expert",
     "finder_title": "Je souhaite discuter avec un expert en :",
     "area_health": "Santé",
     "area_local_gov": "Collectivités territoriales",
     "area_defense": "Défense",
-    "area_finance": "Finances",
+    "area_finance": "Finance",
     "area_education": "Éducation",
-    "form_title": "Laissez vos coordonnées pour que nous vous mettions en relation avec le conseiller approprié du domaine",
+    "form_title": "Laissez vos coordonnées pour que nous vous mettions en contact avec le bon conseiller du domaine",
     "form_name": "Nom et prénom",
     "form_email": "Adresse email (professionnelle)",
     "form_org": "Nom de l'organisation / Poste",
     "form_submit": "Envoyer la demande",
-    "experts_headline": "Nos experts vous aident\nà maintenir et renforcer\nvotre Certo Rating.",
-    "experts_description": "Conseillers accrédités disposant d'une expérience pluriannuelle dans l'optimisation des processus de gouvernance pour les institutions stratégiques."
+    "experts_headline": "Nos experts vous aident\nà maintenir et à renforcer\nvotre Certo Rating.",
+    "experts_description": "Conseillers accrédités avec plusieurs années d'expérience dans l'optimisation des processus de gouvernance pour les institutions stratégiques."
   },
   "Legal": {
-    "back": "Retour à l'accueil",
+    "back": "Retour à la page d'accueil",
     "last_updated": "Dernière mise à jour : Mars 2026",
     "privacy_title": "Politique de Confidentialité",
     "terms_title": "Conditions d'utilisation"
@@ -48,7 +48,7 @@
     "need_audit": "Audit de gouvernance",
     "need_advisory": "Conseil stratégique",
     "need_training": "Formations et ateliers",
-    "need_rating": "Préparation à la notation",
+    "need_rating": "Préparation au rating",
     "region_label": "Région",
     "submit": "Chercher un conseiller"
   },
@@ -69,13 +69,13 @@
     "form_title": "Écrivez-nous",
     "form_name": "Nom et prénom",
     "form_email": "Adresse email",
-    "form_subject": "Sujet",
+    "form_subject": "Objet",
     "form_message": "Message",
     "form_submit": "Envoyer le message",
-    "form_success": "Le message a été envoyé. Nous vous répondrons dans les meilleurs délais.",
+    "form_success": "Votre message a été envoyé. Nous vous répondrons dès que possible.",
     "subject_general": "Demande générale",
     "subject_advisory": "Conseil",
-    "subject_accreditation": "Accréditation du conseiller",
+    "subject_accreditation": "Accréditation de conseiller",
     "subject_cooperation": "Coopération"
   }
 }

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af styring i offentlige, korporative og almennyttige institutioner."
+    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af ledelse i offentlige, kommercielle og non-profit institutioner."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -28,7 +28,7 @@
     "close": "Luk",
     "search": "Søg",
     "download": "Download",
-    "verified": "Verificeret",
+    "verified": "Bekræftet",
     "active": "Aktiv",
     "inactive": "Inaktiv"
   },
@@ -37,9 +37,9 @@
     "ratings": "Ratings",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om Instituttet",
+    "about": "Om Fonden",
     "contact": "Kontakt",
-    "dashboard": "Dashboard",
+    "dashboard": "Kontrolpanel",
     "settings": "Indstillinger"
   },
   "Auth": {
@@ -48,16 +48,16 @@
     "login_with_google": "Log ind via Google",
     "email_label": "E-mailadresse",
     "password_label": "Adgangskode",
-    "forgot_password": "Glemt din adgangskode?",
+    "forgot_password": "Glemt adgangskode?",
     "no_account": "Har du ikke en konto?",
     "register": "Tilmeld dig"
   },
   "Errors": {
     "404_title": "Side blev ikke fundet",
-    "404_description": "Siden du søger efter eksisterer ikke eller er blevet flyttet.",
+    "404_description": "Den side du søger efter findes ikke eller er blevet flyttet.",
     "500_title": "Serverfejl",
     "500_description": "Der opstod en uventet fejl. Prøv igen senere.",
-    "unauthorized": "Adgang nægtet. Log ind for at fortsætte."
+    "unauthorized": "Ingen adgang. Log ind for at fortsætte."
   },
   "Footer": {
     "rights": "Alle rettigheder forbeholdt",

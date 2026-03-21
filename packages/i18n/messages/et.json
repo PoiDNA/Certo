@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Sõltumatu reitingu organ, mis hindab avalike, korporatiivsete ja mittetulunduslike institutsioonide juhtimise kvaliteeti."
+    "description": "Sõltumatu reitinguasutus, mis hindab avalike, ärisektor- ja mittetulunduslike asutuste juhtimise kvaliteeti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,46 +18,46 @@
     "logout": "Logi välja",
     "privacyPolicy": "Privaatsuspoliitika",
     "termsOfUse": "Kasutustingimused",
-    "loading": "Laadimise ajal...",
+    "loading": "Laadimise käigus...",
     "error": "Ilmnes viga",
     "save": "Salvesta",
     "cancel": "Tühista",
     "confirm": "Kinnita",
     "back": "Tagasi",
-    "next": "Edasi",
+    "next": "Järgmine",
     "close": "Sulge",
     "search": "Otsi",
     "download": "Laadi alla",
     "verified": "Kinnitatud",
     "active": "Aktiivne",
-    "inactive": "Mitteaktiivne"
+    "inactive": "Passiivne"
   },
   "Navigation": {
     "home": "Avaleht",
     "ratings": "Reitingud",
     "reports": "Aruanded",
     "analysis": "Analüüsid",
-    "about": "Sihtasutusest",
+    "about": "Meist",
     "contact": "Kontakt",
-    "dashboard": "Juhtpaneel",
+    "dashboard": "Armatuurlaud",
     "settings": "Seaded"
   },
   "Auth": {
     "login_title": "Logi sisse",
-    "login_subtitle": "Logi sisse oma kontole",
-    "login_with_google": "Logi sisse Google'i kaudu",
+    "login_subtitle": "Logi oma kontole sisse",
+    "login_with_google": "Logi sisse Google'iga",
     "email_label": "E-posti aadress",
     "password_label": "Parool",
     "forgot_password": "Unustasid parooli?",
-    "no_account": "Sul pole kontot?",
+    "no_account": "Sinul pole kontot?",
     "register": "Registreeru"
   },
   "Errors": {
-    "404_title": "Lehte ei leitud",
-    "404_description": "Lehte, mida otsisite, ei eksisteeri või see on teisaldatud.",
+    "404_title": "Lehekülge ei leitud",
+    "404_description": "Otsitud lehekülg ei ole olemas või on kolitud.",
     "500_title": "Serveri viga",
     "500_description": "Ilmnes ootamatu viga. Proovi hiljem uuesti.",
-    "unauthorized": "Juurdepääs puudub. Jätka edasi logige sisse."
+    "unauthorized": "Juurdepääs puudub. Jätka saamiseks logi sisse."
   },
   "Footer": {
     "rights": "Kõik õigused on kaitstud",

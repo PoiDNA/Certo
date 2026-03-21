@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neodvisni organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
+    "description": "Neodvisen organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -27,7 +27,7 @@
     "next": "Naprej",
     "close": "Zapri",
     "search": "Iskanje",
-    "download": "Prenesi",
+    "download": "Presnemi",
     "verified": "Preverjen",
     "active": "Aktiven",
     "inactive": "Neaktiven"
@@ -38,31 +38,31 @@
     "reports": "Poročila",
     "analysis": "Analize",
     "about": "O Fundaciji",
-    "contact": "Kontakt",
+    "contact": "Stik",
     "dashboard": "Nadzorna plošča",
     "settings": "Nastavitve"
   },
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se v svoj račun",
-    "login_with_google": "Prijava prek Googlа",
-    "email_label": "Naslov e-pošte",
+    "login_with_google": "Prijava preko Google",
+    "email_label": "E-poštni naslov",
     "password_label": "Geslo",
     "forgot_password": "Ste pozabili geslo?",
-    "no_account": "Še nimate računa?",
+    "no_account": "Nimate računa?",
     "register": "Registracija"
   },
   "Errors": {
     "404_title": "Stran ni bila najdena",
-    "404_description": "Stran, ki je iščete, ne obstaja ali je bila premaknjena.",
+    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premeščena.",
     "500_title": "Napaka strežnika",
-    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
-    "unauthorized": "Nimate dostopa. Prijavite se za nadaljevanje."
+    "500_description": "Prišlo je do nepredvidene napake. Poskusite ponovno pozneje.",
+    "unauthorized": "Dostop je prepovedan. Prijavite se, da nadaljujete."
   },
   "Footer": {
     "rights": "Vse pravice pridržane",
     "privacy": "Politika zasebnosti",
     "terms": "Pogoji uporabe",
-    "contact": "Kontakt"
+    "contact": "Stik"
   }
 }

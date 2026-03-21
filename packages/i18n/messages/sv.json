@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratinginstitution som bedömer kvaliteten på styrningen av offentliga, företags- och ideella institutioner."
+    "description": "Oberoende ratingorgan som utvärderar kvaliteten på styrningen av offentliga institutioner, företag och ideella organisationer."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,9 +16,9 @@
     "delegate": "Certo Delegate",
     "login": "Logga in",
     "logout": "Logga ut",
-    "privacyPolicy": "Integritetspolicy",
+    "privacyPolicy": "Sekretesspolicy",
     "termsOfUse": "Användarvillkor",
-    "loading": "Laddar...",
+    "loading": "Läser in...",
     "error": "Ett fel uppstod",
     "save": "Spara",
     "cancel": "Avbryt",
@@ -27,7 +27,7 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ner",
+    "download": "Hämta",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
@@ -61,7 +61,7 @@
   },
   "Footer": {
     "rights": "Alla rättigheter förbehållna",
-    "privacy": "Integritetspolicy",
+    "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   }

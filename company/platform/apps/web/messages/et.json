@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteedi kontroll ja compliance'i lahendused avalik-õiguslike asutuste ja korporatsioonide jaoks."
+    "description": "Identiteedi verifitseerimine ja compliance institutsioonidele ja korporatsioonidele."
   },
   "Nav": {
     "solutions": "Lahendused",
@@ -13,7 +13,7 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Privaatsuspoliitika",
-    "terms": "Teenuste tingimused",
+    "terms": "Kasutustingimused",
     "contact": "Kontakt"
   },
   "Contact": {
@@ -21,66 +21,66 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Aadress",
     "label_email": "E-post",
-    "address": "02-566 Varssavik, Puławska 2B",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Saada meile sõnum",
-    "form_name": "Nimi",
+    "form_title": "Saada meile kiri",
+    "form_name": "Ees- ja perekonnanimi",
     "form_email": "E-posti aadress",
     "form_subject": "Teema",
     "form_message": "Sõnum",
     "form_submit": "Saada sõnum",
-    "form_success": "Sõnum on saadetud. Vastame niipea kui võimalik.",
-    "subject_general": "Üldine päring",
-    "subject_implementation": "Juurutamine",
+    "form_success": "Sõnum on saadetud. Vastame nii kiiresti kui võimalik.",
+    "subject_general": "Üldine pärimine",
+    "subject_implementation": "Rakendamine",
     "subject_technical": "Tehniline tugi",
     "subject_cooperation": "Koostöö"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteet.",
-    "hero_line2": "Nõuetekohasus.",
+    "hero_line2": "Compliance.",
     "hero_line3": "Kindlus.",
-    "hero_description": "Identiteedi kontroll ja compliance'i infrastruktuur avalik-õiguslike asutuste, korporatsioonide ja reguleeritud üksuste jaoks. Ehitatud standardite põhjal",
+    "hero_description": "Verifitseerimise ja compliance infrastruktuur avalik-õiguslikele institutsioonidele, korporatsioonidele ja reguleeritud üksustele. Ehitatud standarditele",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "ALUSTA JUURUTAMIST",
+    "cta_primary": "ALUSTA RAKENDAMIST",
     "cta_secondary": "TEENUSED",
     "services_label": "TEENUSED",
-    "services_title": "Kolm compliance'i infrastruktuuri kihti",
-    "service1_title": "Identiteedi kontroll",
-    "service1_desc": "KYC/AML reguleeritud üksuste jaoks. Dokumentide automaatne kontroll, sanktsioonide ja poliitiliselt eksponeeritud isikute screening, integratsioon riiklike registritega.",
-    "service2_title": "Compliance'i reiting",
-    "service2_desc": "Automaatne nõuetekohasus-skooring, mis põhineb Certo Governance Institute'i metodoloogial. Viie astmeline hindamissüsteem täieliku audiitsalooga.",
+    "services_title": "Kolm compliance infrastruktuuri kihti",
+    "service1_title": "Identiteedi verifitseerimine",
+    "service1_desc": "KYC/AML reguleeritud üksustele. Automaatne dokumentide verifitseerimine, sanktsioonide ja PEP-i screening, integreerimine riigiregistritega.",
+    "service2_title": "Compliance Rating",
+    "service2_desc": "Automaatne compliance'i hindamine Certo Governance Institute metoloogial alusel. Viietasemeline hindamissüsteem täieliku auditijäljega.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automaatsed paranduskavad ja nende rakendamise jälgimine. Integratsioon ERP, GRC ja riskihalduse platvormidega.",
-    "arch_label": "ARHITEKTUUR",
+    "service3_desc": "Automaatsed parandusplaanid ja nende rakendamise jälgimine. Integreerimine ERP-, GRC-süsteemide ja riskijuhtimise platvormidega.",
+    "arch_label": "ARHITEKTUUUR",
     "arch_title": "Kuidas Certo ID töötab",
-    "step1_title": "Vastuvõtt",
+    "step1_title": "Vastuvõtmine",
     "step1_desc": "Üksuse andmed + dokumendid + regulatiivne kontekst",
-    "step2_title": "Kontroll",
-    "step2_desc": "Identiteedi kontroll, screening, avalik register",
+    "step2_title": "Verifitseerimine",
+    "step2_desc": "Identiteedi verifitseerimine, screening, avalik register",
     "step3_title": "Hindamine",
-    "step3_desc": "Automaatne nõuetekohasus-reiting Certo Vector",
+    "step3_desc": "Automaatne compliance Certo Vector rating",
     "step4_title": "Aruanne",
-    "step4_desc": "PDF-aruanne + API + Certo Online armatuurlaud",
+    "step4_desc": "PDF aruanne + API + Certo Online armatuurlaud",
     "badge_iso": "ISO standardid",
-    "badge_compliance": "Regulatiivne nõuetekohasus",
-    "badge_kyc": "Identiteedi kontroll",
-    "badge_governance": "Juhtimise hindamine"
+    "badge_compliance": "Regulatiivne vastavus",
+    "badge_kyc": "Identiteedi verifitseerimine",
+    "badge_governance": "Governance hindamine"
   },
   "Legal": {
     "back": "Tagasi avalehele",
-    "last_updated": "Viimane värskendus: märts 2026",
+    "last_updated": "Viimati uuendatud: märts 2026",
     "privacy_title": "Privaatsuspoliitika",
-    "terms_title": "Teenuste tingimused"
+    "terms_title": "Kasutustingimused"
   },
   "Dashboard": {
     "title": "Certo ID armatuurlaud",
-    "welcome": "Tere, {name}",
+    "welcome": "Tere tulemast, {name}",
     "your_rating": "Teie Certo Rating",
-    "your_delegates": "Teie Delegaadid",
+    "your_delegates": "Teie Certo Delegate",
     "your_accords": "Teie Certo Accord",
     "recent_activity": "Viimane tegevus",
-    "quick_actions": "Kiirlahendid"
+    "quick_actions": "Kiiraktsioonid"
   },
   "Profile": {
     "title": "Profiil",
@@ -88,15 +88,15 @@
     "contact_person": "Kontaktisik",
     "sector": "Sektor",
     "edit_profile": "Muuda profiili",
-    "verified_badge": "Kontrollitud üksus"
+    "verified_badge": "Verifitseeritud üksus"
   },
   "Delegates": {
-    "title": "Certo Delegaadid",
-    "add_delegate": "Lisa delegaat",
+    "title": "Certo Delegate",
+    "add_delegate": "Lisa Certo Delegate",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Olek",
-    "primary_link": "PRIMARY-link",
-    "failover_link": "FAILOVER-link",
+    "delegate_status": "Staatus",
+    "primary_link": "PRIMARY link",
+    "failover_link": "FAILOVER link",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Tanácsadó keresése",
-    "description": "Accreditált Certo tanácsadók. Corporate governance és compliance."
+    "description": "Akkreditált Certo tanácsadók. Corporate governance és megfelelőség."
   },
   "Nav": {
     "advisors": "Tanácsadók",
@@ -10,50 +10,50 @@
     "contact": "Kapcsolat"
   },
   "Footer": {
-    "description": "Szakértői tanácsadás a corporate governance, compliance és biztonság terén a piaci vezetők számára.",
-    "ecosystem": "Certo Ökoszisztéma",
-    "accreditation": "Minden tanácsadó a Certo Governance Institute által akkreditált",
-    "privacy": "Adatvédelmi szabályzat",
+    "description": "Szakértői tanácsadás a corporate governance, megfelelőség és biztonság terén a piaci vezetők számára.",
+    "ecosystem": "Certo ökoszisztéma",
+    "accreditation": "Minden tanácsadó a Certo Governance Institute Alapítvány által akkreditált",
+    "privacy": "Adatvédelmi irányelvek",
     "terms": "Felhasználási feltételek",
     "contact": "Kapcsolat"
   },
   "Home": {
-    "hero_title": "Szakértői tanácsadás\nvezetői szinten.",
-    "hero_subtitle": "Certo akkreditált tanácsadókat kapcsolunk össze azon intézmények felsővezetésével, amelyek a legmagasabb corporate governance és regulációs compliance szabványokat igénylik.",
-    "hero_cta": "Keress szakértőt",
-    "finder_title": "Szeretnék beszélni egy szakértővel a(z) területről:",
+    "hero_title": "Szakértői tanácsadás\nigazgatósági szinten.",
+    "hero_subtitle": "Összekapcsoljuk az akkreditált Certo tanácsadókat azokkal az intézményekkel, amelyeknek a legmagasabb szintű corporate governance és szabályozási megfelelőség szükséges.",
+    "hero_cta": "Szakértő keresése",
+    "finder_title": "Szeretnék tanácsadóval beszélni a következő témáról:",
     "area_health": "Egészségügy",
-    "area_local_gov": "Helyi önkormányzatok",
-    "area_defense": "Védelmi ipar",
+    "area_local_gov": "Önkormányzatok",
+    "area_defense": "Védekezés",
     "area_finance": "Pénzügyek",
     "area_education": "Oktatás",
-    "form_title": "Hagyj kontaktadatokat, és olyan tanácsadót jelölünk ki számodra a(z) területről",
-    "form_name": "Név",
+    "form_title": "Hagyjon elérhetőséget, hogy megfelelő tanácsadót válasszon ki az alábbi területről",
+    "form_name": "Teljes név",
     "form_email": "E-mail cím (munkahelyi)",
-    "form_org": "Szervezet neve / Beosztás",
-    "form_submit": "Kérdés küldése",
-    "experts_headline": "Szakértőink segítenek\nmegtartani és erősíteni\na Certo Rating értékét.",
-    "experts_description": "Többéves tapasztalattal rendelkező akkreditált tanácsadók, akik stratégiai intézmények governance folyamatainak optimalizálásában járatosak."
+    "form_org": "Szervezet neve / Pozíció",
+    "form_submit": "Lekérdezés elküldése",
+    "experts_headline": "Szakértőink segítenek\nmegtartani és erősíteni\na Certo Rating-ot.",
+    "experts_description": "Akkreditált tanácsadók több éves tapasztalattal a governance-folyamatok optimalizálásában a stratégiai intézmények számára."
   },
   "Legal": {
     "back": "Vissza a kezdőlapra",
     "last_updated": "Utolsó frissítés: 2026. március",
-    "privacy_title": "Adatvédelmi szabályzat",
-    "terms_title": "Felhasználási feltételek"
+    "privacy_title": "Adatvédelmi irányelvek",
+    "terms_title": "Használati feltételek"
   },
   "FindAdvisor": {
     "title": "Certo tanácsadó keresése",
-    "sector_label": "Az intézményed szektora",
-    "need_label": "Mire van szükséged?",
+    "sector_label": "Az intézmény szektora",
+    "need_label": "Mire van szüksége?",
     "need_audit": "Governance audit",
     "need_advisory": "Stratégiai tanácsadás",
-    "need_training": "Képzések és műhelyek",
-    "need_rating": "Felkészülés a ratingra",
+    "need_training": "Képzések és workshopok",
+    "need_rating": "Felkészülés ratingra",
     "region_label": "Régió",
     "submit": "Tanácsadó keresése"
   },
   "Advisor": {
-    "accredited_by": "Certo által akkreditált",
+    "accredited_by": "A Certo által akkreditált",
     "specialization": "Specializáció",
     "sectors": "Szektorok",
     "contact_advisor": "Kapcsolatfelvétel",
@@ -66,14 +66,14 @@
     "label_email": "E-mail",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Írj nekünk",
-    "form_name": "Név",
+    "form_title": "Írjon nekünk",
+    "form_name": "Teljes név",
     "form_email": "E-mail cím",
     "form_subject": "Tárgy",
     "form_message": "Üzenet",
-    "form_submit": "Üzenet küldése",
+    "form_submit": "Üzenet elküldése",
     "form_success": "Az üzenet elküldésre került. A lehető leghamarabb válaszolunk.",
-    "subject_general": "Általános kérdés",
+    "subject_general": "Általános lekérdezés",
     "subject_advisory": "Tanácsadás",
     "subject_accreditation": "Tanácsadó akkreditáció",
     "subject_cooperation": "Együttműködés"

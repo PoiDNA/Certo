@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Overenie identity a compliance pre verejné inštitúcie a korporácie."
+    "description": "Overenie totožnosti a compliance pre verejné inštitúcie a korporácie."
   },
   "Nav": {
     "solutions": "Riešenia",
@@ -12,8 +12,8 @@
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
-    "privacy": "Politika Ochrany Osobných Údajov",
-    "terms": "Podmienky Poskytovania Služieb",
+    "privacy": "Politika Súkromia",
+    "terms": "Podmienky Použitia",
     "contact": "Kontakt"
   },
   "Contact": {
@@ -21,48 +21,48 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Adresa",
     "label_email": "Email",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Bratislava, ul. Pulavská 2B",
     "email": "certo@certo.id",
     "form_title": "Napíšte nám",
     "form_name": "Meno a priezvisko",
-    "form_email": "Emailová adresa",
+    "form_email": "E-mailová adresa",
     "form_subject": "Predmet",
     "form_message": "Správa",
     "form_submit": "Odoslať správu",
-    "form_success": "Správa bola odoslaná. Odpovieme vám čo najskôr.",
-    "subject_general": "Všeobecný dopyt",
+    "form_success": "Správa bola odoslaná. Odpovieme čo najskôr.",
+    "subject_general": "Všeobecná otázka",
     "subject_implementation": "Implementácia",
     "subject_technical": "Technická podpora",
     "subject_cooperation": "Spolupráca"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Identita.",
-    "hero_line2": "Compliance.",
+    "hero_line1": "Totožnosť.",
+    "hero_line2": "Zhoda.",
     "hero_line3": "Istota.",
     "hero_description": "Infraštruktúra overenia a compliance pre verejné inštitúcie, korporácie a regulované subjekty. Postavená na štandardoch",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "SPUSTIŤ IMPLEMENTÁCIU",
+    "cta_primary": "ZAČAŤ S IMPLEMENTÁCIOU",
     "cta_secondary": "SLUŽBY",
     "services_label": "SLUŽBY",
-    "services_title": "Tri vrstvy compliance infraštruktúry",
+    "services_title": "Tri vrstvy infraštruktúry compliance",
     "service1_title": "Overenie Totožnosti",
-    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overenie dokumentov, skríning sankcií a PEP, integrácia s verejnými registrami.",
+    "service1_desc": "KYC/AML pre regulované subjekty. Automatické overenie dokumentov, screening sankcií a PEP, integrácia s vnútroštátnymi registers.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Automatické skórovanie compliance podľa metodológie Certo Governance Institute. Päťstupňový systém hodnotenia s úplnou cestou auditu.",
+    "service2_desc": "Automatické skórovanie zhody na základe metodológie Certo Governance Institute. Päťstupňový systém hodnotenia s plnou cestou auditu.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatické plány nápravy a monitorovanie ich realizácie. Integrácia so systémami ERP, GRC a platformami riadenia rizík.",
+    "service3_desc": "Automatické nápravné plány a monitoring ich realizácie. Integrácia so systémami ERP, GRC a platformami riadenia rizík.",
     "arch_label": "ARCHITEKTÚRA",
     "arch_title": "Ako funguje Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Údaje subjektu + dokumenty + regulačný kontext",
     "step2_title": "Verify",
-    "step2_desc": "Overenie identity, skríning, verejný register",
+    "step2_desc": "Overenie totožnosti, screening, verejný register",
     "step3_title": "Score",
-    "step3_desc": "Automatický rating compliance Certo Vector",
+    "step3_desc": "Automatický rating zhody Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Správa PDF + API + dashboard Certo Online",
-    "badge_iso": "Normy ISO",
+    "badge_iso": "Štandardy ISO",
     "badge_compliance": "Regulačná zhoda",
     "badge_kyc": "Overenie totožnosti",
     "badge_governance": "Hodnotenie governance"
@@ -70,8 +70,8 @@
   "Legal": {
     "back": "Späť na hlavnú stránku",
     "last_updated": "Posledná aktualizácia: Marec 2026",
-    "privacy_title": "Politika Ochrany Osobných Údajov",
-    "terms_title": "Podmienky Poskytovania Služieb"
+    "privacy_title": "Politika Súkromia",
+    "terms_title": "Podmienky Použitia"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
@@ -95,8 +95,8 @@
     "add_delegate": "Pridať delegáta",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stav",
-    "primary_link": "Primárny odkaz",
-    "failover_link": "Záložný odkaz",
+    "primary_link": "Odkaz PRIMARY",
+    "failover_link": "Odkaz FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

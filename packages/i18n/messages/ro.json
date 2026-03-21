@@ -8,26 +8,26 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ independent de rating care evaluează calitatea guvernanței instituțiilor publice, corporative și non-profit."
+    "description": "Organ de rating independent care evaluează calitatea conducerii instituțiilor publice, corporative și non-guvernamentale."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Conectare",
-    "logout": "Deconectare",
+    "login": "Conectați-vă",
+    "logout": "Deconectați-vă",
     "privacyPolicy": "Politica de confidențialitate",
-    "termsOfUse": "Condiții de utilizare",
+    "termsOfUse": "Termeni de utilizare",
     "loading": "Se încarcă...",
     "error": "A apărut o eroare",
-    "save": "Salvează",
-    "cancel": "Anulează",
-    "confirm": "Confirmă",
+    "save": "Salvați",
+    "cancel": "Anulați",
+    "confirm": "Confirmați",
     "back": "Înapoi",
-    "next": "Următor",
-    "close": "Închide",
-    "search": "Căutare",
-    "download": "Descarcă",
+    "next": "Înainte",
+    "close": "Închideți",
+    "search": "Căutați",
+    "download": "Descărcați",
     "verified": "Verificat",
     "active": "Activ",
     "inactive": "Inactiv"
@@ -39,18 +39,18 @@
     "analysis": "Analize",
     "about": "Despre Fundație",
     "contact": "Contact",
-    "dashboard": "Tablou de bord",
+    "dashboard": "Panou de control",
     "settings": "Setări"
   },
   "Auth": {
-    "login_title": "Conectare",
+    "login_title": "Conectați-vă",
     "login_subtitle": "Conectați-vă la contul dvs.",
-    "login_with_google": "Conectare prin Google",
+    "login_with_google": "Conectați-vă prin Google",
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
     "forgot_password": "Ați uitat parola?",
     "no_account": "Nu aveți cont?",
-    "register": "Înregistrare"
+    "register": "Înregistrați-vă"
   },
   "Errors": {
     "404_title": "Pagina nu a fost găsită",
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Toate drepturile rezervate",
     "privacy": "Politica de confidențialitate",
-    "terms": "Condiții de utilizare",
+    "terms": "Termeni de utilizare",
     "contact": "Contact"
   }
 }

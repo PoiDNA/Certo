@@ -1,38 +1,38 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Berater finden",
+    "title": "Certo Consulting — Finden Sie einen Berater",
     "description": "Akkreditierte Certo-Berater. Corporate Governance und Compliance."
   },
   "Nav": {
     "advisors": "Berater",
     "expertise": "Expertise",
-    "login": "Anmeldung",
+    "login": "Anmelden",
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Fachkundig-kompetente Beratung in den Bereichen Corporate Governance, Compliance und Sicherheit für Marktführer.",
+    "description": "Fachkundige Beratung im Bereich Corporate Governance, Compliance und Sicherheit für Marktführer.",
     "ecosystem": "Certo-Ökosystem",
-    "accreditation": "Alle Berater sind von der Certo Governance Institute akkreditiert",
+    "accreditation": "Alle Berater sind von der Certo Governance Institute Foundation akkreditiert",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Fachkundig-kompetente Beratung\nauf Vorstandsebene.",
-    "hero_subtitle": "Wir verbinden akkreditierte Certo-Berater mit Institutionen, die höchste Standards in Corporate Governance und regulatorischer Compliance benötigen.",
-    "hero_cta": "Experten finden",
-    "finder_title": "Ich möchte mit einem Experten sprechen für:",
+    "hero_title": "Fachkundige Beratung\nauf Vorstandsebene.",
+    "hero_subtitle": "Wir verbinden akkreditierte Certo-Berater mit Institutionen, die höchste Standards in Corporate Governance und regulatorischer Compliance erfordern.",
+    "hero_cta": "Finden Sie einen Experten",
+    "finder_title": "Ich möchte mit einem Experten für folgendes Thema sprechen:",
     "area_health": "Gesundheitswesen",
-    "area_local_gov": "Kommunalverwaltung",
+    "area_local_gov": "Kommunale Verwaltung",
     "area_defense": "Verteidigung",
     "area_finance": "Finanzen",
     "area_education": "Bildung",
-    "form_title": "Hinterlassen Sie Ihre Kontaktdaten, damit wir den passenden Berater aus dem Bereich finden können",
+    "form_title": "Hinterlassen Sie Ihre Kontaktdaten, damit wir einen geeigneten Berater aus dem Bereich auswählen können",
     "form_name": "Name und Vorname",
     "form_email": "E-Mail-Adresse (dienstlich)",
-    "form_org": "Name der Organisation / Funktion",
-    "form_submit": "Anfrage absenden",
-    "experts_headline": "Unsere Experten helfen,\nIhren Certo Rating\nzu erhalten und zu stärken.",
+    "form_org": "Name der Organisation / Position",
+    "form_submit": "Anfrage senden",
+    "experts_headline": "Unsere Experten helfen dabei,\nIhren Certo Rating zu erhalten\nund zu verbessern.",
     "experts_description": "Akkreditierte Berater mit langjähriger Erfahrung in der Optimierung von Governance-Prozessen für strategische Institutionen."
   },
   "Legal": {
@@ -42,21 +42,21 @@
     "terms_title": "Nutzungsbedingungen"
   },
   "FindAdvisor": {
-    "title": "Certo-Berater finden",
+    "title": "Finden Sie einen Certo-Berater",
     "sector_label": "Sektor Ihrer Institution",
     "need_label": "Was benötigen Sie?",
     "need_audit": "Governance-Audit",
     "need_advisory": "Strategische Beratung",
     "need_training": "Schulungen und Workshops",
-    "need_rating": "Vorbereitung auf Rating",
+    "need_rating": "Vorbereitung auf das Rating",
     "region_label": "Region",
     "submit": "Berater suchen"
   },
   "Advisor": {
-    "accredited_by": "Akkreditiert durch Certo",
+    "accredited_by": "Akkreditiert von Certo",
     "specialization": "Spezialisierung",
     "sectors": "Sektoren",
-    "contact_advisor": "Kontaktieren",
+    "contact_advisor": "Kontakt aufnehmen",
     "view_profile": "Profil anzeigen"
   },
   "Contact": {
@@ -71,11 +71,11 @@
     "form_email": "E-Mail-Adresse",
     "form_subject": "Betreff",
     "form_message": "Nachricht",
-    "form_submit": "Nachricht absenden",
-    "form_success": "Ihre Nachricht wurde versendet. Wir antworten schnellstmöglich.",
+    "form_submit": "Nachricht senden",
+    "form_success": "Ihre Nachricht wurde gesendet. Wir werden uns so schnell wie möglich bei Ihnen melden.",
     "subject_general": "Allgemeine Anfrage",
     "subject_advisory": "Beratung",
-    "subject_accreditation": "Beraterakkredit­ierung",
+    "subject_accreditation": "Beraterakreditierung",
     "subject_cooperation": "Zusammenarbeit"
   }
 }
