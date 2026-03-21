@@ -42,6 +42,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     description: t('description'),
+    icons: {
+      icon: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/consulting/certo-consulting-favicon.png',
+      apple: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/consulting/certo-consulting-favicon.png',
+    },
     alternates: {
       canonical: `https://certo.consulting/${locale}`,
       languages
