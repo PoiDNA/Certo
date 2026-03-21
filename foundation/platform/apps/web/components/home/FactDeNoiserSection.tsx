@@ -11,7 +11,7 @@ export default function FactDeNoiserSection() {
     <ScrollRevealSection
       imageUrl={images.dataAnalysis}
       alt="Wizualizacja danych analitycznych"
-      overlay="bg-certo-navy/85"
+      overlay="bg-certo-navy/92"
     >
       <div className="text-center">
         <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-6 font-medium">
