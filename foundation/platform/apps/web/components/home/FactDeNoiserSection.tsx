@@ -26,7 +26,7 @@ export default function FactDeNoiserSection() {
           {(['1', '2', '3'] as const).map((key) => (
             <div key={key} className="text-left">
               <div className="text-certo-gold font-bold text-2xl mb-2">{key}</div>
-              <h3 className="text-certo-cream font-serif font-bold mb-2">
+              <h3 className="text-certo-cream font-serif font-extrabold text-lg md:text-xl mb-2">
                 {t(`denoiser_layer_${key}_name`)}
               </h3>
               <p className="text-certo-cream/60 text-sm leading-relaxed">
