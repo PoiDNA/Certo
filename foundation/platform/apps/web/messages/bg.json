@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Контролен орган — надзирава действията на Управителния съвет, одитира съответствието с устава, защитава независимостта на Фондацията.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Методологичен орган — проектира и утвърждава рейтинговата методология, валидира системите на тежести и секторната калибрация.",
-    "organ_advisory_name": "Консултативен съвет",
-    "organ_advisory_role": "Експертен съвет — предоставя специализирани знания, подпомага стратегическите решения на Управителния съвет.",
-    "organ_international_name": "Международен консултативен съвет",
-    "organ_international_role": "Глобална перспектива — консултиране в областта на най-добрите международни практики и съответствие с глобалните стандарти.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Независим апелативен орган — разглежда спорове относно рейтинги, гарантира правото на обжалване.",
     "founder_section_title": "Слово на основателката",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Търговски технологичен оператор. Изгражда и поддържа платформата Certo, осигурява сигурността на данните, развива AI инструменти под надзора на Фондацията.",
     "statute_title": "Устав на Фондацията",
-    "statute_desc": "Уставът на Фондация Certo Governance Institute определя целите, организационната структура, принципите на независимост и механизмите за контрол."
+    "statute_desc": "Уставът на Фондация Certo Governance Institute определя целите, организационната структура, принципите на независимост и механизмите за контрол.",
+    "organs_label": "Органи на Фондацията",
+    "expert_structures_label": "Експертни структури",
+    "organ_council_name": "Съвет Certo",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Контакт",

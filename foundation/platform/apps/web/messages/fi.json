@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Valvontaelin — valvoo hallituksen toimintaa, tarkastaa sääntöjenmukaisuuden, suojelee säätiön riippumattomuutta.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Metodologinen elin — suunnittelee ja hyväksyy luokitusmetodologian, validoi painotusjärjestelmät ja sektorikalibroinnin.",
-    "organ_advisory_name": "Neuvoa-antava neuvosto",
-    "organ_advisory_role": "Asiantuntijaneuvosto — tarjoaa erikoisosaamista, tukee hallituksen strategisia päätöksiä.",
-    "organ_international_name": "Kansainvälinen neuvoa-antava neuvosto",
-    "organ_international_role": "Globaali näkökulma — neuvonta kansainvälisistä parhaista käytännöistä ja globaalien standardien noudattamisesta.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Riippumaton valituselin — käsittelee luokituksia koskevat kiistat, varmistaa valitusoikeuden.",
     "founder_section_title": "Perustajan sanat",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Kaupallinen teknologiaoperaattori. Rakentaa ja ylläpitää Certo-alustaa, varmistaa tietoturvan, kehittää tekoälytyökaluja säätiön valvonnassa.",
     "statute_title": "Säätiön säännöt",
-    "statute_desc": "Certo Governance Institute -säätiön säännöt määrittelevät tavoitteet, organisaatiorakenteen, riippumattomuusperiaatteet ja valvontamekanismit."
+    "statute_desc": "Certo Governance Institute -säätiön säännöt määrittelevät tavoitteet, organisaatiorakenteen, riippumattomuusperiaatteet ja valvontamekanismit.",
+    "organs_label": "Säätiön elimet",
+    "expert_structures_label": "Asiantuntijarakenteet",
+    "organ_council_name": "Certo-neuvosto",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Yhteystiedot",

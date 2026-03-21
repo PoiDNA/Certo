@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Kontroles institūcija — uzrauga valdes darbību, auditē atbilstību statūtiem, aizsargā fonda neatkarību.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Metodoloģijas institūcija — izstrādā un apstiprina reitingu metodoloģiju, validē svaru sistēmas un sektoru kalibrāciju.",
-    "organ_advisory_name": "Konsultatīvā padome",
-    "organ_advisory_role": "Ekspertu padome — sniedz specializētas zināšanas, atbalsta valdes stratēģiskos lēmumus.",
-    "organ_international_name": "Starptautiskā konsultatīvā padome",
-    "organ_international_role": "Globālā perspektīva — konsultācijas par starptautisko labāko praksi un atbilstību globālajiem standartiem.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Neatkarīga apelācijas institūcija — izskata strīdus par reitingiem, nodrošina tiesības uz pārsūdzību.",
     "founder_section_title": "Dibinātājas vārds",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komerciāls tehnoloģiju operators. Būvē un uztur Certo platformu, nodrošina datu drošību, attīsta AI rīkus fonda uzraudzībā.",
     "statute_title": "Fonda statūti",
-    "statute_desc": "Certo Governance Institute fonda statūti nosaka mērķus, organizatorisko struktūru, neatkarības principus un kontroles mehānismus."
+    "statute_desc": "Certo Governance Institute fonda statūti nosaka mērķus, organizatorisko struktūru, neatkarības principus un kontroles mehānismus.",
+    "organs_label": "Fonda institūcijas",
+    "expert_structures_label": "Ekspertu struktūras",
+    "organ_council_name": "Certo Padome",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Kontakti",

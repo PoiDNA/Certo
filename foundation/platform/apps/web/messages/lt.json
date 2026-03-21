@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Kontrolės organas — prižiūri valdybos veiklą, audituoja atitikimą statutui, saugo fondo nepriklausomumą.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Metodologinis organas — projektuoja ir tvirtina reitingų metodologiją, validuoja svorių sistemas ir sektorinę kalibraciją.",
-    "organ_advisory_name": "Patariamoji taryba",
-    "organ_advisory_role": "Ekspertų taryba — teikia specializuotas žinias, remia strateginius valdybos sprendimus.",
-    "organ_international_name": "Tarptautinė patariamoji taryba",
-    "organ_international_role": "Globali perspektyva — konsultavimas geriausios tarptautinės praktikos ir atitikties globaliems standartams klausimais.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Nepriklausomas apeliacinis organas — nagrinėja ginčus dėl reitingų, užtikrina teisę į apeliaciją.",
     "founder_section_title": "Steigėjos žodis",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komercinis technologijų operatorius. Kuria ir prižiūri Certo platformą, užtikrina duomenų saugumą, vysto AI įrankius fondo priežiūroje.",
     "statute_title": "Fondo statutas",
-    "statute_desc": "Certo Governance Institute fondo statutas apibrėžia tikslus, organizacinę struktūrą, nepriklausomumo principus ir kontrolės mechanizmus."
+    "statute_desc": "Certo Governance Institute fondo statutas apibrėžia tikslus, organizacinę struktūrą, nepriklausomumo principus ir kontrolės mechanizmus.",
+    "organs_label": "Fondo organai",
+    "expert_structures_label": "Ekspertų struktūros",
+    "organ_council_name": "Certo Taryba",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Kontaktai",

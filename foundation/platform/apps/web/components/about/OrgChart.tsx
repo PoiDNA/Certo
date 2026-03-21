@@ -3,13 +3,16 @@
 import { useTranslations } from 'next-intl';
 import { useScrollReveal } from '../shared/useScrollReveal';
 
-const organs = [
-  { key: 'board', color: 'border-certo-gold bg-certo-gold/5' },
+const formalOrgans = [
   { key: 'supervisory', color: 'border-certo-navy bg-certo-navy/5' },
+  { key: 'board', color: 'border-certo-gold bg-certo-gold/5' },
+] as const;
+
+const expertStructures = [
+  { key: 'council', color: 'border-certo-gold bg-certo-gold/5' },
   { key: 'standard', color: 'border-certo-navy bg-certo-navy/5' },
-  { key: 'advisory', color: 'border-certo-navy/30 bg-white' },
-  { key: 'international', color: 'border-certo-navy/30 bg-white' },
-  { key: 'tribunal', color: 'border-certo-gold/50 bg-certo-gold/5' },
+  { key: 'tribunal', color: 'border-certo-navy bg-certo-navy/5' },
+  { key: 'centre', color: 'border-certo-gold/50 bg-white' },
 ] as const;
 
 export default function OrgChart() {
@@ -22,12 +25,33 @@ export default function OrgChart() {
         {t('structure_title')}
       </h2>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {organs.map(({ key, color }) => (
+      {/* Organy Fundacji */}
+      <h3 className="text-sm uppercase tracking-[0.15em] text-certo-gold font-semibold mb-4">
+        {t('organs_label')}
+      </h3>
+      <div className="grid sm:grid-cols-2 gap-4 mb-10">
+        {formalOrgans.map(({ key, color }) => (
           <div key={key} className={`p-6 border-l-4 ${color}`}>
-            <h3 className="font-serif font-bold text-certo-navy text-sm mb-1">
+            <h4 className="font-serif font-bold text-certo-navy text-sm mb-1">
               {t(`organ_${key}_name`)}
-            </h3>
+            </h4>
+            <p className="text-xs text-certo-navy/60 leading-relaxed">
+              {t(`organ_${key}_role`)}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Struktury eksperckie */}
+      <h3 className="text-sm uppercase tracking-[0.15em] text-certo-gold font-semibold mb-4">
+        {t('expert_structures_label')}
+      </h3>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {expertStructures.map(({ key, color }) => (
+          <div key={key} className={`p-6 border-l-4 ${color}`}>
+            <h4 className="font-serif font-bold text-certo-navy text-sm mb-1">
+              {t(`organ_${key}_name`)}
+            </h4>
             <p className="text-xs text-certo-navy/60 leading-relaxed">
               {t(`organ_${key}_role`)}
             </p>

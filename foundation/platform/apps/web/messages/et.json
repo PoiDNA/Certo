@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Kontollorgan — teostab järelevalvet juhatuse tegevuse üle, auditeerib vastavust põhikirjale, kaitseb sihtasutuse sõltumatust.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Metoodikaorgan — kujundab ja kinnitab reitingumetoodika, valideerib kaalusüsteeme ja sektorikalibratsiooni.",
-    "organ_advisory_name": "Nõuandev nõukogu",
-    "organ_advisory_role": "Ekspertnõukogu — annab erialateadmisi, toetab juhatuse strateegilisi otsuseid.",
-    "organ_international_name": "Rahvusvaheline nõuandev nõukogu",
-    "organ_international_role": "Globaalne vaade — nõustamine rahvusvaheliste parimate tavade ja ülemaailmsete standarditega vastavuse alal.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Sõltumatu apellatsiooniorgan — lahendab reitingutega seotud vaidlusi, tagab õiguse edasikaebusele.",
     "founder_section_title": "Asutaja sõna",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Kommertstehnoloogiaoperaator. Ehitab ja hooldab Certo platvormi, tagab andmeturbe, arendab AI-vahendeid sihtasutuse järelevalve all.",
     "statute_title": "Sihtasutuse põhikiri",
-    "statute_desc": "Certo Governance Institute'i Sihtasutuse põhikiri määratleb eesmärgid, organisatsioonilise struktuuri, sõltumatuse põhimõtted ja kontrollimehhanismid."
+    "statute_desc": "Certo Governance Institute'i Sihtasutuse põhikiri määratleb eesmärgid, organisatsioonilise struktuuri, sõltumatuse põhimõtted ja kontrollimehhanismid.",
+    "organs_label": "Sihtasutuse organid",
+    "expert_structures_label": "Ekspertstruktuurid",
+    "organ_council_name": "Certo Nõukogu",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Kontakt",

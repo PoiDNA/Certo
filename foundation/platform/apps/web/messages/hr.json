@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Nadzorno tijelo — nadzire rad Uprave, provjerava usklađenost sa statutom, štiti neovisnost Zaklade.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Metodološko tijelo — projektira i odobrava metodologiju ocjenjivanja, validira sustave pondera i sektorsku kalibraciju.",
-    "organ_advisory_name": "Savjetodavno vijeće",
-    "organ_advisory_role": "Stručno vijeće — pruža specijalizirana znanja, podržava strateške odluke Uprave.",
-    "organ_international_name": "Međunarodno savjetodavno vijeće",
-    "organ_international_role": "Globalna perspektiva — savjetovanje u području najboljih međunarodnih praksi i usklađenosti s globalnim standardima.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Neovisno žalbeno tijelo — razmatra sporove o ocjenama, osigurava pravo na žalbu.",
     "founder_section_title": "Riječ osnivačice",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komercijalni tehnološki operator. Gradi i održava platformu Certo, osigurava sigurnost podataka, razvija AI alate pod nadzorom Zaklade.",
     "statute_title": "Statut Zaklade",
-    "statute_desc": "Statut Zaklade Certo Governance Institute određuje ciljeve, organizacijsku strukturu, načela neovisnosti i mehanizme kontrole."
+    "statute_desc": "Statut Zaklade Certo Governance Institute određuje ciljeve, organizacijsku strukturu, načela neovisnosti i mehanizme kontrole.",
+    "organs_label": "Tijela Zaklade",
+    "expert_structures_label": "Stručne strukture",
+    "organ_council_name": "Vijeće Certo",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Kontakt",
