@@ -23,7 +23,7 @@ export default function HeroSection() {
         }}
       />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-certo-navy/90 via-certo-navy/80 to-certo-navy/95" />
+      <div className="absolute inset-0 bg-gradient-to-b from-certo-navy/95 via-certo-navy/90 to-certo-navy/98" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-8 font-medium">
