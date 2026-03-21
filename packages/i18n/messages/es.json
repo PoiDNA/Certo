@@ -8,13 +8,13 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgano calificador independiente que evalúa la calidad de la gobernanza de instituciones públicas, corporativas y no gubernamentales."
+    "description": "Órgano de calificación independiente que evalúa la calidad de la gobernanza en instituciones públicas, corporativas y sin ánimo de lucro."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Inicia sesión",
+    "login": "Iniciar sesión",
     "logout": "Cerrar sesión",
     "privacyPolicy": "Política de privacidad",
     "termsOfUse": "Términos de uso",
@@ -33,7 +33,7 @@
     "inactive": "Inactivo"
   },
   "Navigation": {
-    "home": "Página de inicio",
+    "home": "Página principal",
     "ratings": "Calificaciones",
     "reports": "Informes",
     "analysis": "Análisis",
@@ -43,9 +43,9 @@
     "settings": "Configuración"
   },
   "Auth": {
-    "login_title": "Inicia sesión",
+    "login_title": "Iniciar sesión",
     "login_subtitle": "Inicia sesión en tu cuenta",
-    "login_with_google": "Inicia sesión con Google",
+    "login_with_google": "Iniciar sesión con Google",
     "email_label": "Correo electrónico",
     "password_label": "Contraseña",
     "forgot_password": "¿Olvidaste tu contraseña?",
@@ -54,9 +54,9 @@
   },
   "Errors": {
     "404_title": "Página no encontrada",
-    "404_description": "La página que buscas no existe o ha sido trasladada.",
+    "404_description": "La página que buscas no existe o ha sido movida.",
     "500_title": "Error del servidor",
-    "500_description": "Se ha producido un error inesperado. Inténtalo de nuevo más tarde.",
+    "500_description": "Se ha producido un error inesperado. Intenta más tarde.",
     "unauthorized": "Acceso denegado. Inicia sesión para continuar."
   },
   "Footer": {

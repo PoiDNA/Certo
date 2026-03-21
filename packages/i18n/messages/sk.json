@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotí kvalitu riadenia verejných, korporátnych a neziskových inštitúcií."
+    "description": "Nezávislý ratingový orgán hodnotiacich kvalitu riadenia verejných, korporatívnych a neziskových inštitúcií."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,7 +17,7 @@
     "login": "Prihlásiť sa",
     "logout": "Odhlásiť sa",
     "privacyPolicy": "Zásady ochrany osobných údajov",
-    "termsOfUse": "Podmienky použitia",
+    "termsOfUse": "Podmienky používania",
     "loading": "Načítavanie...",
     "error": "Vyskytla sa chyba",
     "save": "Uložiť",
@@ -44,25 +44,25 @@
   },
   "Auth": {
     "login_title": "Prihlásiť sa",
-    "login_subtitle": "Prihláste sa do svojho konta",
-    "login_with_google": "Prihlásiť sa cez Google",
-    "email_label": "E-mailová adresa",
+    "login_subtitle": "Prihláste sa do svojho účtu",
+    "login_with_google": "Prihlásiť sa pomocou služby Google",
+    "email_label": "Emailová adresa",
     "password_label": "Heslo",
-    "forgot_password": "Zabudli ste heslo?",
-    "no_account": "Nemáte konto?",
-    "register": "Zaregistrujte sa"
+    "forgot_password": "Zabudol si heslo?",
+    "no_account": "Nemáš účet?",
+    "register": "Registrovať sa"
   },
   "Errors": {
     "404_title": "Stránka nebola nájdená",
-    "404_description": "Stránka ktorú hľadáte neexistuje alebo bola presunutá.",
+    "404_description": "Stránka, ktorú hľadáš, neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
-    "500_description": "Vyskytla sa neočakávaná chyba. Skúste znova neskôr.",
-    "unauthorized": "Prístup bol odmietnutý. Prihláste sa, aby ste pokračovali."
+    "500_description": "Vyskytla sa neočakávaná chyba. Skús to neskôr znova.",
+    "unauthorized": "Prístup zamietnutý. Prihláste sa, aby ste pokračovali."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",
     "privacy": "Zásady ochrany osobných údajov",
-    "terms": "Podmienky použitia",
+    "terms": "Podmienky používania",
     "contact": "Kontakt"
   }
 }

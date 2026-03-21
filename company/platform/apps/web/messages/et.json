@@ -1,19 +1,19 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Digitaalse identiteedi verifikatsioon ja vastavushaldus avaliku sektori ja korporatiivsete institutsioonide jaoks."
+    "description": "Identiteedi kontroll ja compliance avalikule ja erasektorile."
   },
   "Nav": {
     "solutions": "Lahendused",
     "technology": "Tehnoloogia",
-    "foundation": "Certo Fundatsioon",
+    "foundation": "Certo Governance Institute",
     "login": "Logi sisse",
     "contact": "Kontakt"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Privaatsuspoliitika",
-    "terms": "Teenuse tingimused",
+    "terms": "Teenuse Tingimused",
     "contact": "Kontakt"
   },
   "Contact": {
@@ -21,16 +21,16 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Aadress",
     "label_email": "E-post",
-    "address": "02-566 Varssavi, Puławska 2B",
+    "address": "02-566 Varssavi, Puławska tänav 2B",
     "email": "certo@certo.id",
-    "form_title": "Võtke meiega ühendust",
+    "form_title": "Saada meile sõnum",
     "form_name": "Nimi ja perekonnanimi",
     "form_email": "E-posti aadress",
     "form_subject": "Teema",
     "form_message": "Sõnum",
     "form_submit": "Saada sõnum",
-    "form_success": "Sõnum on saadetud. Vastame võimalikult kiiresti.",
-    "subject_general": "Üldine pärimine",
+    "form_success": "Sõnum on saadetud. Vastame niipea kui võimalik.",
+    "subject_general": "Üldine päring",
     "subject_implementation": "Juurutamine",
     "subject_technical": "Tehniline tugi",
     "subject_cooperation": "Koostöö"
@@ -38,49 +38,49 @@
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteet.",
-    "hero_line2": "Vastavushaldus.",
+    "hero_line2": "Vastavus.",
     "hero_line3": "Kindlus.",
-    "hero_description": "Verifikatsiooni ja vastavushalduse infrastruktuur avaliku sektori institutsioonidele, korporatsioonidele ja reguleeritud subjektidele. Ehitatud standardite alusel",
+    "hero_description": "Kontroll- ja compliance'i infrastruktuur avalikule sektorile, erasektorile ja reguleeritud üksustele. Ehitatud standarditele",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ALUSTA JUURUTAMIST",
     "cta_secondary": "TEENUSED",
     "services_label": "TEENUSED",
-    "services_title": "Vastavushalduse infrastruktuuri kolm kihti",
-    "service1_title": "Identiteedi verifikatsioon",
-    "service1_desc": "KYC/AML reguleeritud subjektidele. Dokumentide automatisoitu verifikatsioon, sanktsioonide ja PEP-i screening, integreerimine riiklike registriga.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Automatisoitu vastavushalduse hindamine, mis põhineb Certo Governance Institute metodoloogial. Viietasandiline hindamissüsteem täieliku auditijäljega.",
+    "services_title": "Compliance'i infrastruktuuri kolm kihti",
+    "service1_title": "Identiteedi Kontroll",
+    "service1_desc": "KYC/AML reguleeritud üksustele. Dokumentide automaatne kontroll, sanktsioonide ja PEP-i sõltsimine, integreerimine avalike registritega.",
+    "service2_title": "Compliance Reiting",
+    "service2_desc": "Automaatne vastavuse skoor Certo Governance Institute meetodoloogiast. Viie taseme hindamissüsteem täieliku auditijäljega.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatiseeritud parandusplaanid ja nende rakendamise jälgimine. Integreerimine ERP-, GRC-süsteemidega ja riskijuhtimise platvormidega.",
+    "service3_desc": "Automaatsed parandusplaanid ja nende teostamise monitooring. Integreerimine ERP, GRC ja riskijuhtimisel platvormidega.",
     "arch_label": "ARHITEKTUUR",
     "arch_title": "Kuidas Certo ID töötab",
     "step1_title": "Vastuvõtmine",
-    "step1_desc": "Subjekti andmed + dokumendid + regulatiivne kontekst",
-    "step2_title": "Verifikatsiooni",
-    "step2_desc": "Identiteedi verifikatsioon, screening, avalik register",
-    "step3_title": "Hindamine",
-    "step3_desc": "Automatisoitu vastavushalduse rating Certo Vector",
+    "step1_desc": "Üksuse andmed + dokumendid + regulatiivne kontekst",
+    "step2_title": "Kontroll",
+    "step2_desc": "Identiteedi kontroll, sõltsimine, avalik register",
+    "step3_title": "Skoor",
+    "step3_desc": "Automaatne Certo Vector vastavuse reiting",
     "step4_title": "Aruanne",
-    "step4_desc": "PDF-aruanne + API + Certo Online armatuurlaud",
-    "badge_iso": "ISO standardid",
+    "step4_desc": "PDF aruanne + API + Certo Online juhtpaneel",
+    "badge_iso": "ISO Standardid",
     "badge_compliance": "Regulatiivne vastavus",
-    "badge_kyc": "Identiteedi verifikatsioon",
-    "badge_governance": "Juhtimiskvaliteedi hindamine"
+    "badge_kyc": "Identiteedi kontroll",
+    "badge_governance": "Juhtimine hindamine"
   },
   "Legal": {
     "back": "Tagasi avalehele",
     "last_updated": "Viimati uuendatud: märts 2026",
     "privacy_title": "Privaatsuspoliitika",
-    "terms_title": "Teenuse tingimused"
+    "terms_title": "Teenuse Tingimused"
   },
   "Dashboard": {
-    "title": "Certo ID armatuurlaud",
+    "title": "Certo ID Juhtpaneel",
     "welcome": "Tere tulemast, {name}",
     "your_rating": "Teie Certo Rating",
     "your_delegates": "Teie Delegaadid",
     "your_accords": "Teie Certo Accord",
     "recent_activity": "Hiljutine tegevus",
-    "quick_actions": "Kiirkäsud"
+    "quick_actions": "Kiired toimingud"
   },
   "Profile": {
     "title": "Profiil",
@@ -88,13 +88,13 @@
     "contact_person": "Kontaktisik",
     "sector": "Sektor",
     "edit_profile": "Redigeeri profiili",
-    "verified_badge": "Verifikeeritud subjekt"
+    "verified_badge": "Kontrollitud üksus"
   },
   "Delegates": {
     "title": "Certo Delegaadid",
     "add_delegate": "Lisa delegaat",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Staatus",
+    "delegate_status": "Olek",
     "primary_link": "PRIMARY link",
     "failover_link": "FAILOVER link",
     "plan_basic": "Basic",

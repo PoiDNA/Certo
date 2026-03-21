@@ -1,56 +1,56 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Raskite Konsultantą",
-    "description": "Akredituoti Certo konsultantai. Valdymo sistema ir atitiktis."
+    "title": "Certo Consulting — Raskite Patarėją",
+    "description": "Akredituoti Certo patarėjai. Korporatyvinis valdymas ir atitiktis."
   },
   "Nav": {
-    "advisors": "Konsultantai",
+    "advisors": "Patarėjai",
     "expertise": "Kompetencija",
     "login": "Prisijungimas",
     "contact": "Kontaktai"
   },
   "Footer": {
-    "description": "Ekspertinės konsultacijos valdymo sistemos, atitikties ir saugumo srityse rinkos lyderių institucijoms.",
+    "description": "Ekspertinis konsultavimas korporatyvinio valdymo, atitikties ir saugumo srityje rinkos lyderių sprendimams.",
     "ecosystem": "Certo ekosistema",
-    "accreditation": "Visi konsultantai yra akredituoti Certo Governance Institute fondo",
+    "accreditation": "Visi patarėjai yra akredituoti Certo Governance Institute fondacijos",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimosi sąlygos",
+    "terms": "Naudojimo sąlygos",
     "contact": "Kontaktai"
   },
   "Home": {
-    "hero_title": "Ekspertinės konsultacijos\nvaldymo lygyje.",
-    "hero_subtitle": "Sujungiame akredituotus Certo konsultantus su institucijomis, kurioms reikalingi aukščiausi valdymo sistemos ir reguliacinės atitikties standartai.",
+    "hero_title": "Ekspertinis konsultavimas\nvaldybos lygiu.",
+    "hero_subtitle": "Sujungiame akredituotus Certo patarėjus su institucijomis, kurioms reikalingi aukščiausi korporatyvinio valdymo ir normatyvinio atitikimo standartai.",
     "hero_cta": "Raskite ekspertą",
-    "finder_title": "Norėčiau pasikalbėti su ekspertu dėl:",
+    "finder_title": "Norėčiau kalbėtis su eksperto dėl:",
     "area_health": "Sveikatos apsauga",
     "area_local_gov": "Savivaldybės",
-    "area_defense": "Gynyba",
+    "area_defense": "Gynybą",
     "area_finance": "Finansai",
     "area_education": "Švietimas",
-    "form_title": "Palikite kontaktinę informaciją, kad galėtume parinkti tinkamą konsultantą iš srities",
+    "form_title": "Palikite kontaktą, kad galėtume pasirinkti tinkamą patarėją iš srities",
     "form_name": "Vardas ir pavardė",
     "form_email": "El. pašto adresas (darbo)",
     "form_org": "Organizacijos pavadinimas / Pareigos",
     "form_submit": "Siųsti užklausą",
-    "experts_headline": "Mūsų ekspertai padeda\npalaikyti ir sustiprinti\nCerto Rating.",
-    "experts_description": "Akredituoti konsultantai su daugelio metų patirtimi optimizuojant valdymo procesus strateginėse institucijose."
+    "experts_headline": "Mūsų ekspertai padeda\npalaikyti ir stiprinti\nCerto Rating.",
+    "experts_description": "Akredituoti patarėjai su daugelio metų patirtimi optimizuojant governance procesus strateginėse institucijose."
   },
   "Legal": {
     "back": "Grįžti į pagrindinį puslapį",
     "last_updated": "Paskutinis atnaujinimas: 2026 m. kovas",
     "privacy_title": "Privatumo politika",
-    "terms_title": "Naudojimosi sąlygos"
+    "terms_title": "Naudojimo sąlygos"
   },
   "FindAdvisor": {
-    "title": "Raskite Certo konsultantą",
+    "title": "Raskite Certo patarėją",
     "sector_label": "Jūsų institucijos sektorius",
     "need_label": "Ko jums reikia?",
     "need_audit": "Valdymo auditas",
-    "need_advisory": "Strateginės konsultacijos",
+    "need_advisory": "Strateginis konsultavimas",
     "need_training": "Mokymai ir seminarai",
     "need_rating": "Pasiruošimas reitingavimui",
     "region_label": "Regionas",
-    "submit": "Ieškoti konsultanto"
+    "submit": "Ieškoti patarėjo"
   },
   "Advisor": {
     "accredited_by": "Akredituotas Certo",
@@ -64,7 +64,7 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Adresas",
     "label_email": "El. paštas",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varšuva, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Parašykite mums",
     "form_name": "Vardas ir pavardė",
@@ -74,8 +74,8 @@
     "form_submit": "Siųsti žinutę",
     "form_success": "Žinutė buvo išsiųsta. Atsakysime kuo greičiau.",
     "subject_general": "Bendra užklausa",
-    "subject_advisory": "Konsultacijos",
-    "subject_accreditation": "Konsultanto akredytacija",
+    "subject_advisory": "Konsultavimas",
+    "subject_accreditation": "Patarėjo akreditacija",
     "subject_cooperation": "Bendradarbiavimas"
   }
 }

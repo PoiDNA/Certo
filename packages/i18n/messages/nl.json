@@ -37,15 +37,15 @@
     "ratings": "Ratings",
     "reports": "Rapporten",
     "analysis": "Analyses",
-    "about": "Over de Stichting",
+    "about": "Over het Instituut",
     "contact": "Contact",
     "dashboard": "Dashboard",
     "settings": "Instellingen"
   },
   "Auth": {
     "login_title": "Inloggen",
-    "login_subtitle": "Meld u aan bij uw account",
-    "login_with_google": "Inloggen via Google",
+    "login_subtitle": "Log in op uw account",
+    "login_with_google": "Inloggen met Google",
     "email_label": "E-mailadres",
     "password_label": "Wachtwoord",
     "forgot_password": "Wachtwoord vergeten?",
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Pagina niet gevonden",
-    "404_description": "De pagina die u zoekt bestaat niet of is verplaatst.",
+    "404_description": "De pagina die u zoekt, bestaat niet of is verplaatst.",
     "500_title": "Serverfout",
     "500_description": "Er is een onverwachte fout opgetreden. Probeer het later opnieuw.",
-    "unauthorized": "Geen toegang. Meld u aan om door te gaan."
+    "unauthorized": "Geen toegang. Log in om verder te gaan."
   },
   "Footer": {
     "rights": "Alle rechten voorbehouden",

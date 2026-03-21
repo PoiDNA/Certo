@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Független értékelő szerv, amely nyilvános, vállalati és nonprofit intézmények irányítási minőségét értékeli."
+    "description": "Független minősítő szerv, amely nyilvános, vállalati és nonprofit intézmények irányítási minőségét értékeli."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -34,10 +34,10 @@
   },
   "Navigation": {
     "home": "Kezdőlap",
-    "ratings": "Értékelések",
+    "ratings": "Minősítések",
     "reports": "Jelentések",
     "analysis": "Elemzések",
-    "about": "Az Intézetről",
+    "about": "Az Alapítványról",
     "contact": "Kapcsolat",
     "dashboard": "Irányítópult",
     "settings": "Beállítások"
@@ -48,16 +48,16 @@
     "login_with_google": "Bejelentkezés Google-lal",
     "email_label": "E-mail cím",
     "password_label": "Jelszó",
-    "forgot_password": "Elfelejtette a jelszavát?",
+    "forgot_password": "Elfelejtette jelszavát?",
     "no_account": "Nincs fiókja?",
     "register": "Regisztráció"
   },
   "Errors": {
     "404_title": "Az oldal nem található",
-    "404_description": "A keresett oldal nem létezik vagy át lett helyezve.",
+    "404_description": "A keresett oldal nem létezik vagy áthelyezésre került.",
     "500_title": "Szerverhiba",
-    "500_description": "Váratlan hiba történt. Próbálkozzon később.",
-    "unauthorized": "Nincs hozzáférése. Jelentkezzen be a folytatáshoz."
+    "500_description": "Váratlan hiba történt. Próbálja újra később.",
+    "unauthorized": "Nincs hozzáférés. Jelentkezzen be a folytatáshoz."
   },
   "Footer": {
     "rights": "Minden jog fenntartva",

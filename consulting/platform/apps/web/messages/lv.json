@@ -1,54 +1,54 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Atrodiet Konsultantu",
-    "description": "Akreditēti Certo konsultanti. Korporatīvais pārvaldības modelis un atbilstība."
+    "title": "Certo Consulting — Atrodi Konsultantu",
+    "description": "Akreditēti Certo konsultanti. Korporatīvā pārvaldība un atbilstība."
   },
   "Nav": {
     "advisors": "Konsultanti",
-    "expertise": "Kompetence",
+    "expertise": "Ekspertīze",
     "login": "Pieslēgšanās",
-    "contact": "Kontakti"
+    "contact": "Kontakts"
   },
   "Footer": {
-    "description": "Ekspertu konsultācijas korporatīvā pārvaldības modeļa, atbilstības un drošības jomā tirgus līderiem.",
+    "description": "Eksperta konsultācijas korporatīvās pārvaldības, atbilstības un drošības jomā nozares līderiem.",
     "ecosystem": "Certo ekosistēma",
-    "accreditation": "Visi konsultanti ir akreditēti Certo Governance Institute fondu",
+    "accreditation": "Visi konsultanti ir akreditēti Certo Governance Institute fondam",
     "privacy": "Privātuma politika",
-    "terms": "Lietošanas noteikumi",
-    "contact": "Kontakti"
+    "terms": "Noteikumi",
+    "contact": "Kontakts"
   },
   "Home": {
-    "hero_title": "Ekspertu konsultācijas\nboard līmeņa.",
-    "hero_subtitle": "Mēs savienojam akreditētus Certo konsultantus ar iestādēm, kurām nepieciešami augstākie korporatīvā pārvaldības modeļa un normatīvās atbilstības standarti.",
-    "hero_cta": "Atrodiet ekspertu",
-    "finder_title": "Vēlos runāt ar ekspertu par:",
+    "hero_title": "Eksperta konsultācijas\npārvaldības līmenī.",
+    "hero_subtitle": "Mēs savienojam akreditētus Certo konsultantus ar institūcijām, kurām nepieciešami augstākie korporatīvās pārvaldības un normatīvo atbilstības standarti.",
+    "hero_cta": "Atrodi ekspertu",
+    "finder_title": "Es vēlos runāt ar ekspertu šajā jomā:",
     "area_health": "Veselības aprūpe",
     "area_local_gov": "Pašvaldības",
     "area_defense": "Aizsardzība",
     "area_finance": "Finanses",
     "area_education": "Izglītība",
-    "form_title": "Atstājiet kontaktinformāciju, un mēs atlasīsim piemērotu konsultantu no apgabala",
+    "form_title": "Atstāj savus kontaktus, lai mēs varētu atlasīt atbilstošu konsultantu no šīs jomas",
     "form_name": "Vārds un uzvārds",
     "form_email": "E-pasta adrese (darba)",
     "form_org": "Organizācijas nosaukums / Amats",
-    "form_submit": "Sūtīt pieprasījumu",
+    "form_submit": "Sūtīt jautājumu",
     "experts_headline": "Mūsu eksperti palīdz\nsaglabāt un stiprināt\nCerto Rating.",
-    "experts_description": "Akreditēti konsultanti ar daudzgadu pieredzi pārvaldības procesu optimizācijā stratēģiskām iestādēm."
+    "experts_description": "Akreditēti konsultanti ar daudzu gadu pieredzi pārvaldības procesu optimizācijā stratēģiskajām institūcijām."
   },
   "Legal": {
-    "back": "Atgriezties uz sākumu",
-    "last_updated": "Pēdējoreiz atjaunināts: 2026. gads, marts",
+    "back": "Atpakaļ uz sākumlapu",
+    "last_updated": "Pēdējais atjauninājums: Marts 2026",
     "privacy_title": "Privātuma politika",
     "terms_title": "Lietošanas noteikumi"
   },
   "FindAdvisor": {
-    "title": "Atrodiet Certo konsultantu",
-    "sector_label": "Jūsu iestādes sektors",
+    "title": "Atrodi Certo konsultantu",
+    "sector_label": "Jūsu institūcijas sektors",
     "need_label": "Ko jums nepieciešams?",
     "need_audit": "Pārvaldības audits",
     "need_advisory": "Stratēģiskā konsultācija",
-    "need_training": "Apmācības un semināri",
-    "need_rating": "Sagatavošanās reitingam",
+    "need_training": "Apmācības un darbnīcas",
+    "need_rating": "Sagatavošana reitingam",
     "region_label": "Reģions",
     "submit": "Meklēt konsultantu"
   },
@@ -56,24 +56,24 @@
     "accredited_by": "Akreditēts Certo",
     "specialization": "Specializācija",
     "sectors": "Sektori",
-    "contact_advisor": "Sazinājies",
+    "contact_advisor": "Sazinies",
     "view_profile": "Skatīt profilu"
   },
   "Contact": {
-    "title": "Kontakti",
+    "title": "Kontakts",
     "subtitle": "Certo ID PSA",
     "label_address": "Adrese",
     "label_email": "E-pasts",
     "address": "02-566 Varšava, Puławska iela 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Rakstiet mums",
+    "form_title": "Raksti mums",
     "form_name": "Vārds un uzvārds",
     "form_email": "E-pasta adrese",
     "form_subject": "Tēma",
     "form_message": "Ziņojums",
     "form_submit": "Sūtīt ziņojumu",
-    "form_success": "Ziņojums nosūtīts. Mēs atbildēsim pēc iespējas ātrāk.",
-    "subject_general": "Vispārīgs pieprasījums",
+    "form_success": "Jūsu ziņojums ir nosūtīts. Mēs atbildēsim pēc iespējas ātrāk.",
+    "subject_general": "Vispārīgs jautājums",
     "subject_advisory": "Konsultācija",
     "subject_accreditation": "Konsultanta akreditācija",
     "subject_cooperation": "Sadarbība"

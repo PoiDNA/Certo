@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Unabhängiges Ratingorgan zur Bewertung der Qualität der Unternehmensführung öffentlicher, korporativer und gemeinnütziger Institutionen."
+    "description": "Unabhängiges Ratingorgan zur Bewertung der Qualität der Unternehmensführung von öffentlichen, privatwirtschaftlichen und gemeinnützigen Institutionen."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -37,7 +37,7 @@
     "ratings": "Ratings",
     "reports": "Berichte",
     "analysis": "Analysen",
-    "about": "Über die Stiftung",
+    "about": "Über das Institut",
     "contact": "Kontakt",
     "dashboard": "Dashboard",
     "settings": "Einstellungen"
@@ -48,8 +48,8 @@
     "login_with_google": "Mit Google anmelden",
     "email_label": "E-Mail-Adresse",
     "password_label": "Passwort",
-    "forgot_password": "Haben Sie Ihr Passwort vergessen?",
-    "no_account": "Haben Sie noch kein Konto?",
+    "forgot_password": "Passwort vergessen?",
+    "no_account": "Sie haben noch kein Konto?",
     "register": "Registrieren"
   },
   "Errors": {

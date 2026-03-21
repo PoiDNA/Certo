@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton ratinglaitos, joka arvioi julkisten, yritys- ja voittoa tavoittelemattomien organisaatioiden hallinnon laatua."
+    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja voittoa tavoittelemattomien instituutioiden hallinnon laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -33,19 +33,19 @@
     "inactive": "Passiivinen"
   },
   "Navigation": {
-    "home": "Etusivu",
-    "ratings": "Ratingit",
+    "home": "Kotisivu",
+    "ratings": "Luokitukset",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Säätiöstä",
-    "contact": "Yhteydenotto",
-    "dashboard": "Koontinäyttö",
+    "about": "Meistä",
+    "contact": "Yhteystiedot",
+    "dashboard": "Hallintapaneeli",
     "settings": "Asetukset"
   },
   "Auth": {
     "login_title": "Kirjaudu sisään",
-    "login_subtitle": "Kirjaudu sisään tiliisi",
-    "login_with_google": "Kirjaudu sisään Googlella",
+    "login_subtitle": "Kirjaudu tilillesi",
+    "login_with_google": "Kirjaudu sisään Googlien kautta",
     "email_label": "Sähköpostiosoite",
     "password_label": "Salasana",
     "forgot_password": "Unohditko salasanasi?",
@@ -54,15 +54,15 @@
   },
   "Errors": {
     "404_title": "Sivua ei löytynyt",
-    "404_description": "Etsimäsi sivu ei ole olemassa tai se on siirretty.",
+    "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
     "500_title": "Palvelinvirhe",
-    "500_description": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
-    "unauthorized": "Sinulla ei ole käyttöoikeutta. Kirjaudu sisään jatkaaksesi."
+    "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
+    "unauthorized": "Pääsy kielletty. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Yhteydenotto"
+    "contact": "Yhteystiedot"
   }
 }

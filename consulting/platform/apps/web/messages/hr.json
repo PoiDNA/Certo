@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Pronađi Savjetnika",
-    "description": "Akreditirani savjetnici Certo. Korporativni uredan i usklađenost."
+    "title": "Certo Consulting — Pronađite Savjetnika",
+    "description": "Akreditirani savjetnici Certo. Korporativna uprava i usklađenost."
   },
   "Nav": {
     "advisors": "Savjetnici",
@@ -10,34 +10,34 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Stručno savjetovanje u području korporativnog reda, usklađenosti i sigurnosti za tržišne lidere.",
-    "ecosystem": "Ekosistem Certo",
-    "accreditation": "Svi savjetnici su akreditirani od strane Fondacije Certo Governance Institute",
+    "description": "Stručno savjetovanje u oblasti korporativne uprave, usklađenosti i sigurnosti za tržišne lidere.",
+    "ecosystem": "Certo Ekosistem",
+    "accreditation": "Svi savjetnici su akreditirani od strane Certo Governance Institute",
     "privacy": "Politika privatnosti",
     "terms": "Uvjeti korištenja",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Stručno savjetovanje\nna razini upravnog vijeća.",
-    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativnog reda i regulatorne usklađenosti.",
+    "hero_title": "Stručno savjetovanje\nna razini uprave.",
+    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativne uprave i regulacijske usklađenosti.",
     "hero_cta": "Pronađi eksperta",
     "finder_title": "Želim razgovarati s ekspertom za:",
-    "area_health": "Zdravstvo",
-    "area_local_gov": "Lokalna uprava",
+    "area_health": "Zdravstvena zaštita",
+    "area_local_gov": "Lokalna samouprava",
     "area_defense": "Obrana",
     "area_finance": "Financije",
     "area_education": "Obrazovanje",
-    "form_title": "Ostavite svoj kontakt kako bismo vam dodijelili odgovarajućeg savjetnika iz područja",
+    "form_title": "Ostavite kontakt kako bismo odabrali odgovarajućeg savjetnika iz područja",
     "form_name": "Ime i prezime",
-    "form_email": "Poslovni e-mail",
-    "form_org": "Naziv organizacije / Položaj",
+    "form_email": "Email adresa (službena)",
+    "form_org": "Naziv organizacije / Pozicija",
     "form_submit": "Pošalji upit",
-    "experts_headline": "Naši eksperti pomažu\nuspostaviti i ojačati\nCerto Rating.",
-    "experts_description": "Akreditirani savjetnici s dugogodišnjim iskustvom u optimizaciji procesa governance za strateške institucije."
+    "experts_headline": "Naši stručnjaci pomažu\nodržavati i ojačati\nCerto Rating.",
+    "experts_description": "Akreditirani savjetnici s dugogodišnjim iskustvom u optimizaciji procesa uprave za strateške institucije."
   },
   "Legal": {
-    "back": "Nazad na početnu stranicu",
-    "last_updated": "Zadnja ažuriranja: Ožujak 2026",
+    "back": "Povratak na početnu stranicu",
+    "last_updated": "Zadnja ažuriranja: ožujak 2026",
     "privacy_title": "Politika Privatnosti",
     "terms_title": "Uvjeti korištenja"
   },
@@ -45,11 +45,11 @@
     "title": "Pronađi Certo savjetnika",
     "sector_label": "Sektor vaše institucije",
     "need_label": "Što vam je potrebno?",
-    "need_audit": "Audit governance",
+    "need_audit": "Revizija uprave",
     "need_advisory": "Strateško savjetovanje",
     "need_training": "Obuke i radionice",
     "need_rating": "Priprema za rating",
-    "region_label": "Regija",
+    "region_label": "Region",
     "submit": "Traži savjetnika"
   },
   "Advisor": {
@@ -63,16 +63,16 @@
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
     "label_address": "Adresa",
-    "label_email": "E-mail",
+    "label_email": "Email",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Napišite nam",
     "form_name": "Ime i prezime",
-    "form_email": "Poslovni e-mail",
-    "form_subject": "Predmet",
+    "form_email": "Email adresa",
+    "form_subject": "Tema",
     "form_message": "Poruka",
     "form_submit": "Pošalji poruku",
-    "form_success": "Poruka je poslana. Odgovorit ćemo čim je moguće.",
+    "form_success": "Poruka je poslana. Odgovorit ćemo čim je prije moguće.",
     "subject_general": "Opći upit",
     "subject_advisory": "Savjetovanje",
     "subject_accreditation": "Akreditacija savjetnika",

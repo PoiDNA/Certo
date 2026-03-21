@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Najděte poradce",
-    "description": "Akreditovaní poradci Certo. Správa a řízení podniků a soulad s předpisy."
+    "description": "Akreditovaní poradci Certo. Správa společnosti a soulad."
   },
   "Nav": {
     "advisors": "Poradci",
@@ -10,16 +10,16 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Odborné poradenství v oblasti správy řízení podniků, souladu s předpisy a bezpečnosti pro přední lídry trhu.",
+    "description": "Odborné poradenství v oblasti správy společnosti, souladu a bezpečnosti pro tržní lídry.",
     "ecosystem": "Ekosystém Certo",
-    "accreditation": "Všichni poradci jsou akreditováni společností Certo Governance Institute",
+    "accreditation": "Všichni poradci jsou akreditováni Nadací Certo Governance Institute",
     "privacy": "Zásady ochrany osobních údajů",
     "terms": "Podmínky použití",
     "contact": "Kontakt"
   },
   "Home": {
     "hero_title": "Odborné poradenství\nna úrovni vedení.",
-    "hero_subtitle": "Propojujeme akreditované poradce Certo s institucemi vyžadujícími nejvyšší standardy správy řízení podniků a regulační souladu.",
+    "hero_subtitle": "Propojujeme akreditované poradce Certo s institucemi, které vyžadují nejvyšší standardy správy společnosti a regulační shody.",
     "hero_cta": "Najděte experta",
     "finder_title": "Chci se poradit s expertem na:",
     "area_health": "Zdravotnictví",
@@ -27,17 +27,17 @@
     "area_defense": "Obrana",
     "area_finance": "Finance",
     "area_education": "Vzdělání",
-    "form_title": "Zanechte své kontaktní údaje, abychom vám vybrali vhodného poradce z oblasti",
+    "form_title": "Zanechte svůj kontakt, abychom vám vybrali vhodného poradce z oblasti",
     "form_name": "Jméno a příjmení",
-    "form_email": "E-mailová adresa (pracovní)",
-    "form_org": "Název organizace / Pozice",
+    "form_email": "Pracovní e-mailová adresa",
+    "form_org": "Název organizace / Pracovní pozice",
     "form_submit": "Odeslat dotaz",
-    "experts_headline": "Naši odborníci pomáhají\nuchovat a posílit\nRating Certo.",
-    "experts_description": "Akreditovaní poradci s dlouholetými zkušenostmi v optimalizaci procesů správy řízení pro strategické instituce."
+    "experts_headline": "Naši experti pomáhají\nuchovat a posílit\nvaš Certo Rating.",
+    "experts_description": "Akreditovaní poradci s dlouholetými zkušenostmi v optimalizaci procesů správy pro strategické instituce."
   },
   "Legal": {
-    "back": "Zpět na hlavní stránku",
-    "last_updated": "Poslední aktualizace: Březen 2026",
+    "back": "Zpět na úvodní stránku",
+    "last_updated": "Poslední aktualizace: březen 2026",
     "privacy_title": "Zásady ochrany osobních údajů",
     "terms_title": "Podmínky použití"
   },
@@ -45,7 +45,7 @@
     "title": "Najděte poradce Certo",
     "sector_label": "Sektor vaší instituce",
     "need_label": "Co potřebujete?",
-    "need_audit": "Audit správy řízení",
+    "need_audit": "Audit správy",
     "need_advisory": "Strategické poradenství",
     "need_training": "Školení a workshopy",
     "need_rating": "Příprava na rating",
@@ -64,7 +64,7 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Adresa",
     "label_email": "E-mail",
-    "address": "02-566 Varšava, ul. Puławska 2B",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Napište nám",
     "form_name": "Jméno a příjmení",
@@ -73,7 +73,7 @@
     "form_message": "Zpráva",
     "form_submit": "Odeslat zprávu",
     "form_success": "Zpráva byla odeslána. Odpovíme co nejdříve.",
-    "subject_general": "Všeobecný dotaz",
+    "subject_general": "Obecný dotaz",
     "subject_advisory": "Poradenství",
     "subject_accreditation": "Akreditace poradce",
     "subject_cooperation": "Spolupráce"

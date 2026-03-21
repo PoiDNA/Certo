@@ -1,29 +1,29 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Identiteetin varmistus ja compliance-palvelut julkisille laitoksille ja yrityksille."
+    "description": "Identiteetin vahvistaminen ja compliance-hallinta julkisille laitoksille ja yrityksille."
   },
   "Nav": {
     "solutions": "Ratkaisut",
     "technology": "Teknologia",
     "foundation": "Certo Governance Institute",
-    "login": "Kirjaudu sisään",
-    "contact": "Ota yhteyttä"
+    "login": "Kirjaudu",
+    "contact": "Yhteystiedot"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Tietosuojakäytäntö",
-    "terms": "Palveluehdot",
-    "contact": "Ota yhteyttä"
+    "terms": "Käyttöehdot",
+    "contact": "Yhteystiedot"
   },
   "Contact": {
-    "title": "Ota yhteyttä",
+    "title": "Yhteystiedot",
     "subtitle": "Certo ID PSA",
     "label_address": "Osoite",
     "label_email": "Sähköposti",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varsova, Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Lähetä viesti meille",
+    "form_title": "Ota meihin yhteyttä",
     "form_name": "Nimi",
     "form_email": "Sähköpostiosoite",
     "form_subject": "Aihe",
@@ -38,46 +38,46 @@
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteetti.",
-    "hero_line2": "Vaatimustenmukaisuus.",
+    "hero_line2": "Compliance.",
     "hero_line3": "Varmuus.",
-    "hero_description": "Identiteetin varmistus- ja compliance-infrastruktuuri julkisille laitoksille, yrityksille ja säännellyille tahoille. Rakennettu standardien pohjalle",
+    "hero_description": "Vahvistamis- ja compliance-infrastruktuuri julkisille laitoksille, yrityksille ja säännellyille toimijoille. Rakennettu standardien mukaisesti",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ALOITA KÄYTTÖÖNOTTO",
     "cta_secondary": "PALVELUT",
     "services_label": "PALVELUT",
-    "services_title": "Kolme compliance-infrastruktuurin tasoa",
-    "service1_title": "Identiteetin varmistus",
-    "service1_desc": "KYC/AML säännellyille tahoille. Automaattinen asiakirjojen varmistus, pakotteiden ja merkittävien henkilöiden seulonta, integrointi valtion rekistereihin.",
-    "service2_title": "Compliance-luokitus",
-    "service2_desc": "Automaattinen vaatimustenmukaisuuden pisteytys Certo Governance Institute -metodologian perusteella. Viisitasoinen arviointijärjestelmä ja täydellinen tarkistusketju.",
+    "services_title": "Kolme compliance-infrastruktuurin kerrosta",
+    "service1_title": "Identiteetin Vahvistaminen",
+    "service1_desc": "KYC/AML säännellyille toimijoille. Automaattinen asiakirjojen vahvistaminen, pakotteiden ja PEP-seulonta, integraatio valtion rekistereihin.",
+    "service2_title": "Compliance-arviointi",
+    "service2_desc": "Automaattinen compliance-pisteiden laskenta Certo Governance Institute -metodologian perusteella. Viisitasoinen arviointijärjestelmä täydellä auditointipolulla.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automaattiset korjaavat toimintasuunnitelmat ja niiden toteutuksen seuranta. Integrointi ERP-, GRC- ja riskienhallintajärjestelmiin.",
+    "service3_desc": "Automaattiset korjaussuunnitelmat ja niiden toteutuksen seuranta. Integraatio ERP-, GRC-järjestelmiin ja riskienhallintaalustoihin.",
     "arch_label": "ARKKITEHTUURI",
     "arch_title": "Kuinka Certo ID toimii",
     "step1_title": "Intake",
-    "step1_desc": "Tahon tiedot + asiakirjat + sääntelykonteksti",
+    "step1_desc": "Toimijan tiedot + asiakirjat + sääntelykonteksti",
     "step2_title": "Verify",
-    "step2_desc": "Identiteetin varmistus, seulonta, julkinen rekisteri",
+    "step2_desc": "Identiteetin vahvistaminen, seulonta, julkinen rekisteri",
     "step3_title": "Score",
-    "step3_desc": "Automaattinen Certo Vector -vaatimustenmukaisuusluokitus",
+    "step3_desc": "Automaattinen Certo Vector compliance-arviointi",
     "step4_title": "Report",
-    "step4_desc": "PDF-raportti + API + Certo Online -kojelauta",
+    "step4_desc": "PDF-raportti + API + Certo Online -hallintapaneeli",
     "badge_iso": "ISO-standardit",
     "badge_compliance": "Sääntelynmukaisuus",
-    "badge_kyc": "Identiteetin varmistus",
-    "badge_governance": "Hallinnon arviointi"
+    "badge_kyc": "Identiteetin vahvistaminen",
+    "badge_governance": "Hallintokäytäntöjen arviointi"
   },
   "Legal": {
-    "back": "Takaisin etusivulle",
-    "last_updated": "Viimeksi päivitetty: Maaliskuu 2026",
+    "back": "Palaa pääsivulle",
+    "last_updated": "Päivitetty viimeksi: Maaliskuu 2026",
     "privacy_title": "Tietosuojakäytäntö",
-    "terms_title": "Palveluehdot"
+    "terms_title": "Käyttöehdot"
   },
   "Dashboard": {
-    "title": "Certo ID -paneeli",
+    "title": "Certo ID -hallintapaneeli",
     "welcome": "Tervetuloa, {name}",
     "your_rating": "Sinun Certo Rating",
-    "your_delegates": "Sinun delegaatit",
+    "your_delegates": "Sinun Delegaat",
     "your_accords": "Sinun Certo Accord",
     "recent_activity": "Viimeaikainen toiminta",
     "quick_actions": "Pika-toiminnot"
@@ -88,7 +88,7 @@
     "contact_person": "Yhteyshenkilö",
     "sector": "Sektori",
     "edit_profile": "Muokkaa profiilia",
-    "verified_badge": "Vahvistettu taho"
+    "verified_badge": "Vahvistettu toimija"
   },
   "Delegates": {
     "title": "Certo Delegate",

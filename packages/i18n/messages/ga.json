@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Orgán rátála neamhspleách ag measúnú ar chéim an bhainistíochta in institiúidí poiblí, corpraithe agus neamhbhriathhartha."
+    "description": "Orgán rátála neamhspleách ag measúnú ar an gcaighdeán rialachais i bhfostais phoiblí, chorparáideacha agus neamhbhrabúis."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Logáil amach",
     "privacyPolicy": "Polasaí Príobháideachta",
     "termsOfUse": "Téarmaí Úsáide",
-    "loading": "Á Lódáil...",
+    "loading": "Á foluain...",
     "error": "Tharla earráid",
     "save": "Sábháil",
     "cancel": "Cealaigh",
@@ -34,12 +34,12 @@
   },
   "Navigation": {
     "home": "Baile",
-    "ratings": "Rátála",
+    "ratings": "Rátálacha",
     "reports": "Tuairiscí",
     "analysis": "Anailísí",
-    "about": "Faoi an Bhunstais",
+    "about": "Maidir linn",
     "contact": "Teagmháil",
-    "dashboard": "Deis",
+    "dashboard": "Deis-bhord",
     "settings": "Socruithe"
   },
   "Auth": {
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Níor aimsíodh an leathanach",
-    "404_description": "Níl an leathanach atá á lorg agat ann nó athaistríthed.",
-    "500_title": "Earráid Freastalaí",
-    "500_description": "Tharla earráid bhocht-dhíchealaithe. Déan iarracht arís níos déanaí.",
-    "unauthorized": "Gan rochtain. Logáil isteach chun leanúint ar aghaidh."
+    "404_description": "Níl an leathanach atá á lorg agat ann nó bhogadh sé.",
+    "500_title": "Earráid an Fhreastalaí",
+    "500_description": "Tharla earráid gan dúil ann. Déan iarracht arís níos déanaí.",
+    "unauthorized": "Níl rochtain agat. Logáil isteach chun leanúint ar aghaidh."
   },
   "Footer": {
     "rights": "Gach ceart ar cosaint",

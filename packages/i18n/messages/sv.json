@@ -16,9 +16,9 @@
     "delegate": "Certo Delegate",
     "login": "Logga in",
     "logout": "Logga ut",
-    "privacyPolicy": "Integritetspolicy",
+    "privacyPolicy": "Sekretesspolicy",
     "termsOfUse": "Användarvillkor",
-    "loading": "Laddar...",
+    "loading": "Läser in...",
     "error": "Ett fel uppstod",
     "save": "Spara",
     "cancel": "Avbryt",
@@ -27,17 +27,17 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ned",
+    "download": "Ladda ner",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
   },
   "Navigation": {
     "home": "Startsida",
-    "ratings": "Ratings",
+    "ratings": "Ratingar",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om Stiftelsen",
+    "about": "Om stiftelsen",
     "contact": "Kontakt",
     "dashboard": "Instrumentpanel",
     "settings": "Inställningar"
@@ -48,20 +48,20 @@
     "login_with_google": "Logga in via Google",
     "email_label": "E-postadress",
     "password_label": "Lösenord",
-    "forgot_password": "Glömt ditt lösenord?",
+    "forgot_password": "Glömt lösenordet?",
     "no_account": "Har du inget konto?",
     "register": "Registrera dig"
   },
   "Errors": {
     "404_title": "Sidan hittades inte",
-    "404_description": "Sidan du letar efter existerar inte eller har flyttats.",
+    "404_description": "Sidan du söker existerar inte eller har flyttats.",
     "500_title": "Serverfel",
-    "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
+    "500_description": "Ett oväntat fel inträffade. Försök igen senare.",
     "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."
   },
   "Footer": {
     "rights": "Alla rättigheter förbehållna",
-    "privacy": "Integritetspolicy",
+    "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor",
     "contact": "Kontakt"
   }

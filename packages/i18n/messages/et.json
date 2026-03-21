@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Sõltumatu reitinguandja, kes hindab avalike, äriühingute ja mittetulunduslike asutuste juhtimise kvaliteeti."
+    "description": "Sõltumatu reitinguagentuur, mis hindab avalike, korporatiivsete ja mittetulunduslike institutsioonide juhtimiskvaliteeti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,14 +17,14 @@
     "login": "Logi sisse",
     "logout": "Logi välja",
     "privacyPolicy": "Privaatsuspoliitika",
-    "termsOfUse": "Kasutamistingimused",
-    "loading": "Laadimist...",
+    "termsOfUse": "Kasutustingimused",
+    "loading": "Laadimine...",
     "error": "Ilmnes viga",
     "save": "Salvesta",
     "cancel": "Tühista",
     "confirm": "Kinnita",
     "back": "Tagasi",
-    "next": "Järgmine",
+    "next": "Edasi",
     "close": "Sulge",
     "search": "Otsi",
     "download": "Laadi alla",
@@ -45,24 +45,24 @@
   "Auth": {
     "login_title": "Logi sisse",
     "login_subtitle": "Logi sisse oma kontole",
-    "login_with_google": "Logi sisse Googleiga",
-    "email_label": "E-posti aadress",
+    "login_with_google": "Logi sisse Google'i kaudu",
+    "email_label": "Meiliaadress",
     "password_label": "Parool",
     "forgot_password": "Unustasid parooli?",
-    "no_account": "Sul pole kontot?",
+    "no_account": "Sinul pole kontot?",
     "register": "Registreeru"
   },
   "Errors": {
-    "404_title": "Lehte ei leitud",
-    "404_description": "Lehte, mida otsid, ei eksisteeri või see on teisaldatud.",
+    "404_title": "Leht ei leitud",
+    "404_description": "Otsitud leht ei ole olemas või on teisaldatud.",
     "500_title": "Serveri viga",
     "500_description": "Ilmnes ootamatu viga. Proovi hiljem uuesti.",
-    "unauthorized": "Juurdepääs puudub. Jätka sisselogimiseks."
+    "unauthorized": "Juurdepääs puudub. Jätkamiseks logi sisse."
   },
   "Footer": {
     "rights": "Kõik õigused reserveeritud",
     "privacy": "Privaatsuspoliitika",
-    "terms": "Kasutamistingimused",
+    "terms": "Kasutustingimused",
     "contact": "Kontakt"
   }
 }

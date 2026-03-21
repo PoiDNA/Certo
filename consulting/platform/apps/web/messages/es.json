@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Encuentra un Asesor",
+    "title": "Certo Consulting — Encuentra tu Asesor",
     "description": "Asesores acreditados de Certo. Gobierno corporativo y cumplimiento normativo."
   },
   "Nav": {
@@ -18,19 +18,19 @@
     "contact": "Contacto"
   },
   "Home": {
-    "hero_title": "Asesoramiento experto\nal nivel de junta directiva.",
+    "hero_title": "Asesoramiento experto\na nivel de junta directiva.",
     "hero_subtitle": "Conectamos asesores acreditados de Certo con instituciones que requieren los más altos estándares de gobierno corporativo y cumplimiento normativo.",
     "hero_cta": "Encuentra un experto",
-    "finder_title": "Deseo hablar con un experto en:",
+    "finder_title": "Quiero hablar con un experto en:",
     "area_health": "Sanidad",
     "area_local_gov": "Administración local",
     "area_defense": "Defensa",
     "area_finance": "Finanzas",
     "area_education": "Educación",
-    "form_title": "Déjanos tus datos de contacto para que seleccionemos el asesor adecuado en el área de",
+    "form_title": "Déjanos tus datos de contacto para que asignemos al asesor adecuado de la siguiente área",
     "form_name": "Nombre y apellidos",
     "form_email": "Dirección de correo electrónico (corporativo)",
-    "form_org": "Nombre de la organización / Cargo",
+    "form_org": "Nombre de la organización / Puesto",
     "form_submit": "Enviar consulta",
     "experts_headline": "Nuestros expertos ayudan a\nmantener y fortalecer\ntu Rating Certo.",
     "experts_description": "Asesores acreditados con amplia experiencia en la optimización de procesos de gobierno para instituciones estratégicas."
@@ -38,16 +38,16 @@
   "Legal": {
     "back": "Volver a la página principal",
     "last_updated": "Última actualización: Marzo de 2026",
-    "privacy_title": "Política de privacidad",
-    "terms_title": "Términos y condiciones de uso"
+    "privacy_title": "Política de Privacidad",
+    "terms_title": "Términos de uso"
   },
   "FindAdvisor": {
-    "title": "Encuentra un asesor de Certo",
+    "title": "Encuentra tu asesor de Certo",
     "sector_label": "Sector de tu institución",
     "need_label": "¿Qué necesitas?",
     "need_audit": "Auditoría de gobierno",
     "need_advisory": "Asesoramiento estratégico",
-    "need_training": "Formación y talleres",
+    "need_training": "Capacitación y talleres",
     "need_rating": "Preparación para rating",
     "region_label": "Región",
     "submit": "Buscar asesor"
@@ -56,7 +56,7 @@
     "accredited_by": "Acreditado por Certo",
     "specialization": "Especialización",
     "sectors": "Sectores",
-    "contact_advisor": "Ponte en contacto",
+    "contact_advisor": "Contactar",
     "view_profile": "Ver perfil"
   },
   "Contact": {
@@ -76,6 +76,6 @@
     "subject_general": "Consulta general",
     "subject_advisory": "Asesoramiento",
     "subject_accreditation": "Acreditación de asesor",
-    "subject_cooperation": "Colaboración"
+    "subject_cooperation": "Cooperación"
   }
 }

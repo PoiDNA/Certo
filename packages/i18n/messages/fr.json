@@ -8,17 +8,17 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, corporatives et à but non lucratif."
+    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, corporatives et non gouvernementales."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Connectez-vous",
-    "logout": "Déconnexion",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
     "privacyPolicy": "Politique de confidentialité",
     "termsOfUse": "Conditions d'utilisation",
-    "loading": "Chargement...",
+    "loading": "Chargement en cours...",
     "error": "Une erreur s'est produite",
     "save": "Enregistrer",
     "cancel": "Annuler",
@@ -37,27 +37,27 @@
     "ratings": "Notations",
     "reports": "Rapports",
     "analysis": "Analyses",
-    "about": "À propos de l'Institut",
+    "about": "À propos de la Fondation",
     "contact": "Contact",
     "dashboard": "Tableau de bord",
     "settings": "Paramètres"
   },
   "Auth": {
-    "login_title": "Connectez-vous",
+    "login_title": "Se connecter",
     "login_subtitle": "Connectez-vous à votre compte",
     "login_with_google": "Se connecter via Google",
     "email_label": "Adresse e-mail",
     "password_label": "Mot de passe",
     "forgot_password": "Mot de passe oublié ?",
-    "no_account": "Vous n'avez pas de compte ?",
+    "no_account": "Pas encore de compte ?",
     "register": "S'inscrire"
   },
   "Errors": {
     "404_title": "Page non trouvée",
     "404_description": "La page que vous recherchez n'existe pas ou a été déplacée.",
     "500_title": "Erreur du serveur",
-    "500_description": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
-    "unauthorized": "Accès refusé. Connectez-vous pour continuer."
+    "500_description": "Une erreur inattendue s'est produite. Veuillez réessayer ultérieurement.",
+    "unauthorized": "Accès refusé. Veuillez vous connecter pour continuer."
   },
   "Footer": {
     "rights": "Tous droits réservés",

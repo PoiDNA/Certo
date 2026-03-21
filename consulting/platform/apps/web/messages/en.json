@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Find an Advisor",
-    "description": "Accredited Certo advisors. Corporate governance and compliance."
+    "description": "Certo Accredited Advisors. Corporate Governance and Compliance."
   },
   "Nav": {
     "advisors": "Advisors",
@@ -10,7 +10,7 @@
     "contact": "Contact"
   },
   "Footer": {
-    "description": "Expert advisory in corporate governance, compliance and security for market leaders.",
+    "description": "Expert advisory services in corporate governance, compliance and security for market leaders.",
     "ecosystem": "Certo Ecosystem",
     "accreditation": "All advisors are accredited by Certo Governance Institute",
     "privacy": "Privacy Policy",
@@ -27,37 +27,37 @@
     "area_defense": "Defense",
     "area_finance": "Finance",
     "area_education": "Education",
-    "form_title": "Leave your contact details so we can match you with the right advisor from the area of",
-    "form_name": "Name",
-    "form_email": "Email address (work)",
-    "form_org": "Organization name / Position",
-    "form_submit": "Submit inquiry",
+    "form_title": "Leave your contact details so we can match you with the right advisor in the area of",
+    "form_name": "Full Name",
+    "form_email": "Email Address (Business)",
+    "form_org": "Organization Name / Position",
+    "form_submit": "Submit Inquiry",
     "experts_headline": "Our experts help\nmaintain and strengthen\nyour Certo Rating.",
-    "experts_description": "Accredited advisors with extensive experience in optimizing governance processes for strategic institutions."
+    "experts_description": "Accredited advisors with years of experience in optimizing governance processes for strategic institutions."
   },
   "Legal": {
-    "back": "Back to home page",
+    "back": "Back to Home",
     "last_updated": "Last updated: March 2026",
     "privacy_title": "Privacy Policy",
     "terms_title": "Terms of Service"
   },
   "FindAdvisor": {
     "title": "Find a Certo Advisor",
-    "sector_label": "Your institution's sector",
+    "sector_label": "Your Institution's Sector",
     "need_label": "What do you need?",
-    "need_audit": "Governance audit",
-    "need_advisory": "Strategic advisory",
-    "need_training": "Training and workshops",
-    "need_rating": "Rating preparation",
+    "need_audit": "Governance Audit",
+    "need_advisory": "Strategic Advisory",
+    "need_training": "Training and Workshops",
+    "need_rating": "Rating Preparation",
     "region_label": "Region",
-    "submit": "Find advisor"
+    "submit": "Search Advisor"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",
     "specialization": "Specialization",
     "sectors": "Sectors",
-    "contact_advisor": "Get in touch",
-    "view_profile": "View profile"
+    "contact_advisor": "Contact",
+    "view_profile": "View Profile"
   },
   "Contact": {
     "title": "Contact",
@@ -67,15 +67,15 @@
     "address": "02-566 Warsaw, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Write to us",
-    "form_name": "Name",
-    "form_email": "Email address",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
     "form_subject": "Subject",
     "form_message": "Message",
-    "form_submit": "Send message",
+    "form_submit": "Send Message",
     "form_success": "Your message has been sent. We will respond as soon as possible.",
-    "subject_general": "General inquiry",
+    "subject_general": "General Inquiry",
     "subject_advisory": "Advisory",
-    "subject_accreditation": "Advisor accreditation",
+    "subject_accreditation": "Advisor Accreditation",
     "subject_cooperation": "Cooperation"
   }
 }

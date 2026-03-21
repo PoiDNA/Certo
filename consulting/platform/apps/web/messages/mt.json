@@ -1,81 +1,81 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Sib Konsulenti",
-    "description": "Konsulenti akkreditati ta' Certo. Governance corporattiv u konformità."
+    "title": "Certo Consulting — Sib Konsulent",
+    "description": "Konsulenti akkreditati minn Certo. Ġvernanza corporattiva u konformità."
   },
   "Nav": {
     "advisors": "Konsulenti",
-    "expertise": "Espetiza",
-    "login": "Dħul",
+    "expertise": "Espertiza",
+    "login": "Logħin",
     "contact": "Kontatt"
   },
   "Footer": {
-    "description": "Konsultazzjoni esperta fil-governance corporattiv, konformità u sigurezza għal lideranza tas-suq.",
+    "description": "Konsulenza espertiza fil-ġvernanza corporattiva, konformità u sigurtà għal lideranza tas-suq.",
     "ecosystem": "Ekosistema Certo",
     "accreditation": "Il-konsulenti kollha huma akkreditati mill-Fundazzjoni Certo Governance Institute",
-    "privacy": "Politika tal-Privacy",
+    "privacy": "Politika tal-Privatezza",
     "terms": "Termini ta' Użu",
     "contact": "Kontatt"
   },
   "Home": {
-    "hero_title": "Konsultazzjoni esperta\nfil-livell tal-bord.",
-    "hero_subtitle": "Nalbsotu konsulenti akkreditati ta' Certo ma' istituzzjonijiet li jeħtiġu l-aktar standard għolja ta' governance corporattiv u konformità regolatorja.",
-    "hero_cta": "Sib esperta",
-    "finder_title": "Jrid nitkellem ma' esperta dwar:",
-    "area_health": "Kura tas-Saħħa",
+    "hero_title": "Konsulenza espertiza\nfir-rivoluzzjoni tal-idejn.",
+    "hero_subtitle": "Nwaħħlu l-konsulenti akkreditati Certo ma' istituzzjonijiet li jeħtieġu l-ogħla standards tal-ġvernanza corporattiva u konformità regolatorja.",
+    "hero_cta": "Sib espert",
+    "finder_title": "Jien nixtieq nitkellem ma' espert f':",
+    "area_health": "Saħħa",
     "area_local_gov": "Amministrazzjoni Lokali",
-    "area_defense": "Difiza",
-    "area_finance": "Finanzas",
+    "area_defense": "Difiża",
+    "area_finance": "Finanzi",
     "area_education": "Edukazzjoni",
-    "form_title": "Ħalli d-dettalji tiegħek biex nikkteb il-konsulent xieraq mit-taħqiqa",
-    "form_name": "Isem u Kunjom",
-    "form_email": "Indirizz tal-Email (uffiċjali)",
+    "form_title": "Ħalli l-kontatt, sabiex nistgħu nsibu l-konsulent xieraq mill-qasam ta'",
+    "form_name": "Ismek u Kunjomek",
+    "form_email": "Indirizz tal-email (uffiċjali)",
     "form_org": "Isem tal-Organizzazzjoni / Pożizzjoni",
-    "form_submit": "Ibgħat Mistoqsija",
-    "experts_headline": "L-esperti tagħna jgħinuk\nmiglieħ u jikber\nRating Certo.",
-    "experts_description": "Konsulenti akkreditati bi esperjenza pluriennali fl-ottimizzazzjoni tal-proċessi ta' governance għal istituzzjonijiet strateġiċi."
+    "form_submit": "Ibgħat it-talba",
+    "experts_headline": "L-esperti tagħna għin-ħalfu\nṿeraċizzaw u rrekkew\nil-Rating Certo.",
+    "experts_description": "Konsulenti akkreditati b'esperjenza tat-twal fl-ottimizzazzjoni tal-proċessi tal-ġvernanza għal istituzzjonijiet strateġiċi."
   },
   "Legal": {
-    "back": "Lura d-dar",
+    "back": "Ħa lura għall-paġna ewlenija",
     "last_updated": "L-aħħar aġġornament: Marzu 2026",
-    "privacy_title": "Politika tal-Privacy",
-    "terms_title": "Termini tal-Użu"
+    "privacy_title": "Politika tal-Privatezza",
+    "terms_title": "Kundizzjonijiet ta' Użu"
   },
   "FindAdvisor": {
-    "title": "Sib Konsulent Certo",
-    "sector_label": "Il-Settur tal-Istituzzjoni Tiegħek",
-    "need_label": "X'għandek bżonn?",
-    "need_audit": "Awdit tal-Governance",
-    "need_advisory": "Konsultazzjoni Strateġika",
-    "need_training": "Taħriġ u Workshops",
-    "need_rating": "Preparazzjoni għal Rating",
+    "title": "Sib konsulent Certo",
+    "sector_label": "Is-settur tal-Istituzzjoni tiegħek",
+    "need_label": "X'inħtieġ?",
+    "need_audit": "Awdit tal-ġvernanza",
+    "need_advisory": "Konsulenza strateġika",
+    "need_training": "Taħriġ u workshop",
+    "need_rating": "Preparazzjoni għall-valutazzjoni",
     "region_label": "Reġjun",
-    "submit": "Fittex Konsulent"
+    "submit": "Fittex konsulent"
   },
   "Advisor": {
     "accredited_by": "Akkreditat minn Certo",
     "specialization": "Speċjalizzazzjoni",
-    "sectors": "Settori",
-    "contact_advisor": "Ikkonkattja",
-    "view_profile": "Ara l-Profil"
+    "sectors": "Setturi",
+    "contact_advisor": "Iġbor il-kontatt",
+    "view_profile": "Ara l-profil"
   },
   "Contact": {
     "title": "Kontatt",
     "subtitle": "Certo ID PSA",
     "label_address": "Indirizz",
     "label_email": "Email",
-    "address": "02-566 Varsavja, ul. Puławska 2B",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Iktibna",
-    "form_name": "Isem u Kunjom",
-    "form_email": "Indirizz tal-Email",
+    "form_name": "Ismek u Kunjomek",
+    "form_email": "Indirizz tal-email",
     "form_subject": "Suġġett",
     "form_message": "Messaġġ",
-    "form_submit": "Ibgħat il-Messaġġ",
-    "form_success": "Il-messaġġ tiegħek ntbagħat. Nirrispondu malajr kemm jista' jkun.",
-    "subject_general": "Mistoqsija Ġenerali",
-    "subject_advisory": "Konsultazzjoni",
-    "subject_accreditation": "Akkreditazzjoni tal-Konsulent",
+    "form_submit": "Ibgħat il-messaġġ",
+    "form_success": "Il-messaġġ tiegħek ġie mibgħut. Se nwieġbu bl-aktar sira li jkun possibbli.",
+    "subject_general": "Talba ġenerali",
+    "subject_advisory": "Konsulenza",
+    "subject_accreditation": "Akkreditazzjoni tal-konsulent",
     "subject_cooperation": "Kooperazzjoni"
   }
 }

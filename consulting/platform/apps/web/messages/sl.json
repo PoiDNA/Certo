@@ -1,66 +1,66 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Poiščite Svetovalca",
+    "title": "Certo Consulting — Poiščite svetovalca",
     "description": "Akreditirani svetovalci Certo. Korporativno upravljanje in skladnost."
   },
   "Nav": {
     "advisors": "Svetovalci",
-    "expertise": "Strokovnjaki",
+    "expertise": "Strokovnost",
     "login": "Prijava",
-    "contact": "Kontakt"
+    "contact": "Stik"
   },
   "Footer": {
-    "description": "Strokovno svetovanje v zvezi s korporativnim upravljanjem, skladnostjo in varnostjo za tržne voditelje.",
+    "description": "Strokovno svetovanje pri korporativnem upravljanju, skladnosti in varnosti za tržne voditelje.",
     "ecosystem": "Ekosistem Certo",
-    "accreditation": "Vsi svetovalci so akreditirani s strani Fundacije Certo Governance Institute",
+    "accreditation": "Vsi svetovalci so akreditirani pri Fondaciji Certo Governance Institute",
     "privacy": "Politika zasebnosti",
-    "terms": "Splošni pogoji",
-    "contact": "Kontakt"
+    "terms": "Pogoji uporabe",
+    "contact": "Stik"
   },
   "Home": {
-    "hero_title": "Strokovno svetovanje\nna ravni vodstva.",
-    "hero_subtitle": "Povezujemo akreditirane svetovalce Certo z institucijami, ki zahtevajo najvišje standarde korporativnega upravljanja in regulatorne skladnosti.",
+    "hero_title": "Strokovno svetovanje\nna ravni poslovodstva.",
+    "hero_subtitle": "Povezujemo akreditirane svetovalce Certo z institucijami, ki zahtevajo najvišje standarde korporativnega upravljanja in skladnosti s predpisi.",
     "hero_cta": "Poiščite strokovnjaka",
-    "finder_title": "Pogovoriti se želim s strokovnjakom za:",
+    "finder_title": "Želim se pogovoriti s strokovnjakom za:",
     "area_health": "Zdravstvo",
     "area_local_gov": "Lokalna samouprava",
     "area_defense": "Obrambo",
     "area_finance": "Finance",
     "area_education": "Izobraževanje",
-    "form_title": "Pustite svoje podatke, da vam priporočimo ustreznega svetovalca s področja",
+    "form_title": "Pustite svoje podatke, da vam poiščemo pravega svetovalca s področja",
     "form_name": "Ime in priimek",
-    "form_email": "Službeni naslov e-pošte",
-    "form_org": "Naziv organizacije / Položaj",
+    "form_email": "E-poštni naslov (službeni)",
+    "form_org": "Naziv organizacije / Delovno mesto",
     "form_submit": "Pošlji povpraševanje",
-    "experts_headline": "Naši strokovnjaki pomagajo\nohranjati in krepiti\nRating Certo.",
+    "experts_headline": "Naši strokovnjaki pomagajo\nohranjati in okrepiti\nRating Certo.",
     "experts_description": "Akreditirani svetovalci z dolgoletnimi izkušnjami pri optimizaciji procesov upravljanja za strateške institucije."
   },
   "Legal": {
-    "back": "Nazaj na naslov glavne strani",
+    "back": "Nazaj na domačo stran",
     "last_updated": "Zadnja posodobitev: Marec 2026",
-    "privacy_title": "Politika Zasebnosti",
-    "terms_title": "Pogoji Uporabe"
+    "privacy_title": "Politika zasebnosti",
+    "terms_title": "Pogoji uporabe"
   },
   "FindAdvisor": {
     "title": "Poiščite svetovalca Certo",
     "sector_label": "Sektor vaše institucije",
     "need_label": "Kaj potrebujete?",
-    "need_audit": "Revija upravljanja",
+    "need_audit": "Presoja upravljanja",
     "need_advisory": "Strateško svetovanje",
     "need_training": "Usposabljanja in delavnice",
-    "need_rating": "Priprava na oceno",
+    "need_rating": "Priprava na rating",
     "region_label": "Regija",
     "submit": "Poiščite svetovalca"
   },
   "Advisor": {
-    "accredited_by": "Akreditiran s strani Certo",
+    "accredited_by": "Akreditiran pri Certo",
     "specialization": "Specializacija",
     "sectors": "Sektorji",
-    "contact_advisor": "Vzpostavite stik",
+    "contact_advisor": "Stopite v stik",
     "view_profile": "Oglejte si profil"
   },
   "Contact": {
-    "title": "Kontakt",
+    "title": "Stik",
     "subtitle": "Certo ID PSA",
     "label_address": "Naslov",
     "label_email": "E-pošta",
@@ -68,11 +68,11 @@
     "email": "certo@certo.consulting",
     "form_title": "Napišite nam",
     "form_name": "Ime in priimek",
-    "form_email": "Naslov e-pošte",
+    "form_email": "E-poštni naslov",
     "form_subject": "Zadeva",
     "form_message": "Sporočilo",
     "form_submit": "Pošlji sporočilo",
-    "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo čim prej.",
+    "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo v najkrajšem možnem času.",
     "subject_general": "Splošno povpraševanje",
     "subject_advisory": "Svetovanje",
     "subject_accreditation": "Akreditacija svetovalca",
