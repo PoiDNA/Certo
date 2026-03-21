@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Stiftelsen Certo Governance Institute",
-    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrning inom offentlig, företags-, medicinsk och försvarssektor."
+    "description": "En oberoende ratingorganisation som bedömer styrningskvalitet inom den offentliga, privata, medicinska och försvarssektorn."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Ägarregister — ett ordnat system för identifiering av verkliga huvudmän, kapitalstrukturer och ägarrelationer.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Användarpanel med detaljerade ratinguppgifter, organisationsprofiler och analytiska verktyg.",
-    "pilot_cta_title": "Anmäl din institution till det kostnadsfria pilotprogrammet",
+    "pilot_cta_title": "Anmäl en organisation till det kostnadsfria pilotprogrammet",
     "pilot_cta_text": "Under fjärde kvartalet 2026 inleder vi de första bedömningsprocesserna av offentlig trovärdighet baserat på styrningskvalitet. Pilotprogrammet är kostnadsfritt. Din organisation kan bidra till att forma en ny standard.",
     "pilot_cta_button": "Anmäl dig till pilotprogrammet"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologin är offentlig och granskningsbar. Den bedömda enheten har rätt att veta vilka IT-verktyg som användes i bedömningsprocessen.",
     "entities_title": "Två enheter — en standard",
     "entity_foundation_name": "Stiftelsen Certo Governance Institute",
-    "entity_foundation_desc": "Oberoende ratingorgan, ägare av metodologin. Utformar standarden, publicerar ratings, ackrediterar rådgivare. Säljer ingen programvara.",
+    "entity_foundation_desc": "En oberoende ratingorganisation, ägare av metodologin. Utformar standarden, publicerar bedömningar, ackrediterar rådgivare. Säljer ingen programvara.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Kommersiell teknologisk operatör. Bygger och underhåller Certo-plattformen, säkerställer datasäkerhet, utvecklar AI-verktyg under Stiftelsens tillsyn.",
     "statute_title": "Stiftelsens stadgar",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotprogram Rating Certo",
-    "subtitle": "Anmäl din institution till den kostnadsfria bedömningsprocessen av offentlig trovärdighet baserat på styrningskvalitet — Q4 2026.",
+    "subtitle": "Anmäl en organisation till en kostnadsfri bedömning av offentlig trovärdighet baserad på styrningskvalitet — Q4 2026.",
     "program_title": "Pilotprogram",
     "program_description": "Under fjärde kvartalet 2026 inleder vi de första kostnadsfria bedömningsprocesserna inom ramen för indexet för offentlig trovärdighet baserat på styrningskvalitet — Rating Certo. Vi tar emot anmälningar både från organisationer och från personer som värnar om institutioners transparens i sin omgivning.",
     "who_title": "Vem kan anmäla sig?",

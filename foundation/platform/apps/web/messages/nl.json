@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Stichting Certo Governance Institute",
-    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van bestuur in de publieke, bedrijfs-, medische en defensiesector beoordeelt."
+    "description": "Een onafhankelijke beoordelingsorganisatie die de bestuurskwaliteit beoordeelt in de publieke, zakelijke, medische en defensiesector."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Eigendomsregister — een geordend systeem voor de identificatie van uiteindelijke begunstigden, kapitaalstructuren en eigendomsrelaties.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Gebruikerspaneel met gedetailleerde ratinggegevens, organisatieprofielen en analytische tools.",
-    "pilot_cta_title": "Meld uw instelling aan voor het gratis pilotprogramma",
+    "pilot_cta_title": "Meld een organisatie aan voor het gratis pilotprogramma",
     "pilot_cta_text": "In het vierde kwartaal van 2026 starten wij de eerste beoordelingsprocessen van publieke geloofwaardigheid op basis van bestuurskwaliteit. Het pilotprogramma is gratis. Uw organisatie kan bijdragen aan een nieuwe standaard.",
     "pilot_cta_button": "Meld u aan voor het pilotprogramma"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "De methodologie is openbaar en controleerbaar. De beoordeelde entiteit heeft het recht te weten welke informaticatools zijn gebruikt in het beoordelingsproces.",
     "entities_title": "Twee entiteiten — één standaard",
     "entity_foundation_name": "Stichting Certo Governance Institute",
-    "entity_foundation_desc": "Onafhankelijk ratingorgaan, eigenaar van de methodologie. Ontwerpt de standaard, publiceert ratings, accrediteert adviseurs. Verkoopt geen software.",
+    "entity_foundation_desc": "Een onafhankelijke beoordelingsorganisatie, eigenaar van de methodologie. Ontwerpt de standaard, publiceert beoordelingen, accrediteert adviseurs. Verkoopt geen software.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Commerciële technologische operator. Bouwt en onderhoudt het Certo-platform, waarborgt gegevensbeveiliging, ontwikkelt AI-tools onder toezicht van de Stichting.",
     "statute_title": "Statuten van de Stichting",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotprogramma Rating Certo",
-    "subtitle": "Meld uw instelling aan voor het gratis beoordelingsproces van publieke geloofwaardigheid op basis van bestuurskwaliteit — Q4 2026.",
+    "subtitle": "Meld een organisatie aan voor een gratis beoordeling van publieke geloofwaardigheid op basis van bestuurskwaliteit — Q4 2026.",
     "program_title": "Pilotprogramma",
     "program_description": "In het vierde kwartaal van 2026 starten wij de eerste gratis beoordelingsprocessen in het kader van de index van publieke geloofwaardigheid op basis van bestuurskwaliteit — Rating Certo. Wij accepteren aanmeldingen zowel van organisaties als van personen die belang hechten aan de transparantie van instellingen in hun omgeving.",
     "who_title": "Wie kan zich aanmelden?",

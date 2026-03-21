@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fundação Certo Governance Institute",
-    "description": "Organismo de rating independente que avalia a qualidade da governança nos setores público, corporativo, médico e de defesa."
+    "description": "Uma organização de classificação independente que avalia a qualidade da governação nos setores público, empresarial, médico e da defesa."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Registo de proprietários — um sistema ordenado de identificação dos beneficiários efetivos, das estruturas de capital e das relações de propriedade.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Painel do utilizador com dados detalhados de ratings, perfis de organizações e ferramentas analíticas.",
-    "pilot_cta_title": "Candidate a sua instituição ao programa piloto gratuito",
+    "pilot_cta_title": "Submeta uma entidade ao programa piloto gratuito",
     "pilot_cta_text": "No quarto trimestre de 2026 iniciaremos os primeiros processos de avaliação da credibilidade pública com base na qualidade da governança. O programa piloto é gratuito. A sua organização pode contribuir para definir um novo padrão.",
     "pilot_cta_button": "Candidate-se ao programa piloto"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "A metodologia é pública e auditável. A entidade avaliada tem o direito de saber quais ferramentas informáticas foram utilizadas no processo de avaliação.",
     "entities_title": "Duas entidades — um único padrão",
     "entity_foundation_name": "Fundação Certo Governance Institute",
-    "entity_foundation_desc": "Organismo de rating independente, proprietário da metodologia. Concebe o padrão, publica os ratings, acredita consultores. Não vende software.",
+    "entity_foundation_desc": "Uma organização de classificação independente, proprietária da metodologia. Projeta o padrão, publica classificações, credencia consultores. Não vende software.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Operador tecnológico comercial. Constrói e mantém a plataforma Certo, garante a segurança dos dados, desenvolve ferramentas de IA sob supervisão da Fundação.",
     "statute_title": "Estatutos da Fundação",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Programa piloto Rating Certo",
-    "subtitle": "Candidate a sua instituição ao processo gratuito de avaliação da credibilidade pública com base na qualidade da governança — Q4 2026.",
+    "subtitle": "Submeta uma entidade a uma avaliação gratuita de credibilidade pública com base na qualidade da governação — Q4 2026.",
     "program_title": "Programa piloto",
     "program_description": "No quarto trimestre de 2026 iniciaremos os primeiros processos gratuitos de avaliação no âmbito do índice de credibilidade pública com base na qualidade da governança — Rating Certo. Aceitamos candidaturas tanto de organizações como de pessoas que se preocupam com a transparência das instituições no seu meio.",
     "who_title": "Quem pode candidatar-se?",

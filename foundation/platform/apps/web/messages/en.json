@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Foundation",
-    "description": "An independent rating body assessing the quality of governance in the public, corporate, medical and defence sectors."
+    "description": "An independent rating organization assessing governance quality in the public, corporate, medical and defence sectors."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "An ownership register — a structured system for identifying beneficial owners, capital structures and ownership relationships.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "A user panel with detailed rating data, organisation profiles and analytical tools.",
-    "pilot_cta_title": "Register your institution for the free pilot programme",
+    "pilot_cta_title": "Submit an entity for the free pilot programme",
     "pilot_cta_text": "In Q4 2026, we are launching the first public credibility assessment processes based on governance quality. The pilot is free of charge. Your organisation can help shape the new standard.",
     "pilot_cta_button": "Apply for the pilot programme"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "The methodology is public and auditable. The assessed entity has the right to know what IT tools were used in the assessment process.",
     "entities_title": "Two entities — one standard",
     "entity_foundation_name": "Certo Governance Institute Foundation",
-    "entity_foundation_desc": "Independent rating body, owner of the methodology. Designs the standard, publishes ratings, accredits advisors. Does not sell software.",
+    "entity_foundation_desc": "An independent rating organization, owner of the methodology. Designs the standard, publishes ratings, accredits advisors. Does not sell software.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Commercial technology operator. Builds and maintains the Certo platform, ensures data security, develops AI tools under the Foundation's supervision.",
     "statute_title": "Foundation Statute",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Rating Certo Pilot Programme",
-    "subtitle": "Register your institution for the free public credibility assessment process based on governance quality — Q4 2026.",
+    "subtitle": "Submit an entity for a free public credibility assessment based on governance quality — Q4 2026.",
     "program_title": "Pilot programme",
     "program_description": "In Q4 2026, we are launching the first free assessment processes as part of the public credibility index based on governance quality — Rating Certo. We accept applications both from organisations and from individuals who care about the transparency of institutions around them.",
     "who_title": "Who can apply?",

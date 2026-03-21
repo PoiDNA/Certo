@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fundația Certo Governance Institute",
-    "description": "Organism de rating independent care evaluează calitatea guvernanței în sectorul public, corporativ, medical și de apărare."
+    "description": "O organizație de evaluare independentă care evaluează calitatea guvernanței în sectoarele public, corporativ, medical și al apărării."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Registrul proprietarilor — sistem organizat de identificare a beneficiarilor reali, a structurilor de capital și a relațiilor de proprietate.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Panou de utilizator cu date detaliate de rating, profiluri ale organizațiilor și instrumente analitice.",
-    "pilot_cta_title": "Înscrieți instituția dumneavoastră în programul pilot gratuit",
+    "pilot_cta_title": "Înscrieți o entitate în programul pilot gratuit",
     "pilot_cta_text": "În trimestrul patru al anului 2026 lansăm primele procese de evaluare a credibilității publice pe baza calității guvernanței. Programul pilot este gratuit. Organizația dumneavoastră poate contribui la crearea unui nou standard.",
     "pilot_cta_button": "Înscrieți-vă în programul pilot"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologia este publică și auditabilă. Entitatea evaluată are dreptul de a ști ce instrumente informatice au fost utilizate în procesul de evaluare.",
     "entities_title": "Două entități — un singur standard",
     "entity_foundation_name": "Fundația Certo Governance Institute",
-    "entity_foundation_desc": "Organism de rating independent, proprietarul metodologiei. Proiectează standardul, publică ratinguri, acreditează consultanți. Nu vinde software.",
+    "entity_foundation_desc": "O organizație de evaluare independentă, proprietară a metodologiei. Proiectează standardul, publică evaluări, acreditează consultanți. Nu vinde software.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Operator tehnologic comercial. Construiește și întreține platforma Certo, asigură securitatea datelor, dezvoltă instrumente AI sub supravegherea Fundației.",
     "statute_title": "Statutul Fundației",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Program pilot Rating Certo",
-    "subtitle": "Înscrieți instituția dumneavoastră în procesul gratuit de evaluare a credibilității publice pe baza calității guvernanței — Q4 2026.",
+    "subtitle": "Înscrieți o entitate la o evaluare gratuită a credibilității publice bazată pe calitatea guvernanței — Q4 2026.",
     "program_title": "Programul pilot",
     "program_description": "În trimestrul patru al anului 2026 lansăm primele procese gratuite de evaluare în cadrul indicelui credibilității publice pe baza calității guvernanței — Rating Certo. Acceptăm înscrieri atât de la organizații, cât și de la persoane cărora le pasă de transparența instituțiilor din jurul lor.",
     "who_title": "Cine se poate înscrie?",

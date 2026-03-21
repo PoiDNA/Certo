@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute fondas",
-    "description": "Nepriklausoma reitingų institucija, vertinanti valdymo kokybę viešajame, korporatyviniame, medicinos, gynybos ir nevyriausybiniame sektoriuose."
+    "description": "Nepriklausoma reitingų organizacija, vertinanti valdymo kokybę viešajame, verslo, medicinos ir gynybos sektoriuose."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Savininkų registras — tvarkinga sistema tikrųjų naudos gavėjų, kapitalo struktūrų ir nuosavybės santykių identifikavimui.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Naudotojo skydelis su detaliomis reitingų duomenimis, organizacijų profiliais ir analitiniais įrankiais.",
-    "pilot_cta_title": "Pristatyk savo instituciją nemokamam pilotui",
+    "pilot_cta_title": "Pateikite subjektą nemokamam pilotiniam programai",
     "pilot_cta_text": "2026 m. ketvirtąjį ketvirtį pradedame pirmuosius viešojo patikimumo vertinimo procesus, paremtus valdymo kokybe. Pilotas yra nemokamas. Tavo organizacija gali prisidėti prie naujo standarto kūrimo.",
     "pilot_cta_button": "Prisijungti prie piloto"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologija yra vieša ir audituojama. Vertinamas subjektas turi teisę žinoti, kokie IT įrankiai buvo naudojami vertinimo procese.",
     "entities_title": "Du subjektai — vienas standartas",
     "entity_foundation_name": "Certo Governance Institute fondas",
-    "entity_foundation_desc": "Nepriklausoma reitingų institucija, metodologijos savininkė. Projektuoja standartą, skelbia reitingus, akredituoja konsultantus. Neparduoda programinės įrangos.",
+    "entity_foundation_desc": "Nepriklausoma reitingų organizacija, metodologijos savininkė. Projektuoja standartą, skelbia reitingus, akredituoja konsultantus. Nepardavinėja programinės įrangos.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komercinis technologijų operatorius. Kuria ir prižiūri Certo platformą, užtikrina duomenų saugumą, vysto AI įrankius fondo priežiūroje.",
     "statute_title": "Fondo statutas",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Rating Certo pilotas",
-    "subtitle": "Pristatyk savo instituciją nemokamam viešojo patikimumo vertinimo procesui, paremtam valdymo kokybe — Q4 2026.",
+    "subtitle": "Pateikite subjektą nemokamam viešojo patikimumo vertinimui, pagrįstam valdymo kokybe — Q4 2026.",
     "program_title": "Pilotinė programa",
     "program_description": "2026 m. ketvirtąjį ketvirtį pradedame pirmuosius nemokamus viešojo patikimumo vertinimo procesus, paremtus valdymo kokybe — Rating Certo. Paraiškas priimame tiek iš organizacijų, tiek iš asmenų, kuriems svarbus institucijų skaidrumas jų aplinkoje.",
     "who_title": "Kas gali kandidatuoti?",

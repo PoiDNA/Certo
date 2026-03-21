@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Zaklada Certo Governance Institute",
-    "description": "Neovisno tijelo za ocjenjivanje koje ocjenjuje kvalitetu upravljanja u javnom, korporativnom, medicinskom i obrambenom sektoru."
+    "description": "Neovisna organizacija za ocjenjivanje koja procjenjuje kvalitetu upravljanja u javnom, korporativnom, medicinskom i obrambenom sektoru."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Registar vlasnika — organizirani sustav identifikacije stvarnih korisnika, kapitalnih struktura i vlasničkih odnosa.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Korisnički panel s detaljnim podacima o ocjenama, profilima organizacija i analitičkim alatima.",
-    "pilot_cta_title": "Prijavite svoju instituciju za besplatni pilot program",
+    "pilot_cta_title": "Prijavite subjekt u besplatni pilot-program",
     "pilot_cta_text": "U četvrtom tromjesečju 2026. godine započinjemo prve procese ocjene javne vjerodostojnosti na temelju kvalitete upravljanja. Pilot program je besplatan. Vaša organizacija može suoblikovati novi standard.",
     "pilot_cta_button": "Prijavite se za pilot program"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologija je javna i podložna reviziji. Ocjenjivani subjekt ima pravo znati koji su informatički alati korišteni u procesu ocjenjivanja.",
     "entities_title": "Dva subjekta — jedan standard",
     "entity_foundation_name": "Zaklada Certo Governance Institute",
-    "entity_foundation_desc": "Neovisno tijelo za ocjenjivanje, vlasnik metodologije. Projektira standard, objavljuje ocjene, akreditira savjetnike. Ne prodaje softver.",
+    "entity_foundation_desc": "Neovisna organizacija za ocjenjivanje, vlasnik metodologije. Osmišljava standard, objavljuje ocjene, akreditira savjetnike. Ne prodaje softver.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komercijalni tehnološki operator. Gradi i održava platformu Certo, osigurava sigurnost podataka, razvija AI alate pod nadzorom Zaklade.",
     "statute_title": "Statut Zaklade",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilot program Rating Certo",
-    "subtitle": "Prijavite instituciju za besplatni postupak ocjene javne vjerodostojnosti na temelju kvalitete upravljanja — Q4 2026.",
+    "subtitle": "Prijavite subjekt za besplatnu ocjenu javne vjerodostojnosti na temelju kvalitete upravljanja — Q4 2026.",
     "program_title": "Pilot program",
     "program_description": "U četvrtom tromjesečju 2026. godine započinjemo prve besplatne postupke ocjene u sklopu indeksa javne vjerodostojnosti na temelju kvalitete upravljanja — Rating Certo. Prijave primamo kako od organizacija, tako i od osoba kojima je stalo do transparentnosti institucija u njihovoj okolini.",
     "who_title": "Tko se može prijaviti?",

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fundacija Certo Governance Institute",
-    "description": "Neodvisen organ za ocenjevanje, ki ocenjuje kakovost upravljanja v javnem, korporativnem, zdravstvenem in obrambnem sektorju."
+    "description": "Neodvisna organizacija za ocenjevanje, ki ocenjuje kakovost upravljanja v javnem, korporativnem, zdravstvenem in obrambnem sektorju."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Register lastnikov — urejen sistem identifikacije dejanskih lastnikov, kapitalskih struktur in lastniških razmerij.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Uporabniška plošča s podrobnimi podatki o ocenah, profili organizacij in analitičnimi orodji.",
-    "pilot_cta_title": "Prijavite svojo institucijo za brezplačni pilotni program",
+    "pilot_cta_title": "Prijavite subjekt v brezplačni pilotni program",
     "pilot_cta_text": "V četrtem četrtletju 2026 začenjamo prve postopke ocenjevanja javne verodostojnosti na podlagi kakovosti upravljanja. Pilotni program je brezplačen. Vaša organizacija lahko soustvarja nov standard.",
     "pilot_cta_button": "Prijavite se za pilotni program"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologija je javna in revizijsko preverljiva. Ocenjeni subjekt ima pravico vedeti, katera informatična orodja so bila uporabljena v postopku ocenjevanja.",
     "entities_title": "Dva subjekta — en standard",
     "entity_foundation_name": "Fundacija Certo Governance Institute",
-    "entity_foundation_desc": "Neodvisen organ za ocenjevanje, lastnik metodologije. Oblikuje standard, objavlja ocene, akreditira svetovalce. Ne prodaja programske opreme.",
+    "entity_foundation_desc": "Neodvisna organizacija za ocenjevanje, lastnica metodologije. Oblikuje standard, objavlja ocene, akreditira svetovalce. Ne prodaja programske opreme.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komercialni tehnološki operater. Gradi in vzdržuje platformo Certo, zagotavlja varnost podatkov, razvija orodja umetne inteligence pod nadzorom fundacije.",
     "statute_title": "Statut fundacije",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotni program Rating Certo",
-    "subtitle": "Prijavite institucijo za brezplačen postopek ocenjevanja javne verodostojnosti na podlagi kakovosti upravljanja — Q4 2026.",
+    "subtitle": "Prijavite subjekt v brezplačno oceno javne verodostojnosti na podlagi kakovosti upravljanja — Q4 2026.",
     "program_title": "Pilotni program",
     "program_description": "V četrtem četrtletju 2026 začenjamo prve brezplačne postopke ocenjevanja v okviru indeksa javne verodostojnosti na podlagi kakovosti upravljanja — Rating Certo. Prijave sprejemamo tako od organizacij kot od posameznikov, ki jim je mar za preglednost institucij v njihovem okolju.",
     "who_title": "Kdo se lahko prijavi?",

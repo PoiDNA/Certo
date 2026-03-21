@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute'i Sihtasutus",
-    "description": "Sõltumatu reitinguasutus, mis hindab juhtimise kvaliteeti avalikus, korporatiivses, meditsiini-, kaitse- ja vabaühendustesektoris."
+    "description": "Sõltumatu reitinguorganisatsioon, mis hindab juhtimise kvaliteeti avalikus, ettevõtlus-, meditsiini- ja kaitsesektoris."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Omanike register — korrastatud süsteem tegelike kasusaajate, kapitalistruktuuride ja omandisuhete tuvastamiseks.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Kasutajapaneel üksikasjalike reitinguandmete, organisatsiooniprofiilide ja analüüsivahenditega.",
-    "pilot_cta_title": "Kandideeri oma asutusega tasuta pilootprogrammi",
+    "pilot_cta_title": "Esitage organisatsioon tasuta pilootprogrammi",
     "pilot_cta_text": "2026. aasta neljandas kvartalis alustame esimesi avaliku usaldusväärsuse hindamisi juhtimise kvaliteedi alusel. Pilootprogramm on tasuta. Sinu organisatsioon võib kaasa aidata uue standardi loomisele.",
     "pilot_cta_button": "Kandideeri pilootprogrammi"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metoodika on avalik ja auditeeritav. Hinnatavatel üksustel on õigus teada, milliseid IT-vahendeid hindamisprotsessis kasutati.",
     "entities_title": "Kaks üksust — üks standard",
     "entity_foundation_name": "Certo Governance Institute'i Sihtasutus",
-    "entity_foundation_desc": "Sõltumatu reitinguasutus, metoodika omanik. Kujundab standardit, avaldab reitinguid, akrediteerib nõustajaid. Ei müü tarkvara.",
+    "entity_foundation_desc": "Sõltumatu reitinguorganisatsioon, metoodika omanik. Kavandab standardi, avaldab reitinguid, akrediteerib nõustajaid. Ei müü tarkvara.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Kommertstehnoloogiaoperaator. Ehitab ja hooldab Certo platvormi, tagab andmeturbe, arendab AI-vahendeid sihtasutuse järelevalve all.",
     "statute_title": "Sihtasutuse põhikiri",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Rating Certo pilootprogramm",
-    "subtitle": "Kandideeri oma asutusega tasuta avaliku usaldusväärsuse hindamisele juhtimise kvaliteedi alusel — Q4 2026.",
+    "subtitle": "Esitage organisatsioon tasuta avaliku usaldusväärsuse hindamisele juhtimise kvaliteedi alusel — Q4 2026.",
     "program_title": "Pilootprogramm",
     "program_description": "2026. aasta neljandas kvartalis alustame esimesi tasuta avaliku usaldusväärsuse hindamisi juhtimise kvaliteedi alusel — Rating Certo. Avaldusi võtame vastu nii organisatsioonidelt kui ka isikutelt, kellele on oluline institutsioonide läbipaistvus nende ümbruses.",
     "who_title": "Kes võib kandideerida?",

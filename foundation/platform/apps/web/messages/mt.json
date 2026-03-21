@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fundazzjoni Certo Governance Institute",
-    "description": "Organu ta' rating indipendenti li jevalwa l-kwalità tal-governanza fis-settur pubbliku, korporattiv, mediku u tad-difiża."
+    "description": "Organizzazzjoni ta' valutazzjoni indipendenti li tevalwa l-kwalità tal-governanza fis-setturi pubbliku, korporattiv, mediku u tad-difiża."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Reġistru tal-proprjetarji — sistema organizzata ta' identifikazzjoni tal-benefiċjarji reali, strutturi kapitali u relazzjonijiet ta' sjieda.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Pannell tal-utent b'data dettaljata tar-ratings, profili tal-organizzazzjonijiet u għodod analitici.",
-    "pilot_cta_title": "Applika l-istituzzjoni tiegħek għall-pilotaġġ b'xejn",
+    "pilot_cta_title": "Issottometti entità għall-programm pilota b'xejn",
     "pilot_cta_text": "Fir-raba' kwart tal-2026 nibdew l-ewwel proċessi ta' evalwazzjoni tal-kredibbiltà pubblika bbażata fuq il-kwalità tal-governanza. Il-pilotaġġ huwa b'xejn. L-organizzazzjoni tiegħek tista' tikkontribwixxi għal standard ġdid.",
     "pilot_cta_button": "Applika għall-pilotaġġ"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Il-metodoloġija hija pubblika u awditabbli. Is-suġġett evalwat għandu d-dritt ikun jaf liema għodod tal-informatika ntużaw fil-proċess ta' evalwazzjoni.",
     "entities_title": "Żewġ entitajiet — standard wieħed",
     "entity_foundation_name": "Fundazzjoni Certo Governance Institute",
-    "entity_foundation_desc": "Organu ta' rating indipendenti, sid il-metodoloġija. Jiddisinja l-istandard, jippubblika r-ratings, jakkredita l-konsulenti. Ma jbigħx softwer.",
+    "entity_foundation_desc": "Organizzazzjoni ta' valutazzjoni indipendenti, sid il-metodoloġija. Tfassal l-istandard, tippubblika l-valutazzjonijiet, takkredita l-konsulenti. Ma tbigħx software.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Operatur teknoloġiku kummerċjali. Jibni u jżomm il-pjattaforma Certo, jiżgura s-sigurtà tad-data, jiżviluppa għodod tal-AI taħt is-superviżjoni tal-Fundazzjoni.",
     "statute_title": "Statut tal-Fundazzjoni",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotaġġ Rating Certo",
-    "subtitle": "Applika l-istituzzjoni tiegħek għall-proċess b'xejn ta' evalwazzjoni tal-kredibbiltà pubblika bbażata fuq il-kwalità tal-governanza — Q4 2026.",
+    "subtitle": "Issottometti entità għal-evalwazzjoni b'xejn tal-kredibbiltà pubblika bbażata fuq il-kwalità tal-governanza — Q4 2026.",
     "program_title": "Programm pilota",
     "program_description": "Fir-raba' kwart tal-2026 nibdew l-ewwel proċessi b'xejn ta' evalwazzjoni fi ħdan l-indiċi ta' kredibbiltà pubblika bbażat fuq il-kwalità tal-governanza — Rating Certo. Naċċettaw applikazzjonijiet kemm minn organizzazzjonijiet kif ukoll minn individwi li jimpurtahom mit-trasparenza tal-istituzzjonijiet fl-ambjent tagħhom.",
     "who_title": "Min jista' japplika?",

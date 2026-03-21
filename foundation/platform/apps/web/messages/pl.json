@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fundacja Certo Governance Institute",
-    "description": "Niezależny organ ratingowy oceniający jakość zarządzania w sektorze publicznym, korporacyjnym, medycznym i obronnym."
+    "description": "Niezależna organizacja ratingowa oceniająca jakość zarządzania w sektorze publicznym, korporacyjnym, medycznym i obronnym."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Rejestr właścicieli — uporządkowany system identyfikacji beneficjentów rzeczywistych, struktur kapitałowych i relacji właścicielskich.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Panel użytkownika ze szczegółowymi danymi ratingów, profilami organizacji i narzędziami analitycznymi.",
-    "pilot_cta_title": "Zgłoś swoją instytucję do bezpłatnego pilotażu",
+    "pilot_cta_title": "Zgłoś podmiot do bezpłatnego pilotażu",
     "pilot_cta_text": "W czwartym kwartale 2026 roku rozpoczynamy pierwsze procesy oceny wiarygodności publicznej na bazie jakości zarządzania. Pilotaż jest bezpłatny. Twoja organizacja może współtworzyć nowy standard.",
     "pilot_cta_button": "Zgłoś się do pilotażu"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologia jest publiczna i audytowalna. Podmiot oceniany ma prawo wiedzieć, jakie narzędzia informatyczne zostały użyte w procesie oceny.",
     "entities_title": "Dwa podmioty — jeden standard",
     "entity_foundation_name": "Fundacja Certo Governance Institute",
-    "entity_foundation_desc": "Niezależny organ ratingowy, właściciel metodologii. Projektuje standard, publikuje ratingi, akredytuje doradców. Nie sprzedaje oprogramowania.",
+    "entity_foundation_desc": "Niezależna organizacja ratingowa, właściciel metodologii. Projektuje standard, publikuje ratingi, akredytuje doradców. Nie sprzedaje oprogramowania.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komercyjny operator technologiczny. Buduje i utrzymuje platformę Certo, zapewnia bezpieczeństwo danych, rozwija narzędzia AI pod nadzorem Fundacji.",
     "statute_title": "Statut Fundacji",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotaż Rating Certo",
-    "subtitle": "Zgłoś instytucję do bezpłatnego procesu oceny wiarygodności publicznej na bazie jakości zarządzania — Q4 2026.",
+    "subtitle": "Zgłoś podmiot do bezpłatnego procesu oceny wiarygodności publicznej na bazie jakości zarządzania — Q4 2026.",
     "program_title": "Program pilotażowy",
     "program_description": "W czwartym kwartale 2026 roku rozpoczynamy pierwsze bezpłatne procesy oceny w ramach indeksu wiarygodności publicznej na bazie jakości zarządzania — Rating Certo. Zgłoszenia przyjmujemy zarówno od organizacji, jak i od osób, którym zależy na przejrzystości instytucji w ich otoczeniu.",
     "who_title": "Kto może się zgłaszać?",

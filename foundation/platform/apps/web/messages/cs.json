@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Nadace Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení ve veřejném, korporátním, zdravotnickém a obranném sektoru."
+    "description": "Nezávislá ratingová organizace hodnotící kvalitu řízení ve veřejném, korporátním, zdravotnickém a obranném sektoru."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Registr vlastníků — uspořádaný systém identifikace skutečných beneficientů, kapitálových struktur a vlastnických vztahů.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Uživatelský panel s podrobnými ratingovými daty, profily organizací a analytickými nástroji.",
-    "pilot_cta_title": "Přihlaste svou instituci do bezplatného pilotního programu",
+    "pilot_cta_title": "Přihlaste subjekt do bezplatného pilotního programu",
     "pilot_cta_text": "Ve čtvrtém čtvrtletí 2026 zahajujeme první procesy hodnocení veřejné důvěryhodnosti na základě kvality řízení. Pilotní program je bezplatný. Vaše organizace může spoluvytvářet nový standard.",
     "pilot_cta_button": "Přihlaste se do pilotního programu"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologie je veřejná a auditovatelná. Hodnocený subjekt má právo vědět, jaké informatické nástroje byly v procesu hodnocení použity.",
     "entities_title": "Dva subjekty — jeden standard",
     "entity_foundation_name": "Nadace Certo Governance Institute",
-    "entity_foundation_desc": "Nezávislý ratingový orgán, vlastník metodologie. Navrhuje standard, publikuje ratingy, akredituje poradce. Neprodává software.",
+    "entity_foundation_desc": "Nezávislá ratingová organizace, vlastník metodologie. Navrhuje standard, publikuje ratingy, akredituje poradce. Neprodává software.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komerční technologický operátor. Buduje a provozuje platformu Certo, zajišťuje bezpečnost dat, vyvíjí nástroje AI pod dohledem Nadace.",
     "statute_title": "Stanovy Nadace",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotní program Rating Certo",
-    "subtitle": "Přihlaste instituci do bezplatného procesu hodnocení veřejné důvěryhodnosti na základě kvality řízení — Q4 2026.",
+    "subtitle": "Přihlaste subjekt k bezplatné evaluaci veřejné důvěryhodnosti na základě kvality řízení — Q4 2026.",
     "program_title": "Pilotní program",
     "program_description": "Ve čtvrtém čtvrtletí 2026 zahajujeme první bezplatné procesy hodnocení v rámci indexu veřejné důvěryhodnosti na základě kvality řízení — Rating Certo. Přihlášky přijímáme jak od organizací, tak od osob, kterým záleží na transparentnosti institucí v jejich okolí.",
     "who_title": "Kdo se může přihlásit?",
