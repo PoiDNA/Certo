@@ -32,7 +32,7 @@ export default function OrgChart() {
       <div className="grid sm:grid-cols-2 gap-4 mb-10">
         {formalOrgans.map(({ key, color }) => (
           <div key={key} className={`p-6 border-l-4 ${color}`}>
-            <h4 className="font-serif font-bold text-certo-navy text-sm mb-1">
+            <h4 className="font-serif font-extrabold text-certo-navy text-[2.625rem] leading-tight md:text-xl mb-1">
               {t(`organ_${key}_name`)}
             </h4>
             <p className="text-xs text-certo-navy/60 leading-relaxed">
@@ -49,7 +49,7 @@ export default function OrgChart() {
       <div className="grid sm:grid-cols-2 gap-4">
         {expertStructures.map(({ key, color }) => (
           <div key={key} className={`p-6 border-l-4 ${color}`}>
-            <h4 className="font-serif font-bold text-certo-navy text-sm mb-1">
+            <h4 className="font-serif font-extrabold text-certo-navy text-[2.625rem] leading-tight md:text-xl mb-1">
               {t(`organ_${key}_name`)}
             </h4>
             <p className="text-xs text-certo-navy/60 leading-relaxed">
