@@ -1,78 +1,79 @@
+yaml
 ---
 title: Certo-metodologia — kuinka Rating Certo toimii
-description: Rating Certo on kryptografinen artefakti governance-arviointiprosessista. Jokainen ratingpäätös on ankkuroitu organisaation oman infrastruktuurin ulkopuolelle ja se on todennettavissa offline-tilassa.
+description: Rating Certo on kryptografinen artefakti hallintokyvyn arviointiprosessista. Jokainen ratingpäätös on ankkuroitu omansa infrastruktuurin ulkopuolelle ja tarkistettavissa offline-tilassa.
 ---
 
 ## Certo Rating Index
 
-Certo kehittää ja julkaisee säännöllisen, vertailukelpoisen julkisen luotettavuusindeksin hallinnon laadun perusteella — Certo Rating Index -indeksin, joka kattaa Säätiön arviointitoiminnan kohteena olevat tahot, sektorit tai maat. Indeksi perustuu Säätiön yhdisteltyihin ratingtuloksiin, hallinnon laadun muutoskinetiikan tietoihin ajan kuluessa sekä julkisesti saatavissa oleviin vertailukelpoihin tietoihin. Jokainen indeksipäivitys sisältää ennustekomponentin, joka osoittaa odotettavissa olevien muutosten suuntaa arvioiduilla tahoilla ilmoitettujen kehitystavoitteiden ja tunnistettujen trendien perusteella.
+Certo kehittää ja julkaisee säännöllisiä, vertailukelpoisia luotettavuusindeksejä hallintokyvyn laadun perusteella — Certo Rating Index -indeksin, joka kattaa Säätiön arviointitoiminnon piiriin kuuluvat toimijat, sektorit tai valtiot. Indeksi perustuu Säätiön aggregoituihin ratingtuloksiin, hallintokyvyn laadun muutosnopeuden tietoihin ajan kuluessa sekä julkisesti saatavilla oleviin vertailuaineistoihin. Jokainen indeksin painos sisältää ennustavan komponentin, joka osoittaa odotettavia muutoksia arvioidun yksikön ilmoittamien kehitystavoitteiden ja tunnistettujen trendien perusteella.
 
 ## Mikä on Rating Certo
 
-Rating Certo ei ole mielipide. Se on kryptografinen artefakti prosessista — päätösten merkintä, joka olemassa riippumatta sen luojan infrastruktuurista. Jokainen rating on:
+Rating Certo ei ole lausunto. Se on kryptografinen artefakti prosessista — ratingpäätöksen tietue, joka on olemassa riippumatta sen luojansa infrastruktuurista. Jokainen rating on:
 
-- **Todennettavissa offline-tilassa** — ratingpäätöksen hajautusarvo on ankkuroitu ulkoisiin julkisiin rekistereihin
-- **Muuttumaton julkaisun jälkeen** — kumpikaan osapuoli ei voi yksipuolisesti peruuttaa tai muuttaa julkaistua ratingia ilman näkyvän jäljen syntymistä
-- **Julkisesti auditoitavissa** — täydellinen päätösten polku on saatavilla tarkasteltavaksi valtuutettujen tahojen osalta
+- **Tarkistettavissa offline-tilassa** — ratingpäätöksen hash on ankkuroitu ulkoisiin julkisiin rekistereihin
+- **Muuttamaton julkaisun jälkeen** — kumpikaan osapuoli ei voi yksipuolisesti peruuttaa tai muuttaa julkaistua ratingia ilman näkyvän jäljen luomista
+- **Julkisesti auditointikelvollinen** — täydellinen päätösketju on saatavilla tarkastukseen valtuutetuille osapuolille
 
 ## Dual-Brain Engine
 
-Arviointi-järjestelmän sydämen muodostaa Dual-Brain Engine — kaksitasoinen arkkitehtuuri, joka yhdistää:
+Arviointijärjestelmän sydämessä on Dual-Brain Engine — kaksitasoinen analysointiarkitehtuuri, joka yhdistää:
 
-**Kvantitatiivisen analyytiikan**, joka sisältää:
-- Hallinnon ja valvontaelimien rakenne
-- Historia muutoksista elimen kokoonpanossa
-- Päätösprosessin dokumentaatio
-- Säännösten noudattamisen indikaattorit
+**Määrällistä analyytiikkaa**, joka sisältää:
+- Hallintoelimien ja valvontaelimien rakenteen
+- Elimen kokoonpanon muutoshistorian
+- Päätöksentekoprosessin dokumentoinnin
+- Säädösten noudattamisen indikaattoreita
 
-**Kvalitatiivisen analyytiikan**, joka sisältää:
-- Organisaatiokulttuurin arviointi sisäisten asiakirjojen perusteella
-- Ilmoitettujen arvojen ja toiminnan johdonmukaisuuden analyysi
-- Intressien ristiriitojien hallintamenettelyjen tarkistus
-- Sisäisen valvontajärjestelmän tehokkuuden arviointi
+**Laadullista analyytiikkaa**, joka sisältää:
+- Organisaatiokulttuurin arviointia sisäisten asiakirjojen perusteella
+- Ilmoitettujen arvojen ja toimien johdonmukaisuuden analysointia
+- Intressikonfliktien hallintamenettelyjen todentamista
+- Sisäisen valvontajärjestelmän tehokkuuden arviointia
 
-Molempien analyysin haarojen on oltava riippumattomasti osoitettava riittävän hallinnon laadun taso, jotta rating voidaan myöntää.
+Molemmat analyysihaarakset on osoitettava itsenäisesti riittävällä hallintokyvyn laadun tasolla, jotta rating voidaan antaa.
 
 ## Hard Gates
 
-Hard Gates on seitsemän välttämätöntä ehtoa, joiden täyttämättä jättäminen automaattisesti sulkee tahon ratingprosessista riippumatta muun arvioinnin tuloksista:
+Hard Gates ovat seitsemän välttämätöntä edellytystä, joiden täyttymättömyys automaattisesti sulkee yksikön ratingprosessista riippumatta muista arviointituloksista:
 
-1. Ei meneillään olevia rikosoikeudellisia menettelyjä hallinto-elimen jäseniä vastaan
-2. Säännölliset ja dokumentoidut peruskirjalliset kokoukset
-3. Ei maksamattomia velvoitteita julkisille elimille (sosiaaliturva, verohallinto, kaupparekisteri)
-4. Ajanmukainen ja julkisesti saatavissa oleva tosiasiallisten edunsaajien rekisteri
-5. Ei intressien ristiriitoja valvontaelimen kokoonpanossa
-6. Dokumentoitu menettely väärinkäytösten ilmoittamiselle (whistleblowing)
-7. Oikeudellisen ja organisaatiorakenteen johdonmukaisuus ilmoitetun hallintotavan kanssa
+1. Hallinto-elimen jäseniä vastaan ei ole vireillä olevia rikosprosesseja
+2. Säädösten mukaiset elimet kokoontuvat säännöllisesti ja dokumentoidusti
+3. Ei ole jäänyt maksamatta olevia velvoitteita julkisille elimille (eläkevakuutus, veroviranomaiset, kaupparekisteri)
+4. Ajanmukainen ja julkisesti saatavilla oleva todellisten edunsaajien rekisteri
+5. Valvontaelimen kokoonpanossa ei ole intressikonflikti
+6. Dokumentoitu epäsäännöllisyyksien ilmoittamisen menettely (whistleblowing)
+7. Oikeudellisen organisaatiorakenteen yhdenmukaisuus ilmoitetun hallintokyvyn mallin kanssa
 
-Jonkun Hard Gatesin täyttämättä jättäminen johtaa ratingprosessin keskeyttämiseen, kunnes puute korjataan.
+Minkä tahansa Hard Gate -ehdon täyttämättömyys johtaa ratingprosessin keskeytymiseen, kunnes epäsäännöllisyys on korjattu.
 
 ## Compliance Engine
 
-Compliance Engine tarkistaa instituution vaatimustenmukaisuuden alan säädöksiin ja EU:n yleisiin säädöksiin nähden. Moottori päivittyy jatkuvasti EU:n ja Suomen lainsäädännön muutosten seurauksena.
+Compliance Engine tarkistaa laitoksen vaatimustenmukaisuuden soveltuville sektorikohtaisille säädöksille ja EU:n yleisille säädöksille. Moottori päivitetään jatkuvasti EU:n ja Puolan oikeuden muutoksissa.
 
-Vaatimustenmukaisuuden arviointi sisältää:
-- Tietylle instituutiolle soveltuvat alan säädökset
-- EU:n direktiivit ja asetukset, jotka soveltuvat kyseiselle sektorille
+Vaatimustenmukaisuusarviointi sisältää:
+- Kunkin laitoksen kannalta soveltuvat sektorikohtaiset säädökset
+- EU:n direktiivit ja asetukset, joita sovelletaan kyseisellä sektorilla
 - Kansalliset täytäntöönpanosäädökset
-- Alan standardit ja hyvän käytännön koodeksit
+- Alan standardit ja hyvän hallintotavan koodit
 
 ## Break-Glass Protocol
 
-Break-Glass Protocol on nöyrä pääsymenettelyssä ratingtallenteiden, joissa kriisitilanteet — tahon selvitystila, konkurssimenettely, esitutkinta sen palkollisten toimesta.
+Break-Glass Protocol on hätäpääsymenetelmä ratingtietueiden hakemiseen kriiseissä — yksikön likvidointi, konkurssimenettely, rikostutkinnan aloittaminen syyttäjien toimesta.
 
-Protokolla määrittää:
-- Kuka voi päästä käsiksi tallenteiden ja missä olosuhteissa
-- Kuinka jokainen pääsyinstanssi dokumentoidaan
-- Mitkä ovat arvioidtujen tahojen ilmoittamismekanismit
-- Kuinka tietojen eheys varmistetaan julkistamisprosessissa
+Protokolla määrittelee:
+- Kenen on pääsy tietueisiin ja missä olosuhteissa
+- Kuinka jokainen pääsytapaus dokumentoidaan
+- Mitä ovat arvioiduille yksiköille ilmoittamisen mekanismit
+- Kuinka tietojen eheys varmistetaan paljastusprosessissa
 
 ## Certo Score ja Certo Vector
 
-Jokainen myönnetty rating koostuu kahdesta elementista:
+Jokainen annettu rating koostuu kahdesta elementista:
 
-**Certo Score** — synteettinen hallinnon laadun arviointi, joka ilmaistaan numeerisella asteikolla. Se mahdollistaa tahojen vertailun sektorilla ja ajan kuluessa.
+**Certo Score** — hallintokyvyn laadun synteettinen arvio, joka ilmaistaan numeerisella asteikolla. Sen avulla voidaan verrata yksiköitä sektoriittain ja ajan kuluessa.
 
-**Certo Vector** — hallinnon laadun muutoksen suunta viimeisellä arviointijaksolla. Se saa viisi arvoa: `++` (merkittävä parannus), `+` (parannus), ei muutosta, `−` (heikkeneminen), `−−` (merkittävä heikkeneminen).
+**Certo Vector** — hallintokyvyn laadun muutoksen suunta viimeisellä arviointikaudella. Se saa viisi arvoa: `++` (merkittävä parannus), `+` (parannus), ei muutosta, `−` (heikentyminen), `−−` (merkittävä heikentyminen).
 
-Score- ja Vector-yhdistelmä antaa täydellisen kuvan sekä governance-tilasta että sen dynaamisuudesta.
+Pisteiden ja vektorin yhdistelmä antaa täydellisen kuvan sekä hallintokyvyn nykyisestä tilasta että sen dynamiikasta.

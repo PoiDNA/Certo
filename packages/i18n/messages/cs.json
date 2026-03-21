@@ -8,15 +8,15 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý orgán pro hodnocení oceniający kvalitu řízení veřejných, korporativních a neziskových institucí."
+    "description": "Nezávislý ratingový orgán hodnotící kvalitu řízení veřejných, korporativních a neziskových institucí."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Přihlaste se",
-    "logout": "Odhlaste se",
-    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "login": "Přihlášení",
+    "logout": "Odhlášení",
+    "privacyPolicy": "Zásady ochrany soukromí",
     "termsOfUse": "Podmínky použití",
     "loading": "Načítání...",
     "error": "Došlo k chybě",
@@ -24,7 +24,7 @@
     "cancel": "Zrušit",
     "confirm": "Potvrdit",
     "back": "Zpět",
-    "next": "Další",
+    "next": "Dále",
     "close": "Zavřít",
     "search": "Hledat",
     "download": "Stáhnout",
@@ -34,18 +34,18 @@
   },
   "Navigation": {
     "home": "Domovská stránka",
-    "ratings": "Hodnocení",
+    "ratings": "Ratingy",
     "reports": "Zprávy",
     "analysis": "Analýzy",
-    "about": "O Institutu",
+    "about": "O Nadaci",
     "contact": "Kontakt",
-    "dashboard": "Přístrojová deska",
+    "dashboard": "Přehled",
     "settings": "Nastavení"
   },
   "Auth": {
-    "login_title": "Přihlaste se",
-    "login_subtitle": "Přihlaste se ke svému účtu",
-    "login_with_google": "Přihlaste se přes Google",
+    "login_title": "Přihlášení",
+    "login_subtitle": "Přihlaste se do svého účtu",
+    "login_with_google": "Přihlášení přes Google",
     "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zapomněli jste heslo?",
@@ -57,11 +57,11 @@
     "404_description": "Stránka, kterou hledáte, neexistuje nebo byla přesunuta.",
     "500_title": "Chyba serveru",
     "500_description": "Došlo k neočekávané chybě. Zkuste to prosím později.",
-    "unauthorized": "Přístup odepřen. Přihlaste se pro pokračování."
+    "unauthorized": "Přístup odepřen. Přihlaste se, abyste mohli pokračovat."
   },
   "Footer": {
     "rights": "Všechna práva vyhrazena",
-    "privacy": "Zásady ochrany osobních údajů",
+    "privacy": "Zásady ochrany soukromí",
     "terms": "Podmínky použití",
     "contact": "Kontakt"
   }

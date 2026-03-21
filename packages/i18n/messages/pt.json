@@ -8,19 +8,19 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgão de classificação independente que avalia a qualidade de governança de instituições públicas, corporativas e não-governamentais."
+    "description": "Órgão de classificação independente que avalia a qualidade da governança de instituições públicas, corporativas e sem fins lucrativos."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Fazer login",
-    "logout": "Fazer logout",
-    "privacyPolicy": "Política de privacidade",
-    "termsOfUse": "Termos de uso",
+    "login": "Faça login",
+    "logout": "Sair",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
     "loading": "Carregando...",
     "error": "Ocorreu um erro",
-    "save": "Guardar",
+    "save": "Salvar",
     "cancel": "Cancelar",
     "confirm": "Confirmar",
     "back": "Voltar",
@@ -33,36 +33,36 @@
     "inactive": "Inativo"
   },
   "Navigation": {
-    "home": "Página inicial",
+    "home": "Página Inicial",
     "ratings": "Classificações",
     "reports": "Relatórios",
     "analysis": "Análises",
     "about": "Sobre a Fundação",
-    "contact": "Contacto",
+    "contact": "Contato",
     "dashboard": "Painel",
     "settings": "Configurações"
   },
   "Auth": {
-    "login_title": "Fazer login",
-    "login_subtitle": "Faça login em sua conta",
-    "login_with_google": "Faça login através do Google",
+    "login_title": "Faça login",
+    "login_subtitle": "Faça login na sua conta",
+    "login_with_google": "Faça login com Google",
     "email_label": "Endereço de e-mail",
     "password_label": "Senha",
     "forgot_password": "Esqueceu sua senha?",
     "no_account": "Não tem uma conta?",
-    "register": "Registar-se"
+    "register": "Registre-se"
   },
   "Errors": {
     "404_title": "Página não encontrada",
-    "404_description": "A página que procura não existe ou foi movida.",
+    "404_description": "A página que você procura não existe ou foi movida.",
     "500_title": "Erro do servidor",
     "500_description": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
     "unauthorized": "Acesso negado. Faça login para continuar."
   },
   "Footer": {
     "rights": "Todos os direitos reservados",
-    "privacy": "Política de privacidade",
-    "terms": "Termos de uso",
-    "contact": "Contacto"
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
+    "contact": "Contato"
   }
 }

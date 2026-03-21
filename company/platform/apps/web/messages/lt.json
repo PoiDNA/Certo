@@ -1,12 +1,12 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Tapatybės patvirtinimas ir atitiktis viešosioms institucijoms ir korporacijoms."
+    "description": "Tapatybės patvirtinimas ir atitiktis viešosioms ir korporatyviniams institucijoms."
   },
   "Nav": {
     "solutions": "Sprendimai",
     "technology": "Technologija",
-    "foundation": "Certo Governance Institute",
+    "foundation": "Certo Fondas",
     "login": "Prisijungti",
     "contact": "Kontaktai"
   },
@@ -21,7 +21,7 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Adresas",
     "label_email": "El. paštas",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varšuva, Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Parašykite mums",
     "form_name": "Vardas ir pavardė",
@@ -29,8 +29,8 @@
     "form_subject": "Tema",
     "form_message": "Žinutė",
     "form_submit": "Siųsti žinutę",
-    "form_success": "Žinutė buvo išsiųsta. Atsakysime greitai.",
-    "subject_general": "Bendras užklausimas",
+    "form_success": "Žinutė buvo išsiųsta. Atsakysime kuo greičiau.",
+    "subject_general": "Bendras užklausa",
     "subject_implementation": "Diegimas",
     "subject_technical": "Techninis palaikymas",
     "subject_cooperation": "Bendradarbiavimas"
@@ -40,46 +40,46 @@
     "hero_line1": "Tapatybė.",
     "hero_line2": "Atitiktis.",
     "hero_line3": "Pasitikėjimas.",
-    "hero_description": "Tapatybės patvirtinimo ir atitikties infrastruktūra viešosioms institucijoms, korporacijoms ir reguliuojamiems subjektams. Sukurta pagal standartus",
+    "hero_description": "Patvirtinimo ir atitikties infrastruktūra viešosioms institucijoms, korporacijoms ir reguliacinėms sritims. Sukurta pagal standartus",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "PRADĖTI DIEGIMĄ",
     "cta_secondary": "PASLAUGOS",
     "services_label": "PASLAUGOS",
     "services_title": "Trys atitikties infrastruktūros sluoksniai",
     "service1_title": "Tapatybės patvirtinimas",
-    "service1_desc": "KYC/AML reguliuojamiems subjektams. Automatinis dokumentų patvirtinimas, sankcijų ir PEP screening, integracija su valstybiniais registrais.",
-    "service2_title": "Atitikties vertinimas",
-    "service2_desc": "Automatinis atitikties skirtingas, paremtas Certo Governance Institute metodologija. Penkiastalinė vertinimo sistema su visa audito trasa.",
+    "service1_desc": "KYC/AML reguliacinėms sritims. Automatinis dokumentų patvirtinimas, sankcijų ir PEP peržvalga, integracija su valstybės registrais.",
+    "service2_title": "Compliance reitingas",
+    "service2_desc": "Automatinis atitikties balų skaičiavimas pagal Certo Governance Institute metodologiją. Penki balų sistemos lygiai su pilna audito trasa.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automatiniai taisymo planai ir jų vykdymo stebėsena. Integracija su ERP, GRC sistemomis ir rizikos valdymo platformomis.",
+    "service3_desc": "Automatiniai taisymo planai ir jų įgyvendinimo stebėjimas. Integracija su ERP, GRC sistemomis ir rizikos valdymo platformomis.",
     "arch_label": "ARCHITEKTŪRA",
     "arch_title": "Kaip veikia Certo ID",
-    "step1_title": "Įkėlimas",
-    "step1_desc": "Subjekto duomenys + dokumentai + normatyvinė sąlyga",
-    "step2_title": "Patvirtinimas",
-    "step2_desc": "Tapatybės patvirtinimas, screening, viešoji registracija",
-    "step3_title": "Vertinimas",
-    "step3_desc": "Automatinis Certo Vector atitikties vertinimas",
+    "step1_title": "Priėmimas",
+    "step1_desc": "Subjekto duomenys + dokumentai + reguliacinis kontekstas",
+    "step2_title": "Patvirtinti",
+    "step2_desc": "Tapatybės patvirtinimas, peržvalga, viešas registras",
+    "step3_title": "Įvertinti",
+    "step3_desc": "Automatinis Certo Vector atitikties reitingas",
     "step4_title": "Ataskaita",
     "step4_desc": "PDF ataskaita + API + Certo Online prietaisų skydelis",
     "badge_iso": "ISO standartai",
-    "badge_compliance": "Normatyvinė atitiktis",
+    "badge_compliance": "Norminė atitiktis",
     "badge_kyc": "Tapatybės patvirtinimas",
-    "badge_governance": "Governance vertinimas"
+    "badge_governance": "Valdymo įvertinimas"
   },
   "Legal": {
     "back": "Grįžti į pagrindinį puslapį",
-    "last_updated": "Paskutinį kartą atnaujinta: Kovas 2026",
+    "last_updated": "Paskutinį kartą atnaujinta: 2026 m. kovas",
     "privacy_title": "Privatumo politika",
     "terms_title": "Paslaugų sąlygos"
   },
   "Dashboard": {
     "title": "Certo ID skydelis",
-    "welcome": "Sveiki, {name}",
-    "your_rating": "Jūsų Certo Rating",
-    "your_delegates": "Jūsų Certo Delegate",
+    "welcome": "Sveikas, {name}",
+    "your_rating": "Jūsų Certo reitingas",
+    "your_delegates": "Jūsų delegatai",
     "your_accords": "Jūsų Certo Accord",
-    "recent_activity": "Naujausia veikla",
+    "recent_activity": "Neseniai atliki veiksmai",
     "quick_actions": "Greiti veiksmai"
   },
   "Profile": {
@@ -91,14 +91,14 @@
     "verified_badge": "Patvirtintas subjektas"
   },
   "Delegates": {
-    "title": "Certo Delegate",
-    "add_delegate": "Pridėti Certo Delegate",
+    "title": "Certo delegatai",
+    "add_delegate": "Pridėti delegatą",
     "delegate_id": "Delegate ID",
     "delegate_status": "Būsena",
     "primary_link": "PRIMARY nuoroda",
     "failover_link": "FAILOVER nuoroda",
-    "plan_basic": "Basic",
-    "plan_standard": "Standard",
+    "plan_basic": "Pagrindinis",
+    "plan_standard": "Standartinis",
     "plan_premium": "Premium"
   }
 }

@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja voittoa tavoittelemattomien instituutioiden hallinnon laatua."
+    "description": "Riippumaton luottoluokituslaitos, joka arvioi julkisen hallinnon, yritysten ja voittoa tavoittelemattomien organisaatioiden hallintokäytäntöjen laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -33,36 +33,36 @@
     "inactive": "Passiivinen"
   },
   "Navigation": {
-    "home": "Kotisivu",
-    "ratings": "Luokitukset",
+    "home": "Etusivu",
+    "ratings": "Luottoluokitukset",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Meistä",
-    "contact": "Yhteystiedot",
-    "dashboard": "Hallintapaneeli",
+    "about": "Säätiöstä",
+    "contact": "Ota yhteyttä",
+    "dashboard": "Kojelauta",
     "settings": "Asetukset"
   },
   "Auth": {
     "login_title": "Kirjaudu sisään",
-    "login_subtitle": "Kirjaudu tilillesi",
-    "login_with_google": "Kirjaudu sisään Googlien kautta",
+    "login_subtitle": "Kirjaudu sisään tilillesi",
+    "login_with_google": "Kirjaudu sisään Google-tilillä",
     "email_label": "Sähköpostiosoite",
     "password_label": "Salasana",
     "forgot_password": "Unohditko salasanasi?",
-    "no_account": "Sinulla ei ole tiliä?",
+    "no_account": "Eikö sinulla ole tiliä?",
     "register": "Rekisteröidy"
   },
   "Errors": {
     "404_title": "Sivua ei löytynyt",
     "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
-    "500_title": "Palvelinvirhe",
-    "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
-    "unauthorized": "Pääsy kielletty. Kirjaudu sisään jatkaaksesi."
+    "500_title": "Palvelimen virhe",
+    "500_description": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
+    "unauthorized": "Sinulla ei ole pääsyoikeutta. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Yhteystiedot"
+    "contact": "Ota yhteyttä"
   }
 }

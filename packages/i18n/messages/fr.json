@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, corporatives et non gouvernementales."
+    "description": "Organisme de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, privées et non-gouvernementales."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Se déconnecter",
     "privacyPolicy": "Politique de confidentialité",
     "termsOfUse": "Conditions d'utilisation",
-    "loading": "Chargement en cours...",
+    "loading": "Chargement...",
     "error": "Une erreur s'est produite",
     "save": "Enregistrer",
     "cancel": "Annuler",
@@ -49,15 +49,15 @@
     "email_label": "Adresse e-mail",
     "password_label": "Mot de passe",
     "forgot_password": "Mot de passe oublié ?",
-    "no_account": "Pas encore de compte ?",
+    "no_account": "Vous n'avez pas de compte ?",
     "register": "S'inscrire"
   },
   "Errors": {
     "404_title": "Page non trouvée",
     "404_description": "La page que vous recherchez n'existe pas ou a été déplacée.",
-    "500_title": "Erreur du serveur",
+    "500_title": "Erreur serveur",
     "500_description": "Une erreur inattendue s'est produite. Veuillez réessayer ultérieurement.",
-    "unauthorized": "Accès refusé. Veuillez vous connecter pour continuer."
+    "unauthorized": "Accès refusé. Connectez-vous pour continuer."
   },
   "Footer": {
     "rights": "Tous droits réservés",

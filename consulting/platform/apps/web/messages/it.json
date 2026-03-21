@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Trova un Consulente",
-    "description": "Consulenti accreditati Certo. Governance aziendale e conformità."
+    "description": "Consulenti accreditati Certo. Governance d'impresa e conformità."
   },
   "Nav": {
     "advisors": "Consulenti",
@@ -10,36 +10,36 @@
     "contact": "Contatti"
   },
   "Footer": {
-    "description": "Consulenza specializzata in governance aziendale, conformità e sicurezza per leader di mercato.",
+    "description": "Consulenza specializzata in governance d'impresa, conformità e sicurezza per i leader di mercato.",
     "ecosystem": "Ecosistema Certo",
     "accreditation": "Tutti i consulenti sono accreditati dalla Fondazione Certo Governance Institute",
     "privacy": "Informativa sulla privacy",
-    "terms": "Condizioni d'uso",
+    "terms": "Termini di servizio",
     "contact": "Contatti"
   },
   "Home": {
-    "hero_title": "Consulenza specializzata\na livello di board.",
-    "hero_subtitle": "Mettiamo in connessione i consulenti accreditati Certo con le istituzioni che richiedono i più alti standard di governance aziendale e conformità normativa.",
+    "hero_title": "Consulenza specializzata\na livello gestionale.",
+    "hero_subtitle": "Colleghiamo i consulenti accreditati Certo con le istituzioni che richiedono i più alti standard di governance d'impresa e conformità normativa.",
     "hero_cta": "Trova un esperto",
-    "finder_title": "Desidero parlare con un esperto di:",
+    "finder_title": "Desidero parlare con un esperto in:",
     "area_health": "Sanità",
-    "area_local_gov": "Enti locali",
+    "area_local_gov": "Amministrazioni locali",
     "area_defense": "Difesa",
     "area_finance": "Finanza",
-    "area_education": "Istruzione",
-    "form_title": "Lascia i tuoi contatti, così sceglieremo per te il consulente più adatto nell'ambito di",
+    "area_education": "Educazione",
+    "form_title": "Lascia i tuoi contatti affinché possiamo selezionare il consulente più appropriato nell'area di",
     "form_name": "Nome e cognome",
     "form_email": "Indirizzo email (aziendale)",
-    "form_org": "Nome organizzazione / Posizione",
+    "form_org": "Nome dell'organizzazione / Posizione",
     "form_submit": "Invia richiesta",
-    "experts_headline": "I nostri esperti aiutano\na mantenere e rafforzare\nil Certo Rating.",
-    "experts_description": "Consulenti accreditati con pluriennale esperienza nell'ottimizzazione dei processi di governance per istituzioni strategiche."
+    "experts_headline": "I nostri esperti aiutano\na mantenere e rafforzare\nil Rating Certo.",
+    "experts_description": "Consulenti accreditati con molteplici anni di esperienza nell'ottimizzazione dei processi di governance per istituzioni strategiche."
   },
   "Legal": {
-    "back": "Torna alla pagina principale",
+    "back": "Torna alla home",
     "last_updated": "Ultimo aggiornamento: Marzo 2026",
-    "privacy_title": "Informativa sulla privacy",
-    "terms_title": "Condizioni d'uso"
+    "privacy_title": "Informativa sulla Privacy",
+    "terms_title": "Condizioni di utilizzo"
   },
   "FindAdvisor": {
     "title": "Trova un consulente Certo",
@@ -76,6 +76,6 @@
     "subject_general": "Richiesta generale",
     "subject_advisory": "Consulenza",
     "subject_accreditation": "Accreditamento consulente",
-    "subject_cooperation": "Cooperazione"
+    "subject_cooperation": "Collaborazione"
   }
 }

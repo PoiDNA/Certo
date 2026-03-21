@@ -8,56 +8,56 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neodvisni bonittetni organ, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
+    "description": "Neodvisni organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in neprofitnih institucij."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Prijavi se",
-    "logout": "Odjavi se",
+    "login": "Prijava",
+    "logout": "Odjava",
     "privacyPolicy": "Politika zasebnosti",
     "termsOfUse": "Pogoji uporabe",
     "loading": "Nalaganje...",
     "error": "Prišlo je do napake",
     "save": "Shrani",
     "cancel": "Prekliči",
-    "confirm": "Potrdi",
+    "confirm": "Potvrdi",
     "back": "Nazaj",
     "next": "Naprej",
     "close": "Zapri",
     "search": "Iskanje",
-    "download": "Prenesei",
+    "download": "Prenos",
     "verified": "Preverjeno",
     "active": "Aktivno",
     "inactive": "Neaktivno"
   },
   "Navigation": {
     "home": "Domača stran",
-    "ratings": "Bonitete",
+    "ratings": "Ocene",
     "reports": "Poročila",
     "analysis": "Analize",
-    "about": "O fundaciji",
+    "about": "O Ustanovi",
     "contact": "Stik",
     "dashboard": "Nadzorna plošča",
     "settings": "Nastavitve"
   },
   "Auth": {
-    "login_title": "Prijavi se",
-    "login_subtitle": "Prijavi se na svoj račun",
-    "login_with_google": "Prijavi se z Googlom",
+    "login_title": "Prijava",
+    "login_subtitle": "Prijavite se v svoj račun",
+    "login_with_google": "Prijava prek Google",
     "email_label": "E-poštni naslov",
     "password_label": "Geslo",
-    "forgot_password": "Si pozabil geslo?",
-    "no_account": "Nemaš računa?",
+    "forgot_password": "Pozabljeno geslo?",
+    "no_account": "Nimate računa?",
     "register": "Registracija"
   },
   "Errors": {
     "404_title": "Stran ni bila najdena",
-    "404_description": "Stran, ki jo iščeš, ne obstaja ali je bila premaknjena.",
+    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premakljena.",
     "500_title": "Napaka strežnika",
-    "500_description": "Prišlo je do nepričakovane napake. Poskusi pozneje.",
-    "unauthorized": "Dostop ni dovoljen. Prijavi se za nadaljevanje."
+    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
+    "unauthorized": "Dostop ni dovoljen. Prijavite se za nadaljevanje."
   },
   "Footer": {
     "rights": "Vse pravice pridržane",

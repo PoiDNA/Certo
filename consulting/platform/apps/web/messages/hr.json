@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Pronađite Savjetnika",
-    "description": "Akreditirani savjetnici Certo. Korporativna uprava i usklađenost."
+    "title": "Certo Consulting — Pronađi Savjetnika",
+    "description": "Akreditirani savjetnici Certo. Korporativni ured i suglasnost."
   },
   "Nav": {
     "advisors": "Savjetnici",
@@ -10,34 +10,34 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Stručno savjetovanje u oblasti korporativne uprave, usklađenosti i sigurnosti za tržišne lidere.",
-    "ecosystem": "Certo Ekosistem",
-    "accreditation": "Svi savjetnici su akreditirani od strane Certo Governance Institute",
+    "description": "Stručno savjetovanje u području korporativnog uređenja, suglasnosti i sigurnosti za tržišne vođe.",
+    "ecosystem": "Ekosistem Certo",
+    "accreditation": "Svi savjetnici su akreditirani od strane Fundacije Certo Governance Institute",
     "privacy": "Politika privatnosti",
     "terms": "Uvjeti korištenja",
     "contact": "Kontakt"
   },
   "Home": {
     "hero_title": "Stručno savjetovanje\nna razini uprave.",
-    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativne uprave i regulacijske usklađenosti.",
-    "hero_cta": "Pronađi eksperta",
-    "finder_title": "Želim razgovarati s ekspertom za:",
+    "hero_subtitle": "Povezujemo akreditirane savjetnike Certo s institucijama koje zahtijevaju najviše standarde korporativnog uređenja i regulatorne suglasnosti.",
+    "hero_cta": "Pronađi stručnjaka",
+    "finder_title": "Želim razgovarati sa stručnjakom za:",
     "area_health": "Zdravstvena zaštita",
-    "area_local_gov": "Lokalna samouprava",
+    "area_local_gov": "Jedinice lokalne samouprave",
     "area_defense": "Obrana",
     "area_finance": "Financije",
     "area_education": "Obrazovanje",
-    "form_title": "Ostavite kontakt kako bismo odabrali odgovarajućeg savjetnika iz područja",
+    "form_title": "Ostavi kontakt kako bi smo vam dodijelili odgovarajućeg savjetnika iz područja",
     "form_name": "Ime i prezime",
-    "form_email": "Email adresa (službena)",
-    "form_org": "Naziv organizacije / Pozicija",
+    "form_email": "Službena email adresa",
+    "form_org": "Naziv organizacije / Radno mjesto",
     "form_submit": "Pošalji upit",
-    "experts_headline": "Naši stručnjaci pomažu\nodržavati i ojačati\nCerto Rating.",
-    "experts_description": "Akreditirani savjetnici s dugogodišnjim iskustvom u optimizaciji procesa uprave za strateške institucije."
+    "experts_headline": "Naši stručnjaci pomažu\nodržati i ojačati\nCerto Rating.",
+    "experts_description": "Akreditirani savjetnici s dugogodišnjim iskustvom u optimizaciji governance procesa za strateške institucije."
   },
   "Legal": {
-    "back": "Povratak na početnu stranicu",
-    "last_updated": "Zadnja ažuriranja: ožujak 2026",
+    "back": "Vrati se na početnu stranicu",
+    "last_updated": "Posljednja ažuriranja: ožujak 2026",
     "privacy_title": "Politika Privatnosti",
     "terms_title": "Uvjeti korištenja"
   },
@@ -45,11 +45,11 @@
     "title": "Pronađi Certo savjetnika",
     "sector_label": "Sektor vaše institucije",
     "need_label": "Što vam je potrebno?",
-    "need_audit": "Revizija uprave",
+    "need_audit": "Revizija governance",
     "need_advisory": "Strateško savjetovanje",
-    "need_training": "Obuke i radionice",
-    "need_rating": "Priprema za rating",
-    "region_label": "Region",
+    "need_training": "Obuka i radionice",
+    "need_rating": "Pripreme za ocjenu",
+    "region_label": "Regija",
     "submit": "Traži savjetnika"
   },
   "Advisor": {
@@ -57,14 +57,14 @@
     "specialization": "Specijalizacija",
     "sectors": "Sektori",
     "contact_advisor": "Kontaktiraj",
-    "view_profile": "Vidi profil"
+    "view_profile": "Pogledaj profil"
   },
   "Contact": {
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
     "label_address": "Adresa",
     "label_email": "Email",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varšava, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Napišite nam",
     "form_name": "Ime i prezime",
@@ -72,7 +72,7 @@
     "form_subject": "Tema",
     "form_message": "Poruka",
     "form_submit": "Pošalji poruku",
-    "form_success": "Poruka je poslana. Odgovorit ćemo čim je prije moguće.",
+    "form_success": "Poruka je poslana. Odgovorit ćemo čim je moguće.",
     "subject_general": "Opći upit",
     "subject_advisory": "Savjetovanje",
     "subject_accreditation": "Akreditacija savjetnika",
