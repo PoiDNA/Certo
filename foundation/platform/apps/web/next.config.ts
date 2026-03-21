@@ -17,6 +17,11 @@ const nextConfig = {
         destination: '/:locale/privacy',
         permanent: true,
       },
+      {
+        source: '/:locale/methodology',
+        destination: '/:locale/ratings',
+        permanent: true,
+      },
     ];
   },
 

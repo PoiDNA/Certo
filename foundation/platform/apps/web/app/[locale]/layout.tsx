@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import AuthNav from "../../components/AuthNav";
 import SiteNav from "../../components/SiteNav";
+import Footer from "../../components/Footer";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
@@ -53,13 +54,12 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const messages = await getMessages();
-  const tf = await getTranslations({ locale, namespace: 'Footer' });
 
   return (
     <html lang={locale}>
       <body className="bg-certo-cream text-certo-navy antialiased min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <header className="bg-certo-navy text-certo-cream border-b-[3px] border-certo-gold relative">
+          <header className="bg-certo-navy text-certo-cream border-b-[3px] border-certo-gold relative z-50">
             <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
               <div className="flex items-center gap-4">
                 <a href={`/${locale}`} className="flex items-center gap-4">
@@ -71,7 +71,7 @@ export default async function RootLayout({
                     className="h-10 w-auto"
                   />
                   <span className="hidden sm:inline-block border-l border-certo-cream/20 pl-4 text-certo-gold font-serif text-[0.7rem] uppercase tracking-[0.15em] leading-snug">
-                    Cryptographic<br/>Rating
+                    Public Credibility<br/>Index
                   </span>
                 </a>
               </div>
@@ -82,32 +82,11 @@ export default async function RootLayout({
             </div>
           </header>
 
-          <main className="flex-grow mx-auto max-w-6xl px-6 w-full">
+          <main className="flex-grow w-full">
             {children}
           </main>
 
-          <footer className="bg-certo-navy border-t-[3px] border-certo-gold mt-auto">
-            <div className="mx-auto max-w-6xl px-6 py-10">
-              <div className="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                  <div className="text-certo-gold-light font-serif text-xl tracking-wide mb-2">Certo Governance Institute</div>
-                  <p className="text-xs text-certo-cream/50 leading-relaxed">00-124 Warszawa, ul. Rondo ONZ 1</p>
-                  <a href="mailto:rating@certogov.org" className="text-xs text-certo-cream/50 hover:text-certo-gold transition-colors">rating@certogov.org</a>
-                </div>
-                <div />
-                <div className="flex flex-col items-start md:items-end gap-2 text-xs">
-                  <a href={`/${locale}/privacy`} className="text-certo-gold hover:text-certo-gold-light transition-colors">{tf('privacy')}</a>
-                  <a href={`/${locale}/terms`} className="text-certo-gold hover:text-certo-gold-light transition-colors">{tf('terms')}</a>
-                  <a href={`/${locale}/contact`} className="text-certo-gold hover:text-certo-gold-light transition-colors">{tf('contact')}</a>
-                </div>
-              </div>
-              <div className="border-t border-certo-gold/20 pt-6 text-center">
-                <div className="text-xs text-certo-cream/40">
-                  {tf('copyright', { year: new Date().getFullYear() })}
-                </div>
-              </div>
-            </div>
-          </footer>
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

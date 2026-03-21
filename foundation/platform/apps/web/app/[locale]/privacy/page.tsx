@@ -36,7 +36,7 @@ export default async function PrivacyPage({
   if (!mdx) notFound();
 
   return (
-    <article className="prose prose-certo max-w-4xl mx-auto py-12 px-2">
+    <article className="prose prose-certo max-w-4xl mx-auto py-12 px-6">
       {mdx.content}
     </article>
   );
