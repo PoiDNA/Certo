@@ -89,7 +89,6 @@
   "About": {
     "title": "O Fundaciji Certo Governance Institute",
     "mission_title": "Poslanstvo",
-    "mission_text": "Gradimo kulturo dobrega upravljanja z neodvisnim ocenjevanjem in spodbujanjem standardov upravljanja na Poljskem in v Evropi. Verjamemo, da je pravica živeti v družbi, ki je upravljana pošteno, pregledno in kompetentno, temeljna pravica.",
     "structure_title": "Organizacijska struktura",
     "organ_board_name": "Uprava",
     "organ_board_role": "Izvršilni organ — vodi tekoče poslovanje, zastopa fundacijo navzven, uresničuje statutarne cilje.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Svet Certo",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Gradimo kulturo dobrega upravljanja z neodvisnim ocenjevanjem in spodbujanjem standardov governance v Evropi.",
+    "mission_text_2": "Verjamemo, da je pravica do življenja v družbi, ki je vodena pošteno, pregledno in kompetentno, temeljna pravica."
   },
   "Contact": {
     "title": "Kontakt",

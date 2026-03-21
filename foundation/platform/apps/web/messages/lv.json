@@ -89,7 +89,6 @@
   "About": {
     "title": "Par Certo Governance Institute fondu",
     "mission_title": "Misija",
-    "mission_text": "Mēs veidojam labas pārvaldības kultūru caur neatkarīgu novērtēšanu un pārvaldības standartu veicināšanu Polijā un Eiropā. Mēs ticam, ka tiesības dzīvot sabiedrībā, kas tiek pārvaldīta godīgi, caurskatāmi un kompetenti, ir pamattiesības.",
     "structure_title": "Organizatoriskā struktūra",
     "organ_board_name": "Valde",
     "organ_board_role": "Izpildinstitūcija — vada ikdienas darbību, pārstāv fondu ārēji, īsteno statūtu mērķus.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Padome",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Mēs veidojam labas pārvaldības kultūru caur neatkarīgu vērtēšanu un pārvaldības standartu veicināšanu Eiropā.",
+    "mission_text_2": "Mēs ticam, ka tiesības dzīvot godīgi, caurspīdīgi un kompetenti pārvaldītā sabiedrībā ir pamattiesības."
   },
   "Contact": {
     "title": "Kontakti",

@@ -89,7 +89,6 @@
   "About": {
     "title": "Certo Governance Institute'i sihtasutusest",
     "mission_title": "Missioon",
-    "mission_text": "Ehitame hea juhtimise kultuuri sõltumatu hindamise ja juhtimise standardite edendamise kaudu Poolas ja Euroopas. Usume, et õigus elada ühiskonnas, mida juhitakse ausalt, läbipaistvalt ja kompetentselt, on põhiõigus.",
     "structure_title": "Organisatsiooni struktuur",
     "organ_board_name": "Juhatus",
     "organ_board_role": "Täitevorgan — juhib igapäevast tegevust, esindab sihtasutust väljapoole, viib ellu põhikirjalisi eesmärke.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Nõukogu",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Ehitame hea juhtimise kultuuri sõltumatu hindamise ja juhtimise standardite edendamise kaudu Euroopas.",
+    "mission_text_2": "Usume, et õigus elada ausalt, läbipaistvalt ja pädevalt juhitud ühiskonnas on põhiõigus."
   },
   "Contact": {
     "title": "Kontakt",

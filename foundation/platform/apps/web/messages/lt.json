@@ -89,7 +89,6 @@
   "About": {
     "title": "Apie Certo Governance Institute fondą",
     "mission_title": "Misija",
-    "mission_text": "Kuriame gero valdymo kultūrą per nepriklausomą vertinimą ir valdymo standartų skatinimą Lenkijoje ir Europoje. Tikime, kad teisė gyventi visuomenėje, valdomoje sąžiningai, skaidriai ir kompetentingai, yra pagrindinė teisė.",
     "structure_title": "Organizacinė struktūra",
     "organ_board_name": "Valdyba",
     "organ_board_role": "Vykdomasis organas — vadovauja kasdienei veiklai, atstovauja fondui išorėje, įgyvendina statutinius tikslus.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Taryba",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Kuriame gero valdymo kultūrą per nepriklausomą vertinimą ir valdymo standartų skatinimą Europoje.",
+    "mission_text_2": "Tikime, kad teisė gyventi sąžiningai, skaidriai ir kompetentingai valdomoje visuomenėje yra pagrindinė teisė."
   },
   "Contact": {
     "title": "Kontaktai",

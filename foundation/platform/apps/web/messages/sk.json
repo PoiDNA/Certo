@@ -89,7 +89,6 @@
   "About": {
     "title": "O Nadácii Certo Governance Institute",
     "mission_title": "Poslanie",
-    "mission_text": "Budujeme kultúru dobrého riadenia prostredníctvom nezávislého hodnotenia a podpory štandardov governance v Poľsku a Európe. Veríme, že právo žiť v spoločnosti riadenej čestne, transparentne a kompetentne je základným právom.",
     "structure_title": "Organizačná štruktúra",
     "organ_board_name": "Správna rada",
     "organ_board_role": "Výkonný orgán — riadi bežnú činnosť, zastupuje nadáciu navonok, realizuje štatutárne ciele.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Rada Certo",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Budujeme kultúru dobrého riadenia prostredníctvom nezávislého hodnotenia a presadzovania štandardov governance v Európe.",
+    "mission_text_2": "Veríme, že právo žiť v spoločnosti riadenej čestne, transparentne a kompetentne je základným právom."
   },
   "Contact": {
     "title": "Kontakt",

@@ -30,7 +30,10 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="sr-only">{t('title')}</h1>
           <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-certo-cream leading-relaxed max-w-3xl mx-auto">
-            {t('mission_text')}
+            {t('mission_text_1')}
+          </p>
+          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-certo-cream/70 leading-relaxed max-w-3xl mx-auto mt-8">
+            {t('mission_text_2')}
           </p>
         </div>
       </section>

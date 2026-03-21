@@ -89,7 +89,6 @@
   "About": {
     "title": "Dwar il-Fundazzjoni Certo Governance Institute",
     "mission_title": "Missjoni",
-    "mission_text": "Nibnu kultura ta' governanza tajba permezz ta' evalwazzjoni indipendenti u l-promozzjoni ta' standards ta' governanza fil-Polonja u l-Ewropa. Nemmnu li d-dritt li tgħix f'soċjetà mmaniġġjata b'mod onest, trasparenti u kompetenti huwa dritt fundamentali.",
     "structure_title": "Struttura organizzattiva",
     "organ_board_name": "Bord",
     "organ_board_role": "Organu eżekuttiv — jimmaniġġja l-operazzjonijiet ta' kuljum, jirrappreżenta l-Fundazzjoni esternament, jimplimenta l-objettivi statutorji.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Kunsill Certo",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Nibnu kultura ta' governanza tajba permezz ta' evalwazzjoni indipendenti u l-promozzjoni ta' standards ta' governanza fl-Ewropa.",
+    "mission_text_2": "Nemmnu li d-dritt li tgħix f'soċjetà ġestita b'onestà, b'trasparenza u b'kompetenza huwa dritt fundamentali."
   },
   "Contact": {
     "title": "Kuntatt",

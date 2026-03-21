@@ -89,7 +89,6 @@
   "About": {
     "title": "Over de Stichting Certo Governance Institute",
     "mission_title": "Missie",
-    "mission_text": "Wij bouwen aan een cultuur van goed bestuur door middel van onafhankelijke beoordeling en bevordering van bestuursstandaarden in Polen en Europa. Wij geloven dat het recht om te leven in een samenleving die eerlijk, transparant en competent wordt bestuurd, een fundamenteel recht is.",
     "structure_title": "Organisatiestructuur",
     "organ_board_name": "Bestuur",
     "organ_board_role": "Uitvoerend orgaan — beheert de dagelijkse activiteiten, vertegenwoordigt de Stichting naar buiten, realiseert de statutaire doelstellingen.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Raad",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Wij bouwen aan een cultuur van goed bestuur door onafhankelijke beoordeling en de bevordering van governance-standaarden in Europa.",
+    "mission_text_2": "Wij geloven dat het recht om te leven in een eerlijk, transparant en competent bestuurde samenleving een fundamenteel recht is."
   },
   "Contact": {
     "title": "Contact",

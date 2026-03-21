@@ -89,7 +89,6 @@
   "About": {
     "title": "Sulla Fondazione Certo Governance Institute",
     "mission_title": "Missione",
-    "mission_text": "Costruiamo una cultura della buona governance attraverso la valutazione indipendente e la promozione degli standard di governance in Polonia e in Europa. Crediamo che il diritto di vivere in una società governata in modo onesto, trasparente e competente sia un diritto fondamentale.",
     "structure_title": "Struttura organizzativa",
     "organ_board_name": "Consiglio d'Amministrazione",
     "organ_board_role": "Organo esecutivo — gestisce le attività correnti, rappresenta la Fondazione all'esterno, realizza gli obiettivi statutari.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Consiglio Certo",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Costruiamo una cultura della buona governance attraverso la valutazione indipendente e la promozione degli standard di governance in Europa.",
+    "mission_text_2": "Crediamo che il diritto di vivere in una società gestita onestamente, in modo trasparente e competente sia un diritto fondamentale."
   },
   "Contact": {
     "title": "Contatti",
