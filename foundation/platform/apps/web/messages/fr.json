@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fondation Certo Governance Institute",
-    "description": "Organisme de notation indépendant évaluant la qualité de la gouvernance dans les secteurs public, corporatif, médical et de la défense."
+    "description": "Une organisation de notation indépendante évaluant la qualité de la gouvernance dans les secteurs public, corporatif, médical et de la défense."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Un registre des propriétaires — un système structuré d'identification des bénéficiaires effectifs, des structures capitalistiques et des relations de propriété.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Un tableau de bord utilisateur avec des données détaillées sur les notations, les profils d'organisations et des outils analytiques.",
-    "pilot_cta_title": "Inscrivez votre institution au programme pilote gratuit",
+    "pilot_cta_title": "Soumettez un organisme au programme pilote gratuit",
     "pilot_cta_text": "Au Q4 2026, nous lançons les premiers processus d'évaluation de la crédibilité publique fondés sur la qualité de la gouvernance. Le pilote est gratuit. Votre organisation peut contribuer à façonner le nouveau standard.",
     "pilot_cta_button": "Candidater au programme pilote"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "La méthodologie est publique et auditable. L'entité évaluée a le droit de savoir quels outils informatiques ont été utilisés dans le processus d'évaluation.",
     "entities_title": "Deux entités — un seul standard",
     "entity_foundation_name": "Fondation Certo Governance Institute",
-    "entity_foundation_desc": "Organisme de notation indépendant, propriétaire de la méthodologie. Conçoit le standard, publie les notations, accrédite les conseillers. Ne vend pas de logiciel.",
+    "entity_foundation_desc": "Une organisation de notation indépendante, propriétaire de la méthodologie. Conçoit le standard, publie les notations, accrédite les conseillers. Ne vend pas de logiciels.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Opérateur technologique commercial. Construit et maintient la plateforme Certo, assure la sécurité des données, développe les outils d'IA sous la supervision de la Fondation.",
     "statute_title": "Statuts de la Fondation",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Programme pilote Rating Certo",
-    "subtitle": "Inscrivez votre institution au processus gratuit d'évaluation de la crédibilité publique fondé sur la qualité de la gouvernance — Q4 2026.",
+    "subtitle": "Soumettez un organisme à une évaluation gratuite de crédibilité publique fondée sur la qualité de la gouvernance — Q4 2026.",
     "program_title": "Programme pilote",
     "program_description": "Au Q4 2026, nous lançons les premiers processus d'évaluation gratuits dans le cadre de l'indice de crédibilité publique fondé sur la qualité de la gouvernance — Rating Certo. Nous acceptons les candidatures aussi bien d'organisations que de particuliers soucieux de la transparence des institutions de leur environnement.",
     "who_title": "Qui peut candidater ?",

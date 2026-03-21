@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute -säätiö",
-    "description": "Riippumaton luokituselin, joka arvioi hallinnon laatua julkisella, yritys-, terveydenhuolto- ja puolustussektorilla."
+    "description": "Riippumaton arviointiorganisaatio, joka arvioi hallinnon laatua julkisella, yritys-, terveydenhuolto- ja puolustussektorilla."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Omistajarekisteri — jäsennelty järjestelmä tosiasiallisten edunsaajien, pääomarakenteiden ja omistussuhteiden tunnistamiseen.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Käyttäjäpaneeli, jossa on yksityiskohtaiset luokitustiedot, organisaatioprofiilit ja analyyttiset työkalut.",
-    "pilot_cta_title": "Ilmoita instituutiosi maksuttomaan pilottiohjelmaan",
+    "pilot_cta_title": "Ilmoita organisaatio ilmaiseen pilottiohjelmaan",
     "pilot_cta_text": "Vuoden 2026 neljännellä neljänneksellä aloitamme ensimmäiset julkisen luotettavuuden arviointiprosessit hallinnon laadun perusteella. Pilottiohjelma on maksuton. Organisaatiosi voi olla mukana luomassa uutta standardia.",
     "pilot_cta_button": "Ilmoittaudu pilottiohjelmaan"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodologia on julkinen ja auditoitavissa. Arvioitavalla taholla on oikeus tietää, mitä tietoteknisiä työkaluja arviointiprosessissa on käytetty.",
     "entities_title": "Kaksi tahoa — yksi standardi",
     "entity_foundation_name": "Certo Governance Institute -säätiö",
-    "entity_foundation_desc": "Riippumaton luokituselin, metodologian omistaja. Suunnittelee standardin, julkaisee luokitukset, akkreditoi neuvonantajat. Ei myy ohjelmistoja.",
+    "entity_foundation_desc": "Riippumaton arviointiorganisaatio, metodologian omistaja. Suunnittelee standardin, julkaisee arvioinnit, akkreditoi neuvonantajia. Ei myy ohjelmistoja.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Kaupallinen teknologiaoperaattori. Rakentaa ja ylläpitää Certo-alustaa, varmistaa tietoturvan, kehittää tekoälytyökaluja säätiön valvonnassa.",
     "statute_title": "Säätiön säännöt",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilottiohjelma Rating Certo",
-    "subtitle": "Ilmoita instituutio maksuttomaan julkisen luotettavuuden arviointiprosessiin hallinnon laadun perusteella — Q4 2026.",
+    "subtitle": "Ilmoita organisaatio ilmaiseen julkisen uskottavuuden arviointiin hallinnon laadun perusteella — Q4 2026.",
     "program_title": "Pilottiohjelma",
     "program_description": "Vuoden 2026 neljännellä neljänneksellä aloitamme ensimmäiset maksuttomat arviointiprosessit julkisen luotettavuuden indeksissä hallinnon laadun perusteella — Rating Certo. Otamme vastaan ilmoittautumisia sekä organisaatioilta että henkilöiltä, joille instituutioiden avoimuus lähiympäristössään on tärkeää.",
     "who_title": "Kuka voi ilmoittautua?",

@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute fonds",
-    "description": "Neatkarīga reitingu iestāde, kas novērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnas, aizsardzības un nevalstiskajā sektorā."
+    "description": "Neatkarīga reitingu organizācija, kas novērtē pārvaldības kvalitāti publiskajā, korporatīvajā, medicīnas un aizsardzības sektorā."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Īpašnieku reģistrs — sakārtota sistēma patieso labuma guvēju, kapitāla struktūru un īpašumtiesību attiecību identificēšanai.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Lietotāja panelis ar detalizētiem reitingu datiem, organizāciju profiliem un analītiskajiem rīkiem.",
-    "pilot_cta_title": "Pieteic savu iestādi bezmaksas pilotam",
+    "pilot_cta_title": "Pieteikt subjektu bezmaksas pilotprogrammai",
     "pilot_cta_text": "2026. gada ceturtajā ceturksnī mēs uzsāksim pirmos publiskās uzticamības novērtēšanas procesus, kas balstīti uz pārvaldības kvalitāti. Pilots ir bezmaksas. Tava organizācija var līdzdarboties jauna standarta veidošanā.",
     "pilot_cta_button": "Pieteikties pilotam"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Metodoloģija ir publiska un auditējama. Novērtētajai vienībai ir tiesības zināt, kādi IT rīki tika izmantoti novērtēšanas procesā.",
     "entities_title": "Divas vienības — viens standarts",
     "entity_foundation_name": "Certo Governance Institute fonds",
-    "entity_foundation_desc": "Neatkarīga reitingu iestāde, metodoloģijas īpašniece. Izstrādā standartu, publicē reitingus, akreditē konsultantus. Nepārdod programmatūru.",
+    "entity_foundation_desc": "Neatkarīga reitingu organizācija, metodoloģijas īpašniece. Izstrādā standartu, publicē reitingus, akreditē konsultantus. Nepārdod programmatūru.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komerciāls tehnoloģiju operators. Būvē un uztur Certo platformu, nodrošina datu drošību, attīsta AI rīkus fonda uzraudzībā.",
     "statute_title": "Fonda statūti",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Rating Certo pilots",
-    "subtitle": "Pieteic savu iestādi bezmaksas publiskās uzticamības novērtēšanas procesam, kas balstīts uz pārvaldības kvalitāti — Q4 2026.",
+    "subtitle": "Pieteikt subjektu bezmaksas publiskās uzticamības novērtējumam, kas balstīts uz pārvaldības kvalitāti — Q4 2026.",
     "program_title": "Pilotprogramma",
     "program_description": "2026. gada ceturtajā ceturksnī mēs uzsāksim pirmos bezmaksas publiskās uzticamības novērtēšanas procesus, kas balstīti uz pārvaldības kvalitāti — Rating Certo. Pieteikumus pieņemam gan no organizācijām, gan no personām, kurām ir svarīga institūciju caurskatāmība viņu apkārtnē.",
     "who_title": "Kas var pieteikties?",

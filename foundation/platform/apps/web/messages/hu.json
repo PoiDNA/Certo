@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Governance Institute Alapítvány",
-    "description": "Független minősítő szerv, amely a közszféra, a vállalati, az egészségügyi és a védelmi szektor irányítási minőségét értékeli."
+    "description": "Független minősítő szervezet, amely az irányítás minőségét értékeli a közszféra, a vállalati, az egészségügyi és a védelmi szektorban."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Tulajdonosi nyilvántartás — strukturált rendszer a tényleges tulajdonosok, tőkestruktúrák és tulajdonosi viszonyok azonosítására.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Felhasználói panel részletes minősítési adatokkal, szervezeti profilokkal és elemzési eszközökkel.",
-    "pilot_cta_title": "Jelentkezzen intézményével az ingyenes pilotprogramra",
+    "pilot_cta_title": "Jelentsen be egy szervezetet az ingyenes pilotprogramba",
     "pilot_cta_text": "2026 negyedik negyedévében megkezdjük az első közérdekű megbízhatósági értékelési folyamatokat az irányítás minősége alapján. A pilotprogram ingyenes. Az Ön szervezete részt vehet egy új standard kialakításában.",
     "pilot_cta_button": "Jelentkezzen a pilotprogramra"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "A módszertan nyilvános és auditálható. Az értékelt szervezetnek jogában áll tudni, milyen informatikai eszközöket alkalmaztak az értékelési folyamat során.",
     "entities_title": "Két szervezet — egy standard",
     "entity_foundation_name": "Certo Governance Institute Alapítvány",
-    "entity_foundation_desc": "Független minősítő szerv, a módszertan tulajdonosa. Tervezi a standardot, publikálja a minősítéseket, akkreditálja a tanácsadókat. Nem értékesít szoftvert.",
+    "entity_foundation_desc": "Független minősítő szervezet, a módszertan tulajdonosa. Tervezi a standardot, közzéteszi a minősítéseket, akkreditálja a tanácsadókat. Nem árul szoftvert.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Kereskedelmi technológiai operátor. Építi és üzemelteti a Certo-platformot, biztosítja az adatbiztonságot, fejleszti a mesterséges intelligencia eszközöket az Alapítvány felügyelete mellett.",
     "statute_title": "Az Alapítvány alapszabálya",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Pilotprogram Rating Certo",
-    "subtitle": "Jelentkeztesse intézményét az ingyenes közérdekű megbízhatósági értékelési folyamatra az irányítás minősége alapján — Q4 2026.",
+    "subtitle": "Jelentsen be egy szervezetet a közhitelesség ingyenes értékelésébe az irányítás minősége alapján — Q4 2026.",
     "program_title": "Pilotprogram",
     "program_description": "2026 negyedik negyedévében megkezdjük az első ingyenes értékelési folyamatokat a közérdekű megbízhatósági index keretében az irányítás minősége alapján — Rating Certo. Jelentkezéseket szervezetektől és olyan személyektől egyaránt fogadunk, akiknek fontos az intézmények átláthatósága környezetükben.",
     "who_title": "Ki jelentkezhet?",

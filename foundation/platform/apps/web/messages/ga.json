@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Fondúireacht Certo Governance Institute",
-    "description": "Comhlacht rátála neamhspleách a mheasúnaíonn caighdeán an rialachais san earnáil phoiblí, chorparáideach, leighis, chosanta agus neamhrialtasach."
+    "description": "Eagraíocht rátála neamhspleách a mheasúnaíonn cáilíocht an rialachais sna hearnálacha poiblí, corparáideacha, leighis agus cosanta."
   },
   "Home": {
     "title": "Certo Governance Institute",
@@ -49,7 +49,7 @@
     "product_own_desc": "Clár úinéirí — córas eagraithe chun úinéirí tairbhiúla iarbhír, struchtúir chaipitil agus caidrimh úinéireachta a shainaithint.",
     "product_certoid_name": "Certo ID",
     "product_certoid_desc": "Painéal úsáideora le sonraí mionsonraithe rátálacha, próifílí eagraíochtaí agus uirlisí anailíseacha.",
-    "pilot_cta_title": "Cuir d'institiúid isteach ar an bpíolótú saor in aisce",
+    "pilot_cta_title": "Cuir eagraíocht isteach sa chlár píolótach saor in aisce",
     "pilot_cta_text": "Sa cheathrú ráithe de 2026, cuirfimid tús leis na chéad phróisis mheasúnaithe ar iontaofacht phoiblí bunaithe ar chaighdeán an rialachais. Tá an píolótú saor in aisce. Is féidir le d'eagraíocht caighdeán nua a chomhchruthú.",
     "pilot_cta_button": "Cuir isteach ar an bpíolótú"
   },
@@ -117,7 +117,7 @@
     "principle_transparency_desc": "Tá an mhodheolaíocht poiblí agus iniúchta. Tá an ceart ag an eintiteas atá á mheasúnú a fhios a bheith aige cé na huirlisí TF a úsáideadh sa phróiseas measúnaithe.",
     "entities_title": "Dhá eintiteas — caighdeán amháin",
     "entity_foundation_name": "Fondúireacht Certo Governance Institute",
-    "entity_foundation_desc": "Comhlacht rátála neamhspleách, úinéir na modheolaíochta. Dearann an caighdeán, foilsíonn rátálacha, creidiúnaíonn comhairleoirí. Ní dhíolann bogearraí.",
+    "entity_foundation_desc": "Eagraíocht rátála neamhspleách, úinéir na modheolaíochta. Dearann an caighdeán, foilsíonn rátálacha, creidiúnaíonn comhairleoirí. Ní dhíolann bogearraí.",
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Oibreoir teicneolaíochta tráchtála. Tógann agus cothaíonn ardán Certo, cinntíonn slándáil sonraí, forbraíonn uirlisí AI faoi mhaoirseacht na Fondúireachta.",
     "statute_title": "Reacht na Fondúireachta",
@@ -146,7 +146,7 @@
   },
   "Pilot": {
     "title": "Píolótú Rating Certo",
-    "subtitle": "Cuir d'institiúid isteach ar phróiseas measúnaithe iontaofachta poiblí saor in aisce bunaithe ar chaighdeán an rialachais — Q4 2026.",
+    "subtitle": "Cuir eagraíocht isteach i measúnú saor in aisce ar chreidiúnacht phoiblí bunaithe ar cháilíocht an rialachais — Q4 2026.",
     "program_title": "Clár píolótaithe",
     "program_description": "Sa cheathrú ráithe de 2026, cuirfimid tús leis na chéad phróisis mheasúnaithe saor in aisce ar iontaofacht phoiblí bunaithe ar chaighdeán an rialachais — Rating Certo. Glacaimid le hiarratais ó eagraíochtaí agus ó dhaoine aonair a bhfuil suim acu i dtrédhearcacht na n-institiúidí ina dtimpeallacht.",
     "who_title": "Cé atá in ann iarratas a chur isteach?",
