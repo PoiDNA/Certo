@@ -56,7 +56,7 @@ export default async function ExpertsPage({ params }: { params: Promise<{ locale
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {profiles.map((profile) => (
             <div key={profile} className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
-              <h3 className="font-serif font-bold text-certo-navy mb-2">{t(`profile_${profile}`)}</h3>
+              <h3 className="font-serif font-extrabold text-certo-navy text-[2.625rem] leading-tight md:text-xl mb-2">{t(`profile_${profile}`)}</h3>
               <p className="text-sm text-certo-navy/60 leading-relaxed">{t(`profile_${profile}_desc`)}</p>
             </div>
           ))}
