@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Kontrolní orgán — dozoruje činnost Správní rady, audituje soulad se stanovami, chrání nezávislost Nadace.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Metodologický orgán — navrhuje a schvaluje ratingovou metodologii, validuje váhové systémy a sektorovou kalibraci.",
-    "organ_advisory_name": "Poradní rada",
-    "organ_advisory_role": "Expertní rada — poskytuje odborné znalosti, podporuje strategická rozhodnutí Správní rady.",
-    "organ_international_name": "Mezinárodní poradní rada",
-    "organ_international_role": "Globální perspektiva — poradenství v oblasti mezinárodních osvědčených postupů a souladu s globálními standardy.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Nezávislý odvolací orgán — posuzuje spory týkající se ratingů, zajišťuje právo na odvolání.",
     "founder_section_title": "Slovo zakladatelky",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Komerční technologický operátor. Buduje a provozuje platformu Certo, zajišťuje bezpečnost dat, vyvíjí nástroje AI pod dohledem Nadace.",
     "statute_title": "Stanovy Nadace",
-    "statute_desc": "Stanovy Nadace Certo Governance Institute definují cíle, organizační strukturu, zásady nezávislosti a kontrolní mechanismy."
+    "statute_desc": "Stanovy Nadace Certo Governance Institute definují cíle, organizační strukturu, zásady nezávislosti a kontrolní mechanismy.",
+    "organs_label": "Orgány nadace",
+    "expert_structures_label": "Expertní struktury",
+    "organ_council_name": "Rada Certo",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Kontakt",

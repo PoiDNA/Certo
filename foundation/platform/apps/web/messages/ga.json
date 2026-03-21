@@ -97,10 +97,6 @@
     "organ_supervisory_role": "Comhlacht maoirseachta — déanann maoirseacht ar ghníomhaíochtaí an Bhoird, iniúchann comhlíonadh leis an reacht, cosnaíonn neamhspleáchas na Fondúireachta.",
     "organ_standard_name": "Kolegium Standardu Certo",
     "organ_standard_role": "Comhlacht modheolaíochta — dearann agus ceadaíonn modheolaíocht rátála, bailíochtaíonn córais mheáchain agus calabrú earnála.",
-    "organ_advisory_name": "Comhairle Chomhairleach",
-    "organ_advisory_role": "Comhairle shaineolaithe — soláthraíonn saineolas, tacaíonn le cinntí straitéiseacha an Bhoird.",
-    "organ_international_name": "Comhairle Chomhairleach Idirnáisiúnta",
-    "organ_international_role": "Peirspictíocht dhomhanda — comhairle ar dhea-chleachtais idirnáisiúnta agus comhlíonadh le caighdeáin dhomhanda.",
     "organ_tribunal_name": "Trybunał Odwoławczy Certo",
     "organ_tribunal_role": "Comhlacht achomhairc neamhspleách — réitíonn díospóidí a bhaineann le rátálacha, cinntíonn an ceart achomhairc.",
     "founder_section_title": "Focal ón mBunaitheoir",
@@ -121,7 +117,13 @@
     "entity_company_name": "Certo ID PSA",
     "entity_company_desc": "Oibreoir teicneolaíochta tráchtála. Tógann agus cothaíonn ardán Certo, cinntíonn slándáil sonraí, forbraíonn uirlisí AI faoi mhaoirseacht na Fondúireachta.",
     "statute_title": "Reacht na Fondúireachta",
-    "statute_desc": "Leagann Reacht na Fondúireachta Certo Governance Institute amach na cuspóirí, an struchtúr eagraíochtúil, prionsabail neamhspleáchais agus meicníochtaí rialaithe."
+    "statute_desc": "Leagann Reacht na Fondúireachta Certo Governance Institute amach na cuspóirí, an struchtúr eagraíochtúil, prionsabail neamhspleáchais agus meicníochtaí rialaithe.",
+    "organs_label": "Comhlachtaí an Fhondúireachta",
+    "expert_structures_label": "Struchtúir saineolaithe",
+    "organ_council_name": "Comhairle Certo",
+    "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
+    "organ_centre_name": "Certo Analysis and Scenarios Centre",
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
   },
   "Contact": {
     "title": "Teagmháil",
