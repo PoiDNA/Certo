@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Vind een Adviseur",
-    "description": "Geaccrediteerde Certo-adviseurs. Corporate Governance en compliance."
+    "description": "Geaccrediteerde Certo-adviseurs. Corporate governance en compliance."
   },
   "Nav": {
     "advisors": "Adviseurs",
@@ -10,41 +10,41 @@
     "contact": "Contact"
   },
   "Footer": {
-    "description": "Deskundig advies op het gebied van corporate governance, compliance en veiligheid voor marktleiders.",
+    "description": "Deskundige adviesdiensten op het gebied van corporate governance, compliance en veiligheid voor marktleiders.",
     "ecosystem": "Certo Ecosysteem",
-    "accreditation": "Alle adviseurs zijn geaccrediteerd door Certo Governance Institute",
+    "accreditation": "Alle adviseurs zijn geaccrediteerd door het Certo Governance Institute",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden",
     "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Deskundig advies\nop bestuursniveau.",
-    "hero_subtitle": "Wij verbinden geaccrediteerde Certo-adviseurs met instellingen die de hoogste normen voor corporate governance en regelgevingsnavolging vereisen.",
+    "hero_title": "Deskundige adviesdiensten\nop bestuursniveau.",
+    "hero_subtitle": "Wij brengen geaccrediteerde Certo-adviseurs samen met instellingen die de hoogste normen voor corporate governance en regelgevingscompliancy vereisen.",
     "hero_cta": "Vind een expert",
-    "finder_title": "Ik wil spreken met een expert op het gebied van:",
+    "finder_title": "Ik wil graag spreken met een expert op het gebied van:",
     "area_health": "Gezondheidszorg",
     "area_local_gov": "Lokale overheid",
     "area_defense": "Defensie",
     "area_finance": "Financiën",
     "area_education": "Onderwijs",
     "form_title": "Laat uw contactgegevens achter, zodat wij een geschikte adviseur uit het volgende gebied kunnen selecteren",
-    "form_name": "Volledige naam",
+    "form_name": "Voor- en achternaam",
     "form_email": "E-mailadres (werkadres)",
-    "form_org": "Naam organisatie / Functie",
-    "form_submit": "Verzoek indienen",
+    "form_org": "Organisatienaam / Functie",
+    "form_submit": "Verzend aanvraag",
     "experts_headline": "Onze experts helpen om\nuw Certo Rating\nin stand te houden en te versterken.",
-    "experts_description": "Geaccrediteerde adviseurs met jarenlange ervaring in het optimaliseren van governance-processen voor strategische instellingen."
+    "experts_description": "Geaccrediteerde adviseurs met veel jaren ervaring in het optimaliseren van governance-processen voor strategische instellingen."
   },
   "Legal": {
     "back": "Terug naar startpagina",
-    "last_updated": "Laatste update: maart 2026",
+    "last_updated": "Laatst bijgewerkt: maart 2026",
     "privacy_title": "Privacybeleid",
     "terms_title": "Gebruiksvoorwaarden"
   },
   "FindAdvisor": {
     "title": "Vind een Certo-adviseur",
     "sector_label": "Sector van uw instelling",
-    "need_label": "Wat heeft u nodig?",
+    "need_label": "Wat hebt u nodig?",
     "need_audit": "Governance-audit",
     "need_advisory": "Strategisch advies",
     "need_training": "Trainingen en workshops",
@@ -56,8 +56,8 @@
     "accredited_by": "Geaccrediteerd door Certo",
     "specialization": "Specialisatie",
     "sectors": "Sectoren",
-    "contact_advisor": "Contact opnemen",
-    "view_profile": "Profiel bekijken"
+    "contact_advisor": "Neem contact op",
+    "view_profile": "Bekijk profiel"
   },
   "Contact": {
     "title": "Contact",
@@ -67,15 +67,15 @@
     "address": "02-566 Warschau, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Schrijf ons",
-    "form_name": "Volledige naam",
+    "form_name": "Voor- en achternaam",
     "form_email": "E-mailadres",
     "form_subject": "Onderwerp",
     "form_message": "Bericht",
     "form_submit": "Bericht verzenden",
-    "form_success": "Uw bericht is verzonden. We zullen zo snel mogelijk reageren.",
-    "subject_general": "Algemeen verzoek",
+    "form_success": "Uw bericht is verzonden. Wij reageren zo snel mogelijk.",
+    "subject_general": "Algemene vraag",
     "subject_advisory": "Advies",
-    "subject_accreditation": "Accreditatie adviseur",
+    "subject_accreditation": "Adviseur-accreditatie",
     "subject_cooperation": "Samenwerking"
   }
 }

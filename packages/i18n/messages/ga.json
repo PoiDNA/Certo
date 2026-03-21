@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Orgán rátála neamhspleách a dhéanann measúnú ar fheidhmiú an rialachais i bhfoirgnimh phoiblí, corparáideacha agus neamhfhabhracha."
+    "description": "Orgán rátála neamhspleách ag measúnú ar chéim an bhainistíochta in institiúidí poiblí, corpraithe agus neamhbhriathhartha."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Logáil amach",
     "privacyPolicy": "Polasaí Príobháideachta",
     "termsOfUse": "Téarmaí Úsáide",
-    "loading": "Á lódáil...",
+    "loading": "Á Lódáil...",
     "error": "Tharla earráid",
     "save": "Sábháil",
     "cancel": "Cealaigh",
@@ -34,12 +34,12 @@
   },
   "Navigation": {
     "home": "Baile",
-    "ratings": "Rátálacha",
+    "ratings": "Rátála",
     "reports": "Tuairiscí",
     "analysis": "Anailísí",
-    "about": "Faoi an Fhondúireacht",
+    "about": "Faoi an Bhunstais",
     "contact": "Teagmháil",
-    "dashboard": "Páipéar Gníomhaireachta",
+    "dashboard": "Deis",
     "settings": "Socruithe"
   },
   "Auth": {
@@ -47,16 +47,16 @@
     "login_subtitle": "Logáil isteach ar do chuntas",
     "login_with_google": "Logáil isteach le Google",
     "email_label": "Seoladh Ríomhphoist",
-    "password_label": "Pasfhocal",
-    "forgot_password": "Ndearna tú dearmad ar do phasfhocal?",
+    "password_label": "Focal Faire",
+    "forgot_password": "Ndearna tú dearmad ar do phasword?",
     "no_account": "Níl cuntas agat?",
-    "register": "Cláraigh"
+    "register": "Clárú"
   },
   "Errors": {
     "404_title": "Níor aimsíodh an leathanach",
-    "404_description": "Níl an leathanach atá á lorg agat ann nó bhog sé.",
+    "404_description": "Níl an leathanach atá á lorg agat ann nó athaistríthed.",
     "500_title": "Earráid Freastalaí",
-    "500_description": "Tharla earráid gan súil aici. Déan iarracht arís níos déanaí.",
+    "500_description": "Tharla earráid bhocht-dhíchealaithe. Déan iarracht arís níos déanaí.",
     "unauthorized": "Gan rochtain. Logáil isteach chun leanúint ar aghaidh."
   },
   "Footer": {

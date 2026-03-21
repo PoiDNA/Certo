@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance des institutions publiques, corporatives et du secteur non lucratif."
+    "description": "Organe de notation indépendant évaluant la qualité de la gouvernance d'entreprise des institutions publiques, corporatives et à but non lucratif."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Se connecter",
-    "logout": "Se déconnecter",
+    "login": "Connectez-vous",
+    "logout": "Déconnexion",
     "privacyPolicy": "Politique de confidentialité",
     "termsOfUse": "Conditions d'utilisation",
     "loading": "Chargement...",
@@ -37,27 +37,27 @@
     "ratings": "Notations",
     "reports": "Rapports",
     "analysis": "Analyses",
-    "about": "À propos de la Fondation",
+    "about": "À propos de l'Institut",
     "contact": "Contact",
     "dashboard": "Tableau de bord",
     "settings": "Paramètres"
   },
   "Auth": {
-    "login_title": "Se connecter",
+    "login_title": "Connectez-vous",
     "login_subtitle": "Connectez-vous à votre compte",
     "login_with_google": "Se connecter via Google",
     "email_label": "Adresse e-mail",
     "password_label": "Mot de passe",
-    "forgot_password": "Vous avez oublié votre mot de passe ?",
+    "forgot_password": "Mot de passe oublié ?",
     "no_account": "Vous n'avez pas de compte ?",
     "register": "S'inscrire"
   },
   "Errors": {
     "404_title": "Page non trouvée",
     "404_description": "La page que vous recherchez n'existe pas ou a été déplacée.",
-    "500_title": "Erreur serveur",
+    "500_title": "Erreur du serveur",
     "500_description": "Une erreur inattendue s'est produite. Veuillez réessayer plus tard.",
-    "unauthorized": "Accès refusé. Veuillez vous connecter pour continuer."
+    "unauthorized": "Accès refusé. Connectez-vous pour continuer."
   },
   "Footer": {
     "rights": "Tous droits réservés",

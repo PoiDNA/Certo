@@ -1,81 +1,81 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Găsește Consultant",
-    "description": "Consultanți acreditați Certo. Ład korporacyjny și conformitate."
+    "title": "Certo Consulting — Găsiți Consilierul",
+    "description": "Consilieri acreditați Certo. Ład korporacyjny și conformitate."
   },
   "Nav": {
-    "advisors": "Consultanți",
-    "expertise": "Expertiza",
+    "advisors": "Consilieri",
+    "expertise": "Expertiză",
     "login": "Autentificare",
     "contact": "Contact"
   },
   "Footer": {
-    "description": "Consultanță expert în domeniul guvernanței corporative, conformității și securității pentru liderii de piață.",
+    "description": "Consiliere expert în domeniul conducerii corporative, conformității și securității pentru liderii de piață.",
     "ecosystem": "Ecosistemul Certo",
-    "accreditation": "Toți consultanții sunt acreditați de Fundația Certo Governance Institute",
+    "accreditation": "Toți consilieri sunt acreditați de Fundația Certo Governance Institute",
     "privacy": "Politica de confidențialitate",
     "terms": "Termeni și condiții",
     "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Consultanță expert\nla nivel de tablă.",
-    "hero_subtitle": "Conectăm consultanții acreditați Certo cu instituții care necesită cele mai înalte standarde de ład korporacyjny și conformitate de reglementare.",
-    "hero_cta": "Găsește expert",
-    "finder_title": "Vreau să vorbesc cu un expert în:",
+    "hero_title": "Consiliere expert\nla nivel de conducere.",
+    "hero_subtitle": "Conectăm consilieri acreditați Certo cu instituții care necesită cele mai înalte standarde de ład korporacyjny și conformitate reglementară.",
+    "hero_cta": "Găsiți expert",
+    "finder_title": "Doresc să vorbesc cu expert în:",
     "area_health": "Sănătate",
     "area_local_gov": "Administrație locală",
     "area_defense": "Apărare",
     "area_finance": "Finanțe",
     "area_education": "Educație",
-    "form_title": "Lăsați contactul dvs., ca să selectez consultantul potrivit din domeniu",
+    "form_title": "Lăsați detaliile contactului pentru ca noi să selectăm consilierul potrivit din domeniu",
     "form_name": "Nume și prenume",
-    "form_email": "Adresă email (oficială)",
-    "form_org": "Denumirea organizației / Poziție",
+    "form_email": "Adresă de email (profesional)",
+    "form_org": "Numele organizației / Poziția",
     "form_submit": "Trimiteți solicitarea",
     "experts_headline": "Experții noștri ajută\nla menținerea și consolidarea\nRating Certo.",
-    "experts_description": "Consultanți acreditați cu experiență mulți ani în optimizarea proceselor governance pentru instituții strategice."
+    "experts_description": "Consilieri acreditați cu experiență de mulți ani în optimizarea proceselor governance pentru instituții strategice."
   },
   "Legal": {
-    "back": "Întoarceți-vă la pagina principală",
+    "back": "Înapoi la pagina principală",
     "last_updated": "Ultima actualizare: martie 2026",
     "privacy_title": "Politica de confidențialitate",
-    "terms_title": "Condiții de utilizare"
+    "terms_title": "Termeni de utilizare"
   },
   "FindAdvisor": {
-    "title": "Găsește consultant Certo",
-    "sector_label": "Sectorul instituției dvs.",
+    "title": "Găsiți consilier Certo",
+    "sector_label": "Sectorul instituției dumneavoastră",
     "need_label": "Ce aveți nevoie?",
-    "need_audit": "Audit governance",
-    "need_advisory": "Consultanță strategică",
-    "need_training": "Instruiri și ateliere",
+    "need_audit": "Audit de governance",
+    "need_advisory": "Consiliere strategică",
+    "need_training": "Instruire și ateliere de lucru",
     "need_rating": "Pregătire pentru rating",
-    "region_label": "Regiunea",
-    "submit": "Caută consultant"
+    "region_label": "Regiune",
+    "submit": "Căutați consilier"
   },
   "Advisor": {
     "accredited_by": "Acreditat de Certo",
     "specialization": "Specializare",
     "sectors": "Sectoare",
-    "contact_advisor": "Contacteaza",
-    "view_profile": "Vezi profil"
+    "contact_advisor": "Contactați",
+    "view_profile": "Vedeți profilul"
   },
   "Contact": {
     "title": "Contact",
     "subtitle": "Certo ID PSA",
     "label_address": "Adresă",
     "label_email": "Email",
-    "address": "02-566 Varșovia, ul. Puławska 2B",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Scrie-ne",
+    "form_title": "Scrieți-ne",
     "form_name": "Nume și prenume",
-    "form_email": "Adresă email",
+    "form_email": "Adresă de email",
     "form_subject": "Subiect",
     "form_message": "Mesaj",
     "form_submit": "Trimiteți mesajul",
-    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând posibil.",
-    "subject_general": "Cerere generală",
-    "subject_advisory": "Consultanță",
-    "subject_accreditation": "Acreditare consultant",
-    "subject_cooperation": "Colaborare"
+    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât de curând posibil.",
+    "subject_general": "Solicitare generală",
+    "subject_advisory": "Consiliere",
+    "subject_accreditation": "Acreditare consilier",
+    "subject_cooperation": "Cooperare"
   }
 }

@@ -6,40 +6,40 @@
   "Nav": {
     "advisors": "Consulenti",
     "expertise": "Competenze",
-    "login": "Accesso",
+    "login": "Accedi",
     "contact": "Contatti"
   },
   "Footer": {
-    "description": "Consulenza specialistica in governance aziendale, conformità e sicurezza per i leader di mercato.",
+    "description": "Consulenza esperta in materia di governance aziendale, conformità e sicurezza per i leader di mercato.",
     "ecosystem": "Ecosistema Certo",
     "accreditation": "Tutti i consulenti sono accreditati dalla Fondazione Certo Governance Institute",
     "privacy": "Informativa sulla privacy",
-    "terms": "Termini e condizioni",
+    "terms": "Termini di utilizzo",
     "contact": "Contatti"
   },
   "Home": {
-    "hero_title": "Consulenza specialistica\na livello di consiglio di amministrazione.",
+    "hero_title": "Consulenza esperta\na livello di consiglio direttivo.",
     "hero_subtitle": "Colleghiamo i consulenti accreditati Certo con le istituzioni che richiedono i più alti standard di governance aziendale e conformità normativa.",
     "hero_cta": "Trova un esperto",
-    "finder_title": "Voglio parlare con un esperto di:",
+    "finder_title": "Desidero parlare con un esperto di:",
     "area_health": "Sanità",
     "area_local_gov": "Enti locali",
     "area_defense": "Difesa",
     "area_finance": "Finanze",
     "area_education": "Istruzione",
-    "form_title": "Lascia i tuoi contatti affinché possiamo abbinare il consulente più idoneo nel settore",
+    "form_title": "Lascia i tuoi contatti affinché possiamo trovare il consulente giusto nell'area",
     "form_name": "Nome e cognome",
-    "form_email": "Indirizzo email (istituzionale)",
-    "form_org": "Nome dell'organizzazione / Posizione",
+    "form_email": "Indirizzo email (aziendale)",
+    "form_org": "Nome organizzazione / Posizione",
     "form_submit": "Invia richiesta",
-    "experts_headline": "I nostri esperti aiutano\na mantenere e rafforzare\nil Rating Certo.",
-    "experts_description": "Consulenti accreditati con esperienza pluriennale nell'ottimizzazione dei processi di governance per istituzioni strategiche."
+    "experts_headline": "I nostri esperti ti aiutano\na mantenere e rafforzare\nil Rating Certo.",
+    "experts_description": "Consulenti accreditati con pluriennale esperienza nell'ottimizzazione dei processi di governance per istituzioni strategiche."
   },
   "Legal": {
-    "back": "Torna alla home page",
+    "back": "Torna alla home",
     "last_updated": "Ultimo aggiornamento: Marzo 2026",
     "privacy_title": "Informativa sulla Privacy",
-    "terms_title": "Termini e condizioni di utilizzo"
+    "terms_title": "Condizioni di utilizzo"
   },
   "FindAdvisor": {
     "title": "Trova un consulente Certo",
@@ -47,7 +47,7 @@
     "need_label": "Di che cosa hai bisogno?",
     "need_audit": "Audit di governance",
     "need_advisory": "Consulenza strategica",
-    "need_training": "Corsi e workshop",
+    "need_training": "Formazione e workshop",
     "need_rating": "Preparazione al rating",
     "region_label": "Regione",
     "submit": "Cerca consulente"
@@ -72,7 +72,7 @@
     "form_subject": "Oggetto",
     "form_message": "Messaggio",
     "form_submit": "Invia messaggio",
-    "form_success": "Il messaggio è stato inviato. Risponderemo al più presto possibile.",
+    "form_success": "Il messaggio è stato inviato. Risponderemo il prima possibile.",
     "subject_general": "Richiesta generale",
     "subject_advisory": "Consulenza",
     "subject_accreditation": "Accreditamento consulente",

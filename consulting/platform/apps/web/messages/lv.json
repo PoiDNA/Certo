@@ -1,62 +1,62 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Atrodi Konsultantu",
-    "description": "Akreditēti Certo konsultanti. Korporatīvais pārvaldības un atbilstība."
+    "title": "Certo Consulting — Atrodiet Konsultantu",
+    "description": "Akreditēti Certo konsultanti. Korporatīvais pārvaldības modelis un atbilstība."
   },
   "Nav": {
     "advisors": "Konsultanti",
-    "expertise": "Ekspertīze",
-    "login": "Pieteikšanās",
+    "expertise": "Kompetence",
+    "login": "Pieslēgšanās",
     "contact": "Kontakti"
   },
   "Footer": {
-    "description": "Eksperta konsultācijas korporatīvās vadības, atbilstības un drošības jomā tirgus līderiem.",
+    "description": "Ekspertu konsultācijas korporatīvā pārvaldības modeļa, atbilstības un drošības jomā tirgus līderiem.",
     "ecosystem": "Certo ekosistēma",
-    "accreditation": "Visi konsultanti ir akreditēti Certo Governance Institute Fonda",
+    "accreditation": "Visi konsultanti ir akreditēti Certo Governance Institute fondu",
     "privacy": "Privātuma politika",
-    "terms": "Noteikumi",
+    "terms": "Lietošanas noteikumi",
     "contact": "Kontakti"
   },
   "Home": {
-    "hero_title": "Eksperta konsultācijas\nVadības līmenī.",
-    "hero_subtitle": "Mēs savienojam akreditētus Certo konsultantus ar iestādēm, kurām nepieciešami augstākie korporatīvās vadības un normatīvās atbilstības standarti.",
-    "hero_cta": "Atrodi eksperta",
-    "finder_title": "Es vēlos runāt ar eksperta par:",
+    "hero_title": "Ekspertu konsultācijas\nboard līmeņa.",
+    "hero_subtitle": "Mēs savienojam akreditētus Certo konsultantus ar iestādēm, kurām nepieciešami augstākie korporatīvā pārvaldības modeļa un normatīvās atbilstības standarti.",
+    "hero_cta": "Atrodiet ekspertu",
+    "finder_title": "Vēlos runāt ar ekspertu par:",
     "area_health": "Veselības aprūpe",
     "area_local_gov": "Pašvaldības",
     "area_defense": "Aizsardzība",
     "area_finance": "Finanses",
     "area_education": "Izglītība",
-    "form_title": "Atstāj kontaktu, lai mēs atlasītu atbilstošu konsultantu jomā",
+    "form_title": "Atstājiet kontaktinformāciju, un mēs atlasīsim piemērotu konsultantu no apgabala",
     "form_name": "Vārds un uzvārds",
     "form_email": "E-pasta adrese (darba)",
     "form_org": "Organizācijas nosaukums / Amats",
-    "form_submit": "Nosūtīt pieprasījumu",
+    "form_submit": "Sūtīt pieprasījumu",
     "experts_headline": "Mūsu eksperti palīdz\nsaglabāt un stiprināt\nCerto Rating.",
-    "experts_description": "Akreditēti konsultanti ar daudzgadu pieredzi governance procesu optimizēšanā stratēģiskām iestādēm."
+    "experts_description": "Akreditēti konsultanti ar daudzgadu pieredzi pārvaldības procesu optimizācijā stratēģiskām iestādēm."
   },
   "Legal": {
     "back": "Atgriezties uz sākumu",
-    "last_updated": "Pēdējais atjauninājums: 2026. gada marts",
+    "last_updated": "Pēdējoreiz atjaunināts: 2026. gads, marts",
     "privacy_title": "Privātuma politika",
     "terms_title": "Lietošanas noteikumi"
   },
   "FindAdvisor": {
-    "title": "Atrodi Certo konsultantu",
+    "title": "Atrodiet Certo konsultantu",
     "sector_label": "Jūsu iestādes sektors",
-    "need_label": "Kas tev nepieciešams?",
-    "need_audit": "Governance audits",
+    "need_label": "Ko jums nepieciešams?",
+    "need_audit": "Pārvaldības audits",
     "need_advisory": "Stratēģiskā konsultācija",
     "need_training": "Apmācības un semināri",
-    "need_rating": "Sagatavošana reitingam",
+    "need_rating": "Sagatavošanās reitingam",
     "region_label": "Reģions",
     "submit": "Meklēt konsultantu"
   },
   "Advisor": {
-    "accredited_by": "Akreditēts ar Certo",
+    "accredited_by": "Akreditēts Certo",
     "specialization": "Specializācija",
     "sectors": "Sektori",
-    "contact_advisor": "Sazinieties",
+    "contact_advisor": "Sazinājies",
     "view_profile": "Skatīt profilu"
   },
   "Contact": {
@@ -71,9 +71,9 @@
     "form_email": "E-pasta adrese",
     "form_subject": "Tēma",
     "form_message": "Ziņojums",
-    "form_submit": "Nosūtīt ziņojumu",
-    "form_success": "Ziņojums ir nosūtīts. Mēs atbildēsim tik drīz kā iespējams.",
-    "subject_general": "Vispārējs pieprasījums",
+    "form_submit": "Sūtīt ziņojumu",
+    "form_success": "Ziņojums nosūtīts. Mēs atbildēsim pēc iespējas ātrāk.",
+    "subject_general": "Vispārīgs pieprasījums",
     "subject_advisory": "Konsultācija",
     "subject_accreditation": "Konsultanta akreditācija",
     "subject_cooperation": "Sadarbība"

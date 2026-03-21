@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Nájdi poradcu",
-    "description": "Akreditovaní poradcovia Certo. Správa podnikov a súlad."
+    "title": "Certo Consulting — Nájdite poradcu",
+    "description": "Akreditovaní poradcovia Certo. Podnikové riadenie a súlad."
   },
   "Nav": {
     "advisors": "Poradcovia",
@@ -10,42 +10,42 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Odborné poradenstvo v oblasti správy podnikov, súladu a bezpečnosti pre trhových lídrov.",
+    "description": "Odborné poradenstvo v oblasti podnikového riadenia, súladu a bezpečnosti pre líderov trhu.",
     "ecosystem": "Ekosystém Certo",
-    "accreditation": "Všetci poradcovia sú akreditovaní Nadáciou Certo Governance Institute",
+    "accreditation": "Všetci poradcovia sú akreditovaní Fundáciou Certo Governance Institute",
     "privacy": "Politika ochrany osobných údajov",
     "terms": "Podmienky používania",
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Odborné poradenstvo\nna úrovni správy.",
-    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami vyžadujúcimi najvyšších štandardov správy podnikov a regulačnej zhody.",
-    "hero_cta": "Nájdi experta",
-    "finder_title": "Chcem si popovedať s expertom na:",
+    "hero_title": "Odborné poradenstvo\nna úrovni vedenia.",
+    "hero_subtitle": "Spájame akreditovaných poradcov Certo s inštitúciami, ktoré vyžadujú najvyššie štandardy podnikového riadenia a regulačného súladu.",
+    "hero_cta": "Nájdite experta",
+    "finder_title": "Chcem hovoriť s odborníkom v oblasti:",
     "area_health": "Zdravotníctvo",
-    "area_local_gov": "Samospráva",
+    "area_local_gov": "Miestna správa",
     "area_defense": "Obrana",
     "area_finance": "Financie",
     "area_education": "Vzdelávanie",
-    "form_title": "Zanechaj kontakt, aby sme ti vybrali vhodného poradcu z oblasti",
+    "form_title": "Zanechajte kontakt, aby sme vám vybrali vhodného poradcu z oblasti",
     "form_name": "Meno a priezvisko",
-    "form_email": "Pracovný e-mail",
+    "form_email": "E-mailová adresa (pracovná)",
     "form_org": "Názov organizácie / Pozícia",
-    "form_submit": "Odoslať dopyt",
-    "experts_headline": "Naši experti pomáhajú\nuchováť a posilniť\nRating Certo.",
-    "experts_description": "Akreditovaní poradcovia s dlhoročnými skúsenosťami v optimalizácii procesov správy pre strategické inštitúcie."
+    "form_submit": "Poslať dopyt",
+    "experts_headline": "Naši experti vám pomáhajú\nzachovať a posilniť\nCerto Rating.",
+    "experts_description": "Akreditovaní poradcovia s dlhoročnými skúsenosťami pri optimalizácii procesov podnikového riadenia pre strategické inštitúcie."
   },
   "Legal": {
-    "back": "Späť na úvodnú stránku",
+    "back": "Vrátiť sa na úvodnú stránku",
     "last_updated": "Posledná aktualizácia: Marec 2026",
     "privacy_title": "Politika ochrany osobných údajov",
     "terms_title": "Podmienky používania"
   },
   "FindAdvisor": {
-    "title": "Nájdi poradcu Certo",
+    "title": "Nájdite poradcu Certo",
     "sector_label": "Sektor vašej inštitúcie",
-    "need_label": "Čo potrebuješ?",
-    "need_audit": "Audit správy",
+    "need_label": "Čo potrebujete?",
+    "need_audit": "Audit podnikového riadenia",
     "need_advisory": "Strategické poradenstvo",
     "need_training": "Školenia a workshopy",
     "need_rating": "Príprava na rating",
@@ -53,11 +53,11 @@
     "submit": "Hľadať poradcu"
   },
   "Advisor": {
-    "accredited_by": "Akreditovaný Certo",
+    "accredited_by": "Akreditovaný spoločnosťou Certo",
     "specialization": "Špecializácia",
     "sectors": "Sektory",
-    "contact_advisor": "Kontaktuj ma",
-    "view_profile": "Pozri si profil"
+    "contact_advisor": "Kontaktujte",
+    "view_profile": "Zobraziť profil"
   },
   "Contact": {
     "title": "Kontakt",
@@ -66,12 +66,12 @@
     "label_email": "E-mail",
     "address": "02-566 Varšava, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Napíš nám",
+    "form_title": "Napíšte nám",
     "form_name": "Meno a priezvisko",
     "form_email": "E-mailová adresa",
     "form_subject": "Predmet",
     "form_message": "Správa",
-    "form_submit": "Odoslať správu",
+    "form_submit": "Poslať správu",
     "form_success": "Správa bola odoslaná. Odpovieme čo najskôr.",
     "subject_general": "Všeobecný dopyt",
     "subject_advisory": "Poradenstvo",

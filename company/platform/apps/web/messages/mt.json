@@ -1,19 +1,19 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifikazzjoni tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
+    "description": "Verifika tal-identità u compliance għal istituzzjonijiet pubbliċi u korporazzjonijiet."
   },
   "Nav": {
     "solutions": "Soluzzjonijiet",
     "technology": "Teknoloġija",
     "foundation": "Fundazzjoni Certo",
-    "login": "Dħul",
+    "login": "Dħol",
     "contact": "Kontatt"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika tal-Privatezza",
-    "terms": "Kundizzjonijiet tal-Servizz",
+    "terms": "Kundizzjonijiet tas-Servizz",
     "contact": "Kontatt"
   },
   "Contact": {
@@ -23,16 +23,16 @@
     "label_email": "Email",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Iktibna lina",
+    "form_title": "Iktibli lilna",
     "form_name": "Isem u Kunjom",
-    "form_email": "Indirizz tal-email",
+    "form_email": "Indirizz email",
     "form_subject": "Suġġett",
     "form_message": "Messaġġ",
     "form_submit": "Ibgħat il-messaġġ",
-    "form_success": "Il-messaġġ ġie mibgħut. Se nwieldu malajr kemm jista' jkun.",
-    "subject_general": "Mistoqsija ġenerali",
+    "form_success": "Il-messaġġ ġie mibgħut. Se nwieġbuk malajr kemm jista'.",
+    "subject_general": "Mistoqsija Ġenerali",
     "subject_implementation": "Implimentazzjoni",
-    "subject_technical": "Sapport Tekniku",
+    "subject_technical": "Appoġġ Tekniku",
     "subject_cooperation": "Kooperazzjoni"
   },
   "Home": {
@@ -40,47 +40,47 @@
     "hero_line1": "Identità.",
     "hero_line2": "Konformità.",
     "hero_line3": "Ċertezza.",
-    "hero_description": "Infrastruttura tal-verifikazzjoni u compliance għal istituzzjonijiet pubbliċi, korporazzjonijiet u entitajiet regolati. Mibnija fuq l-istandards ta'",
+    "hero_description": "Infrastruttura tal-verifika u compliance għal istituzzjonijiet pubbliċi, korporazzjonijiet u entitajiet regolati. Mibnija fuq l-istandards",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "IBDA' L-IMPLIMENTAZZJONI",
     "cta_secondary": "SERVIZZI",
     "services_label": "SERVIZZI",
-    "services_title": "Tliet livelli tal-infrastruttura compliance",
-    "service1_title": "Verifikazzjoni tal-Identità",
-    "service1_desc": "KYC/AML għal entitajiet regolati. Verifikazzjoni awtomatika ta' dokumenti, screening ta' sanzzjonijiet u PEP, integrazzjoni ma' reġistri statali.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring awtomatiku tal-konformità bbażat fuq il-metodoloġija ta' Certo Governance Institute. Sistema ta' valutazzjoni b'ħamsa stadji b'trail ta' awditija kompletu.",
+    "services_title": "Tliet saffi tal-infrastruttura tal-compliance",
+    "service1_title": "Verifika tal-Identità",
+    "service1_desc": "KYC/AML għal entitajiet regolati. Verifika awtomatika ta' dokumenti, screening ta' sanzzjonijiet u PEP, integrazzjoni mar-reġistri statali.",
+    "service2_title": "Rating ta' Compliance",
+    "service2_desc": "Ikkwotazzjoni awtomatika tal-konformità bbażata fuq il-metodoloġija tal-Certo Governance Institute. Sistema tal-valutazzjoni b'ħamsa livelli b'mogħdija sħiħa ta' awdit.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Pjanijiet ta' rimedju awtomatiċi u monitoraġġ tal-implimentazzjoni tagħhom. Integrazzjoni ma' sistemi ERP, GRC u pjattaformi ta' ġestjoni tar-riskju.",
+    "service3_desc": "Pjani ta' rimedjaturi awtomatiċi u monitoraġġ tal-implimentazzjoni tagħhom. Integrazzjoni mas-sistemi ERP, GRC u pjattaformi tal-ġestjoni tar-riskju.",
     "arch_label": "ARKITETTURA",
     "arch_title": "Kif taħdem Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Data tal-entità + dokumenti + kuntest regolatorju",
     "step2_title": "Verify",
-    "step2_desc": "Verifikazzjoni tal-identità, screening, reġistru pubbliku",
+    "step2_desc": "Verifika tal-identità, screening, reġistru pubbliku",
     "step3_title": "Score",
     "step3_desc": "Rating awtomatiku tal-konformità Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Rapport PDF + API + dashboard Certo Online",
     "badge_iso": "Istandards ISO",
     "badge_compliance": "Konformità regolatorja",
-    "badge_kyc": "Verifikazzjoni tal-identità",
-    "badge_governance": "Valutazzjoni governance"
+    "badge_kyc": "Verifika tal-identità",
+    "badge_governance": "Valutazzjoni tal-governance"
   },
   "Legal": {
-    "back": "Irġa' lura għall-paġna prinsipali",
+    "back": "Irġa' l-paġna ewlenija",
     "last_updated": "Aħħar aġġornament: Marzu 2026",
     "privacy_title": "Politika tal-Privatezza",
-    "terms_title": "Kundizzjonijiet tal-Servizz"
+    "terms_title": "Kundizzjonijiet tas-Servizz"
   },
   "Dashboard": {
     "title": "Panel Certo ID",
     "welcome": "Merħba, {name}",
-    "your_rating": "Your Rating Certo",
-    "your_delegates": "Your Certo Delegate",
-    "your_accords": "Your Certo Accord",
-    "recent_activity": "Attività riċenti",
-    "quick_actions": "Azzjonijiet mabegħula"
+    "your_rating": "Rating Certo Tiegħek",
+    "your_delegates": "Delegati Tiegħek",
+    "your_accords": "Certo Accord Tiegħek",
+    "recent_activity": "Attività Riċenti",
+    "quick_actions": "Azzjonijiet Veloċi"
   },
   "Profile": {
     "title": "Profil",
@@ -88,10 +88,10 @@
     "contact_person": "Persuna ta' Kontatt",
     "sector": "Settur",
     "edit_profile": "Edita l-profil",
-    "verified_badge": "Entità verifikata"
+    "verified_badge": "Entità Verifika"
   },
   "Delegates": {
-    "title": "Certo Delegate",
+    "title": "Delegati Certo",
     "add_delegate": "Żid delegat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Status",

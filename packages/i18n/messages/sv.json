@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrningen i offentliga, företags- och ideella institutioner."
+    "description": "Oberoende ratingorgan som bedömer kvaliteten på styrningen av offentliga, privata och ideella organisationer."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,7 +18,7 @@
     "logout": "Logga ut",
     "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor",
-    "loading": "Läser in...",
+    "loading": "Laddar...",
     "error": "Ett fel uppstod",
     "save": "Spara",
     "cancel": "Avbryt",
@@ -27,7 +27,7 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ner",
+    "download": "Ladda ned",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Sidan hittades inte",
-    "404_description": "Sidan du söker efter finns inte eller har flyttats.",
+    "404_description": "Sidan du letar efter existerar inte eller har flyttats.",
     "500_title": "Serverfel",
     "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
-    "unauthorized": "Ingen åtkomst. Logga in för att fortsätta."
+    "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."
   },
   "Footer": {
     "rights": "Alla rättigheter förbehållna",

@@ -1,39 +1,39 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Leidke nõustaja",
-    "description": "Certo akrediteeritud nõustajad. Corporate Governance ja nõuetele vastavus."
+    "title": "Certo Consulting — Leia Nõunik",
+    "description": "Certo akrediteeritud nõunikud. Ettevõtte valitsemine ja vastavus."
   },
   "Nav": {
-    "advisors": "Nõustajad",
-    "expertise": "Teadus",
+    "advisors": "Nõunikud",
+    "expertise": "Ekspertiis",
     "login": "Sisselogimine",
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Ekspertne nõustamine corporate governance'i, nõuetele vastavuse ja turvalisuse alal turuliidrite jaoks.",
+    "description": "Ekspertne nõustamine ettevõtte valitsemise, vastavuse ja turvalisuse alal turujuhtidele.",
     "ecosystem": "Certo ökosüsteem",
-    "accreditation": "Kõik nõustajad on akrediteeritud Certo Governance Institute'i poolt",
+    "accreditation": "Kõik nõunikud on akrediteeritud Certo Governance Institute'i poolt",
     "privacy": "Privaatsuspoliitika",
     "terms": "Kasutustingimused",
     "contact": "Kontakt"
   },
   "Home": {
     "hero_title": "Ekspertne nõustamine\njuhatuse tasandil.",
-    "hero_subtitle": "Ühendame Certo akrediteeritud nõustajad institutsioonidega, kes nõuavad corporate governance'i ja reguleerimisele vastavuse kõrgeimaid standardeid.",
-    "hero_cta": "Leidke ekspert",
+    "hero_subtitle": "Ühendame Certo akrediteeritud nõunikud institutsioonidega, kes vajavad kõrgeimaid ettevõtte valitsemise ja regulatiivse vastavuse standardeid.",
+    "hero_cta": "Leia ekspert",
     "finder_title": "Tahan rääkida ekspertiga, kes spetsialiseerub:",
-    "area_health": "Tervishoiuteenused",
+    "area_health": "Tervishoiu sektor",
     "area_local_gov": "Kohalikud omavalitsused",
     "area_defense": "Kaitse",
-    "area_finance": "Finantsteenused",
+    "area_finance": "Finantssüsteem",
     "area_education": "Haridus",
-    "form_title": "Jätke oma kontaktandmed, et saaksime valida sobiva nõustaja valdkonnast",
-    "form_name": "Nimi",
-    "form_email": "E-posti aadress (ametlik)",
-    "form_org": "Organisatsiooni nimi / Ametikoht",
+    "form_title": "Jäta oma kontaktandmed, et saaksime sulle sobiva nõuniku valida alalt",
+    "form_name": "Ees- ja perekonnanimi",
+    "form_email": "Meiliaadress (ametlik)",
+    "form_org": "Organisatsiooni nimi / Ametinimetus",
     "form_submit": "Saada päring",
-    "experts_headline": "Meie eksperdid aitavad\nsäilitada ja tugevdada\nCerto Rating'ut.",
-    "experts_description": "Akrediteeritud nõustajad, kellel on pikaajaline kogemus governance'i protsesside optimeerimisel strateegiliste institutsioonide jaoks."
+    "experts_headline": "Meie eksperdid aitavad\nsäilitada ja tugevdada\nCerto Ratingut.",
+    "experts_description": "Akrediteeritud nõunikud, kellel on mitmeaastane kogemus valitsemisprotsesside optimeerimisel strateegiliste institutsioonide jaoks."
   },
   "Legal": {
     "back": "Tagasi avalehele",
@@ -42,15 +42,15 @@
     "terms_title": "Kasutustingimused"
   },
   "FindAdvisor": {
-    "title": "Leidke Certo nõustaja",
-    "sector_label": "Teie institutsiooni sektor",
-    "need_label": "Mida te vajate?",
-    "need_audit": "Governance'i audit",
+    "title": "Leia Certo nõunik",
+    "sector_label": "Sinu institutsiooni sektor",
+    "need_label": "Mida sa vajad?",
+    "need_audit": "Valitsemise audit",
     "need_advisory": "Strateegiline nõustamine",
     "need_training": "Koolitused ja töötoad",
-    "need_rating": "Ratinguks ettevalmistamine",
+    "need_rating": "Ettevalmistus ratingule",
     "region_label": "Piirkond",
-    "submit": "Otsi nõustajat"
+    "submit": "Otsi nõunikku"
   },
   "Advisor": {
     "accredited_by": "Akrediteeritud Certo poolt",
@@ -63,19 +63,19 @@
     "title": "Kontakt",
     "subtitle": "Certo ID PSA",
     "label_address": "Aadress",
-    "label_email": "E-post",
-    "address": "02-566 Varssavi, Puławska 2B",
+    "label_email": "E-paigas",
+    "address": "02-566 Varssavi, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Kirjuta meile",
-    "form_name": "Nimi",
-    "form_email": "E-posti aadress",
+    "form_name": "Ees- ja perekonnanimi",
+    "form_email": "Meiliaadress",
     "form_subject": "Teema",
     "form_message": "Sõnum",
     "form_submit": "Saada sõnum",
-    "form_success": "Sõnum on saadetud. Vastame nii pea kui võimalik.",
+    "form_success": "Sõnum on saadetud. Vastame esimesel võimalusel.",
     "subject_general": "Üldine päring",
     "subject_advisory": "Nõustamine",
-    "subject_accreditation": "Nõustaja akrediteerimine",
+    "subject_accreditation": "Nõuniku akrediteerimine",
     "subject_cooperation": "Koostöö"
   }
 }

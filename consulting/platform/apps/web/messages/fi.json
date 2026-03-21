@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Etsi neuvonantaja",
-    "description": "Certon akkreditoidut neuvonantajat. Corporate Governance ja vaatimuksenmukaisuus."
+    "description": "Certo:n akkreditoidut neuvonantajat. Hallinnon laatu ja vaatimustenmukaisuus."
   },
   "Nav": {
     "advisors": "Neuvonantajat",
@@ -10,30 +10,30 @@
     "contact": "Yhteydenotto"
   },
   "Footer": {
-    "description": "Asiantunteva neuvonta corporate governancen, vaatimuksenmukaisuuden ja turvallisuuden alalla markkinajohtajille.",
+    "description": "Asiantunteva neuvonta hallinnon laadusta, vaatimustenmukaisuudesta ja turvallisuudesta markkinajohtajille.",
     "ecosystem": "Certo-ekosysteemi",
-    "accreditation": "Kaikki neuvonantajat ovat akkreditoituja Certo Governance Instituten toimesta",
+    "accreditation": "Kaikki neuvonantajat ovat akkreditoituja Certo Governance Institute -säätiön toimesta",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
     "contact": "Yhteydenotto"
   },
   "Home": {
-    "hero_title": "Asiantunteva neuvonta\njohtotason tasolla.",
-    "hero_subtitle": "Yhdistämme Certon akkreditoidut neuvonantajat instituutioihin, jotka vaativat korkeimpia corporate governance- ja sääntelystandardeja.",
+    "hero_title": "Asiantunteva neuvonta\njohtamisen tasolla.",
+    "hero_subtitle": "Yhdistämme Certo:n akkreditoidut neuvonantajat instituutioihin, jotka vaativat korkeimpia hallinnon laadun ja sääntelystenvahingon standardeja.",
     "hero_cta": "Etsi asiantuntija",
     "finder_title": "Haluan keskustella asiantuntijan kanssa aiheesta:",
     "area_health": "Terveydenhuolto",
-    "area_local_gov": "Kunnat",
+    "area_local_gov": "Kunnat ja kuntayhtymät",
     "area_defense": "Puolustus",
     "area_finance": "Rahoitus",
     "area_education": "Koulutus",
-    "form_title": "Jätä yhteystietosi, jotta voimme valita sopivan neuvonantajan alalta",
-    "form_name": "Nimi",
-    "form_email": "Sähköpostiosoite (työpaikka)",
+    "form_title": "Jätä yhteystietosi, jotta voimme valita sopivan neuvonantajan alueelta",
+    "form_name": "Etunimi ja sukunimi",
+    "form_email": "Sähköpostiosoite (työposti)",
     "form_org": "Organisaation nimi / Asema",
     "form_submit": "Lähetä kysely",
-    "experts_headline": "Asiantuntijamme auttavat\nsäilyttämään ja vahvistamaan\nCerto Rating -arviota.",
-    "experts_description": "Akkreditoidut neuvonantajat, joilla on useiden vuosien kokemus governance-prosessien optimoinnista strategisille instituutioille."
+    "experts_headline": "Asiantuntijamme auttavat\nsäilyttämään ja vahvistamaan\nCerto Ratingiaan.",
+    "experts_description": "Akkreditoidut neuvonantajat, joilla on vuosien kokemus hallinnon prosessien optimoinnista strategisissa instituutioissa."
   },
   "Legal": {
     "back": "Takaisin etusivulle",
@@ -42,19 +42,19 @@
     "terms_title": "Käyttöehdot"
   },
   "FindAdvisor": {
-    "title": "Etsi Certon neuvonantaja",
-    "sector_label": "Instituutiosi sektori",
+    "title": "Etsi Certo-neuvonantaja",
+    "sector_label": "Organisaatiosi sektori",
     "need_label": "Mitä tarvitset?",
-    "need_audit": "Governance-auditointi",
+    "need_audit": "Hallinnon auditointi",
     "need_advisory": "Strateginen neuvonta",
-    "need_training": "Koulutus ja työpajat",
-    "need_rating": "Valmistautuminen arviointiin",
+    "need_training": "Koulutukset ja työpajat",
+    "need_rating": "Valmistautuminen ratingiin",
     "region_label": "Alue",
     "submit": "Etsi neuvonantaja"
   },
   "Advisor": {
-    "accredited_by": "Akkreditoitu Certon toimesta",
-    "specialization": "Erikoistuminen",
+    "accredited_by": "Akkreditoitu Certion toimesta",
+    "specialization": "Erikoistumisala",
     "sectors": "Sektorit",
     "contact_advisor": "Ota yhteyttä",
     "view_profile": "Näytä profiili"
@@ -67,13 +67,13 @@
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Kirjoita meille",
-    "form_name": "Nimi",
+    "form_name": "Etunimi ja sukunimi",
     "form_email": "Sähköpostiosoite",
     "form_subject": "Aihe",
     "form_message": "Viesti",
     "form_submit": "Lähetä viesti",
     "form_success": "Viesti on lähetetty. Vastaamme mahdollisimman pian.",
-    "subject_general": "Yleinen kysymys",
+    "subject_general": "Yleinen kysely",
     "subject_advisory": "Neuvonta",
     "subject_accreditation": "Neuvonantajan akkreditointi",
     "subject_cooperation": "Yhteistyö"

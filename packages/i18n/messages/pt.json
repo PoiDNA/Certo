@@ -16,8 +16,8 @@
     "delegate": "Certo Delegate",
     "login": "Faça login",
     "logout": "Sair",
-    "privacyPolicy": "Política de privacidade",
-    "termsOfUse": "Termos de uso",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso",
     "loading": "Carregando...",
     "error": "Ocorreu um erro",
     "save": "Salvar",
@@ -33,7 +33,7 @@
     "inactive": "Inativo"
   },
   "Navigation": {
-    "home": "Página inicial",
+    "home": "Página Inicial",
     "ratings": "Classificações",
     "reports": "Relatórios",
     "analysis": "Análises",
@@ -44,7 +44,7 @@
   },
   "Auth": {
     "login_title": "Faça login",
-    "login_subtitle": "Faça login na sua conta",
+    "login_subtitle": "Faça login em sua conta",
     "login_with_google": "Faça login com Google",
     "email_label": "Endereço de e-mail",
     "password_label": "Senha",
@@ -54,15 +54,15 @@
   },
   "Errors": {
     "404_title": "Página não encontrada",
-    "404_description": "A página que você procura não existe ou foi movida.",
+    "404_description": "A página que você está procurando não existe ou foi movida.",
     "500_title": "Erro do servidor",
     "500_description": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
     "unauthorized": "Acesso negado. Faça login para continuar."
   },
   "Footer": {
     "rights": "Todos os direitos reservados",
-    "privacy": "Política de privacidade",
-    "terms": "Termos de uso",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
     "contact": "Contato"
   }
 }

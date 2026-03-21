@@ -8,56 +8,56 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ de rating independent care evaluează calitatea lade de conducere al instituțiilor publice, corporative și neguvernamentale."
+    "description": "Organ de rating independent care evaluează calitatea managementului instituțiilor publice, corporative și nonprofit."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Conectați-vă",
-    "logout": "Deconectați-vă",
+    "login": "Conectare",
+    "logout": "Deconectare",
     "privacyPolicy": "Politica de confidențialitate",
     "termsOfUse": "Condiții de utilizare",
-    "loading": "Încărcare...",
+    "loading": "Se încarcă...",
     "error": "A apărut o eroare",
-    "save": "Salvați",
-    "cancel": "Anulați",
-    "confirm": "Confirmați",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "confirm": "Confirmă",
     "back": "Înapoi",
     "next": "Următorul",
-    "close": "Închideți",
-    "search": "Căutați",
-    "download": "Descărcați",
+    "close": "Închide",
+    "search": "Caută",
+    "download": "Descarcă",
     "verified": "Verificat",
     "active": "Activ",
     "inactive": "Inactiv"
   },
   "Navigation": {
     "home": "Pagina principală",
-    "ratings": "Ratinguri",
+    "ratings": "Rating-uri",
     "reports": "Rapoarte",
     "analysis": "Analize",
     "about": "Despre Fundație",
     "contact": "Contact",
-    "dashboard": "Panou de control",
+    "dashboard": "Tablou de bord",
     "settings": "Setări"
   },
   "Auth": {
-    "login_title": "Conectați-vă",
-    "login_subtitle": "Conectați-vă la contul dumneavoastră",
-    "login_with_google": "Conectați-vă prin Google",
-    "email_label": "Adresă de e-mail",
+    "login_title": "Conectare",
+    "login_subtitle": "Conectează-te la contul tău",
+    "login_with_google": "Conectare prin Google",
+    "email_label": "Adresa de e-mail",
     "password_label": "Parolă",
-    "forgot_password": "Ați uitat parola?",
-    "no_account": "Nu aveți cont?",
-    "register": "Înregistrați-vă"
+    "forgot_password": "Ai uitat parola?",
+    "no_account": "Nu ai un cont?",
+    "register": "Înregistrează-te"
   },
   "Errors": {
     "404_title": "Pagina nu a fost găsită",
-    "404_description": "Pagina pe care o căutați nu există sau a fost mutată.",
+    "404_description": "Pagina pe care o cauți nu există sau a fost mutată.",
     "500_title": "Eroare de server",
-    "500_description": "A apărut o eroare neașteptată. Încercați din nou mai târziu.",
-    "unauthorized": "Acces refuzat. Conectați-vă pentru a continua."
+    "500_description": "A apărut o eroare neașteptată. Încearcă din nou mai târziu.",
+    "unauthorized": "Acces refuzat. Conectează-te pentru a continua."
   },
   "Footer": {
     "rights": "Toate drepturile rezervate",

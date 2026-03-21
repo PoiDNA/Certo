@@ -25,12 +25,12 @@
     "confirm": "Potvrdiť",
     "back": "Späť",
     "next": "Ďalej",
-    "close": "Zavrieť",
+    "close": "Zatvoriť",
     "search": "Hľadať",
     "download": "Stiahnuť",
-    "verified": "Overené",
-    "active": "Aktívne",
-    "inactive": "Neaktívne"
+    "verified": "Overený",
+    "active": "Aktívny",
+    "inactive": "Neaktívny"
   },
   "Navigation": {
     "home": "Domovská stránka",
@@ -46,18 +46,18 @@
     "login_title": "Prihlásiť sa",
     "login_subtitle": "Prihláste sa do svojho konta",
     "login_with_google": "Prihlásiť sa cez Google",
-    "email_label": "Emailová adresa",
+    "email_label": "E-mailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zabudli ste heslo?",
     "no_account": "Nemáte konto?",
-    "register": "Registrácia"
+    "register": "Zaregistrujte sa"
   },
   "Errors": {
     "404_title": "Stránka nebola nájdená",
-    "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
+    "404_description": "Stránka ktorú hľadáte neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
-    "500_description": "Vyskytla sa neočakávaná chyba. Skúste neskôr.",
-    "unauthorized": "Prístup bol zamietnutý. Prihláste sa, aby ste pokračovali."
+    "500_description": "Vyskytla sa neočakávaná chyba. Skúste znova neskôr.",
+    "unauthorized": "Prístup bol odmietnutý. Prihláste sa, aby ste pokračovali."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",

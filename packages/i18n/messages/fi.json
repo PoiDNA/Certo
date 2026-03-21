@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja kansalaisjärjestöjen hallintokäytäntöjen laatua."
+    "description": "Riippumaton ratinglaitos, joka arvioi julkisten, yritys- ja voittoa tavoittelemattomien organisaatioiden hallinnon laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -34,12 +34,12 @@
   },
   "Navigation": {
     "home": "Etusivu",
-    "ratings": "Luokitukset",
+    "ratings": "Ratingit",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Tietoa Säätiöstä",
-    "contact": "Yhteystiedot",
-    "dashboard": "Hallintapaneeli",
+    "about": "Säätiöstä",
+    "contact": "Yhteydenotto",
+    "dashboard": "Koontinäyttö",
     "settings": "Asetukset"
   },
   "Auth": {
@@ -54,15 +54,15 @@
   },
   "Errors": {
     "404_title": "Sivua ei löytynyt",
-    "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
+    "404_description": "Etsimäsi sivu ei ole olemassa tai se on siirretty.",
     "500_title": "Palvelinvirhe",
-    "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
-    "unauthorized": "Ei pääsyä. Kirjaudu sisään jatkaaksesi."
+    "500_description": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
+    "unauthorized": "Sinulla ei ole käyttöoikeutta. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Yhteystiedot"
+    "contact": "Yhteydenotto"
   }
 }
