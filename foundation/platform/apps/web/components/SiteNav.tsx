@@ -6,8 +6,9 @@ import { usePathname } from 'next/navigation';
 import LocaleSwitcher from './LocaleSwitcher';
 
 const links = [
-  { href: '/ratings', key: 'ratings' as const },
-  { href: '/methodology', key: 'methodology' as const },
+  { href: '/ratings', key: 'rating' as const },
+  { href: '/pilot', key: 'pilot' as const },
+  { href: '/experts', key: 'experts' as const },
   { href: '/about', key: 'about' as const },
   { href: '/contact', key: 'contact' as const },
 ];

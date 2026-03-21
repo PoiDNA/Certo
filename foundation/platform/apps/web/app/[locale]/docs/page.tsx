@@ -43,7 +43,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const company = docs.filter(d => d.entity === "company");
 
   return (
-    <div className="py-12">
+    <div className="py-12 max-w-6xl mx-auto px-6">
       <div className="mb-12 border-b border-certo-gold/30 pb-6">
         <h2 className="text-3xl font-serif font-bold text-certo-navy tracking-tight">Dokumentacja Sprint 0</h2>
         <p className="mt-2 text-md text-certo-navy/70 max-w-2xl">

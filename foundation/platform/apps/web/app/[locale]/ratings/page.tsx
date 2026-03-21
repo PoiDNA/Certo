@@ -1,43 +1,68 @@
-import { notFound } from 'next/navigation';
-import { getMdxContent, getMdxFrontmatter } from '@/lib/mdx';
 import { locales } from '@certo/i18n/config';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import { setRequestLocale } from 'next-intl/server';
+import ScoreExplainer from '../../../components/rating/ScoreExplainer';
+import PillarsSection from '../../../components/rating/PillarsSection';
+import DeFactoSection from '../../../components/rating/DeFactoSection';
+import SectorsSection from '../../../components/rating/SectorsSection';
+import StandardsSection from '../../../components/rating/StandardsSection';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const fm = getMdxFrontmatter('ratings', locale);
+  const t = await getTranslations({ locale, namespace: 'Rating' });
   return {
-    title: fm?.title ?? 'Ratingi Certo',
-    description: fm?.description,
+    title: t('title'),
+    description: t('subtitle'),
     alternates: {
       canonical: `https://certogov.org/${locale}/ratings`,
     },
   };
 }
 
-export default async function RatingsPage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function RatingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const mdx = await getMdxContent('ratings', locale);
-  if (!mdx) notFound();
+  const t = await getTranslations({ locale, namespace: 'Rating' });
 
   return (
-    <article className="prose prose-certo max-w-4xl mx-auto py-12 px-2">
-      {mdx.content}
-    </article>
+    <div className="w-full">
+      {/* Header */}
+      <section className="py-20 md:py-28 bg-certo-navy text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-6 font-medium">
+            Certo Governance Institute
+          </p>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream mb-6">
+            {t('title')}
+          </h1>
+          <p className="text-lg text-certo-cream/70 max-w-2xl mx-auto">
+            {t('subtitle')}
+          </p>
+        </div>
+      </section>
+
+      {/* Content */}
+      <section className="max-w-5xl mx-auto px-6 py-16 md:py-24">
+        <ScoreExplainer />
+        <PillarsSection />
+        <DeFactoSection />
+        <SectorsSection />
+        <StandardsSection />
+
+        {/* Certo Accord */}
+        <div className="bg-certo-gold/5 border-l-4 border-certo-gold p-8">
+          <h2 className="text-2xl font-serif font-bold text-certo-navy mb-3">
+            {t('accord_title')}
+          </h2>
+          <p className="text-sm text-certo-navy/70 leading-relaxed">
+            {t('accord_desc')}
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }

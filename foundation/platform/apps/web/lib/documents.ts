@@ -3,11 +3,26 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-// Supabase client (server-side)
-export const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_KEY!
-);
+// Supabase client (server-side, lazy init)
+let _supabase: ReturnType<typeof createClient> | null = null;
+
+export function getSupabase() {
+  if (_supabase) return _supabase;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_KEY;
+  if (!url || !key) {
+    throw new Error('Supabase env vars not configured');
+  }
+  _supabase = createClient(url, key);
+  return _supabase;
+}
+
+// Backward compat — lazy getter
+export const supabase = new Proxy({} as ReturnType<typeof createClient>, {
+  get(_target, prop) {
+    return (getSupabase() as any)[prop];
+  },
+});
 
 // Document types
 export interface CertoDocument {

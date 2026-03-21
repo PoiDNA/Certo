@@ -34,3 +34,37 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: rgba(26, 39, 68, 0.8); font-style: italic; }
 .prose a { color: var(--color-certo-gold); text-decoration: none; font-weight: 500; }
 .prose a:hover { text-decoration: underline; }
+
+/* Scroll reveal animations */
+.reveal-base {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fixed background parallax-lite */
+.bg-fixed-cover {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* iOS Safari: bg-fixed doesn't work on touch devices */
+@media (hover: none) {
+  .bg-fixed-cover {
+    background-attachment: scroll;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-base {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
