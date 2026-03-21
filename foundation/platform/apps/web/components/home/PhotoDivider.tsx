@@ -9,7 +9,7 @@ export default function PhotoDivider({
 }) {
   return (
     <div
-      className={`w-full ${height} bg-fixed-cover relative overflow-hidden`}
+      className={`w-full ${height} bg-fixed-cover relative overflow-hidden hidden md:block`}
       style={imageUrl ? { backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
       role="img"
       aria-label={alt}
