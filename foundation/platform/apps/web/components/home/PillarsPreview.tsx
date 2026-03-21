@@ -40,7 +40,7 @@ export default function PillarsPreview() {
               <div className={`w-10 h-10 ${color} rounded-sm flex items-center justify-center text-white text-sm font-bold mb-4`}>
                 {weight}%
               </div>
-              <h3 className="font-serif font-extrabold text-certo-navy text-lg md:text-xl mb-2">
+              <h3 className="font-serif font-extrabold text-certo-navy text-2xl md:text-xl mb-2">
                 {t(`pillar_${key}_name`)}
               </h3>
               <p className="text-xs text-certo-navy/60 leading-relaxed">
