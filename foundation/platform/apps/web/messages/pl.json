@@ -89,7 +89,8 @@
   "About": {
     "title": "O Fundacji Certo Governance Institute",
     "mission_title": "Misja",
-    "mission_text": "Budujemy kulturę dobrego zarządzania poprzez niezależną ocenę i promowanie standardów governance w Polsce i Europie. Wierzymy, że prawo do życia w społeczeństwie zarządzanym uczciwie, przejrzyście i kompetentnie jest prawem fundamentalnym.",
+    "mission_text_1": "Budujemy kulturę dobrego zarządzania poprzez niezależną ocenę i promowanie standardów governance w Europie.",
+    "mission_text_2": "Wierzymy, że prawo do życia w społeczeństwie zarządzanym uczciwie, przejrzyście i kompetentnie jest prawem fundamentalnym.",
     "structure_title": "Struktura organizacyjna",
     "organs_label": "Organy Fundacji",
     "organ_supervisory_name": "Izba Nadzoru Certo",

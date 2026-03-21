@@ -89,7 +89,6 @@
   "About": {
     "title": "Om Stiftelsen Certo Governance Institute",
     "mission_title": "Uppdrag",
-    "mission_text": "Vi bygger en kultur av god styrning genom oberoende bedömning och främjande av styrningsstandarder i Polen och Europa. Vi tror att rätten att leva i ett samhälle som styrs ärligt, transparent och kompetent är en grundläggande rättighet.",
     "structure_title": "Organisationsstruktur",
     "organ_board_name": "Styrelsen",
     "organ_board_role": "Verkställande organ — leder den löpande verksamheten, företräder Stiftelsen externt, förverkligar de stadgeenliga målen.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Rådet",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Vi bygger en kultur av god styrning genom oberoende bedömning och främjande av styrningsstandarder i Europa.",
+    "mission_text_2": "Vi tror att rätten att leva i ett samhälle som styrs ärligt, transparent och kompetent är en grundläggande rättighet."
   },
   "Contact": {
     "title": "Kontakt",

@@ -89,7 +89,6 @@
   "About": {
     "title": "Über die Stiftung Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "Wir bauen eine Kultur guter Governance durch unabhängige Bewertung und Förderung von Governance-Standards in Polen und Europa auf. Wir glauben, dass das Recht, in einer ehrlich, transparent und kompetent geführten Gesellschaft zu leben, ein Grundrecht ist.",
     "structure_title": "Organisationsstruktur",
     "organ_board_name": "Stiftungsvorstand",
     "organ_board_role": "Geschäftsführendes Organ — leitet die laufenden Geschäfte, vertritt die Stiftung nach außen, setzt die satzungsgemäßen Ziele um.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Rat",
     "organ_council_role": "Ständiges sektorübergreifendes Beratungsgremium. Gewährleistet den institutionellen Dialog der Stiftung mit Vertretern des öffentlichen, kommunalen, gemeinnützigen und wirtschaftlichen Sektors. Mitglieder sind Organisationen, keine Einzelpersonen.",
     "organ_centre_name": "Certo Analyse- und Szenarienzentrum",
-    "organ_centre_role": "Ständige analytisch-prospektive Struktur. Identifiziert Entwicklungstrends, erstellt Zukunftsszenarien und formuliert Empfehlungen für öffentliche Politik und Regulierung."
+    "organ_centre_role": "Ständige analytisch-prospektive Struktur. Identifiziert Entwicklungstrends, erstellt Zukunftsszenarien und formuliert Empfehlungen für öffentliche Politik und Regulierung.",
+    "mission_text_1": "Wir bauen eine Kultur guter Governance durch unabhängige Bewertung und Förderung von Governance-Standards in Europa auf.",
+    "mission_text_2": "Wir glauben, dass das Recht, in einer ehrlich, transparent und kompetent verwalteten Gesellschaft zu leben, ein Grundrecht ist."
   },
   "Contact": {
     "title": "Kontakt",

@@ -89,7 +89,6 @@
   "About": {
     "title": "A Certo Governance Institute Alapítványról",
     "mission_title": "Küldetés",
-    "mission_text": "A jó irányítás kultúráját építjük független értékelés és governance-standardok népszerűsítése révén Lengyelországban és Európában. Hisszük, hogy a tisztességesen, átláthatóan és hozzáértően irányított társadalomban való élet joga alapvető jog.",
     "structure_title": "Szervezeti felépítés",
     "organ_board_name": "Igazgatóság",
     "organ_board_role": "Végrehajtó szerv — irányítja a napi működést, képviseli az Alapítványt kifelé, megvalósítja az alapszabályban rögzített célokat.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Tanács",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "A jó irányítás kultúráját építjük független értékelés és az irányítási standardok népszerűsítése révén Európában.",
+    "mission_text_2": "Hiszünk abban, hogy a jog ahhoz, hogy becsületesen, átláthatóan és kompetensen irányított társadalomban éljünk, alapvető jog."
   },
   "Contact": {
     "title": "Kapcsolat",

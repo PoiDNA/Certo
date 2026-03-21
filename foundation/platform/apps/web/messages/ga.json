@@ -89,7 +89,6 @@
   "About": {
     "title": "Faoin bhFondúireacht Certo Governance Institute",
     "mission_title": "Misean",
-    "mission_text": "Táimid ag tógáil cultúr dea-rialachais trí mheasúnú neamhspleách agus cur chun cinn caighdeáin rialachais sa Pholainn agus san Eoraip. Creidimid go bhfuil an ceart chun maireachtáil i sochaí a rialaítear go macánta, go trédhearcach agus go hinniúil ina cheart bunúsach.",
     "structure_title": "Struchtúr eagraíochtúil",
     "organ_board_name": "Bord",
     "organ_board_role": "Comhlacht feidhmiúcháin — bainistíonn oibríochtaí laethúla, ionadaíonn an Fhondúireacht go seachtrach, cuireann cuspóirí reachtúla i gcrích.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Comhairle Certo",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Tógaimid cultúr dea-rialachais trí mheasúnú neamhspleách agus cur chun cinn caighdeán rialachais san Eoraip.",
+    "mission_text_2": "Creidimid gur ceart bunúsach é an ceart chun maireachtáil i sochaí a bhainistítear go hionraic, go trédhearcach agus go hinniúil."
   },
   "Contact": {
     "title": "Teagmháil",

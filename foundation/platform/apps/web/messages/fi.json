@@ -89,7 +89,6 @@
   "About": {
     "title": "Certo Governance Institute -säätiöstä",
     "mission_title": "Missio",
-    "mission_text": "Rakennamme hyvän hallinnon kulttuuria riippumattoman arvioinnin ja hallintostandardien edistämisen kautta Puolassa ja Euroopassa. Uskomme, että oikeus elää yhteiskunnassa, jota johdetaan rehellisesti, avoimesti ja ammattitaitoisesti, on perusoikeus.",
     "structure_title": "Organisaatiorakenne",
     "organ_board_name": "Hallitus",
     "organ_board_role": "Toimeenpaneva elin — johtaa päivittäistä toimintaa, edustaa säätiötä ulkoisesti, toteuttaa sääntöjen mukaiset tavoitteet.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo-neuvosto",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Rakennamme hyvän hallinnon kulttuuria riippumattoman arvioinnin ja hallintostandardien edistämisen kautta Euroopassa.",
+    "mission_text_2": "Uskomme, että oikeus elää rehellisesti, läpinäkyvästi ja osaavasti johdetussa yhteiskunnassa on perusoikeus."
   },
   "Contact": {
     "title": "Yhteystiedot",

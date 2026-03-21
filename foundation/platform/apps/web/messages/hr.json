@@ -89,7 +89,6 @@
   "About": {
     "title": "O Zakladi Certo Governance Institute",
     "mission_title": "Misija",
-    "mission_text": "Gradimo kulturu dobrog upravljanja kroz neovisno ocjenjivanje i promicanje standarda governance u Poljskoj i Europi. Vjerujemo da je pravo na život u društvu kojim se upravlja pošteno, transparentno i kompetentno temeljno pravo.",
     "structure_title": "Organizacijska struktura",
     "organ_board_name": "Uprava",
     "organ_board_role": "Izvršno tijelo — upravlja tekućim poslovanjem, predstavlja Zakladu prema van, provodi statutarne ciljeve.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Vijeće Certo",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Gradimo kulturu dobrog upravljanja kroz neovisnu ocjenu i promicanje standarda governance u Europi.",
+    "mission_text_2": "Vjerujemo da je pravo na život u društvu kojim se upravlja pošteno, transparentno i kompetentno temeljno pravo."
   },
   "Contact": {
     "title": "Kontakt",

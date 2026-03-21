@@ -89,7 +89,6 @@
   "About": {
     "title": "Om Certo Governance Institute",
     "mission_title": "Mission",
-    "mission_text": "Vi opbygger en kultur for god ledelse gennem uafhængig vurdering og fremme af governance-standarder i Polen og Europa. Vi tror på, at retten til at leve i et samfund, der ledes ærligt, gennemsigtigt og kompetent, er en grundlæggende ret.",
     "structure_title": "Organisationsstruktur",
     "organ_board_name": "Bestyrelsen",
     "organ_board_role": "Eksekutivorgan — leder den daglige drift, repræsenterer fonden udadtil, realiserer de vedtægtsmæssige mål.",
@@ -123,7 +122,9 @@
     "organ_council_name": "Certo Rådet",
     "organ_council_role": "A standing cross-sector advisory-consultative body. Ensures institutional dialogue between the Foundation and entities representing the public, local government, non-governmental and business sectors. Members are organisations, not individuals.",
     "organ_centre_name": "Certo Analysis and Scenarios Centre",
-    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation."
+    "organ_centre_role": "A standing analytical-prospective structure. Identifies development trends, builds future scenarios and formulates recommendations on public policy and regulation.",
+    "mission_text_1": "Vi opbygger en kultur for god ledelse gennem uafhængig vurdering og fremme af governance-standarder i Europa.",
+    "mission_text_2": "Vi tror på, at retten til at leve i et samfund styret ærligt, gennemsigtigt og kompetent er en grundlæggende rettighed."
   },
   "Contact": {
     "title": "Kontakt",
