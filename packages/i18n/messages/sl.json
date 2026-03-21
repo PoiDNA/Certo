@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neodvisni organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in neprofitnih institucij."
+    "description": "Neodvisni organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -28,16 +28,16 @@
     "close": "Zapri",
     "search": "Iskanje",
     "download": "Prenos",
-    "verified": "Preverjeno",
-    "active": "Aktivno",
-    "inactive": "Neaktivno"
+    "verified": "Preverjen",
+    "active": "Aktiven",
+    "inactive": "Neaktiven"
   },
   "Navigation": {
-    "home": "Domača stran",
+    "home": "Domov",
     "ratings": "Ocene",
     "reports": "Poročila",
     "analysis": "Analize",
-    "about": "O Ustanovi",
+    "about": "O Fundaciji",
     "contact": "Stik",
     "dashboard": "Nadzorna plošča",
     "settings": "Nastavitve"
@@ -45,22 +45,22 @@
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se v svoj račun",
-    "login_with_google": "Prijava prek Google",
+    "login_with_google": "Prijavite se prek Googla",
     "email_label": "E-poštni naslov",
     "password_label": "Geslo",
-    "forgot_password": "Pozabljeno geslo?",
+    "forgot_password": "Ste pozabili geslo?",
     "no_account": "Nimate računa?",
     "register": "Registracija"
   },
   "Errors": {
     "404_title": "Stran ni bila najdena",
-    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premakljena.",
+    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premaknjena.",
     "500_title": "Napaka strežnika",
     "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
     "unauthorized": "Dostop ni dovoljen. Prijavite se za nadaljevanje."
   },
   "Footer": {
-    "rights": "Vse pravice pridržane",
+    "rights": "Vse pravice so pridržane",
     "privacy": "Politika zasebnosti",
     "terms": "Pogoji uporabe",
     "contact": "Stik"

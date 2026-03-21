@@ -8,14 +8,14 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ independent de rating care evaluează calitatea managementului instituțiilor publice, corporative și non-profit."
+    "description": "Organ independent de rating care evaluează calitatea guvernanței instituțiilor publice, corporative și non-profit."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Conectează-te",
-    "logout": "Deconectează-te",
+    "login": "Conectare",
+    "logout": "Deconectare",
     "privacyPolicy": "Politica de confidențialitate",
     "termsOfUse": "Condiții de utilizare",
     "loading": "Se încarcă...",
@@ -24,9 +24,9 @@
     "cancel": "Anulează",
     "confirm": "Confirmă",
     "back": "Înapoi",
-    "next": "Următorul",
+    "next": "Înainte",
     "close": "Închide",
-    "search": "Caută",
+    "search": "Căutare",
     "download": "Descarcă",
     "verified": "Verificat",
     "active": "Activ",
@@ -43,14 +43,14 @@
     "settings": "Setări"
   },
   "Auth": {
-    "login_title": "Conectează-te",
+    "login_title": "Conectare",
     "login_subtitle": "Conectează-te la contul tău",
-    "login_with_google": "Conectează-te prin Google",
+    "login_with_google": "Conectare cu Google",
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
     "forgot_password": "Ai uitat parola?",
     "no_account": "Nu ai un cont?",
-    "register": "Înregistrează-te"
+    "register": "Înregistrare"
   },
   "Errors": {
     "404_title": "Pagina nu a fost găsită",

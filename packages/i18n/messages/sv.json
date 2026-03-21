@@ -19,7 +19,7 @@
     "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor",
     "loading": "Läser in...",
-    "error": "Ett fel uppstod",
+    "error": "Ett fel inträffade",
     "save": "Spara",
     "cancel": "Avbryt",
     "confirm": "Bekräfta",
@@ -27,7 +27,7 @@
     "next": "Nästa",
     "close": "Stäng",
     "search": "Sök",
-    "download": "Ladda ner",
+    "download": "Ladda ned",
     "verified": "Verifierad",
     "active": "Aktiv",
     "inactive": "Inaktiv"
@@ -37,9 +37,9 @@
     "ratings": "Ratings",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om stiftelsen",
+    "about": "Om Stiftelsen",
     "contact": "Kontakt",
-    "dashboard": "Instrumentpanel",
+    "dashboard": "Kontrollpanel",
     "settings": "Inställningar"
   },
   "Auth": {
@@ -54,9 +54,9 @@
   },
   "Errors": {
     "404_title": "Sidan hittades inte",
-    "404_description": "Sidan du söker finns inte eller har flyttats.",
+    "404_description": "Sidan du söker existerar inte eller har flyttats.",
     "500_title": "Serverfel",
-    "500_description": "Ett oväntat fel uppstod. Försök igen senare.",
+    "500_description": "Ett oväntat fel inträffade. Försök igen senare.",
     "unauthorized": "Åtkomst nekad. Logga in för att fortsätta."
   },
   "Footer": {

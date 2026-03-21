@@ -44,19 +44,19 @@
   },
   "Auth": {
     "login_title": "Anmelden",
-    "login_subtitle": "Melden Sie sich bei Ihrem Konto an",
+    "login_subtitle": "Melden Sie sich in Ihrem Konto an",
     "login_with_google": "Mit Google anmelden",
     "email_label": "E-Mail-Adresse",
     "password_label": "Passwort",
     "forgot_password": "Passwort vergessen?",
-    "no_account": "Sie haben kein Konto?",
+    "no_account": "Haben Sie kein Konto?",
     "register": "Registrieren"
   },
   "Errors": {
     "404_title": "Seite nicht gefunden",
     "404_description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
     "500_title": "Serverfehler",
-    "500_description": "Es ist ein unerwarteter Fehler aufgetreten. Versuchen Sie es später erneut.",
+    "500_description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
     "unauthorized": "Zugriff verweigert. Melden Sie sich an, um fortzufahren."
   },
   "Footer": {

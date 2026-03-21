@@ -18,7 +18,7 @@
     "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Expert advisory services\nat board level.",
+    "hero_title": "Expert advisory\nat board level.",
     "hero_subtitle": "We connect accredited Certo advisors with institutions requiring the highest standards of corporate governance and regulatory compliance.",
     "hero_cta": "Find an expert",
     "finder_title": "I want to speak with an expert in:",
@@ -29,11 +29,11 @@
     "area_education": "Education",
     "form_title": "Leave your contact details so we can match you with the right advisor from the area of",
     "form_name": "Full Name",
-    "form_email": "Email Address (work)",
+    "form_email": "Email Address (business)",
     "form_org": "Organization Name / Position",
-    "form_submit": "Submit Inquiry",
+    "form_submit": "Submit Request",
     "experts_headline": "Our experts help\nmaintain and strengthen\nyour Certo Rating.",
-    "experts_description": "Accredited advisors with years of experience in optimizing governance processes for strategic institutions."
+    "experts_description": "Accredited advisors with extensive experience in optimizing governance processes for strategic institutions."
   },
   "Legal": {
     "back": "Back to homepage",
@@ -50,21 +50,21 @@
     "need_training": "Training and workshops",
     "need_rating": "Rating preparation",
     "region_label": "Region",
-    "submit": "Search for advisor"
+    "submit": "Find advisor"
   },
   "Advisor": {
     "accredited_by": "Accredited by Certo",
     "specialization": "Specialization",
     "sectors": "Sectors",
-    "contact_advisor": "Get in touch",
-    "view_profile": "View profile"
+    "contact_advisor": "Get in Touch",
+    "view_profile": "View Profile"
   },
   "Contact": {
     "title": "Contact",
     "subtitle": "Certo ID PSA",
     "label_address": "Address",
     "label_email": "Email",
-    "address": "02-566 Warsaw, ul. Puławska 2B",
+    "address": "02-566 Warsaw, Puławska Street 2B",
     "email": "certo@certo.consulting",
     "form_title": "Write to us",
     "form_name": "Full Name",
@@ -72,10 +72,10 @@
     "form_subject": "Subject",
     "form_message": "Message",
     "form_submit": "Send Message",
-    "form_success": "Your message has been sent. We will respond as soon as possible.",
-    "subject_general": "General inquiry",
+    "form_success": "Message sent successfully. We will respond as soon as possible.",
+    "subject_general": "General Inquiry",
     "subject_advisory": "Advisory",
-    "subject_accreditation": "Advisor accreditation",
+    "subject_accreditation": "Advisor Accreditation",
     "subject_cooperation": "Cooperation"
   }
 }

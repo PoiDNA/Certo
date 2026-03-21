@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verificare identitate și conformitate pentru instituții publice și corporații."
+    "description": "Verificarea identității și conformitate pentru instituții publice și corporații."
   },
   "Nav": {
     "solutions": "Soluții",
@@ -13,7 +13,7 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
+    "terms": "Termeni de Utilizare",
     "contact": "Contact"
   },
   "Contact": {
@@ -21,16 +21,16 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Adresă",
     "label_email": "Email",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varșovia, ul. Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Scrie-ne",
+    "form_title": "Scrieți-ne",
     "form_name": "Nume și prenume",
-    "form_email": "Adresă email",
+    "form_email": "Adresă de email",
     "form_subject": "Subiect",
     "form_message": "Mesaj",
-    "form_submit": "Trimite mesaj",
-    "form_success": "Mesajul a fost trimis. Vom răspunde cât mai curând posibil.",
-    "subject_general": "Interogare generală",
+    "form_submit": "Trimiteți mesajul",
+    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând posibil.",
+    "subject_general": "Întrebare generală",
     "subject_implementation": "Implementare",
     "subject_technical": "Suport tehnic",
     "subject_cooperation": "Cooperare"
@@ -40,18 +40,18 @@
     "hero_line1": "Identitate.",
     "hero_line2": "Conformitate.",
     "hero_line3": "Certitudine.",
-    "hero_description": "Infrastructură de verificare și conformitate pentru instituții publice, corporații și entități reglementate. Construită pe standarde",
+    "hero_description": "Infrastructură de verificare și conformitate pentru instituții publice, corporații și entități reglementate. Construită pe standarde ale",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "ÎNCEPE IMPLEMENTAREA",
+    "cta_primary": "INIȚIAȚI IMPLEMENTAREA",
     "cta_secondary": "SERVICII",
     "services_label": "SERVICII",
-    "services_title": "Trei niveluri de infrastructură de conformitate",
+    "services_title": "Trei straturi ale infrastructurii de conformitate",
     "service1_title": "Verificare Identitate",
-    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată a documentelor, screening de sancțiuni și PEP, integrare cu registre de stat.",
-    "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring automat de conformitate bazat pe metodologia Certo Governance Institute. Sistem de evaluare cu cinci niveluri cu trasabilitate completă.",
+    "service1_desc": "KYC/AML pentru entități reglementate. Verificare automată a documentelor, screening sancțiuni și PEP, integrare cu registrele de stat.",
+    "service2_title": "Rating Conformitate",
+    "service2_desc": "Scorare automată a conformității bazată pe metodologia Certo Governance Institute. Sistem de evaluare în cinci niveluri cu audit trail complet.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Planuri de remediere automată și monitorizarea implementării. Integrare cu sisteme ERP, GRC și platforme de management al riscului.",
+    "service3_desc": "Planuri remediale automate și monitorizarea implementării acestora. Integrare cu sisteme ERP, GRC și platforme de gestiune a riscului.",
     "arch_label": "ARHITECTURĂ",
     "arch_title": "Cum funcționează Certo ID",
     "step1_title": "Intake",
@@ -59,7 +59,7 @@
     "step2_title": "Verify",
     "step2_desc": "Verificare identitate, screening, registru public",
     "step3_title": "Score",
-    "step3_desc": "Rating automat de conformitate Certo Vector",
+    "step3_desc": "Rating automat conformitate Certo Vector",
     "step4_title": "Report",
     "step4_desc": "Raport PDF + API + dashboard Certo Online",
     "badge_iso": "Standarde ISO",
@@ -71,14 +71,14 @@
     "back": "Înapoi la pagina principală",
     "last_updated": "Ultima actualizare: martie 2026",
     "privacy_title": "Politica de Confidențialitate",
-    "terms_title": "Termeni și Condiții"
+    "terms_title": "Termeni de Utilizare"
   },
   "Dashboard": {
     "title": "Panou Certo ID",
     "welcome": "Bun venit, {name}",
-    "your_rating": "Ratingul tău Certo",
+    "your_rating": "Rating-ul tău Certo",
     "your_delegates": "Delegații tăi",
-    "your_accords": "Acordurile tale Certo Accord",
+    "your_accords": "Certo Accord-urile tale",
     "recent_activity": "Activitate recentă",
     "quick_actions": "Acțiuni rapide"
   },
@@ -87,12 +87,12 @@
     "organization": "Organizație",
     "contact_person": "Persoană de contact",
     "sector": "Sector",
-    "edit_profile": "Editează profil",
+    "edit_profile": "Editați profil",
     "verified_badge": "Entitate verificată"
   },
   "Delegates": {
     "title": "Delegați Certo",
-    "add_delegate": "Adaugă delegat",
+    "add_delegate": "Adăugați delegat",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stare",
     "primary_link": "Link PRIMARY",

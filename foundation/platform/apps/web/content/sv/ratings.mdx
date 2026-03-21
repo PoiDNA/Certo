@@ -1,52 +1,51 @@
-yaml
 ---
-title: Certo Ratings — bedömning av förvaltningskvalitet
-description: Databas över aktiva Certo Ratings. Varje rating är kryptografiskt signerad och verifierbar offline. Bedömningarna omfattar offentlig sektor, företagssektorn, medicinsk sektor, försvarssektorn och ideell sektor.
+title: Certo Rating — bedömningar av ledningskvalitet
+description: Databas över aktiva Certo Rating. Varje rating är kryptografiskt signerad och verifierbar offline. Bedömningarna omfattar offentlig sektor, företagssektorn, sjukvård, försvar och ideell sektor.
 ---
 
-## Hur man läser en Certo Rating
+## Hur man läser Certo Rating
 
 Varje Certo Rating består av tre element:
 
-**Certo Score** — en syntetisk bedömning av förvaltningskvalitet på en skala från 0 till 100. Ett resultat över 70 innebär att minimistandarderna för governance som krävs av Fundationen är uppfyllda.
+**Certo Score** — en syntetisk bedömning av ledningskvalitet på en skala från 0 till 100. Ett resultat över 70 indikerar att minimistandarder för governance enligt Stiftelsens krav är uppfyllda.
 
-**Certo Vector** — riktningen på förändringen av förvaltningskvalitet sedan senaste bedömningen:
-- `++` — betydande förbättring av förvaltningskvalitet
+**Certo Vector** — riktning för förändring i ledningskvalitet sedan den senaste bedömningen:
+- `++` — betydande förbättring av ledningskvalitet
 - `+` — förbättring
 - `→` — ingen väsentlig förändring
 - `−` — försämring
 - `−−` — betydande försämring som kräver åtgärd
 
-**Giltighetsdatum** — en Certo Rating utfärdas för en period på 12 månader. Efter denna tid måste enheten genomgå en omvärdering för att behålla aktiv status.
+**Giltighetsdatum** — Certo Rating utfärdas för en period på 12 månader. Efter denna tid måste enheten genomgå en ny bedömning för att behålla status som aktiv.
 
 ## Verifiering av rating
 
 Varje aktiv rating är offentligt verifierbar. För att verifiera en rating:
 
 1. Hitta enheten i databasen nedan
-2. Klicka på Trust Badge Certo vid enhetens namn
-3. Systemet visar kryptografiska bevis för ratingen tillsammans med utfärdandedatum och bedömningsomfattning
+2. Klicka på Trust Badge Certo bredvid enhetens namn
+3. Systemet visar kryptografiskt bevis för ratingen tillsammans med utfärdningsdatum och omfattning av bedömningen
 
-Verifieringen kräver inte inloggning eller registrering. Den är tillgänglig för alla, när som helst.
+Verifiering kräver ingen inloggning eller registrering. Det är tillgängligt för alla, när som helst.
 
 ## Sektorer och bedömningskriterier
 
 ### Offentlig sektor
 
-Bedömningen omfattar: struktur för ledningsorgan, transparens i beslutsprocess, tillgång till offentlig information, förvaltning av offentlig egendom, intressenthantering.
+Bedömningen omfattar: struktur för styrningsorganen, transparens i beslutsprocessen, tillgång till offentlig information, förvaltning av offentlig egendom, intressentservice.
 
-### Företagssektorn
+### Företagssektor
 
-Bedömningen omfattar: sammansättning och oberoende för styrelsen, ersättningspolicy för ledningen, hantering av intressekonflikter, relationer med minoritetsaktieägare, ESG-rapportering.
+Bedömningen omfattar: sammansättning och oberoende av styrelsen, kompensationspolicy för ledning, hantering av intressekonflikter, relationer med minoritetsaktieägare, ESG-rapportering.
 
-### Medicinsk sektor
+### Sjukvårdssektor
 
-Bedömningen omfattar: förvaltningsstruktur för sjukvårdsenheter, patientsäkerhetsprocedurer, medicinsk riskhantering, efterlevnad av NFZ- och Hälso- och sjukvårdsministeriets föreskrifter.
+Bedömningen omfattar: struktur för förvaltning av enheterna, patientskyddsprocedurer, hantering av medicinsk risk, överensstämmelse med NFZ- och Hälso- och sjukvårdsministeriums föreskrifter.
 
-### Försvarssektorn
+### Försvarsektor
 
-Bedömningen omfattar: informationssäkerhetsprocedurer, försörjningskedjhantering, efterlevnad av offentlig kontraktörkrav, internrevision.
+Bedömningen omfattar: informationssäkerhetsprocedurer, leveranskedjehantering, överensstämmelse med krav för offentlig kontraktör, internrevision.
 
 ### Ideell sektor
 
-Bedömningen omfattar: finansieringstransparens, struktur för stadgeenliga organ, genomförande av organisationens uppdrag, hantering av donatorrelationer.
+Bedömningen omfattar: transparens i finansiering, struktur för föreskrivna organ, genomförande av organisationens uppdrag, förvaltning av relationer med donörer.

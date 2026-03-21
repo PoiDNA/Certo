@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van bestuur van publieke, bedrijfs- en non-profit instellingen beoordeelt."
+    "description": "Onafhankelijk ratingorgaan dat de kwaliteit van bestuur van openbare, bedrijfs- en non-profitinstellingen beoordeelt."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -34,22 +34,22 @@
   },
   "Navigation": {
     "home": "Startpagina",
-    "ratings": "Ratings",
+    "ratings": "Beoordelingen",
     "reports": "Rapporten",
     "analysis": "Analyses",
-    "about": "Over de Stichting",
+    "about": "Over het Instituut",
     "contact": "Contact",
     "dashboard": "Dashboard",
     "settings": "Instellingen"
   },
   "Auth": {
     "login_title": "Inloggen",
-    "login_subtitle": "Meld u aan bij uw account",
+    "login_subtitle": "Log in op uw account",
     "login_with_google": "Inloggen via Google",
     "email_label": "E-mailadres",
     "password_label": "Wachtwoord",
     "forgot_password": "Wachtwoord vergeten?",
-    "no_account": "Nog geen account?",
+    "no_account": "Hebt u geen account?",
     "register": "Registreren"
   },
   "Errors": {
@@ -57,7 +57,7 @@
     "404_description": "De pagina die u zoekt bestaat niet of is verplaatst.",
     "500_title": "Serverfout",
     "500_description": "Er is een onverwachte fout opgetreden. Probeer het later opnieuw.",
-    "unauthorized": "Geen toegang. Meld u aan om door te gaan."
+    "unauthorized": "Geen toegang. Log in om door te gaan."
   },
   "Footer": {
     "rights": "Alle rechten voorbehouden",

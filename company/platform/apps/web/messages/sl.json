@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Preverjanje identitete in skladnost za javne institucije in podjetja."
+    "description": "Preverjanje identitete in skladnost za javne institucije in korporacije."
   },
   "Nav": {
     "solutions": "Rešitve",
@@ -13,7 +13,7 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Politika Zasebnosti",
-    "terms": "Pogoji Storitve",
+    "terms": "Pogoji Uporabe",
     "contact": "Kontakt"
   },
   "Contact": {
@@ -21,43 +21,43 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Naslov",
     "label_email": "E-pošta",
-    "address": "02-566 Warszawa, ul. Puławska 2B",
+    "address": "02-566 Varšava, ul. Puławska 2B",
     "email": "certo@certo.id",
     "form_title": "Napišite nam",
-    "form_name": "Ime in Priimek",
+    "form_name": "Ime in priimek",
     "form_email": "Naslov e-pošte",
-    "form_subject": "Predmet",
+    "form_subject": "Naslov",
     "form_message": "Sporočilo",
     "form_submit": "Pošlji sporočilo",
-    "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo čim prej.",
+    "form_success": "Sporočilo je bilo poslano. Odgovorili vam bomo v najkrajšem možnem času.",
     "subject_general": "Splošno povpraševanje",
-    "subject_implementation": "Uvedba",
-    "subject_technical": "Tehnična podpora",
+    "subject_implementation": "Implementacija",
+    "subject_technical": "Tehnična pomoč",
     "subject_cooperation": "Sodelovanje"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identiteta.",
     "hero_line2": "Skladnost.",
-    "hero_line3": "Zanesljivost.",
-    "hero_description": "Infrastruktura preverjanja in skladnosti za javne institucije, podjetja in regulirane subjekte. Zgrajena na standardih",
+    "hero_line3": "Gotovost.",
+    "hero_description": "Infrastruktura preverjanja in skladnosti za javne institucije, korporacije in regulirane subjekte. Zgrajena na standardih",
     "hero_built_on": "Certo Governance Institute",
-    "cta_primary": "ZAČNI Z UVEDBO",
+    "cta_primary": "ZAČNI Z IMPLEMENTACIJO",
     "cta_secondary": "STORITVE",
     "services_label": "STORITVE",
     "services_title": "Tri plasti infrastrukture skladnosti",
     "service1_title": "Preverjanje Identitete",
-    "service1_desc": "KYC/AML za regulirane subjekte. Avtomatsko preverjanje dokumentov, presejanje sankcij in PEP, integracija z državnimi registri.",
+    "service1_desc": "KYC/AML za regulirane subjekte. Avtomatsko preverjanje dokumentov, screening sankcij in PEP, integracija z državnimi registri.",
     "service2_title": "Rating Skladnosti",
-    "service2_desc": "Avtomatski scoring skladnosti, zasnovan na metodologiji Certo Governance Institute. Petistopenjski sistem ocenjevanja s popolno revizijsko potjo.",
+    "service2_desc": "Avtomatski scoring skladnosti na podlagi metodologije Certo Governance Institute. Petistopenjski sistem ocenjevanja s popolno sledi revizije.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Avtomatski načrti sanacije in spremljanje njihove izvedbe. Integracija s sistemi ERP, GRC in platformami za upravljanje tveganja.",
+    "service3_desc": "Avtomatski načrti sanacij in spremljanje njihove izvedbe. Integracija s sistemi ERP, GRC in platformami upravljanja tveganja.",
     "arch_label": "ARHITEKTURA",
     "arch_title": "Kako deluje Certo ID",
     "step1_title": "Intake",
     "step1_desc": "Podatki subjekta + dokumenti + regulativni kontekst",
     "step2_title": "Verify",
-    "step2_desc": "Preverjanje identitete, presejanje, javni register",
+    "step2_desc": "Preverjanje identitete, screening, javni register",
     "step3_title": "Score",
     "step3_desc": "Avtomatski rating skladnosti Certo Vector",
     "step4_title": "Report",
@@ -65,38 +65,38 @@
     "badge_iso": "Standardi ISO",
     "badge_compliance": "Regulativna skladnost",
     "badge_kyc": "Preverjanje identitete",
-    "badge_governance": "Ocena governance"
+    "badge_governance": "Ocena urejenosti upravljanja"
   },
   "Legal": {
-    "back": "Nazaj na domačo stran",
+    "back": "Nazaj na glavno stran",
     "last_updated": "Zadnja posodobitev: Marec 2026",
     "privacy_title": "Politika Zasebnosti",
-    "terms_title": "Pogoji Storitve"
+    "terms_title": "Pogoji Uporabe"
   },
   "Dashboard": {
-    "title": "Nadzorna Plošča Certo ID",
+    "title": "Nadzorna plošča Certo ID",
     "welcome": "Dobrodošli, {name}",
     "your_rating": "Vaš Rating Certo",
     "your_delegates": "Vaši Delegati",
-    "your_accords": "Vaše Certo Accord",
-    "recent_activity": "Nedavna Aktivnost",
-    "quick_actions": "Hitre Akcije"
+    "your_accords": "Vaši Certo Accord",
+    "recent_activity": "Nedavna dejavnost",
+    "quick_actions": "Hitre akcije"
   },
   "Profile": {
     "title": "Profil",
     "organization": "Organizacija",
-    "contact_person": "Oseba za Stik",
+    "contact_person": "Oseba za stike",
     "sector": "Sektor",
-    "edit_profile": "Uredi Profil",
-    "verified_badge": "Preverjen Subjekt"
+    "edit_profile": "Uredi profil",
+    "verified_badge": "Preverjena subjekt"
   },
   "Delegates": {
     "title": "Delegati Certo",
-    "add_delegate": "Dodaj Delegata",
+    "add_delegate": "Dodaj delegata",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Stanje",
-    "primary_link": "Link PRIMARY",
-    "failover_link": "Link FAILOVER",
+    "delegate_status": "Status",
+    "primary_link": "Povezava PRIMARY",
+    "failover_link": "Povezava FAILOVER",
     "plan_basic": "Basic",
     "plan_standard": "Standard",
     "plan_premium": "Premium"

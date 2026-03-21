@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporatyvių ir nevyriausybinių institucijų valdymo kokybę."
+    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporacinių ir nevyriausybinių institucijų valdymo kokybę."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -23,23 +23,23 @@
     "save": "Išsaugoti",
     "cancel": "Atšaukti",
     "confirm": "Patvirtinti",
-    "back": "Atgal",
+    "back": "Grįžti",
     "next": "Toliau",
     "close": "Uždaryti",
-    "search": "Ieškoti",
+    "search": "Paieška",
     "download": "Atsisiųsti",
-    "verified": "Patvirtintas",
-    "active": "Aktyvus",
-    "inactive": "Neaktyvus"
+    "verified": "Patvirtinta",
+    "active": "Aktyvi",
+    "inactive": "Neaktyvi"
   },
   "Navigation": {
     "home": "Pradžia",
     "ratings": "Reitingai",
-    "reports": "Ataskaitai",
+    "reports": "Ataskaitos",
     "analysis": "Analizės",
     "about": "Apie fondą",
     "contact": "Kontaktai",
-    "dashboard": "Valdymo skydelis",
+    "dashboard": "Prietaisų sritis",
     "settings": "Nustatymai"
   },
   "Auth": {
@@ -49,15 +49,15 @@
     "email_label": "El. pašto adresas",
     "password_label": "Slaptažodis",
     "forgot_password": "Pamiršai slaptažodį?",
-    "no_account": "Neturi paskyros?",
-    "register": "Užsiregistruoti"
+    "no_account": "Neturite paskyros?",
+    "register": "Registruotis"
   },
   "Errors": {
     "404_title": "Puslapis nerastas",
-    "404_description": "Puslapis, kurį ieškai, neegzistuoja arba buvo perkeltas.",
+    "404_description": "Puslapio, kurio ieškote, nėra arba jis buvo perkeltas.",
     "500_title": "Serverio klaida",
-    "500_description": "Įvyko netikėta klaida. Bandyk vėliau iš naujo.",
-    "unauthorized": "Prieiga uždrausta. Prisijungk norėdamas tęsti."
+    "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
+    "unauthorized": "Prieiga uždrausta. Prisijunkite, kad tęstumėte."
   },
   "Footer": {
     "rights": "Visos teisės saugomos",

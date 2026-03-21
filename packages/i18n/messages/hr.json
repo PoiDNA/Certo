@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezavisni organ ratinganja koji procjenjuje kvalitetu upravljanja javnih, korporativnih i nevladinih institucija."
+    "description": "Neovisni organ za ocjenjivanje koji vrednuje kvalitetu upravljanja u javnim, korporativnim i organizacijama civilnog društva."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -23,21 +23,21 @@
     "save": "Spremi",
     "cancel": "Otkaži",
     "confirm": "Potvrdi",
-    "back": "Nazad",
+    "back": "Natrag",
     "next": "Dalje",
     "close": "Zatvori",
     "search": "Pretraži",
     "download": "Preuzmi",
-    "verified": "Potvrđen",
-    "active": "Aktivan",
-    "inactive": "Neaktivan"
+    "verified": "Potvrđeno",
+    "active": "Aktivno",
+    "inactive": "Neaktivno"
   },
   "Navigation": {
     "home": "Početna stranica",
-    "ratings": "Ratingi",
+    "ratings": "Ocjene",
     "reports": "Izvještaji",
     "analysis": "Analize",
-    "about": "O Fondaciji",
+    "about": "O Institutu",
     "contact": "Kontakt",
     "dashboard": "Nadzorna ploča",
     "settings": "Postavke"
@@ -45,22 +45,22 @@
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se na svoj račun",
-    "login_with_google": "Prijavite se putem Googlа",
+    "login_with_google": "Prijavite se putem Googlea",
     "email_label": "Adresa e-pošte",
     "password_label": "Lozinka",
     "forgot_password": "Zaboravili ste lozinku?",
     "no_account": "Nemate račun?",
-    "register": "Registracija"
+    "register": "Registrirajte se"
   },
   "Errors": {
     "404_title": "Stranica nije pronađena",
     "404_description": "Stranica koju tražite ne postoji ili je premještena.",
-    "500_title": "Greška poslužitelja",
+    "500_title": "Greška servera",
     "500_description": "Došlo je do neočekivane greške. Pokušajte ponovno kasnije.",
-    "unauthorized": "Nema pristupa. Prijavite se da biste nastavili."
+    "unauthorized": "Bez pristupa. Prijavite se kako biste nastavili."
   },
   "Footer": {
-    "rights": "Sva prava zadržana",
+    "rights": "Sva prava pridržana",
     "privacy": "Politika privatnosti",
     "terms": "Uvjeti korištenja",
     "contact": "Kontakt"

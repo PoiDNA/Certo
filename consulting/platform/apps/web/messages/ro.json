@@ -1,16 +1,16 @@
 {
   "Metadata": {
-    "title": "Certo Consulting — Găsește Consilier",
-    "description": "Consilieri acreditați Certo. Iad corporativ și conformitate."
+    "title": "Certo Consulting — Găsește Consilierul",
+    "description": "Consilieri acreditați Certo. Guvernanța corporativă și conformitate."
   },
   "Nav": {
     "advisors": "Consilieri",
-    "expertise": "Expertiza",
-    "login": "Autentificare",
+    "expertise": "Expertiză",
+    "login": "Conectare",
     "contact": "Contact"
   },
   "Footer": {
-    "description": "Consultanță expertiză în domeniul iadului corporativ, conformității și securității pentru liderii pieței.",
+    "description": "Consultanță expertiză în domenii al guvernanței corporative, conformității și securității pentru liderii de piață.",
     "ecosystem": "Ecosistemul Certo",
     "accreditation": "Toți consilierii sunt acreditați de Fundația Certo Governance Institute",
     "privacy": "Politica de confidențialitate",
@@ -18,22 +18,22 @@
     "contact": "Contact"
   },
   "Home": {
-    "hero_title": "Consultanță expertiză\nla nivel de consiliu de administrație.",
-    "hero_subtitle": "Conectăm consilieri acreditați Certo cu instituții care necesită cele mai înalte standarde de iad corporativ și conformitate regulatorie.",
+    "hero_title": "Consultanță expertiză\nla nivel de conducere.",
+    "hero_subtitle": "Conectăm consilieri Certo acreditați cu instituții care necesită cele mai înalte standarde de guvernanță corporativă și conformitate regulatorie.",
     "hero_cta": "Găsește expert",
-    "finder_title": "Doresc să vorbesc cu un expert în:",
+    "finder_title": "Vreau să discut cu un expert în:",
     "area_health": "Sănătate",
     "area_local_gov": "Administrație locală",
     "area_defense": "Apărare",
     "area_finance": "Finanțe",
     "area_education": "Educație",
-    "form_title": "Lăsați contactul dvs., pentru ca noi să selectez consilierul potrivit din domeniul",
+    "form_title": "Lasă datele tale de contact pentru a-ți alege consilierul potrivit din domeniu",
     "form_name": "Nume și prenume",
-    "form_email": "Adresă de email (profesională)",
-    "form_org": "Numele organizației / Funcție",
-    "form_submit": "Trimiteți interogarea",
-    "experts_headline": "Experții noștri vă ajută\nsă mențineți și să consolidați\nRating Certo.",
-    "experts_description": "Consilieri acreditați cu o experiență vastă în optimizarea proceselor de iad pentru instituții strategice."
+    "form_email": "Adresă de email (profesional)",
+    "form_org": "Denumirea organizației / Poziție",
+    "form_submit": "Trimite cererea",
+    "experts_headline": "Experții noștri vă ajută\nsă menții și consolidezi\nRating Certo.",
+    "experts_description": "Consilieri acreditați cu experiență multianilor în optimizarea proceselor de governance pentru instituții strategice."
   },
   "Legal": {
     "back": "Înapoi la pagina principală",
@@ -43,21 +43,21 @@
   },
   "FindAdvisor": {
     "title": "Găsește consilier Certo",
-    "sector_label": "Sectorul instituției dvs.",
-    "need_label": "Ce aveți nevoie?",
-    "need_audit": "Audit de iad",
+    "sector_label": "Sectorul instituției tale",
+    "need_label": "Ce ai nevoie?",
+    "need_audit": "Audit de governance",
     "need_advisory": "Consultanță strategică",
-    "need_training": "Instruire și ateliere",
+    "need_training": "Cursuri și ateliere",
     "need_rating": "Pregătire pentru rating",
     "region_label": "Regiune",
     "submit": "Caută consilier"
   },
   "Advisor": {
     "accredited_by": "Acreditat de Certo",
-    "specialization": "Specializare",
+    "specialization": "Specialitate",
     "sectors": "Sectoare",
-    "contact_advisor": "Contactați",
-    "view_profile": "Vezi profil"
+    "contact_advisor": "Contactează",
+    "view_profile": "Vezi profilul"
   },
   "Contact": {
     "title": "Contact",
@@ -66,16 +66,16 @@
     "label_email": "Email",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Scrieți-ne",
+    "form_title": "Scrie-ne",
     "form_name": "Nume și prenume",
     "form_email": "Adresă de email",
     "form_subject": "Subiect",
     "form_message": "Mesaj",
-    "form_submit": "Trimiteți mesajul",
-    "form_success": "Mesajul a fost trimis. Vă vom răspunde cât mai curând posibil.",
-    "subject_general": "Interogare generală",
+    "form_submit": "Trimite mesaj",
+    "form_success": "Mesajul a fost trimis. Vom răspunde cât mai curând.",
+    "subject_general": "Întrebare generală",
     "subject_advisory": "Consultanță",
     "subject_accreditation": "Acreditare consilier",
-    "subject_cooperation": "Cooperare"
+    "subject_cooperation": "Colaborare"
   }
 }

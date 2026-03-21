@@ -5,8 +5,8 @@
   },
   "Nav": {
     "advisors": "Consultores",
-    "expertise": "Expertise",
-    "login": "Iniciar sessão",
+    "expertise": "Experiência",
+    "login": "Acesso",
     "contact": "Contacto"
   },
   "Footer": {
@@ -18,21 +18,21 @@
     "contact": "Contacto"
   },
   "Home": {
-    "hero_title": "Consultoria especializada\nao nível da administração.",
+    "hero_title": "Consultoria especializada\nao nível executivo.",
     "hero_subtitle": "Conectamos consultores acreditados pela Certo com instituições que exigem os mais altos padrões de governança corporativa e conformidade regulatória.",
     "hero_cta": "Encontre um especialista",
-    "finder_title": "Gostaria de falar com um especialista em:",
+    "finder_title": "Desejo falar com um especialista em:",
     "area_health": "Saúde",
     "area_local_gov": "Administração Local",
     "area_defense": "Defesa",
     "area_finance": "Finanças",
     "area_education": "Educação",
-    "form_title": "Deixe os seus dados de contacto para que selecionemos o consultor adequado da área de",
-    "form_name": "Nome completo",
+    "form_title": "Deixe seu contacto para que possamos selecionar o consultor adequado da área de",
+    "form_name": "Nome e Sobrenome",
     "form_email": "Endereço de email (profissional)",
     "form_org": "Nome da organização / Cargo",
-    "form_submit": "Enviar consulta",
-    "experts_headline": "Os nossos especialistas ajudam\na manter e reforçar\no Rating Certo.",
+    "form_submit": "Enviar solicitação",
+    "experts_headline": "Nossos especialistas ajudam a\nmanter e fortalecer seu\nRating Certo.",
     "experts_description": "Consultores acreditados com vasta experiência na otimização de processos de governança para instituições estratégicas."
   },
   "Legal": {
@@ -43,11 +43,11 @@
   },
   "FindAdvisor": {
     "title": "Encontre um consultor Certo",
-    "sector_label": "Setor da sua instituição",
-    "need_label": "Do que precisa?",
+    "sector_label": "Sector da sua instituição",
+    "need_label": "O que precisa?",
     "need_audit": "Auditoria de governança",
     "need_advisory": "Consultoria estratégica",
-    "need_training": "Formações e workshops",
+    "need_training": "Formação e workshops",
     "need_rating": "Preparação para rating",
     "region_label": "Região",
     "submit": "Procurar consultor"
@@ -55,25 +55,25 @@
   "Advisor": {
     "accredited_by": "Acreditado pela Certo",
     "specialization": "Especialização",
-    "sectors": "Setores",
-    "contact_advisor": "Entre em contacto",
+    "sectors": "Sectores",
+    "contact_advisor": "Contactar",
     "view_profile": "Ver perfil"
   },
   "Contact": {
     "title": "Contacto",
     "subtitle": "Certo ID PSA",
-    "label_address": "Morada",
+    "label_address": "Endereço",
     "label_email": "Email",
     "address": "02-566 Varsóvia, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Escreva-nos",
-    "form_name": "Nome completo",
+    "form_name": "Nome e Sobrenome",
     "form_email": "Endereço de email",
     "form_subject": "Assunto",
     "form_message": "Mensagem",
     "form_submit": "Enviar mensagem",
-    "form_success": "A mensagem foi enviada. Responderemos assim que possível.",
-    "subject_general": "Consulta geral",
+    "form_success": "Mensagem enviada. Responderemos o mais breve possível.",
+    "subject_general": "Questão geral",
     "subject_advisory": "Consultoria",
     "subject_accreditation": "Acreditação de consultor",
     "subject_cooperation": "Cooperação"
