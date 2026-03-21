@@ -26,12 +26,10 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <div className="w-full">
       {/* Hero */}
-      <section className="py-20 md:py-28 bg-certo-navy text-center">
+      <section className="py-24 md:py-36 bg-certo-navy text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream mb-6">
-            {t('title')}
-          </h1>
-          <p className="text-lg text-certo-cream/70 max-w-2xl mx-auto">
+          <h1 className="sr-only">{t('title')}</h1>
+          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-certo-cream leading-relaxed max-w-3xl mx-auto">
             {t('mission_text')}
           </p>
         </div>
