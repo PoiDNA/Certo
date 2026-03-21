@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neodvisen organ za ocenjevanje, ki ocenjuje kakovost upravljanja javnih, korporativnih in nevladnih institucij."
+    "description": "Neodvisni organ za ocenjevanje, ki ocenjuje kvaliteto upravljanja javnih, korporativnih in nevladnih institucij."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -27,10 +27,10 @@
     "next": "Naprej",
     "close": "Zapri",
     "search": "Iskanje",
-    "download": "Presnemi",
-    "verified": "Preverjen",
-    "active": "Aktiven",
-    "inactive": "Neaktiven"
+    "download": "Preusmeri",
+    "verified": "Preverjena",
+    "active": "Aktivna",
+    "inactive": "Neaktivna"
   },
   "Navigation": {
     "home": "Domača stran",
@@ -45,8 +45,8 @@
   "Auth": {
     "login_title": "Prijava",
     "login_subtitle": "Prijavite se v svoj račun",
-    "login_with_google": "Prijava preko Google",
-    "email_label": "E-poštni naslov",
+    "login_with_google": "Prijavite se prek Googlа",
+    "email_label": "Naslov e-pošte",
     "password_label": "Geslo",
     "forgot_password": "Ste pozabili geslo?",
     "no_account": "Nimate računa?",
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Stran ni bila najdena",
-    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premeščena.",
+    "404_description": "Stran, ki jo iščete, ne obstaja ali je bila premaknjena.",
     "500_title": "Napaka strežnika",
-    "500_description": "Prišlo je do nepredvidene napake. Poskusite ponovno pozneje.",
-    "unauthorized": "Dostop je prepovedan. Prijavite se, da nadaljujete."
+    "500_description": "Prišlo je do nepričakovane napake. Poskusite ponovno pozneje.",
+    "unauthorized": "Dostop je nemogoč. Prijavite se za nadaljevanje."
   },
   "Footer": {
     "rights": "Vse pravice pridržane",

@@ -8,61 +8,61 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgão de avaliação independente que avalia a qualidade da governança de instituições públicas, corporativas e do setor não governamental."
+    "description": "Órgão de classificação independente que avalia a qualidade da governança de instituições públicas, corporativas e sem fins lucrativos."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
-    "login": "Iniciar sessão",
-    "logout": "Terminar sessão",
-    "privacyPolicy": "Política de Privacidade",
-    "termsOfUse": "Termos de Utilização",
+    "login": "Faça login",
+    "logout": "Sair",
+    "privacyPolicy": "Política de privacidade",
+    "termsOfUse": "Termos de uso",
     "loading": "Carregando...",
     "error": "Ocorreu um erro",
-    "save": "Guardar",
+    "save": "Salvar",
     "cancel": "Cancelar",
     "confirm": "Confirmar",
     "back": "Voltar",
-    "next": "Seguinte",
+    "next": "Próximo",
     "close": "Fechar",
     "search": "Pesquisar",
-    "download": "Descarregar",
+    "download": "Baixar",
     "verified": "Verificado",
     "active": "Ativo",
     "inactive": "Inativo"
   },
   "Navigation": {
-    "home": "Página Inicial",
-    "ratings": "Avaliações",
+    "home": "Página inicial",
+    "ratings": "Classificações",
     "reports": "Relatórios",
     "analysis": "Análises",
     "about": "Sobre a Fundação",
-    "contact": "Contacto",
+    "contact": "Contato",
     "dashboard": "Painel",
-    "settings": "Definições"
+    "settings": "Configurações"
   },
   "Auth": {
-    "login_title": "Iniciar sessão",
-    "login_subtitle": "Inicie sessão na sua conta",
-    "login_with_google": "Inicie sessão através do Google",
+    "login_title": "Faça login",
+    "login_subtitle": "Faça login na sua conta",
+    "login_with_google": "Faça login com Google",
     "email_label": "Endereço de e-mail",
-    "password_label": "Palavra-passe",
-    "forgot_password": "Esqueceu a palavra-passe?",
-    "no_account": "Não tem conta?",
-    "register": "Registar-se"
+    "password_label": "Senha",
+    "forgot_password": "Esqueceu sua senha?",
+    "no_account": "Não tem uma conta?",
+    "register": "Registre-se"
   },
   "Errors": {
     "404_title": "Página não encontrada",
-    "404_description": "A página que procura não existe ou foi movida.",
+    "404_description": "A página que você procura não existe ou foi movida.",
     "500_title": "Erro do servidor",
     "500_description": "Ocorreu um erro inesperado. Tente novamente mais tarde.",
-    "unauthorized": "Acesso negado. Inicie sessão para continuar."
+    "unauthorized": "Acesso negado. Faça login para continuar."
   },
   "Footer": {
     "rights": "Todos os direitos reservados",
-    "privacy": "Política de Privacidade",
-    "terms": "Termos de Utilização",
-    "contact": "Contacto"
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "contact": "Contato"
   }
 }

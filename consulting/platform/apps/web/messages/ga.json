@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Faigh Comhairleoir",
-    "description": "Comhairleoirí creidiúnaithe Certo. Rialachas corparáideach agus comhréireanna."
+    "description": "Comhairleoirí creidiúnaithe ag Certo. Rialachas Corparáideach agus Comhréire."
   },
   "Nav": {
     "advisors": "Comhairleoirí",
@@ -10,52 +10,53 @@
     "contact": "Teagmháil"
   },
   "Footer": {
-    "description": "Comhairle shaineolach i bhfianaise rialachais chorparáidigh, comhréireanna agus slándála do bhríomhar an mhargaidh.",
+    "description": "Comhairle shaineolach maidir le rialachas corparáideach, comhréire agus slándáil do bhainisteoirí tosaigh an mhargaidh.",
     "ecosystem": "Éiceachóras Certo",
-    "accreditation": "Tá gach comhairleoir creidiúnaithe ag Fondúchán Certo Governance Institute",
+    "accreditation": "Tá gach comhairleoir creidiúnaithe ag Fondúireacht Certo Governance Institute",
     "privacy": "Polasaí Príobháideachta",
-    "terms": "Téarmaí Úsáide",
+    "terms": "Téarmaí Seirbhíse",
     "contact": "Teagmháil"
   },
   "Home": {
-    "hero_title": "Comhairle shaineolach\nag leibhéal an bhainistíochta.",
-    "hero_subtitle": "Cuireann muid comhairleoirí creidiúnaithe Certo i bhféadfáil le heagraíochtaí a éilíonn na caighdeáin is airde i rialachas corparáideach agus i gcomhréireanna rialála.",
-    "hero_cta": "Faigh saineolóir",
-    "finder_title": "Ba bhreá liom a bheith i dteagmháil le saineolóir maidir le:",
-    "area_health": "Sláinte",
+    "hero_title": "Comhairle shaineolach\nag leibhéal an Bhóird Bhainistíochta.",
+    "hero_subtitle": "Ceanglaim comhairleoirí creidiúnaithe ag Certo le heagraíochtaí a bhíonn i nglacadh le gnáthchleachtas is airde ar rialachas corparáideach agus ar chomhréire rialála.",
+    "hero_cta": "Faigh saineolach",
+    "finder_title": "Ba bhreá liom labhairt le saineolach ar:",
+    "area_health": "Ochtair Dhíochais",
     "area_local_gov": "Rialtas Áitiúil",
     "area_defense": "Cosaint",
     "area_finance": "Airgeadas",
     "area_education": "Oideachas",
-    "form_title": "Fág do theagmháil ionas go roghnóimid an comhairleoir cuí ó réimse",
-    "form_name": "Ainm",
-    "form_email": "Seoladh ríomhphoist (oibre)",
-    "form_org": "Ainm an Eagraíochta / Post",
+    "form_title": "Fág do theagmháil ionas go ndéanfaimid an comhairleoir ceart a roghnú ó réimse",
+    "form_name": "Ainm Sloinne",
+    "form_email": "Seoladh Ríomhphoist (Oifige)",
+    "form_org": "Ainm an Eagraíochta / Seasamh",
     "form_submit": "Seol an Fhiosrúchán",
-    "experts_headline": "Cuidíonn ár saineolaithe\nle Rating Certo\na bhreachtú agus a neartú.",
-    "experts_description": "Comhairleoirí creidiúnaithe le taithí fada i bhfeidhmiú próiseas rialachais a bharrfheabhsú do bhonneagraíochtaí straitéiseacha."
+    "experts_headline": "Cuidíonn ár saineolaithe le",
+    "experts_headline_continued": "Rating Certo a choinneáil agus a neartú.",
+    "experts_description": "Comhairleoirí creidiúnaithe le fada-thréimhse taithí i dtorthaí próisis rialachais a dhéanamh níos fearr d'eagraíochtaí straitéiseacha."
   },
   "Legal": {
-    "back": "Ar Ais go dtí an Leathanach Baile",
-    "last_updated": "Nuashonraithe ar Dheireadh: Márta 2026",
+    "back": "Ar ais go dtí an Leathanach Baile",
+    "last_updated": "Nuashonraithe Deireanach: Márta 2026",
     "privacy_title": "Polasaí Príobháideachta",
-    "terms_title": "Coinníollacha Úsáide"
+    "terms_title": "Téarmaí Úsáide"
   },
   "FindAdvisor": {
-    "title": "Faigh comhairleoir Certo",
-    "sector_label": "Earnáil d'Eagraíochta",
-    "need_label": "Cad atá de dhíth ort?",
-    "need_audit": "Iniúchadh rialachais",
-    "need_advisory": "Comhairle straitéiseach",
-    "need_training": "Oiliúint agus ceardlanna",
-    "need_rating": "Ullmhú do rátáil",
+    "title": "Faigh Comhairleoir Certo",
+    "sector_label": "Gréine d'Fhoras do Eagraíochta",
+    "need_label": "Cad atá ag teastáil uait?",
+    "need_audit": "Iniúchta Rialachais",
+    "need_advisory": "Comhairle Straitéiseach",
+    "need_training": "Oiliúint agus Ceardlanna",
+    "need_rating": "Ullmhú do Rátáil",
     "region_label": "Réigiún",
-    "submit": "Cuardaigh comhairleoir"
+    "submit": "Cuardaigh Comhairleoir"
   },
   "Advisor": {
     "accredited_by": "Creidiúnaithe ag Certo",
     "specialization": "Speisialtóireacht",
-    "sectors": "Earnálacha",
+    "sectors": "Gréine",
     "contact_advisor": "Déan Teagmháil",
     "view_profile": "Féach ar an Phróifíl"
   },
@@ -64,15 +65,15 @@
     "subtitle": "Certo ID PSA",
     "label_address": "Seoladh",
     "label_email": "Ríomhphost",
-    "address": "02-566 Vársá, Sráid Puławska 2B",
+    "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.consulting",
     "form_title": "Scríobh chugainn",
-    "form_name": "Ainm",
-    "form_email": "Seoladh ríomhphoist",
+    "form_name": "Ainm Sloinne",
+    "form_email": "Seoladh Ríomhphoist",
     "form_subject": "Ábhar",
     "form_message": "Teachtaireacht",
     "form_submit": "Seol an Teachtaireacht",
-    "form_success": "Seoladh an teachtaireacht. Freagraímid chomh tapaidh agus is féidir.",
+    "form_success": "Bhí an teachtaireacht curtha. Beidh freagraí ar fáil go luath is féidir.",
     "subject_general": "Fiosrúchán Ginearálta",
     "subject_advisory": "Comhairle",
     "subject_accreditation": "Creidiúnú Comhairleora",

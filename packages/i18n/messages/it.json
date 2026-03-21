@@ -8,16 +8,16 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organo di rating indipendente che valuta la qualità della governance delle istituzioni pubbliche, aziendali e non governative."
+    "description": "Organo di rating indipendente che valuta la qualità della governance delle istituzioni pubbliche, aziendali e non-profit."
   },
   "Common": {
     "rating": "Rating Certo",
     "score": "Certo Score",
     "delegate": "Certo Delegate",
     "login": "Accedi",
-    "logout": "Disconnetti",
+    "logout": "Esci",
     "privacyPolicy": "Politica sulla privacy",
-    "termsOfUse": "Condizioni d'uso",
+    "termsOfUse": "Condizioni di utilizzo",
     "loading": "Caricamento in corso...",
     "error": "Si è verificato un errore",
     "save": "Salva",
@@ -35,9 +35,9 @@
   "Navigation": {
     "home": "Home",
     "ratings": "Rating",
-    "reports": "Report",
+    "reports": "Rapporti",
     "analysis": "Analisi",
-    "about": "Su di noi",
+    "about": "Chi siamo",
     "contact": "Contatti",
     "dashboard": "Pannello",
     "settings": "Impostazioni"
@@ -48,7 +48,7 @@
     "login_with_google": "Accedi con Google",
     "email_label": "Indirizzo e-mail",
     "password_label": "Password",
-    "forgot_password": "Hai dimenticato la password?",
+    "forgot_password": "Non ricordi la password?",
     "no_account": "Non hai un account?",
     "register": "Registrati"
   },
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Tutti i diritti riservati",
     "privacy": "Politica sulla privacy",
-    "terms": "Condizioni d'uso",
+    "terms": "Condizioni di utilizzo",
     "contact": "Contatti"
   }
 }

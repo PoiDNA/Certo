@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af ledelse i offentlige, kommercielle og non-profit institutioner."
+    "description": "Uafhængigt ratingorgan, der vurderer kvaliteten af ledelse i offentlige, kommercielle og nonprofit-institutioner."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,7 +17,7 @@
     "login": "Log ind",
     "logout": "Log ud",
     "privacyPolicy": "Privatlivspolitik",
-    "termsOfUse": "Betingelser for brug",
+    "termsOfUse": "Vilkår for brug",
     "loading": "Indlæser...",
     "error": "Der opstod en fejl",
     "save": "Gem",
@@ -28,16 +28,16 @@
     "close": "Luk",
     "search": "Søg",
     "download": "Download",
-    "verified": "Bekræftet",
+    "verified": "Verificeret",
     "active": "Aktiv",
     "inactive": "Inaktiv"
   },
   "Navigation": {
-    "home": "Startside",
+    "home": "Forside",
     "ratings": "Ratings",
     "reports": "Rapporter",
     "analysis": "Analyser",
-    "about": "Om Fonden",
+    "about": "Om Instituttet",
     "contact": "Kontakt",
     "dashboard": "Kontrolpanel",
     "settings": "Indstillinger"
@@ -48,13 +48,13 @@
     "login_with_google": "Log ind via Google",
     "email_label": "E-mailadresse",
     "password_label": "Adgangskode",
-    "forgot_password": "Glemt adgangskode?",
-    "no_account": "Har du ikke en konto?",
-    "register": "Tilmeld dig"
+    "forgot_password": "Glemt din adgangskode?",
+    "no_account": "Har du ingen konto?",
+    "register": "Registrer dig"
   },
   "Errors": {
     "404_title": "Side blev ikke fundet",
-    "404_description": "Den side du søger efter findes ikke eller er blevet flyttet.",
+    "404_description": "Siden du søger efter findes ikke eller er blevet flyttet.",
     "500_title": "Serverfejl",
     "500_description": "Der opstod en uventet fejl. Prøv igen senere.",
     "unauthorized": "Ingen adgang. Log ind for at fortsætte."
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Alle rettigheder forbeholdt",
     "privacy": "Privatlivspolitik",
-    "terms": "Betingelser for brug",
+    "terms": "Vilkår for brug",
     "contact": "Kontakt"
   }
 }

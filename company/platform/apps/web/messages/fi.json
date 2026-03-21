@@ -1,86 +1,86 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Henkilöllisyyden vahvistaminen ja compliance-vaatimuksiin noudattaminen julkisille laitoksille ja yrityksille."
+    "description": "Identiteetin vahvistaminen ja compliance-vaatimustenmukaisuus julkisille laitoksille ja korporaatioille."
   },
   "Nav": {
     "solutions": "Ratkaisut",
     "technology": "Teknologia",
     "foundation": "Certo Governance Institute",
-    "login": "Kirjaudu sisään",
-    "contact": "Ota yhteyttä"
+    "login": "Kirjaudu",
+    "contact": "Yhteystiedot"
   },
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Tietosuojakäytäntö",
-    "terms": "Käyttöehdot",
-    "contact": "Ota yhteyttä"
+    "terms": "Palvelun käyttöehdot",
+    "contact": "Yhteystiedot"
   },
   "Contact": {
-    "title": "Ota yhteyttä",
+    "title": "Yhteystiedot",
     "subtitle": "Certo ID PSA",
     "label_address": "Osoite",
     "label_email": "Sähköposti",
     "address": "02-566 Warszawa, ul. Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Lähetä meille viesti",
+    "form_title": "Ota meihin yhteyttä",
     "form_name": "Nimi",
     "form_email": "Sähköpostiosoite",
     "form_subject": "Aihe",
     "form_message": "Viesti",
     "form_submit": "Lähetä viesti",
     "form_success": "Viesti on lähetetty. Vastaamme mahdollisimman pian.",
-    "subject_general": "Yleinen kysely",
+    "subject_general": "Yleinen tiedustelu",
     "subject_implementation": "Käyttöönotto",
     "subject_technical": "Tekninen tuki",
     "subject_cooperation": "Yhteistyö"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
-    "hero_line1": "Henkilöllisyys.",
-    "hero_line2": "Vaatimuksiin noudattaminen.",
+    "hero_line1": "Identiteetti.",
+    "hero_line2": "Vaatimustenmukaisuus.",
     "hero_line3": "Varmuus.",
-    "hero_description": "Vahvistamis- ja compliance-infrastruktuuri julkisille laitoksille, yrityksille ja säännellyille toimijoille. Rakennettu standardien pohjalle",
+    "hero_description": "Vahvistamis- ja compliance-infrastruktuuri julkisille laitoksille, korporaatioille ja säännellyille tahoille. Rakennettu standardeille",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "ALOITA KÄYTTÖÖNOTTO",
     "cta_secondary": "PALVELUT",
     "services_label": "PALVELUT",
-    "services_title": "Kolme compliance-infrastruktuurin tasoa",
-    "service1_title": "Henkilöllisyyden vahvistaminen",
-    "service1_desc": "KYC/AML säännellyille toimijoille. Automaattinen asiakirjajen vahvistaminen, pakotteiden ja PEP-seulonta, integrointi valtion rekistereihin.",
-    "service2_title": "Compliance-luokitus",
-    "service2_desc": "Automaattinen vaatimuksiin noudattamisen pisteytys, joka perustuu Certo Governance Institute -metodologiaan. Viisitasoinen arviointijärjestelmä täydellä auditointiketjulla.",
+    "services_title": "Kolme compliance-infrastruktuurin kerrosta",
+    "service1_title": "Identiteetin vahvistaminen",
+    "service1_desc": "KYC/AML säännellyille tahoille. Automaattinen asiakirjojen vahvistaminen, pakotteiden ja PEP-seulonta, integraatio valtion rekistereihin.",
+    "service2_title": "Compliance-arviointi",
+    "service2_desc": "Automaattinen vaatimustenmukaisuuden pisteiden antaminen Certo Governance Instituten metodologian perusteella. Viisitasoinen arviointijärjestelmä täydellä auditointipolulla.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Automaattiset korjaussuunnitelmat ja niiden toteutuksen valvonta. Integrointi ERP-, GRC- ja riskienhallintajärjestelmiin.",
+    "service3_desc": "Automaattiset korjaussuunnitelmat ja niiden toteutuksen valvonta. Integraatio ERP-, GRC- ja riskienhallintajärjestelmiin.",
     "arch_label": "ARKKITEHTUURI",
     "arch_title": "Kuinka Certo ID toimii",
-    "step1_title": "Intake",
-    "step1_desc": "Toimijan tiedot + asiakirjat + säännösten konteksti",
-    "step2_title": "Verify",
-    "step2_desc": "Henkilöllisyyden vahvistaminen, seulonta, julkinen rekisteri",
-    "step3_title": "Score",
-    "step3_desc": "Automaattinen Certo Vector -vaatimuksiin noudattamisen luokitus",
-    "step4_title": "Report",
+    "step1_title": "Vastaanotto",
+    "step1_desc": "Tahon tiedot + asiakirjat + sääntelykonteksti",
+    "step2_title": "Vahvistus",
+    "step2_desc": "Identiteetin vahvistaminen, seulonta, julkinen rekisteri",
+    "step3_title": "Pisteet",
+    "step3_desc": "Automaattinen Certo Vector -vaatimustenmukaisuusarviointi",
+    "step4_title": "Raportti",
     "step4_desc": "PDF-raportti + API + Certo Online -koontinäyttö",
     "badge_iso": "ISO-standardit",
     "badge_compliance": "Säännösten noudattaminen",
-    "badge_kyc": "Henkilöllisyyden vahvistaminen",
-    "badge_governance": "Hallinnan arviointi"
+    "badge_kyc": "Identiteetin vahvistaminen",
+    "badge_governance": "Hallinnon arviointi"
   },
   "Legal": {
     "back": "Takaisin pääsivulle",
     "last_updated": "Viimeksi päivitetty: Maaliskuu 2026",
     "privacy_title": "Tietosuojakäytäntö",
-    "terms_title": "Käyttöehdot"
+    "terms_title": "Palvelun käyttöehdot"
   },
   "Dashboard": {
     "title": "Certo ID -paneeli",
     "welcome": "Tervetuloa, {name}",
     "your_rating": "Sinun Certo Rating",
-    "your_delegates": "Sinun Delegaat",
+    "your_delegates": "Sinun Delegaatit",
     "your_accords": "Sinun Certo Accord",
     "recent_activity": "Viimeaikainen toiminta",
-    "quick_actions": "Pikatoiminnot"
+    "quick_actions": "Pikavalinnaiset"
   },
   "Profile": {
     "title": "Profiili",
@@ -88,13 +88,13 @@
     "contact_person": "Yhteyshenkilö",
     "sector": "Sektori",
     "edit_profile": "Muokkaa profiilia",
-    "verified_badge": "Vahvistettu toimija"
+    "verified_badge": "Vahvistettu taho"
   },
   "Delegates": {
-    "title": "Certo Delegate",
+    "title": "Certo Delegaatit",
     "add_delegate": "Lisää delegaatti",
     "delegate_id": "Delegate ID",
-    "delegate_status": "Status",
+    "delegate_status": "Tila",
     "primary_link": "PRIMARY-linkki",
     "failover_link": "FAILOVER-linkki",
     "plan_basic": "Basic",

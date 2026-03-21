@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Órgano independiente de calificación que evalúa la calidad de la gobernanza en instituciones públicas, corporativas y no gubernamentales."
+    "description": "Órgano de calificación independiente que evalúa la calidad de la gobernanza de instituciones públicas, corporativas y no gubernamentales."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -19,7 +19,7 @@
     "privacyPolicy": "Política de privacidad",
     "termsOfUse": "Términos de uso",
     "loading": "Cargando...",
-    "error": "Ha ocurrido un error",
+    "error": "Ocurrió un error",
     "save": "Guardar",
     "cancel": "Cancelar",
     "confirm": "Confirmar",
@@ -39,14 +39,14 @@
     "analysis": "Análisis",
     "about": "Acerca de la Fundación",
     "contact": "Contacto",
-    "dashboard": "Panel de control",
+    "dashboard": "Panel",
     "settings": "Configuración"
   },
   "Auth": {
     "login_title": "Inicia sesión",
     "login_subtitle": "Inicia sesión en tu cuenta",
     "login_with_google": "Inicia sesión con Google",
-    "email_label": "Correo electrónico",
+    "email_label": "Dirección de correo electrónico",
     "password_label": "Contraseña",
     "forgot_password": "¿Olvidaste tu contraseña?",
     "no_account": "¿No tienes una cuenta?",
@@ -56,7 +56,7 @@
     "404_title": "Página no encontrada",
     "404_description": "La página que buscas no existe o ha sido movida.",
     "500_title": "Error del servidor",
-    "500_description": "Ha ocurrido un error inesperado. Intenta más tarde.",
+    "500_description": "Ocurrió un error inesperado. Intenta de nuevo más tarde.",
     "unauthorized": "Acceso denegado. Inicia sesión para continuar."
   },
   "Footer": {

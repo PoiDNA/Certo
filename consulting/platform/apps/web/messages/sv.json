@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Hitta Rådgivare",
-    "description": "Ackrediterade Certo-rådgivare. Corporate Governance och compliance."
+    "description": "Ackrediterade Certo-rådgivare. Corporate Governance och regelefterlevnad."
   },
   "Nav": {
     "advisors": "Rådgivare",
@@ -10,7 +10,7 @@
     "contact": "Kontakt"
   },
   "Footer": {
-    "description": "Expert rådgivning inom corporate governance, compliance och säkerhet för marknadsledare.",
+    "description": "Expertisrådgivning inom corporate governance, regelefterlevnad och säkerhet för marknadsledare.",
     "ecosystem": "Certo-ekosystemet",
     "accreditation": "Alla rådgivare är ackrediterade av Certo Governance Institute",
     "privacy": "Sekretesspolicy",
@@ -18,22 +18,22 @@
     "contact": "Kontakt"
   },
   "Home": {
-    "hero_title": "Expert rådgivning\npå styrelsenivå.",
-    "hero_subtitle": "Vi förbinder ackrediterade Certo-rådgivare med institutioner som kräver högsta standarder för corporate governance och regelöverensstämmelse.",
+    "hero_title": "Expertisrådgivning\npå styrelsenivrå.",
+    "hero_subtitle": "Vi kopplar samman ackrediterade Certo-rådgivare med institutioner som kräver högsta standarder för corporate governance och regelefterlevnad.",
     "hero_cta": "Hitta en expert",
     "finder_title": "Jag vill prata med en expert inom:",
-    "area_health": "Hälsovård",
+    "area_health": "Hälso- och sjukvård",
     "area_local_gov": "Lokal förvaltning",
     "area_defense": "Försvar",
     "area_finance": "Finans",
     "area_education": "Utbildning",
-    "form_title": "Lämna dina kontaktuppgifter så matchar vi dig med en lämplig rådgivare från området",
+    "form_title": "Lämna dina kontaktuppgifter så hjälper vi dig att hitta rätt rådgivare inom området",
     "form_name": "Namn",
-    "form_email": "E-postadress (arbete)",
+    "form_email": "E-postadress (tjänste-e-post)",
     "form_org": "Organisationens namn / Befattning",
     "form_submit": "Skicka förfrågan",
-    "experts_headline": "Våra experter hjälper till att\nupprätthålla och stärka\nCerto Rating.",
-    "experts_description": "Ackrediterade rådgivare med långvarig erfarenhet av att optimera governance-processer för strategiska institutioner."
+    "experts_headline": "Våra experter hjälper till\natt behålla och stärka\nCerto Rating.",
+    "experts_description": "Ackrediterade rådgivare med många års erfarenhet av att optimera governance-processer för strategiska institutioner."
   },
   "Legal": {
     "back": "Tillbaka till startsidan",
@@ -42,13 +42,13 @@
     "terms_title": "Användarvillkor"
   },
   "FindAdvisor": {
-    "title": "Hitta Certo-rådgivare",
+    "title": "Hitta en Certo-rådgivare",
     "sector_label": "Din institutions sektor",
     "need_label": "Vad behöver du?",
     "need_audit": "Governance-revision",
     "need_advisory": "Strategisk rådgivning",
     "need_training": "Utbildning och workshops",
-    "need_rating": "Förberedelse för rating",
+    "need_rating": "Förberedelse inför rating",
     "region_label": "Region",
     "submit": "Sök rådgivare"
   },
@@ -75,7 +75,7 @@
     "form_success": "Meddelandet har skickats. Vi svarar så snart som möjligt.",
     "subject_general": "Allmän förfrågan",
     "subject_advisory": "Rådgivning",
-    "subject_accreditation": "Rådgivarackreditering",
+    "subject_accreditation": "Rådgivarakkredering",
     "subject_cooperation": "Samarbete"
   }
 }

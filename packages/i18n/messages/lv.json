@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Neatkarīgs reitinga organs, kas novērtē publisko, korporatīvo un bezpeļņu organizāciju pārvaldības kvalitāti."
+    "description": "Neatkarīgs reitinga organs, kas novērtē publisko, korporatīvo un bezpeļņas institūciju pārvaldības kvalitāti."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -19,7 +19,7 @@
     "privacyPolicy": "Privātuma politika",
     "termsOfUse": "Lietošanas noteikumi",
     "loading": "Ielāde...",
-    "error": "Notika kļūda",
+    "error": "Radās kļūda",
     "save": "Saglabāt",
     "cancel": "Atcelt",
     "confirm": "Apstiprināt",
@@ -37,30 +37,30 @@
     "ratings": "Reitingi",
     "reports": "Pārskati",
     "analysis": "Analīzes",
-    "about": "Par fonda",
+    "about": "Par Fondu",
     "contact": "Kontakti",
-    "dashboard": "Dēlis",
+    "dashboard": "Vadības panelis",
     "settings": "Iestatījumi"
   },
   "Auth": {
     "login_title": "Pierakstieties",
     "login_subtitle": "Pierakstieties savā kontā",
-    "login_with_google": "Pierakstieties ar Google",
+    "login_with_google": "Pierakstieties, izmantojot Google",
     "email_label": "E-pasta adrese",
     "password_label": "Parole",
-    "forgot_password": "Aizmirsi paroli?",
+    "forgot_password": "Aizmirsāt paroli?",
     "no_account": "Jums nav konta?",
     "register": "Reģistrējieties"
   },
   "Errors": {
-    "404_title": "Lapa nav atrasta",
-    "404_description": "Lapa, kuru meklējat, neeksistē vai ir pārvietota.",
+    "404_title": "Lapa netika atrasta",
+    "404_description": "Meklētā lapa neeksistē vai ir pārvietota.",
     "500_title": "Servera kļūda",
-    "500_description": "Notika neparedzēta kļūda. Vēlāk mēģiniet vēlreiz.",
-    "unauthorized": "Pieeja liegta. Pierakstieties, lai turpinātu."
+    "500_description": "Radās neparedzēta kļūda. Vēlāk mēģiniet vēlreiz.",
+    "unauthorized": "Piekļuve liegta. Pierakstieties, lai turpinātu."
   },
   "Footer": {
-    "rights": "Visas tiesības paturētas",
+    "rights": "Visas tiesības aizsargātas",
     "privacy": "Privātuma politika",
     "terms": "Lietošanas noteikumi",
     "contact": "Kontakti"

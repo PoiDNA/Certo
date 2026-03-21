@@ -1,79 +1,79 @@
 {
   "Metadata": {
     "title": "Certo Consulting — Encontre um Consultor",
-    "description": "Consultores acreditados Certo. Governança corporativa e conformidade."
+    "description": "Consultores acreditados pela Certo. Governança corporativa e conformidade."
   },
   "Nav": {
     "advisors": "Consultores",
     "expertise": "Expertise",
-    "login": "Acesso",
-    "contact": "Contacto"
+    "login": "Login",
+    "contact": "Contato"
   },
   "Footer": {
     "description": "Consultoria especializada em governança corporativa, conformidade e segurança para líderes de mercado.",
     "ecosystem": "Ecossistema Certo",
     "accreditation": "Todos os consultores são acreditados pela Fundação Certo Governance Institute",
     "privacy": "Política de Privacidade",
-    "terms": "Termos de Utilização",
-    "contact": "Contacto"
+    "terms": "Termos de Serviço",
+    "contact": "Contato"
   },
   "Home": {
-    "hero_title": "Consultoria especializada\nao nível da administração.",
-    "hero_subtitle": "Conectamos consultores acreditados Certo com instituições que exigem os mais elevados padrões de governança corporativa e conformidade regulatória.",
+    "hero_title": "Consultoria especializada\nao nível executivo.",
+    "hero_subtitle": "Conectamos consultores acreditados pela Certo com instituições que exigem os mais altos padrões de governança corporativa e conformidade regulatória.",
     "hero_cta": "Encontre um especialista",
-    "finder_title": "Desejo falar com um especialista em:",
+    "finder_title": "Desejo conversar com um especialista em:",
     "area_health": "Saúde",
     "area_local_gov": "Administração Local",
     "area_defense": "Defesa",
     "area_finance": "Finanças",
     "area_education": "Educação",
-    "form_title": "Deixe os seus dados para que possamos encontrar o consultor adequado da área de",
+    "form_title": "Deixe seu contato para que possamos indicar o consultor apropriado da área de",
     "form_name": "Nome completo",
-    "form_email": "Endereço de email (profissional)",
+    "form_email": "Endereço de email (corporativo)",
     "form_org": "Nome da organização / Cargo",
-    "form_submit": "Enviar pedido",
-    "experts_headline": "Os nossos especialistas ajudam\na manter e reforçar\no Rating Certo.",
-    "experts_description": "Consultores acreditados com experiência extensiva na otimização de processos de governança para instituições estratégicas."
+    "form_submit": "Enviar consulta",
+    "experts_headline": "Nossos especialistas ajudam\na manter e fortalecer\nseu Rating Certo.",
+    "experts_description": "Consultores acreditados com muitos anos de experiência na otimização de processos de governança para instituições estratégicas."
   },
   "Legal": {
     "back": "Voltar à página inicial",
     "last_updated": "Última atualização: Março de 2026",
     "privacy_title": "Política de Privacidade",
-    "terms_title": "Condições de Utilização"
+    "terms_title": "Termos de Uso"
   },
   "FindAdvisor": {
     "title": "Encontre um consultor Certo",
-    "sector_label": "Sector da sua instituição",
-    "need_label": "Do que precisa?",
+    "sector_label": "Setor de sua instituição",
+    "need_label": "O que você precisa?",
     "need_audit": "Auditoria de governança",
     "need_advisory": "Consultoria estratégica",
-    "need_training": "Formações e workshops",
+    "need_training": "Treinamentos e workshops",
     "need_rating": "Preparação para rating",
     "region_label": "Região",
-    "submit": "Procurar consultor"
+    "submit": "Buscar consultor"
   },
   "Advisor": {
     "accredited_by": "Acreditado pela Certo",
     "specialization": "Especialização",
-    "sectors": "Sectores",
-    "contact_advisor": "Contacte",
+    "sectors": "Setores",
+    "contact_advisor": "Entre em contato",
     "view_profile": "Ver perfil"
   },
   "Contact": {
-    "title": "Contacto",
+    "title": "Contato",
     "subtitle": "Certo ID PSA",
     "label_address": "Endereço",
     "label_email": "Email",
     "address": "02-566 Varsóvia, ul. Puławska 2B",
     "email": "certo@certo.consulting",
-    "form_title": "Envie-nos uma mensagem",
+    "form_title": "Escreva para nós",
     "form_name": "Nome completo",
     "form_email": "Endereço de email",
     "form_subject": "Assunto",
     "form_message": "Mensagem",
     "form_submit": "Enviar mensagem",
-    "form_success": "A mensagem foi enviada. Responderemos o mais breve possível.",
-    "subject_general": "Pedido geral",
+    "form_success": "Mensagem enviada. Responderemos assim que possível.",
+    "subject_general": "Consulta geral",
     "subject_advisory": "Consultoria",
     "subject_accreditation": "Acreditação de consultor",
     "subject_cooperation": "Cooperação"

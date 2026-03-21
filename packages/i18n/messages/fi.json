@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Itsenäinen luokituslaitos, joka arvioi julkisten, yritys- ja voittoa tavoittelemattomien organisaatioiden hallintokäytäntöjen laatua."
+    "description": "Riippumaton luokituslaitos, joka arvioi julkisten, yritys- ja kansalaisjärjestöjen hallintokäytäntöjen laatua."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -37,15 +37,15 @@
     "ratings": "Luokitukset",
     "reports": "Raportit",
     "analysis": "Analyysit",
-    "about": "Tietoa säätiöstä",
+    "about": "Tietoa Säätiöstä",
     "contact": "Yhteystiedot",
-    "dashboard": "Kojelauta",
+    "dashboard": "Hallintapaneeli",
     "settings": "Asetukset"
   },
   "Auth": {
     "login_title": "Kirjaudu sisään",
-    "login_subtitle": "Kirjaudu tilillesi",
-    "login_with_google": "Kirjaudu Google-tilillä",
+    "login_subtitle": "Kirjaudu sisään tiliisi",
+    "login_with_google": "Kirjaudu sisään Googlella",
     "email_label": "Sähköpostiosoite",
     "password_label": "Salasana",
     "forgot_password": "Unohditko salasanasi?",
@@ -54,10 +54,10 @@
   },
   "Errors": {
     "404_title": "Sivua ei löytynyt",
-    "404_description": "Hakemaasi sivua ei ole olemassa tai se on siirretty.",
-    "500_title": "Palvelimen virhe",
-    "500_description": "Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen.",
-    "unauthorized": "Pääsy estetty. Kirjaudu sisään jatkaaksesi."
+    "404_description": "Etsimääsi sivua ei ole olemassa tai se on siirretty.",
+    "500_title": "Palvelinvirhe",
+    "500_description": "Tapahtui odottamaton virhe. Yritä uudelleen myöhemmin.",
+    "unauthorized": "Ei pääsyä. Kirjaudu sisään jatkaaksesi."
   },
   "Footer": {
     "rights": "Kaikki oikeudet pidätetään",

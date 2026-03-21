@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Organ de rating independent care evaluează calitatea conducerii instituțiilor publice, corporative și non-guvernamentale."
+    "description": "Organ de rating independent care evaluează calitatea lade de conducere al instituțiilor publice, corporative și neguvernamentale."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,14 +17,14 @@
     "login": "Conectați-vă",
     "logout": "Deconectați-vă",
     "privacyPolicy": "Politica de confidențialitate",
-    "termsOfUse": "Termeni de utilizare",
-    "loading": "Se încarcă...",
+    "termsOfUse": "Condiții de utilizare",
+    "loading": "Încărcare...",
     "error": "A apărut o eroare",
     "save": "Salvați",
     "cancel": "Anulați",
     "confirm": "Confirmați",
     "back": "Înapoi",
-    "next": "Înainte",
+    "next": "Următorul",
     "close": "Închideți",
     "search": "Căutați",
     "download": "Descărcați",
@@ -44,7 +44,7 @@
   },
   "Auth": {
     "login_title": "Conectați-vă",
-    "login_subtitle": "Conectați-vă la contul dvs.",
+    "login_subtitle": "Conectați-vă la contul dumneavoastră",
     "login_with_google": "Conectați-vă prin Google",
     "email_label": "Adresă de e-mail",
     "password_label": "Parolă",
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Toate drepturile rezervate",
     "privacy": "Politica de confidențialitate",
-    "terms": "Termeni de utilizare",
+    "terms": "Condiții de utilizare",
     "contact": "Contact"
   }
 }

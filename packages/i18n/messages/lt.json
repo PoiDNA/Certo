@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporacinių ir nevyriausybinių institucijų valdymo kokybę."
+    "description": "Nepriklausomas reitingų organas, vertinantis viešųjų, korporatyvių ir nevyriausybinių institucijų valdymo kokybę."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,7 +17,7 @@
     "login": "Prisijungti",
     "logout": "Atsijungti",
     "privacyPolicy": "Privatumo politika",
-    "termsOfUse": "Naudojimo sąlygos",
+    "termsOfUse": "Naudojimosi sąlygos",
     "loading": "Kraunasi...",
     "error": "Įvyko klaida",
     "save": "Išsaugoti",
@@ -28,18 +28,18 @@
     "close": "Uždaryti",
     "search": "Paieška",
     "download": "Atsisiųsti",
-    "verified": "Patvirtinta",
+    "verified": "Patvirtintas",
     "active": "Aktyvus",
     "inactive": "Neaktyvus"
   },
   "Navigation": {
     "home": "Pradžia",
     "ratings": "Reitingai",
-    "reports": "Ataskaitos",
+    "reports": "Ataskaitai",
     "analysis": "Analizės",
     "about": "Apie Fondą",
     "contact": "Kontaktai",
-    "dashboard": "Skydelis",
+    "dashboard": "Prietaisų sritis",
     "settings": "Nustatymai"
   },
   "Auth": {
@@ -48,13 +48,13 @@
     "login_with_google": "Prisijungti naudojant Google",
     "email_label": "El. pašto adresas",
     "password_label": "Slaptažodis",
-    "forgot_password": "Pamiršai slaptažodį?",
-    "no_account": "Neturi paskyros?",
+    "forgot_password": "Pamiršote slaptažodį?",
+    "no_account": "Neturite paskyros?",
     "register": "Užsiregistruoti"
   },
   "Errors": {
     "404_title": "Puslapis nerastas",
-    "404_description": "Puslapis, kurį ieškoti, neegzistuoja arba buvo perkeltas.",
+    "404_description": "Puslapis, kurį ieškote, neegzistuoja arba buvo perkeltas.",
     "500_title": "Serverio klaida",
     "500_description": "Įvyko netikėta klaida. Bandykite vėliau.",
     "unauthorized": "Prieiga uždrausta. Prisijunkite norėdami tęsti."
@@ -62,7 +62,7 @@
   "Footer": {
     "rights": "Visos teisės saugomos",
     "privacy": "Privatumo politika",
-    "terms": "Naudojimo sąlygos",
+    "terms": "Naudojimosi sąlygos",
     "contact": "Kontaktai"
   }
 }

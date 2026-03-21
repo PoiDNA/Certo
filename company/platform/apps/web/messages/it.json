@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Certo ID — Verified Digital Identity",
-    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e società."
+    "description": "Verifica dell'identità e compliance per istituzioni pubbliche e aziende."
   },
   "Nav": {
     "solutions": "Soluzioni",
@@ -13,7 +13,7 @@
   "Footer": {
     "copyright": "© {year} Certo ID PSA",
     "privacy": "Informativa sulla Privacy",
-    "terms": "Termini di Servizio",
+    "terms": "Condizioni di Servizio",
     "contact": "Contatti"
   },
   "Contact": {
@@ -23,39 +23,39 @@
     "label_email": "Email",
     "address": "02-566 Varsavia, ul. Puławska 2B",
     "email": "certo@certo.id",
-    "form_title": "Scrivici",
-    "form_name": "Nome e cognome",
+    "form_title": "Contattaci",
+    "form_name": "Nome e Cognome",
     "form_email": "Indirizzo email",
     "form_subject": "Oggetto",
     "form_message": "Messaggio",
     "form_submit": "Invia messaggio",
-    "form_success": "Il messaggio è stato inviato. Ti risponderemo al più presto.",
+    "form_success": "Messaggio inviato. Ti risponderemo al più presto.",
     "subject_general": "Richiesta generale",
     "subject_implementation": "Implementazione",
     "subject_technical": "Supporto tecnico",
-    "subject_cooperation": "Collaborazione"
+    "subject_cooperation": "Cooperazione"
   },
   "Home": {
     "badge": "Compliance Infrastructure",
     "hero_line1": "Identità.",
     "hero_line2": "Conformità.",
     "hero_line3": "Certezza.",
-    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, società e organismi regolamentati. Costruita secondo gli standard di",
+    "hero_description": "Infrastruttura di verifica e compliance per istituzioni pubbliche, aziende e soggetti regolati. Costruita secondo gli standard",
     "hero_built_on": "Certo Governance Institute",
     "cta_primary": "INIZIA L'IMPLEMENTAZIONE",
     "cta_secondary": "SERVIZI",
     "services_label": "SERVIZI",
     "services_title": "Tre livelli di infrastruttura compliance",
     "service1_title": "Verifica dell'Identità",
-    "service1_desc": "KYC/AML per organismi regolamentati. Verifica automatica dei documenti, screening delle sanzioni e verifica PEP, integrazione con i registri pubblici.",
+    "service1_desc": "KYC/AML per soggetti regolati. Verifica automatica dei documenti, screening delle sanzioni e PEP, integrazione con registri pubblici.",
     "service2_title": "Rating Compliance",
-    "service2_desc": "Scoring automatico della conformità basato sulla metodologia di Certo Governance Institute. Sistema di valutazione a cinque livelli con traccia di audit completa.",
+    "service2_desc": "Scoring automatico della conformità basato sulla metodologia Certo Governance Institute. Sistema di valutazione a cinque livelli con audit trail completo.",
     "service3_title": "Remediation Engine",
-    "service3_desc": "Piani di rimedio automatici e monitoraggio della loro attuazione. Integrazione con sistemi ERP, GRC e piattaforme di gestione del rischio.",
+    "service3_desc": "Piani di correzione automatici e monitoraggio della loro attuazione. Integrazione con sistemi ERP, GRC e piattaforme di gestione del rischio.",
     "arch_label": "ARCHITETTURA",
     "arch_title": "Come funziona Certo ID",
     "step1_title": "Intake",
-    "step1_desc": "Dati dell'organismo + documenti + contesto normativo",
+    "step1_desc": "Dati del soggetto + documenti + contesto normativo",
     "step2_title": "Verify",
     "step2_desc": "Verifica dell'identità, screening, registro pubblico",
     "step3_title": "Score",
@@ -68,17 +68,17 @@
     "badge_governance": "Valutazione della governance"
   },
   "Legal": {
-    "back": "Torna alla pagina principale",
+    "back": "Torna alla home",
     "last_updated": "Ultimo aggiornamento: Marzo 2026",
     "privacy_title": "Informativa sulla Privacy",
-    "terms_title": "Termini di Servizio"
+    "terms_title": "Condizioni di Servizio"
   },
   "Dashboard": {
-    "title": "Pannello Certo ID",
+    "title": "Panel Certo ID",
     "welcome": "Benvenuto, {name}",
-    "your_rating": "Il Tuo Rating Certo",
-    "your_delegates": "I Tuoi Certo Delegate",
-    "your_accords": "I Tuoi Certo Accord",
+    "your_rating": "Il tuo Rating Certo",
+    "your_delegates": "I tuoi Delegati",
+    "your_accords": "I tuoi Certo Accord",
     "recent_activity": "Attività recente",
     "quick_actions": "Azioni rapide"
   },
@@ -88,10 +88,10 @@
     "contact_person": "Persona di contatto",
     "sector": "Settore",
     "edit_profile": "Modifica profilo",
-    "verified_badge": "Organismo verificato"
+    "verified_badge": "Soggetto verificato"
   },
   "Delegates": {
-    "title": "Certo Delegate",
+    "title": "Delegati Certo",
     "add_delegate": "Aggiungi delegato",
     "delegate_id": "Delegate ID",
     "delegate_status": "Stato",

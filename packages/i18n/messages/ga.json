@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Orgán rátála neamhspleách ag measúnú ar chaighdeán an bhainistíochta i institiúidí poiblí, corparáideacha agus neamhbhriatharthála."
+    "description": "Orgán rátála neamhspleách a dhéanann measúnú ar fheidhmiú an rialachais i bhfoirgnimh phoiblí, corparáideacha agus neamhfhabhracha."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -18,11 +18,11 @@
     "logout": "Logáil amach",
     "privacyPolicy": "Polasaí Príobháideachta",
     "termsOfUse": "Téarmaí Úsáide",
-    "loading": "Á Lódáil...",
+    "loading": "Á lódáil...",
     "error": "Tharla earráid",
     "save": "Sábháil",
     "cancel": "Cealaigh",
-    "confirm": "Dearbhaigh",
+    "confirm": "Deimhnigh",
     "back": "Ar ais",
     "next": "Ar aghaidh",
     "close": "Dún",
@@ -34,29 +34,29 @@
   },
   "Navigation": {
     "home": "Baile",
-    "ratings": "Rátála",
-    "reports": "Tuarascálacha",
-    "analysis": "Anailís",
-    "about": "Maidir leis an Bhunstó",
+    "ratings": "Rátálacha",
+    "reports": "Tuairiscí",
+    "analysis": "Anailísí",
+    "about": "Faoi an Fhondúireacht",
     "contact": "Teagmháil",
-    "dashboard": "Painéal",
+    "dashboard": "Páipéar Gníomhaireachta",
     "settings": "Socruithe"
   },
   "Auth": {
     "login_title": "Logáil isteach",
     "login_subtitle": "Logáil isteach ar do chuntas",
-    "login_with_google": "Logáil isteach trí Google",
-    "email_label": "Seoladh r-phoist",
+    "login_with_google": "Logáil isteach le Google",
+    "email_label": "Seoladh Ríomhphoist",
     "password_label": "Pasfhocal",
     "forgot_password": "Ndearna tú dearmad ar do phasfhocal?",
     "no_account": "Níl cuntas agat?",
-    "register": "Clárú"
+    "register": "Cláraigh"
   },
   "Errors": {
     "404_title": "Níor aimsíodh an leathanach",
-    "404_description": "Níl an leathanach a bhí á lorg agat ann nó bhog sé.",
-    "500_title": "Earráid an Freastalaí",
-    "500_description": "Tharla earráid gan choinne. Déan iarracht arís níos déanaí.",
+    "404_description": "Níl an leathanach atá á lorg agat ann nó bhog sé.",
+    "500_title": "Earráid Freastalaí",
+    "500_description": "Tharla earráid gan súil aici. Déan iarracht arís níos déanaí.",
     "unauthorized": "Gan rochtain. Logáil isteach chun leanúint ar aghaidh."
   },
   "Footer": {

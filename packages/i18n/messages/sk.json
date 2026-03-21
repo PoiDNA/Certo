@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Nezávislý ratingový orgán hodnotenia kvality riadenia verejných, korporátnych a neziskových inštitúcií."
+    "description": "Nezávislý ratingový orgán hodnotí kvalitu riadenia verejných, korporátnych a neziskových inštitúcií."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -16,8 +16,8 @@
     "delegate": "Certo Delegate",
     "login": "Prihlásiť sa",
     "logout": "Odhlásiť sa",
-    "privacyPolicy": "Politika ochrany osobných údajov",
-    "termsOfUse": "Podmienky používania",
+    "privacyPolicy": "Zásady ochrany osobných údajov",
+    "termsOfUse": "Podmienky použitia",
     "loading": "Načítavanie...",
     "error": "Vyskytla sa chyba",
     "save": "Uložiť",
@@ -28,9 +28,9 @@
     "close": "Zavrieť",
     "search": "Hľadať",
     "download": "Stiahnuť",
-    "verified": "Overený",
-    "active": "Aktívny",
-    "inactive": "Neaktívny"
+    "verified": "Overené",
+    "active": "Aktívne",
+    "inactive": "Neaktívne"
   },
   "Navigation": {
     "home": "Domovská stránka",
@@ -44,25 +44,25 @@
   },
   "Auth": {
     "login_title": "Prihlásiť sa",
-    "login_subtitle": "Prihláste sa do svojho účtu",
+    "login_subtitle": "Prihláste sa do svojho konta",
     "login_with_google": "Prihlásiť sa cez Google",
-    "email_label": "E-mailová adresa",
+    "email_label": "Emailová adresa",
     "password_label": "Heslo",
     "forgot_password": "Zabudli ste heslo?",
-    "no_account": "Nemáte účet?",
-    "register": "Zaregistrujte sa"
+    "no_account": "Nemáte konto?",
+    "register": "Registrácia"
   },
   "Errors": {
     "404_title": "Stránka nebola nájdená",
-    "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola premiestnená.",
+    "404_description": "Stránka, ktorú hľadáte, neexistuje alebo bola presunutá.",
     "500_title": "Chyba servera",
     "500_description": "Vyskytla sa neočakávaná chyba. Skúste neskôr.",
-    "unauthorized": "Prístup odmietnutý. Prihláste sa, aby ste pokračovali."
+    "unauthorized": "Prístup bol zamietnutý. Prihláste sa, aby ste pokračovali."
   },
   "Footer": {
     "rights": "Všetky práva vyhradené",
-    "privacy": "Politika ochrany osobných údajov",
-    "terms": "Podmienky používania",
+    "privacy": "Zásady ochrany osobných údajov",
+    "terms": "Podmienky použitia",
     "contact": "Kontakt"
   }
 }

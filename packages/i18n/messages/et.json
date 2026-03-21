@@ -8,7 +8,7 @@
   },
   "Metadata": {
     "title": "Certo Governance Institute",
-    "description": "Sõltumatu reitinguasutus, mis hindab avalike, ärisektor- ja mittetulunduslike asutuste juhtimise kvaliteeti."
+    "description": "Sõltumatu reitingutele eriala asutus, mis hindab avalike, ettevõtete ja mittetulundussektori institutsioonide haldustaset."
   },
   "Common": {
     "rating": "Rating Certo",
@@ -17,7 +17,7 @@
     "login": "Logi sisse",
     "logout": "Logi välja",
     "privacyPolicy": "Privaatsuspoliitika",
-    "termsOfUse": "Kasutustingimused",
+    "termsOfUse": "Kasutamistingimused",
     "loading": "Laadimise käigus...",
     "error": "Ilmnes viga",
     "save": "Salvesta",
@@ -30,39 +30,39 @@
     "download": "Laadi alla",
     "verified": "Kinnitatud",
     "active": "Aktiivne",
-    "inactive": "Passiivne"
+    "inactive": "Mitteaktiivne"
   },
   "Navigation": {
     "home": "Avaleht",
     "ratings": "Reitingud",
     "reports": "Aruanded",
     "analysis": "Analüüsid",
-    "about": "Meist",
+    "about": "Asutusest",
     "contact": "Kontakt",
-    "dashboard": "Armatuurlaud",
+    "dashboard": "Juhtpaneel",
     "settings": "Seaded"
   },
   "Auth": {
     "login_title": "Logi sisse",
     "login_subtitle": "Logi oma kontole sisse",
-    "login_with_google": "Logi sisse Google'iga",
-    "email_label": "E-posti aadress",
+    "login_with_google": "Logi sisse Google-iga",
+    "email_label": "E-maili aadress",
     "password_label": "Parool",
     "forgot_password": "Unustasid parooli?",
     "no_account": "Sinul pole kontot?",
     "register": "Registreeru"
   },
   "Errors": {
-    "404_title": "Lehekülge ei leitud",
-    "404_description": "Otsitud lehekülg ei ole olemas või on kolitud.",
+    "404_title": "Lehte ei leitud",
+    "404_description": "Leht, mida otsisite, pole olemas või see on liigutatud.",
     "500_title": "Serveri viga",
     "500_description": "Ilmnes ootamatu viga. Proovi hiljem uuesti.",
-    "unauthorized": "Juurdepääs puudub. Jätka saamiseks logi sisse."
+    "unauthorized": "Juurdepääs keelatud. Jätkamiseks logi sisse."
   },
   "Footer": {
-    "rights": "Kõik õigused on kaitstud",
+    "rights": "Kõik õigused reserveeritud",
     "privacy": "Privaatsuspoliitika",
-    "terms": "Kasutustingimused",
+    "terms": "Kasutamistingimused",
     "contact": "Kontakt"
   }
 }
