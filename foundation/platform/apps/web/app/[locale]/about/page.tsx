@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('title'),
     alternates: { canonical: `https://certogov.org/${locale}/about` },
+    robots: { index: false, follow: true },
   };
 }
 
