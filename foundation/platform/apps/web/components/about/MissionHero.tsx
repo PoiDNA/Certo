@@ -43,7 +43,7 @@ export default function MissionHero() {
           setTimeout(() => setBeliefVisible(true), 300);
         }, 400);
       }
-    }, 35);
+    }, 65);
   }
 
   return (
