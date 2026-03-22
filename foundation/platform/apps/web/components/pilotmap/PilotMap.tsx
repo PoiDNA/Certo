@@ -1,15 +1,31 @@
 'use client';
 
-import { memo, useState } from 'react';
+import { memo, useState, useEffect } from 'react';
 
-// EU country codes → approximate SVG positions on a simplified Europe map (0-800 x 0-500)
-const COUNTRY_POSITIONS: Record<string, [number, number]> = {
-  PT: [120, 340], ES: [170, 320], FR: [250, 280], BE: [280, 230], NL: [285, 210],
-  LU: [275, 245], DE: [320, 220], AT: [340, 260], IT: [330, 320], SI: [355, 275],
-  HR: [370, 285], MT: [345, 395], CY: [520, 370], GR: [430, 340], BG: [450, 295],
-  RO: [440, 265], HU: [385, 260], SK: [380, 240], CZ: [350, 235], PL: [390, 210],
-  LT: [410, 165], LV: [410, 145], EE: [415, 120], FI: [415, 80], SE: [360, 100],
-  DK: [320, 175], IE: [185, 190],
+// EU country ISO codes
+const EU_COUNTRIES = new Set([
+  'POL','AUT','BEL','BGR','HRV','CYP','CZE','DNK','EST','FIN',
+  'FRA','DEU','GRC','HUN','IRL','ITA','LVA','LTU','LUX','MLT',
+  'NLD','PRT','ROU','SVK','SVN','ESP','SWE',
+]);
+
+// ISO Alpha-3 → Alpha-2 mapping for our data
+const ISO3_TO_ISO2: Record<string, string> = {
+  POL:'PL',AUT:'AT',BEL:'BE',BGR:'BG',HRV:'HR',CYP:'CY',CZE:'CZ',
+  DNK:'DK',EST:'EE',FIN:'FI',FRA:'FR',DEU:'DE',GRC:'GR',HUN:'HU',
+  IRL:'IE',ITA:'IT',LVA:'LV',LTU:'LT',LUX:'LU',MLT:'MT',NLD:'NL',
+  PRT:'PT',ROU:'RO',SVK:'SK',SVN:'SI',ESP:'ES',SWE:'SE',
+};
+
+// Country centroids for markers [lng, lat]
+const COUNTRY_COORDS: Record<string, [number, number]> = {
+  PL:[19.4,52.0],AT:[13.3,47.5],BE:[4.4,50.8],BG:[25.5,42.7],
+  HR:[15.5,45.1],CY:[33.4,35.1],CZ:[15.5,49.8],DK:[9.5,56.3],
+  EE:[25.0,58.6],FI:[25.7,61.9],FR:[2.2,46.6],DE:[10.4,51.2],
+  GR:[21.8,39.1],HU:[19.5,47.2],IE:[-8.2,53.4],IT:[12.6,41.9],
+  LV:[24.6,56.9],LT:[23.9,55.2],LU:[6.1,49.8],MT:[14.4,35.9],
+  NL:[5.3,52.1],PT:[-8.2,39.4],RO:[24.7,45.9],SK:[19.7,48.7],
+  SI:[14.5,46.2],ES:[-3.7,40.4],SE:[18.6,60.1],
 };
 
 const SECTOR_COLORS: Record<string, string> = {
@@ -32,10 +48,112 @@ type Application = {
   created_at: string;
 };
 
-function PilotMap({ applications }: { applications: Application[] }) {
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; text: string } | null>(null);
+type GeoFeature = {
+  type: string;
+  properties: { name: string; [k: string]: unknown };
+  geometry: { type: string; coordinates: number[][][][] | number[][][] };
+  id?: string;
+};
 
-  // Group by country for stacking
+// Mercator projection helpers
+function project(lng: number, lat: number, cx: number, cy: number, scale: number): [number, number] {
+  const x = (lng - cx) * scale;
+  const latRad = (lat * Math.PI) / 180;
+  const mercY = Math.log(Math.tan(Math.PI / 4 + latRad / 2));
+  const cyRad = (cy * Math.PI) / 180;
+  const mercCy = Math.log(Math.tan(Math.PI / 4 + cyRad / 2));
+  const y = -(mercY - mercCy) * scale * (180 / Math.PI);
+  return [400 + x, 300 + y];
+}
+
+function coordsToPath(
+  coords: number[][],
+  cx: number,
+  cy: number,
+  scale: number
+): string {
+  return coords
+    .map((pt, i) => {
+      const [x, y] = project(pt[0], pt[1], cx, cy, scale);
+      return `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`;
+    })
+    .join(' ') + 'Z';
+}
+
+function PilotMap({ applications }: { applications: Application[] }) {
+  const [paths, setPaths] = useState<{ id: string; d: string; isEU: boolean }[]>([]);
+  const [tooltip, setTooltip] = useState<{ x: number; y: number; text: string } | null>(null);
+  const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
+
+  const cx = 15;
+  const cy = 52;
+  const scale = 9.5;
+
+  useEffect(() => {
+    fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json')
+      .then((r) => r.json())
+      .then((topology) => {
+        // Convert TopoJSON to GeoJSON manually
+        const geometries = topology.objects.countries.geometries;
+        const arcs = topology.arcs;
+        const tf = topology.transform;
+
+        function decodeArc(arcIdx: number): number[][] {
+          const isReversed = arcIdx < 0;
+          const idx = isReversed ? ~arcIdx : arcIdx;
+          const arc = arcs[idx];
+          const coords: number[][] = [];
+          let x = 0, y = 0;
+          for (const [dx, dy] of arc) {
+            x += dx;
+            y += dy;
+            coords.push([
+              x * tf.scale[0] + tf.translate[0],
+              y * tf.scale[1] + tf.translate[1],
+            ]);
+          }
+          return isReversed ? coords.reverse() : coords;
+        }
+
+        function decodeRing(ring: number[]): number[][] {
+          const points: number[][] = [];
+          for (const arcIdx of ring) {
+            const decoded = decodeArc(arcIdx);
+            // Skip first point of subsequent arcs (shared with previous arc's last point)
+            points.push(...(points.length > 0 ? decoded.slice(1) : decoded));
+          }
+          return points;
+        }
+
+        const result: { id: string; d: string; isEU: boolean }[] = [];
+
+        for (const geo of geometries) {
+          const id = geo.id || '';
+          const isEU = EU_COUNTRIES.has(id);
+
+          if (geo.type === 'Polygon') {
+            const rings = geo.arcs as number[][];
+            const d = rings
+              .map((ring: number[]) => coordsToPath(decodeRing(ring), cx, cy, scale))
+              .join(' ');
+            result.push({ id, d, isEU });
+          } else if (geo.type === 'MultiPolygon') {
+            const polys = geo.arcs as number[][][];
+            const d = polys
+              .map((poly: number[][]) =>
+                poly.map((ring: number[]) => coordsToPath(decodeRing(ring), cx, cy, scale)).join(' ')
+              )
+              .join(' ');
+            result.push({ id, d, isEU });
+          }
+        }
+
+        setPaths(result);
+      })
+      .catch(console.error);
+  }, []);
+
+  // Group applications by country
   const byCountry: Record<string, Application[]> = {};
   applications.forEach((app) => {
     const c = app.country || 'PL';
@@ -46,91 +164,66 @@ function PilotMap({ applications }: { applications: Application[] }) {
   return (
     <div className="w-full bg-white rounded-xl border border-certo-navy/10 overflow-hidden">
       <div className="relative">
-        <svg viewBox="80 40 500 400" className="w-full h-auto" style={{ minHeight: 300 }}>
-          {/* Background */}
-          <rect x="80" y="40" width="500" height="400" fill="#F5F0E8" rx="8" />
+        <svg
+          viewBox="100 50 600 500"
+          className="w-full h-auto"
+          style={{ minHeight: 350, background: '#F5F0E8' }}
+        >
+          {/* Country shapes */}
+          {paths.map(({ id, d, isEU }) => {
+            const iso2 = ISO3_TO_ISO2[id];
+            const isHovered = hoveredCountry === iso2;
+            const hasApps = iso2 && byCountry[iso2];
 
-          {/* Simplified Europe outline — decorative country shapes */}
-          <g opacity="0.15" stroke="#0A1628" strokeWidth="0.5" fill="none">
-            {/* Scandinavia */}
-            <path d="M350,60 L370,50 L380,70 L390,60 L400,80 L420,70 L430,100 L420,130 L410,120 L400,130 L390,110 L380,120 L370,100 L360,110 L350,90 Z" />
-            {/* British Isles */}
-            <path d="M200,160 L220,150 L230,170 L240,160 L240,200 L230,210 L220,200 L210,210 L200,190 Z" />
-            <path d="M175,175 L195,170 L200,190 L195,210 L180,200 Z" />
-            {/* Iberia */}
-            <path d="M130,290 L200,280 L220,300 L210,340 L190,360 L150,360 L120,340 Z" />
-            {/* France */}
-            <path d="M220,240 L280,220 L300,240 L290,280 L270,300 L240,310 L220,290 Z" />
-            {/* Central Europe */}
-            <path d="M280,200 L360,190 L400,200 L400,250 L370,270 L340,260 L310,250 L280,240 Z" />
-            {/* Italy */}
-            <path d="M310,270 L340,280 L350,310 L340,340 L330,370 L320,360 L310,330 L305,300 Z" />
-            {/* Eastern Europe */}
-            <path d="M360,170 L430,160 L450,200 L460,250 L450,280 L420,300 L400,270 L380,250 L370,220 Z" />
-            {/* Greece */}
-            <path d="M410,310 L440,300 L460,320 L450,360 L430,370 L410,350 Z" />
-          </g>
-
-          {/* Grid lines */}
-          <g stroke="#0A1628" strokeWidth="0.1" opacity="0.1">
-            {[100, 200, 300, 400, 500].map((x) => (
-              <line key={`v${x}`} x1={x} y1={40} x2={x} y2={440} />
-            ))}
-            {[100, 200, 300, 400].map((y) => (
-              <line key={`h${y}`} x1={80} y1={y} x2={580} y2={y} />
-            ))}
-          </g>
-
-          {/* Country labels (faint) */}
-          {Object.entries(COUNTRY_POSITIONS).map(([code, [x, y]]) => {
-            const apps = byCountry[code];
-            if (!apps) return (
-              <text key={code} x={x} y={y + 4} textAnchor="middle" fontSize="8" fill="#0A1628" opacity="0.15" fontFamily="sans-serif">
-                {code}
-              </text>
+            return (
+              <path
+                key={id}
+                d={d}
+                fill={isEU ? (isHovered ? '#D4C9B0' : '#E2DAC8') : '#EEEAE2'}
+                stroke={isEU ? '#C4B89C' : '#DDD8CE'}
+                strokeWidth={isEU ? 0.8 : 0.3}
+                className={isEU ? 'transition-colors duration-200' : ''}
+                onMouseEnter={() => iso2 && setHoveredCountry(iso2)}
+                onMouseLeave={() => setHoveredCountry(null)}
+                style={{ cursor: hasApps ? 'pointer' : 'default' }}
+              />
             );
-            return null;
           })}
 
           {/* Application markers */}
           {Object.entries(byCountry).map(([countryCode, apps]) => {
-            const pos = COUNTRY_POSITIONS[countryCode];
-            if (!pos) return null;
+            const coords = COUNTRY_COORDS[countryCode];
+            if (!coords) return null;
 
             return apps.map((app, i) => {
-              const offsetX = (i % 3) * 12 - 12;
-              const offsetY = Math.floor(i / 3) * 12;
-              const cx = pos[0] + offsetX;
-              const cy = pos[1] + offsetY;
+              const offsetX = (i % 4) * 8 - 12;
+              const offsetY = Math.floor(i / 4) * 8;
+              const [px, py] = project(coords[0] + offsetX * 0.15, coords[1] - offsetY * 0.1, cx, cy, scale);
               const color = SECTOR_COLORS[app.sector] || '#CC9B30';
 
               return (
-                <g key={`${countryCode}-${i}`}>
-                  <circle
-                    cx={cx}
-                    cy={cy}
-                    r={7}
-                    fill={color}
-                    stroke="#fff"
-                    strokeWidth={2}
-                    opacity={0.9}
-                    className="cursor-pointer transition-all duration-200 hover:r-9"
-                    onMouseEnter={(e) => {
-                      const rect = (e.target as SVGElement).closest('svg')?.getBoundingClientRect();
-                      if (rect) {
-                        setTooltip({
-                          x: cx,
-                          y: cy - 15,
-                          text: `${app.organization_name}${app.city ? ` — ${app.city}` : ''}`,
-                        });
-                      }
-                    }}
-                    onMouseLeave={() => setTooltip(null)}
-                  />
-                  <text x={cx} y={cy + 3} textAnchor="middle" fontSize="7" fill="white" fontWeight="bold" pointerEvents="none">
-                    {countryCode.charAt(0)}
-                  </text>
-                </g>
+                <circle
+                  key={`${countryCode}-${i}`}
+                  cx={px}
+                  cy={py}
+                  r={6}
+                  fill={color}
+                  stroke="#fff"
+                  strokeWidth={2}
+                  opacity={0.9}
+                  className="cursor-pointer hover:opacity-100"
+                  onMouseEnter={(e) => {
+                    const svg = (e.target as SVGElement).closest('svg');
+                    if (svg) {
+                      setTooltip({
+                        x: px,
+                        y: py - 16,
+                        text: `${app.organization_name}${app.city ? ` — ${app.city}` : ''}`,
+                      });
+                    }
+                  }}
+                  onMouseLeave={() => setTooltip(null)}
+                />
               );
             });
           })}
@@ -139,23 +232,23 @@ function PilotMap({ applications }: { applications: Application[] }) {
           {tooltip && (
             <g>
               <rect
-                x={tooltip.x - 80}
-                y={tooltip.y - 18}
-                width={160}
-                height={22}
+                x={tooltip.x - 90}
+                y={tooltip.y - 16}
+                width={180}
+                height={20}
                 rx={4}
                 fill="#0A1628"
-                opacity={0.9}
+                opacity={0.92}
               />
               <text
                 x={tooltip.x}
-                y={tooltip.y - 4}
+                y={tooltip.y - 3}
                 textAnchor="middle"
-                fontSize="8"
+                fontSize="9"
                 fill="white"
-                fontFamily="sans-serif"
+                fontFamily="system-ui, sans-serif"
               >
-                {tooltip.text.length > 30 ? tooltip.text.slice(0, 30) + '...' : tooltip.text}
+                {tooltip.text.length > 35 ? tooltip.text.slice(0, 35) + '…' : tooltip.text}
               </text>
             </g>
           )}
