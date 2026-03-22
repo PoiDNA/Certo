@@ -84,7 +84,7 @@ export default function PilotMapClient() {
 
       {/* Cluster filter indicator */}
       {clusterHighlight && (
-        <div className="flex items-center justify-between bg-certo-gold/5 rounded-lg px-4 py-2">
+        <div className="flex items-center justify-between bg-white rounded-lg px-4 py-2 border border-certo-gold/30">
           <span className="text-xs text-certo-navy/60">
             Wybrano <strong className="text-certo-navy">{clusterHighlight.size}</strong> podmiotów z mapy
           </span>

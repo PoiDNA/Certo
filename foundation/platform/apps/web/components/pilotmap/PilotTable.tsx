@@ -93,7 +93,7 @@ export default function PilotTable({ applications, highlightedIds }: {
   );
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 bg-white rounded-2xl p-4 md:p-6">
       {/* Search + filters */}
       <div className="flex flex-col sm:flex-row gap-3">
         <input
@@ -203,7 +203,7 @@ export default function PilotTable({ applications, highlightedIds }: {
         ) : (
           filtered.map((app, i) => (
             <div key={i} className={`rounded-xl border p-4 space-y-2 ${
-              highlightedIds?.has(app.id) ? 'bg-certo-gold/5 border-certo-gold/30' : 'bg-white border-certo-navy/5'
+              highlightedIds?.has(app.id) ? 'bg-white border-certo-gold ring-2 ring-certo-gold/30' : 'bg-white border-certo-navy/5'
             }`}>
               <div className="flex items-start justify-between gap-2">
                 <h3 className="font-medium text-certo-navy text-sm">{app.organization_name}</h3>
