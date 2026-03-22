@@ -2,18 +2,30 @@
 
 import { memo, useState, useEffect, useRef } from 'react';
 
-const EU_COUNTRIES = new Set([
-  'POL','AUT','BEL','BGR','HRV','CYP','CZE','DNK','EST','FIN',
-  'FRA','DEU','GRC','HUN','IRL','ITA','LVA','LTU','LUX','MLT',
-  'NLD','PRT','ROU','SVK','SVN','ESP','SWE',
-]);
+// TopoJSON world-atlas uses ISO 3166-1 NUMERIC codes (e.g. "616" for Poland)
+// Map numeric → ISO2 for EU countries
+const NUMERIC_TO_ISO2: Record<string, string> = {
+  '040':'AT','056':'BE','100':'BG','191':'HR','196':'CY','203':'CZ',
+  '208':'DK','233':'EE','246':'FI','250':'FR','276':'DE','300':'GR',
+  '348':'HU','372':'IE','380':'IT','428':'LV','440':'LT','442':'LU',
+  '470':'MT','528':'NL','616':'PL','620':'PT','642':'RO','703':'SK',
+  '705':'SI','724':'ES','752':'SE',
+};
 
+// Also support ISO3 alpha codes as fallback (some TopoJSON variants)
 const ISO3_TO_ISO2: Record<string, string> = {
   POL:'PL',AUT:'AT',BEL:'BE',BGR:'BG',HRV:'HR',CYP:'CY',CZE:'CZ',
   DNK:'DK',EST:'EE',FIN:'FI',FRA:'FR',DEU:'DE',GRC:'GR',HUN:'HU',
   IRL:'IE',ITA:'IT',LVA:'LV',LTU:'LT',LUX:'LU',MLT:'MT',NLD:'NL',
   PRT:'PT',ROU:'RO',SVK:'SK',SVN:'SI',ESP:'ES',SWE:'SE',
 };
+
+// Resolve any ID format to ISO2
+function resolveToISO2(id: string): string {
+  return NUMERIC_TO_ISO2[id] || ISO3_TO_ISO2[id] || '';
+}
+
+const EU_ISO2 = new Set(Object.values(NUMERIC_TO_ISO2));
 
 // Country label positions [lng, lat]
 const COUNTRY_LABELS: Record<string, { pos: [number, number]; name: string }> = {
@@ -264,9 +276,9 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
 
         const result: { id: string; d: string; isEU: boolean; iso2: string }[] = [];
         for (const geo of geometries) {
-          const id = geo.id || '';
-          const isEU = EU_COUNTRIES.has(id);
-          const iso2 = ISO3_TO_ISO2[id] || '';
+          const id = String(geo.id || '');
+          const iso2 = resolveToISO2(id);
+          const isEU = EU_ISO2.has(iso2);
 
           let d = '';
           if (geo.type === 'Polygon') {
