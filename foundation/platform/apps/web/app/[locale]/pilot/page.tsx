@@ -47,82 +47,94 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
         </div>
       </section>
 
-      {/* Program description */}
-      <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-serif font-bold text-certo-navy mb-4">{t('program_title')}</h2>
-        <p className="text-certo-navy/70 leading-relaxed mb-12">{t('program_description')}</p>
+      {/* Content */}
+      <section className="max-w-4xl mx-auto px-6 py-16 space-y-16">
+
+        {/* Program description */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-4">{t('program_title')}</h2>
+          <p className="text-base text-certo-navy/70 leading-relaxed">{t('program_description')}</p>
+        </div>
 
         {/* Who can apply — two paths */}
-        <h2 className="text-2xl font-serif font-bold text-certo-navy mb-3">{t('who_title')}</h2>
-        <p className="text-certo-navy/60 leading-relaxed mb-8">{t('who_intro')}</p>
+        <div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-3">{t('who_title')}</h2>
+          <p className="text-base text-certo-navy/60 leading-relaxed mb-8">{t('who_intro')}</p>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
-          {/* Representative path */}
-          <div className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
-            <div className="w-10 h-10 bg-certo-navy text-certo-gold flex items-center justify-center text-lg mb-4">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Representative path */}
+            <div className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
+              <div className="w-10 h-10 bg-certo-navy text-certo-gold flex items-center justify-center text-lg mb-4">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <h3 className="font-serif font-bold text-certo-navy text-xl mb-2">{t('path_representative_title')}</h3>
+              <p className="text-sm text-certo-navy/60 leading-relaxed mb-3">{t('path_representative_desc')}</p>
+              <p className="text-sm text-certo-gold/80 italic">{t('path_representative_note')}</p>
             </div>
-            <h3 className="font-serif font-bold text-certo-navy text-lg mb-2">{t('path_representative_title')}</h3>
-            <p className="text-sm text-certo-navy/60 leading-relaxed mb-3">{t('path_representative_desc')}</p>
-            <p className="text-xs text-certo-gold/80 italic">{t('path_representative_note')}</p>
-          </div>
 
-          {/* Observer path */}
-          <div className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
-            <div className="w-10 h-10 bg-certo-gold text-white flex items-center justify-center text-lg mb-4">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                <circle cx="12" cy="12" r="3" />
-              </svg>
+            {/* Observer path */}
+            <div className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
+              <div className="w-10 h-10 bg-certo-gold text-white flex items-center justify-center text-lg mb-4">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <h3 className="font-serif font-bold text-certo-navy text-xl mb-2">{t('path_observer_title')}</h3>
+              <p className="text-sm text-certo-navy/60 leading-relaxed mb-3">{t('path_observer_desc')}</p>
+              <p className="text-sm text-certo-gold/80 italic">{t('path_observer_note')}</p>
             </div>
-            <h3 className="font-serif font-bold text-certo-navy text-lg mb-2">{t('path_observer_title')}</h3>
-            <p className="text-sm text-certo-navy/60 leading-relaxed mb-3">{t('path_observer_desc')}</p>
-            <p className="text-xs text-certo-gold/80 italic">{t('path_observer_note')}</p>
           </div>
         </div>
 
         {/* Sectors */}
-        <h3 className="text-lg font-serif font-bold text-certo-navy mb-4">{t('form_sector')}</h3>
-        <div className="grid md:grid-cols-3 gap-4 mb-16">
-          {(['public', 'corporate', 'ngo'] as const).map((sector) => (
-            <div key={sector} className="bg-certo-navy/[0.02] p-4 border border-certo-navy/5">
-              <h4 className="font-serif font-bold text-certo-navy text-sm mb-1">{t(`sector_${sector}`)}</h4>
-              <p className="text-xs text-certo-navy/50 leading-relaxed">{t(`sector_${sector}_desc`)}</p>
-            </div>
-          ))}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6">{t('form_sector')}</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            {(['public', 'corporate', 'ngo'] as const).map((sector) => (
+              <div key={sector} className="bg-certo-navy/[0.02] p-5 border border-certo-navy/5">
+                <h3 className="font-serif font-bold text-certo-navy text-base mb-2">{t(`sector_${sector}`)}</h3>
+                <p className="text-sm text-certo-navy/50 leading-relaxed">{t(`sector_${sector}_desc`)}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Timeline */}
-        <h2 className="text-2xl font-serif font-bold text-certo-navy mb-8">{t('timeline_title')}</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {([1, 2, 3, 4] as const).map((step) => (
-            <div key={step} className="relative">
-              <div className="w-10 h-10 bg-certo-gold text-white flex items-center justify-center font-bold text-sm mb-4">
-                {step}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-8">{t('timeline_title')}</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {([1, 2, 3, 4] as const).map((step) => (
+              <div key={step} className="relative">
+                <div className="w-10 h-10 bg-certo-gold text-white flex items-center justify-center font-bold text-sm mb-4">
+                  {step}
+                </div>
+                <h3 className="font-serif font-bold text-certo-navy text-base mb-2">{t(`step_${step}`)}</h3>
+                <p className="text-sm text-certo-navy/60 leading-relaxed">{t(`step_${step}_desc`)}</p>
               </div>
-              <h3 className="font-serif font-bold text-certo-navy text-sm mb-1">{t(`step_${step}`)}</h3>
-              <p className="text-xs text-certo-navy/60 leading-relaxed">{t(`step_${step}_desc`)}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Benefits */}
-        <h2 className="text-2xl font-serif font-bold text-certo-navy mb-6">{t('benefits_title')}</h2>
-        <ul className="space-y-3 mb-16">
-          {([1, 2, 3, 4] as const).map((i) => (
-            <li key={i} className="flex items-start gap-3 text-certo-navy/70">
-              <span className="text-certo-gold mt-0.5">&#10003;</span>
-              <span>{t(`benefit_${i}`)}</span>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6">{t('benefits_title')}</h2>
+          <ul className="space-y-3">
+            {([1, 2, 3, 4] as const).map((i) => (
+              <li key={i} className="flex items-start gap-3 text-base text-certo-navy/70">
+                <span className="text-certo-gold mt-0.5">&#10003;</span>
+                <span>{t(`benefit_${i}`)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Form */}
         <div className="max-w-lg mx-auto">
-          <h2 className="text-2xl font-serif font-bold text-certo-navy mb-6 text-center">{t('form_title')}</h2>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6 text-center">{t('form_title')}</h2>
           <PilotApplicationForm />
         </div>
       </section>
