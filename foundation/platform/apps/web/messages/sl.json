@@ -38,7 +38,6 @@
     "denoiser_layer_2_desc": "Filtriramo, tehtamo in normaliziramo informacijske signale. Odpravljamo šum, podvajanja in protislovja.",
     "denoiser_layer_3_name": "Certo Fact Layer",
     "denoiser_layer_3_desc": "Analitiku zagotavljamo urejeno sliko tveganj namesto surovega informacijskega hrupa.",
-    "denoiser_quote": "Človek sprejema ocenjevalne odločitve. Sistem zagotavlja boljše gradivo, na podlagi katerega je odločitev lahko natančnejša in hitrejša.",
     "rhetorical_standard": "Zakaj doslej nihče ni ustvaril enotnega, globalnega standarda javne verodostojnosti?",
     "products_title": "Ekosistem Certo",
     "product_roadmap_name": "Certo RoadMap",

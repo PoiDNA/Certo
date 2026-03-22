@@ -38,7 +38,6 @@
     "denoiser_layer_2_desc": "Filtrujeme, vážíme a normalizujeme informační signály. Eliminujeme šum, duplicity a rozpory.",
     "denoiser_layer_3_name": "Certo Fact Layer",
     "denoiser_layer_3_desc": "Analytikovi poskytujeme uspořádaný obraz rizika místo surového informačního hluku.",
-    "denoiser_quote": "Člověk přijímá ratingová rozhodnutí. Systém dodává kvalitnější podklady, na jejichž základě může být toto rozhodnutí přesnější a rychlejší.",
     "rhetorical_standard": "Proč dosud nikdo nevytvořil jednotný, globální standard veřejné důvěryhodnosti?",
     "products_title": "Ekosystém Certo",
     "product_roadmap_name": "Certo RoadMap",

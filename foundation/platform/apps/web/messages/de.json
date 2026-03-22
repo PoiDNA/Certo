@@ -38,7 +38,6 @@
     "denoiser_layer_2_desc": "Wir filtern, gewichten und normalisieren Informationssignale. Wir eliminieren Rauschen, Duplikate und Widersprüche.",
     "denoiser_layer_3_name": "Certo Fact Layer",
     "denoiser_layer_3_desc": "Wir liefern dem Analysten ein strukturiertes Risikobild anstelle von rohem Informationsrauschen.",
-    "denoiser_quote": "Der Mensch trifft die Ratingentscheidungen. Das System liefert besseres Material, auf dessen Grundlage diese Entscheidung treffsicherer und schneller sein kann.",
     "rhetorical_standard": "Warum hat bisher niemand einen einheitlichen, globalen Standard der öffentlichen Glaubwürdigkeit geschaffen?",
     "products_title": "Das Certo-Ökosystem",
     "product_roadmap_name": "Certo RoadMap",

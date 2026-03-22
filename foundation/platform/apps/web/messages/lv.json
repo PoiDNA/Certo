@@ -38,7 +38,6 @@
     "denoiser_layer_2_desc": "Filtrējam, sveram un normalizējam informācijas signālus. Novēršam troksni, dublikātus un pretrunas.",
     "denoiser_layer_3_name": "Certo Fact Layer",
     "denoiser_layer_3_desc": "Sniedzam analītiķim sakārtotu riska ainu neapstrādāta informācijas trokšņa vietā.",
-    "denoiser_quote": "Cilvēks pieņem reitingu lēmumus. Sistēma nodrošina labāku materiālu, uz kura pamata lēmums var būt precīzāks un ātrāks.",
     "rhetorical_standard": "Kāpēc neviens līdz šim nav izveidojis vienotu, globālu publiskās uzticamības standartu?",
     "products_title": "Certo ekosistēma",
     "product_roadmap_name": "Certo RoadMap",
