@@ -102,9 +102,8 @@ export async function POST(request: Request) {
 
     // Auto-trigger AI verification (fire-and-forget)
     if (inserted?.id) {
-      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : 'http://localhost:3000';
+      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+        || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
 
       fetch(`${baseUrl}/api/verify-application`, {
         method: 'POST',
