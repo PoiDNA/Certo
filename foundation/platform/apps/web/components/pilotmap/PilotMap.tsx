@@ -293,25 +293,34 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
         viewBox={`${vb.x.toFixed(0)} ${vb.y.toFixed(0)} ${vb.w.toFixed(0)} ${vb.h.toFixed(0)}`}
         className="w-full h-auto transition-all duration-500"
         style={{ minHeight: 400, background: '#F8F5EE' }}
-        onClick={() => closePanel()}
+        onClick={(e) => {
+          // Check if click was on a country path
+          const target = e.target as SVGElement;
+          const countryCode = target.getAttribute('data-country');
+          if (countryCode && COUNTRY_ZOOMS[countryCode]) {
+            setZoom(zoom === countryCode ? 'EU' : countryCode);
+            setShowCountries(false);
+            return;
+          }
+          closePanel();
+        }}
+        onMouseMove={(e) => {
+          const target = e.target as SVGElement;
+          const countryCode = target.getAttribute('data-country');
+          setHoveredCountry(countryCode || null);
+        }}
+        onMouseLeave={() => setHoveredCountry(null)}
       >
         {/* Country shapes */}
         {paths.map(({ id, d, isEU, iso2 }) => (
           <path
             key={id}
             d={d}
+            data-country={isEU && iso2 ? iso2 : undefined}
             fill={isEU ? (zoom === iso2 ? '#C8B898' : hoveredCountry === iso2 ? '#CCBB99' : '#E8E0D0') : '#F0ECE4'}
             stroke={isEU ? (hoveredCountry === iso2 ? '#A89870' : '#C8BBAA') : '#E0DCD4'}
             strokeWidth={isEU ? (hoveredCountry === iso2 ? 1.5 : 0.8) : 0.3}
-            onClick={(e) => {
-              if (isEU && iso2 && COUNTRY_ZOOMS[iso2]) {
-                e.stopPropagation();
-                setZoom(zoom === iso2 ? 'EU' : iso2);
-              }
-            }}
-            onMouseEnter={() => isEU && iso2 && setHoveredCountry(iso2)}
-            onMouseLeave={() => setHoveredCountry(null)}
-            className={isEU ? 'cursor-pointer transition-colors duration-150' : ''}
+            style={isEU ? { cursor: 'pointer' } : undefined}
           />
         ))}
 
