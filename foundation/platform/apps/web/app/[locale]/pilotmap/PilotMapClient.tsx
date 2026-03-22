@@ -27,6 +27,7 @@ export default function PilotMapClient() {
   const [applications, setApplications] = useState<Application[]>([]);
   const [loading, setLoading] = useState(true);
   const [sectorFilter, setSectorFilter] = useState<SectorFilter>('all');
+  const [clusterHighlight, setClusterHighlight] = useState<Set<string> | null>(null);
 
   useEffect(() => {
     fetch('/api/pilot-applications-public')
@@ -98,10 +99,31 @@ export default function PilotMapClient() {
       )}
 
       {/* Map — receives filtered applications */}
-      <PilotMap applications={filtered} />
+      <PilotMap
+        applications={filtered}
+        onClusterSelect={(apps) => {
+          if (apps) {
+            setClusterHighlight(new Set(apps.map((a) => a.id)));
+          } else {
+            setClusterHighlight(null);
+          }
+        }}
+      />
+
+      {/* Cluster filter indicator */}
+      {clusterHighlight && (
+        <div className="flex items-center justify-between bg-certo-gold/5 rounded-lg px-4 py-2">
+          <span className="text-xs text-certo-navy/60">
+            Wybrano <strong className="text-certo-navy">{clusterHighlight.size}</strong> podmiotów z mapy
+          </span>
+          <button onClick={() => setClusterHighlight(null)} className="text-xs text-certo-gold hover:text-certo-navy">
+            ✕ Wyczyść wybór
+          </button>
+        </div>
+      )}
 
       {/* Table — receives filtered applications */}
-      <PilotTable applications={filtered} />
+      <PilotTable applications={filtered} highlightedIds={clusterHighlight} />
     </div>
   );
 }

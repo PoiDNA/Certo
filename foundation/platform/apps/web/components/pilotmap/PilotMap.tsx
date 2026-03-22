@@ -96,6 +96,12 @@ type Application = {
   votes: number;
 };
 
+function formatCount(n: number): string {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(n >= 10_000_000 ? 0 : 1)}M`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(n >= 10_000 ? 0 : 1)}K`;
+  return String(n);
+}
+
 // Mercator projection
 function project(lng: number, lat: number, cx: number, cy: number, scale: number): [number, number] {
   const x = (lng - cx) * scale;
@@ -163,12 +169,20 @@ const COUNTRY_ZOOMS: Record<string, { center: [number, number]; scale: number; n
   MT: { center: [14.4, 35.9], scale: 80, name: 'Malta' },
 };
 
-function PilotMap({ applications }: { applications: Application[] }) {
+function PilotMap({ applications, onClusterSelect }: {
+  applications: Application[];
+  onClusterSelect?: (apps: Application[] | null) => void;
+}) {
   const [paths, setPaths] = useState<{ id: string; d: string; isEU: boolean; iso2: string }[]>([]);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; city: string; sector: string; date: string } | null>(null);
   const [zoom, setZoom] = useState<string>('EU');
-  const [spiderfied, setSpiderfied] = useState<number | null>(null); // cluster index that is expanded
+  const [clusterPanel, setClusterPanel] = useState<{ x: number; y: number; apps: Application[] } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
+
+  const closePanel = () => {
+    setClusterPanel(null);
+    onClusterSelect?.(null);
+  };
 
   // Always render paths with Europe-level projection
   const baseCx = 15;
@@ -290,7 +304,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
         viewBox={`${vb.x.toFixed(0)} ${vb.y.toFixed(0)} ${vb.w.toFixed(0)} ${vb.h.toFixed(0)}`}
         className="w-full h-auto transition-all duration-500"
         style={{ minHeight: 350, background: '#F8F5EE' }}
-        onClick={() => { if (spiderfied !== null) setSpiderfied(null); }}
+        onClick={() => closePanel()}
       >
         {/* Country shapes */}
         {paths.map(({ id, d, isEU, iso2 }) => (
@@ -327,8 +341,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
 
         {/* Clustered application markers */}
         {(() => {
-          // Cluster nearby markers — scale radius with viewBox so clusters split when zoomed
-          const viewRatio = vb.w / europeViewBox.w; // <1 when zoomed in
+          const viewRatio = vb.w / europeViewBox.w;
           const CLUSTER_RADIUS = (zoom === 'EU' ? 15 : 10) * viewRatio;
           type Cluster = { cx: number; cy: number; apps: typeof applications };
           const clusters: Cluster[] = [];
@@ -352,89 +365,24 @@ function PilotMap({ applications }: { applications: Application[] }) {
             }
           });
 
-          // Check if a cluster's apps all share the same position (can't split by zooming)
-          function clusterIsSamePosition(cluster: Cluster): boolean {
-            if (cluster.apps.length <= 1) return false;
-            const positions = cluster.apps.map((a) => getMarkerPosition(a, cx, cy, scale)).filter(Boolean) as [number, number][];
-            if (positions.length <= 1) return true;
-            const [x0, y0] = positions[0];
-            return positions.every(([x, y]) => Math.abs(x - x0) < 0.5 && Math.abs(y - y0) < 0.5);
-          }
-
-          // Spider layout: spread N points in a circle around center
-          const SPIDER_RADIUS = vb.w * 0.06; // relative to viewBox width
-          function spiderPositions(centerX: number, centerY: number, count: number): [number, number][] {
-            return Array.from({ length: count }, (_, i) => {
-              const angle = (2 * Math.PI * i) / count - Math.PI / 2;
-              return [
-                centerX + Math.cos(angle) * SPIDER_RADIUS,
-                centerY + Math.sin(angle) * SPIDER_RADIUS,
-              ];
-            });
-          }
-
           return clusters.map((cluster, ci) => {
             const count = cluster.apps.length;
             const isMulti = count > 1;
             const mainApp = cluster.apps[0];
             const color = isMulti ? '#CC9B30' : (SECTOR_COLORS[mainApp.sector] || '#CC9B30');
             const r = isMulti ? Math.min(4 + count * 2, 12) : 4;
-            const isSpiderfied = spiderfied === ci;
-            const samePos = isMulti && clusterIsSamePosition(cluster);
-
-            // Spiderfied view: show individual markers spread in circle
-            if (isSpiderfied && isMulti) {
-              const positions = spiderPositions(cluster.cx, cluster.cy, count);
-              const markerR = 4;
-              return (
-                <g key={`cluster-${ci}`}>
-                  {/* Spider legs — lines from center to each marker */}
-                  {positions.map(([sx, sy], si) => (
-                    <line
-                      key={`leg-${si}`}
-                      x1={cluster.cx} y1={cluster.cy}
-                      x2={sx} y2={sy}
-                      stroke="#CC9B30" strokeWidth={0.5} opacity={0.4}
-                    />
-                  ))}
-                  {/* Center dot */}
-                  <circle cx={cluster.cx} cy={cluster.cy} r={2} fill="#CC9B30" opacity={0.3} />
-                  {/* Individual markers */}
-                  {cluster.apps.map((app, ai) => {
-                    const [sx, sy] = positions[ai];
-                    const appColor = SECTOR_COLORS[app.sector] || '#CC9B30';
-                    return (
-                      <circle
-                        key={`spider-${ai}`}
-                        cx={sx} cy={sy} r={markerR}
-                        fill={appColor} stroke="#fff" strokeWidth={1.5}
-                        className="cursor-pointer"
-                        onMouseEnter={() => setTooltip({
-                          x: sx, y: sy - markerR,
-                          name: app.organization_name,
-                          city: app.city || '',
-                          sector: SECTOR_LABELS[app.sector] || app.sector,
-                          date: new Date(app.created_at).toLocaleDateString('pl-PL'),
-                        })}
-                        onMouseLeave={() => setTooltip(null)}
-                        onClick={(e) => e.stopPropagation()}
-                      />
-                    );
-                  })}
-                </g>
-              );
-            }
+            const label = formatCount(count);
+            // Font size: shrink for wider labels like "4.0K"
+            const fontSize = label.length > 3 ? 5 : label.length > 2 ? 6 : (r > 6 ? 8 : 6);
 
             return (
               <g key={`cluster-${ci}`}>
-                {/* Pulse ring for clusters */}
                 {isMulti && (
                   <circle cx={cluster.cx} cy={cluster.cy} r={r + 6} fill={color} opacity={0.1}>
                     <animate attributeName="r" values={`${r + 3};${r + 8};${r + 3}`} dur="3s" repeatCount="indefinite" />
                     <animate attributeName="opacity" values="0.15;0.03;0.15" dur="3s" repeatCount="indefinite" />
                   </circle>
                 )}
-                {/* Marker circle */}
                 <circle
                   cx={cluster.cx}
                   cy={cluster.cy}
@@ -443,39 +391,22 @@ function PilotMap({ applications }: { applications: Application[] }) {
                   stroke="#fff"
                   strokeWidth={1.5}
                   className="cursor-pointer"
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.stopPropagation();
                     if (isMulti) {
-                      // If all apps share the same position, spiderfy instead of zooming
-                      if (samePos) {
-                        setSpiderfied(ci);
-                        return;
-                      }
                       const country = mainApp.country;
                       if (zoom === 'EU' && country && COUNTRY_ZOOMS[country]) {
-                        setSpiderfied(null);
+                        closePanel();
                         setZoom(country);
                       } else {
-                        const currentView = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
-                        const MAX_SCALE = 200;
-                        if (currentView.scale >= MAX_SCALE) {
-                          // At max zoom and still clustered — spiderfy
-                          setSpiderfied(ci);
-                          return;
-                        }
-                        const [lng, lat] = [
-                          (cluster.cx - 400) / scale + cx,
-                          cy - ((cluster.cy - 300) / scale),
-                        ];
-                        const deeperScale = Math.min(currentView.scale * 2, MAX_SCALE);
-                        Object.keys(COUNTRY_ZOOMS).filter(k => k.startsWith('_custom')).forEach(k => delete COUNTRY_ZOOMS[k]);
-                        const customKey = `_custom_${Date.now()}`;
-                        COUNTRY_ZOOMS[customKey] = { center: [lng, lat], scale: deeperScale, name: 'Zbliżenie' };
-                        setSpiderfied(null);
-                        setZoom(customKey);
+                        // Show panel with list + notify table
+                        setTooltip(null);
+                        setClusterPanel({ x: cluster.cx, y: cluster.cy, apps: cluster.apps });
+                        onClusterSelect?.(cluster.apps);
                       }
                     }
                   }}
-                  onMouseEnter={() => setTooltip({
+                  onMouseEnter={() => !clusterPanel && setTooltip({
                     x: cluster.cx,
                     y: cluster.cy - r,
                     name: isMulti
@@ -485,25 +416,24 @@ function PilotMap({ applications }: { applications: Application[] }) {
                       ? (count > 3 ? `...i ${count - 3} więcej` : '')
                       : mainApp.city || '',
                     sector: isMulti
-                      ? (samePos ? 'Kliknij aby rozwinąć' : 'Kliknij aby przybliżyć')
+                      ? 'Kliknij aby zobaczyć listę'
                       : (SECTOR_LABELS[mainApp.sector] || mainApp.sector),
                     date: isMulti ? '' : new Date(mainApp.created_at).toLocaleDateString('pl-PL'),
                   })}
                   onMouseLeave={() => setTooltip(null)}
                 />
-                {/* Count label for clusters */}
                 {isMulti && (
                   <text
                     x={cluster.cx}
                     y={cluster.cy + 3}
                     textAnchor="middle"
-                    fontSize={r > 6 ? '8' : '6'}
+                    fontSize={fontSize}
                     fill="white"
                     fontWeight="bold"
                     fontFamily="system-ui"
                     pointerEvents="none"
                   >
-                    {count}
+                    {label}
                   </text>
                 )}
               </g>
@@ -513,8 +443,8 @@ function PilotMap({ applications }: { applications: Application[] }) {
 
       </svg>
 
-      {/* HTML Tooltip — fixed size regardless of zoom */}
-      {tooltip && svgRef.current && (() => {
+      {/* HTML Tooltip */}
+      {tooltip && !clusterPanel && svgRef.current && (() => {
         const svg = svgRef.current!;
         const rect = svg.getBoundingClientRect();
         const vbParts = svg.getAttribute('viewBox')?.split(' ').map(Number) || [100, 50, 600, 500];
@@ -539,6 +469,63 @@ function PilotMap({ applications }: { applications: Application[] }) {
               )}
             </div>
             <div className="w-2.5 h-2.5 bg-[#0A1628]/95 rotate-45 mx-auto -mt-2.5" />
+          </div>
+        );
+      })()}
+
+      {/* Cluster panel — scrollable list on the map */}
+      {clusterPanel && svgRef.current && (() => {
+        const svg = svgRef.current!;
+        const rect = svg.getBoundingClientRect();
+        const vbParts = svg.getAttribute('viewBox')?.split(' ').map(Number) || [100, 50, 600, 500];
+        const [vbX, vbY, vbW, vbH] = vbParts;
+        const pxX = ((clusterPanel.x - vbX) / vbW) * rect.width;
+        const pxY = ((clusterPanel.y - vbY) / vbH) * rect.height;
+        const panelApps = clusterPanel.apps;
+        // Position panel to the right of marker, or left if near right edge
+        const onRight = pxX < rect.width * 0.6;
+        return (
+          <div
+            className="absolute z-30"
+            style={{
+              left: onRight ? pxX + 20 : pxX - 20,
+              top: Math.min(pxY - 20, rect.height - 40),
+              transform: onRight ? 'translate(0, -50%)' : 'translate(-100%, -50%)',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="bg-white rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] flex flex-col">
+              {/* Header */}
+              <div className="flex items-center justify-between px-4 py-2.5 border-b border-certo-navy/5">
+                <span className="text-xs font-semibold text-certo-navy">
+                  {panelApps.length} {panelApps.length === 1 ? 'podmiot' : 'podmiotów'}
+                </span>
+                <button
+                  onClick={closePanel}
+                  className="text-certo-navy/30 hover:text-certo-navy text-sm leading-none"
+                >
+                  ✕
+                </button>
+              </div>
+              {/* Scrollable list */}
+              <div className="overflow-y-auto flex-1 divide-y divide-certo-navy/5">
+                {panelApps.map((app, i) => (
+                  <div key={i} className="px-4 py-2.5 hover:bg-certo-gold/5 transition-colors">
+                    <div className="text-xs font-semibold text-certo-navy leading-tight">
+                      {app.organization_name}
+                    </div>
+                    <div className="flex items-center gap-2 mt-1 text-[10px] text-certo-navy/50">
+                      {app.city && <span>{app.city}</span>}
+                      <span
+                        className="inline-block w-2 h-2 rounded-full"
+                        style={{ backgroundColor: SECTOR_COLORS[app.sector] || '#CC9B30' }}
+                      />
+                      <span>{SECTOR_LABELS[app.sector]?.replace('Sektor ', '') || app.sector}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         );
       })()}

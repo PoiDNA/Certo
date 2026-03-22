@@ -35,7 +35,10 @@ type Application = {
 
 type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at';
 
-export default function PilotTable({ applications }: { applications: Application[] }) {
+export default function PilotTable({ applications, highlightedIds }: {
+  applications: Application[];
+  highlightedIds?: Set<string> | null;
+}) {
   const [search, setSearch] = useState('');
   const [sectorFilter, setSectorFilter] = useState<string | null>(null);
   const [votedIds, setVotedIds] = useState<Set<string>>(new Set());
@@ -66,11 +69,17 @@ export default function PilotTable({ applications }: { applications: Application
         );
       })
       .sort((a, b) => {
+        // Highlighted items first
+        if (highlightedIds?.size) {
+          const aH = highlightedIds.has(a.id) ? 0 : 1;
+          const bH = highlightedIds.has(b.id) ? 0 : 1;
+          if (aH !== bH) return aH - bH;
+        }
         const aVal = (a[sortKey] || '') as string;
         const bVal = (b[sortKey] || '') as string;
         return sortAsc ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
       });
-  }, [applications, search, sectorFilter, sortKey, sortAsc]);
+  }, [applications, search, sectorFilter, sortKey, sortAsc, highlightedIds]);
 
   const toggleSort = (key: SortKey) => {
     if (sortKey === key) setSortAsc(!sortAsc);
@@ -149,8 +158,12 @@ export default function PilotTable({ applications }: { applications: Application
             {filtered.length === 0 ? (
               <tr><td colSpan={6} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
             ) : (
-              filtered.map((app, i) => (
-                <tr key={i} className="border-t border-certo-navy/5 hover:bg-certo-gold/5 transition-colors">
+              filtered.map((app, i) => {
+                const isHighlighted = highlightedIds?.has(app.id);
+                return (
+                <tr key={i} className={`border-t border-certo-navy/5 transition-colors ${
+                  isHighlighted ? 'bg-certo-gold/10 ring-1 ring-inset ring-certo-gold/30' : 'hover:bg-certo-gold/5'
+                }`}>
                   <td className="px-4 py-3 font-medium text-certo-navy">{app.organization_name}</td>
                   <td className="px-4 py-3 text-certo-navy/60">{app.city || '—'}</td>
                   <td className="px-4 py-3 text-certo-navy/60">{app.country ? COUNTRY_NAMES[app.country] || app.country : '—'}</td>
@@ -176,7 +189,8 @@ export default function PilotTable({ applications }: { applications: Application
                     </button>
                   </td>
                 </tr>
-              ))
+                );
+              })
             )}
           </tbody>
         </table>
@@ -188,7 +202,9 @@ export default function PilotTable({ applications }: { applications: Application
           <div className="bg-white rounded-xl p-6 text-center text-certo-navy/40">Brak wyników</div>
         ) : (
           filtered.map((app, i) => (
-            <div key={i} className="bg-white rounded-xl border border-certo-navy/5 p-4 space-y-2">
+            <div key={i} className={`rounded-xl border p-4 space-y-2 ${
+              highlightedIds?.has(app.id) ? 'bg-certo-gold/5 border-certo-gold/30' : 'bg-white border-certo-navy/5'
+            }`}>
               <div className="flex items-start justify-between gap-2">
                 <h3 className="font-medium text-certo-navy text-sm">{app.organization_name}</h3>
                 <span className={`shrink-0 px-2 py-0.5 text-xs rounded-full ${SECTOR_COLORS[app.sector] || ''}`}>
