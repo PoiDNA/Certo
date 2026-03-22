@@ -89,7 +89,23 @@ export default function PilotApplicationForm() {
   const set = (field: keyof FormData, value: string | boolean) =>
     setFd((prev) => ({ ...prev, [field]: value }));
 
+  const getMissingFields = (): string[] => {
+    const missing: string[] = [];
+    if (!fd.organization_name) missing.push('Nazwa podmiotu');
+    if (!fd.sector) missing.push('Sektor');
+    if (!fd.contact_person) missing.push('Imię i nazwisko');
+    if (!fd.email) missing.push('Email');
+    if (!fd.motivation) missing.push('Motywacja');
+    if (!fd.consent) missing.push('Zgoda RODO');
+    return missing;
+  };
+
   const handleSubmit = async () => {
+    const missing = getMissingFields();
+    if (missing.length > 0) {
+      setState('error');
+      return;
+    }
     setState('submitting');
     try {
       const res = await fetch('/api/pilot-application', {
@@ -262,11 +278,8 @@ export default function PilotApplicationForm() {
 
               <input value={fd.address} onChange={(e) => set('address', e.target.value)} placeholder={t('form_address')} className={`${input} ${lookupState === 'found' && fd.address ? 'border-green-300 bg-green-50/30' : ''}`} />
 
-              {/* Additional registration fields */}
-              <div className="grid grid-cols-2 gap-3">
-                <input value={fd.regon} onChange={(e) => set('regon', e.target.value)} placeholder={t('form_regon')} className={input} />
-                <input value={fd.website} onChange={(e) => set('website', e.target.value)} type="url" placeholder={t('form_website')} className={input} />
-              </div>
+              {/* Website */}
+              <input value={fd.website} onChange={(e) => set('website', e.target.value)} type="url" placeholder={t('form_website')} className={input} />
             </div>
             <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
               Dalej →
@@ -319,13 +332,18 @@ export default function PilotApplicationForm() {
                 </span>
               </label>
               {state === 'error' && (
-                <p className="text-sm text-red-600 text-center">{t('form_error')}</p>
+                <div className="text-sm text-red-600 text-center space-y-1">
+                  <p>{t('form_error')}</p>
+                  {getMissingFields().length > 0 && (
+                    <p className="text-xs text-red-400">Uzupełnij: {getMissingFields().join(', ')}</p>
+                  )}
+                </div>
               )}
             </div>
             <button
               type="button"
               onClick={handleSubmit}
-              disabled={state === 'submitting' || !fd.motivation || !fd.consent || !fd.organization_name || !fd.sector || !fd.contact_person || !fd.email}
+              disabled={state === 'submitting' || !fd.motivation || !fd.consent}
               className="w-full mt-6 bg-certo-gold text-white py-4 rounded-xl text-sm font-bold uppercase tracking-wider hover:bg-certo-navy hover:text-certo-gold transition-colors duration-300 disabled:opacity-50 shadow-lg shadow-certo-gold/20"
             >
               {state === 'submitting' ? 'Wysyłanie...' : t('form_submit')}
