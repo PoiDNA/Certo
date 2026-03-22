@@ -457,11 +457,14 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
                         closePanel();
                         setZoom(country);
                       } else {
-                        // Show panel with list + notify table
+                        // Open panel — replaces any currently open panel
                         setTooltip(null);
                         setClusterPanel({ x: cluster.cx, y: cluster.cy, apps: cluster.apps });
                         onClusterSelect?.(cluster.apps);
                       }
+                    } else {
+                      // Single marker clicked — close any open panel
+                      closePanel();
                     }
                   }}
                   onMouseEnter={() => {
