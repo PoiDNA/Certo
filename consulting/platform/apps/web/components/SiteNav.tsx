@@ -23,9 +23,6 @@ export default function SiteNav() {
           {t('contact')}
         </a>
         <LocaleSwitcher />
-        <a href={`/${locale}/login`} className="text-white hover:text-certo-accent transition-colors duration-300 uppercase text-xs tracking-[0.1em] font-semibold">
-          {t('login')}
-        </a>
       </nav>
 
       {/* Mobile hamburger */}
@@ -75,13 +72,6 @@ export default function SiteNav() {
               onClick={() => setOpen(false)}
             >
               {t('contact')}
-            </a>
-            <a
-              href={`/${locale}/login`}
-              className="text-white hover:text-certo-accent uppercase text-xs tracking-[0.1em] font-semibold py-2"
-              onClick={() => setOpen(false)}
-            >
-              {t('login')}
             </a>
             <div className="pt-2 border-t border-certo-accent/20">
               <LocaleSwitcher />
