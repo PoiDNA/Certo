@@ -213,6 +213,8 @@
     "form_sector_corporate": "Prywatny",
     "form_sector_ngo": "Pozarządowy",
     "form_contact_person": "Imię i nazwisko",
+    "form_city": "Miasto",
+    "form_country": "Kraj",
     "form_role": "Funkcja w organizacji",
     "form_email": "Adres email",
     "form_phone": "Telefon (opcjonalnie)",
