@@ -28,7 +28,8 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: 'Bot verification failed' }, { status: 403 });
       }
     } else if (process.env.TURNSTILE_SECRET_KEY) {
-      return NextResponse.json({ error: 'Missing verification token' }, { status: 403 });
+      console.warn('[pilot-application] Missing Turnstile token — allowing submission with warning');
+      // Don't block — widget may not have loaded in multi-step form
     }
 
     // Validation
