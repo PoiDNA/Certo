@@ -76,7 +76,8 @@ export async function POST(request: Request) {
 
     const isRegistryVerified = !!registry_lookup_source;
 
-    const { data: inserted, error } = await supabase.from('pilot_applications').insert({
+    // Build insert payload — registry_lookup_source may not exist in DB yet
+    const insertPayload: Record<string, unknown> = {
       applicant_type,
       organization_name,
       city: city || null,
@@ -95,8 +96,22 @@ export async function POST(request: Request) {
       motivation,
       relation: relation || null,
       consent,
-      registry_lookup_source: registry_lookup_source || null,
-    }).select('id').single();
+    };
+
+    // Try with registry_lookup_source first, fallback without
+    let inserted;
+    let error;
+    if (registry_lookup_source) {
+      insertPayload.registry_lookup_source = registry_lookup_source;
+      ({ data: inserted, error } = await supabase.from('pilot_applications').insert(insertPayload).select('id').single());
+      if (error && error.message?.includes('registry_lookup_source')) {
+        // Column doesn't exist yet — retry without it
+        delete insertPayload.registry_lookup_source;
+        ({ data: inserted, error } = await supabase.from('pilot_applications').insert(insertPayload).select('id').single());
+      }
+    } else {
+      ({ data: inserted, error } = await supabase.from('pilot_applications').insert(insertPayload).select('id').single());
+    }
 
     if (error) {
       console.error('[pilot-application] Supabase error:', error);
