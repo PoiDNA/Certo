@@ -54,7 +54,7 @@ export default function PilotApplicationForm() {
     );
   }
 
-  const inputClass = 'w-full px-4 py-3 bg-white border border-certo-navy/10 rounded-[2px] text-sm text-certo-navy placeholder:text-certo-navy/40 focus:outline-none focus:border-certo-gold transition-colors';
+  const inputClass = 'w-full px-4 py-3 bg-white border border-certo-navy/10 rounded-lg text-sm text-certo-navy placeholder:text-certo-navy/40 focus:outline-none focus:border-certo-gold focus:ring-1 focus:ring-certo-gold/20 transition-all';
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
@@ -63,7 +63,7 @@ export default function PilotApplicationForm() {
         <legend className="text-sm font-medium text-certo-navy mb-2">{t('form_applicant_type')}</legend>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <label
-            className={`relative flex flex-col p-4 border cursor-pointer transition-all ${
+            className={`relative flex flex-col p-4 border rounded-lg cursor-pointer transition-all ${
               applicantType === 'representative'
                 ? 'border-certo-gold bg-certo-gold/5'
                 : 'border-certo-navy/10 hover:border-certo-navy/30'
@@ -84,7 +84,7 @@ export default function PilotApplicationForm() {
             )}
           </label>
           <label
-            className={`relative flex flex-col p-4 border cursor-pointer transition-all ${
+            className={`relative flex flex-col p-4 border rounded-lg cursor-pointer transition-all ${
               applicantType === 'observer'
                 ? 'border-certo-gold bg-certo-gold/5'
                 : 'border-certo-navy/10 hover:border-certo-navy/30'
@@ -204,7 +204,7 @@ export default function PilotApplicationForm() {
       <button
         type="submit"
         disabled={state === 'submitting'}
-        className="bg-certo-navy text-certo-gold px-8 py-3 text-xs font-semibold uppercase tracking-[0.15em] hover:bg-certo-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
+        className="bg-certo-navy text-certo-gold px-8 py-3 text-xs font-semibold uppercase tracking-[0.15em] rounded-lg hover:bg-certo-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
       >
         {state === 'submitting' ? '...' : t('form_submit')}
       </button>
