@@ -7,6 +7,7 @@ import PillarsPreview from '../../components/home/PillarsPreview';
 import FactDeNoiserSection from '../../components/home/FactDeNoiserSection';
 import RhetoricalBreak from '../../components/home/RhetoricalBreak';
 import ProductsGrid from '../../components/home/ProductsGrid';
+import BenefitsSection from '../../components/home/BenefitsSection';
 import PilotCTA from '../../components/home/PilotCTA';
 import { images } from '../../lib/images';
 
@@ -35,6 +36,7 @@ export default async function Home({
       <FactDeNoiserSection />
       <RhetoricalBreak question={t('rhetorical_standard')} />
       <ProductsGrid />
+      <BenefitsSection />
       <PhotoDivider
         imageUrl={images.dividerCollaboration}
         alt="Profesjonaliści przy stole roboczym w atmosferze współpracy"
