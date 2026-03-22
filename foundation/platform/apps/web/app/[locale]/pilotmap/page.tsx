@@ -9,8 +9,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'Pilot Map — Rating Certo',
-    description: 'Podmioty zgłoszone do pilotażu Rating Certo',
+    title: 'Mapa Zgłoszeń — Rating Certo',
+    description: 'Podmioty zgłoszone do bezpłatnego procesu oceny wiarygodności publicznej w ramach Rating Certo',
     robots: { index: false, follow: false },
   };
 }
@@ -29,10 +29,10 @@ export default async function PilotMapPage({
       <section className="py-16 md:py-24 bg-certo-navy text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream mb-4">
-            Pilot Map
+            Mapa Zgłoszeń
           </h1>
           <p className="text-lg text-certo-cream/60">
-            Podmioty zgłoszone do pilotażu Rating Certo
+            Podmioty zgłoszone do bezpłatnego procesu oceny wiarygodności publicznej w ramach Rating Certo
           </p>
         </div>
       </section>
