@@ -51,8 +51,36 @@ export default function PilotApplicationForm() {
   const [step, setStep] = useState<Step>('type');
   const [fd, setFd] = useState<FormData>(INITIAL_DATA);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [lookupState, setLookupState] = useState<'idle' | 'loading' | 'found' | 'not_found'>('idle');
   const handleTurnstileVerify = useCallback((token: string) => setTurnstileToken(token), []);
   const handleTurnstileExpire = useCallback(() => setTurnstileToken(null), []);
+
+  const lookupEntity = async () => {
+    if (!fd.nip && !fd.krs) return;
+    setLookupState('loading');
+    try {
+      const res = await fetch('/api/lookup-entity', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nip: fd.nip, krs: fd.krs, country: fd.country }),
+      });
+      const data = await res.json();
+      if (data.found) {
+        setFd((prev) => ({
+          ...prev,
+          organization_name: data.name || prev.organization_name,
+          address: data.address || prev.address,
+          city: data.city || prev.city,
+          postal_code: data.postalCode || prev.postal_code,
+        }));
+        setLookupState('found');
+      } else {
+        setLookupState('not_found');
+      }
+    } catch {
+      setLookupState('not_found');
+    }
+  };
 
   const stepIndex = STEPS.indexOf(step);
   const goNext = () => setStep(STEPS[Math.min(stepIndex + 1, STEPS.length - 1)]);
@@ -166,9 +194,57 @@ export default function PilotApplicationForm() {
         {step === 'org' && (
           <div>
             <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane podmiotu</h3>
-            <p className="text-sm text-certo-navy/70 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
+            <p className="text-sm text-certo-navy/70 mb-4">Wpisz NIP/VAT lub KRS — pobierzemy dane automatycznie</p>
+
             <div className="space-y-4">
-              <input value={fd.organization_name} onChange={(e) => set('organization_name', e.target.value)} placeholder={fd.applicant_type === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={input} />
+              {/* Country selector first */}
+              <div className="relative">
+                <select value={fd.country} onChange={(e) => { set('country', e.target.value); setLookupState('idle'); }} className={`${input} appearance-none pr-10 cursor-pointer`}>
+                  <option value="PL">🇵🇱 Polska</option><option value="AT">🇦🇹 Austria</option><option value="BE">🇧🇪 Belgia</option>
+                  <option value="BG">🇧🇬 Bułgaria</option><option value="HR">🇭🇷 Chorwacja</option><option value="CY">🇨🇾 Cypr</option>
+                  <option value="CZ">🇨🇿 Czechy</option><option value="DK">🇩🇰 Dania</option><option value="EE">🇪🇪 Estonia</option>
+                  <option value="FI">🇫🇮 Finlandia</option><option value="FR">🇫🇷 Francja</option><option value="DE">🇩🇪 Niemcy</option>
+                  <option value="GR">🇬🇷 Grecja</option><option value="HU">🇭🇺 Węgry</option><option value="IE">🇮🇪 Irlandia</option>
+                  <option value="IT">🇮🇹 Włochy</option><option value="LV">🇱🇻 Łotwa</option><option value="LT">🇱🇹 Litwa</option>
+                  <option value="LU">🇱🇺 Luksemburg</option><option value="MT">🇲🇹 Malta</option><option value="NL">🇳🇱 Holandia</option>
+                  <option value="PT">🇵🇹 Portugalia</option><option value="RO">🇷🇴 Rumunia</option><option value="SK">🇸🇰 Słowacja</option>
+                  <option value="SI">🇸🇮 Słowenia</option><option value="ES">🇪🇸 Hiszpania</option><option value="SE">🇸🇪 Szwecja</option>
+                </select>
+                {CHEVRON}
+              </div>
+
+              {/* NIP + KRS + Lookup button */}
+              <div className="bg-certo-cream/40 rounded-xl p-4 space-y-3">
+                <div className="grid grid-cols-2 gap-3">
+                  <input value={fd.nip} onChange={(e) => { set('nip', e.target.value); setLookupState('idle'); }} placeholder={fd.country === 'PL' ? 'NIP (np. 5252344078)' : `VAT ID (np. ${fd.country}123456789)`} className={input} />
+                  {fd.country === 'PL' && (
+                    <input value={fd.krs} onChange={(e) => { set('krs', e.target.value); setLookupState('idle'); }} placeholder="KRS (opcjonalnie)" className={input} />
+                  )}
+                </div>
+                <button
+                  type="button"
+                  onClick={lookupEntity}
+                  disabled={lookupState === 'loading' || (!fd.nip && !fd.krs)}
+                  className="w-full py-2.5 text-xs font-semibold rounded-lg transition-colors disabled:opacity-40 bg-certo-gold/10 text-certo-gold hover:bg-certo-gold/20 border border-certo-gold/20"
+                >
+                  {lookupState === 'loading' ? '🔍 Wyszukuję w rejestrach...' : '🔍 Pobierz dane z rejestru'}
+                </button>
+
+                {lookupState === 'found' && (
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-3 text-xs text-green-700">
+                    ✅ Znaleziono podmiot. Dane zostały uzupełnione — sprawdź i potwierdź poniżej.
+                  </div>
+                )}
+                {lookupState === 'not_found' && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-700">
+                    ⚠️ Nie znaleziono podmiotu w rejestrze. Wypełnij dane ręcznie poniżej.
+                  </div>
+                )}
+              </div>
+
+              {/* Auto-filled or manual fields */}
+              <input value={fd.organization_name} onChange={(e) => set('organization_name', e.target.value)} placeholder={fd.applicant_type === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={`${input} ${lookupState === 'found' && fd.organization_name ? 'border-green-300 bg-green-50/30' : ''}`} />
+
               <div className="relative">
                 <select value={fd.sector} onChange={(e) => set('sector', e.target.value)} className={`${input} appearance-none pr-10 cursor-pointer`}>
                   <option value="" disabled>{t('form_sector')}</option>
@@ -178,45 +254,19 @@ export default function PilotApplicationForm() {
                 </select>
                 {CHEVRON}
               </div>
+
               <div className="grid grid-cols-2 gap-3">
-                <input value={fd.city} onChange={(e) => set('city', e.target.value)} placeholder={t('form_city')} className={input} />
-                <div className="relative">
-                  <select value={fd.country} onChange={(e) => set('country', e.target.value)} className={`${input} appearance-none pr-10 cursor-pointer`}>
-                    <option value="PL">Polska</option><option value="AT">Austria</option><option value="BE">Belgia</option>
-                    <option value="BG">Bułgaria</option><option value="HR">Chorwacja</option><option value="CY">Cypr</option>
-                    <option value="CZ">Czechy</option><option value="DK">Dania</option><option value="EE">Estonia</option>
-                    <option value="FI">Finlandia</option><option value="FR">Francja</option><option value="DE">Niemcy</option>
-                    <option value="GR">Grecja</option><option value="HU">Węgry</option><option value="IE">Irlandia</option>
-                    <option value="IT">Włochy</option><option value="LV">Łotwa</option><option value="LT">Litwa</option>
-                    <option value="LU">Luksemburg</option><option value="MT">Malta</option><option value="NL">Holandia</option>
-                    <option value="PT">Portugalia</option><option value="RO">Rumunia</option><option value="SK">Słowacja</option>
-                    <option value="SI">Słowenia</option><option value="ES">Hiszpania</option><option value="SE">Szwecja</option>
-                  </select>
-                  {CHEVRON}
-                </div>
+                <input value={fd.city} onChange={(e) => set('city', e.target.value)} placeholder={t('form_city')} className={`${input} ${lookupState === 'found' && fd.city ? 'border-green-300 bg-green-50/30' : ''}`} />
+                <input value={fd.postal_code} onChange={(e) => set('postal_code', e.target.value)} placeholder={t('form_postal_code')} className={`${input} ${lookupState === 'found' && fd.postal_code ? 'border-green-300 bg-green-50/30' : ''}`} />
               </div>
-              <details className="group">
-                <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium text-certo-navy/80 hover:text-certo-navy transition-colors py-1">
-                  <svg className="w-3 h-3 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                  {t('form_registration_toggle')}
-                </summary>
-                <div className="space-y-3 pt-3 mt-2 border-t border-certo-navy/5">
-                  <div className="grid grid-cols-2 gap-3">
-                    <input value={fd.nip} onChange={(e) => set('nip', e.target.value)} placeholder={t('form_nip')} className={input} />
-                    <input value={fd.krs} onChange={(e) => set('krs', e.target.value)} placeholder={t('form_krs')} className={input} />
-                  </div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <input value={fd.regon} onChange={(e) => set('regon', e.target.value)} placeholder={t('form_regon')} className={input} />
-                    <input value={fd.website} onChange={(e) => set('website', e.target.value)} type="url" placeholder={t('form_website')} className={input} />
-                  </div>
-                  <div className="grid grid-cols-3 gap-3">
-                    <input value={fd.address} onChange={(e) => set('address', e.target.value)} placeholder={t('form_address')} className={`${input} col-span-2`} />
-                    <input value={fd.postal_code} onChange={(e) => set('postal_code', e.target.value)} placeholder={t('form_postal_code')} className={input} />
-                  </div>
-                </div>
-              </details>
+
+              <input value={fd.address} onChange={(e) => set('address', e.target.value)} placeholder={t('form_address')} className={`${input} ${lookupState === 'found' && fd.address ? 'border-green-300 bg-green-50/30' : ''}`} />
+
+              {/* Additional registration fields */}
+              <div className="grid grid-cols-2 gap-3">
+                <input value={fd.regon} onChange={(e) => set('regon', e.target.value)} placeholder={t('form_regon')} className={input} />
+                <input value={fd.website} onChange={(e) => set('website', e.target.value)} type="url" placeholder={t('form_website')} className={input} />
+              </div>
             </div>
             <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
               Dalej →
