@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    if (!['publiczny', 'korporacyjny', 'pozarzadowy'].includes(sector)) {
+    if (!['publiczny', 'prywatny', 'pozarzadowy'].includes(sector)) {
       return NextResponse.json({ error: 'Invalid sector' }, { status: 400 });
     }
 
