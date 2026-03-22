@@ -262,7 +262,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
         </button>
         <span className="text-certo-navy/20 text-xs">|</span>
         {Object.entries(COUNTRY_ZOOMS)
-          .filter(([code]) => code !== 'EU')
+          .filter(([code]) => code !== 'EU' && !code.startsWith('_custom'))
           .sort((a, b) => a[1].name.localeCompare(b[1].name))
           .map(([code, { name }]) => {
             const hasApps = countriesWithApps.has(code);
@@ -325,8 +325,9 @@ function PilotMap({ applications }: { applications: Application[] }) {
 
         {/* Clustered application markers */}
         {(() => {
-          // Cluster nearby markers
-          const CLUSTER_RADIUS = zoom === 'EU' ? 15 : 10;
+          // Cluster nearby markers — scale radius with viewBox so clusters split when zoomed
+          const viewRatio = vb.w / europeViewBox.w; // <1 when zoomed in
+          const CLUSTER_RADIUS = (zoom === 'EU' ? 15 : 10) * viewRatio;
           type Cluster = { cx: number; cy: number; apps: typeof applications };
           const clusters: Cluster[] = [];
 
@@ -378,22 +379,27 @@ function PilotMap({ applications }: { applications: Application[] }) {
                   className="cursor-pointer"
                   onClick={() => {
                     if (isMulti) {
-                      // Zoom deeper — if EU view, go to country; if country view, zoom tighter
                       const country = mainApp.country;
                       if (zoom === 'EU' && country && COUNTRY_ZOOMS[country]) {
                         setZoom(country);
                       } else {
-                        // Already in country — create a custom deeper zoom centered on cluster
+                        // Already zoomed — go deeper but cap max scale
+                        const currentView = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
+                        const MAX_SCALE = 200;
+                        if (currentView.scale >= MAX_SCALE) {
+                          // Can't zoom further — show tooltip instead
+                          return;
+                        }
                         const [lng, lat] = [
                           (cluster.cx - 400) / scale + cx,
-                          // inverse mercator approximation
                           cy - ((cluster.cy - 300) / scale),
                         ];
-                        // Set a temporary deeper zoom by manipulating viewBox directly
-                        const currentView = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
-                        const deeperScale = currentView.scale * 2;
-                        COUNTRY_ZOOMS['_custom'] = { center: [lng, lat], scale: deeperScale, name: 'Zbliżenie' };
-                        setZoom('_custom');
+                        const deeperScale = Math.min(currentView.scale * 2, MAX_SCALE);
+                        // Clean up old custom zooms
+                        Object.keys(COUNTRY_ZOOMS).filter(k => k.startsWith('_custom')).forEach(k => delete COUNTRY_ZOOMS[k]);
+                        const customKey = `_custom_${Date.now()}`;
+                        COUNTRY_ZOOMS[customKey] = { center: [lng, lat], scale: deeperScale, name: 'Zbliżenie' };
+                        setZoom(customKey);
                       }
                     }
                   }}
