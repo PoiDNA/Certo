@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
 const SWIPE_THRESHOLD = 50;
@@ -36,6 +36,7 @@ const icons = [
 export default function ProcessTimeline() {
   const t = useTranslations('Pilot');
   const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
@@ -43,7 +44,16 @@ export default function ProcessTimeline() {
     setActive(Math.max(0, Math.min(i, steps.length - 1)));
   }, []);
 
-  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  // Auto-cycle every 1.5s, loop back to start
+  useEffect(() => {
+    if (paused) return;
+    const timer = setInterval(() => {
+      setActive((prev) => (prev + 1) % steps.length);
+    }, 1500);
+    return () => clearInterval(timer);
+  }, [paused]);
+
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; setPaused(true); };
   const onTouchMove = (e: React.TouchEvent) => { touchEndX.current = e.touches[0].clientX; };
   const onTouchEnd = () => {
     const diff = touchStartX.current - touchEndX.current;
@@ -73,7 +83,7 @@ export default function ProcessTimeline() {
           {steps.map((step, i) => (
             <button
               key={step}
-              onClick={() => setActive(i)}
+              onClick={() => { setActive(i); setPaused(true); }}
               className="flex flex-col items-center group"
             >
               <div
@@ -129,7 +139,7 @@ export default function ProcessTimeline() {
         {/* Navigation arrows */}
         <div className="flex justify-between mt-8 pt-6 border-t border-certo-navy/5">
           <button
-            onClick={() => goTo(active - 1)}
+            onClick={() => { goTo(active - 1); setPaused(true); }}
             disabled={active === 0}
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
               active === 0 ? 'text-certo-navy/20 cursor-not-allowed' : 'text-certo-navy/60 hover:text-certo-gold'
@@ -141,7 +151,7 @@ export default function ProcessTimeline() {
             {active > 0 && t(`step_${steps[active - 1]}`)}
           </button>
           <button
-            onClick={() => goTo(active + 1)}
+            onClick={() => { goTo(active + 1); setPaused(true); }}
             disabled={active === steps.length - 1}
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
               active === steps.length - 1 ? 'text-certo-navy/20 cursor-not-allowed' : 'text-certo-navy/60 hover:text-certo-gold'
