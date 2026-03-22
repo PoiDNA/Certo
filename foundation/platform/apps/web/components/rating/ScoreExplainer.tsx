@@ -6,9 +6,9 @@ import { useScrollReveal } from '../shared/useScrollReveal';
 const ICON_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/web1/ico';
 
 const scores = [
-  { key: 'score', icon: `${ICON_BASE}/I-I-1.png`, bg: 'from-certo-gold/10 to-transparent' },
-  { key: 'vector', icon: `${ICON_BASE}/I-I-2.png`, bg: 'from-certo-navy/5 to-transparent' },
-  { key: 'index', icon: `${ICON_BASE}/I-I-3.png`, bg: 'from-emerald-50 to-transparent' },
+  { key: 'score', icon: `${ICON_BASE}/I-I-1.png`, bg: 'from-amber-50 via-amber-50/60 to-white' },
+  { key: 'vector', icon: `${ICON_BASE}/I-I-2.png`, bg: 'from-slate-50 via-blue-50/40 to-white' },
+  { key: 'index', icon: `${ICON_BASE}/I-I-3.png`, bg: 'from-teal-50 via-emerald-50/50 to-white' },
 ] as const;
 
 export default function ScoreExplainer() {

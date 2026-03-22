@@ -41,13 +41,13 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={scrollDown}
-            className="px-8 py-3 border border-certo-gold text-certo-gold text-sm uppercase tracking-[0.15em] font-medium hover:bg-certo-gold hover:text-white transition-colors duration-300"
+            className="px-8 py-3 border border-certo-gold text-certo-gold text-sm uppercase tracking-[0.15em] font-medium hover:bg-certo-gold hover:text-white transition-colors duration-300 rounded-lg"
           >
             {t('hero_cta_learn')}
           </button>
           <a
             href={`/${locale}/pilot`}
-            className="px-8 py-3 bg-certo-gold text-white text-sm uppercase tracking-[0.15em] font-medium hover:bg-certo-gold-light transition-colors duration-300 text-center"
+            className="px-8 py-3 bg-certo-gold text-white text-sm uppercase tracking-[0.15em] font-medium hover:bg-certo-gold-light transition-colors duration-300 text-center rounded-lg"
           >
             {t('hero_cta_pilot')}
           </a>
