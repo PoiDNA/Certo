@@ -20,7 +20,7 @@ export default function PillarsPreview() {
     <section className="w-full py-20 md:py-32 bg-white/50">
       <div
         ref={ref}
-        className={`max-w-6xl mx-auto px-6 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
+        className={`max-w-7xl mx-auto px-6 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
       >
         <div className="text-center mb-16">
           <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-4 font-medium">
@@ -34,13 +34,13 @@ export default function PillarsPreview() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {pillars.map(({ key, weight, color }) => (
-            <div key={key} className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
+            <div key={key} className="bg-white p-5 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors overflow-hidden">
               <div className={`w-10 h-10 ${color} rounded-sm flex items-center justify-center text-white text-sm font-bold mb-4`}>
                 {weight}%
               </div>
-              <h3 className="font-serif font-extrabold text-certo-navy text-2xl md:text-xl mb-2">
+              <h3 className="font-serif font-extrabold text-certo-navy text-2xl md:text-base lg:text-lg mb-2">
                 {t(`pillar_${key}_name`)}
               </h3>
               <p className="text-xs text-certo-navy/60 leading-relaxed">
