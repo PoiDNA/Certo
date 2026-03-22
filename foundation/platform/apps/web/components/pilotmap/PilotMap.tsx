@@ -321,6 +321,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
               opacity="0.25"
               fontFamily="system-ui, sans-serif"
               fontWeight="600"
+              pointerEvents="none"
             >
               {name}
             </text>
