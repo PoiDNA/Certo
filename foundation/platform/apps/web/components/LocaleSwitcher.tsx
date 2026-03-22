@@ -69,10 +69,10 @@ export default function LocaleSwitcher() {
     <div ref={containerRef} className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center gap-1.5 text-certo-cream/80 hover:text-certo-gold transition-colors duration-200 text-sm font-medium ${isPending ? 'opacity-50' : ''}`}
+        className={`flex items-center gap-1.5 text-certo-cream/80 hover:text-certo-gold transition-colors duration-200 text-sm font-medium py-2 md:py-0 ${isPending ? 'opacity-50' : ''}`}
         aria-label="Switch language"
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <svg className="w-6 h-6 md:w-4 md:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <circle cx="12" cy="12" r="10" />
           <path d="M2 12h20" />
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -89,10 +89,10 @@ export default function LocaleSwitcher() {
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
               placeholder="Search..."
-              className="w-full px-2 py-1.5 text-xs bg-transparent border border-certo-gold/20 rounded-[2px] text-certo-cream/80 placeholder:text-certo-cream/30 focus:outline-none focus:border-certo-gold/50"
+              className="w-full px-2 py-2 text-base md:text-xs bg-transparent border border-certo-gold/20 rounded-[2px] text-certo-cream/80 placeholder:text-certo-cream/30 focus:outline-none focus:border-certo-gold/50"
             />
           </div>
-          <div className="max-h-64 overflow-y-auto px-1 pb-2">
+          <div className="max-h-80 md:max-h-64 overflow-y-auto px-1 pb-2">
             {filteredGroups.map((group) => (
               <div key={group.label}>
                 <div className="px-2 pt-2 pb-1 text-[10px] uppercase tracking-wider text-certo-cream/40 font-medium">
@@ -106,7 +106,7 @@ export default function LocaleSwitcher() {
                       setIsOpen(false);
                       setFilter('');
                     }}
-                    className={`w-full text-left px-2 py-1 text-xs rounded-[2px] transition-colors duration-150 flex items-center gap-2 ${
+                    className={`w-full text-left px-2 py-2.5 md:py-1 text-sm md:text-xs rounded-[2px] transition-colors duration-150 flex items-center gap-2 ${
                       locale === currentLocale
                         ? 'text-certo-gold border-l-2 border-certo-gold pl-1.5'
                         : 'text-certo-cream/80 hover:text-certo-gold hover:bg-certo-gold/5'
