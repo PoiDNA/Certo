@@ -19,7 +19,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const { applicant_type, organization_name, sector, contact_person, role, email, phone, motivation, relation, consent, turnstile_token } = body;
+    const { applicant_type, organization_name, city, country, sector, contact_person, role, email, phone, motivation, relation, consent, turnstile_token } = body;
 
     // Turnstile verification
     if (turnstile_token) {
@@ -51,6 +51,8 @@ export async function POST(request: Request) {
       console.log('[pilot-application] No Supabase config — logging application:', {
         applicant_type,
         organization_name,
+        city,
+        country,
         sector,
         contact_person,
         role,
@@ -68,6 +70,8 @@ export async function POST(request: Request) {
     const { error } = await supabase.from('pilot_applications').insert({
       applicant_type,
       organization_name,
+      city: city || null,
+      country: country || 'PL',
       sector,
       contact_person,
       role: role || null,

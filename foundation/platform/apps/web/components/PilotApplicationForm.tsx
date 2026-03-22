@@ -29,6 +29,8 @@ export default function PilotApplicationForm() {
         body: JSON.stringify({
           applicant_type: applicantType,
           organization_name: data.get('organization_name'),
+          city: data.get('city') || null,
+          country: data.get('country') || 'PL',
           sector: data.get('sector'),
           contact_person: data.get('contact_person'),
           role: applicantType === 'representative' ? data.get('role') : null,
@@ -139,6 +141,55 @@ export default function PilotApplicationForm() {
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <input
+          name="city"
+          placeholder={t('form_city')}
+          className={inputClass}
+        />
+        <div className="relative">
+          <select
+            name="country"
+            className={`${inputClass} appearance-none pr-10 cursor-pointer`}
+            defaultValue="PL"
+          >
+            <option value="PL">Polska</option>
+            <option value="AT">Austria</option>
+            <option value="BE">Belgia</option>
+            <option value="BG">Bułgaria</option>
+            <option value="HR">Chorwacja</option>
+            <option value="CY">Cypr</option>
+            <option value="CZ">Czechy</option>
+            <option value="DK">Dania</option>
+            <option value="EE">Estonia</option>
+            <option value="FI">Finlandia</option>
+            <option value="FR">Francja</option>
+            <option value="DE">Niemcy</option>
+            <option value="GR">Grecja</option>
+            <option value="HU">Węgry</option>
+            <option value="IE">Irlandia</option>
+            <option value="IT">Włochy</option>
+            <option value="LV">Łotwa</option>
+            <option value="LT">Litwa</option>
+            <option value="LU">Luksemburg</option>
+            <option value="MT">Malta</option>
+            <option value="NL">Holandia</option>
+            <option value="PT">Portugalia</option>
+            <option value="RO">Rumunia</option>
+            <option value="SK">Słowacja</option>
+            <option value="SI">Słowenia</option>
+            <option value="ES">Hiszpania</option>
+            <option value="SE">Szwecja</option>
+          </select>
+          <svg
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/40 pointer-events-none"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </div>
 
       <input
