@@ -18,21 +18,23 @@ export default function ScoreExplainer() {
   return (
     <section
       ref={ref}
-      className={`grid md:grid-cols-3 gap-8 mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
+      className={`space-y-6 mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
     >
       {scores.map(({ key, icon }) => (
-        <div key={key} className="bg-white p-8 border border-certo-navy/5">
+        <div key={key} className="bg-white p-6 md:p-8 border border-certo-navy/5 rounded-lg flex items-start gap-6">
           <img
             src={icon}
             alt={key}
-            className="w-12 h-12 object-contain mb-4"
+            className="w-16 h-16 md:w-20 md:h-20 object-contain shrink-0"
           />
-          <h3 className="font-serif font-bold text-certo-navy text-lg mb-2">
-            {t(`${key}_title`)}
-          </h3>
-          <p className="text-sm text-certo-navy/60 leading-relaxed">
-            {t(`${key}_desc`)}
-          </p>
+          <div>
+            <h3 className="font-serif font-bold text-certo-navy text-xl md:text-2xl mb-2">
+              {t(`${key}_title`)}
+            </h3>
+            <p className="text-sm md:text-base text-certo-navy/60 leading-relaxed">
+              {t(`${key}_desc`)}
+            </p>
+          </div>
         </div>
       ))}
     </section>
