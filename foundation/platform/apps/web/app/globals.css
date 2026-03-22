@@ -46,18 +46,11 @@ h1, h2, h3, h4, h5, h6, .font-serif {
   transform: translateY(0);
 }
 
-/* Fixed background parallax-lite */
+/* Fixed background — stable scroll, no jitter */
 .bg-fixed-cover {
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center;
-}
-
-/* iOS Safari: bg-fixed doesn't work on touch devices */
-@media (hover: none) {
-  .bg-fixed-cover {
-    background-attachment: scroll;
-  }
 }
 
 /* Rhetorical break — dynamic gold background */
