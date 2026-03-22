@@ -74,7 +74,7 @@ export async function POST(request: Request) {
 
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-    const { error } = await supabase.from('pilot_applications').insert({
+    const { data: inserted, error } = await supabase.from('pilot_applications').insert({
       applicant_type,
       organization_name,
       city: city || null,
@@ -93,11 +93,24 @@ export async function POST(request: Request) {
       motivation,
       relation: relation || null,
       consent,
-    });
+    }).select('id').single();
 
     if (error) {
       console.error('[pilot-application] Supabase error:', error);
       return NextResponse.json({ error: 'Database error' }, { status: 500 });
+    }
+
+    // Auto-trigger AI verification (fire-and-forget)
+    if (inserted?.id) {
+      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'http://localhost:3000';
+
+      fetch(`${baseUrl}/api/verify-application`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: inserted.id }),
+      }).catch((err) => console.error('[pilot-application] Verification trigger failed:', err));
     }
 
     return NextResponse.json({ ok: true });
