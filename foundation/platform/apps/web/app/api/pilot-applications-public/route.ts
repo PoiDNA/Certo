@@ -13,8 +13,8 @@ export async function GET() {
 
   const { data, error } = await supabase
     .from('pilot_applications')
-    .select('id, organization_name, sector, city, country, created_at, votes')
-    .eq('status', 'accepted')
+    .select('id, organization_name, sector, city, country, created_at, votes, status, rating_score')
+    .neq('status', 'rejected')
     .order('created_at', { ascending: false });
 
   if (error) {

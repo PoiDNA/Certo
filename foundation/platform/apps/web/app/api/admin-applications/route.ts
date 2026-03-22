@@ -57,7 +57,7 @@ export async function PATCH(request: Request) {
   if (!supabase) return NextResponse.json({ error: 'No database' }, { status: 500 });
 
   const body = await request.json();
-  const { id, status, duplicate_of, ai_verified, ai_verification_notes, submission_count } = body;
+  const { id, status, duplicate_of, ai_verified, ai_verification_notes, submission_count, rating_score } = body;
 
   if (!id) {
     return NextResponse.json({ error: 'Missing id' }, { status: 400 });
@@ -69,6 +69,7 @@ export async function PATCH(request: Request) {
   if (ai_verified !== undefined) updates.ai_verified = ai_verified;
   if (ai_verification_notes !== undefined) updates.ai_verification_notes = ai_verification_notes;
   if (submission_count !== undefined) updates.submission_count = submission_count;
+  if (rating_score !== undefined) updates.rating_score = rating_score;
 
   const { error } = await supabase
     .from('pilot_applications')

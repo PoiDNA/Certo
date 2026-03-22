@@ -27,6 +27,7 @@ type Application = {
   duplicate_of: string | null;
   ai_verified: boolean | null;
   ai_verification_notes: string | null;
+  rating_score: number | null;
   consent: boolean;
   created_at: string;
 };
@@ -243,6 +244,34 @@ export default function AdminDashboard() {
                   {app.duplicate_of && (
                     <div className="text-xs bg-orange-50 p-3 rounded-lg text-orange-700">
                       Duplikat zgłoszenia: {app.duplicate_of}
+                    </div>
+                  )}
+
+                  {/* Rating Score */}
+                  {app.status === 'accepted' && (
+                    <div className="flex items-center gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                      <label className="text-xs font-medium text-emerald-700 whitespace-nowrap">⭐ Rating Certo:</label>
+                      <input
+                        type="number"
+                        min={0}
+                        max={100}
+                        defaultValue={app.rating_score ?? ''}
+                        placeholder="np. 76"
+                        className="w-20 px-2 py-1 text-sm border border-emerald-300 rounded bg-white text-emerald-800 focus:outline-none focus:border-emerald-500"
+                        onBlur={async (e) => {
+                          const val = e.target.value ? parseInt(e.target.value, 10) : null;
+                          if (val === app.rating_score) return;
+                          setUpdating(app.id);
+                          await fetch('/api/admin-applications', {
+                            method: 'PATCH',
+                            headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
+                            body: JSON.stringify({ id: app.id, rating_score: val }),
+                          });
+                          await fetchApps(adminKey);
+                          setUpdating(null);
+                        }}
+                      />
+                      <span className="text-[10px] text-emerald-600">0–100 · zapisuje automatycznie</span>
                     </div>
                   )}
 

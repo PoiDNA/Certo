@@ -31,9 +31,30 @@ type Application = {
   country: string | null;
   created_at: string;
   votes: number;
+  status: string;
+  rating_score: number | null;
 };
 
-type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at';
+type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at' | 'status';
+
+// Status mapping: DB → public label + styling
+function getStatusInfo(app: Application): { label: string; className: string; order: number } {
+  if (app.rating_score != null) {
+    return {
+      label: `Rating ${app.rating_score}+`,
+      className: 'bg-emerald-100 text-emerald-700 border border-emerald-200',
+      order: 0,
+    };
+  }
+  switch (app.status) {
+    case 'accepted':
+      return { label: 'W trakcie oceny', className: 'bg-certo-gold/15 text-certo-gold border border-certo-gold/20', order: 1 };
+    case 'reviewed':
+      return { label: 'Analiza wstępna', className: 'bg-amber-50 text-amber-600 border border-amber-200', order: 2 };
+    default:
+      return { label: 'Zgłoszenie', className: 'bg-blue-50 text-blue-600 border border-blue-200', order: 3 };
+  }
+}
 
 export default function PilotTable({ applications, highlightedIds }: {
   applications: Application[];
@@ -74,6 +95,11 @@ export default function PilotTable({ applications, highlightedIds }: {
           const aH = highlightedIds.has(a.id) ? 0 : 1;
           const bH = highlightedIds.has(b.id) ? 0 : 1;
           if (aH !== bH) return aH - bH;
+        }
+        if (sortKey === 'status') {
+          const aOrder = getStatusInfo(a).order;
+          const bOrder = getStatusInfo(b).order;
+          return sortAsc ? aOrder - bOrder : bOrder - aOrder;
         }
         const aVal = (a[sortKey] || '') as string;
         const bVal = (b[sortKey] || '') as string;
@@ -148,6 +174,9 @@ export default function PilotTable({ applications, highlightedIds }: {
               <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('sector')}>
                 Sektor <SortIcon col="sector" />
               </th>
+              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('status')}>
+                Status <SortIcon col="status" />
+              </th>
               <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('created_at')}>
                 Data <SortIcon col="created_at" />
               </th>
@@ -156,7 +185,7 @@ export default function PilotTable({ applications, highlightedIds }: {
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={6} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
+              <tr><td colSpan={7} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
             ) : (
               filtered.map((app, i) => {
                 const isHighlighted = highlightedIds?.has(app.id);
@@ -171,6 +200,13 @@ export default function PilotTable({ applications, highlightedIds }: {
                     <span className={`inline-block px-2 py-0.5 text-xs rounded-full ${SECTOR_COLORS[app.sector] || ''}`}>
                       {SECTOR_LABELS[app.sector] || app.sector}
                     </span>
+                  </td>
+                  <td className="px-4 py-3">
+                    {(() => { const s = getStatusInfo(app); return (
+                      <span className={`inline-block px-2.5 py-0.5 text-xs font-medium rounded-full ${s.className}`}>
+                        {s.label}
+                      </span>
+                    ); })()}
                   </td>
                   <td className="px-4 py-3 text-certo-navy/40 text-xs">
                     {new Date(app.created_at).toLocaleDateString('pl-PL')}
@@ -207,9 +243,16 @@ export default function PilotTable({ applications, highlightedIds }: {
             }`}>
               <div className="flex items-start justify-between gap-2">
                 <h3 className="font-medium text-certo-navy text-sm">{app.organization_name}</h3>
-                <span className={`shrink-0 px-2 py-0.5 text-xs rounded-full ${SECTOR_COLORS[app.sector] || ''}`}>
-                  {(SECTOR_LABELS[app.sector] || app.sector).replace('Sektor ', '')}
-                </span>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  {(() => { const s = getStatusInfo(app); return (
+                    <span className={`px-2 py-0.5 text-[10px] font-medium rounded-full ${s.className}`}>
+                      {s.label}
+                    </span>
+                  ); })()}
+                  <span className={`px-2 py-0.5 text-[10px] rounded-full ${SECTOR_COLORS[app.sector] || ''}`}>
+                    {(SECTOR_LABELS[app.sector] || app.sector).replace('Sektor ', '')}
+                  </span>
+                </div>
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-4 text-xs text-certo-navy/50">

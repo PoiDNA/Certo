@@ -12,6 +12,8 @@ type Application = {
   country: string | null;
   created_at: string;
   votes: number;
+  status: string;
+  rating_score: number | null;
 };
 
 type SectorFilter = 'all' | 'publiczny' | 'prywatny' | 'pozarzadowy';
