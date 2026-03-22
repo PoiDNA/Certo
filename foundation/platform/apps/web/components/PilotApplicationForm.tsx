@@ -16,11 +16,40 @@ const CHEVRON = (
   </svg>
 );
 
+interface FormData {
+  applicant_type: ApplicantType;
+  organization_name: string;
+  sector: string;
+  city: string;
+  country: string;
+  address: string;
+  postal_code: string;
+  nip: string;
+  krs: string;
+  regon: string;
+  website: string;
+  contact_person: string;
+  role: string;
+  email: string;
+  phone: string;
+  relation: string;
+  motivation: string;
+  consent: boolean;
+}
+
+const INITIAL_DATA: FormData = {
+  applicant_type: 'representative',
+  organization_name: '', sector: '', city: '', country: 'PL',
+  address: '', postal_code: '', nip: '', krs: '', regon: '', website: '',
+  contact_person: '', role: '', email: '', phone: '', relation: '',
+  motivation: '', consent: false,
+};
+
 export default function PilotApplicationForm() {
   const t = useTranslations('Pilot');
   const [state, setState] = useState<FormState>('idle');
   const [step, setStep] = useState<Step>('type');
-  const [applicantType, setApplicantType] = useState<ApplicantType>('representative');
+  const [fd, setFd] = useState<FormData>(INITIAL_DATA);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const handleTurnstileVerify = useCallback((token: string) => setTurnstileToken(token), []);
   const handleTurnstileExpire = useCallback(() => setTurnstileToken(null), []);
@@ -29,35 +58,34 @@ export default function PilotApplicationForm() {
   const goNext = () => setStep(STEPS[Math.min(stepIndex + 1, STEPS.length - 1)]);
   const goBack = () => setStep(STEPS[Math.max(stepIndex - 1, 0)]);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setState('submitting');
-    const form = e.currentTarget;
-    const data = new FormData(form);
+  const set = (field: keyof FormData, value: string | boolean) =>
+    setFd((prev) => ({ ...prev, [field]: value }));
 
+  const handleSubmit = async () => {
+    setState('submitting');
     try {
       const res = await fetch('/api/pilot-application', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          applicant_type: applicantType,
-          organization_name: data.get('organization_name'),
-          city: data.get('city') || null,
-          country: data.get('country') || 'PL',
-          address: data.get('address') || null,
-          postal_code: data.get('postal_code') || null,
-          nip: data.get('nip') || null,
-          krs: data.get('krs') || null,
-          regon: data.get('regon') || null,
-          website: data.get('website') || null,
-          sector: data.get('sector'),
-          contact_person: data.get('contact_person'),
-          role: applicantType === 'representative' ? data.get('role') : null,
-          email: data.get('email'),
-          phone: data.get('phone') || null,
-          motivation: data.get('motivation'),
-          relation: applicantType === 'observer' ? data.get('relation') || null : null,
-          consent: data.get('consent') === 'on',
+          applicant_type: fd.applicant_type,
+          organization_name: fd.organization_name,
+          city: fd.city || null,
+          country: fd.country || 'PL',
+          address: fd.address || null,
+          postal_code: fd.postal_code || null,
+          nip: fd.nip || null,
+          krs: fd.krs || null,
+          regon: fd.regon || null,
+          website: fd.website || null,
+          sector: fd.sector,
+          contact_person: fd.contact_person,
+          role: fd.applicant_type === 'representative' ? fd.role || null : null,
+          email: fd.email,
+          phone: fd.phone || null,
+          motivation: fd.motivation,
+          relation: fd.applicant_type === 'observer' ? fd.relation || null : null,
+          consent: fd.consent,
           turnstile_token: turnstileToken,
         }),
       });
@@ -86,7 +114,7 @@ export default function PilotApplicationForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-xl mx-auto">
-      {/* Turnstile — always loaded, hidden until step 4 */}
+      {/* Turnstile — always loaded */}
       <div className={step === 'details' ? 'px-8' : 'sr-only'}>
         <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
       </div>
@@ -94,199 +122,167 @@ export default function PilotApplicationForm() {
       {/* Progress bar */}
       <div className="flex">
         {STEPS.map((s, i) => (
-          <div
-            key={s}
-            className={`flex-1 h-1 transition-colors duration-300 ${
-              i <= stepIndex ? 'bg-certo-gold' : 'bg-certo-navy/5'
-            }`}
-          />
+          <div key={s} className={`flex-1 h-1 transition-colors duration-300 ${i <= stepIndex ? 'bg-certo-gold' : 'bg-certo-navy/5'}`} />
         ))}
       </div>
 
       {/* Step indicator */}
       <div className="px-8 pt-6 flex items-center justify-between">
-        <span className="text-xs text-certo-navy/30 font-medium">
-          {stepIndex + 1} / {STEPS.length}
-        </span>
+        <span className="text-xs text-certo-navy/30 font-medium">{stepIndex + 1} / {STEPS.length}</span>
         {stepIndex > 0 && (
-          <button type="button" onClick={goBack} className="text-xs text-certo-gold hover:text-certo-navy transition-colors">
-            ← Wróć
-          </button>
+          <button type="button" onClick={goBack} className="text-xs text-certo-gold hover:text-certo-navy transition-colors">← Wróć</button>
         )}
       </div>
 
-      <form onSubmit={handleSubmit} className="p-8 pt-4">
+      <div className="p-8 pt-4">
         {/* STEP 1: Applicant type */}
-        {step === 'type' && <div>
-          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">{t('form_applicant_type')}</h3>
-          <p className="text-sm text-certo-navy/70 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
-
-          <div className="space-y-3">
-            {(['representative', 'observer'] as const).map((type) => (
-              <label
-                key={type}
-                className={`flex items-start gap-4 p-5 rounded-xl border-2 cursor-pointer transition-all duration-200 ${
-                  applicantType === type
-                    ? 'border-certo-gold bg-certo-gold/5 shadow-sm'
-                    : 'border-transparent bg-certo-cream/30 hover:bg-certo-cream/50'
-                }`}
-              >
-                <input
-                  type="radio"
-                  name="applicant_type"
-                  value={type}
-                  checked={applicantType === type}
-                  onChange={() => setApplicantType(type)}
-                  className="sr-only"
-                />
-                <div className={`w-5 h-5 rounded-full border-2 shrink-0 mt-0.5 flex items-center justify-center transition-colors ${
-                  applicantType === type ? 'border-certo-gold' : 'border-certo-navy/20'
+        {step === 'type' && (
+          <div>
+            <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">{t('form_applicant_type')}</h3>
+            <p className="text-sm text-certo-navy/70 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
+            <div className="space-y-3">
+              {(['representative', 'observer'] as const).map((type) => (
+                <label key={type} className={`flex items-start gap-4 p-5 rounded-xl border-2 cursor-pointer transition-all duration-200 ${
+                  fd.applicant_type === type ? 'border-certo-gold bg-certo-gold/5 shadow-sm' : 'border-transparent bg-certo-cream/30 hover:bg-certo-cream/50'
                 }`}>
-                  {applicantType === type && <div className="w-2.5 h-2.5 rounded-full bg-certo-gold" />}
-                </div>
-                <div>
-                  <span className="text-sm font-semibold text-certo-navy block">{t(`form_type_${type}`)}</span>
-                  <span className="text-xs text-certo-navy/50 mt-0.5 block">{t(`form_type_${type}_desc`)}</span>
-                </div>
-              </label>
-            ))}
+                  <input type="radio" value={type} checked={fd.applicant_type === type} onChange={() => set('applicant_type', type)} className="sr-only" />
+                  <div className={`w-5 h-5 rounded-full border-2 shrink-0 mt-0.5 flex items-center justify-center ${fd.applicant_type === type ? 'border-certo-gold' : 'border-certo-navy/20'}`}>
+                    {fd.applicant_type === type && <div className="w-2.5 h-2.5 rounded-full bg-certo-gold" />}
+                  </div>
+                  <div>
+                    <span className="text-sm font-semibold text-certo-navy block">{t(`form_type_${type}`)}</span>
+                    <span className="text-xs text-certo-navy/50 mt-0.5 block">{t(`form_type_${type}_desc`)}</span>
+                  </div>
+                </label>
+              ))}
+            </div>
+            <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+              Dalej →
+            </button>
           </div>
-
-          <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
-            Dalej →
-          </button>
-        </div>}
+        )}
 
         {/* STEP 2: Organization info */}
-        {step === 'org' && <div>
-          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane podmiotu</h3>
-          <p className="text-sm text-certo-navy/70 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
-
-          <div className="space-y-4">
-            <input name="organization_name" required placeholder={applicantType === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={input} />
-
-            <div className="relative">
-              <select name="sector" required className={`${input} appearance-none pr-10 cursor-pointer`} defaultValue="">
-                <option value="" disabled>{t('form_sector')}</option>
-                <option value="publiczny">{t('form_sector_public')}</option>
-                <option value="prywatny">{t('form_sector_corporate')}</option>
-                <option value="pozarzadowy">{t('form_sector_ngo')}</option>
-              </select>
-              {CHEVRON}
-            </div>
-
-            <div className="grid grid-cols-2 gap-3">
-              <input name="city" placeholder={t('form_city')} className={input} />
+        {step === 'org' && (
+          <div>
+            <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane podmiotu</h3>
+            <p className="text-sm text-certo-navy/70 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
+            <div className="space-y-4">
+              <input value={fd.organization_name} onChange={(e) => set('organization_name', e.target.value)} placeholder={fd.applicant_type === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={input} />
               <div className="relative">
-                <select name="country" className={`${input} appearance-none pr-10 cursor-pointer`} defaultValue="PL">
-                  <option value="PL">Polska</option>
-                  <option value="AT">Austria</option><option value="BE">Belgia</option><option value="BG">Bułgaria</option>
-                  <option value="HR">Chorwacja</option><option value="CY">Cypr</option><option value="CZ">Czechy</option>
-                  <option value="DK">Dania</option><option value="EE">Estonia</option><option value="FI">Finlandia</option>
-                  <option value="FR">Francja</option><option value="DE">Niemcy</option><option value="GR">Grecja</option>
-                  <option value="HU">Węgry</option><option value="IE">Irlandia</option><option value="IT">Włochy</option>
-                  <option value="LV">Łotwa</option><option value="LT">Litwa</option><option value="LU">Luksemburg</option>
-                  <option value="MT">Malta</option><option value="NL">Holandia</option><option value="PT">Portugalia</option>
-                  <option value="RO">Rumunia</option><option value="SK">Słowacja</option><option value="SI">Słowenia</option>
-                  <option value="ES">Hiszpania</option><option value="SE">Szwecja</option>
+                <select value={fd.sector} onChange={(e) => set('sector', e.target.value)} className={`${input} appearance-none pr-10 cursor-pointer`}>
+                  <option value="" disabled>{t('form_sector')}</option>
+                  <option value="publiczny">{t('form_sector_public')}</option>
+                  <option value="prywatny">{t('form_sector_corporate')}</option>
+                  <option value="pozarzadowy">{t('form_sector_ngo')}</option>
                 </select>
                 {CHEVRON}
               </div>
-            </div>
-
-            {/* Registration data */}
-            <details className="group">
-              <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium text-certo-navy/80 hover:text-certo-navy transition-colors py-1">
-                <svg className="w-3 h-3 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-                {t('form_registration_toggle')}
-              </summary>
-              <div className="space-y-3 pt-3 mt-2 border-t border-certo-navy/5">
-                <div className="grid grid-cols-2 gap-3">
-                  <input name="nip" placeholder={t('form_nip')} className={input} />
-                  <input name="krs" placeholder={t('form_krs')} className={input} />
-                </div>
-                <div className="grid grid-cols-2 gap-3">
-                  <input name="regon" placeholder={t('form_regon')} className={input} />
-                  <input name="website" type="url" placeholder={t('form_website')} className={input} />
-                </div>
-                <div className="grid grid-cols-3 gap-3">
-                  <input name="address" placeholder={t('form_address')} className={`${input} col-span-2`} />
-                  <input name="postal_code" placeholder={t('form_postal_code')} className={input} />
+              <div className="grid grid-cols-2 gap-3">
+                <input value={fd.city} onChange={(e) => set('city', e.target.value)} placeholder={t('form_city')} className={input} />
+                <div className="relative">
+                  <select value={fd.country} onChange={(e) => set('country', e.target.value)} className={`${input} appearance-none pr-10 cursor-pointer`}>
+                    <option value="PL">Polska</option><option value="AT">Austria</option><option value="BE">Belgia</option>
+                    <option value="BG">Bułgaria</option><option value="HR">Chorwacja</option><option value="CY">Cypr</option>
+                    <option value="CZ">Czechy</option><option value="DK">Dania</option><option value="EE">Estonia</option>
+                    <option value="FI">Finlandia</option><option value="FR">Francja</option><option value="DE">Niemcy</option>
+                    <option value="GR">Grecja</option><option value="HU">Węgry</option><option value="IE">Irlandia</option>
+                    <option value="IT">Włochy</option><option value="LV">Łotwa</option><option value="LT">Litwa</option>
+                    <option value="LU">Luksemburg</option><option value="MT">Malta</option><option value="NL">Holandia</option>
+                    <option value="PT">Portugalia</option><option value="RO">Rumunia</option><option value="SK">Słowacja</option>
+                    <option value="SI">Słowenia</option><option value="ES">Hiszpania</option><option value="SE">Szwecja</option>
+                  </select>
+                  {CHEVRON}
                 </div>
               </div>
-            </details>
+              <details className="group">
+                <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium text-certo-navy/80 hover:text-certo-navy transition-colors py-1">
+                  <svg className="w-3 h-3 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                  {t('form_registration_toggle')}
+                </summary>
+                <div className="space-y-3 pt-3 mt-2 border-t border-certo-navy/5">
+                  <div className="grid grid-cols-2 gap-3">
+                    <input value={fd.nip} onChange={(e) => set('nip', e.target.value)} placeholder={t('form_nip')} className={input} />
+                    <input value={fd.krs} onChange={(e) => set('krs', e.target.value)} placeholder={t('form_krs')} className={input} />
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <input value={fd.regon} onChange={(e) => set('regon', e.target.value)} placeholder={t('form_regon')} className={input} />
+                    <input value={fd.website} onChange={(e) => set('website', e.target.value)} type="url" placeholder={t('form_website')} className={input} />
+                  </div>
+                  <div className="grid grid-cols-3 gap-3">
+                    <input value={fd.address} onChange={(e) => set('address', e.target.value)} placeholder={t('form_address')} className={`${input} col-span-2`} />
+                    <input value={fd.postal_code} onChange={(e) => set('postal_code', e.target.value)} placeholder={t('form_postal_code')} className={input} />
+                  </div>
+                </div>
+              </details>
+            </div>
+            <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+              Dalej →
+            </button>
           </div>
-
-          <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
-            Dalej →
-          </button>
-        </div>}
+        )}
 
         {/* STEP 3: Contact info */}
-        {step === 'contact' && <div>
-          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane kontaktowe</h3>
-          <p className="text-sm text-certo-navy/70 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
-
-          <div className="space-y-4">
-            <input name="contact_person" required placeholder={t('form_contact_person')} className={input} />
-
-            {applicantType === 'representative' && (
-              <input name="role" placeholder={t('form_role')} className={input} />
-            )}
-
-            <input name="email" type="email" required placeholder={t('form_email')} className={input} />
-            <input name="phone" type="tel" placeholder={t('form_phone')} className={input} />
-
-            {applicantType === 'observer' && (
-              <input name="relation" placeholder={t('form_relation_placeholder')} className={input} />
-            )}
+        {step === 'contact' && (
+          <div>
+            <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane kontaktowe</h3>
+            <p className="text-sm text-certo-navy/70 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
+            <div className="space-y-4">
+              <input value={fd.contact_person} onChange={(e) => set('contact_person', e.target.value)} placeholder={t('form_contact_person')} className={input} />
+              {fd.applicant_type === 'representative' && (
+                <input value={fd.role} onChange={(e) => set('role', e.target.value)} placeholder={t('form_role')} className={input} />
+              )}
+              <input value={fd.email} onChange={(e) => set('email', e.target.value)} type="email" placeholder={t('form_email')} className={input} />
+              <input value={fd.phone} onChange={(e) => set('phone', e.target.value)} type="tel" placeholder={t('form_phone')} className={input} />
+              {fd.applicant_type === 'observer' && (
+                <input value={fd.relation} onChange={(e) => set('relation', e.target.value)} placeholder={t('form_relation_placeholder')} className={input} />
+              )}
+            </div>
+            <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+              Dalej →
+            </button>
           </div>
-
-          <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
-            Dalej →
-          </button>
-        </div>}
+        )}
 
         {/* STEP 4: Motivation + submit */}
-        {step === 'details' && <div>
-          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Ostatni krok</h3>
-          <p className="text-sm text-certo-navy/70 mb-6">Powiedz nam dlaczego</p>
-
-          <div className="space-y-4">
-            <textarea
-              name="motivation"
-              required
-              rows={4}
-              placeholder={applicantType === 'observer' ? t('form_motivation_observer') : t('form_motivation_representative')}
-              className={`${input} resize-none`}
-            />
-
-            <label className="flex items-start gap-3 text-xs text-certo-navy/60 cursor-pointer p-4 bg-certo-cream/30 rounded-xl">
-              <input name="consent" type="checkbox" required className="mt-0.5 accent-certo-gold shrink-0" />
-              <span>
-                {t('form_consent')}
-                {applicantType === 'observer' && (
-                  <span className="block text-certo-navy/40 mt-1">{t('form_consent_observer_note')}</span>
-                )}
-              </span>
-            </label>
-
-            {state === 'error' && (
-              <p className="text-sm text-red-600 text-center">{t('form_error')}</p>
-            )}
+        {step === 'details' && (
+          <div>
+            <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Ostatni krok</h3>
+            <p className="text-sm text-certo-navy/70 mb-6">Powiedz nam dlaczego</p>
+            <div className="space-y-4">
+              <textarea
+                value={fd.motivation}
+                onChange={(e) => set('motivation', e.target.value)}
+                rows={4}
+                placeholder={fd.applicant_type === 'observer' ? t('form_motivation_observer') : t('form_motivation_representative')}
+                className={`${input} resize-none`}
+              />
+              <label className="flex items-start gap-3 text-xs text-certo-navy/60 cursor-pointer p-4 bg-certo-cream/30 rounded-xl">
+                <input type="checkbox" checked={fd.consent} onChange={(e) => set('consent', e.target.checked)} className="mt-0.5 accent-certo-gold shrink-0" />
+                <span>
+                  {t('form_consent')}
+                  {fd.applicant_type === 'observer' && (
+                    <span className="block text-certo-navy/40 mt-1">{t('form_consent_observer_note')}</span>
+                  )}
+                </span>
+              </label>
+              {state === 'error' && (
+                <p className="text-sm text-red-600 text-center">{t('form_error')}</p>
+              )}
+            </div>
+            <button
+              type="button"
+              onClick={handleSubmit}
+              disabled={state === 'submitting' || !fd.motivation || !fd.consent || !fd.organization_name || !fd.sector || !fd.contact_person || !fd.email}
+              className="w-full mt-6 bg-certo-gold text-white py-4 rounded-xl text-sm font-bold uppercase tracking-wider hover:bg-certo-navy hover:text-certo-gold transition-colors duration-300 disabled:opacity-50 shadow-lg shadow-certo-gold/20"
+            >
+              {state === 'submitting' ? 'Wysyłanie...' : t('form_submit')}
+            </button>
           </div>
-
-          <button
-            type="submit"
-            disabled={state === 'submitting'}
-            className="w-full mt-6 bg-certo-gold text-white py-4 rounded-xl text-sm font-bold uppercase tracking-wider hover:bg-certo-navy hover:text-certo-gold transition-colors duration-300 disabled:opacity-50 shadow-lg shadow-certo-gold/20"
-          >
-            {state === 'submitting' ? 'Wysyłanie...' : t('form_submit')}
-          </button>
-        </div>}
-      </form>
+        )}
+      </div>
     </div>
   );
 }
