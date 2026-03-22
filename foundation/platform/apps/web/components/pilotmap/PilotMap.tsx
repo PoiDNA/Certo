@@ -377,20 +377,34 @@ function PilotMap({ applications }: { applications: Application[] }) {
                   strokeWidth={1.5}
                   className="cursor-pointer"
                   onClick={() => {
-                    if (isMulti && zoom === 'EU') {
-                      // Zoom into country of first app
+                    if (isMulti) {
+                      // Zoom deeper — if EU view, go to country; if country view, zoom tighter
                       const country = mainApp.country;
-                      if (country && COUNTRY_ZOOMS[country]) setZoom(country);
+                      if (zoom === 'EU' && country && COUNTRY_ZOOMS[country]) {
+                        setZoom(country);
+                      } else {
+                        // Already in country — create a custom deeper zoom centered on cluster
+                        const [lng, lat] = [
+                          (cluster.cx - 400) / scale + cx,
+                          // inverse mercator approximation
+                          cy - ((cluster.cy - 300) / scale),
+                        ];
+                        // Set a temporary deeper zoom by manipulating viewBox directly
+                        const currentView = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
+                        const deeperScale = currentView.scale * 2;
+                        COUNTRY_ZOOMS['_custom'] = { center: [lng, lat], scale: deeperScale, name: 'Zbliżenie' };
+                        setZoom('_custom');
+                      }
                     }
                   }}
                   onMouseEnter={() => setTooltip({
                     x: cluster.cx,
                     y: cluster.cy - r,
                     name: isMulti
-                      ? `${count} podmiotów`
+                      ? cluster.apps.slice(0, 3).map((a) => a.organization_name).join('\n')
                       : mainApp.organization_name,
                     city: isMulti
-                      ? cluster.apps.map((a) => a.organization_name).slice(0, 3).join(', ') + (count > 3 ? '...' : '')
+                      ? (count > 3 ? `...i ${count - 3} więcej` : '')
                       : mainApp.city || '',
                     sector: isMulti ? 'Kliknij aby przybliżyć' : (SECTOR_LABELS[mainApp.sector] || mainApp.sector),
                     date: isMulti ? '' : new Date(mainApp.created_at).toLocaleDateString('pl-PL'),
@@ -432,12 +446,14 @@ function PilotMap({ applications }: { applications: Application[] }) {
             className="absolute pointer-events-none z-20"
             style={{ left: pxX, top: pxY, transform: 'translate(-50%, -100%)' }}
           >
-            <div className="bg-[#0A1628]/95 text-white rounded-lg px-4 py-2.5 text-center shadow-xl mb-1.5 max-w-[220px]">
-              <div className="text-xs font-semibold leading-tight">
-                {tooltip.name.length > 40 ? tooltip.name.slice(0, 40) + '…' : tooltip.name}
-              </div>
+            <div className="bg-[#0A1628]/95 text-white rounded-lg px-4 py-2.5 text-center shadow-xl mb-1.5 max-w-[250px]">
+              {tooltip.name.split('\n').map((line, i) => (
+                <div key={i} className="text-xs font-semibold leading-tight">
+                  {line.length > 35 ? line.slice(0, 35) + '…' : line}
+                </div>
+              ))}
               {(tooltip.city || tooltip.sector) && (
-                <div className="text-[10px] text-[#CC9B30] mt-0.5">
+                <div className="text-[10px] text-[#CC9B30] mt-1">
                   {[tooltip.city, tooltip.sector].filter(Boolean).join(' · ')}
                 </div>
               )}
