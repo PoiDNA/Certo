@@ -3,19 +3,26 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 
+const SESSION_KEY = 'certo_about_typed';
+
 export default function MissionHero() {
   const t = useTranslations('About');
   const mission = t('mission_text_1');
   const belief = t('mission_text_2');
 
-  const [typed, setTyped] = useState('');
-  const [showCursor, setShowCursor] = useState(true);
-  const [typingDone, setTypingDone] = useState(false);
-  const [beliefVisible, setBeliefVisible] = useState(false);
+  // Check if already played this session
+  const alreadyPlayed = typeof window !== 'undefined' && sessionStorage.getItem(SESSION_KEY) === '1';
+
+  const [typed, setTyped] = useState(alreadyPlayed ? mission : '');
+  const [showCursor, setShowCursor] = useState(!alreadyPlayed);
+  const [typingDone, setTypingDone] = useState(alreadyPlayed);
+  const [beliefVisible, setBeliefVisible] = useState(alreadyPlayed);
   const sectionRef = useRef<HTMLElement>(null);
-  const started = useRef(false);
+  const started = useRef(alreadyPlayed);
 
   useEffect(() => {
+    if (alreadyPlayed) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
@@ -37,6 +44,7 @@ export default function MissionHero() {
       setTyped(mission.slice(0, i));
       if (i >= mission.length) {
         clearInterval(interval);
+        try { sessionStorage.setItem(SESSION_KEY, '1'); } catch {}
         setTimeout(() => {
           setShowCursor(false);
           setTypingDone(true);
