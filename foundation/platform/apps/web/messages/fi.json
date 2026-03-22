@@ -227,7 +227,7 @@
     "title": "Rating Certo",
     "subtitle": "Julkisen luotettavuuden indeksi hallinnon laadun perusteella",
     "score_title": "Certo Score",
-    "score_desc": "Objektiivinen, vertailukelpoinen hallinnon laadun arviointi asteikolla 0–100 kirjaintunnisteella AA–D.",
+    "score_desc": "Objektiivinen, vertailukelpoinen hallinnon laadun arviointi asteikolla 0–100.",
     "vector_title": "Certo Vector",
     "vector_desc": "Moniulotteinen organisaatioprofiili, joka näyttää vahvuudet ja parannusta vaativat alueet.",
     "index_title": "Certo Index",
