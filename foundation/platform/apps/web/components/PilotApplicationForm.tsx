@@ -82,7 +82,7 @@ export default function PilotApplicationForm() {
     );
   }
 
-  const input = 'w-full px-4 py-3.5 bg-certo-cream/30 border border-certo-navy/8 rounded-xl text-sm text-certo-navy placeholder:text-certo-navy/35 focus:outline-none focus:border-certo-gold focus:bg-white focus:shadow-sm transition-all duration-200';
+  const input = 'w-full px-4 py-3.5 bg-certo-cream/30 border border-certo-navy/8 rounded-xl text-sm text-certo-navy placeholder:text-certo-navy/60 focus:outline-none focus:border-certo-gold focus:bg-white focus:shadow-sm transition-all duration-200';
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-xl mx-auto">
@@ -114,7 +114,7 @@ export default function PilotApplicationForm() {
         {/* STEP 1: Applicant type */}
         {step === 'type' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">{t('form_applicant_type')}</h3>
-          <p className="text-xs text-certo-navy/40 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
+          <p className="text-sm text-certo-navy/70 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
 
           <div className="space-y-3">
             {(['representative', 'observer'] as const).map((type) => (
@@ -155,7 +155,7 @@ export default function PilotApplicationForm() {
         {/* STEP 2: Organization info */}
         {step === 'org' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane podmiotu</h3>
-          <p className="text-xs text-certo-navy/40 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
+          <p className="text-sm text-certo-navy/70 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
 
           <div className="space-y-4">
             <input name="organization_name" required placeholder={applicantType === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={input} />
@@ -191,7 +191,7 @@ export default function PilotApplicationForm() {
 
             {/* Registration data */}
             <details className="group">
-              <summary className="flex items-center gap-2 cursor-pointer text-xs text-certo-navy/40 hover:text-certo-navy/60 transition-colors py-1">
+              <summary className="flex items-center gap-2 cursor-pointer text-sm font-medium text-certo-navy/80 hover:text-certo-navy transition-colors py-1">
                 <svg className="w-3 h-3 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -222,7 +222,7 @@ export default function PilotApplicationForm() {
         {/* STEP 3: Contact info */}
         {step === 'contact' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane kontaktowe</h3>
-          <p className="text-xs text-certo-navy/40 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
+          <p className="text-sm text-certo-navy/70 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
 
           <div className="space-y-4">
             <input name="contact_person" required placeholder={t('form_contact_person')} className={input} />
@@ -247,7 +247,7 @@ export default function PilotApplicationForm() {
         {/* STEP 4: Motivation + submit */}
         {step === 'details' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Ostatni krok</h3>
-          <p className="text-xs text-certo-navy/40 mb-6">Powiedz nam dlaczego</p>
+          <p className="text-sm text-certo-navy/70 mb-6">Powiedz nam dlaczego</p>
 
           <div className="space-y-4">
             <textarea
