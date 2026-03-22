@@ -123,7 +123,7 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
         <div>
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6">{t('benefits_title')}</h2>
           <ul className="space-y-3">
-            {([1, 2, 3, 4] as const).map((i) => (
+            {([1, 3, 4] as const).map((i) => (
               <li key={i} className="flex items-start gap-3 text-base text-certo-navy/70">
                 <span className="text-certo-gold mt-0.5">&#10003;</span>
                 <span>{t(`benefit_${i}`)}</span>
