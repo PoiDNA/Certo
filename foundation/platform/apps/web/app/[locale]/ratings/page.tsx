@@ -39,7 +39,7 @@ export default async function RatingPage({ params }: { params: Promise<{ locale:
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream mb-6">
             {t('title')}
           </h1>
-          <p className="text-lg text-certo-cream/70 max-w-2xl mx-auto">
+          <p className="text-lg text-certo-cream/70 max-w-xl mx-auto">
             {t('subtitle')}
           </p>
         </div>
