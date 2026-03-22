@@ -13,6 +13,7 @@ type Application = {
   created_at: string;
   votes: number;
   status: string;
+  process_status: string | null;
   rating_score: number | null;
 };
 

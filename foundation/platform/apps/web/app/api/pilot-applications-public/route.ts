@@ -17,13 +17,13 @@ export async function GET() {
 
   ({ data, error } = await supabase
     .from('pilot_applications')
-    .select('id, organization_name, sector, city, country, created_at, votes, status, rating_score')
+    .select('id, organization_name, sector, city, country, created_at, votes, status, process_status, rating_score')
     .neq('status', 'rejected')
     .order('created_at', { ascending: false }));
 
   if (error) {
-    // Fallback: column rating_score may not exist yet
-    console.warn('[pilot-applications-public] Trying without rating_score:', error.message);
+    // Fallback: new columns may not exist yet
+    console.warn('[pilot-applications-public] Trying without new columns:', error.message);
     ({ data, error } = await supabase
       .from('pilot_applications')
       .select('id, organization_name, sector, city, country, created_at, votes, status')

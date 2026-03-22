@@ -27,6 +27,7 @@ type Application = {
   duplicate_of: string | null;
   ai_verified: boolean | null;
   ai_verification_notes: string | null;
+  process_status: string | null;
   rating_score: number | null;
   consent: boolean;
   created_at: string;
@@ -91,12 +92,23 @@ export default function AdminDashboard() {
     setUpdating(null);
   };
 
-  const updateStatus = async (id: string, status: string) => {
+  const updateStatus = async (id: string, status: string, extra?: Record<string, unknown>) => {
     setUpdating(id);
     await fetch('/api/admin-applications', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
-      body: JSON.stringify({ id, status }),
+      body: JSON.stringify({ id, status, ...extra }),
+    });
+    await fetchApps(adminKey);
+    setUpdating(null);
+  };
+
+  const updateProcessStatus = async (id: string, processStatus: string) => {
+    setUpdating(id);
+    await fetch('/api/admin-applications', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
+      body: JSON.stringify({ id, process_status: processStatus }),
     });
     await fetchApps(adminKey);
     setUpdating(null);
@@ -247,31 +259,61 @@ export default function AdminDashboard() {
                     </div>
                   )}
 
-                  {/* Rating Score */}
+                  {/* Process Status Pipeline */}
                   {app.status === 'accepted' && (
-                    <div className="flex items-center gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-200">
-                      <label className="text-xs font-medium text-emerald-700 whitespace-nowrap">⭐ Rating Certo:</label>
-                      <input
-                        type="number"
-                        min={0}
-                        max={100}
-                        defaultValue={app.rating_score ?? ''}
-                        placeholder="np. 76"
-                        className="w-20 px-2 py-1 text-sm border border-emerald-300 rounded bg-white text-emerald-800 focus:outline-none focus:border-emerald-500"
-                        onBlur={async (e) => {
-                          const val = e.target.value ? parseInt(e.target.value, 10) : null;
-                          if (val === app.rating_score) return;
-                          setUpdating(app.id);
-                          await fetch('/api/admin-applications', {
-                            method: 'PATCH',
-                            headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
-                            body: JSON.stringify({ id: app.id, rating_score: val }),
-                          });
-                          await fetchApps(adminKey);
-                          setUpdating(null);
-                        }}
-                      />
-                      <span className="text-[10px] text-emerald-600">0–100 · zapisuje automatycznie</span>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2 bg-slate-50 rounded-lg p-3 border border-slate-200">
+                        <label className="text-xs font-medium text-slate-600 whitespace-nowrap">📋 Etap procesu:</label>
+                        <div className="flex gap-1.5 flex-wrap">
+                          {([
+                            { key: 'zgloszenie', label: 'Zgłoszenie', color: 'bg-blue-100 text-blue-700 border-blue-200' },
+                            { key: 'analiza', label: 'Analiza wstępna', color: 'bg-amber-100 text-amber-700 border-amber-200' },
+                            { key: 'ocena', label: 'W trakcie oceny', color: 'bg-certo-gold/20 text-certo-gold border-certo-gold/30' },
+                            { key: 'rating', label: 'Rating', color: 'bg-emerald-100 text-emerald-700 border-emerald-200' },
+                          ] as const).map((ps) => (
+                            <button
+                              key={ps.key}
+                              onClick={() => updateProcessStatus(app.id, ps.key)}
+                              disabled={updating === app.id}
+                              className={`px-2.5 py-1 text-[11px] font-medium rounded-full border transition-all ${
+                                (app.process_status || 'zgloszenie') === ps.key
+                                  ? `${ps.color} ring-2 ring-offset-1 ring-current`
+                                  : 'bg-white text-slate-400 border-slate-200 hover:border-slate-300'
+                              }`}
+                            >
+                              {ps.label}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Rating Score — visible when process_status is 'rating' */}
+                      {(app.process_status === 'rating' || app.process_status === 'ocena') && (
+                        <div className="flex items-center gap-3 bg-emerald-50 rounded-lg p-3 border border-emerald-200">
+                          <label className="text-xs font-medium text-emerald-700 whitespace-nowrap">⭐ Rating Certo:</label>
+                          <input
+                            type="number"
+                            min={0}
+                            max={100}
+                            defaultValue={app.rating_score ?? ''}
+                            placeholder="np. 76"
+                            className="w-20 px-2 py-1 text-sm border border-emerald-300 rounded bg-white text-emerald-800 focus:outline-none focus:border-emerald-500"
+                            onBlur={async (e) => {
+                              const val = e.target.value ? parseInt(e.target.value, 10) : null;
+                              if (val === app.rating_score) return;
+                              setUpdating(app.id);
+                              await fetch('/api/admin-applications', {
+                                method: 'PATCH',
+                                headers: { 'Content-Type': 'application/json', 'x-admin-key': adminKey },
+                                body: JSON.stringify({ id: app.id, rating_score: val, ...(val != null ? { process_status: 'rating' } : {}) }),
+                              });
+                              await fetchApps(adminKey);
+                              setUpdating(null);
+                            }}
+                          />
+                          <span className="text-[10px] text-emerald-600">0–100 · auto-zapis</span>
+                        </div>
+                      )}
                     </div>
                   )}
 
@@ -285,7 +327,7 @@ export default function AdminDashboard() {
                       🤖 Weryfikuj AI
                     </button>
                     <button
-                      onClick={() => updateStatus(app.id, 'accepted')}
+                      onClick={() => updateStatus(app.id, 'accepted', { process_status: 'zgloszenie' })}
                       disabled={updating === app.id || app.status === 'accepted'}
                       className="px-4 py-2 text-xs bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-30 transition-colors"
                     >

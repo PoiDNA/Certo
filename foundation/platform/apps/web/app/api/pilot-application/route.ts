@@ -164,6 +164,7 @@ export async function POST(request: Request) {
           .from('pilot_applications')
           .update({
             status: isDuplicate ? 'rejected' : 'accepted',
+            process_status: isDuplicate ? null : 'zgloszenie',
             ai_verified: true,
             ai_verification_notes: notes,
             ...(isDuplicate ? { duplicate_of: nip } : {}),

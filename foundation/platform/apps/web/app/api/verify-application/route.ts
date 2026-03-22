@@ -298,6 +298,7 @@ export async function POST(request: Request) {
     updates.ai_verification_notes = notesText + '\n❌ Automatycznie odrzucone jako duplikat';
   } else if (autoAccept) {
     updates.status = 'accepted';
+    updates.process_status = 'zgloszenie';
     updates.ai_verification_notes = notesText + '\n✅ Automatycznie zaakceptowane (wysoka wiarygodność)';
   } else {
     updates.status = 'reviewed';

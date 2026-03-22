@@ -32,24 +32,27 @@ type Application = {
   created_at: string;
   votes: number;
   status: string;
+  process_status: string | null;
   rating_score: number | null;
 };
 
 type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at' | 'status';
 
-// Status mapping: DB → public label + styling
+// Process status: the public-facing rating pipeline stage
 function getStatusInfo(app: Application): { label: string; className: string; order: number } {
-  if (app.rating_score != null) {
+  const ps = app.process_status || 'zgloszenie';
+
+  if (ps === 'rating' && app.rating_score != null) {
     return {
-      label: `Rating ${app.rating_score}+`,
+      label: `Rating ${app.rating_score}`,
       className: 'bg-emerald-100 text-emerald-700 border border-emerald-200',
       order: 0,
     };
   }
-  switch (app.status) {
-    case 'accepted':
+  switch (ps) {
+    case 'ocena':
       return { label: 'W trakcie oceny', className: 'bg-certo-gold/15 text-certo-gold border border-certo-gold/20', order: 1 };
-    case 'reviewed':
+    case 'analiza':
       return { label: 'Analiza wstępna', className: 'bg-amber-50 text-amber-600 border border-amber-200', order: 2 };
     default:
       return { label: 'Zgłoszenie', className: 'bg-blue-50 text-blue-600 border border-blue-200', order: 3 };
