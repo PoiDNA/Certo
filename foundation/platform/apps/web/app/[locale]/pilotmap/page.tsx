@@ -27,7 +27,7 @@ export default async function PilotMapPage({
   return (
     <div className="w-full">
       {/* Hero with background image */}
-      <section className="relative py-24 md:py-32 text-center overflow-hidden">
+      <section className="relative py-14 md:py-20 text-center overflow-hidden">
         <div
           className="absolute inset-0 bg-fixed-cover"
           style={{
@@ -38,13 +38,10 @@ export default async function PilotMapPage({
         />
         <div className="absolute inset-0 bg-gradient-to-b from-certo-navy/85 via-certo-navy/75 to-certo-navy/90" />
         <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-6 font-medium">Q4 2026</p>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream mb-4">
+          <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-4 font-medium">Q4 2026</p>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream">
             Mapa Zgłoszeń
           </h1>
-          <p className="text-lg text-certo-cream/60 max-w-2xl mx-auto">
-            Podmioty zgłoszone do bezpłatnego procesu oceny wiarygodności publicznej w ramach Rating Certo
-          </p>
         </div>
       </section>
 
