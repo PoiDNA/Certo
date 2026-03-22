@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import OrgChart from '../../../components/about/OrgChart';
 import PrinciplesSection from '../../../components/about/PrinciplesSection';
+import MissionHero from '../../../components/about/MissionHero';
 import { images } from '../../../lib/images';
 
 export function generateStaticParams() {
@@ -26,18 +27,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
   return (
     <div className="w-full">
-      {/* Hero */}
-      <section className="py-24 md:py-36 bg-certo-navy text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="sr-only">{t('title')}</h1>
-          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-certo-cream leading-relaxed max-w-3xl mx-auto">
-            {t('mission_text_1')}
-          </p>
-          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-certo-cream/70 leading-relaxed max-w-3xl mx-auto mt-8">
-            {t('mission_text_2')}
-          </p>
-        </div>
-      </section>
+      {/* Hero — typewriter + belief */}
+      <MissionHero />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
         {/* Organizational structure */}
