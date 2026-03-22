@@ -17,7 +17,7 @@ export default function PrinciplesSection() {
 
       <div className="grid md:grid-cols-3 gap-6">
         {principles.map((key) => (
-          <div key={key} className="bg-white p-6 border border-certo-navy/5">
+          <div key={key} className="bg-white p-6 border border-certo-navy/5 rounded-lg">
             <h3 className="font-serif font-bold text-certo-navy mb-2">
               {t(`principle_${key}_name`)}
             </h3>

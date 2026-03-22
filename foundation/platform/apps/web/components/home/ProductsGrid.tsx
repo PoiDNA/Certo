@@ -35,7 +35,7 @@ export default function ProductsGrid() {
           {products.map(({ key, icon }) => (
             <div
               key={key}
-              className="bg-white p-8 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors"
+              className="bg-white p-8 border border-certo-navy/5 rounded-lg hover:border-certo-gold/30 transition-colors"
             >
               {/* Icon + Title side by side */}
               <div className="flex items-center gap-4 mb-4">

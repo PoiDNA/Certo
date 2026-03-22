@@ -69,7 +69,7 @@ export default async function ExpertsPage({ params }: { params: Promise<{ locale
         </div>
 
         {/* CTA to certo.consulting */}
-        <div className="text-center bg-certo-navy p-10">
+        <div className="text-center bg-certo-navy p-10 rounded-lg">
           <h2 className="text-2xl font-serif font-bold text-certo-cream mb-3">{t('cta_title')}</h2>
           <p className="text-sm text-certo-cream/70 mb-6">{t('cta_desc')}</p>
           <a
