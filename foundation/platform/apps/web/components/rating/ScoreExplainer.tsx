@@ -1,45 +1,96 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useScrollReveal } from '../shared/useScrollReveal';
 
 const ICON_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/web1/ico';
 
 const scores = [
-  { key: 'score', icon: `${ICON_BASE}/I-I-1.png`, bg: 'from-amber-50 via-amber-50/60 to-white', dark: false },
-  { key: 'vector', icon: `${ICON_BASE}/I-I-2.png`, bg: 'from-[#b8862d] via-[#c99a35] to-[#d4a43a]', dark: true },
-  { key: 'index', icon: `${ICON_BASE}/I-I-3.png`, bg: 'from-teal-50 via-emerald-50/50 to-white', dark: false },
+  {
+    key: 'score',
+    icon: `${ICON_BASE}/I-I-1.png`,
+    gradient: 'from-amber-50 via-amber-100/40 to-white',
+    activeBorder: 'border-certo-gold',
+    accentColor: 'text-certo-gold',
+  },
+  {
+    key: 'index',
+    icon: `${ICON_BASE}/I-I-3.png`,
+    gradient: 'from-teal-50 via-emerald-50/50 to-white',
+    activeBorder: 'border-emerald-400',
+    accentColor: 'text-emerald-600',
+  },
 ] as const;
 
 export default function ScoreExplainer() {
   const t = useTranslations('Rating');
   const { ref, isVisible } = useScrollReveal();
+  const [active, setActive] = useState<number | null>(null);
 
   return (
     <section
       ref={ref}
-      className={`grid md:grid-cols-3 gap-6 mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
+      className={`mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
     >
-      {scores.map(({ key, icon, bg, dark }) => (
-        <div
-          key={key}
-          className={`relative bg-gradient-to-br ${bg} rounded-xl p-8 border ${dark ? 'border-[#a07828]' : 'border-certo-navy/5'} hover:shadow-lg transition-shadow duration-300 group`}
-        >
-          <div className="flex justify-center mb-6">
-            <img
-              src={icon}
-              alt={key}
-              className="w-20 h-20 md:w-24 md:h-24 object-contain group-hover:scale-110 transition-transform duration-300"
-            />
-          </div>
-          <h3 className={`font-serif font-bold text-2xl md:text-3xl text-center mb-3 ${dark ? 'text-white' : 'text-certo-navy'}`}>
-            {t(`${key}_title`)}
-          </h3>
-          <p className={`text-sm md:text-base leading-relaxed text-center ${dark ? 'text-white/80' : 'text-certo-navy/60'}`}>
-            {t(`${key}_desc`)}
-          </p>
-        </div>
-      ))}
+      <div className="grid md:grid-cols-2 gap-6">
+        {scores.map(({ key, icon, gradient, activeBorder, accentColor }, i) => {
+          const isActive = active === i;
+          return (
+            <button
+              key={key}
+              onClick={() => setActive(isActive ? null : i)}
+              onMouseEnter={() => setActive(i)}
+              className={`group relative bg-gradient-to-br ${gradient} rounded-2xl p-8 md:p-10 text-left transition-all duration-500 border-2 ${
+                isActive
+                  ? `${activeBorder} shadow-2xl scale-[1.02]`
+                  : 'border-transparent hover:shadow-lg'
+              }`}
+            >
+              {/* Decorative glow */}
+              <div className={`absolute inset-0 rounded-2xl transition-opacity duration-500 ${
+                isActive ? 'opacity-100' : 'opacity-0'
+              }`} style={{
+                background: `radial-gradient(circle at 30% 30%, ${key === 'score' ? 'rgba(204,155,48,0.08)' : 'rgba(16,185,129,0.06)'}, transparent 70%)`,
+              }} />
+
+              <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
+                {/* Diamond image */}
+                <div className="shrink-0">
+                  <img
+                    src={icon}
+                    alt={key}
+                    className={`w-24 h-24 md:w-32 md:h-32 object-contain transition-transform duration-500 ${
+                      isActive ? 'scale-110' : 'group-hover:scale-105'
+                    }`}
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="text-center md:text-left flex-1">
+                  <h3 className={`font-serif font-bold text-3xl md:text-4xl mb-3 transition-colors duration-300 ${
+                    isActive ? accentColor : 'text-certo-navy'
+                  }`}>
+                    {t(`${key}_title`)}
+                  </h3>
+                  <p className="text-base md:text-lg text-certo-navy/60 leading-relaxed">
+                    {t(`${key}_desc`)}
+                  </p>
+                </div>
+              </div>
+
+              {/* Expand indicator */}
+              <div className={`absolute bottom-4 right-6 transition-all duration-300 ${
+                isActive ? 'opacity-0' : 'opacity-40'
+              }`}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-certo-navy/30">
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </div>
+            </button>
+          );
+        })}
+      </div>
     </section>
   );
 }
