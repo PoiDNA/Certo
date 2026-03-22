@@ -394,20 +394,17 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
                       }
                     }
                   }}
-                  onMouseEnter={() => !clusterPanel && setTooltip({
-                    x: cluster.cx,
-                    y: cluster.cy - r,
-                    name: isMulti
-                      ? cluster.apps.slice(0, 3).map((a) => a.organization_name).join('\n')
-                      : mainApp.organization_name,
-                    city: isMulti
-                      ? (count > 3 ? `...i ${count - 3} więcej` : '')
-                      : mainApp.city || '',
-                    sector: isMulti
-                      ? 'Kliknij aby zobaczyć listę'
-                      : (SECTOR_LABELS[mainApp.sector] || mainApp.sector),
-                    date: isMulti ? '' : new Date(mainApp.created_at).toLocaleDateString('pl-PL'),
-                  })}
+                  onMouseEnter={() => {
+                    if (clusterPanel || isMulti) return;
+                    setTooltip({
+                      x: cluster.cx,
+                      y: cluster.cy - r,
+                      name: mainApp.organization_name,
+                      city: mainApp.city || '',
+                      sector: SECTOR_LABELS[mainApp.sector] || mainApp.sector,
+                      date: new Date(mainApp.created_at).toLocaleDateString('pl-PL'),
+                    });
+                  }}
                   onMouseLeave={() => setTooltip(null)}
                 />
                 {isMulti && (
@@ -596,7 +593,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] flex flex-col">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-certo-navy/5">
                 <span className="text-xs font-semibold text-certo-navy">
-                  {panelApps.length} {panelApps.length === 1 ? 'podmiot' : 'podmiotów'}
+                  Liczba podmiotów: {panelApps.length}
                 </span>
                 <button onClick={closePanel} className="text-certo-navy/30 hover:text-certo-navy text-sm leading-none">✕</button>
               </div>
