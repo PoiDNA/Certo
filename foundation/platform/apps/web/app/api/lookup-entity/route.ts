@@ -138,39 +138,99 @@ async function lookupKRS(krsNumber: string): Promise<LookupResult> {
   }
 }
 
-// ─── Polish NIP Lookup via CEIDG/GUS ────────────────────
+// ─── Polish NIP Lookup — multiple sources ────────────────
 async function lookupPolishNIP(nip: string): Promise<LookupResult> {
-  try {
-    const cleanNip = nip.replace(/[\s\-]/g, '');
+  const cleanNip = nip.replace(/[\s\-]/g, '');
 
-    // Try rejestr.io (public, no API key needed)
-    const res = await fetch(`https://rejestr.io/api/v2/org?nip=${cleanNip}`, {
+  // Source 1: dane.biznes.gov.pl (official Polish gov API)
+  try {
+    const res = await fetch(`https://dane.biznes.gov.pl/api/ceidg/v2/firma?nip=${cleanNip}`, {
       headers: { 'Accept': 'application/json' },
       signal: AbortSignal.timeout(8000),
     });
-
     if (res.ok) {
       const data = await res.json();
-      if (data && data.length > 0) {
-        const org = data[0];
+      const firma = data?.firma?.[0] || data?.[0];
+      if (firma) {
         return {
           found: true,
-          name: org.name || org.nazwa,
-          address: org.address?.street || org.ulica,
-          city: org.address?.city || org.miasto,
-          postalCode: org.address?.zip || org.kodPocztowy,
+          name: firma.nazwa || firma.name,
+          address: [firma.adresDzialalnosci?.ulica, firma.adresDzialalnosci?.budynek].filter(Boolean).join(' ') || undefined,
+          city: firma.adresDzialalnosci?.miasto || firma.adresDzialalnosci?.miejscowosc,
+          postalCode: firma.adresDzialalnosci?.kodPocztowy,
           country: 'PL',
-          source: 'rejestr.io',
+          source: 'CEIDG',
         };
       }
     }
+  } catch { /* continue to next source */ }
 
-    // Fallback: just use VIES
-    return lookupVIES(cleanNip, 'PL');
-  } catch {
-    // Fallback to VIES
-    return lookupVIES(nip, 'PL');
-  }
+  // Source 2: Wyszukiwarka KRS by NIP (api-krs.ms.gov.pl)
+  try {
+    const res = await fetch(`https://api-krs.ms.gov.pl/api/krs/OdsijODP?nip=${cleanNip}&limit=1`, {
+      signal: AbortSignal.timeout(8000),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      // KRS API returns items array
+      const items = data?.items || data;
+      if (Array.isArray(items) && items.length > 0) {
+        const item = items[0];
+        return {
+          found: true,
+          name: item.nazwa || item.name,
+          address: item.adres?.ulica ? `${item.adres.ulica} ${item.adres.nrDomu || ''}`.trim() : undefined,
+          city: item.adres?.miejscowosc,
+          postalCode: item.adres?.kodPocztowy,
+          country: 'PL',
+          source: 'KRS',
+        };
+      }
+    }
+  } catch { /* continue to next source */ }
+
+  // Source 3: Białe Lista VAT (Ministerstwo Finansów)
+  try {
+    const today = new Date().toISOString().split('T')[0];
+    const res = await fetch(`https://wl-api.mf.gov.pl/api/search/nip/${cleanNip}?date=${today}`, {
+      signal: AbortSignal.timeout(8000),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      const subject = data?.result?.subject;
+      if (subject) {
+        // Parse address: "ul. Example 1, 00-001 Warszawa"
+        const addr = subject.workingAddress || subject.residenceAddress || '';
+        const parts = addr.split(',').map((p: string) => p.trim());
+        let city = '';
+        let postalCode = '';
+        const streetPart = parts[0] || '';
+
+        if (parts.length >= 2) {
+          const lastPart = parts[parts.length - 1];
+          const postalMatch = lastPart.match(/^(\d{2}-\d{3})\s+(.+)$/);
+          if (postalMatch) {
+            postalCode = postalMatch[1];
+            city = postalMatch[2];
+          } else {
+            city = lastPart;
+          }
+        }
+
+        return {
+          found: true,
+          name: subject.name,
+          address: streetPart,
+          city,
+          postalCode,
+          country: 'PL',
+          source: 'Biała Lista VAT',
+        };
+      }
+    }
+  } catch { /* all sources failed */ }
+
+  return { found: false };
 }
 
 // ─── Main Handler ───────────────────────────────────────
