@@ -13,7 +13,7 @@ export async function GET() {
 
   const { data, error } = await supabase
     .from('pilot_applications')
-    .select('organization_name, sector, city, country, created_at')
+    .select('id, organization_name, sector, city, country, created_at, votes')
     .eq('status', 'accepted')
     .order('created_at', { ascending: false });
 

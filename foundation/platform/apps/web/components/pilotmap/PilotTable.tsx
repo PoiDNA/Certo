@@ -24,11 +24,13 @@ const SECTOR_COLORS: Record<string, string> = {
 };
 
 type Application = {
+  id: string;
   organization_name: string;
   sector: string;
   city: string | null;
   country: string | null;
   created_at: string;
+  votes: number;
 };
 
 type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at';
@@ -36,6 +38,17 @@ type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at
 export default function PilotTable({ applications }: { applications: Application[] }) {
   const [search, setSearch] = useState('');
   const [sectorFilter, setSectorFilter] = useState<string | null>(null);
+  const [votedIds, setVotedIds] = useState<Set<string>>(new Set());
+
+  const handleVote = async (id: string) => {
+    if (votedIds.has(id)) return;
+    setVotedIds((prev) => new Set(prev).add(id));
+    await fetch('/api/pilot-vote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
+    });
+  };
   const [sortKey, setSortKey] = useState<SortKey>('created_at');
   const [sortAsc, setSortAsc] = useState(false);
 
@@ -129,11 +142,12 @@ export default function PilotTable({ applications }: { applications: Application
               <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('created_at')}>
                 Data <SortIcon col="created_at" />
               </th>
+              <th className="px-4 py-3 font-medium text-certo-navy text-center">Podbij</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={5} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
+              <tr><td colSpan={6} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
             ) : (
               filtered.map((app, i) => (
                 <tr key={i} className="border-t border-certo-navy/5 hover:bg-certo-gold/5 transition-colors">
@@ -147,6 +161,19 @@ export default function PilotTable({ applications }: { applications: Application
                   </td>
                   <td className="px-4 py-3 text-certo-navy/40 text-xs">
                     {new Date(app.created_at).toLocaleDateString('pl-PL')}
+                  </td>
+                  <td className="px-4 py-3">
+                    <button
+                      onClick={(e) => { e.stopPropagation(); handleVote(app.id); }}
+                      disabled={votedIds.has(app.id)}
+                      className={`text-xs px-3 py-1 rounded-full transition-colors ${
+                        votedIds.has(app.id)
+                          ? 'bg-certo-gold/20 text-certo-gold'
+                          : 'bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-gold/10 hover:text-certo-gold'
+                      }`}
+                    >
+                      👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
+                    </button>
                   </td>
                 </tr>
               ))
@@ -168,10 +195,21 @@ export default function PilotTable({ applications }: { applications: Application
                   {(SECTOR_LABELS[app.sector] || app.sector).replace('Sektor ', '')}
                 </span>
               </div>
-              <div className="flex items-center gap-4 text-xs text-certo-navy/50">
-                {app.city && <span>📍 {app.city}</span>}
-                {app.country && <span>{COUNTRY_NAMES[app.country] || app.country}</span>}
-                <span>{new Date(app.created_at).toLocaleDateString('pl-PL')}</span>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-xs text-certo-navy/50">
+                  {app.city && <span>📍 {app.city}</span>}
+                  {app.country && <span>{COUNTRY_NAMES[app.country] || app.country}</span>}
+                  <span>{new Date(app.created_at).toLocaleDateString('pl-PL')}</span>
+                </div>
+                <button
+                  onClick={() => handleVote(app.id)}
+                  disabled={votedIds.has(app.id)}
+                  className={`text-xs px-3 py-1 rounded-full ${
+                    votedIds.has(app.id) ? 'bg-certo-gold/20 text-certo-gold' : 'bg-certo-navy/5 text-certo-navy/60'
+                  }`}
+                >
+                  👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
+                </button>
               </div>
             </div>
           ))

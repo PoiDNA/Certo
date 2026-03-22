@@ -5,11 +5,13 @@ import PilotMap from '../../../components/pilotmap/PilotMap';
 import PilotTable from '../../../components/pilotmap/PilotTable';
 
 type Application = {
+  id: string;
   organization_name: string;
   sector: string;
   city: string | null;
   country: string | null;
   created_at: string;
+  votes: number;
 };
 
 export default function PilotMapClient() {
