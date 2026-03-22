@@ -83,8 +83,24 @@ export default function PilotApplicationForm() {
   };
 
   const stepIndex = STEPS.indexOf(step);
-  const goNext = () => setStep(STEPS[Math.min(stepIndex + 1, STEPS.length - 1)]);
-  const goBack = () => setStep(STEPS[Math.max(stepIndex - 1, 0)]);
+  const [stepError, setStepError] = useState(false);
+
+  const canProceed = (): boolean => {
+    switch (step) {
+      case 'type': return true;
+      case 'org': return !!(fd.organization_name && fd.sector);
+      case 'contact': return !!(fd.contact_person && fd.email);
+      case 'details': return !!(fd.motivation && fd.consent);
+      default: return true;
+    }
+  };
+
+  const goNext = () => {
+    if (!canProceed()) { setStepError(true); return; }
+    setStepError(false);
+    setStep(STEPS[Math.min(stepIndex + 1, STEPS.length - 1)]);
+  };
+  const goBack = () => { setStepError(false); setStep(STEPS[Math.max(stepIndex - 1, 0)]); };
 
   const set = (field: keyof FormData, value: string | boolean) =>
     setFd((prev) => ({ ...prev, [field]: value }));
@@ -259,10 +275,10 @@ export default function PilotApplicationForm() {
               </div>
 
               {/* Auto-filled or manual fields */}
-              <input value={fd.organization_name} onChange={(e) => set('organization_name', e.target.value)} placeholder={fd.applicant_type === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={`${input} ${lookupState === 'found' && fd.organization_name ? 'border-green-300 bg-green-50/30' : ''}`} />
+              <input value={fd.organization_name} onChange={(e) => { set('organization_name', e.target.value); setStepError(false); }} placeholder={`${fd.applicant_type === 'observer' ? t('form_org_name_observer') : t('form_org_name')} *`} className={`${input} ${lookupState === 'found' && fd.organization_name ? 'border-green-300 bg-green-50/30' : ''} ${stepError && !fd.organization_name ? 'border-red-300 bg-red-50/30' : ''}`} />
 
               <div className="relative">
-                <select value={fd.sector} onChange={(e) => set('sector', e.target.value)} className={`${input} appearance-none pr-10 cursor-pointer`}>
+                <select value={fd.sector} onChange={(e) => { set('sector', e.target.value); setStepError(false); }} className={`${input} appearance-none pr-10 cursor-pointer ${stepError && !fd.sector ? 'border-red-300 bg-red-50/30' : ''}`}>
                   <option value="" disabled>{t('form_sector')}</option>
                   <option value="publiczny">{t('form_sector_public')}</option>
                   <option value="prywatny">{t('form_sector_corporate')}</option>
@@ -281,7 +297,10 @@ export default function PilotApplicationForm() {
               {/* Website */}
               <input value={fd.website} onChange={(e) => set('website', e.target.value)} type="url" placeholder={t('form_website')} className={input} />
             </div>
-            <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+            {stepError && (
+              <p className="text-xs text-red-500 mt-2 text-center">Wypełnij wymagane pola oznaczone *</p>
+            )}
+            <button type="button" onClick={goNext} className="w-full mt-4 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
               Dalej →
             </button>
           </div>
@@ -293,17 +312,20 @@ export default function PilotApplicationForm() {
             <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane kontaktowe</h3>
             <p className="text-sm text-certo-navy/70 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
             <div className="space-y-4">
-              <input value={fd.contact_person} onChange={(e) => set('contact_person', e.target.value)} placeholder={t('form_contact_person')} className={input} />
+              <input value={fd.contact_person} onChange={(e) => { set('contact_person', e.target.value); setStepError(false); }} placeholder={`${t('form_contact_person')} *`} className={`${input} ${stepError && !fd.contact_person ? 'border-red-300 bg-red-50/30' : ''}`} />
               {fd.applicant_type === 'representative' && (
                 <input value={fd.role} onChange={(e) => set('role', e.target.value)} placeholder={t('form_role')} className={input} />
               )}
-              <input value={fd.email} onChange={(e) => set('email', e.target.value)} type="email" placeholder={t('form_email')} className={input} />
+              <input value={fd.email} onChange={(e) => { set('email', e.target.value); setStepError(false); }} type="email" placeholder={`${t('form_email')} *`} className={`${input} ${stepError && !fd.email ? 'border-red-300 bg-red-50/30' : ''}`} />
               <input value={fd.phone} onChange={(e) => set('phone', e.target.value)} type="tel" placeholder={t('form_phone')} className={input} />
               {fd.applicant_type === 'observer' && (
                 <input value={fd.relation} onChange={(e) => set('relation', e.target.value)} placeholder={t('form_relation_placeholder')} className={input} />
               )}
             </div>
-            <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+            {stepError && (
+              <p className="text-xs text-red-500 mt-2 text-center">Wypełnij wymagane pola oznaczone *</p>
+            )}
+            <button type="button" onClick={goNext} className="w-full mt-4 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
               Dalej →
             </button>
           </div>
