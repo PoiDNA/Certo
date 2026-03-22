@@ -38,7 +38,6 @@
     "denoiser_layer_2_desc": "Szűrjük, súlyozzuk és normalizáljuk az információs jeleket. Kiküszöböljük a zajt, az ismétlődéseket és az ellentmondásokat.",
     "denoiser_layer_3_name": "Certo Fact Layer",
     "denoiser_layer_3_desc": "Az elemzőnek nyers információs zaj helyett strukturált kockázati képet nyújtunk.",
-    "denoiser_quote": "Az ember hozza meg a minősítési döntéseket. A rendszer jobb anyagot biztosít, amelynek alapján a döntés pontosabb és gyorsabb lehet.",
     "rhetorical_standard": "Miért nem hozott még létre senki egységes, globális közhitelességi standardot?",
     "products_title": "Certo-ökoszisztéma",
     "product_roadmap_name": "Certo RoadMap",

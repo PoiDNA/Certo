@@ -38,7 +38,6 @@
     "denoiser_layer_2_desc": "Suodatamme, painotamme ja normalisoimme informaatiosignaaleja. Poistamme kohinan, kaksoiskappaleet ja ristiriidat.",
     "denoiser_layer_3_name": "Certo Fact Layer",
     "denoiser_layer_3_desc": "Tarjoamme analyytikolle jäsennellyn riskikuvan raakainformaatiokohinan sijaan.",
-    "denoiser_quote": "Ihminen tekee luokituspäätökset. Järjestelmä tuottaa parempaa aineistoa, jonka perusteella päätös voi olla tarkempi ja nopeampi.",
     "rhetorical_standard": "Miksi kukaan ei ole vielä luonut yhtenäistä, maailmanlaajuista julkisen uskottavuuden standardia?",
     "products_title": "Certo-ekosysteemi",
     "product_roadmap_name": "Certo RoadMap",
