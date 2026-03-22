@@ -21,7 +21,7 @@ export default function FounderPreamble() {
           {t('founder_quote')}
         </p>
 
-        <blockquote className="text-lg md:text-xl font-serif italic text-certo-gold leading-relaxed mb-10 border-l-4 border-certo-gold pl-6 text-left">
+        <blockquote className="text-lg md:text-xl font-serif italic text-[#5C3D2E] leading-relaxed mb-10 border-l-4 border-[#5C3D2E]/30 pl-6 text-left">
           {t('founder_certo_quote')}
         </blockquote>
 
