@@ -3,11 +3,13 @@
 import { useTranslations } from 'next-intl';
 import { useScrollReveal } from '../shared/useScrollReveal';
 
+const ICON_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/web1/ico';
+
 const products = [
-  { key: 'roadmap', icon: '📊' },
-  { key: 'whistleblower', icon: '🛡' },
-  { key: 'own', icon: '🏛' },
-  { key: 'certoid', icon: '🔐' },
+  { key: 'roadmap', icon: `${ICON_BASE}/I1.png` },
+  { key: 'whistleblower', icon: `${ICON_BASE}/I2.png` },
+  { key: 'own', icon: `${ICON_BASE}/I3.png` },
+  { key: 'certoid', icon: `${ICON_BASE}/I4.png` },
 ] as const;
 
 export default function ProductsGrid() {
@@ -35,7 +37,11 @@ export default function ProductsGrid() {
               key={key}
               className="bg-white p-8 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors"
             >
-              <div className="text-3xl mb-4">{icon}</div>
+              <img
+                src={icon}
+                alt={key}
+                className="w-12 h-12 mb-4 object-contain"
+              />
               <h3 className="font-serif font-bold text-certo-navy mb-3">
                 {t(`product_${key}_name`)}
               </h3>
