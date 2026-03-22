@@ -68,7 +68,7 @@ export default function ScoreExplainer() {
 
                 {/* Content */}
                 <div className="text-center md:text-left flex-1">
-                  <h3 className={`font-serif font-bold text-3xl md:text-4xl mb-3 transition-colors duration-300 ${
+                  <h3 className={`font-serif font-bold text-3xl md:text-4xl mb-3 transition-colors duration-300 whitespace-nowrap ${
                     isActive ? accentColor : 'text-certo-navy'
                   }`}>
                     {t(`${key}_title`)}
