@@ -86,6 +86,11 @@ export default function PilotApplicationForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-xl mx-auto">
+      {/* Turnstile — always loaded, hidden until step 4 */}
+      <div className={step === 'details' ? 'px-8' : 'sr-only'}>
+        <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
+      </div>
+
       {/* Progress bar */}
       <div className="flex">
         {STEPS.map((s, i) => (
@@ -267,8 +272,6 @@ export default function PilotApplicationForm() {
                 )}
               </span>
             </label>
-
-            <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
 
             {state === 'error' && (
               <p className="text-sm text-red-600 text-center">{t('form_error')}</p>
