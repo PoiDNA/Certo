@@ -131,14 +131,51 @@ function getMarkerPosition(app: Application, cx: number, cy: number, scale: numb
   return null;
 }
 
+// Country zoom presets: [centerLng, centerLat, scale]
+const COUNTRY_ZOOMS: Record<string, { center: [number, number]; scale: number; name: string }> = {
+  EU: { center: [15, 52], scale: 9.5, name: 'Europa' },
+  PL: { center: [19.4, 51.9], scale: 28, name: 'Polska' },
+  DE: { center: [10.4, 51.2], scale: 22, name: 'Niemcy' },
+  FR: { center: [2.5, 46.6], scale: 18, name: 'Francja' },
+  ES: { center: [-3.7, 40.0], scale: 18, name: 'Hiszpania' },
+  IT: { center: [12.6, 42.5], scale: 20, name: 'Włochy' },
+  NL: { center: [5.3, 52.1], scale: 45, name: 'Holandia' },
+  BE: { center: [4.4, 50.5], scale: 50, name: 'Belgia' },
+  AT: { center: [13.3, 47.5], scale: 30, name: 'Austria' },
+  CZ: { center: [15.5, 49.8], scale: 32, name: 'Czechy' },
+  SE: { center: [16.0, 62.0], scale: 12, name: 'Szwecja' },
+  FI: { center: [26.0, 64.0], scale: 12, name: 'Finlandia' },
+  RO: { center: [24.7, 45.9], scale: 22, name: 'Rumunia' },
+  GR: { center: [22.0, 39.0], scale: 22, name: 'Grecja' },
+  HU: { center: [19.5, 47.2], scale: 32, name: 'Węgry' },
+  PT: { center: [-8.2, 39.4], scale: 22, name: 'Portugalia' },
+  BG: { center: [25.5, 42.7], scale: 28, name: 'Bułgaria' },
+  HR: { center: [15.5, 45.1], scale: 28, name: 'Chorwacja' },
+  SK: { center: [19.7, 48.7], scale: 35, name: 'Słowacja' },
+  DK: { center: [9.5, 56.0], scale: 28, name: 'Dania' },
+  IE: { center: [-8.0, 53.4], scale: 22, name: 'Irlandia' },
+  LT: { center: [23.9, 55.2], scale: 30, name: 'Litwa' },
+  LV: { center: [24.6, 56.9], scale: 32, name: 'Łotwa' },
+  EE: { center: [25.0, 58.8], scale: 35, name: 'Estonia' },
+  SI: { center: [14.5, 46.1], scale: 42, name: 'Słowenia' },
+  LU: { center: [6.1, 49.8], scale: 70, name: 'Luksemburg' },
+  CY: { center: [33.4, 35.1], scale: 45, name: 'Cypr' },
+  MT: { center: [14.4, 35.9], scale: 80, name: 'Malta' },
+};
+
 function PilotMap({ applications }: { applications: Application[] }) {
   const [paths, setPaths] = useState<{ id: string; d: string; isEU: boolean; iso2: string }[]>([]);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; city: string; sector: string; date: string } | null>(null);
+  const [zoom, setZoom] = useState<string>('EU');
   const svgRef = useRef<SVGSVGElement>(null);
 
-  const cx = 15;
-  const cy = 52;
-  const scale = 9.5;
+  const view = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
+  const cx = view.center[0];
+  const cy = view.center[1];
+  const scale = view.scale;
+
+  // Countries that have applications
+  const countriesWithApps = new Set(applications.map((a) => a.country).filter(Boolean));
 
   useEffect(() => {
     fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json')
@@ -193,6 +230,40 @@ function PilotMap({ applications }: { applications: Application[] }) {
 
   return (
     <div className="w-full bg-white rounded-xl border border-certo-navy/10 overflow-hidden">
+      {/* Zoom controls */}
+      <div className="px-4 py-3 border-b border-certo-navy/5 flex flex-wrap items-center gap-2">
+        <button
+          onClick={() => setZoom('EU')}
+          className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${
+            zoom === 'EU' ? 'bg-certo-navy text-white' : 'bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-navy/10'
+          }`}
+        >
+          🌍 Europa
+        </button>
+        <span className="text-certo-navy/20 text-xs">|</span>
+        {Object.entries(COUNTRY_ZOOMS)
+          .filter(([code]) => code !== 'EU')
+          .sort((a, b) => a[1].name.localeCompare(b[1].name))
+          .map(([code, { name }]) => {
+            const hasApps = countriesWithApps.has(code);
+            return (
+              <button
+                key={code}
+                onClick={() => setZoom(code)}
+                className={`px-2 py-1 text-xs rounded-md transition-colors ${
+                  zoom === code
+                    ? 'bg-certo-gold text-white'
+                    : hasApps
+                      ? 'bg-certo-gold/10 text-certo-gold hover:bg-certo-gold/20 font-medium'
+                      : 'text-certo-navy/30 hover:text-certo-navy/50 hover:bg-certo-navy/5'
+                }`}
+              >
+                {name}
+              </button>
+            );
+          })}
+      </div>
+
       <svg
         ref={svgRef}
         viewBox="100 50 600 500"
@@ -200,13 +271,15 @@ function PilotMap({ applications }: { applications: Application[] }) {
         style={{ minHeight: 350, background: '#F8F5EE' }}
       >
         {/* Country shapes */}
-        {paths.map(({ id, d, isEU }) => (
+        {paths.map(({ id, d, isEU, iso2 }) => (
           <path
             key={id}
             d={d}
-            fill={isEU ? '#E8E0D0' : '#F0ECE4'}
+            fill={isEU ? (zoom === iso2 ? '#D8CEB8' : '#E8E0D0') : '#F0ECE4'}
             stroke={isEU ? '#C8BBAA' : '#E0DCD4'}
             strokeWidth={isEU ? 0.8 : 0.3}
+            onClick={() => isEU && iso2 && COUNTRY_ZOOMS[iso2] && setZoom(zoom === iso2 ? 'EU' : iso2)}
+            className={isEU ? 'cursor-pointer hover:fill-[#D8CEB8] transition-colors duration-200' : ''}
           />
         ))}
 
