@@ -167,6 +167,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
   const [paths, setPaths] = useState<{ id: string; d: string; isEU: boolean; iso2: string }[]>([]);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; city: string; sector: string; date: string } | null>(null);
   const [zoom, setZoom] = useState<string>('EU');
+  const [spiderfied, setSpiderfied] = useState<number | null>(null); // cluster index that is expanded
   const svgRef = useRef<SVGSVGElement>(null);
 
   // Always render paths with Europe-level projection
@@ -289,6 +290,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
         viewBox={`${vb.x.toFixed(0)} ${vb.y.toFixed(0)} ${vb.w.toFixed(0)} ${vb.h.toFixed(0)}`}
         className="w-full h-auto transition-all duration-500"
         style={{ minHeight: 350, background: '#F8F5EE' }}
+        onClick={() => { if (spiderfied !== null) setSpiderfied(null); }}
       >
         {/* Country shapes */}
         {paths.map(({ id, d, isEU, iso2 }) => (
@@ -335,7 +337,6 @@ function PilotMap({ applications }: { applications: Application[] }) {
             const pos = getMarkerPosition(app, cx, cy, scale);
             if (!pos) return;
 
-            // Find existing cluster nearby
             const nearby = clusters.find((c) => {
               const dx = c.cx - pos[0];
               const dy = c.cy - pos[1];
@@ -344,7 +345,6 @@ function PilotMap({ applications }: { applications: Application[] }) {
 
             if (nearby) {
               nearby.apps.push(app);
-              // Recenter cluster
               nearby.cx = (nearby.cx * (nearby.apps.length - 1) + pos[0]) / nearby.apps.length;
               nearby.cy = (nearby.cy * (nearby.apps.length - 1) + pos[1]) / nearby.apps.length;
             } else {
@@ -352,12 +352,78 @@ function PilotMap({ applications }: { applications: Application[] }) {
             }
           });
 
+          // Check if a cluster's apps all share the same position (can't split by zooming)
+          function clusterIsSamePosition(cluster: Cluster): boolean {
+            if (cluster.apps.length <= 1) return false;
+            const positions = cluster.apps.map((a) => getMarkerPosition(a, cx, cy, scale)).filter(Boolean) as [number, number][];
+            if (positions.length <= 1) return true;
+            const [x0, y0] = positions[0];
+            return positions.every(([x, y]) => Math.abs(x - x0) < 0.5 && Math.abs(y - y0) < 0.5);
+          }
+
+          // Spider layout: spread N points in a circle around center
+          const SPIDER_RADIUS = vb.w * 0.06; // relative to viewBox width
+          function spiderPositions(centerX: number, centerY: number, count: number): [number, number][] {
+            return Array.from({ length: count }, (_, i) => {
+              const angle = (2 * Math.PI * i) / count - Math.PI / 2;
+              return [
+                centerX + Math.cos(angle) * SPIDER_RADIUS,
+                centerY + Math.sin(angle) * SPIDER_RADIUS,
+              ];
+            });
+          }
+
           return clusters.map((cluster, ci) => {
             const count = cluster.apps.length;
             const isMulti = count > 1;
             const mainApp = cluster.apps[0];
             const color = isMulti ? '#CC9B30' : (SECTOR_COLORS[mainApp.sector] || '#CC9B30');
             const r = isMulti ? Math.min(4 + count * 2, 12) : 4;
+            const isSpiderfied = spiderfied === ci;
+            const samePos = isMulti && clusterIsSamePosition(cluster);
+
+            // Spiderfied view: show individual markers spread in circle
+            if (isSpiderfied && isMulti) {
+              const positions = spiderPositions(cluster.cx, cluster.cy, count);
+              const markerR = 4;
+              return (
+                <g key={`cluster-${ci}`}>
+                  {/* Spider legs — lines from center to each marker */}
+                  {positions.map(([sx, sy], si) => (
+                    <line
+                      key={`leg-${si}`}
+                      x1={cluster.cx} y1={cluster.cy}
+                      x2={sx} y2={sy}
+                      stroke="#CC9B30" strokeWidth={0.5} opacity={0.4}
+                    />
+                  ))}
+                  {/* Center dot */}
+                  <circle cx={cluster.cx} cy={cluster.cy} r={2} fill="#CC9B30" opacity={0.3} />
+                  {/* Individual markers */}
+                  {cluster.apps.map((app, ai) => {
+                    const [sx, sy] = positions[ai];
+                    const appColor = SECTOR_COLORS[app.sector] || '#CC9B30';
+                    return (
+                      <circle
+                        key={`spider-${ai}`}
+                        cx={sx} cy={sy} r={markerR}
+                        fill={appColor} stroke="#fff" strokeWidth={1.5}
+                        className="cursor-pointer"
+                        onMouseEnter={() => setTooltip({
+                          x: sx, y: sy - markerR,
+                          name: app.organization_name,
+                          city: app.city || '',
+                          sector: SECTOR_LABELS[app.sector] || app.sector,
+                          date: new Date(app.created_at).toLocaleDateString('pl-PL'),
+                        })}
+                        onMouseLeave={() => setTooltip(null)}
+                        onClick={(e) => e.stopPropagation()}
+                      />
+                    );
+                  })}
+                </g>
+              );
+            }
 
             return (
               <g key={`cluster-${ci}`}>
@@ -379,15 +445,21 @@ function PilotMap({ applications }: { applications: Application[] }) {
                   className="cursor-pointer"
                   onClick={() => {
                     if (isMulti) {
+                      // If all apps share the same position, spiderfy instead of zooming
+                      if (samePos) {
+                        setSpiderfied(ci);
+                        return;
+                      }
                       const country = mainApp.country;
                       if (zoom === 'EU' && country && COUNTRY_ZOOMS[country]) {
+                        setSpiderfied(null);
                         setZoom(country);
                       } else {
-                        // Already zoomed — go deeper but cap max scale
                         const currentView = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
                         const MAX_SCALE = 200;
                         if (currentView.scale >= MAX_SCALE) {
-                          // Can't zoom further — show tooltip instead
+                          // At max zoom and still clustered — spiderfy
+                          setSpiderfied(ci);
                           return;
                         }
                         const [lng, lat] = [
@@ -395,10 +467,10 @@ function PilotMap({ applications }: { applications: Application[] }) {
                           cy - ((cluster.cy - 300) / scale),
                         ];
                         const deeperScale = Math.min(currentView.scale * 2, MAX_SCALE);
-                        // Clean up old custom zooms
                         Object.keys(COUNTRY_ZOOMS).filter(k => k.startsWith('_custom')).forEach(k => delete COUNTRY_ZOOMS[k]);
                         const customKey = `_custom_${Date.now()}`;
                         COUNTRY_ZOOMS[customKey] = { center: [lng, lat], scale: deeperScale, name: 'Zbliżenie' };
+                        setSpiderfied(null);
                         setZoom(customKey);
                       }
                     }
@@ -412,7 +484,9 @@ function PilotMap({ applications }: { applications: Application[] }) {
                     city: isMulti
                       ? (count > 3 ? `...i ${count - 3} więcej` : '')
                       : mainApp.city || '',
-                    sector: isMulti ? 'Kliknij aby przybliżyć' : (SECTOR_LABELS[mainApp.sector] || mainApp.sector),
+                    sector: isMulti
+                      ? (samePos ? 'Kliknij aby rozwinąć' : 'Kliknij aby przybliżyć')
+                      : (SECTOR_LABELS[mainApp.sector] || mainApp.sector),
                     date: isMulti ? '' : new Date(mainApp.created_at).toLocaleDateString('pl-PL'),
                   })}
                   onMouseLeave={() => setTooltip(null)}
