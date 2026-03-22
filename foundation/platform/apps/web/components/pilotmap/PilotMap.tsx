@@ -196,6 +196,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
   const [zoom, setZoom] = useState<string>('EU');
   const [clusterPanel, setClusterPanel] = useState<{ x: number; y: number; apps: Application[] } | null>(null);
   const [showCountries, setShowCountries] = useState(false);
+  const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
   const closePanel = () => {
@@ -299,11 +300,18 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
           <path
             key={id}
             d={d}
-            fill={isEU ? (zoom === iso2 ? '#D8CEB8' : '#E8E0D0') : '#F0ECE4'}
-            stroke={isEU ? '#C8BBAA' : '#E0DCD4'}
-            strokeWidth={isEU ? 0.8 : 0.3}
-            onClick={() => isEU && iso2 && COUNTRY_ZOOMS[iso2] && setZoom(zoom === iso2 ? 'EU' : iso2)}
-            className={isEU ? 'cursor-pointer hover:fill-[#D8CEB8] transition-colors duration-200' : ''}
+            fill={isEU ? (zoom === iso2 ? '#C8B898' : hoveredCountry === iso2 ? '#CCBB99' : '#E8E0D0') : '#F0ECE4'}
+            stroke={isEU ? (hoveredCountry === iso2 ? '#A89870' : '#C8BBAA') : '#E0DCD4'}
+            strokeWidth={isEU ? (hoveredCountry === iso2 ? 1.5 : 0.8) : 0.3}
+            onClick={(e) => {
+              if (isEU && iso2 && COUNTRY_ZOOMS[iso2]) {
+                e.stopPropagation();
+                setZoom(zoom === iso2 ? 'EU' : iso2);
+              }
+            }}
+            onMouseEnter={() => isEU && iso2 && setHoveredCountry(iso2)}
+            onMouseLeave={() => setHoveredCountry(null)}
+            className={isEU ? 'cursor-pointer transition-colors duration-150' : ''}
           />
         ))}
 
