@@ -26,7 +26,7 @@ export default function PillarsPreview() {
           <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-4 font-medium">
             Rating Certo
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy mb-4">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-certo-navy mb-4">
             {t('pillars_title')}
           </h2>
           <p className="text-lg text-certo-navy/60 max-w-2xl mx-auto">
