@@ -1,18 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
+import PilotMap from '../../../components/pilotmap/PilotMap';
 import PilotTable from '../../../components/pilotmap/PilotTable';
-
-// Dynamic import to avoid SSR issues with react-simple-maps
-const PilotMap = dynamic(() => import('../../../components/pilotmap/PilotMap'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[400px] bg-white rounded-xl border border-certo-navy/10 flex items-center justify-center">
-      <div className="text-certo-navy/30 text-sm">Ładowanie mapy...</div>
-    </div>
-  ),
-});
 
 type Application = {
   organization_name: string;
