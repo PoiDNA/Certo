@@ -498,11 +498,11 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
 
       </svg>
 
-      {/* ─── Floating controls: top-right ─── */}
-      <div className="absolute top-3 right-3 flex flex-col items-end gap-2 z-10">
+      {/* ─── Floating controls: top ─── */}
+      <div className="absolute top-2 left-2 right-2 flex flex-wrap sm:flex-nowrap items-start justify-between gap-1.5 sm:gap-2 z-10">
         {/* Sector filter pills */}
         {onSectorChange && (
-          <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-1 py-1">
+          <div className="flex items-center gap-0.5 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-0.5 py-0.5 overflow-x-auto">
             {FILTER_ITEMS.map(({ key, label }) => {
               const isActive = sectorFilter === key;
               const count = sectorCounts?.[key] ?? 0;
@@ -510,17 +510,17 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
                 <button
                   key={key}
                   onClick={() => onSectorChange(isActive && key !== 'all' ? 'all' : key)}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-[11px] font-medium rounded-full transition-all duration-200 ${
+                  className={`flex items-center gap-1 px-2 sm:px-3 py-1 sm:py-1.5 text-[10px] sm:text-[11px] font-medium rounded-full transition-all duration-200 whitespace-nowrap ${
                     isActive
                       ? 'bg-certo-navy text-white shadow-sm'
                       : 'text-certo-navy/60 hover:bg-certo-navy/5 hover:text-certo-navy'
                   }`}
                 >
                   {key !== 'all' && (
-                    <span className={`w-2 h-2 rounded-full ${SECTOR_DOTS[key]} ${isActive ? 'opacity-80' : 'opacity-50'}`} />
+                    <span className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${SECTOR_DOTS[key]} ${isActive ? 'opacity-80' : 'opacity-50'}`} />
                   )}
                   <span>{label}</span>
-                  <span className={`text-[10px] ${isActive ? 'text-white/60' : 'text-certo-navy/30'}`}>{count}</span>
+                  <span className={`text-[9px] sm:text-[10px] ${isActive ? 'text-white/60' : 'text-certo-navy/30'}`}>{count}</span>
                 </button>
               );
             })}
@@ -556,7 +556,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
           </div>
 
           {showCountries && (
-            <div className="absolute right-0 top-full mt-1 bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] overflow-y-auto py-1 z-40">
+            <div className="absolute right-0 sm:right-0 top-full mt-1 bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[220px] sm:w-[280px] max-h-[250px] sm:max-h-[300px] overflow-y-auto py-1 z-40">
               {/* Europa button */}
               <button
                 onClick={() => { setZoom('EU'); setShowCountries(false); }}
@@ -643,26 +643,32 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
       })()}
 
       {/* Cluster panel — scrollable list */}
-      {clusterPanel && svgRef.current && (() => {
-        const svg = svgRef.current!;
-        const rect = svg.getBoundingClientRect();
-        const vbParts = svg.getAttribute('viewBox')?.split(' ').map(Number) || [100, 50, 600, 500];
-        const [vbX, vbY, vbW, vbH] = vbParts;
-        const pxX = ((clusterPanel.x - vbX) / vbW) * rect.width;
-        const pxY = ((clusterPanel.y - vbY) / vbH) * rect.height;
+      {clusterPanel && (() => {
         const panelApps = clusterPanel.apps;
-        const onRight = pxX < rect.width * 0.6;
         return (
           <div
-            className="absolute z-30"
+            className="absolute z-30 left-2 right-2 sm:left-auto sm:right-auto sm:w-[280px] bottom-12 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2"
             style={{
-              left: onRight ? pxX + 20 : pxX - 20,
-              top: Math.min(pxY - 20, rect.height - 40),
-              transform: onRight ? 'translate(0, -50%)' : 'translate(-100%, -50%)',
+              // On desktop, position near the marker
+              ...(typeof window !== 'undefined' && window.innerWidth >= 640 && svgRef.current ? (() => {
+                const svg = svgRef.current!;
+                const rect = svg.getBoundingClientRect();
+                const vbParts = svg.getAttribute('viewBox')?.split(' ').map(Number) || [100, 50, 600, 500];
+                const [vbX, vbY, vbW, vbH] = vbParts;
+                const pxX = ((clusterPanel.x - vbX) / vbW) * rect.width;
+                const pxY = ((clusterPanel.y - vbY) / vbH) * rect.height;
+                const onRight = pxX < rect.width * 0.5;
+                return {
+                  left: onRight ? pxX + 20 : undefined,
+                  right: onRight ? undefined : rect.width - pxX + 20,
+                  top: Math.max(60, Math.min(pxY, rect.height - 200)),
+                  transform: 'translateY(-50%)',
+                };
+              })() : {}),
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] flex flex-col">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 max-h-[250px] sm:max-h-[300px] flex flex-col">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-certo-navy/5">
                 <span className="text-xs font-semibold text-certo-navy">
                   Liczba podmiotów: {panelApps.length}
