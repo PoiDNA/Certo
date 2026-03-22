@@ -7,18 +7,33 @@ import TurnstileWidget from './TurnstileWidget';
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 type ApplicantType = 'representative' | 'observer';
 
+const STEPS = ['type', 'org', 'contact', 'details'] as const;
+type Step = (typeof STEPS)[number];
+
+const CHEVRON = (
+  <svg className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/30 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+  </svg>
+);
+
 export default function PilotApplicationForm() {
   const t = useTranslations('Pilot');
   const [state, setState] = useState<FormState>('idle');
+  const [step, setStep] = useState<Step>('type');
   const [applicantType, setApplicantType] = useState<ApplicantType>('representative');
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const handleTurnstileVerify = useCallback((token: string) => setTurnstileToken(token), []);
   const handleTurnstileExpire = useCallback(() => setTurnstileToken(null), []);
 
+  const stepIndex = STEPS.indexOf(step);
+  const goNext = () => setStep(STEPS[Math.min(stepIndex + 1, STEPS.length - 1)]);
+  const goBack = () => setStep(STEPS[Math.max(stepIndex - 1, 0)]);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setState('submitting');
+    if (step !== 'details') { goNext(); return; }
 
+    setState('submitting');
     const form = e.currentTarget;
     const data = new FormData(form);
 
@@ -48,12 +63,7 @@ export default function PilotApplicationForm() {
           turnstile_token: turnstileToken,
         }),
       });
-
-      if (res.ok) {
-        setState('success');
-      } else {
-        setState('error');
-      }
+      setState(res.ok ? 'success' : 'error');
     } catch {
       setState('error');
     }
@@ -61,264 +71,221 @@ export default function PilotApplicationForm() {
 
   if (state === 'success') {
     return (
-      <div className="bg-certo-gold/10 border border-certo-gold/30 p-8 text-center">
-        <p className="text-sm text-certo-navy">{t('form_success')}</p>
+      <div className="bg-white rounded-2xl shadow-xl p-10 text-center max-w-lg mx-auto">
+        <div className="w-16 h-16 bg-certo-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CC9B30" strokeWidth="2">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h3 className="font-serif font-bold text-certo-navy text-xl mb-3">{t('form_success')}</h3>
+        <p className="text-sm text-certo-navy/50">Skontaktujemy się z Tobą w ciągu 5 dni roboczych.</p>
       </div>
     );
   }
 
-  const inputClass = 'w-full px-4 py-3 bg-white border border-certo-navy/10 rounded-lg text-sm text-certo-navy placeholder:text-certo-navy/40 focus:outline-none focus:border-certo-gold focus:ring-1 focus:ring-certo-gold/20 transition-all';
+  const input = 'w-full px-4 py-3.5 bg-certo-cream/30 border border-certo-navy/8 rounded-xl text-sm text-certo-navy placeholder:text-certo-navy/35 focus:outline-none focus:border-certo-gold focus:bg-white focus:shadow-sm transition-all duration-200';
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
-      {/* Applicant type selector */}
-      <fieldset className="space-y-3">
-        <legend className="text-sm font-medium text-certo-navy mb-2">{t('form_applicant_type')}</legend>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <label
-            className={`relative flex flex-col p-4 border rounded-lg cursor-pointer transition-all ${
-              applicantType === 'representative'
-                ? 'border-certo-gold bg-certo-gold/5'
-                : 'border-certo-navy/10 hover:border-certo-navy/30'
+    <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-xl mx-auto">
+      {/* Progress bar */}
+      <div className="flex">
+        {STEPS.map((s, i) => (
+          <div
+            key={s}
+            className={`flex-1 h-1 transition-colors duration-300 ${
+              i <= stepIndex ? 'bg-certo-gold' : 'bg-certo-navy/5'
             }`}
-          >
-            <input
-              type="radio"
-              name="applicant_type"
-              value="representative"
-              checked={applicantType === 'representative'}
-              onChange={() => setApplicantType('representative')}
-              className="sr-only"
-            />
-            <span className="text-sm font-semibold text-certo-navy">{t('form_type_representative')}</span>
-            <span className="text-xs text-certo-navy/50 mt-1">{t('form_type_representative_desc')}</span>
-            {applicantType === 'representative' && (
-              <span className="absolute top-3 right-3 w-2 h-2 bg-certo-gold rounded-full" />
-            )}
-          </label>
-          <label
-            className={`relative flex flex-col p-4 border rounded-lg cursor-pointer transition-all ${
-              applicantType === 'observer'
-                ? 'border-certo-gold bg-certo-gold/5'
-                : 'border-certo-navy/10 hover:border-certo-navy/30'
-            }`}
-          >
-            <input
-              type="radio"
-              name="applicant_type"
-              value="observer"
-              checked={applicantType === 'observer'}
-              onChange={() => setApplicantType('observer')}
-              className="sr-only"
-            />
-            <span className="text-sm font-semibold text-certo-navy">{t('form_type_observer')}</span>
-            <span className="text-xs text-certo-navy/50 mt-1">{t('form_type_observer_desc')}</span>
-            {applicantType === 'observer' && (
-              <span className="absolute top-3 right-3 w-2 h-2 bg-certo-gold rounded-full" />
-            )}
-          </label>
-        </div>
-      </fieldset>
-
-      <input
-        name="organization_name"
-        required
-        placeholder={applicantType === 'observer' ? t('form_org_name_observer') : t('form_org_name')}
-        className={inputClass}
-      />
-
-      <div className="relative">
-        <select
-          name="sector"
-          required
-          className={`${inputClass} appearance-none pr-10 cursor-pointer`}
-          defaultValue=""
-        >
-          <option value="" disabled>{t('form_sector')}</option>
-          <option value="publiczny">{t('form_sector_public')}</option>
-          <option value="prywatny">{t('form_sector_corporate')}</option>
-          <option value="pozarzadowy">{t('form_sector_ngo')}</option>
-        </select>
-        <svg
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/40 pointer-events-none"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <input
-          name="city"
-          placeholder={t('form_city')}
-          className={inputClass}
-        />
-        <div className="relative">
-          <select
-            name="country"
-            className={`${inputClass} appearance-none pr-10 cursor-pointer`}
-            defaultValue="PL"
-          >
-            <option value="PL">Polska</option>
-            <option value="AT">Austria</option>
-            <option value="BE">Belgia</option>
-            <option value="BG">Bułgaria</option>
-            <option value="HR">Chorwacja</option>
-            <option value="CY">Cypr</option>
-            <option value="CZ">Czechy</option>
-            <option value="DK">Dania</option>
-            <option value="EE">Estonia</option>
-            <option value="FI">Finlandia</option>
-            <option value="FR">Francja</option>
-            <option value="DE">Niemcy</option>
-            <option value="GR">Grecja</option>
-            <option value="HU">Węgry</option>
-            <option value="IE">Irlandia</option>
-            <option value="IT">Włochy</option>
-            <option value="LV">Łotwa</option>
-            <option value="LT">Litwa</option>
-            <option value="LU">Luksemburg</option>
-            <option value="MT">Malta</option>
-            <option value="NL">Holandia</option>
-            <option value="PT">Portugalia</option>
-            <option value="RO">Rumunia</option>
-            <option value="SK">Słowacja</option>
-            <option value="SI">Słowenia</option>
-            <option value="ES">Hiszpania</option>
-            <option value="SE">Szwecja</option>
-          </select>
-          <svg
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/40 pointer-events-none"
-            fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </div>
-
-      {/* Registration data — collapsible */}
-      <details className="group">
-        <summary className="flex items-center gap-2 cursor-pointer text-sm text-certo-navy/60 hover:text-certo-navy transition-colors py-2">
-          <svg className="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-          {t('form_registration_toggle')}
-        </summary>
-        <div className="space-y-4 pt-3 pl-6 border-l-2 border-certo-gold/20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input
-              name="address"
-              placeholder={t('form_address')}
-              className={inputClass}
-            />
-            <input
-              name="postal_code"
-              placeholder={t('form_postal_code')}
-              className={inputClass}
-            />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <input
-              name="nip"
-              placeholder={t('form_nip')}
-              className={inputClass}
-            />
-            <input
-              name="krs"
-              placeholder={t('form_krs')}
-              className={inputClass}
-            />
-            <input
-              name="regon"
-              placeholder={t('form_regon')}
-              className={inputClass}
-            />
-          </div>
-          <input
-            name="website"
-            type="url"
-            placeholder={t('form_website')}
-            className={inputClass}
           />
-        </div>
-      </details>
+        ))}
+      </div>
 
-      <input
-        name="contact_person"
-        required
-        placeholder={t('form_contact_person')}
-        className={inputClass}
-      />
-
-      {applicantType === 'representative' && (
-        <input
-          name="role"
-          placeholder={t('form_role')}
-          className={inputClass}
-        />
-      )}
-
-      <input
-        name="email"
-        type="email"
-        required
-        placeholder={t('form_email')}
-        className={inputClass}
-      />
-
-      <input
-        name="phone"
-        type="tel"
-        placeholder={t('form_phone')}
-        className={inputClass}
-      />
-
-      <textarea
-        name="motivation"
-        required
-        rows={4}
-        placeholder={applicantType === 'observer' ? t('form_motivation_observer') : t('form_motivation_representative')}
-        className={`${inputClass} resize-none`}
-      />
-
-      {applicantType === 'observer' && (
-        <input
-          name="relation"
-          placeholder={t('form_relation_placeholder')}
-          className={inputClass}
-        />
-      )}
-
-      <label className="flex items-start gap-3 text-sm text-certo-navy/70 cursor-pointer">
-        <input
-          name="consent"
-          type="checkbox"
-          required
-          className="mt-1 accent-certo-gold"
-        />
-        <span>
-          {t('form_consent')}
-          {applicantType === 'observer' && (
-            <span className="block text-xs text-certo-navy/50 mt-1">{t('form_consent_observer_note')}</span>
-          )}
+      {/* Step indicator */}
+      <div className="px-8 pt-6 flex items-center justify-between">
+        <span className="text-xs text-certo-navy/30 font-medium">
+          {stepIndex + 1} / {STEPS.length}
         </span>
-      </label>
+        {stepIndex > 0 && (
+          <button type="button" onClick={goBack} className="text-xs text-certo-gold hover:text-certo-navy transition-colors">
+            ← Wróć
+          </button>
+        )}
+      </div>
 
-      <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
+      <form onSubmit={handleSubmit} className="p-8 pt-4">
+        {/* STEP 1: Applicant type */}
+        <div className={step === 'type' ? 'block' : 'hidden'}>
+          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">{t('form_applicant_type')}</h3>
+          <p className="text-xs text-certo-navy/40 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
 
-      {state === 'error' && (
-        <p className="text-sm text-red-600">{t('form_error')}</p>
-      )}
+          <div className="space-y-3">
+            {(['representative', 'observer'] as const).map((type) => (
+              <label
+                key={type}
+                className={`flex items-start gap-4 p-5 rounded-xl border-2 cursor-pointer transition-all duration-200 ${
+                  applicantType === type
+                    ? 'border-certo-gold bg-certo-gold/5 shadow-sm'
+                    : 'border-transparent bg-certo-cream/30 hover:bg-certo-cream/50'
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="applicant_type"
+                  value={type}
+                  checked={applicantType === type}
+                  onChange={() => setApplicantType(type)}
+                  className="sr-only"
+                />
+                <div className={`w-5 h-5 rounded-full border-2 shrink-0 mt-0.5 flex items-center justify-center transition-colors ${
+                  applicantType === type ? 'border-certo-gold' : 'border-certo-navy/20'
+                }`}>
+                  {applicantType === type && <div className="w-2.5 h-2.5 rounded-full bg-certo-gold" />}
+                </div>
+                <div>
+                  <span className="text-sm font-semibold text-certo-navy block">{t(`form_type_${type}`)}</span>
+                  <span className="text-xs text-certo-navy/50 mt-0.5 block">{t(`form_type_${type}_desc`)}</span>
+                </div>
+              </label>
+            ))}
+          </div>
 
-      <button
-        type="submit"
-        disabled={state === 'submitting'}
-        className="bg-certo-navy text-certo-gold px-8 py-3 text-xs font-semibold uppercase tracking-[0.15em] rounded-lg hover:bg-certo-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
-      >
-        {state === 'submitting' ? '...' : t('form_submit')}
-      </button>
-    </form>
+          <button type="submit" className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+            Dalej →
+          </button>
+        </div>
+
+        {/* STEP 2: Organization info */}
+        <div className={step === 'org' ? 'block' : 'hidden'}>
+          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane podmiotu</h3>
+          <p className="text-xs text-certo-navy/40 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
+
+          <div className="space-y-4">
+            <input name="organization_name" required placeholder={applicantType === 'observer' ? t('form_org_name_observer') : t('form_org_name')} className={input} />
+
+            <div className="relative">
+              <select name="sector" required className={`${input} appearance-none pr-10 cursor-pointer`} defaultValue="">
+                <option value="" disabled>{t('form_sector')}</option>
+                <option value="publiczny">{t('form_sector_public')}</option>
+                <option value="prywatny">{t('form_sector_corporate')}</option>
+                <option value="pozarzadowy">{t('form_sector_ngo')}</option>
+              </select>
+              {CHEVRON}
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <input name="city" placeholder={t('form_city')} className={input} />
+              <div className="relative">
+                <select name="country" className={`${input} appearance-none pr-10 cursor-pointer`} defaultValue="PL">
+                  <option value="PL">Polska</option>
+                  <option value="AT">Austria</option><option value="BE">Belgia</option><option value="BG">Bułgaria</option>
+                  <option value="HR">Chorwacja</option><option value="CY">Cypr</option><option value="CZ">Czechy</option>
+                  <option value="DK">Dania</option><option value="EE">Estonia</option><option value="FI">Finlandia</option>
+                  <option value="FR">Francja</option><option value="DE">Niemcy</option><option value="GR">Grecja</option>
+                  <option value="HU">Węgry</option><option value="IE">Irlandia</option><option value="IT">Włochy</option>
+                  <option value="LV">Łotwa</option><option value="LT">Litwa</option><option value="LU">Luksemburg</option>
+                  <option value="MT">Malta</option><option value="NL">Holandia</option><option value="PT">Portugalia</option>
+                  <option value="RO">Rumunia</option><option value="SK">Słowacja</option><option value="SI">Słowenia</option>
+                  <option value="ES">Hiszpania</option><option value="SE">Szwecja</option>
+                </select>
+                {CHEVRON}
+              </div>
+            </div>
+
+            {/* Registration data */}
+            <details className="group">
+              <summary className="flex items-center gap-2 cursor-pointer text-xs text-certo-navy/40 hover:text-certo-navy/60 transition-colors py-1">
+                <svg className="w-3 h-3 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+                {t('form_registration_toggle')}
+              </summary>
+              <div className="space-y-3 pt-3 mt-2 border-t border-certo-navy/5">
+                <div className="grid grid-cols-2 gap-3">
+                  <input name="nip" placeholder={t('form_nip')} className={input} />
+                  <input name="krs" placeholder={t('form_krs')} className={input} />
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <input name="regon" placeholder={t('form_regon')} className={input} />
+                  <input name="website" type="url" placeholder={t('form_website')} className={input} />
+                </div>
+                <div className="grid grid-cols-3 gap-3">
+                  <input name="address" placeholder={t('form_address')} className={`${input} col-span-2`} />
+                  <input name="postal_code" placeholder={t('form_postal_code')} className={input} />
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <button type="submit" className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+            Dalej →
+          </button>
+        </div>
+
+        {/* STEP 3: Contact info */}
+        <div className={step === 'contact' ? 'block' : 'hidden'}>
+          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane kontaktowe</h3>
+          <p className="text-xs text-certo-navy/40 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
+
+          <div className="space-y-4">
+            <input name="contact_person" required placeholder={t('form_contact_person')} className={input} />
+
+            {applicantType === 'representative' && (
+              <input name="role" placeholder={t('form_role')} className={input} />
+            )}
+
+            <input name="email" type="email" required placeholder={t('form_email')} className={input} />
+            <input name="phone" type="tel" placeholder={t('form_phone')} className={input} />
+
+            {applicantType === 'observer' && (
+              <input name="relation" placeholder={t('form_relation_placeholder')} className={input} />
+            )}
+          </div>
+
+          <button type="submit" className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+            Dalej →
+          </button>
+        </div>
+
+        {/* STEP 4: Motivation + submit */}
+        <div className={step === 'details' ? 'block' : 'hidden'}>
+          <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Ostatni krok</h3>
+          <p className="text-xs text-certo-navy/40 mb-6">Powiedz nam dlaczego</p>
+
+          <div className="space-y-4">
+            <textarea
+              name="motivation"
+              required
+              rows={4}
+              placeholder={applicantType === 'observer' ? t('form_motivation_observer') : t('form_motivation_representative')}
+              className={`${input} resize-none`}
+            />
+
+            <label className="flex items-start gap-3 text-xs text-certo-navy/60 cursor-pointer p-4 bg-certo-cream/30 rounded-xl">
+              <input name="consent" type="checkbox" required className="mt-0.5 accent-certo-gold shrink-0" />
+              <span>
+                {t('form_consent')}
+                {applicantType === 'observer' && (
+                  <span className="block text-certo-navy/40 mt-1">{t('form_consent_observer_note')}</span>
+                )}
+              </span>
+            </label>
+
+            <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
+
+            {state === 'error' && (
+              <p className="text-sm text-red-600 text-center">{t('form_error')}</p>
+            )}
+          </div>
+
+          <button
+            type="submit"
+            disabled={state === 'submitting'}
+            className="w-full mt-6 bg-certo-gold text-white py-4 rounded-xl text-sm font-bold uppercase tracking-wider hover:bg-certo-navy hover:text-certo-gold transition-colors duration-300 disabled:opacity-50 shadow-lg shadow-certo-gold/20"
+          >
+            {state === 'submitting' ? 'Wysyłanie...' : t('form_submit')}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }

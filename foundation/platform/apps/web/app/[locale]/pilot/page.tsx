@@ -49,8 +49,13 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
         </div>
       </section>
 
+      {/* Form — right after hero, overlapping slightly */}
+      <section className="relative -mt-8 z-10 px-6 pb-16">
+        <PilotApplicationForm />
+      </section>
+
       {/* Content */}
-      <section className="max-w-4xl mx-auto px-6 py-16 space-y-16">
+      <section className="max-w-4xl mx-auto px-6 pb-16 space-y-16">
 
         {/* Program description */}
         <div>
@@ -66,7 +71,7 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6">{t('form_sector')}</h2>
           <div className="grid md:grid-cols-3 gap-4">
             {(['public', 'corporate', 'ngo'] as const).map((sector) => (
-              <div key={sector} className="bg-certo-navy/[0.02] p-5 border border-certo-navy/5">
+              <div key={sector} className="bg-certo-navy/[0.02] p-5 border border-certo-navy/5 rounded-xl">
                 <h3 className="font-serif font-bold text-certo-navy text-base mb-2">{t(`sector_${sector}`)}</h3>
                 <p className="text-sm text-certo-navy/50 leading-relaxed">{t(`sector_${sector}_desc`)}</p>
               </div>
@@ -88,12 +93,6 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* Form */}
-        <div className="max-w-lg mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6 text-center">{t('form_title')}</h2>
-          <PilotApplicationForm />
         </div>
       </section>
     </div>
