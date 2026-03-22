@@ -285,6 +285,62 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
 
   const currentZoomName = COUNTRY_ZOOMS[zoom]?.name || (zoom.startsWith('_custom') ? 'Zbliżenie' : 'Europa');
 
+  // Use refs for click/hover handlers to avoid stale closures
+  const zoomRef = useRef(zoom);
+  zoomRef.current = zoom;
+
+  // Native DOM click handler for country paths — bypasses React synthetic events
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as SVGElement;
+      const countryCode = target.getAttribute('data-country');
+      if (countryCode && COUNTRY_ZOOMS[countryCode]) {
+        e.stopPropagation();
+        setZoom(zoomRef.current === countryCode ? 'EU' : countryCode);
+        setShowCountries(false);
+        setClusterPanel(null);
+        onClusterSelect?.(null);
+      }
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const target = e.target as SVGElement;
+      const code = target.getAttribute('data-country');
+      setHoveredCountry(code || null);
+    };
+
+    const handleMouseLeave = () => setHoveredCountry(null);
+
+    // Touch support
+    const handleTouchEnd = (e: TouchEvent) => {
+      const target = e.target as SVGElement;
+      const countryCode = target.getAttribute('data-country');
+      if (countryCode && COUNTRY_ZOOMS[countryCode]) {
+        e.preventDefault();
+        e.stopPropagation();
+        setZoom(zoomRef.current === countryCode ? 'EU' : countryCode);
+        setShowCountries(false);
+        setClusterPanel(null);
+        onClusterSelect?.(null);
+      }
+    };
+
+    svg.addEventListener('click', handleClick);
+    svg.addEventListener('mousemove', handleMouseMove);
+    svg.addEventListener('mouseleave', handleMouseLeave);
+    svg.addEventListener('touchend', handleTouchEnd, { passive: false });
+
+    return () => {
+      svg.removeEventListener('click', handleClick);
+      svg.removeEventListener('mousemove', handleMouseMove);
+      svg.removeEventListener('mouseleave', handleMouseLeave);
+      svg.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [paths]); // re-attach when paths load
+
   return (
     <div className="w-full bg-white rounded-2xl border border-certo-navy/10 overflow-hidden relative">
       {/* Map SVG */}
@@ -293,23 +349,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
         viewBox={`${vb.x.toFixed(0)} ${vb.y.toFixed(0)} ${vb.w.toFixed(0)} ${vb.h.toFixed(0)}`}
         className="w-full h-auto transition-all duration-500"
         style={{ minHeight: 400, background: '#F8F5EE' }}
-        onClick={(e) => {
-          // Check if click was on a country path
-          const target = e.target as SVGElement;
-          const countryCode = target.getAttribute('data-country');
-          if (countryCode && COUNTRY_ZOOMS[countryCode]) {
-            setZoom(zoom === countryCode ? 'EU' : countryCode);
-            setShowCountries(false);
-            return;
-          }
-          closePanel();
-        }}
-        onMouseMove={(e) => {
-          const target = e.target as SVGElement;
-          const countryCode = target.getAttribute('data-country');
-          setHoveredCountry(countryCode || null);
-        }}
-        onMouseLeave={() => setHoveredCountry(null)}
+        onClick={() => closePanel()}
       >
         {/* Country shapes */}
         {paths.map(({ id, d, isEU, iso2 }) => (
@@ -320,7 +360,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
             fill={isEU ? (zoom === iso2 ? '#C8B898' : hoveredCountry === iso2 ? '#CCBB99' : '#E8E0D0') : '#F0ECE4'}
             stroke={isEU ? (hoveredCountry === iso2 ? '#A89870' : '#C8BBAA') : '#E0DCD4'}
             strokeWidth={isEU ? (hoveredCountry === iso2 ? 1.5 : 0.8) : 0.3}
-            style={isEU ? { cursor: 'pointer' } : undefined}
+            style={isEU ? { cursor: 'pointer', pointerEvents: 'all' } : undefined}
           />
         ))}
 
