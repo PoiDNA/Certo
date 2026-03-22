@@ -69,15 +69,15 @@ export default function PilotApplicationForm() {
 
   if (state === 'success') {
     return (
-      <div className="bg-white rounded-2xl shadow-xl p-10 text-center max-w-lg mx-auto">
-        <div className="w-16 h-16 bg-certo-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CC9B30" strokeWidth="2">
+      <div className="bg-white rounded-2xl shadow-xl p-10 text-center max-w-xl mx-auto">
+        <div className="w-20 h-20 bg-certo-gold/10 rounded-full flex items-center justify-center mx-auto mb-8">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#CC9B30" strokeWidth="2">
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
             <polyline points="22 4 12 14.01 9 11.01" />
           </svg>
         </div>
-        <h3 className="font-serif font-bold text-certo-navy text-xl mb-3">{t('form_success')}</h3>
-        <p className="text-sm text-certo-navy/50">Skontaktujemy się z Tobą w ciągu 5 dni roboczych.</p>
+        <h3 className="font-serif font-bold text-certo-navy text-2xl mb-4">Zgłoszenie przyjęte</h3>
+        <p className="text-base text-certo-navy/60 leading-relaxed">{t('form_success')}</p>
       </div>
     );
   }

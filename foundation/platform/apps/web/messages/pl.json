@@ -233,7 +233,7 @@
     "form_consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu rozpatrzenia zgłoszenia do programu pilotażowego Rating Certo.",
     "form_consent_observer_note": "Dane obserwatora publicznego są chronione i nie są udostępniane podmiotowi ocenianemu.",
     "form_submit": "Wyślij zgłoszenie",
-    "form_success": "Dziękujemy za zgłoszenie! Skontaktujemy się z Tobą w ciągu 14 dni roboczych.",
+    "form_success": "Potwierdzamy przyjęcie zgłoszenia. Po weryfikacji danych podmiot trafi na listę zgłoszeń do bezpłatnego procesu oceny wiarygodności publicznej w ramach Rating Certo.",
     "form_error": "Wystąpił błąd. Spróbuj ponownie lub napisz na rating@certogov.org."
   },
   "Experts": {
