@@ -79,6 +79,17 @@ export default function AdminDashboard() {
     fetchApps(adminKey);
   }, [filter, authenticated]);
 
+  const verifyAI = async (id: string) => {
+    setUpdating(id);
+    await fetch('/api/verify-application', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
+    });
+    await fetchApps(adminKey);
+    setUpdating(null);
+  };
+
   const updateStatus = async (id: string, status: string) => {
     setUpdating(id);
     await fetch('/api/admin-applications', {
@@ -232,7 +243,14 @@ export default function AdminDashboard() {
                   )}
 
                   {/* Actions */}
-                  <div className="flex gap-2 pt-2 border-t">
+                  <div className="flex gap-2 pt-2 border-t flex-wrap">
+                    <button
+                      onClick={() => verifyAI(app.id)}
+                      disabled={updating === app.id}
+                      className="px-4 py-2 text-xs bg-purple-600 text-white rounded-lg hover:bg-purple-700 disabled:opacity-30 transition-colors"
+                    >
+                      🤖 Weryfikuj AI
+                    </button>
                     <button
                       onClick={() => updateStatus(app.id, 'accepted')}
                       disabled={updating === app.id || app.status === 'accepted'}
