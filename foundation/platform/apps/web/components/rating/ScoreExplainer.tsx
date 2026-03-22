@@ -7,7 +7,7 @@ const ICON_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundatio
 
 const scores = [
   { key: 'score', icon: `${ICON_BASE}/I-I-1.png`, bg: 'from-amber-50 via-amber-50/60 to-white' },
-  { key: 'vector', icon: `${ICON_BASE}/I-I-2.png`, bg: 'from-slate-50 via-blue-50/40 to-white' },
+  { key: 'vector', icon: `${ICON_BASE}/I-I-2.png`, bg: 'from-slate-200 via-slate-100 to-slate-50' },
   { key: 'index', icon: `${ICON_BASE}/I-I-3.png`, bg: 'from-teal-50 via-emerald-50/50 to-white' },
 ] as const;
 
