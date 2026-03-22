@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import PilotApplicationForm from '../../../components/PilotApplicationForm';
 import ProcessTimeline from '../../../components/ProcessTimeline';
+import WhoCanApply from '../../../components/WhoCanApply';
 import { images } from '../../../lib/images';
 
 export function generateStaticParams() {
@@ -57,39 +58,8 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
           <p className="text-base text-certo-navy/70 leading-relaxed">{t('program_description')}</p>
         </div>
 
-        {/* Who can apply — two paths */}
-        <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-3">{t('who_title')}</h2>
-          <p className="text-base text-certo-navy/60 leading-relaxed mb-8">{t('who_intro')}</p>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Representative path */}
-            <div className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
-              <div className="w-10 h-10 bg-certo-navy text-certo-gold flex items-center justify-center text-lg mb-4">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
-              <h3 className="font-serif font-bold text-certo-navy text-xl mb-2">{t('path_representative_title')}</h3>
-              <p className="text-sm text-certo-navy/60 leading-relaxed mb-3">{t('path_representative_desc')}</p>
-              <p className="text-sm text-certo-gold/80 italic">{t('path_representative_note')}</p>
-            </div>
-
-            {/* Observer path */}
-            <div className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
-              <div className="w-10 h-10 bg-certo-gold text-white flex items-center justify-center text-lg mb-4">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-              </div>
-              <h3 className="font-serif font-bold text-certo-navy text-xl mb-2">{t('path_observer_title')}</h3>
-              <p className="text-sm text-certo-navy/60 leading-relaxed mb-3">{t('path_observer_desc')}</p>
-              <p className="text-sm text-certo-gold/80 italic">{t('path_observer_note')}</p>
-            </div>
-          </div>
-        </div>
+        {/* Who can apply — interactive paths */}
+        <WhoCanApply />
 
         {/* Sectors */}
         <div>
