@@ -168,7 +168,7 @@
     "subject_pilot": "Pilotaż"
   },
   "Pilot": {
-    "title": "Pilotaż Rating Certo",
+    "title": "Zgłoszenie",
     "subtitle": "Zgłoś podmiot do bezpłatnego procesu oceny wiarygodności publicznej na bazie jakości zarządzania — Q4 2026.",
     "program_title": "Program pilotażowy",
     "program_description": "W czwartym kwartale 2026 roku rozpoczynamy pierwsze bezpłatne procesy oceny w ramach indeksu wiarygodności publicznej na bazie jakości zarządzania — Rating Certo. Zgłoszenia przyjmujemy zarówno od organizacji, jak i od osób, którym zależy na przejrzystości instytucji w ich otoczeniu.",
@@ -201,7 +201,7 @@
     "benefit_3": "Pierwszeństwo w przyszłych procesach oceny",
     "benefit_4": "Dostęp do szczegółowego raportu z rekomendacjami",
     "form_title": "Formularz zgłoszeniowy",
-    "form_applicant_type": "Zgłaszam się jako",
+    "form_applicant_type": "Zgłaszam jako",
     "form_type_representative": "Reprezentant podmiotu",
     "form_type_representative_desc": "Reprezentuję organizację i zgłaszam ją do oceny",
     "form_type_observer": "Obserwator publiczny",

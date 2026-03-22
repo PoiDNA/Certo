@@ -40,7 +40,7 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
         <div className="absolute inset-0 bg-gradient-to-b from-certo-navy/85 via-certo-navy/75 to-certo-navy/90" />
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-6 font-medium">Q4 2026</p>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-cream mb-6">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-certo-cream mb-6">
             {t('title')}
           </h1>
           <p className="text-lg text-certo-cream/70 max-w-2xl mx-auto">
