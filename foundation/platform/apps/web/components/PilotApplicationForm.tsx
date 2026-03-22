@@ -114,16 +114,27 @@ export default function PilotApplicationForm() {
         className={inputClass}
       />
 
-      <select
-        name="sector"
-        required
-        className={inputClass}
-      >
-        <option value="">{t('form_sector')}</option>
-        <option value="publiczny">{t('form_sector_public')}</option>
-        <option value="korporacyjny">{t('form_sector_corporate')}</option>
-        <option value="pozarzadowy">{t('form_sector_ngo')}</option>
-      </select>
+      <div className="relative">
+        <select
+          name="sector"
+          required
+          className={`${inputClass} appearance-none pr-10 cursor-pointer`}
+          defaultValue=""
+        >
+          <option value="" disabled>{t('form_sector')}</option>
+          <option value="publiczny">{t('form_sector_public')}</option>
+          <option value="korporacyjny">{t('form_sector_corporate')}</option>
+          <option value="pozarzadowy">{t('form_sector_ngo')}</option>
+        </select>
+        <svg
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/40 pointer-events-none"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
 
       <input
         name="contact_person"
