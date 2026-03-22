@@ -34,8 +34,6 @@ export default async function Home({
       />
       <PillarsPreview />
       <FactDeNoiserSection />
-      <RhetoricalBreak question={t('rhetorical_standard')} />
-      <ProductsGrid />
       <BenefitsSection />
       <PhotoDivider
         imageUrl={images.dividerCollaboration}
