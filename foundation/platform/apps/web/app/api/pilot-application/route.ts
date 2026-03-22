@@ -1,11 +1,35 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
+async function verifyTurnstile(token: string): Promise<boolean> {
+  const secret = process.env.TURNSTILE_SECRET_KEY;
+  if (!secret) return true; // Skip if not configured
+
+  const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ secret, response: token }),
+  });
+
+  const data = await res.json();
+  return data.success === true;
+}
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const { applicant_type, organization_name, sector, contact_person, role, email, phone, motivation, relation, consent } = body;
+    const { applicant_type, organization_name, sector, contact_person, role, email, phone, motivation, relation, consent, turnstile_token } = body;
+
+    // Turnstile verification
+    if (turnstile_token) {
+      const valid = await verifyTurnstile(turnstile_token);
+      if (!valid) {
+        return NextResponse.json({ error: 'Bot verification failed' }, { status: 403 });
+      }
+    } else if (process.env.TURNSTILE_SECRET_KEY) {
+      return NextResponse.json({ error: 'Missing verification token' }, { status: 403 });
+    }
 
     // Validation
     if (!organization_name || !sector || !contact_person || !email || !motivation || !consent) {
@@ -24,7 +48,6 @@ export async function POST(request: Request) {
     const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
 
     if (!supabaseUrl || !supabaseServiceKey) {
-      // Fallback: log to console if Supabase not configured
       console.log('[pilot-application] No Supabase config — logging application:', {
         applicant_type,
         organization_name,

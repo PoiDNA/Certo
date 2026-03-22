@@ -1,11 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import TurnstileWidget from './TurnstileWidget';
 
 export default function ContactForm() {
   const t = useTranslations('Contact');
   const [sent, setSent] = useState(false);
+  const [turnstileVerified, setTurnstileVerified] = useState(false);
+  const handleTurnstileVerify = useCallback(() => setTurnstileVerified(true), []);
+  const handleTurnstileExpire = useCallback(() => setTurnstileVerified(false), []);
 
   const subjectKeys = ['subject_general', 'subject_rating', 'subject_methodology', 'subject_cooperation', 'subject_media'] as const;
 
@@ -78,9 +82,12 @@ export default function ContactForm() {
         className={`${inputClass} resize-none`}
       />
 
+      <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
+
       <button
         type="submit"
-        className="bg-certo-navy text-certo-gold px-8 py-3 text-xs font-semibold uppercase tracking-[0.15em] rounded-lg hover:bg-certo-gold hover:text-white transition-colors duration-300"
+        disabled={!turnstileVerified && !!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+        className="bg-certo-navy text-certo-gold px-8 py-3 text-xs font-semibold uppercase tracking-[0.15em] rounded-lg hover:bg-certo-gold hover:text-white transition-colors duration-300 disabled:opacity-50"
       >
         {t('form_submit')}
       </button>

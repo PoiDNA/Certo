@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import TurnstileWidget from './TurnstileWidget';
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 type ApplicantType = 'representative' | 'observer';
@@ -10,6 +11,9 @@ export default function PilotApplicationForm() {
   const t = useTranslations('Pilot');
   const [state, setState] = useState<FormState>('idle');
   const [applicantType, setApplicantType] = useState<ApplicantType>('representative');
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const handleTurnstileVerify = useCallback((token: string) => setTurnstileToken(token), []);
+  const handleTurnstileExpire = useCallback(() => setTurnstileToken(null), []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -33,6 +37,7 @@ export default function PilotApplicationForm() {
           motivation: data.get('motivation'),
           relation: applicantType === 'observer' ? data.get('relation') || null : null,
           consent: data.get('consent') === 'on',
+          turnstile_token: turnstileToken,
         }),
       });
 
@@ -196,6 +201,8 @@ export default function PilotApplicationForm() {
           )}
         </span>
       </label>
+
+      <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
 
       {state === 'error' && (
         <p className="text-sm text-red-600">{t('form_error')}</p>
