@@ -249,7 +249,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
   }, []);
 
   return (
-    <div className="w-full bg-white rounded-xl border border-certo-navy/10 overflow-hidden">
+    <div className="w-full bg-white rounded-xl border border-certo-navy/10 overflow-hidden relative">
       {/* Zoom controls */}
       <div className="px-4 py-3 border-b border-certo-navy/5 flex flex-wrap items-center gap-2">
         <button
@@ -417,33 +417,35 @@ function PilotMap({ applications }: { applications: Application[] }) {
           });
         })()}
 
-        {/* Tooltip */}
-        {tooltip && (
-          <g>
-            <rect
-              x={tooltip.x - 100}
-              y={tooltip.y - 40}
-              width={200}
-              height={38}
-              rx={6}
-              fill="#0A1628"
-              opacity={0.95}
-            />
-            {/* Arrow */}
-            <polygon
-              points={`${tooltip.x - 5},${tooltip.y - 2} ${tooltip.x + 5},${tooltip.y - 2} ${tooltip.x},${tooltip.y + 3}`}
-              fill="#0A1628"
-              opacity={0.95}
-            />
-            <text x={tooltip.x} y={tooltip.y - 25} textAnchor="middle" fontSize="8" fill="white" fontFamily="system-ui" fontWeight="600">
-              {tooltip.name.length > 35 ? tooltip.name.slice(0, 35) + '…' : tooltip.name}
-            </text>
-            <text x={tooltip.x} y={tooltip.y - 13} textAnchor="middle" fontSize="7" fill="#CC9B30" fontFamily="system-ui">
-              {[tooltip.city, tooltip.sector].filter(Boolean).join(' · ')}
-            </text>
-          </g>
-        )}
       </svg>
+
+      {/* HTML Tooltip — fixed size regardless of zoom */}
+      {tooltip && svgRef.current && (() => {
+        const svg = svgRef.current!;
+        const rect = svg.getBoundingClientRect();
+        const vbParts = svg.getAttribute('viewBox')?.split(' ').map(Number) || [100, 50, 600, 500];
+        const [vbX, vbY, vbW, vbH] = vbParts;
+        const pxX = ((tooltip.x - vbX) / vbW) * rect.width;
+        const pxY = ((tooltip.y - vbY) / vbH) * rect.height;
+        return (
+          <div
+            className="absolute pointer-events-none z-20"
+            style={{ left: pxX, top: pxY, transform: 'translate(-50%, -100%)' }}
+          >
+            <div className="bg-[#0A1628]/95 text-white rounded-lg px-4 py-2.5 text-center shadow-xl mb-1.5 max-w-[220px]">
+              <div className="text-xs font-semibold leading-tight">
+                {tooltip.name.length > 40 ? tooltip.name.slice(0, 40) + '…' : tooltip.name}
+              </div>
+              {(tooltip.city || tooltip.sector) && (
+                <div className="text-[10px] text-[#CC9B30] mt-0.5">
+                  {[tooltip.city, tooltip.sector].filter(Boolean).join(' · ')}
+                </div>
+              )}
+            </div>
+            <div className="w-2.5 h-2.5 bg-[#0A1628]/95 rotate-45 mx-auto -mt-2.5" />
+          </div>
+        );
+      })()}
 
       {/* Legend */}
       <div className="flex flex-wrap items-center gap-6 px-6 py-4 border-t border-certo-navy/5">
