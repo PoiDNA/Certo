@@ -158,14 +158,15 @@ async function checkDuplicate(
 }
 
 // ─── Evaluate Confidence ────────────────────────────────
-function evaluateConfidence(result: VerificationResult): { confidence: VerificationResult['confidence']; autoAccept: boolean } {
+function evaluateConfidence(result: VerificationResult, sector: string): { confidence: VerificationResult['confidence']; autoAccept: boolean } {
   let score = 0;
+  const isPublicOrNgo = sector === 'publiczny' || sector === 'pozarzadowy';
 
   // VIES valid = +40 points
   if (result.checks.vies?.valid) score += 40;
 
-  // Website reachable = +30 points
-  if (result.checks.website?.reachable) score += 30;
+  // Website reachable = +30 points (boosted to +50 for public/NGO)
+  if (result.checks.website?.reachable) score += isPublicOrNgo ? 50 : 30;
 
   // Has NIP/VAT = +10 points (even if VIES check failed — could be timing)
   if (result.checks.vies) score += 10;
@@ -279,7 +280,7 @@ export async function POST(request: Request) {
   }
 
   // ─── 4. Evaluate & Decide ───────────────────────────
-  const { confidence, autoAccept } = evaluateConfidence(result);
+  const { confidence, autoAccept } = evaluateConfidence(result, app.sector);
   result.confidence = confidence;
 
   const notesText = result.notes.join('\n');
