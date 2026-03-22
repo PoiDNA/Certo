@@ -31,6 +31,12 @@ export default function PilotApplicationForm() {
           organization_name: data.get('organization_name'),
           city: data.get('city') || null,
           country: data.get('country') || 'PL',
+          address: data.get('address') || null,
+          postal_code: data.get('postal_code') || null,
+          nip: data.get('nip') || null,
+          krs: data.get('krs') || null,
+          regon: data.get('regon') || null,
+          website: data.get('website') || null,
           sector: data.get('sector'),
           contact_person: data.get('contact_person'),
           role: applicantType === 'representative' ? data.get('role') : null,
@@ -191,6 +197,53 @@ export default function PilotApplicationForm() {
           </svg>
         </div>
       </div>
+
+      {/* Registration data — collapsible */}
+      <details className="group">
+        <summary className="flex items-center gap-2 cursor-pointer text-sm text-certo-navy/60 hover:text-certo-navy transition-colors py-2">
+          <svg className="w-4 h-4 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+          {t('form_registration_toggle')}
+        </summary>
+        <div className="space-y-4 pt-3 pl-6 border-l-2 border-certo-gold/20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input
+              name="address"
+              placeholder={t('form_address')}
+              className={inputClass}
+            />
+            <input
+              name="postal_code"
+              placeholder={t('form_postal_code')}
+              className={inputClass}
+            />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <input
+              name="nip"
+              placeholder={t('form_nip')}
+              className={inputClass}
+            />
+            <input
+              name="krs"
+              placeholder={t('form_krs')}
+              className={inputClass}
+            />
+            <input
+              name="regon"
+              placeholder={t('form_regon')}
+              className={inputClass}
+            />
+          </div>
+          <input
+            name="website"
+            type="url"
+            placeholder={t('form_website')}
+            className={inputClass}
+          />
+        </div>
+      </details>
 
       <input
         name="contact_person"
