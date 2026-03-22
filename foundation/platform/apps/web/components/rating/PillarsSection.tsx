@@ -23,7 +23,7 @@ export default function PillarsSection() {
 
       <div className="space-y-6">
         {pillars.map(({ key, weight }) => (
-          <div key={key} className="bg-white p-6 border border-certo-navy/5">
+          <div key={key} className="bg-white p-6 border border-certo-navy/5 rounded-lg">
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0 w-16 text-center">
                 <span className="text-2xl font-bold text-certo-gold">{weight}%</span>

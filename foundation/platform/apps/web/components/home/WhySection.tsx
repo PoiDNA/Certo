@@ -31,7 +31,7 @@ export default function WhySection() {
         </div>
 
         {/* Image */}
-        <div className="aspect-[4/3] overflow-hidden">
+        <div className="aspect-[4/3] overflow-hidden rounded-lg">
           <img
             src={images.whyGovernance}
             alt="Obywatele w nowoczesnym urzędzie publicznym"

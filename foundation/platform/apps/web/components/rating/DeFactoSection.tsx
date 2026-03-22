@@ -18,7 +18,7 @@ export default function DeFactoSection() {
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         {/* De iure */}
-        <div className="bg-certo-navy/5 p-8 border-l-4 border-certo-navy/20">
+        <div className="bg-certo-navy/5 p-8 border-l-4 border-certo-navy/20 rounded-lg">
           <h3 className="font-serif font-bold text-certo-navy text-lg mb-3">
             {t('defacto_iure')}
           </h3>
@@ -39,7 +39,7 @@ export default function DeFactoSection() {
       </div>
 
       {/* Human Control */}
-      <div className="bg-certo-navy p-8 text-certo-cream">
+      <div className="bg-certo-navy p-8 rounded-lg text-certo-cream">
         <h3 className="font-serif font-bold text-certo-gold text-lg mb-3">
           {t('human_control_title')}
         </h3>

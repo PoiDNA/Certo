@@ -36,7 +36,7 @@ export default function PillarsPreview() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {pillars.map(({ key, weight, color }) => (
-            <div key={key} className="bg-white p-5 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors overflow-hidden">
+            <div key={key} className="bg-white p-5 border border-certo-navy/5 rounded-lg hover:border-certo-gold/30 transition-colors overflow-hidden">
               <div className={`w-10 h-10 ${color} rounded-sm flex items-center justify-center text-white text-sm font-bold mb-4`}>
                 {weight}%
               </div>

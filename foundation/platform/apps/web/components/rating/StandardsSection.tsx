@@ -24,7 +24,7 @@ export default function StandardsSection() {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {standards.map(({ name, desc }) => (
-          <div key={name} className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
+          <div key={name} className="bg-white p-6 border border-certo-navy/5 rounded-lg hover:border-certo-gold/30 transition-colors">
             <h3 className="font-mono text-sm font-bold text-certo-navy mb-1">{name}</h3>
             <p className="text-xs text-certo-navy/60">{desc}</p>
           </div>

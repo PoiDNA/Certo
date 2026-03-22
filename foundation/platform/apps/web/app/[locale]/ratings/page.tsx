@@ -53,7 +53,7 @@ export default async function RatingPage({ params }: { params: Promise<{ locale:
         <StandardsSection />
 
         {/* Certo Accord */}
-        <div className="bg-certo-gold/5 border-l-4 border-certo-gold p-8">
+        <div className="bg-certo-gold/5 border-l-4 border-certo-gold p-8 rounded-lg">
           <h2 className="text-2xl font-serif font-bold text-certo-navy mb-3">
             {t('accord_title')}
           </h2>
