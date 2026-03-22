@@ -169,10 +169,31 @@ function PilotMap({ applications }: { applications: Application[] }) {
   const [zoom, setZoom] = useState<string>('EU');
   const svgRef = useRef<SVGSVGElement>(null);
 
-  const view = COUNTRY_ZOOMS[zoom] || COUNTRY_ZOOMS.EU;
-  const cx = view.center[0];
-  const cy = view.center[1];
-  const scale = view.scale;
+  // Always render paths with Europe-level projection
+  const baseCx = 15;
+  const baseCy = 52;
+  const baseScale = 9.5;
+
+  // For markers and labels, use same base projection
+  const cx = baseCx;
+  const cy = baseCy;
+  const scale = baseScale;
+
+  // Compute viewBox based on zoom level
+  const europeViewBox = { x: 100, y: 50, w: 600, h: 500 };
+  const computeViewBox = () => {
+    if (zoom === 'EU') return europeViewBox;
+    const view = COUNTRY_ZOOMS[zoom];
+    if (!view) return europeViewBox;
+    // Project the country center to SVG coords
+    const [svgX, svgY] = project(view.center[0], view.center[1], baseCx, baseCy, baseScale);
+    // Zoom factor: higher scale = more zoomed in = smaller viewBox
+    const zoomRatio = baseScale / view.scale;
+    const w = 600 * zoomRatio;
+    const h = 500 * zoomRatio;
+    return { x: svgX - w / 2, y: svgY - h / 2, w, h };
+  };
+  const vb = computeViewBox();
 
   // Countries that have applications
   const countriesWithApps = new Set(applications.map((a) => a.country).filter(Boolean));
@@ -266,8 +287,8 @@ function PilotMap({ applications }: { applications: Application[] }) {
 
       <svg
         ref={svgRef}
-        viewBox="100 50 600 500"
-        className="w-full h-auto"
+        viewBox={`${vb.x.toFixed(0)} ${vb.y.toFixed(0)} ${vb.w.toFixed(0)} ${vb.h.toFixed(0)}`}
+        className="w-full h-auto transition-all duration-500"
         style={{ minHeight: 350, background: '#F8F5EE' }}
       >
         {/* Country shapes */}
