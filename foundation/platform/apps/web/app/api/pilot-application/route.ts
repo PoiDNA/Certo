@@ -19,7 +19,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const { applicant_type, organization_name, city, country, sector, contact_person, role, email, phone, motivation, relation, consent, turnstile_token } = body;
+    const { applicant_type, organization_name, city, country, address, postal_code, nip, krs, regon, website, sector, contact_person, role, email, phone, motivation, relation, consent, turnstile_token } = body;
 
     // Turnstile verification
     if (turnstile_token) {
@@ -53,6 +53,12 @@ export async function POST(request: Request) {
         organization_name,
         city,
         country,
+        address,
+        postal_code,
+        nip,
+        krs,
+        regon,
+        website,
         sector,
         contact_person,
         role,
@@ -72,6 +78,12 @@ export async function POST(request: Request) {
       organization_name,
       city: city || null,
       country: country || 'PL',
+      address: address || null,
+      postal_code: postal_code || null,
+      nip: nip || null,
+      krs: krs || null,
+      regon: regon || null,
+      website: website || null,
       sector,
       contact_person,
       role: role || null,
