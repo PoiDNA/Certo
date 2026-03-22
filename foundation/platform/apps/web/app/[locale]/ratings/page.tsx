@@ -6,6 +6,7 @@ import PillarsSection from '../../../components/rating/PillarsSection';
 import DeFactoSection from '../../../components/rating/DeFactoSection';
 import SectorsSection from '../../../components/rating/SectorsSection';
 import StandardsSection from '../../../components/rating/StandardsSection';
+import RatingBenefits from '../../../components/rating/RatingBenefits';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -62,6 +63,9 @@ export default async function RatingPage({ params }: { params: Promise<{ locale:
             {t('accord_desc')}
           </p>
         </div>
+
+        {/* Benefits */}
+        <RatingBenefits />
       </section>
     </div>
   );
