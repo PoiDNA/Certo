@@ -227,7 +227,7 @@
     "title": "Rating Certo",
     "subtitle": "Indeks for offentlig troværdighed baseret på kvaliteten af ledelse",
     "score_title": "Certo Score",
-    "score_desc": "Objektiv, sammenlignelig vurdering af ledelseskvalitet på en skala fra 0–100 med bogstavbetegnelse AA–D.",
+    "score_desc": "Objektiv, sammenlignelig vurdering af ledelseskvalitet på en skala fra 0–100.",
     "vector_title": "Certo Vector",
     "vector_desc": "Flerdimensionel organisationsprofil, der viser styrker og områder, der kræver forbedring.",
     "index_title": "Certo Index",

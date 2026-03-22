@@ -227,7 +227,7 @@
     "title": "Rating Certo",
     "subtitle": "A közérdekű megbízhatóság indexe az irányítás minősége alapján",
     "score_title": "Certo Score",
-    "score_desc": "Objektív, összehasonlítható irányításiminőség-értékelés 0–100 skálán, AA–D betűjelöléssel.",
+    "score_desc": "Objektív, összehasonlítható irányításminőségi értékelés 0–100 skálán.",
     "vector_title": "Certo Vector",
     "vector_desc": "Többdimenziós szervezeti profil, amely megmutatja az erősségeket és a javítandó területeket.",
     "index_title": "Certo Index",

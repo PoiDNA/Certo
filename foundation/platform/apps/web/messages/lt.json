@@ -227,7 +227,7 @@
     "title": "Rating Certo",
     "subtitle": "Viešojo patikimumo indeksas, paremtas valdymo kokybe",
     "score_title": "Certo Score",
-    "score_desc": "Objektyvus, palyginamas valdymo kokybės vertinimas skalėje 0–100 su raidiniais žymėjimais AA–D.",
+    "score_desc": "Objektyvus, palyginamas valdymo kokybės vertinimas skalėje 0–100.",
     "vector_title": "Certo Vector",
     "vector_desc": "Daugiamatis organizacijos profilis, rodantis stipriąsias puses ir tobulintinas sritis.",
     "index_title": "Certo Index",

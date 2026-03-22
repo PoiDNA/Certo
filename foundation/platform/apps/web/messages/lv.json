@@ -227,7 +227,7 @@
     "title": "Rating Certo",
     "subtitle": "Publiskās uzticamības indekss, kas balstīts uz pārvaldības kvalitāti",
     "score_title": "Certo Score",
-    "score_desc": "Objektīvs, salīdzināms pārvaldības kvalitātes novērtējums skalā 0–100 ar burtu apzīmējumiem AA–D.",
+    "score_desc": "Objektīvs, salīdzināms pārvaldības kvalitātes novērtējums skalā no 0 līdz 100.",
     "vector_title": "Certo Vector",
     "vector_desc": "Organizācijas daudzdimensiju profils, kas parāda stiprās puses un jomas, kurām nepieciešami uzlabojumi.",
     "index_title": "Certo Index",

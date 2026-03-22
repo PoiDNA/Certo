@@ -227,7 +227,7 @@
     "title": "Rating Certo",
     "subtitle": "Indice de crédibilité publique fondé sur la qualité de la gouvernance",
     "score_title": "Certo Score",
-    "score_desc": "Une évaluation objective et comparable de la qualité de la gouvernance sur une échelle de 0 à 100 avec une désignation alphabétique de AA à D.",
+    "score_desc": "Évaluation objective et comparable de la qualité de gouvernance sur une échelle de 0 à 100.",
     "vector_title": "Certo Vector",
     "vector_desc": "Un profil multidimensionnel de l'organisation montrant les points forts et les domaines à améliorer.",
     "index_title": "Certo Index",
