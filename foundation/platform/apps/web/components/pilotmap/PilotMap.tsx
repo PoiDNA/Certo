@@ -517,16 +517,31 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
 
         {/* Country zoom selector */}
         <div className="relative">
-          <button
-            onClick={() => setShowCountries(!showCountries)}
-            className="flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-3 py-1.5 text-[11px] font-medium text-certo-navy hover:bg-white transition-colors"
-          >
-            <span className="text-sm">📍</span>
-            <span>{currentZoomName}</span>
-            <svg className={`w-3 h-3 text-certo-navy/40 transition-transform ${showCountries ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+          <div className="flex items-center gap-0 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10">
+            {/* Back to Europa button — only when zoomed into a country */}
+            {zoom !== 'EU' && (
+              <button
+                onClick={() => { setZoom('EU'); setShowCountries(false); }}
+                className="flex items-center gap-1 pl-3 pr-2 py-1.5 text-[11px] font-medium text-certo-navy/50 hover:text-certo-navy border-r border-certo-navy/10 transition-colors"
+              >
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+                Europa
+              </button>
+            )}
+            {/* Current zoom / dropdown trigger */}
+            <button
+              onClick={() => setShowCountries(!showCountries)}
+              className={`flex items-center gap-2 py-1.5 text-[11px] font-medium text-certo-navy hover:text-certo-navy/80 transition-colors ${zoom !== 'EU' ? 'pl-2 pr-3' : 'px-3'}`}
+            >
+              <span className="text-sm">📍</span>
+              <span>{currentZoomName}</span>
+              <svg className={`w-3 h-3 text-certo-navy/40 transition-transform ${showCountries ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
 
           {showCountries && (
             <div className="absolute right-0 top-full mt-1 bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] overflow-y-auto py-1 z-40">
@@ -584,19 +599,6 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
           )}
         </div>
       </div>
-
-      {/* ─── Zoom back button: top-left ─── */}
-      {zoom !== 'EU' && (
-        <button
-          onClick={() => setZoom('EU')}
-          className="absolute top-3 left-3 z-10 flex items-center gap-1.5 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-3 py-1.5 text-[11px] font-medium text-certo-navy hover:bg-white transition-colors"
-        >
-          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-          Europa
-        </button>
-      )}
 
       {/* HTML Tooltip */}
       {tooltip && !clusterPanel && svgRef.current && (() => {
