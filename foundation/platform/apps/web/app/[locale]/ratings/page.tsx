@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import ScoreExplainer from '../../../components/rating/ScoreExplainer';
 import PillarsSection from '../../../components/rating/PillarsSection';
 import DeFactoSection from '../../../components/rating/DeFactoSection';
-import SectorsSection from '../../../components/rating/SectorsSection';
 import StandardsSection from '../../../components/rating/StandardsSection';
 import RatingBenefits from '../../../components/rating/RatingBenefits';
 
@@ -51,7 +50,6 @@ export default async function RatingPage({ params }: { params: Promise<{ locale:
         <ScoreExplainer />
         <PillarsSection />
         <DeFactoSection />
-        <SectorsSection />
         <StandardsSection />
 
         {/* Certo Accord */}
