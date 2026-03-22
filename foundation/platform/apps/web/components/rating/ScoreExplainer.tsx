@@ -15,11 +15,11 @@ const scores = [
     accentColor: 'text-certo-gold',
   },
   {
-    key: 'index',
+    key: 'vector',
     icon: `${ICON_BASE}/I-I-3.png`,
-    gradient: 'from-teal-50 via-emerald-50/50 to-white',
-    activeBorder: 'border-emerald-400',
-    accentColor: 'text-emerald-600',
+    gradient: 'from-slate-100 via-blue-50/40 to-white',
+    activeBorder: 'border-certo-navy/60',
+    accentColor: 'text-certo-navy',
   },
 ] as const;
 
@@ -51,7 +51,7 @@ export default function ScoreExplainer() {
               <div className={`absolute inset-0 rounded-2xl transition-opacity duration-500 ${
                 isActive ? 'opacity-100' : 'opacity-0'
               }`} style={{
-                background: `radial-gradient(circle at 30% 30%, ${key === 'score' ? 'rgba(204,155,48,0.08)' : 'rgba(16,185,129,0.06)'}, transparent 70%)`,
+                background: `radial-gradient(circle at 30% 30%, ${key === 'score' ? 'rgba(204,155,48,0.08)' : 'rgba(10,22,40,0.05)'}, transparent 70%)`,
               }} />
 
               <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
