@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useScrollReveal } from '../shared/useScrollReveal';
 
@@ -12,22 +12,72 @@ const pillars = [
   { key: '5', weight: 15, accent: 'text-certo-navy/50', bar: 'bg-certo-navy/50', border: 'border-certo-navy/30' },
 ];
 
+const SWIPE_THRESHOLD = 50;
+
 export default function PillarsPreview() {
   const locale = useLocale();
   const t = useTranslations('Home');
   const { ref, isVisible } = useScrollReveal();
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const mouseStartX = useRef(0);
+  const isDragging = useRef(false);
 
-  const next = useCallback(() => {
-    setActive((prev) => (prev + 1) % pillars.length);
+  const goTo = useCallback((i: number) => {
+    setActive(((i % pillars.length) + pillars.length) % pillars.length);
   }, []);
+
+  const next = useCallback(() => goTo(active + 1), [active, goTo]);
+  const prev = useCallback(() => goTo(active - 1), [active, goTo]);
 
   useEffect(() => {
     if (paused || !isVisible) return;
-    const timer = setInterval(next, 4000);
+    const timer = setInterval(() => goTo(active + 1), 4000);
     return () => clearInterval(timer);
-  }, [paused, isVisible, next]);
+  }, [paused, isVisible, active, goTo]);
+
+  const handleSwipe = useCallback((startX: number, endX: number) => {
+    const diff = startX - endX;
+    if (Math.abs(diff) < SWIPE_THRESHOLD) return;
+    setPaused(true);
+    if (diff > 0) next();
+    else prev();
+  }, [next, prev]);
+
+  // Touch events
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const onTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+  const onTouchEnd = () => {
+    handleSwipe(touchStartX.current, touchEndX.current);
+  };
+
+  // Mouse drag events
+  const onMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    mouseStartX.current = e.clientX;
+  };
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging.current) return;
+    touchEndX.current = e.clientX;
+  };
+  const onMouseUp = () => {
+    if (!isDragging.current) return;
+    isDragging.current = false;
+    handleSwipe(mouseStartX.current, touchEndX.current);
+  };
+  const onMouseLeave = () => {
+    if (isDragging.current) {
+      isDragging.current = false;
+      handleSwipe(mouseStartX.current, touchEndX.current);
+    }
+    setPaused(false);
+  };
 
   const current = pillars[active];
 
@@ -49,22 +99,26 @@ export default function PillarsPreview() {
           </p>
         </div>
 
-        {/* Slider */}
+        {/* Slider with swipe/drag */}
         <div
-          className="relative"
+          className="relative cursor-grab active:cursor-grabbing select-none"
           onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
+          onMouseLeave={onMouseLeave}
+          onMouseDown={onMouseDown}
+          onMouseMove={onMouseMove}
+          onMouseUp={onMouseUp}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
         >
           {/* Main slide */}
           <div className={`bg-white rounded-xl border-l-4 ${current.border} p-8 md:p-12 min-h-[220px] flex items-center transition-all duration-500`}>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 w-full">
-              {/* Big percentage */}
               <div className="shrink-0">
                 <span className={`text-7xl md:text-8xl lg:text-9xl font-serif font-bold ${current.accent} leading-none`}>
                   {current.weight}%
                 </span>
               </div>
-              {/* Content */}
               <div className="flex-1">
                 <h3 className="font-serif font-extrabold text-certo-navy text-2xl md:text-3xl mb-3">
                   {t(`pillar_${current.key}_name`)}
@@ -76,7 +130,7 @@ export default function PillarsPreview() {
             </div>
           </div>
 
-          {/* Navigation dots + progress */}
+          {/* Navigation dots */}
           <div className="flex items-center justify-center gap-3 mt-8">
             {pillars.map((pillar, i) => (
               <button
