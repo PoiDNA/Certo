@@ -190,15 +190,18 @@ export async function POST(request: Request) {
   // 3. If NIP provided + other EU → use VIES
   let result: LookupResult = { found: false };
 
-  if (krs && countryCode === 'PL') {
-    result = await lookupKRS(krs);
+  // Strategy: VIES first (works for all EU), then country-specific fallbacks
+  if (nip) {
+    result = await lookupVIES(nip, countryCode);
   }
 
-  if (!result.found && nip) {
-    if (countryCode === 'PL') {
+  // Poland-specific fallbacks
+  if (!result.found && countryCode === 'PL') {
+    if (nip) {
       result = await lookupPolishNIP(nip);
-    } else {
-      result = await lookupVIES(nip, countryCode);
+    }
+    if (!result.found && krs) {
+      result = await lookupKRS(krs);
     }
   }
 
