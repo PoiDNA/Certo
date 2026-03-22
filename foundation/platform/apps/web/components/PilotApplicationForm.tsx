@@ -31,8 +31,6 @@ export default function PilotApplicationForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (step !== 'details') { goNext(); return; }
-
     setState('submitting');
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -114,7 +112,7 @@ export default function PilotApplicationForm() {
 
       <form onSubmit={handleSubmit} className="p-8 pt-4">
         {/* STEP 1: Applicant type */}
-        <div className={step === 'type' ? 'block' : 'hidden'}>
+        {step === 'type' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">{t('form_applicant_type')}</h3>
           <p className="text-xs text-certo-navy/40 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
 
@@ -149,13 +147,13 @@ export default function PilotApplicationForm() {
             ))}
           </div>
 
-          <button type="submit" className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+          <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
             Dalej →
           </button>
-        </div>
+        </div>}
 
         {/* STEP 2: Organization info */}
-        <div className={step === 'org' ? 'block' : 'hidden'}>
+        {step === 'org' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane podmiotu</h3>
           <p className="text-xs text-certo-navy/40 mb-6">Informacje o organizacji zgłaszanej do oceny</p>
 
@@ -216,13 +214,13 @@ export default function PilotApplicationForm() {
             </details>
           </div>
 
-          <button type="submit" className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+          <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
             Dalej →
           </button>
-        </div>
+        </div>}
 
         {/* STEP 3: Contact info */}
-        <div className={step === 'contact' ? 'block' : 'hidden'}>
+        {step === 'contact' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Dane kontaktowe</h3>
           <p className="text-xs text-certo-navy/40 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
 
@@ -241,13 +239,13 @@ export default function PilotApplicationForm() {
             )}
           </div>
 
-          <button type="submit" className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
+          <button type="button" onClick={goNext} className="w-full mt-6 bg-certo-navy text-certo-gold py-3.5 rounded-xl text-sm font-semibold hover:bg-certo-gold hover:text-white transition-colors duration-300">
             Dalej →
           </button>
-        </div>
+        </div>}
 
         {/* STEP 4: Motivation + submit */}
-        <div className={step === 'details' ? 'block' : 'hidden'}>
+        {step === 'details' && <div>
           <h3 className="font-serif font-bold text-certo-navy text-xl mb-1">Ostatni krok</h3>
           <p className="text-xs text-certo-navy/40 mb-6">Powiedz nam dlaczego</p>
 
@@ -284,7 +282,7 @@ export default function PilotApplicationForm() {
           >
             {state === 'submitting' ? 'Wysyłanie...' : t('form_submit')}
           </button>
-        </div>
+        </div>}
       </form>
     </div>
   );
