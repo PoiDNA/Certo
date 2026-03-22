@@ -2,6 +2,7 @@ import { locales } from '@certo/i18n/config';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import PilotApplicationForm from '../../../components/PilotApplicationForm';
+import ProcessTimeline from '../../../components/ProcessTimeline';
 import { images } from '../../../lib/images';
 
 export function generateStaticParams() {
@@ -103,21 +104,8 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
           </div>
         </div>
 
-        {/* Timeline */}
-        <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-8">{t('timeline_title')}</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {([1, 2, 3, 4] as const).map((step) => (
-              <div key={step} className="relative">
-                <div className="w-10 h-10 bg-certo-gold text-white flex items-center justify-center font-bold text-sm mb-4">
-                  {step}
-                </div>
-                <h3 className="font-serif font-bold text-certo-navy text-base mb-2">{t(`step_${step}`)}</h3>
-                <p className="text-sm text-certo-navy/60 leading-relaxed">{t(`step_${step}_desc`)}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Timeline — interactive stepper */}
+        <ProcessTimeline />
 
         {/* Benefits */}
         <div>
