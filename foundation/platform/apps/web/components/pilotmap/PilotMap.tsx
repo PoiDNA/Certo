@@ -385,7 +385,7 @@ function PilotMap({ applications }: { applications: Application[] }) {
                   }}
                   onMouseEnter={() => setTooltip({
                     x: cluster.cx,
-                    y: cluster.cy - r - 8,
+                    y: cluster.cy - r,
                     name: isMulti
                       ? `${count} podmiotów`
                       : mainApp.organization_name,
