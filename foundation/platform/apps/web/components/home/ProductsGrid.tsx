@@ -31,20 +31,23 @@ export default function ProductsGrid() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {products.map(({ key, icon }) => (
             <div
               key={key}
               className="bg-white p-8 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors"
             >
-              <img
-                src={icon}
-                alt={key}
-                className="w-12 h-12 mb-4 object-contain"
-              />
-              <h3 className="font-serif font-bold text-certo-navy mb-3">
-                {t(`product_${key}_name`)}
-              </h3>
+              {/* Icon + Title side by side */}
+              <div className="flex items-center gap-4 mb-4">
+                <img
+                  src={icon}
+                  alt={key}
+                  className="w-12 h-12 object-contain flex-shrink-0"
+                />
+                <h3 className="font-serif font-bold text-certo-navy text-xl md:text-2xl">
+                  {t(`product_${key}_name`)}
+                </h3>
+              </div>
               <p className="text-sm text-certo-navy/60 leading-relaxed">
                 {t(`product_${key}_desc`)}
               </p>
