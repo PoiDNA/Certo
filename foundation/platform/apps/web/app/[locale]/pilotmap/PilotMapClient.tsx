@@ -37,10 +37,7 @@ export default function PilotMapClient() {
 
   return (
     <div className="space-y-12">
-      {/* Map */}
-      <PilotMap applications={applications} />
-
-      {/* Stats */}
+      {/* Stats — on top */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-white rounded-xl p-5 border border-certo-navy/5 text-center">
           <div className="text-3xl font-serif font-bold text-certo-navy">{applications.length}</div>
@@ -65,6 +62,9 @@ export default function PilotMapClient() {
           <div className="text-xs text-certo-navy/40 mt-1">Sektor pozarządowy</div>
         </div>
       </div>
+
+      {/* Map */}
+      <PilotMap applications={applications} />
 
       {/* Table */}
       <PilotTable applications={applications} />
