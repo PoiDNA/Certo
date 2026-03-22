@@ -8,6 +8,7 @@ import { getMessages } from "next-intl/server";
 import { locales } from "@certo/i18n/config";
 import { routing } from "../../i18n-config";
 import SiteNav from "../../components/SiteNav";
+import AuthNav from "../../components/AuthNav";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -74,7 +75,10 @@ export default async function RootLayout({
                   />
                 </Link>
               </div>
-              <SiteNav />
+              <div className="flex items-center gap-6">
+                <AuthNav />
+                <SiteNav />
+              </div>
             </div>
           </header>
 

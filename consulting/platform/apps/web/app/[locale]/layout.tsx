@@ -9,6 +9,7 @@ import { getMessages } from "next-intl/server";
 import { locales } from "@certo/i18n/config";
 import { routing } from "../../i18n-config";
 import SiteNav from "../../components/SiteNav";
+import AuthNav from "../../components/AuthNav";
 
 const playfair = Playfair_Display({
   subsets: ['latin', 'latin-ext'],
@@ -83,7 +84,10 @@ export default async function RootLayout({
                   className="h-10 w-auto"
                 />
               </a>
-              <SiteNav />
+              <div className="flex items-center gap-6">
+                <AuthNav />
+                <SiteNav />
+              </div>
             </div>
           </header>
 
