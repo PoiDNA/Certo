@@ -19,7 +19,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const { applicant_type, organization_name, city, country, address, postal_code, nip, krs, regon, website, sector, contact_person, role, email, phone, motivation, relation, consent, turnstile_token } = body;
+    const { applicant_type, organization_name, city, country, address, postal_code, nip, krs, regon, website, sector, contact_person, role, email, phone, motivation, relation, consent, registry_lookup_source, turnstile_token } = body;
 
     // Turnstile verification
     if (turnstile_token) {
@@ -74,6 +74,8 @@ export async function POST(request: Request) {
 
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
+    const isRegistryVerified = !!registry_lookup_source;
+
     const { data: inserted, error } = await supabase.from('pilot_applications').insert({
       applicant_type,
       organization_name,
@@ -93,6 +95,7 @@ export async function POST(request: Request) {
       motivation,
       relation: relation || null,
       consent,
+      registry_lookup_source: registry_lookup_source || null,
     }).select('id').single();
 
     if (error) {
@@ -100,16 +103,70 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Database error' }, { status: 500 });
     }
 
-    // Auto-trigger AI verification (fire-and-forget)
     if (inserted?.id) {
-      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
-        || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+      if (isRegistryVerified) {
+        // ─── Registry-verified: auto-accept immediately ───────
+        // Entity confirmed by official registry (VIES/KRS/CEIDG/Biała Lista)
+        // Only check for duplicates, skip AI verification
+        console.log(`[pilot-application] Registry-verified (${registry_lookup_source}) — auto-accepting: ${organization_name}`);
 
-      fetch(`${baseUrl}/api/verify-application`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: inserted.id }),
-      }).catch((err) => console.error('[pilot-application] Verification trigger failed:', err));
+        // Quick duplicate check by NIP
+        let isDuplicate = false;
+        let duplicateInfo = '';
+        if (nip) {
+          const { data: existing } = await supabase
+            .from('pilot_applications')
+            .select('id, organization_name')
+            .eq('nip', nip)
+            .neq('id', inserted.id)
+            .limit(1);
+
+          if (existing && existing.length > 0) {
+            isDuplicate = true;
+            duplicateInfo = `Duplikat: "${existing[0].organization_name}" (${existing[0].id})`;
+
+            // Increment submission_count on original
+            const { data: original } = await supabase
+              .from('pilot_applications')
+              .select('submission_count')
+              .eq('id', existing[0].id)
+              .single();
+
+            if (original) {
+              await supabase
+                .from('pilot_applications')
+                .update({ submission_count: (original.submission_count || 1) + 1 })
+                .eq('id', existing[0].id);
+            }
+          }
+        }
+
+        const notes = isDuplicate
+          ? `🔍 Źródło: ${registry_lookup_source}\n🔄 ${duplicateInfo}\n❌ Automatycznie odrzucone jako duplikat`
+          : `🔍 Źródło: ${registry_lookup_source}\n✅ Podmiot potwierdzony w rejestrze — automatycznie zaakceptowane`;
+
+        await supabase
+          .from('pilot_applications')
+          .update({
+            status: isDuplicate ? 'rejected' : 'accepted',
+            ai_verified: true,
+            ai_verification_notes: notes,
+            ...(isDuplicate ? { duplicate_of: nip } : {}),
+          })
+          .eq('id', inserted.id);
+
+      } else {
+        // ─── Manual entry: trigger AI verification ──────────
+        console.log(`[pilot-application] Manual entry — triggering AI verification: ${organization_name}`);
+        const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+          || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+
+        fetch(`${baseUrl}/api/verify-application`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: inserted.id }),
+        }).catch((err) => console.error('[pilot-application] Verification trigger failed:', err));
+      }
     }
 
     return NextResponse.json({ ok: true });

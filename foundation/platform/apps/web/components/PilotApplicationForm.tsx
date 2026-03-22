@@ -52,6 +52,7 @@ export default function PilotApplicationForm() {
   const [fd, setFd] = useState<FormData>(INITIAL_DATA);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const [lookupState, setLookupState] = useState<'idle' | 'loading' | 'found' | 'not_found'>('idle');
+  const [lookupSource, setLookupSource] = useState<string | null>(null);
   const handleTurnstileVerify = useCallback((token: string) => setTurnstileToken(token), []);
   const handleTurnstileExpire = useCallback(() => setTurnstileToken(null), []);
 
@@ -74,11 +75,14 @@ export default function PilotApplicationForm() {
           postal_code: data.postalCode || prev.postal_code,
         }));
         setLookupState('found');
+        setLookupSource(data.source || 'registry');
       } else {
         setLookupState('not_found');
+        setLookupSource(null);
       }
     } catch {
       setLookupState('not_found');
+      setLookupSource(null);
     }
   };
 
@@ -146,6 +150,7 @@ export default function PilotApplicationForm() {
           motivation: fd.motivation,
           relation: fd.applicant_type === 'observer' ? fd.relation || null : null,
           consent: fd.consent,
+          registry_lookup_source: lookupSource,
           turnstile_token: turnstileToken,
         }),
       });
