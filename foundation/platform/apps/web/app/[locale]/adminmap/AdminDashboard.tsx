@@ -232,7 +232,11 @@ export default function AdminDashboard() {
                   {app.ai_verification_notes && (
                     <div className="text-xs bg-purple-50 p-3 rounded-lg">
                       <span className="text-purple-700 font-medium block mb-1">Notatki AI</span>
-                      <p className="text-purple-600">{app.ai_verification_notes}</p>
+                      <div className="text-purple-600 space-y-1">
+                        {app.ai_verification_notes.split('\n').map((line, i) => (
+                          <p key={i}>{line}</p>
+                        ))}
+                      </div>
                     </div>
                   )}
 
