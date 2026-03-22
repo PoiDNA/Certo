@@ -502,7 +502,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
       </svg>
 
       {/* ─── Floating controls: top ─── */}
-      <div className="absolute top-2 left-2 right-2 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1.5 sm:gap-2 z-10">
+      <div className="absolute top-2 left-2 right-2 flex flex-col items-end sm:flex-row sm:items-start sm:justify-between gap-1.5 sm:gap-2 z-10">
         {/* Sector filter pills */}
         {onSectorChange && (
           <div className="flex items-center gap-0.5 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-0.5 py-0.5 overflow-x-auto">
