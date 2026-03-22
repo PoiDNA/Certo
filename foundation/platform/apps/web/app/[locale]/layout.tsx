@@ -80,7 +80,7 @@ export default async function RootLayout({
                 </a>
               </div>
               <div className="flex items-center gap-8">
-                <AuthNav />
+                <div className="md:order-2"><AuthNav /></div>
                 <SiteNav />
               </div>
             </div>
