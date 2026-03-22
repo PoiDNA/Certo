@@ -123,7 +123,7 @@ export default function PilotApplicationForm() {
         >
           <option value="" disabled>{t('form_sector')}</option>
           <option value="publiczny">{t('form_sector_public')}</option>
-          <option value="korporacyjny">{t('form_sector_corporate')}</option>
+          <option value="prywatny">{t('form_sector_corporate')}</option>
           <option value="pozarzadowy">{t('form_sector_ngo')}</option>
         </select>
         <svg
