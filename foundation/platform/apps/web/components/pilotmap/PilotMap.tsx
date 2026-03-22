@@ -87,11 +87,13 @@ const SECTOR_LABELS: Record<string, string> = {
 };
 
 type Application = {
+  id: string;
   organization_name: string;
   sector: string;
   city: string | null;
   country: string | null;
   created_at: string;
+  votes: number;
 };
 
 // Mercator projection
