@@ -169,14 +169,33 @@ const COUNTRY_ZOOMS: Record<string, { center: [number, number]; scale: number; n
   MT: { center: [14.4, 35.9], scale: 80, name: 'Malta' },
 };
 
-function PilotMap({ applications, onClusterSelect }: {
+type SectorFilter = 'all' | 'publiczny' | 'prywatny' | 'pozarzadowy';
+
+const SECTOR_DOTS: Record<string, string> = {
+  publiczny: 'bg-certo-gold',
+  prywatny: 'bg-certo-navy',
+  pozarzadowy: 'bg-amber-600',
+};
+
+const FILTER_ITEMS: { key: SectorFilter; label: string }[] = [
+  { key: 'all', label: 'Wszystkie' },
+  { key: 'publiczny', label: 'Publiczny' },
+  { key: 'prywatny', label: 'Prywatny' },
+  { key: 'pozarzadowy', label: 'NGO' },
+];
+
+function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange, sectorCounts }: {
   applications: Application[];
   onClusterSelect?: (apps: Application[] | null) => void;
+  sectorFilter?: SectorFilter;
+  onSectorChange?: (f: SectorFilter) => void;
+  sectorCounts?: Record<SectorFilter, number>;
 }) {
   const [paths, setPaths] = useState<{ id: string; d: string; isEU: boolean; iso2: string }[]>([]);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; city: string; sector: string; date: string } | null>(null);
   const [zoom, setZoom] = useState<string>('EU');
   const [clusterPanel, setClusterPanel] = useState<{ x: number; y: number; apps: Application[] } | null>(null);
+  const [showCountries, setShowCountries] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
 
   const closePanel = () => {
@@ -263,47 +282,16 @@ function PilotMap({ applications, onClusterSelect }: {
       .catch(console.error);
   }, []);
 
-  return (
-    <div className="w-full bg-white rounded-xl border border-certo-navy/10 overflow-hidden relative">
-      {/* Zoom controls */}
-      <div className="px-4 py-3 border-b border-certo-navy/5 flex flex-wrap items-center gap-2">
-        <button
-          onClick={() => setZoom('EU')}
-          className={`px-3 py-1.5 text-xs rounded-lg transition-colors ${
-            zoom === 'EU' ? 'bg-certo-navy text-white' : 'bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-navy/10'
-          }`}
-        >
-          🌍 Europa
-        </button>
-        <span className="text-certo-navy/20 text-xs">|</span>
-        {Object.entries(COUNTRY_ZOOMS)
-          .filter(([code]) => code !== 'EU' && !code.startsWith('_custom'))
-          .sort((a, b) => a[1].name.localeCompare(b[1].name))
-          .map(([code, { name }]) => {
-            const hasApps = countriesWithApps.has(code);
-            return (
-              <button
-                key={code}
-                onClick={() => setZoom(code)}
-                className={`px-2 py-1 text-xs rounded-md transition-colors ${
-                  zoom === code
-                    ? 'bg-certo-gold text-white'
-                    : hasApps
-                      ? 'bg-certo-gold/10 text-certo-gold hover:bg-certo-gold/20 font-medium'
-                      : 'text-certo-navy/30 hover:text-certo-navy/50 hover:bg-certo-navy/5'
-                }`}
-              >
-                {name}
-              </button>
-            );
-          })}
-      </div>
+  const currentZoomName = COUNTRY_ZOOMS[zoom]?.name || (zoom.startsWith('_custom') ? 'Zbliżenie' : 'Europa');
 
+  return (
+    <div className="w-full bg-white rounded-2xl border border-certo-navy/10 overflow-hidden relative">
+      {/* Map SVG */}
       <svg
         ref={svgRef}
         viewBox={`${vb.x.toFixed(0)} ${vb.y.toFixed(0)} ${vb.w.toFixed(0)} ${vb.h.toFixed(0)}`}
         className="w-full h-auto transition-all duration-500"
-        style={{ minHeight: 350, background: '#F8F5EE' }}
+        style={{ minHeight: 400, background: '#F8F5EE' }}
         onClick={() => closePanel()}
       >
         {/* Country shapes */}
@@ -443,6 +431,118 @@ function PilotMap({ applications, onClusterSelect }: {
 
       </svg>
 
+      {/* ─── Floating controls: top-right ─── */}
+      <div className="absolute top-3 right-3 flex flex-col items-end gap-2 z-10">
+        {/* Sector filter pills */}
+        {onSectorChange && (
+          <div className="flex items-center gap-1 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-1 py-1">
+            {FILTER_ITEMS.map(({ key, label }) => {
+              const isActive = sectorFilter === key;
+              const count = sectorCounts?.[key] ?? 0;
+              return (
+                <button
+                  key={key}
+                  onClick={() => onSectorChange(isActive && key !== 'all' ? 'all' : key)}
+                  className={`flex items-center gap-1.5 px-3 py-1.5 text-[11px] font-medium rounded-full transition-all duration-200 ${
+                    isActive
+                      ? 'bg-certo-navy text-white shadow-sm'
+                      : 'text-certo-navy/60 hover:bg-certo-navy/5 hover:text-certo-navy'
+                  }`}
+                >
+                  {key !== 'all' && (
+                    <span className={`w-2 h-2 rounded-full ${SECTOR_DOTS[key]} ${isActive ? 'opacity-80' : 'opacity-50'}`} />
+                  )}
+                  <span>{label}</span>
+                  <span className={`text-[10px] ${isActive ? 'text-white/60' : 'text-certo-navy/30'}`}>{count}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Country zoom selector */}
+        <div className="relative">
+          <button
+            onClick={() => setShowCountries(!showCountries)}
+            className="flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-3 py-1.5 text-[11px] font-medium text-certo-navy hover:bg-white transition-colors"
+          >
+            <span className="text-sm">📍</span>
+            <span>{currentZoomName}</span>
+            <svg className={`w-3 h-3 text-certo-navy/40 transition-transform ${showCountries ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          {showCountries && (
+            <div className="absolute right-0 top-full mt-1 bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] overflow-y-auto py-1 z-40">
+              {/* Europa button */}
+              <button
+                onClick={() => { setZoom('EU'); setShowCountries(false); }}
+                className={`w-full flex items-center gap-2 px-4 py-2 text-xs transition-colors ${
+                  zoom === 'EU' ? 'bg-certo-navy text-white' : 'text-certo-navy hover:bg-certo-navy/5'
+                }`}
+              >
+                <span className="text-sm">🌍</span>
+                <span className="font-medium">Europa</span>
+                <span className={`ml-auto text-[10px] ${zoom === 'EU' ? 'text-white/50' : 'text-certo-navy/30'}`}>
+                  {applications.length}
+                </span>
+              </button>
+              <div className="h-px bg-certo-navy/5 mx-3 my-1" />
+              {/* Country list */}
+              {Object.entries(COUNTRY_ZOOMS)
+                .filter(([code]) => code !== 'EU' && !code.startsWith('_custom'))
+                .sort((a, b) => {
+                  // Countries with apps first
+                  const aHas = countriesWithApps.has(a[0]) ? 0 : 1;
+                  const bHas = countriesWithApps.has(b[0]) ? 0 : 1;
+                  if (aHas !== bHas) return aHas - bHas;
+                  return a[1].name.localeCompare(b[1].name);
+                })
+                .map(([code, { name }]) => {
+                  const hasApps = countriesWithApps.has(code);
+                  const appCount = applications.filter((a) => a.country === code).length;
+                  return (
+                    <button
+                      key={code}
+                      onClick={() => { setZoom(code); setShowCountries(false); }}
+                      className={`w-full flex items-center gap-2 px-4 py-1.5 text-xs transition-colors ${
+                        zoom === code
+                          ? 'bg-certo-gold text-white'
+                          : hasApps
+                            ? 'text-certo-navy hover:bg-certo-gold/5'
+                            : 'text-certo-navy/30 hover:bg-certo-navy/5'
+                      }`}
+                    >
+                      <span className="font-medium">{name}</span>
+                      {hasApps && (
+                        <span className={`ml-auto text-[10px] font-semibold ${
+                          zoom === code ? 'text-white/60' : 'text-certo-gold'
+                        }`}>
+                          {appCount}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* ─── Zoom back button: top-left ─── */}
+      {zoom !== 'EU' && (
+        <button
+          onClick={() => setZoom('EU')}
+          className="absolute top-3 left-3 z-10 flex items-center gap-1.5 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-3 py-1.5 text-[11px] font-medium text-certo-navy hover:bg-white transition-colors"
+        >
+          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Europa
+        </button>
+      )}
+
       {/* HTML Tooltip */}
       {tooltip && !clusterPanel && svgRef.current && (() => {
         const svg = svgRef.current!;
@@ -473,7 +573,7 @@ function PilotMap({ applications, onClusterSelect }: {
         );
       })()}
 
-      {/* Cluster panel — scrollable list on the map */}
+      {/* Cluster panel — scrollable list */}
       {clusterPanel && svgRef.current && (() => {
         const svg = svgRef.current!;
         const rect = svg.getBoundingClientRect();
@@ -482,7 +582,6 @@ function PilotMap({ applications, onClusterSelect }: {
         const pxX = ((clusterPanel.x - vbX) / vbW) * rect.width;
         const pxY = ((clusterPanel.y - vbY) / vbH) * rect.height;
         const panelApps = clusterPanel.apps;
-        // Position panel to the right of marker, or left if near right edge
         const onRight = pxX < rect.width * 0.6;
         return (
           <div
@@ -494,32 +593,20 @@ function PilotMap({ applications, onClusterSelect }: {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-white rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] flex flex-col">
-              {/* Header */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[280px] max-h-[300px] flex flex-col">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-certo-navy/5">
                 <span className="text-xs font-semibold text-certo-navy">
                   {panelApps.length} {panelApps.length === 1 ? 'podmiot' : 'podmiotów'}
                 </span>
-                <button
-                  onClick={closePanel}
-                  className="text-certo-navy/30 hover:text-certo-navy text-sm leading-none"
-                >
-                  ✕
-                </button>
+                <button onClick={closePanel} className="text-certo-navy/30 hover:text-certo-navy text-sm leading-none">✕</button>
               </div>
-              {/* Scrollable list */}
               <div className="overflow-y-auto flex-1 divide-y divide-certo-navy/5">
                 {panelApps.map((app, i) => (
                   <div key={i} className="px-4 py-2.5 hover:bg-certo-gold/5 transition-colors">
-                    <div className="text-xs font-semibold text-certo-navy leading-tight">
-                      {app.organization_name}
-                    </div>
+                    <div className="text-xs font-semibold text-certo-navy leading-tight">{app.organization_name}</div>
                     <div className="flex items-center gap-2 mt-1 text-[10px] text-certo-navy/50">
                       {app.city && <span>{app.city}</span>}
-                      <span
-                        className="inline-block w-2 h-2 rounded-full"
-                        style={{ backgroundColor: SECTOR_COLORS[app.sector] || '#CC9B30' }}
-                      />
+                      <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: SECTOR_COLORS[app.sector] || '#CC9B30' }} />
                       <span>{SECTOR_LABELS[app.sector]?.replace('Sektor ', '') || app.sector}</span>
                     </div>
                   </div>
@@ -530,15 +617,15 @@ function PilotMap({ applications, onClusterSelect }: {
         );
       })()}
 
-      {/* Legend */}
-      <div className="flex flex-wrap items-center gap-6 px-6 py-4 border-t border-certo-navy/5">
+      {/* Bottom bar — legend + count */}
+      <div className="flex flex-wrap items-center gap-4 px-4 py-2.5 border-t border-certo-navy/5 bg-white/80">
         {Object.entries(SECTOR_LABELS).map(([key, label]) => (
-          <div key={key} className="flex items-center gap-2 text-xs text-certo-navy/60">
-            <span className="w-3 h-3 rounded-full" style={{ backgroundColor: SECTOR_COLORS[key] }} />
+          <div key={key} className="flex items-center gap-1.5 text-[10px] text-certo-navy/50">
+            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: SECTOR_COLORS[key] }} />
             {label}
           </div>
         ))}
-        <div className="ml-auto text-xs text-certo-navy/30">
+        <div className="ml-auto text-[10px] text-certo-navy/30">
           {applications.length} {applications.length === 1 ? 'podmiot' : 'podmiotów'}
         </div>
       </div>
