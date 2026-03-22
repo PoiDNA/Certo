@@ -45,18 +45,30 @@ export default async function PilotMapPage({
         </div>
       </section>
 
-      {/* Map + Table — overlapping hero */}
-      <section className="relative -mt-10 z-10 max-w-6xl mx-auto px-6 pb-16">
-        <PilotMapClient />
+      {/* Dark background section — map sits on dark surface */}
+      <section className="relative bg-certo-navy pb-16 md:pb-24">
+        {/* Subtle pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
+          backgroundSize: '32px 32px',
+        }} />
+
+        {/* Map + Table container */}
+        <div className="relative -mt-8 z-10 max-w-6xl mx-auto px-4 sm:px-6">
+          {/* Map with elevated shadow */}
+          <div className="shadow-2xl shadow-black/20 rounded-2xl">
+            <PilotMapClient />
+          </div>
+        </div>
       </section>
 
       {/* CTA — apply */}
-      <section className="bg-certo-navy/[0.03] border-t border-certo-navy/5">
+      <section className="bg-gradient-to-b from-certo-navy to-certo-navy/95 border-t border-certo-gold/20">
         <div className="max-w-4xl mx-auto px-6 py-16 md:py-20 text-center">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-4">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-cream mb-4">
             Zgłoś podmiot do pilotażu
           </h2>
-          <p className="text-base text-certo-navy/60 max-w-xl mx-auto mb-8">
+          <p className="text-base text-certo-cream/50 max-w-xl mx-auto mb-8">
             Bezpłatny proces oceny wiarygodności publicznej na bazie jakości zarządzania — Q4 2026
           </p>
           <a
