@@ -5,6 +5,34 @@ export const runtime = 'edge';
 
 const R2_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/og';
 
+// All text is dynamic — R2 template only has logo + background art
+const OG_TEXTS: Record<string, { headline: string; cta: string; votesLabel: string }> = {
+  pl: { headline: 'Zgłoś ocenę wiarygodności publicznej', cta: 'Podbij!', votesLabel: 'głosów poparcia' },
+  en: { headline: 'Request a public credibility assessment', cta: 'Vote!', votesLabel: 'votes' },
+  de: { headline: 'Bewertung der öffentlichen Glaubwürdigkeit beantragen', cta: 'Abstimmen!', votesLabel: 'Stimmen' },
+  fr: { headline: 'Demander une évaluation de crédibilité publique', cta: 'Votez !', votesLabel: 'votes' },
+  it: { headline: 'Richiedi una valutazione della credibilità pubblica', cta: 'Vota!', votesLabel: 'voti' },
+  es: { headline: 'Solicitar una evaluación de credibilidad pública', cta: '¡Vota!', votesLabel: 'votos' },
+  pt: { headline: 'Solicitar uma avaliação da credibilidade pública', cta: 'Vote!', votesLabel: 'votos' },
+  nl: { headline: 'Verzoek een beoordeling van publieke geloofwaardigheid', cta: 'Stem!', votesLabel: 'stemmen' },
+  cs: { headline: 'Požádat o hodnocení veřejné důvěryhodnosti', cta: 'Hlasujte!', votesLabel: 'hlasů' },
+  sk: { headline: 'Požiadať o hodnotenie verejnej dôveryhodnosti', cta: 'Hlasujte!', votesLabel: 'hlasov' },
+  hu: { headline: 'Közintézményi hitelesség értékelése', cta: 'Szavazz!', votesLabel: 'szavazat' },
+  ro: { headline: 'Solicită o evaluare a credibilității publice', cta: 'Votează!', votesLabel: 'voturi' },
+  bg: { headline: 'Заявете оценка на обществената достоверност', cta: 'Гласувайте!', votesLabel: 'гласа' },
+  hr: { headline: 'Zatražite ocjenu javne vjerodostojnosti', cta: 'Glasajte!', votesLabel: 'glasova' },
+  sl: { headline: 'Zahtevajte oceno javne verodostojnosti', cta: 'Glasujte!', votesLabel: 'glasov' },
+  lt: { headline: 'Prašyti viešojo patikimumo vertinimo', cta: 'Balsuokite!', votesLabel: 'balsų' },
+  lv: { headline: 'Pieprasīt publiskās uzticamības novērtējumu', cta: 'Balsojiet!', votesLabel: 'balsu' },
+  et: { headline: 'Taotlege avaliku usaldusväärsuse hindamist', cta: 'Hääleta!', votesLabel: 'häält' },
+  fi: { headline: 'Pyydä julkisen uskottavuuden arviointia', cta: 'Äänestä!', votesLabel: 'ääntä' },
+  sv: { headline: 'Begär en bedömning av offentlig trovärdighet', cta: 'Rösta!', votesLabel: 'röster' },
+  da: { headline: 'Anmod om en vurdering af offentlig troværdighed', cta: 'Stem!', votesLabel: 'stemmer' },
+  el: { headline: 'Αίτηση αξιολόγησης δημόσιας αξιοπιστίας', cta: 'Ψηφίστε!', votesLabel: 'ψήφοι' },
+  ga: { headline: 'Iarr measúnú ar inchreidteacht phoiblí', cta: 'Vótáil!', votesLabel: 'vótaí' },
+  mt: { headline: 'Itlob valutazzjoni tal-kredibbiltà pubblika', cta: 'Ivvota!', votesLabel: 'voti' },
+};
+
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
   const name = searchParams.get('name') || 'Podmiot';
@@ -14,30 +42,18 @@ export async function GET(request: NextRequest) {
   const locale = searchParams.get('locale') || 'en';
 
   const location = [city, country].filter(Boolean).join(', ');
+  const texts = OG_TEXTS[locale] || OG_TEXTS.en;
 
-  // Try locale-specific template, fall back to English
-  let backgroundUrl = `${R2_BASE}/entity-${locale}.png`;
+  // Fetch background from R2 (logo only) — try locale, fallback to en
   let backgroundData: ArrayBuffer | null = null;
-
-  try {
-    const res = await fetch(backgroundUrl);
-    if (res.ok) {
-      backgroundData = await res.arrayBuffer();
-    }
-  } catch {
-    // ignore, try fallback
-  }
-
-  if (!backgroundData) {
+  for (const loc of [locale, 'en']) {
     try {
-      backgroundUrl = `${R2_BASE}/entity-en.png`;
-      const res = await fetch(backgroundUrl);
+      const res = await fetch(`${R2_BASE}/entity-${loc}.png`);
       if (res.ok) {
         backgroundData = await res.arrayBuffer();
+        break;
       }
-    } catch {
-      // proceed without background
-    }
+    } catch { /* try next */ }
   }
 
   const backgroundSrc = backgroundData
@@ -52,13 +68,12 @@ export async function GET(request: NextRequest) {
           height: '630',
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
           position: 'relative',
           backgroundColor: '#0A1628',
           fontFamily: 'sans-serif',
         }}
       >
+        {/* Background — logo only from R2 */}
         {backgroundSrc && (
           <img
             src={backgroundSrc}
@@ -75,41 +90,50 @@ export async function GET(request: NextRequest) {
           />
         )}
 
-        {/* Overlay for text readability */}
+        {/* Headline — top center */}
         <div
           style={{
             position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '1200px',
-            height: '630px',
-            background: 'linear-gradient(180deg, rgba(10,22,40,0.4) 0%, rgba(10,22,40,0.7) 100%)',
+            top: '30px',
+            left: '200px',
+            right: '60px',
             display: 'flex',
+            justifyContent: 'center',
           }}
-        />
+        >
+          <span
+            style={{
+              color: 'rgba(255,255,255,0.75)',
+              fontSize: '24px',
+              textAlign: 'center',
+              lineHeight: 1.4,
+            }}
+          >
+            {texts.headline}
+          </span>
+        </div>
 
-        {/* Location - top right */}
+        {/* Location — top right */}
         {location && (
           <div
             style={{
               position: 'absolute',
-              top: '30px',
-              right: '40px',
-              color: 'white',
-              fontSize: '18px',
-              opacity: 0.9,
+              top: '100px',
+              right: '60px',
               display: 'flex',
+              color: 'rgba(255,255,255,0.7)',
+              fontSize: '20px',
             }}
           >
             {location}
           </div>
         )}
 
-        {/* Entity name - centered upper area */}
+        {/* Entity name — centered, large, dominant */}
         <div
           style={{
             position: 'absolute',
-            top: '160px',
+            top: '180px',
             left: '60px',
             right: '60px',
             display: 'flex',
@@ -120,43 +144,41 @@ export async function GET(request: NextRequest) {
           <span
             style={{
               color: 'white',
-              fontSize: '46px',
+              fontSize: name.length > 40 ? '38px' : '48px',
               fontWeight: 'bold',
               lineHeight: 1.3,
               maxWidth: '1080px',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
             }}
           >
             {name}
           </span>
         </div>
 
-        {/* Votes with thumbs up - center bottom */}
+        {/* Votes — 👍 + number, bottom center */}
         <div
           style={{
             position: 'absolute',
-            bottom: '60px',
+            bottom: '90px',
             left: '0',
             right: '0',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '2px',
+            gap: '4px',
           }}
         >
           <div
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '12px',
+              gap: '14px',
             }}
           >
-            <span style={{ fontSize: '48px' }}>👍</span>
+            <span style={{ fontSize: '52px' }}>👍</span>
             <span
               style={{
                 color: 'white',
-                fontSize: '48px',
+                fontSize: '52px',
                 fontWeight: 'bold',
               }}
             >
@@ -165,11 +187,34 @@ export async function GET(request: NextRequest) {
           </div>
           <span
             style={{
-              color: 'rgba(255,255,255,0.7)',
+              color: 'rgba(255,255,255,0.5)',
               fontSize: '16px',
             }}
           >
-            {locale === 'pl' ? 'głosów poparcia' : 'votes'}
+            {texts.votesLabel}
+          </span>
+        </div>
+
+        {/* CTA — "Podbij!" bottom */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '25px',
+            left: '0',
+            right: '0',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <span
+            style={{
+              color: '#C8A55A',
+              fontSize: '32px',
+              fontWeight: 'bold',
+              letterSpacing: '1px',
+            }}
+          >
+            {texts.cta}
           </span>
         </div>
       </div>
