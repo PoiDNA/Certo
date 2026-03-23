@@ -30,7 +30,7 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
 
   const entityUrl = `https://www.certogov.org/${locale}/entity/${id}`;
   const cityPart = city ? ` (${city})` : '';
-  const shareText = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Certo!\nPoprzej ten podmiot ${entityUrl}\n#Certo #Governance`;
+  const shareText = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Certo!\nPoprzej ten podmiot 👍 ${entityUrl}\n#Certo #Governance`;
 
   const shareToX = () => {
     window.open(

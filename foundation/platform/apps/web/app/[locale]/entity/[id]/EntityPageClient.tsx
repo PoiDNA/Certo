@@ -45,7 +45,7 @@ function getProcessStage(ps: string | null, ratingScore: number | null) {
     { key: 'zgloszenie', label: 'Zgłoszenie', icon: '📋' },
     { key: 'analiza', label: 'Analiza wstępna', icon: '🔍' },
     { key: 'ocena', label: 'W trakcie oceny', icon: '⚖️' },
-    { key: 'rating', label: ratingScore != null ? `Certo ${ratingScore}` : 'Rating Certo', icon: '⭐' },
+    { key: 'rating', label: ratingScore != null ? `Certo ${ratingScore}` : 'Ocena Certo', icon: '⭐' },
   ];
   const current = ps || 'zgloszenie';
   const currentIdx = stages.findIndex(s => s.key === current);
@@ -151,7 +151,7 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
         {/* Process Pipeline */}
         <div className="bg-white rounded-2xl border border-certo-navy/10 p-6 shadow-sm">
           <h2 className="text-sm font-semibold text-certo-navy/50 uppercase tracking-wider mb-6">
-            Proces oceny Rating Certo
+            Proces oceny Ocena Certo
           </h2>
 
           {/* Pipeline steps */}
@@ -312,7 +312,7 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
           <h3 className="text-lg font-semibold text-certo-navy mb-2">Panel reprezentanta</h3>
           <p className="text-sm text-certo-navy/50 max-w-md mx-auto">
             Zaloguj się jako reprezentant podmiotu, aby zobaczyć szczegóły procesu,
-            rekomendacje i feedback z oceny Rating Certo.
+            rekomendacje i feedback z oceny Ocena Certo.
           </p>
           <button className="mt-4 px-6 py-2.5 bg-certo-navy text-white rounded-xl text-sm hover:bg-certo-navy/90 transition-colors">
             Zaloguj się
