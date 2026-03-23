@@ -11,6 +11,11 @@ function getSupabase() {
   return _supabase;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function from(table: string) {
+  return getSupabase().from(table) as any;
+}
+
 export interface DocumentRecord {
   title: string;
   sourceType: string;
@@ -33,11 +38,8 @@ export interface ChunkRecord {
 }
 
 export async function upsertDocument(doc: DocumentRecord): Promise<string> {
-  const sb = getSupabase();
-
   // Check if document with same hash already exists
-  const { data: existing } = await sb
-    .from("rag_documents")
+  const { data: existing } = await from("rag_documents")
     .select("id")
     .eq("file_hash", doc.fileHash)
     .maybeSingle();
@@ -45,14 +47,13 @@ export async function upsertDocument(doc: DocumentRecord): Promise<string> {
   if (existing) {
     console.log(`  Document already exists (hash match): ${doc.title}`);
     // Delete old chunks for re-ingestion
-    await sb.from("rag_chunks").delete().eq("document_id", existing.id);
+    await from("rag_chunks").delete().eq("document_id", existing.id);
     console.log(`  Cleared old chunks for re-ingestion`);
     return existing.id;
   }
 
   // Insert new document
-  const { data, error } = await sb
-    .from("rag_documents")
+  const { data, error } = await from("rag_documents")
     .insert({
       title: doc.title,
       source_type: doc.sourceType,
@@ -72,7 +73,6 @@ export async function upsertDocument(doc: DocumentRecord): Promise<string> {
 }
 
 export async function insertChunks(chunks: ChunkRecord[]): Promise<void> {
-  const sb = getSupabase();
   const BATCH_SIZE = 50;
 
   for (let i = 0; i < chunks.length; i += BATCH_SIZE) {
@@ -86,7 +86,7 @@ export async function insertChunks(chunks: ChunkRecord[]): Promise<void> {
       metadata: c.metadata,
     }));
 
-    const { error } = await sb.from("rag_chunks").insert(rows);
+    const { error } = await from("rag_chunks").insert(rows);
     if (error) throw new Error(`Failed to insert chunks: ${error.message}`);
 
     console.log(
@@ -98,9 +98,7 @@ export async function insertChunks(chunks: ChunkRecord[]): Promise<void> {
 export async function getDocumentByHash(
   hash: string
 ): Promise<{ id: string } | null> {
-  const sb = getSupabase();
-  const { data } = await sb
-    .from("rag_documents")
+  const { data } = await from("rag_documents")
     .select("id")
     .eq("file_hash", hash)
     .maybeSingle();
@@ -116,9 +114,7 @@ export async function listDocuments(): Promise<
     ingested_at: string;
   }>
 > {
-  const sb = getSupabase();
-  const { data, error } = await sb
-    .from("rag_documents")
+  const { data, error } = await from("rag_documents")
     .select("id, title, source_type, sector, ingested_at")
     .order("ingested_at", { ascending: false });
   if (error) throw new Error(`Failed to list documents: ${error.message}`);

@@ -9,7 +9,7 @@ export async function parsePdf(filePath: string): Promise<ParsedSection[]> {
 
   // PDF text is flat — split by paragraph breaks and group into sections
   const text = data.text;
-  const paragraphs = text.split(/\n{2,}/).filter((p) => p.trim().length > 0);
+  const paragraphs = text.split(/\n{2,}/).filter((p: string) => p.trim().length > 0);
 
   const sections: ParsedSection[] = [];
   let currentSection: string[] = [];
