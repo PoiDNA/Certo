@@ -20,25 +20,33 @@ export async function GET(
   }
   const supabase = createClient(supabaseUrl, supabaseKey);
 
-  // Try with all columns first
-  let { data, error } = await supabase
-    .from('pilot_applications')
-    .select('id, organization_name, sector, city, country, created_at, votes, status, process_status, rating_score, nip')
-    .eq('id', id)
-    .neq('status', 'rejected')
-    .single();
+  // Base columns that definitely exist
+  const baseCols = 'id, organization_name, sector, city, country, created_at, votes, status';
 
-  if (error) {
-    // Fallback without newer columns
-    ({ data, error } = await supabase
+  // Try with all columns, cascade fallback
+  const attempts = [
+    `${baseCols}, process_status, rating_score, nip`,
+    `${baseCols}, process_status, rating_score`,
+    `${baseCols}, nip`,
+    baseCols,
+  ];
+
+  let data = null;
+  for (const cols of attempts) {
+    const result = await supabase
       .from('pilot_applications')
-      .select('id, organization_name, sector, city, country, created_at, votes, status, nip')
+      .select(cols)
       .eq('id', id)
       .neq('status', 'rejected')
-      .single());
+      .single();
+
+    if (!result.error && result.data) {
+      data = result.data;
+      break;
+    }
   }
 
-  if (error || !data) {
+  if (!data) {
     return NextResponse.json({ error: 'Not found' }, { status: 404 });
   }
 
