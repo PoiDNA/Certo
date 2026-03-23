@@ -118,7 +118,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: `https://www.certogov.org/${locale}/entity/${id}`,
       languages: alternates,
     },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: false },
   };
 }
 
