@@ -90,21 +90,23 @@ export async function GET(request: NextRequest) {
           />
         )}
 
-        {/* Headline — top center */}
+        {/* Headline — centered, white, two lines, bigger */}
         <div
           style={{
             position: 'absolute',
-            top: '30px',
+            top: '20px',
             left: '200px',
-            right: '60px',
+            right: '200px',
             display: 'flex',
             justifyContent: 'center',
+            textAlign: 'center',
           }}
         >
           <span
             style={{
-              color: 'rgba(255,255,255,0.75)',
-              fontSize: '24px',
+              color: 'white',
+              fontSize: '32px',
+              fontWeight: 'bold',
               textAlign: 'center',
               lineHeight: 1.4,
             }}
@@ -113,16 +115,17 @@ export async function GET(request: NextRequest) {
           </span>
         </div>
 
-        {/* Location — top right */}
+        {/* Location — top right, aligned with Certo logo center (~35px) */}
         {location && (
           <div
             style={{
               position: 'absolute',
-              top: '100px',
+              top: '35px',
               right: '60px',
               display: 'flex',
-              color: 'rgba(255,255,255,0.7)',
-              fontSize: '20px',
+              color: 'rgba(255,255,255,0.85)',
+              fontSize: '22px',
+              fontWeight: '600',
             }}
           >
             {location}
@@ -133,7 +136,7 @@ export async function GET(request: NextRequest) {
         <div
           style={{
             position: 'absolute',
-            top: '180px',
+            top: '170px',
             left: '60px',
             right: '60px',
             display: 'flex',
@@ -144,7 +147,7 @@ export async function GET(request: NextRequest) {
           <span
             style={{
               color: 'white',
-              fontSize: name.length > 40 ? '38px' : '48px',
+              fontSize: name.length > 40 ? '42px' : '52px',
               fontWeight: 'bold',
               lineHeight: 1.3,
               maxWidth: '1080px',
@@ -154,11 +157,11 @@ export async function GET(request: NextRequest) {
           </span>
         </div>
 
-        {/* Votes — 👍 + number, bottom center */}
+        {/* Votes — white 👍 text + number, bottom center */}
         <div
           style={{
             position: 'absolute',
-            bottom: '90px',
+            bottom: '110px',
             left: '0',
             right: '0',
             display: 'flex',
@@ -174,11 +177,18 @@ export async function GET(request: NextRequest) {
               gap: '14px',
             }}
           >
-            <span style={{ fontSize: '52px' }}>👍</span>
+            <span
+              style={{
+                fontSize: '56px',
+                color: 'white',
+              }}
+            >
+              ☝
+            </span>
             <span
               style={{
                 color: 'white',
-                fontSize: '52px',
+                fontSize: '56px',
                 fontWeight: 'bold',
               }}
             >
@@ -195,11 +205,11 @@ export async function GET(request: NextRequest) {
           </span>
         </div>
 
-        {/* CTA — "Podbij!" bottom */}
+        {/* CTA — "Podbij!" same size as entity name */}
         <div
           style={{
             position: 'absolute',
-            bottom: '25px',
+            bottom: '20px',
             left: '0',
             right: '0',
             display: 'flex',
@@ -209,7 +219,7 @@ export async function GET(request: NextRequest) {
           <span
             style={{
               color: '#C8A55A',
-              fontSize: '32px',
+              fontSize: '48px',
               fontWeight: 'bold',
               letterSpacing: '1px',
             }}
