@@ -1,8 +1,13 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { multiQueryHybridSearch, type SearchFilters, type RetrievedChunk } from "./retrieval";
-import { SYSTEM_PROMPT, buildContextPrompt, buildSourcesList } from "./prompts";
+import { multiQueryHybridSearch, type SearchFilters, type RetrievedChunk, type HybridSearchResult } from "./retrieval";
+import {
+  SYSTEM_PROMPT, buildContextPrompt, buildSourcesList,
+  buildGraphContext, buildRulesContext,
+} from "./prompts";
 import { expandQuery } from "./query-expansion";
 import { compressHistory, extractConversationContext } from "./summarize";
+import { evaluateRules, type RuleEvaluationResult } from "./rules";
+import type { MatchedConcept, GraphRelationship } from "./graph";
 
 export type ModelChoice = "sonnet" | "opus";
 
@@ -48,14 +53,18 @@ export interface GenerateResult {
   sources: RetrievedChunk[];
   expandedQueries: string[];
   summarized: boolean;
+  graphConcepts: MatchedConcept[];
+  graphRelationships: GraphRelationship[];
+  ruleEvaluation: RuleEvaluationResult;
 }
 
 /**
  * Generate a streaming response with:
- * - Multi-query expansion (3 variants via Haiku)
+ * - Multi-query expansion (Haiku)
  * - Auto-summary of long conversations
+ * - Knowledge Graph traversal (parallel with search)
+ * - Rules engine evaluation
  * - Extended thinking
- * - RAG context from hybrid search
  */
 export async function generateResponse(
   options: GenerateOptions
@@ -69,7 +78,7 @@ export async function generateResponse(
     thinking = true,
   } = options;
 
-  // Step 1: Multi-query expansion + conversation context extraction (parallel)
+  // Step 1: Multi-query expansion + conversation compression (parallel)
   const conversationContext = extractConversationContext(conversationHistory);
 
   const [expandedQueries, compressedResult] = await Promise.all([
@@ -77,23 +86,39 @@ export async function generateResponse(
     compressHistory(conversationHistory),
   ]);
 
-  // Step 2: Multi-query hybrid search with all variants
-  const chunks = await multiQueryHybridSearch(expandedQueries, filters, topK);
+  // Step 2: Multi-query hybrid search + graph traversal (graph runs in parallel inside)
+  const searchResult: HybridSearchResult = await multiQueryHybridSearch(
+    expandedQueries, filters, topK
+  );
 
-  // Step 3: Build messages with compressed history
+  const { chunks, graphData } = searchResult;
+
+  // Step 3: Evaluate rules based on matched concepts
+  const conceptIds = graphData.concepts.map((c) => c.id);
+  const detectedSector = filters.sectors?.[0]; // primary sector filter
+  const ruleEvaluation = await evaluateRules(conceptIds, detectedSector);
+
+  // Step 4: Build messages with compressed history + graph + rules context
   const contextPrompt = buildContextPrompt(chunks);
+  const graphContext = buildGraphContext(graphData.concepts, graphData.relationships);
+  const rulesContext = buildRulesContext(
+    ruleEvaluation.rules, ruleEvaluation.conflicts, ruleEvaluation.chains
+  );
+
   const messages: Array<{ role: "user" | "assistant"; content: string }> = [];
 
-  // Add compressed conversation history
   for (const msg of compressedResult.messages) {
     messages.push({ role: msg.role, content: msg.content });
   }
 
-  // Add current query with context
-  const userMessage =
-    chunks.length > 0
-      ? `${contextPrompt}\n\n## Pytanie\n\n${query}`
-      : `Nie znaleziono pasujących fragmentów w bazie wiedzy. Odpowiedz na pytanie na podstawie swojej ogólnej wiedzy, zaznaczając że odpowiedź nie jest oparta na dokumentach Certo.\n\n## Pytanie\n\n${query}`;
+  // Combine all context sections
+  const contextSections = [contextPrompt, graphContext, rulesContext]
+    .filter(Boolean)
+    .join("\n\n");
+
+  const userMessage = chunks.length > 0 || graphData.concepts.length > 0
+    ? `${contextSections}\n\n## Pytanie\n\n${query}`
+    : `Nie znaleziono pasujących fragmentów w bazie wiedzy. Odpowiedz na pytanie na podstawie swojej ogólnej wiedzy, zaznaczając że odpowiedź nie jest oparta na dokumentach Certo.\n\n## Pytanie\n\n${query}`;
 
   messages.push({ role: "user", content: userMessage });
 
@@ -101,7 +126,6 @@ export async function generateResponse(
   const selectedModel = MODELS[model];
   const maxTokens = MAX_TOKENS[model];
 
-  // Build API params
   const baseParams = {
     model: selectedModel,
     max_tokens: maxTokens,
@@ -109,7 +133,6 @@ export async function generateResponse(
     messages,
   };
 
-  // Extended thinking config
   const thinkingConfig = thinking
     ? { thinking: { type: "enabled" as const, budget_tokens: THINKING_BUDGET[model] } }
     : {};
@@ -119,7 +142,6 @@ export async function generateResponse(
     ...thinkingConfig,
   });
 
-  // Create async iterable from stream — yields both thinking and text events
   async function* eventStream(): AsyncIterable<{ type: "text" | "thinking"; content: string }> {
     for await (const event of stream) {
       if (event.type === "content_block_delta") {
@@ -131,7 +153,6 @@ export async function generateResponse(
       }
     }
 
-    // Append sources list at the end
     if (chunks.length > 0) {
       yield { type: "text", content: "\n\n---\n\n**Źródła:**\n" };
       yield { type: "text", content: buildSourcesList(chunks) };
@@ -143,6 +164,9 @@ export async function generateResponse(
     sources: chunks,
     expandedQueries,
     summarized: compressedResult.summary !== null,
+    graphConcepts: graphData.concepts,
+    graphRelationships: graphData.relationships,
+    ruleEvaluation,
   };
 }
 

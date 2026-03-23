@@ -1,4 +1,6 @@
 import type { RetrievedChunk } from "./retrieval";
+import type { MatchedConcept, GraphRelationship } from "./graph";
+import type { AppliedRule, RuleConflict, RuleChain } from "./rules";
 
 export const SYSTEM_PROMPT = `Jesteś ekspertem ds. metodologii oceny jakości zarządzania (governance) w Fundacji Certo Governance Institute. Pomagasz zespołowi metodologicznemu i Kolegium Standardu Certo w:
 
@@ -49,7 +51,22 @@ Gdy proponujesz wskaźnik dla Certo Score:
 - **Typ:** ilościowy / jakościowy / binarny
 - **Źródło danych:** [skąd automatycznie pozyskać]
 - **Waga sugerowana:** [niska/średnia/wysoka + uzasadnienie]
-- **Podstawa regulacyjna:** [źródło + numer artykułu]`;
+- **Podstawa regulacyjna:** [źródło + numer artykułu]
+
+## Knowledge Graph
+
+Jeśli w kontekście podano sekcję "Powiązane koncepty", wykorzystaj graf wiedzy:
+- Wyjaśnij powiązania między dopasowanymi konceptami
+- Wskaż relacje: co wymaga czego, co uszczegóławia co, co jest częścią czego
+- Jeśli graf wskazuje relację "contradicts" — explicite opisz sprzeczność
+
+## Reguły governance
+
+Jeśli w kontekście podano sekcję "Obowiązujące reguły":
+- Zastosuj reguły w analizie — podaj referencje regulacyjne
+- Jeśli wykryto KONFLIKTY REGUŁ — przedstaw obie strony, wyjaśnij źródło sprzeczności
+- Jeśli wykryto ŁAŃCUCHY WYMAGAŃ — prześledź pełny łańcuch A→B→C
+- Reguły mają priorytet — wyższy priorytet = ważniejsza reguła`;
 
 export function buildContextPrompt(chunks: RetrievedChunk[]): string {
   const sources = chunks
@@ -76,4 +93,70 @@ export function buildSourcesList(chunks: RetrievedChunk[]): string {
         `[${i + 1}] ${chunk.docTitle} — ${(chunk.metadata as { heading?: string }).heading || "—"} (${chunk.docSourceType}, sektory: ${chunk.docSector.join(",")}, score: ${chunk.score.toFixed(3)})`
     )
     .join("\n");
+}
+
+/**
+ * Build graph context section: matched concepts and their relationships.
+ */
+export function buildGraphContext(
+  concepts: MatchedConcept[],
+  relationships: GraphRelationship[]
+): string {
+  if (concepts.length === 0) return "";
+
+  const conceptList = concepts
+    .map((c) => `- **${c.name}** (${c.conceptType}, sektory: ${c.sectors.join(",")}, similarity: ${c.similarity.toFixed(2)})${c.description ? ": " + c.description : ""}`)
+    .join("\n");
+
+  const relList = relationships.length > 0
+    ? "\n\nRelacje w grafie wiedzy:\n" + relationships
+        .slice(0, 15) // cap at 15 relationships
+        .map((r) => `- ${r.sourceConceptName || "?"} —[${r.relationshipType}]→ ${r.targetConceptName} (waga: ${r.weight.toFixed(2)})`)
+        .join("\n")
+    : "";
+
+  return `## Powiązane koncepty (Knowledge Graph)
+
+Poniższe koncepty zostały dopasowane z grafu wiedzy Certo. Wykorzystaj je do wzbogacenia odpowiedzi — wyjaśnij powiązania między pojęciami.
+
+${conceptList}${relList}`;
+}
+
+/**
+ * Build rules context section: applicable rules, conflicts, chains.
+ */
+export function buildRulesContext(
+  rules: AppliedRule[],
+  conflicts: RuleConflict[],
+  chains: RuleChain[]
+): string {
+  if (rules.length === 0) return "";
+
+  const ruleList = rules
+    .slice(0, 10) // cap at 10 rules
+    .map((r) => {
+      const consequence = r.consequence as { type?: string; description?: string; regulation_ref?: string };
+      return `- [${r.ruleType.toUpperCase()}] **${r.name}** (sektory: ${r.sectors.join(",")}) — ${consequence.description || r.description}${consequence.regulation_ref ? " [" + consequence.regulation_ref + "]" : ""}`;
+    })
+    .join("\n");
+
+  let conflictSection = "";
+  if (conflicts.length > 0) {
+    conflictSection = "\n\n⚠️ KONFLIKTY REGUŁ:\n" +
+      conflicts.map((c) => `- ${c.description}`).join("\n") +
+      "\n\nWyjaśnij te konflikty w odpowiedzi — przedstaw obie strony z referencjami regulacyjnymi.";
+  }
+
+  let chainSection = "";
+  if (chains.length > 0) {
+    chainSection = "\n\n🔗 ŁAŃCUCHY WYMAGAŃ:\n" +
+      chains.map((c) => `- ${c.description}`).join("\n") +
+      "\n\nProśledź pełny łańcuch wymagań w odpowiedzi.";
+  }
+
+  return `## Obowiązujące reguły governance
+
+Poniższe reguły zostały dopasowane na podstawie konceptów w zapytaniu. Zastosuj je w analizie — podaj referencje regulacyjne.
+
+${ruleList}${conflictSection}${chainSection}`;
 }

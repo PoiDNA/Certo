@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
   const thinking = body.thinking !== false; // default true
 
   try {
-    const { stream, sources, expandedQueries, summarized } = await generateResponse({
+    const { stream, sources, expandedQueries, summarized, graphConcepts, ruleEvaluation } = await generateResponse({
       query: body.message,
       conversationHistory: body.conversationHistory,
       filters: body.filters,
@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
     const readable = new ReadableStream({
       async start(controller) {
         try {
-          // Send metadata first (sources + query expansion info)
+          // Send metadata first (sources + query expansion + graph + rules)
           controller.enqueue(
             encoder.encode(
               `data: ${JSON.stringify({
@@ -90,6 +90,14 @@ export async function POST(request: NextRequest) {
                 })),
                 expandedQueries,
                 summarized,
+                concepts: graphConcepts.map((c) => ({
+                  name: c.name, type: c.conceptType, sectors: c.sectors, similarity: c.similarity,
+                })),
+                rules: ruleEvaluation.rules.slice(0, 8).map((r) => ({
+                  name: r.name, type: r.ruleType, sectors: r.sectors,
+                  regulation: r.sourceRegulation,
+                })),
+                conflicts: ruleEvaluation.conflicts.map((c) => c.description),
               })}\n\n`
             )
           );
