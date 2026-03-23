@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/auth/'],
+      disallow: ['/api/', '/auth/', '/rag/', '/entity/', '/pilotmap/'],
     },
     sitemap: 'https://certogov.org/sitemap.xml',
   };

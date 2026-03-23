@@ -1,5 +1,8 @@
 import { locales } from '@certo/i18n/config';
 import { setRequestLocale } from 'next-intl/server';
+import { createServerClient } from '@supabase/ssr';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import PilotMapClient from './PilotMapClient';
 import { images } from '../../../lib/images';
@@ -16,6 +19,22 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+async function getUser() {
+  const cookieStore = await cookies();
+  const sb = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll() { return cookieStore.getAll(); },
+        setAll(cookiesToSet) { cookiesToSet.forEach(({ name, value, options }) => cookieStore.set(name, value, options)); },
+      },
+    }
+  );
+  const { data: { user } } = await sb.auth.getUser();
+  return user;
+}
+
 export default async function PilotMapPage({
   params,
 }: {
@@ -23,6 +42,11 @@ export default async function PilotMapPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+
+  const user = await getUser();
+  if (!user) {
+    redirect(`/${locale}/login?redirectTo=/${locale}/pilotmap`);
+  }
 
   return (
     <div className="w-full">
