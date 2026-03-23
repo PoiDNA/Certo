@@ -2,7 +2,22 @@ import Anthropic from "@anthropic-ai/sdk";
 import { hybridSearch, type SearchFilters, type RetrievedChunk } from "./retrieval";
 import { SYSTEM_PROMPT, buildContextPrompt, buildSourcesList } from "./prompts";
 
-const MODEL = "claude-sonnet-4-20250514";
+export type ModelChoice = "sonnet" | "opus";
+
+const MODELS: Record<ModelChoice, string> = {
+  sonnet: "claude-sonnet-4-20250514",
+  opus: "claude-opus-4-20250514",
+};
+
+const THINKING_BUDGET: Record<ModelChoice, number> = {
+  sonnet: 8000,
+  opus: 16000,
+};
+
+const MAX_TOKENS: Record<ModelChoice, number> = {
+  sonnet: 12000,
+  opus: 20000,
+};
 
 let _client: Anthropic | null = null;
 
@@ -22,20 +37,29 @@ export interface GenerateOptions {
   conversationHistory?: ChatMessage[];
   filters?: SearchFilters;
   topK?: number;
+  model?: ModelChoice;
+  thinking?: boolean;
 }
 
 export interface GenerateResult {
-  stream: AsyncIterable<string>;
+  stream: AsyncIterable<{ type: "text" | "thinking"; content: string }>;
   sources: RetrievedChunk[];
 }
 
 /**
- * Generate a streaming response with RAG context
+ * Generate a streaming response with RAG context + optional extended thinking
  */
 export async function generateResponse(
   options: GenerateOptions
 ): Promise<GenerateResult> {
-  const { query, conversationHistory = [], filters = {}, topK = 8 } = options;
+  const {
+    query,
+    conversationHistory = [],
+    filters = {},
+    topK = 8,
+    model = "sonnet",
+    thinking = true,
+  } = options;
 
   // Retrieve relevant chunks
   const chunks = await hybridSearch(query, filters, topK);
@@ -44,8 +68,8 @@ export async function generateResponse(
   const contextPrompt = buildContextPrompt(chunks);
   const messages: Array<{ role: "user" | "assistant"; content: string }> = [];
 
-  // Add conversation history (last 6 exchanges max to control context size)
-  const recentHistory = conversationHistory.slice(-12);
+  // Add conversation history (last 8 exchanges max to control context size)
+  const recentHistory = conversationHistory.slice(-16);
   for (const msg of recentHistory) {
     messages.push({ role: msg.role, content: msg.content });
   }
@@ -58,35 +82,49 @@ export async function generateResponse(
 
   messages.push({ role: "user", content: userMessage });
 
-  // Create streaming response
   const client = getClient();
-  const stream = client.messages.stream({
-    model: MODEL,
-    max_tokens: 4096,
+  const selectedModel = MODELS[model];
+  const maxTokens = MAX_TOKENS[model];
+
+  // Build API params
+  const baseParams = {
+    model: selectedModel,
+    max_tokens: maxTokens,
     system: SYSTEM_PROMPT,
     messages,
+  };
+
+  // Extended thinking config
+  const thinkingConfig = thinking
+    ? { thinking: { type: "enabled" as const, budget_tokens: THINKING_BUDGET[model] } }
+    : {};
+
+  const stream = client.messages.stream({
+    ...baseParams,
+    ...thinkingConfig,
   });
 
-  // Create async iterable from stream
-  async function* textStream(): AsyncIterable<string> {
+  // Create async iterable from stream — yields both thinking and text events
+  async function* eventStream(): AsyncIterable<{ type: "text" | "thinking"; content: string }> {
     for await (const event of stream) {
-      if (
-        event.type === "content_block_delta" &&
-        event.delta.type === "text_delta"
-      ) {
-        yield event.delta.text;
+      if (event.type === "content_block_delta") {
+        if (event.delta.type === "thinking_delta") {
+          yield { type: "thinking", content: event.delta.thinking };
+        } else if (event.delta.type === "text_delta") {
+          yield { type: "text", content: event.delta.text };
+        }
       }
     }
 
     // Append sources list at the end
     if (chunks.length > 0) {
-      yield "\n\n---\n\n**Źródła:**\n";
-      yield buildSourcesList(chunks);
+      yield { type: "text", content: "\n\n---\n\n**Źródła:**\n" };
+      yield { type: "text", content: buildSourcesList(chunks) };
     }
   }
 
   return {
-    stream: textStream(),
+    stream: eventStream(),
     sources: chunks,
   };
 }
@@ -96,13 +134,15 @@ export async function generateResponse(
  */
 export async function generateResponseSync(
   options: GenerateOptions
-): Promise<{ text: string; sources: RetrievedChunk[] }> {
+): Promise<{ text: string; thinking: string; sources: RetrievedChunk[] }> {
   const { stream, sources } = await generateResponse(options);
 
   let text = "";
-  for await (const chunk of stream) {
-    text += chunk;
+  let thinking = "";
+  for await (const event of stream) {
+    if (event.type === "text") text += event.content;
+    if (event.type === "thinking") thinking += event.content;
   }
 
-  return { text, sources };
+  return { text, thinking, sources };
 }

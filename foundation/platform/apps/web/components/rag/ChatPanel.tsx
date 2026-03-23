@@ -1,9 +1,13 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { ChatMessage, type Message } from "./ChatMessage";
 import { ChatInput } from "./ChatInput";
 import { SourceCard, type Source } from "./SourceCard";
+import { ConversationList, type Conversation } from "./ConversationList";
+import { ModelSelector } from "./ModelSelector";
+
+type ModelChoice = "sonnet" | "opus";
 
 const SECTOR_OPTIONS = [
   { value: "jst", label: "JST (Administracja publiczna)" },
@@ -19,13 +23,127 @@ export function ChatPanel() {
   const [isStreaming, setIsStreaming] = useState(false);
   const [selectedSectors, setSelectedSectors] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [model, setModel] = useState<ModelChoice>("sonnet");
+  const [thinkingEnabled, setThinkingEnabled] = useState(true);
+  const [currentThinking, setCurrentThinking] = useState<string>("");
   const abortRef = useRef<AbortController | null>(null);
+
+  // Conversation persistence
+  const [conversations, setConversations] = useState<Conversation[]>([]);
+  const [activeConversationId, setActiveConversationId] = useState<string | null>(null);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
+  // Load conversations on mount
+  useEffect(() => {
+    fetchConversations();
+  }, []);
+
+  const fetchConversations = async () => {
+    try {
+      const res = await fetch("/api/rag/conversations");
+      if (res.ok) {
+        const data = await res.json();
+        setConversations(data);
+      }
+    } catch { /* ignore */ }
+  };
+
+  const createConversation = async (): Promise<string | null> => {
+    try {
+      const res = await fetch("/api/rag/conversations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ model, thinking_enabled: thinkingEnabled }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setConversations((prev) => [data, ...prev]);
+        return data.id;
+      }
+    } catch { /* ignore */ }
+    return null;
+  };
+
+  const loadConversation = async (id: string) => {
+    try {
+      const res = await fetch(`/api/rag/conversations/${id}`);
+      if (res.ok) {
+        const data = await res.json();
+        setActiveConversationId(id);
+        setModel(data.model || "sonnet");
+        setThinkingEnabled(data.thinking_enabled !== false);
+        setMessages(
+          (data.messages || []).map((m: { id: string; role: string; content: string; thinking?: string; created_at: string }) => ({
+            id: m.id,
+            role: m.role as "user" | "assistant",
+            content: m.content,
+            thinking: m.thinking || undefined,
+            timestamp: new Date(m.created_at),
+          }))
+        );
+        setSources([]);
+        setError(null);
+      }
+    } catch { /* ignore */ }
+  };
+
+  const deleteConversation = async (id: string) => {
+    try {
+      await fetch(`/api/rag/conversations/${id}`, { method: "DELETE" });
+      setConversations((prev) => prev.filter((c) => c.id !== id));
+      if (activeConversationId === id) {
+        setActiveConversationId(null);
+        setMessages([]);
+        setSources([]);
+      }
+    } catch { /* ignore */ }
+  };
+
+  const handleNewChat = () => {
+    setActiveConversationId(null);
+    setMessages([]);
+    setSources([]);
+    setError(null);
+    setCurrentThinking("");
+  };
+
+  const saveMessages = async (
+    convId: string,
+    userMsg: string,
+    assistantMsg: string,
+    thinking: string,
+    sourcesData: Source[]
+  ) => {
+    try {
+      await fetch(`/api/rag/conversations/${convId}/messages`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userMessage: userMsg,
+          assistantMessage: assistantMsg,
+          thinking: thinking || undefined,
+          sources: sourcesData,
+          model,
+        }),
+      });
+      fetchConversations(); // refresh list for updated titles
+    } catch { /* ignore */ }
+  };
 
   const handleSend = useCallback(
     async (text: string) => {
       if (!text.trim() || isStreaming) return;
 
       setError(null);
+      setCurrentThinking("");
+
+      // Ensure we have a conversation
+      let convId = activeConversationId;
+      if (!convId) {
+        convId = await createConversation();
+        if (convId) setActiveConversationId(convId);
+      }
+
       const userMessage: Message = {
         id: crypto.randomUUID(),
         role: "user",
@@ -45,6 +163,9 @@ export function ChatPanel() {
       const controller = new AbortController();
       abortRef.current = controller;
 
+      let fullAssistantText = "";
+      let fullThinking = "";
+
       try {
         const conversationHistory = messages.map((m) => ({
           role: m.role,
@@ -60,6 +181,8 @@ export function ChatPanel() {
             filters: {
               sectors: selectedSectors.length > 0 ? selectedSectors : undefined,
             },
+            model,
+            thinking: thinkingEnabled,
           }),
           signal: controller.signal,
         });
@@ -74,6 +197,7 @@ export function ChatPanel() {
 
         const decoder = new TextDecoder();
         let buffer = "";
+        let currentSources: Source[] = [];
 
         while (true) {
           const { done, value } = await reader.read();
@@ -92,8 +216,13 @@ export function ChatPanel() {
               const event = JSON.parse(json);
 
               if (event.type === "sources") {
+                currentSources = event.sources;
                 setSources(event.sources);
+              } else if (event.type === "thinking") {
+                fullThinking += event.text;
+                setCurrentThinking((prev) => prev + event.text);
               } else if (event.type === "text") {
+                fullAssistantText += event.text;
                 setMessages((prev) =>
                   prev.map((m) =>
                     m.id === assistantId
@@ -110,10 +239,23 @@ export function ChatPanel() {
             }
           }
         }
+
+        // Store thinking in the message
+        if (fullThinking) {
+          setMessages((prev) =>
+            prev.map((m) =>
+              m.id === assistantId ? { ...m, thinking: fullThinking } : m
+            )
+          );
+        }
+
+        // Persist to Supabase
+        if (convId) {
+          saveMessages(convId, text, fullAssistantText, fullThinking, currentSources);
+        }
       } catch (err) {
         if (err instanceof Error && err.name === "AbortError") return;
-        setError(err instanceof Error ? err.message : "Wystapil blad");
-        // Remove empty assistant message on error
+        setError(err instanceof Error ? err.message : "Wystąpił błąd");
         setMessages((prev) =>
           prev.filter(
             (m) => !(m.id === assistantId && m.content === "")
@@ -121,10 +263,12 @@ export function ChatPanel() {
         );
       } finally {
         setIsStreaming(false);
+        setCurrentThinking("");
         abortRef.current = null;
       }
     },
-    [isStreaming, messages, selectedSectors]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [isStreaming, messages, selectedSectors, model, thinkingEnabled, activeConversationId]
   );
 
   const handleStop = useCallback(() => {
@@ -133,9 +277,69 @@ export function ChatPanel() {
   }, []);
 
   return (
-    <div className="flex h-[calc(100vh-200px)] max-w-6xl mx-auto gap-4">
+    <div className="flex h-[calc(100vh-200px)]">
+      {/* Conversation sidebar */}
+      <div
+        className={`${
+          sidebarOpen ? "w-64" : "w-0"
+        } transition-all duration-200 overflow-hidden border-r border-gray-200 bg-gray-50 flex-shrink-0`}
+      >
+        <ConversationList
+          conversations={conversations}
+          activeId={activeConversationId}
+          onSelect={loadConversation}
+          onDelete={deleteConversation}
+          onNewChat={handleNewChat}
+        />
+      </div>
+
       {/* Main chat area */}
       <div className="flex-1 flex flex-col min-w-0">
+        {/* Top bar: model selector + sidebar toggle */}
+        <div className="flex items-center gap-3 px-4 py-2 border-b border-gray-100 bg-white">
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500"
+            title={sidebarOpen ? "Ukryj historię" : "Pokaż historię"}
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+
+          <ModelSelector
+            model={model}
+            onModelChange={setModel}
+            thinkingEnabled={thinkingEnabled}
+            onThinkingChange={setThinkingEnabled}
+          />
+
+          <div className="flex-1" />
+
+          {activeConversationId && (
+            <span className="text-xs text-gray-400 font-mono">
+              {activeConversationId.slice(0, 8)}
+            </span>
+          )}
+        </div>
+
+        {/* Thinking indicator */}
+        {currentThinking && isStreaming && (
+          <div className="px-4 py-2 bg-amber-50 border-b border-amber-100">
+            <details open className="text-xs">
+              <summary className="cursor-pointer text-amber-700 font-medium flex items-center gap-1.5">
+                <svg className="w-3.5 h-3.5 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                Myślenie głębokie... ({currentThinking.length} znaków)
+              </summary>
+              <pre className="mt-1 text-[11px] text-amber-800/70 whitespace-pre-wrap max-h-32 overflow-y-auto font-mono leading-relaxed">
+                {currentThinking.slice(-1000)}
+              </pre>
+            </details>
+          </div>
+        )}
+
         {/* Messages */}
         <div className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
           {messages.length === 0 && (
@@ -144,10 +348,20 @@ export function ChatPanel() {
               <h2 className="text-xl font-semibold text-gray-600 mb-2">
                 Certo Methodology Agent
               </h2>
-              <p className="text-sm max-w-md mx-auto">
-                Zadaj pytanie dotyczace metodologii oceny jakosci zarzadzania,
+              <p className="text-sm max-w-md mx-auto mb-4">
+                Zadaj pytanie dotyczące metodologii oceny jakości zarządzania,
                 norm sektorowych, struktury ratingu lub regulacji.
               </p>
+              <div className="flex items-center justify-center gap-2 text-xs text-gray-400">
+                <span className={`px-2 py-0.5 rounded-full ${model === "opus" ? "bg-purple-100 text-purple-700" : "bg-blue-100 text-blue-700"}`}>
+                  {model === "opus" ? "Claude Opus" : "Claude Sonnet"}
+                </span>
+                {thinkingEnabled && (
+                  <span className="px-2 py-0.5 rounded-full bg-amber-100 text-amber-700">
+                    Extended Thinking
+                  </span>
+                )}
+              </div>
             </div>
           )}
 
@@ -172,7 +386,7 @@ export function ChatPanel() {
         </div>
       </div>
 
-      {/* Sidebar: filters + sources */}
+      {/* Right sidebar: filters + sources */}
       <div className="w-72 border-l border-gray-200 overflow-y-auto px-4 py-4 hidden lg:block">
         {/* Sector filters */}
         <div className="mb-6">
@@ -209,7 +423,7 @@ export function ChatPanel() {
         {sources.length > 0 && (
           <div>
             <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-              Zrodla ({sources.length})
+              Źródła ({sources.length})
             </h3>
             <div className="space-y-2">
               {sources.map((source, i) => (
