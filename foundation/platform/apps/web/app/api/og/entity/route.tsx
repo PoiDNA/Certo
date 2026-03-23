@@ -109,7 +109,7 @@ export async function GET(request: NextRequest) {
         <div
           style={{
             position: 'absolute',
-            top: '200px',
+            top: '160px',
             left: '60px',
             right: '60px',
             display: 'flex',
@@ -120,7 +120,7 @@ export async function GET(request: NextRequest) {
           <span
             style={{
               color: 'white',
-              fontSize: '38px',
+              fontSize: '46px',
               fontWeight: 'bold',
               lineHeight: 1.3,
               maxWidth: '1080px',
@@ -132,28 +132,37 @@ export async function GET(request: NextRequest) {
           </span>
         </div>
 
-        {/* Votes - center bottom */}
+        {/* Votes with thumbs up - center bottom */}
         <div
           style={{
             position: 'absolute',
-            bottom: '80px',
+            bottom: '60px',
             left: '0',
             right: '0',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '4px',
+            gap: '2px',
           }}
         >
-          <span
+          <div
             style={{
-              color: 'white',
-              fontSize: '24px',
-              fontWeight: 'bold',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
             }}
           >
-            {votes}
-          </span>
+            <span style={{ fontSize: '48px' }}>👍</span>
+            <span
+              style={{
+                color: 'white',
+                fontSize: '48px',
+                fontWeight: 'bold',
+              }}
+            >
+              {votes}
+            </span>
+          </div>
           <span
             style={{
               color: 'rgba(255,255,255,0.7)',
