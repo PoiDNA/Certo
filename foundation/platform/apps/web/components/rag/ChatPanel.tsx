@@ -25,6 +25,9 @@ export function ChatPanel() {
   const [error, setError] = useState<string | null>(null);
   const [expandedQueries, setExpandedQueries] = useState<string[]>([]);
   const [wasSummarized, setWasSummarized] = useState(false);
+  const [graphConcepts, setGraphConcepts] = useState<Array<{ name: string; type: string; sectors: string[]; similarity: number }>>([]);
+  const [appliedRules, setAppliedRules] = useState<Array<{ name: string; type: string; sectors: string[]; regulation?: string }>>([]);
+  const [ruleConflicts, setRuleConflicts] = useState<string[]>([]);
   const [model, setModel] = useState<ModelChoice>("sonnet");
   const [thinkingEnabled, setThinkingEnabled] = useState(true);
   const [currentThinking, setCurrentThinking] = useState<string>("");
@@ -222,6 +225,9 @@ export function ChatPanel() {
                 setSources(event.sources);
                 if (event.expandedQueries) setExpandedQueries(event.expandedQueries);
                 if (event.summarized) setWasSummarized(true);
+                if (event.concepts) setGraphConcepts(event.concepts);
+                if (event.rules) setAppliedRules(event.rules);
+                if (event.conflicts) setRuleConflicts(event.conflicts);
               } else if (event.type === "thinking") {
                 fullThinking += event.text;
                 setCurrentThinking((prev) => prev + event.text);
@@ -475,6 +481,78 @@ export function ChatPanel() {
             )}
           </div>
         )}
+
+        {/* Knowledge Graph Concepts */}
+        {graphConcepts.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+              🔗 Koncepty ({graphConcepts.length})
+            </h3>
+            <div className="flex flex-wrap gap-1">
+              {graphConcepts.map((c, i) => (
+                <span
+                  key={i}
+                  className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                    c.type === "regulation" ? "bg-blue-50 text-blue-700" :
+                    c.type === "requirement" ? "bg-red-50 text-red-700" :
+                    c.type === "process" ? "bg-green-50 text-green-700" :
+                    c.type === "role" ? "bg-purple-50 text-purple-700" :
+                    c.type === "risk_category" ? "bg-orange-50 text-orange-700" :
+                    "bg-gray-100 text-gray-600"
+                  }`}
+                  title={`${c.type} | sektory: ${c.sectors.join(",")} | similarity: ${c.similarity.toFixed(2)}`}
+                >
+                  {c.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Applied Rules */}
+        {appliedRules.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+              📋 Reguły ({appliedRules.length})
+            </h3>
+            <div className="space-y-1.5">
+              {appliedRules.slice(0, 6).map((r, i) => (
+                <div key={i} className="text-[11px] p-1.5 rounded bg-gray-50 border border-gray-100">
+                  <p className="font-medium text-gray-700">{r.name}</p>
+                  <div className="flex items-center gap-1 mt-0.5">
+                    <span className={`text-[9px] px-1 py-0.5 rounded ${
+                      r.type === "requirement" ? "bg-blue-50 text-blue-600" :
+                      r.type === "prohibition" ? "bg-red-50 text-red-600" :
+                      "bg-gray-100 text-gray-500"
+                    }`}>
+                      {r.type}
+                    </span>
+                    {r.regulation && (
+                      <span className="text-[9px] text-amber-600">{r.regulation}</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Rule Conflicts */}
+        {ruleConflicts.length > 0 && (
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold text-red-500 uppercase tracking-wider mb-2">
+              ⚠️ Konflikty ({ruleConflicts.length})
+            </h3>
+            <div className="space-y-1">
+              {ruleConflicts.map((c, i) => (
+                <p key={i} className="text-[10px] text-red-600 leading-tight p-1.5 rounded bg-red-50 border border-red-100">
+                  {c}
+                </p>
+              ))}
+            </div>
+          </div>
+        )}
+
 
         {/* Sources */}
         {sources.length > 0 && (

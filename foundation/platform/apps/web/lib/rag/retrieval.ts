@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { graphExpandedSearch, type GraphSearchResult } from "./graph";
 
 // Supabase client for RAG operations
 let _supabase: ReturnType<typeof createClient> | null = null;
@@ -98,6 +99,12 @@ export interface SearchFilters {
   includeConfidential?: boolean;
 }
 
+export interface HybridSearchResult {
+  chunks: RetrievedChunk[];
+  graphData: GraphSearchResult;
+}
+
+
 /**
  * Sector relevance detection: infer which sectors a query relates to
  * based on keyword matching. Used for automatic sector boosting.
@@ -192,15 +199,20 @@ export async function multiQueryHybridSearch(
   queries: string[],
   filters: SearchFilters = {},
   topK: number = 8
-): Promise<RetrievedChunk[]> {
+): Promise<HybridSearchResult> {
   if (queries.length <= 1) {
-    return hybridSearch(queries[0] || "", filters, topK);
+    const chunks = await hybridSearch(queries[0] || "", filters, topK);
+    return { chunks, graphData: { concepts: [], relationships: [], chunkIds: [] } };
   }
 
   const sb = getSupabase();
 
-  // Run semantic + keyword for ALL queries in parallel
+  // Run semantic + keyword for ALL queries in parallel + graph search
   const allEmbeddings = await Promise.all(queries.map((q) => embedQuery(q)));
+
+  // Graph search runs in parallel with traditional search
+  const graphPromise = graphExpandedSearch(allEmbeddings[0], filters.sectors);
+
 
   const searchPromises = queries.flatMap((q, qi) => [
     (sb.rpc as any)("match_rag_chunks", {
@@ -220,7 +232,11 @@ export async function multiQueryHybridSearch(
     }),
   ]);
 
-  const results = await Promise.all(searchPromises);
+  const [searchResults, graphData] = await Promise.all([
+    Promise.all(searchPromises),
+    graphPromise,
+  ]);
+  const results = searchResults;
 
   // Collect all chunks into a unified map
   const chunkMap = new Map<string, {
@@ -254,11 +270,27 @@ export async function multiQueryHybridSearch(
     chunkSectors.set(id, chunk.doc_sector);
   }
 
-  // RRF fusion across all queries with sector boost
+  // Add graph-derived chunk hits (weight 0.3x relative to semantic/keyword)
+  const graphHits: Array<{ id: string; score: number }> = [];
+  if (graphData.chunkIds.length > 0) {
+    graphData.chunkIds.forEach((gc, rank) => {
+      graphHits.push({ id: gc.id, score: gc.score });
+    });
+  }
+
+  // RRF fusion across all queries with sector boost + graph hits
   const rrfScores = rrfFuse(semanticHits, keywordHits, 60, {
     chunkSectors,
     querySectors,
   });
+
+  // Add graph scores with 0.3x weight
+  const GRAPH_WEIGHT = 0.3;
+  graphHits.forEach((gh, rank) => {
+    const current = rrfScores.get(gh.id) || 0;
+    rrfScores.set(gh.id, current + GRAPH_WEIGHT * (1 / (60 + rank + 1)));
+  });
+
 
   // Sort by RRF score, take top 40 for reranking
   const fusedIds = [...rrfScores.entries()]
@@ -270,7 +302,9 @@ export async function multiQueryHybridSearch(
     .map((id) => chunkMap.get(id))
     .filter((c): c is NonNullable<typeof c> => c !== undefined);
 
-  if (fusedChunks.length === 0) return [];
+  if (fusedChunks.length === 0) {
+    return { chunks: [], graphData };
+  }
 
   // Rerank against the ORIGINAL query (first one)
   const reranked = await rerank(
@@ -279,7 +313,7 @@ export async function multiQueryHybridSearch(
     topK
   );
 
-  return reranked.map((r) => {
+  const chunks = reranked.map((r) => {
     const chunk = fusedChunks[r.index];
     return {
       id: chunk.id,
@@ -294,6 +328,8 @@ export async function multiQueryHybridSearch(
       score: r.relevance_score,
     };
   });
+
+  return { chunks, graphData };
 }
 
 /**
