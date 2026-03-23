@@ -46,11 +46,12 @@ export default function ShareButton({ id, name, city, country, sector, compact }
   const location = [city, countryName].filter(Boolean).join(', ');
   const icon = sector ? SECTOR_ICONS[sector] || '📋' : '📋';
 
-  const shareText = `${icon} ${name}${location ? ` z ${location}` : ''} została zgłoszona do oceny wiarygodności publicznej Rating Certo!\nPoprzej ten podmiot 👍 ${entityUrl}\n#RatingCerto #Governance`;
-  const shareTextShort = `${icon} ${name} — ocena wiarygodności Rating Certo`;
+  const cityPart = city ? ` (${city})` : '';
+  const shareText = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Rating Certo!\nPoprzej ten podmiot 👍 ${entityUrl}\n#RatingCerto #Governance`;
+  const shareTextShort = `${name}${cityPart} — ocena wiarygodności Rating Certo`;
 
   const shareToX = () => {
-    const text = `${icon} ${name}${location ? ` z ${location}` : ''} została zgłoszona do oceny wiarygodności publicznej Rating Certo!\n\nPoprzej ten podmiot 👍\n\n#RatingCerto #Governance`;
+    const text = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Rating Certo!\n\nPoprzej ten podmiot 👍\n\n#RatingCerto #Governance`;
     window.open(
       `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(entityUrl)}`,
       '_blank',
