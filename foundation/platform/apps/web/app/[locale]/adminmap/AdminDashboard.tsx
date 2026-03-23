@@ -117,14 +117,14 @@ export default function AdminDashboard() {
   if (!authenticated) {
     return (
       <div className="max-w-md mx-auto mt-20">
-        <h2 className="font-serif font-bold text-certo-navy text-xl mb-4 text-center">Autoryzacja</h2>
+        <h2 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-xl mb-4 text-center">Autoryzacja</h2>
         <div className="space-y-4">
           <input
             type="password"
             value={adminKey}
             onChange={(e) => setAdminKey(e.target.value)}
             placeholder="Klucz administratora"
-            className="w-full px-4 py-3 border border-certo-navy/10 rounded-xl text-sm"
+            className="w-full px-4 py-3 border border-certo-navy/10 dark:border-certo-dark-border rounded-xl text-sm dark:bg-certo-dark-surface dark:text-certo-dark-text"
           />
           <button
             onClick={() => { setLoading(true); fetchApps(adminKey); }}
@@ -152,9 +152,9 @@ export default function AdminDashboard() {
     <div className="space-y-6">
       {/* Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="bg-white rounded-xl p-4 border text-center">
-          <div className="text-2xl font-bold text-certo-navy">{stats.total}</div>
-          <div className="text-xs text-certo-navy/40">Wszystkie</div>
+        <div className="bg-white dark:bg-certo-dark-surface rounded-xl p-4 border dark:border-certo-dark-border text-center">
+          <div className="text-2xl font-bold text-certo-navy dark:text-certo-dark-text">{stats.total}</div>
+          <div className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Wszystkie</div>
         </div>
         <div className="bg-blue-50 rounded-xl p-4 border text-center">
           <div className="text-2xl font-bold text-blue-700">{stats.new}</div>
@@ -177,7 +177,7 @@ export default function AdminDashboard() {
             key={s}
             onClick={() => setFilter(s)}
             className={`px-4 py-2 text-xs rounded-lg transition-colors ${
-              filter === s ? 'bg-certo-navy text-white' : 'bg-white border text-certo-navy/60 hover:border-certo-navy/30'
+              filter === s ? 'bg-certo-navy text-white' : 'bg-white dark:bg-certo-dark-surface border dark:border-certo-dark-border text-certo-navy/60 dark:text-certo-dark-text/60 hover:border-certo-navy/30'
             }`}
           >
             {s === 'all' ? 'Wszystkie' : s === 'new' ? 'Nowe' : s === 'reviewed' ? 'Rozpatrywane' : s === 'accepted' ? 'Zaakceptowane' : 'Odrzucone'}
@@ -188,13 +188,13 @@ export default function AdminDashboard() {
       {/* Applications list */}
       <div className="space-y-3">
         {apps.length === 0 ? (
-          <div className="bg-white rounded-xl p-8 text-center text-certo-navy/30">Brak zgłoszeń</div>
+          <div className="bg-white dark:bg-certo-dark-surface rounded-xl p-8 text-center text-certo-navy/30 dark:text-certo-dark-muted">Brak zgłoszeń</div>
         ) : (
           apps.map((app) => (
-            <div key={app.id} className="bg-white rounded-xl border overflow-hidden">
+            <div key={app.id} className="bg-white dark:bg-certo-dark-surface rounded-xl border dark:border-certo-dark-border overflow-hidden">
               {/* Header row */}
               <div
-                className="flex items-center gap-4 p-4 cursor-pointer hover:bg-certo-cream/30 transition-colors"
+                className="flex items-center gap-4 p-4 cursor-pointer hover:bg-certo-cream/30 dark:hover:bg-certo-dark-card transition-colors"
                 onClick={() => setExpanded(expanded === app.id ? null : app.id)}
               >
                 <span className={`px-2 py-0.5 text-xs rounded-full ${STATUS_COLORS[app.status] || ''}`}>
@@ -203,7 +203,7 @@ export default function AdminDashboard() {
                 {app.ai_verified && (
                   <span className="px-2 py-0.5 text-xs rounded-full bg-purple-100 text-purple-700">AI ✓</span>
                 )}
-                <span className="font-medium text-sm text-certo-navy flex-1">{app.organization_name}</span>
+                <span className="font-medium text-sm text-certo-navy dark:text-certo-dark-text flex-1">{app.organization_name}</span>
                 <span className="text-xs text-certo-navy/40">{SECTOR_LABELS[app.sector]}</span>
                 <span className="text-xs text-certo-navy/40">{app.city || ''} {app.country ? COUNTRY_NAMES[app.country] || app.country : ''}</span>
                 <span className="text-xs text-certo-navy/30">{new Date(app.created_at).toLocaleDateString('pl-PL')}</span>
@@ -220,7 +220,7 @@ export default function AdminDashboard() {
 
               {/* Expanded details */}
               {expanded === app.id && (
-                <div className="border-t p-4 bg-certo-cream/20 space-y-4">
+                <div className="border-t dark:border-certo-dark-border p-4 bg-certo-cream/20 dark:bg-certo-dark-card space-y-4">
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
                     <div><span className="text-certo-navy/40 block">Typ zgłaszającego</span><span className="text-certo-navy">{app.applicant_type}</span></div>
                     <div><span className="text-certo-navy/40 block">Osoba kontaktowa</span><span className="text-certo-navy">{app.contact_person}</span></div>

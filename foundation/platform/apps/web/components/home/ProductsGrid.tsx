@@ -17,7 +17,7 @@ export default function ProductsGrid() {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="w-full py-20 md:py-32 bg-certo-cream">
+    <section className="w-full py-20 md:py-32 bg-certo-cream dark:bg-certo-dark-bg">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
@@ -26,7 +26,7 @@ export default function ProductsGrid() {
           <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-4 font-medium">
             Ekosystem
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy dark:text-certo-dark-text">
             {t('products_title')}
           </h2>
         </div>
@@ -35,7 +35,7 @@ export default function ProductsGrid() {
           {products.map(({ key, icon }) => (
             <div
               key={key}
-              className="bg-white p-8 border border-certo-navy/5 rounded-lg hover:border-certo-gold/30 transition-colors"
+              className="bg-white dark:bg-certo-dark-surface p-8 border border-certo-navy/5 dark:border-certo-dark-border rounded-lg hover:border-certo-gold/30 transition-colors"
             >
               {/* Icon + Title side by side */}
               <div className="flex items-center gap-4 mb-4">
@@ -44,11 +44,11 @@ export default function ProductsGrid() {
                   alt={key}
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
-                <h3 className="font-serif font-bold text-certo-navy text-xl md:text-2xl">
+                <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-xl md:text-2xl">
                   {t(`product_${key}_name`)}
                 </h3>
               </div>
-              <p className="text-sm text-certo-navy/60 leading-relaxed">
+              <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
                 {t(`product_${key}_desc`)}
               </p>
             </div>

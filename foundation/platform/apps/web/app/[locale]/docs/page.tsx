@@ -45,8 +45,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <div className="py-12 max-w-6xl mx-auto px-6">
       <div className="mb-12 border-b border-certo-gold/30 pb-6">
-        <h2 className="text-3xl font-serif font-bold text-certo-navy tracking-tight">Dokumentacja Sprint 0</h2>
-        <p className="mt-2 text-md text-certo-navy/70 max-w-2xl">
+        <h2 className="text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text tracking-tight">Dokumentacja Sprint 0</h2>
+        <p className="mt-2 text-md text-certo-navy/70 dark:text-certo-dark-text/70 max-w-2xl">
           Komplet dokumentów zatwierdzanych uchwałą Zarządu Fundacji Certo + opinia Izby Nadzoru
         </p>
       </div>
@@ -91,20 +91,20 @@ function DocumentSection({ locale, title, subtitle, docs }: {
   
   return (
     <div className="mb-12">
-      <h3 className="text-2xl font-serif font-bold text-certo-navy mb-1">{title}</h3>
-      <p className="text-sm text-certo-navy/60 mb-6 font-medium tracking-wide uppercase">{subtitle}</p>
+      <h3 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-1">{title}</h3>
+      <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 mb-6 font-medium tracking-wide uppercase">{subtitle}</p>
       
       <div className="grid gap-4">
         {docs.map(doc => (
           <Link 
             key={doc.slug} 
             href={`/${locale}/documents/${doc.slug}`}
-            className="block bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group"
+            className="block bg-white dark:bg-certo-dark-surface border border-certo-navy/10 dark:border-certo-dark-border p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group"
           >
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
               <div>
-                <h4 className="font-serif font-semibold text-lg text-certo-navy group-hover:text-certo-gold transition-colors">{doc.title}</h4>
-                <p className="text-xs text-certo-navy/50 mt-2 font-medium tracking-wide uppercase">
+                <h4 className="font-serif font-semibold text-lg text-certo-navy dark:text-certo-dark-text group-hover:text-certo-gold transition-colors">{doc.title}</h4>
+                <p className="text-xs text-certo-navy/50 dark:text-certo-dark-muted mt-2 font-medium tracking-wide uppercase">
                   {doc.category} <span className="mx-1.5 text-certo-gold/50">•</span> v{doc.version} <span className="mx-1.5 text-certo-gold/50">•</span> {doc.updatedAt}
                 </p>
               </div>

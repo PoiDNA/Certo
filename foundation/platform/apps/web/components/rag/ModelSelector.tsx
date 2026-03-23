@@ -18,13 +18,13 @@ export function ModelSelector({
   return (
     <div className="flex items-center gap-3">
       {/* Model toggle */}
-      <div className="flex items-center rounded-lg border border-gray-200 overflow-hidden text-xs">
+      <div className="flex items-center rounded-lg border border-gray-200 dark:border-certo-dark-border overflow-hidden text-xs">
         <button
           onClick={() => onModelChange("sonnet")}
           className={`px-3 py-1.5 transition-colors ${
             model === "sonnet"
               ? "bg-blue-600 text-white"
-              : "bg-white text-gray-600 hover:bg-gray-50"
+              : "bg-white dark:bg-certo-dark-surface text-gray-600 dark:text-certo-dark-muted hover:bg-gray-50 dark:hover:bg-certo-dark-card"
           }`}
         >
           Sonnet
@@ -34,7 +34,7 @@ export function ModelSelector({
           className={`px-3 py-1.5 transition-colors ${
             model === "opus"
               ? "bg-purple-600 text-white"
-              : "bg-white text-gray-600 hover:bg-gray-50"
+              : "bg-white dark:bg-certo-dark-surface text-gray-600 dark:text-certo-dark-muted hover:bg-gray-50 dark:hover:bg-certo-dark-card"
           }`}
         >
           Opus
@@ -42,7 +42,7 @@ export function ModelSelector({
       </div>
 
       {/* Thinking toggle */}
-      <label className="flex items-center gap-1.5 cursor-pointer text-xs text-gray-600">
+      <label className="flex items-center gap-1.5 cursor-pointer text-xs text-gray-600 dark:text-certo-dark-muted">
         <div
           className={`relative w-8 h-4.5 rounded-full transition-colors ${
             thinkingEnabled ? "bg-amber-500" : "bg-gray-300"

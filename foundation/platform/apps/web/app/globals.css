@@ -6,16 +6,50 @@
   --color-certo-gold: #C49A3C;
   --color-certo-gold-light: #D4AF6A;
 
+  /* Dark mode palette */
+  --color-certo-dark-bg: #0F1219;
+  --color-certo-dark-surface: #1A2235;
+  --color-certo-dark-card: #232D3F;
+  --color-certo-dark-text: #E8E4DC;
+  --color-certo-dark-muted: #A0A0A0;
+  --color-certo-dark-border: #2A3548;
+  --color-certo-dark-header: #0A0E15;
+
   --font-serif: Georgia, "Playfair Display", serif;
   --font-sans: system-ui, sans-serif;
 }
 
-/* Base resets or globals */
+/* ═══════════════════════════════════════════════════════════════ */
+/* LIGHT MODE (default)                                           */
+/* ═══════════════════════════════════════════════════════════════ */
+
 body {
   font-family: var(--font-sans);
   background-color: var(--color-certo-cream);
   color: var(--color-certo-navy);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* DARK MODE — mirrors the light palette: navy↔cream swap          */
+/* ═══════════════════════════════════════════════════════════════ */
+
+.dark body,
+body.dark {
+  background-color: var(--color-certo-dark-bg);
+  color: var(--color-certo-dark-text);
+}
+
+/* Dark mode prose */
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3 { color: var(--color-certo-dark-text); }
+.dark .prose h2 { border-bottom-color: var(--color-certo-gold); }
+.dark .prose th { background: rgba(196, 154, 60, 0.15); color: var(--color-certo-dark-text); border-color: rgba(196, 154, 60, 0.3); }
+.dark .prose td { border-color: var(--color-certo-dark-border); }
+.dark .prose code { background: rgba(232, 228, 220, 0.08); color: var(--color-certo-dark-text); }
+.dark .prose pre { background: var(--color-certo-dark-header); }
+.dark .prose blockquote { color: rgba(232, 228, 220, 0.7); }
 
 h1, h2, h3, h4, h5, h6, .font-serif {
   font-family: var(--font-serif);

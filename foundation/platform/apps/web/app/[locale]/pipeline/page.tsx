@@ -51,26 +51,26 @@ export default async function PipelinePage({ params }: { params: Promise<{ local
   return (
     <div className="py-12 max-w-6xl mx-auto px-6">
       <div className="mb-12 border-b border-certo-gold/30 pb-6">
-        <h2 className="text-3xl font-serif font-bold text-certo-navy tracking-tight">Pipeline Status</h2>
-        <p className="mt-2 text-md text-certo-navy/70 max-w-2xl font-medium tracking-wide">
+        <h2 className="text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text tracking-tight">Pipeline Status</h2>
+        <p className="mt-2 text-md text-certo-navy/70 dark:text-certo-dark-text/70 max-w-2xl font-medium tracking-wide">
           Claude Code <span className="text-certo-gold">→</span> Gemini 2.5 Pro <span className="text-certo-gold">→</span> Automatyczny Review i Merge
         </p>
       </div>
 
       {/* Active runs */}
       <section className="mb-12">
-        <h3 className="text-2xl font-serif font-bold text-certo-navy mb-6">Aktywne zadania</h3>
+        <h3 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-6">Aktywne zadania</h3>
         {(!runs || runs.length === 0) ? (
-          <p className="text-sm text-certo-navy/60 italic p-6 border border-dashed border-certo-navy/20 text-center">
+          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-muted italic p-6 border border-dashed border-certo-navy/20 dark:border-certo-dark-border text-center">
             Brak aktywnych zadań. Stwórz Issue na GitHub z labelem <code className="bg-certo-navy/5 text-certo-navy px-1.5 py-0.5 rounded-sm">pipeline/doc</code>.
           </p>
         ) : (
           <div className="grid gap-4">
             {runs?.map((run: any) => (
-              <div key={run.id} className="bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group">
+              <div key={run.id} className="bg-white dark:bg-certo-dark-surface border border-certo-navy/10 dark:border-certo-dark-border p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <span className="font-serif font-semibold text-lg text-certo-navy group-hover:text-certo-gold transition-colors">Issue #{run.issue_number}</span>
+                    <span className="font-serif font-semibold text-lg text-certo-navy dark:text-certo-dark-text group-hover:text-certo-gold transition-colors">Issue #{run.issue_number}</span>
                     <span className="text-xs text-certo-navy/50 ml-3 font-medium tracking-wide uppercase"><span className="text-certo-gold/50 mr-2">•</span> {run.branch}</span>
                   </div>
                   <div className="flex items-center gap-4">
@@ -88,18 +88,18 @@ export default async function PipelinePage({ params }: { params: Promise<{ local
 
       {/* Recent reviews */}
       <section>
-        <h3 className="text-2xl font-serif font-bold text-certo-navy mb-6">Ostatnie recenzje <span className="text-certo-gold">(Gemini)</span></h3>
+        <h3 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-6">Ostatnie recenzje <span className="text-certo-gold">(Gemini)</span></h3>
         {(!reviews || reviews.length === 0) ? (
-          <p className="text-sm text-certo-navy/60 italic p-6 border border-dashed border-certo-navy/20 text-center">
+          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-muted italic p-6 border border-dashed border-certo-navy/20 dark:border-certo-dark-border text-center">
             Brak zrealizowanych recenzji.
           </p>
         ) : (
           <div className="grid gap-4">
             {reviews?.map((review: any) => (
-              <div key={review.id} className="bg-white border border-certo-navy/10 p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group">
+              <div key={review.id} className="bg-white dark:bg-certo-dark-surface border border-certo-navy/10 dark:border-certo-dark-border p-5 hover:border-certo-gold hover:shadow-md transition-all duration-300 rounded-[2px] group">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <span className="font-serif font-semibold text-lg text-certo-navy group-hover:text-certo-gold transition-colors">{review.documents?.title || "—"}</span>
+                    <span className="font-serif font-semibold text-lg text-certo-navy dark:text-certo-dark-text group-hover:text-certo-gold transition-colors">{review.documents?.title || "—"}</span>
                     <span className="text-xs text-certo-navy/50 ml-3 font-medium tracking-wide uppercase"><span className="text-certo-gold/50 mr-2">•</span> PR #{review.pr_number}</span>
                   </div>
                   <div className="flex items-center gap-4">

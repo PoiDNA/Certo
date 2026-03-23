@@ -52,20 +52,20 @@ export default async function ExpertsPage({ params }: { params: Promise<{ locale
 
       {/* Profiles */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-serif font-bold text-certo-navy mb-8">{t('profiles_title')}</h2>
+        <h2 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-8">{t('profiles_title')}</h2>
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {profiles.map((profile) => (
-            <div key={profile} className="bg-white p-6 border border-certo-navy/5 hover:border-certo-gold/30 transition-colors">
-              <h3 className="font-serif font-extrabold text-certo-navy text-[2.625rem] leading-tight md:text-xl mb-2">{t(`profile_${profile}`)}</h3>
-              <p className="text-sm text-certo-navy/60 leading-relaxed">{t(`profile_${profile}_desc`)}</p>
+            <div key={profile} className="bg-white dark:bg-certo-dark-surface p-6 border border-certo-navy/5 dark:border-certo-dark-border hover:border-certo-gold/30 transition-colors">
+              <h3 className="font-serif font-extrabold text-certo-navy dark:text-certo-dark-text text-[2.625rem] leading-tight md:text-xl mb-2">{t(`profile_${profile}`)}</h3>
+              <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">{t(`profile_${profile}_desc`)}</p>
             </div>
           ))}
         </div>
 
         {/* Accreditation */}
-        <div className="bg-certo-gold/5 border-l-4 border-certo-gold p-8 mb-16">
-          <h2 className="text-2xl font-serif font-bold text-certo-navy mb-3">{t('accreditation_title')}</h2>
-          <p className="text-sm text-certo-navy/70 leading-relaxed">{t('accreditation_desc')}</p>
+        <div className="bg-certo-gold/5 dark:bg-certo-dark-card border-l-4 border-certo-gold p-8 mb-16">
+          <h2 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-3">{t('accreditation_title')}</h2>
+          <p className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 leading-relaxed">{t('accreditation_desc')}</p>
         </div>
 
         {/* CTA to certo.consulting */}

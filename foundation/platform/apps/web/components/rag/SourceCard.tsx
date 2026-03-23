@@ -45,18 +45,18 @@ export function SourceCard({
   return (
     <button
       onClick={() => setExpanded(!expanded)}
-      className="w-full text-left p-2.5 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors bg-white"
+      className="w-full text-left p-2.5 rounded-lg border border-gray-200 dark:border-certo-dark-border hover:border-gray-300 dark:hover:border-certo-dark-border transition-colors bg-white dark:bg-certo-dark-card"
     >
       <div className="flex items-start gap-2">
-        <span className="text-xs font-mono text-gray-400 mt-0.5">
+        <span className="text-xs font-mono text-gray-400 dark:text-certo-dark-muted mt-0.5">
           [{index}]
         </span>
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-medium text-gray-800 truncate">
+          <p className="text-xs font-medium text-gray-800 dark:text-certo-dark-text truncate">
             {source.docTitle}
           </p>
           {source.heading && (
-            <p className="text-xs text-gray-500 truncate mt-0.5">
+            <p className="text-xs text-gray-500 dark:text-certo-dark-muted truncate mt-0.5">
               {source.heading}
             </p>
           )}

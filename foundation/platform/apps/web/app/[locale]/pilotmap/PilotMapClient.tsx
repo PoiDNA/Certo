@@ -52,7 +52,7 @@ export default function PilotMapClient() {
   if (loading) {
     return (
       <div className="space-y-6">
-        <div className="w-full h-[500px] bg-white rounded-xl border border-certo-navy/10 animate-pulse" />
+        <div className="w-full h-[500px] bg-white dark:bg-certo-dark-surface rounded-xl border border-certo-navy/10 dark:border-certo-dark-border animate-pulse" />
       </div>
     );
   }
@@ -88,8 +88,8 @@ export default function PilotMapClient() {
 
       {/* Cluster filter indicator */}
       {clusterHighlight && (
-        <div className="flex items-center justify-between bg-white rounded-lg px-4 py-2 border border-certo-gold/30">
-          <span className="text-xs text-certo-navy/60">
+        <div className="flex items-center justify-between bg-white dark:bg-certo-dark-surface rounded-lg px-4 py-2 border border-certo-gold/30">
+          <span className="text-xs text-certo-navy/60 dark:text-certo-dark-text/60">
             Wybrano <strong className="text-certo-navy">{clusterHighlight.size}</strong> podmiotów z mapy
           </span>
           <button onClick={() => setClusterHighlight(null)} className="text-xs text-certo-gold hover:text-certo-navy">

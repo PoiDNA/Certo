@@ -59,8 +59,8 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
 
         {/* Program description */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-4">{t('program_title')}</h2>
-          <p className="text-base text-certo-navy/70 leading-relaxed">{t('program_description')}</p>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-4">{t('program_title')}</h2>
+          <p className="text-base text-certo-navy/70 dark:text-certo-dark-text/70 leading-relaxed">{t('program_description')}</p>
         </div>
 
         {/* Who can apply — interactive paths */}
@@ -68,12 +68,12 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
 
         {/* Sectors */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6">{t('form_sector')}</h2>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-6">{t('form_sector')}</h2>
           <div className="grid md:grid-cols-3 gap-4">
             {(['public', 'corporate', 'ngo'] as const).map((sector) => (
-              <div key={sector} className="bg-certo-navy/[0.02] p-5 border border-certo-navy/5 rounded-xl">
-                <h3 className="font-serif font-bold text-certo-navy text-base mb-2">{t(`sector_${sector}`)}</h3>
-                <p className="text-sm text-certo-navy/50 leading-relaxed">{t(`sector_${sector}_desc`)}</p>
+              <div key={sector} className="bg-certo-navy/[0.02] dark:bg-certo-dark-card p-5 border border-certo-navy/5 dark:border-certo-dark-border rounded-xl">
+                <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-base mb-2">{t(`sector_${sector}`)}</h3>
+                <p className="text-sm text-certo-navy/50 dark:text-certo-dark-muted leading-relaxed">{t(`sector_${sector}_desc`)}</p>
               </div>
             ))}
           </div>
@@ -84,10 +84,10 @@ export default async function PilotPage({ params }: { params: Promise<{ locale: 
 
         {/* Benefits */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-6">{t('benefits_title')}</h2>
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-6">{t('benefits_title')}</h2>
           <ul className="space-y-3">
             {([1, 3, 4] as const).map((i) => (
-              <li key={i} className="flex items-start gap-3 text-base text-certo-navy/70">
+              <li key={i} className="flex items-start gap-3 text-base text-certo-navy/70 dark:text-certo-dark-text/70">
                 <span className="text-certo-gold mt-0.5">&#10003;</span>
                 <span>{t(`benefit_${i}`)}</span>
               </li>
