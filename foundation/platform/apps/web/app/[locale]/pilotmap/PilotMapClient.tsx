@@ -15,6 +15,7 @@ type Application = {
   status: string;
   process_status: string | null;
   rating_score: number | null;
+  applicant_type?: string | null;
 };
 
 type SectorFilter = 'all' | 'publiczny' | 'prywatny' | 'pozarzadowy';

@@ -35,9 +35,17 @@ type Application = {
   status: string;
   process_status: string | null;
   rating_score: number | null;
+  applicant_type?: string | null;
 };
 
 type SortKey = 'organization_name' | 'city' | 'country' | 'sector' | 'created_at' | 'status';
+
+// Submission type label
+function getSubmissionType(app: Application): { label: string; icon: string } {
+  return app.applicant_type === 'representative'
+    ? { label: 'Zgłoszenie własne', icon: '🏢' }
+    : { label: 'Zgłoszenie publiczne', icon: '👁️' };
+}
 
 // Process status: the public-facing rating pipeline stage
 function getStatusInfo(app: Application): { label: string; className: string; order: number } {
@@ -55,8 +63,16 @@ function getStatusInfo(app: Application): { label: string; className: string; or
       return { label: 'W trakcie oceny', className: 'bg-certo-gold/15 text-certo-gold border border-certo-gold/20', order: 1 };
     case 'analiza':
       return { label: 'Analiza wstępna', className: 'bg-amber-50 text-amber-600 border border-amber-200', order: 2 };
-    default:
-      return { label: 'Zgłoszenie', className: 'bg-blue-50 text-blue-600 border border-blue-200', order: 3 };
+    default: {
+      const sub = getSubmissionType(app);
+      return {
+        label: sub.label,
+        className: app.applicant_type === 'representative'
+          ? 'bg-blue-50 text-blue-600 border border-blue-200'
+          : 'bg-purple-50 text-purple-600 border border-purple-200',
+        order: 3,
+      };
+    }
   }
 }
 

@@ -36,6 +36,7 @@ type Entity = {
   process_status: string | null;
   rating_score: number | null;
   nip: string | null;
+  applicant_type: string | null;
 };
 
 function getProcessStage(ps: string | null, ratingScore: number | null) {
@@ -107,6 +108,9 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
 
   const { stages, currentIdx } = getProcessStage(entity.process_status, entity.rating_score);
   const countryName = entity.country ? COUNTRY_NAMES[entity.country] || entity.country : null;
+  const isOwnSubmission = entity.applicant_type === 'representative';
+  const submissionLabel = isOwnSubmission ? 'Zgłoszenie własne' : 'Zgłoszenie publiczne';
+  const submissionIcon = isOwnSubmission ? '🏢' : '👁️';
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white">
@@ -128,6 +132,11 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
               <div className="flex flex-wrap items-center gap-3 mt-2 text-sm text-white/60">
                 {entity.city && <span className="flex items-center gap-1">📍 {entity.city}</span>}
                 {countryName && <span>{countryName}</span>}
+                <span className={`px-2 py-0.5 rounded-full text-xs ${
+                  isOwnSubmission ? 'bg-blue-500/20 text-blue-200' : 'bg-purple-500/20 text-purple-200'
+                }`}>
+                  {submissionIcon} {submissionLabel}
+                </span>
                 <span className="px-2 py-0.5 rounded-full bg-white/10 text-white/80 text-xs">
                   {SECTOR_LABELS[entity.sector] || entity.sector}
                 </span>
@@ -229,6 +238,18 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
           <div className="bg-white rounded-2xl border border-certo-navy/10 p-5 shadow-sm">
             <h3 className="text-xs font-semibold text-certo-navy/40 uppercase tracking-wider mb-4">Status procesu</h3>
             <dl className="space-y-3">
+              <div>
+                <dt className="text-xs text-certo-navy/40">Typ zgłoszenia</dt>
+                <dd className="text-sm font-medium text-certo-navy">
+                  <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${
+                    isOwnSubmission
+                      ? 'bg-blue-50 text-blue-600 border border-blue-200'
+                      : 'bg-purple-50 text-purple-600 border border-purple-200'
+                  }`}>
+                    {submissionIcon} {submissionLabel}
+                  </span>
+                </dd>
+              </div>
               <div>
                 <dt className="text-xs text-certo-navy/40">Etap</dt>
                 <dd className="text-sm font-medium text-certo-navy">

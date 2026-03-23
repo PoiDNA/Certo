@@ -21,7 +21,7 @@ export async function GET(
   const supabase = createClient(supabaseUrl, supabaseKey);
 
   // Base columns that definitely exist
-  const baseCols = 'id, organization_name, sector, city, country, created_at, votes, status';
+  const baseCols = 'id, organization_name, sector, city, country, created_at, votes, status, applicant_type';
 
   // Try with all columns, cascade fallback
   const attempts = [
