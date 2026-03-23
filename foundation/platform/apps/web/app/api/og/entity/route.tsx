@@ -94,7 +94,7 @@ export async function GET(request: NextRequest) {
         <div
           style={{
             position: 'absolute',
-            top: '20px',
+            top: '45px',
             left: '60px',
             right: '60px',
             display: 'flex',
@@ -157,65 +157,45 @@ export async function GET(request: NextRequest) {
           </span>
         </div>
 
-        {/* Votes — white 👍 text + number, bottom center */}
+        {/* Bottom bar: ☝ + votes + "Podbij!" — all in one line, centered */}
         <div
           style={{
             position: 'absolute',
-            bottom: '110px',
-            left: '0',
-            right: '0',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '4px',
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '14px',
-            }}
-          >
-            <span
-              style={{
-                fontSize: '56px',
-                color: 'white',
-              }}
-            >
-              ☝
-            </span>
-            <span
-              style={{
-                color: 'white',
-                fontSize: '56px',
-                fontWeight: 'bold',
-              }}
-            >
-              {votes}
-            </span>
-          </div>
-          <span
-            style={{
-              color: 'rgba(255,255,255,0.5)',
-              fontSize: '16px',
-            }}
-          >
-            {texts.votesLabel}
-          </span>
-        </div>
-
-        {/* CTA — "Podbij!" same size as entity name */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '20px',
+            bottom: '30px',
             left: '0',
             right: '0',
             display: 'flex',
             justifyContent: 'center',
+            alignItems: 'center',
+            gap: '20px',
           }}
         >
+          <span
+            style={{
+              fontSize: '52px',
+              color: 'white',
+            }}
+          >
+            ☝
+          </span>
+          <span
+            style={{
+              color: 'white',
+              fontSize: '52px',
+              fontWeight: 'bold',
+            }}
+          >
+            {votes}
+          </span>
+          <span
+            style={{
+              color: 'rgba(255,255,255,0.4)',
+              fontSize: '16px',
+              marginRight: '10px',
+            }}
+          >
+            {texts.votesLabel}
+          </span>
           <span
             style={{
               color: '#C8A55A',
