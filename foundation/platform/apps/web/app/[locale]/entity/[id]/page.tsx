@@ -1,5 +1,6 @@
 import EntityPageClient from './EntityPageClient';
 
-export default function EntityPage({ params }: { params: { locale: string; id: string } }) {
-  return <EntityPageClient id={params.id} locale={params.locale} />;
+export default async function EntityPage({ params }: { params: Promise<{ locale: string; id: string }> }) {
+  const { locale, id } = await params;
+  return <EntityPageClient id={id} locale={locale} />;
 }
