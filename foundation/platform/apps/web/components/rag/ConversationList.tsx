@@ -7,6 +7,8 @@ export interface Conversation {
   thinking_enabled: boolean;
   message_count: number;
   summary?: string;
+  shared?: boolean;
+  tags?: string[];
   updated_at: string;
   created_at: string;
 }
@@ -74,10 +76,15 @@ export function ConversationList({
                 }`}
                 onClick={() => onSelect(conv.id)}
               >
-                <p className="text-sm text-gray-800 truncate pr-6 font-medium">
-                  {conv.title || "Nowa rozmowa"}
-                </p>
-                <div className="flex items-center gap-1.5 mt-1">
+                <div className="flex items-center gap-1 pr-6">
+                  <p className="text-sm text-gray-800 truncate font-medium flex-1">
+                    {conv.title || "Nowa rozmowa"}
+                  </p>
+                  {conv.shared && (
+                    <span className="text-[10px] text-green-600" title="Udostępniona">👥</span>
+                  )}
+                </div>
+                <div className="flex items-center gap-1.5 mt-1 flex-wrap">
                   <span
                     className={`text-[10px] px-1 py-0.5 rounded ${
                       conv.model === "opus"
@@ -96,6 +103,22 @@ export function ConversationList({
                     {formatDate(conv.updated_at)}
                   </span>
                 </div>
+                {/* Tags */}
+                {conv.tags && conv.tags.length > 0 && (
+                  <div className="flex gap-1 mt-1 flex-wrap">
+                    {conv.tags.slice(0, 3).map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-[9px] px-1 py-0.5 rounded bg-amber-50 text-amber-700"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                    {conv.tags.length > 3 && (
+                      <span className="text-[9px] text-gray-400">+{conv.tags.length - 3}</span>
+                    )}
+                  </div>
+                )}
 
                 {/* Delete button */}
                 <button

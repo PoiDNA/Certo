@@ -64,7 +64,7 @@ export async function PATCH(
   if (!user) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const { id } = await params;
-  let body: { title?: string; model?: string; thinking_enabled?: boolean };
+  let body: { title?: string; model?: string; thinking_enabled?: boolean; tags?: string[]; shared?: boolean };
   try { body = await request.json(); } catch { body = {}; }
 
   const sb = getServiceSupabase();
@@ -72,6 +72,8 @@ export async function PATCH(
   if (body.title !== undefined) updates.title = body.title;
   if (body.model !== undefined) updates.model = body.model;
   if (body.thinking_enabled !== undefined) updates.thinking_enabled = body.thinking_enabled;
+  if (body.tags !== undefined) updates.tags = body.tags;
+  if (body.shared !== undefined) updates.shared = body.shared;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { data, error } = await (sb.from("rag_conversations") as any)

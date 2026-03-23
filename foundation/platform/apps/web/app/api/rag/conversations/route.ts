@@ -30,8 +30,8 @@ export async function GET() {
   const sb = getServiceSupabase();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { data, error } = await (sb.from("rag_conversations") as any)
-    .select("id, title, model, thinking_enabled, message_count, summary, updated_at, created_at")
-    .eq("user_id", user.id)
+    .select("id, title, model, thinking_enabled, message_count, summary, shared, tags, updated_at, created_at")
+    .or(`user_id.eq.${user.id},shared.eq.true,shared_with.cs.{${user.id}}`)
     .order("updated_at", { ascending: false })
     .limit(50);
 

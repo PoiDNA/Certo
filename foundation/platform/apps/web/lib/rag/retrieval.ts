@@ -98,11 +98,62 @@ export interface SearchFilters {
   includeConfidential?: boolean;
 }
 
-// Reciprocal Rank Fusion
+/**
+ * Sector relevance detection: infer which sectors a query relates to
+ * based on keyword matching. Used for automatic sector boosting.
+ */
+const SECTOR_KEYWORDS: Record<string, string[]> = {
+  jst: [
+    "jst", "samorząd", "gmina", "powiat", "województwo", "burmistrz",
+    "wójt", "starosta", "marszałek", "rada gminy", "rada powiatu",
+    "sejmik", "budżet obywatelski", "administracja publiczna", "urzad",
+    "jednostka samorządu", "fundusz sołecki", "obywatelski",
+  ],
+  corporate: [
+    "korporacja", "spółka", "zarząd", "rada nadzorcza", "akcjonariusz",
+    "ksh", "corporate governance", "compliance", "esg", "audyt",
+    "sprawozdanie finansowe", "giełda", "notowana", "ład korporacyjny",
+    "komitet audytu", "walne zgromadzenie", "dobre praktyki",
+  ],
+  ngo: [
+    "ngo", "fundacja", "stowarzyszenie", "organizacja pozarządowa",
+    "pożytku publicznego", "wolontariat", "darczyńca", "dotacja",
+    "trzeci sektor", "społeczeństwo obywatelskie", "non-profit",
+  ],
+  medical: [
+    "medyczny", "szpital", "klinika", "pacjent", "lekarz", "nfz",
+    "ochrona zdrowia", "podmiot leczniczy", "akredytacja szpitalna",
+    "who", "zdrowie publiczne", "farmaceutyczny", "bioetyka",
+  ],
+  defense: [
+    "obronny", "wojskowy", "nato", "bezpieczeństwo narodowe",
+    "siły zbrojne", "mon", "cyberbezpieczeństwo", "nis2",
+    "infrastruktura krytyczna", "obronność", "militarny",
+  ],
+};
+
+function detectQuerySectors(query: string): string[] {
+  const normalized = query.toLowerCase();
+  const detected: string[] = [];
+
+  for (const [sector, keywords] of Object.entries(SECTOR_KEYWORDS)) {
+    for (const kw of keywords) {
+      if (normalized.includes(kw)) {
+        detected.push(sector);
+        break;
+      }
+    }
+  }
+
+  return detected;
+}
+
+// Reciprocal Rank Fusion with optional sector boost
 function rrfFuse(
   semanticResults: Array<{ id: string; score: number }>,
   keywordResults: Array<{ id: string; score: number }>,
-  k: number = 60
+  k: number = 60,
+  sectorBoost?: { chunkSectors: Map<string, string[]>; querySectors: string[] }
 ): Map<string, number> {
   const scores = new Map<string, number>();
 
@@ -115,6 +166,20 @@ function rrfFuse(
     const current = scores.get(r.id) || 0;
     scores.set(r.id, current + 1 / (k + rank + 1));
   });
+
+  // Apply sector boost: +25% for chunks whose document sector matches the query
+  if (sectorBoost && sectorBoost.querySectors.length > 0) {
+    const BOOST_FACTOR = 1.25;
+    for (const [id, score] of scores) {
+      const chunkSectors = sectorBoost.chunkSectors.get(id) || [];
+      const hasOverlap = chunkSectors.some((s) =>
+        sectorBoost.querySectors.includes(s)
+      );
+      if (hasOverlap) {
+        scores.set(id, score * BOOST_FACTOR);
+      }
+    }
+  }
 
   return scores;
 }
@@ -182,8 +247,18 @@ export async function multiQueryHybridSearch(
     }
   }
 
-  // RRF fusion across all queries
-  const rrfScores = rrfFuse(semanticHits, keywordHits);
+  // Detect sectors from query for automatic boosting
+  const querySectors = detectQuerySectors(queries[0]);
+  const chunkSectors = new Map<string, string[]>();
+  for (const [id, chunk] of chunkMap) {
+    chunkSectors.set(id, chunk.doc_sector);
+  }
+
+  // RRF fusion across all queries with sector boost
+  const rrfScores = rrfFuse(semanticHits, keywordHits, 60, {
+    chunkSectors,
+    querySectors,
+  });
 
   // Sort by RRF score, take top 40 for reranking
   const fusedIds = [...rrfScores.entries()]

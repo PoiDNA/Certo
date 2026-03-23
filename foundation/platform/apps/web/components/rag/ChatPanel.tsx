@@ -320,6 +320,38 @@ export function ChatPanel() {
 
           <div className="flex-1" />
 
+          {/* Export DOCX button */}
+          {messages.length > 0 && (
+            <button
+              onClick={async () => {
+                const payload = activeConversationId
+                  ? { conversationId: activeConversationId }
+                  : { messages: messages.map((m) => ({ role: m.role, content: m.content, thinking: m.thinking })) };
+                const res = await fetch("/api/rag/export", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(payload),
+                });
+                if (res.ok) {
+                  const blob = await res.blob();
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement("a");
+                  a.href = url;
+                  a.download = `certo-analiza-${Date.now()}.docx`;
+                  a.click();
+                  URL.revokeObjectURL(url);
+                }
+              }}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs text-gray-600 hover:bg-gray-100 transition-colors"
+              title="Eksportuj do DOCX"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              DOCX
+            </button>
+          )}
+
           {activeConversationId && (
             <span className="text-xs text-gray-400 font-mono">
               {activeConversationId.slice(0, 8)}

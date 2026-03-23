@@ -17,6 +17,7 @@ import crypto from "crypto";
 import { parseDocx } from "./parsers/docx.js";
 import { parsePdf } from "./parsers/pdf.js";
 import { parseMarkdown } from "./parsers/markdown.js";
+import { parseHtml } from "./parsers/html.js";
 import { chunkSections } from "./chunker.js";
 import { embedTexts } from "./embedder.js";
 import { upsertDocument, insertChunks, getDocumentByHash } from "./store.js";
@@ -42,7 +43,7 @@ if (!sourcePath) {
   process.exit(1);
 }
 
-const SUPPORTED_EXTENSIONS = [".docx", ".pdf", ".md"];
+const SUPPORTED_EXTENSIONS = [".docx", ".pdf", ".md", ".html", ".htm"];
 
 async function findFiles(dir: string): Promise<string[]> {
   const stat = fs.statSync(dir);
@@ -95,6 +96,11 @@ async function parseFile(filePath: string): Promise<ParsedSection[]> {
       return parsePdf(filePath);
     case ".md":
       return parseMarkdown(filePath);
+    case ".html":
+    case ".htm": {
+      const htmlContent = fs.readFileSync(filePath, "utf-8");
+      return parseHtml(htmlContent, filePath);
+    }
     default:
       throw new Error(`Unsupported file type: ${ext}`);
   }
