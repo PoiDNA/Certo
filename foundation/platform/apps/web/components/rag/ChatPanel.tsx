@@ -23,6 +23,8 @@ export function ChatPanel() {
   const [isStreaming, setIsStreaming] = useState(false);
   const [selectedSectors, setSelectedSectors] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [expandedQueries, setExpandedQueries] = useState<string[]>([]);
+  const [wasSummarized, setWasSummarized] = useState(false);
   const [model, setModel] = useState<ModelChoice>("sonnet");
   const [thinkingEnabled, setThinkingEnabled] = useState(true);
   const [currentThinking, setCurrentThinking] = useState<string>("");
@@ -218,6 +220,8 @@ export function ChatPanel() {
               if (event.type === "sources") {
                 currentSources = event.sources;
                 setSources(event.sources);
+                if (event.expandedQueries) setExpandedQueries(event.expandedQueries);
+                if (event.summarized) setWasSummarized(true);
               } else if (event.type === "thinking") {
                 fullThinking += event.text;
                 setCurrentThinking((prev) => prev + event.text);
@@ -418,6 +422,27 @@ export function ChatPanel() {
             ))}
           </div>
         </div>
+
+        {/* Query expansion info */}
+        {expandedQueries.length > 1 && (
+          <div className="mb-6">
+            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
+              Warianty zapytania ({expandedQueries.length})
+            </h3>
+            <div className="space-y-1">
+              {expandedQueries.map((q, i) => (
+                <p key={i} className={`text-[11px] leading-tight ${i === 0 ? "text-gray-700 font-medium" : "text-gray-500"}`}>
+                  {i === 0 ? "🔍 " : "↳ "}{q}
+                </p>
+              ))}
+            </div>
+            {wasSummarized && (
+              <p className="text-[10px] text-amber-600 mt-2 flex items-center gap-1">
+                <span>📝</span> Historia skompresowana
+              </p>
+            )}
+          </div>
+        )}
 
         {/* Sources */}
         {sources.length > 0 && (

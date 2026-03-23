@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
   const thinking = body.thinking !== false; // default true
 
   try {
-    const { stream, sources } = await generateResponse({
+    const { stream, sources, expandedQueries, summarized } = await generateResponse({
       query: body.message,
       conversationHistory: body.conversationHistory,
       filters: body.filters,
@@ -78,10 +78,19 @@ export async function POST(request: NextRequest) {
     const readable = new ReadableStream({
       async start(controller) {
         try {
-          // Send sources metadata first
+          // Send metadata first (sources + query expansion info)
           controller.enqueue(
             encoder.encode(
-              `data: ${JSON.stringify({ type: "sources", sources: sources.map((s) => ({ id: s.id, docTitle: s.docTitle, heading: (s.metadata as { heading?: string }).heading, docSourceType: s.docSourceType, score: s.score })) })}\n\n`
+              `data: ${JSON.stringify({
+                type: "sources",
+                sources: sources.map((s) => ({
+                  id: s.id, docTitle: s.docTitle,
+                  heading: (s.metadata as { heading?: string }).heading,
+                  docSourceType: s.docSourceType, score: s.score,
+                })),
+                expandedQueries,
+                summarized,
+              })}\n\n`
             )
           );
 

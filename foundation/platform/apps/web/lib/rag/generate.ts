@@ -1,6 +1,8 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { hybridSearch, type SearchFilters, type RetrievedChunk } from "./retrieval";
+import { multiQueryHybridSearch, type SearchFilters, type RetrievedChunk } from "./retrieval";
 import { SYSTEM_PROMPT, buildContextPrompt, buildSourcesList } from "./prompts";
+import { expandQuery } from "./query-expansion";
+import { compressHistory, extractConversationContext } from "./summarize";
 
 export type ModelChoice = "sonnet" | "opus";
 
@@ -44,10 +46,16 @@ export interface GenerateOptions {
 export interface GenerateResult {
   stream: AsyncIterable<{ type: "text" | "thinking"; content: string }>;
   sources: RetrievedChunk[];
+  expandedQueries: string[];
+  summarized: boolean;
 }
 
 /**
- * Generate a streaming response with RAG context + optional extended thinking
+ * Generate a streaming response with:
+ * - Multi-query expansion (3 variants via Haiku)
+ * - Auto-summary of long conversations
+ * - Extended thinking
+ * - RAG context from hybrid search
  */
 export async function generateResponse(
   options: GenerateOptions
@@ -61,16 +69,23 @@ export async function generateResponse(
     thinking = true,
   } = options;
 
-  // Retrieve relevant chunks
-  const chunks = await hybridSearch(query, filters, topK);
+  // Step 1: Multi-query expansion + conversation context extraction (parallel)
+  const conversationContext = extractConversationContext(conversationHistory);
 
-  // Build messages
+  const [expandedQueries, compressedResult] = await Promise.all([
+    expandQuery(query, conversationContext),
+    compressHistory(conversationHistory),
+  ]);
+
+  // Step 2: Multi-query hybrid search with all variants
+  const chunks = await multiQueryHybridSearch(expandedQueries, filters, topK);
+
+  // Step 3: Build messages with compressed history
   const contextPrompt = buildContextPrompt(chunks);
   const messages: Array<{ role: "user" | "assistant"; content: string }> = [];
 
-  // Add conversation history (last 8 exchanges max to control context size)
-  const recentHistory = conversationHistory.slice(-16);
-  for (const msg of recentHistory) {
+  // Add compressed conversation history
+  for (const msg of compressedResult.messages) {
     messages.push({ role: msg.role, content: msg.content });
   }
 
@@ -126,6 +141,8 @@ export async function generateResponse(
   return {
     stream: eventStream(),
     sources: chunks,
+    expandedQueries,
+    summarized: compressedResult.summary !== null,
   };
 }
 
