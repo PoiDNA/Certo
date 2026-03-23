@@ -299,6 +299,8 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
                 city={entity.city}
                 country={entity.country}
                 sector={entity.sector}
+                locale={locale}
+                votes={entity.votes}
               />
             </div>
           </div>

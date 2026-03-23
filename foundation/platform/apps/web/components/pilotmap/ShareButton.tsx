@@ -2,31 +2,18 @@
 
 import { useState, useRef, useEffect } from 'react';
 
-const COUNTRY_NAMES: Record<string, string> = {
-  PL: 'Polska', AT: 'Austria', BE: 'Belgia', BG: 'Bułgaria', HR: 'Chorwacja',
-  CY: 'Cypr', CZ: 'Czechy', DK: 'Dania', EE: 'Estonia', FI: 'Finlandia',
-  FR: 'Francja', DE: 'Niemcy', GR: 'Grecja', HU: 'Węgry', IE: 'Irlandia',
-  IT: 'Włochy', LV: 'Łotwa', LT: 'Litwa', LU: 'Luksemburg', MT: 'Malta',
-  NL: 'Holandia', PT: 'Portugalia', RO: 'Rumunia', SK: 'Słowacja',
-  SI: 'Słowenia', ES: 'Hiszpania', SE: 'Szwecja',
-};
-
-const SECTOR_ICONS: Record<string, string> = {
-  publiczny: '🏛️',
-  prywatny: '🏢',
-  pozarzadowy: '🤝',
-};
-
 type ShareButtonProps = {
   id: string;
   name: string;
-  city?: string | null;
-  country?: string | null;
-  sector?: string;
+  city: string | null;
+  country: string | null;
+  sector: string;
+  locale?: string;
+  votes?: number;
   compact?: boolean;
 };
 
-export default function ShareButton({ id, name, city, country, sector, compact }: ShareButtonProps) {
+export default function ShareButton({ id, name, city, country, sector, locale = 'pl', votes, compact }: ShareButtonProps) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -41,19 +28,13 @@ export default function ShareButton({ id, name, city, country, sector, compact }
     return () => document.removeEventListener('mousedown', handler);
   }, [open]);
 
-  const entityUrl = `https://www.certogov.org/pl/entity/${id}`;
-  const countryName = country ? COUNTRY_NAMES[country] || country : '';
-  const location = [city, countryName].filter(Boolean).join(', ');
-  const icon = sector ? SECTOR_ICONS[sector] || '📋' : '📋';
-
+  const entityUrl = `https://www.certogov.org/${locale}/entity/${id}`;
   const cityPart = city ? ` (${city})` : '';
-  const shareText = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Rating Certo!\nPoprzej ten podmiot 👍 ${entityUrl}\n#RatingCerto #Governance`;
-  const shareTextShort = `${name}${cityPart} — ocena wiarygodności Rating Certo`;
+  const shareText = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Certo!\nPoprzej ten podmiot ${entityUrl}\n#Certo #Governance`;
 
   const shareToX = () => {
-    const text = `${name}${cityPart} jest zgłoszone do oceny wiarygodności publicznej Rating Certo!\n\nPoprzej ten podmiot 👍\n\n#RatingCerto #Governance`;
     window.open(
-      `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(entityUrl)}`,
+      `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`,
       '_blank',
       'width=600,height=400',
     );
@@ -71,7 +52,7 @@ export default function ShareButton({ id, name, city, country, sector, compact }
 
   const shareToFacebook = () => {
     window.open(
-      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(entityUrl)}&quote=${encodeURIComponent(shareTextShort)}`,
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(entityUrl)}`,
       '_blank',
       'width=600,height=400',
     );
@@ -82,7 +63,7 @@ export default function ShareButton({ id, name, city, country, sector, compact }
     try {
       await navigator.clipboard.writeText(shareText);
       setCopied(true);
-      setTimeout(() => { setCopied(false); setOpen(false); }, 1500);
+      setTimeout(() => { setCopied(false); setOpen(false); }, 2000);
     } catch {
       setOpen(false);
     }
@@ -98,7 +79,7 @@ export default function ShareButton({ id, name, city, country, sector, compact }
             : 'px-4 py-2.5 text-sm rounded-xl bg-certo-navy/5 text-certo-navy/70 hover:bg-certo-gold/10 hover:text-certo-gold border border-certo-navy/10 hover:border-certo-gold/20'
         }`}
       >
-        📢 {!compact && 'Promuj'}
+        {compact ? '\u{1F4E2}' : '\u{1F4E2} Promuj'}
       </button>
 
       {open && (
@@ -114,7 +95,7 @@ export default function ShareButton({ id, name, city, country, sector, compact }
             onClick={shareToX}
             className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
-            <span className="w-5 text-center font-bold text-base">𝕏</span>
+            <span className="w-5 text-center font-bold text-base">{'\u{1D54F}'}</span>
             <span>Udostępnij na X</span>
           </button>
 
@@ -143,7 +124,7 @@ export default function ShareButton({ id, name, city, country, sector, compact }
               onClick={copyToClipboard}
               className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
             >
-              <span className="w-5 text-center">{copied ? '✅' : '📋'}</span>
+              <span className="w-5 text-center">{copied ? '\u2705' : '\u{1F4CB}'}</span>
               <span>{copied ? 'Skopiowano!' : 'Kopiuj tekst'}</span>
             </button>
           </div>

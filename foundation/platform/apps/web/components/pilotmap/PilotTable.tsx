@@ -252,7 +252,7 @@ export default function PilotTable({ applications, highlightedIds }: {
                     </button>
                   </td>
                   <td className="px-4 py-3 text-center">
-                    <ShareButton id={app.id} name={app.organization_name} city={app.city} country={app.country} sector={app.sector} compact />
+                    <ShareButton id={app.id} name={app.organization_name} city={app.city} country={app.country} sector={app.sector} locale={locale} votes={app.votes} compact />
                   </td>
                 </tr>
                 );
@@ -302,7 +302,7 @@ export default function PilotTable({ applications, highlightedIds }: {
                   >
                     👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
                   </button>
-                  <ShareButton id={app.id} name={app.organization_name} city={app.city} country={app.country} sector={app.sector} compact />
+                  <ShareButton id={app.id} name={app.organization_name} city={app.city} country={app.country} sector={app.sector} locale={locale} votes={app.votes} compact />
                 </div>
               </div>
             </div>

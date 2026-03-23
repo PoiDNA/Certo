@@ -53,7 +53,7 @@ async function getEntity(id: string) {
   const supabase = createClient(url, key);
   const { data } = await supabase
     .from('pilot_applications')
-    .select('id, organization_name, sector, city, country, status, process_status, rating_score')
+    .select('id, organization_name, sector, city, country, status, process_status, rating_score, votes')
     .eq('id', id)
     .neq('status', 'rejected')
     .single();
@@ -82,7 +82,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = `${name}${ratingPart} | ${ogStrings.cta}`;
   const description = ogStrings.desc(name, location);
 
-  const ogImageUrl = `https://cdn.certogov.org/og/entity-${locale}.png`;
+  const votes = (entity as Record<string, unknown>).votes as number | null;
+  const ogImageUrl = `/api/og/entity?name=${encodeURIComponent(name)}&city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}&votes=${votes || 0}&locale=${locale}`;
 
   const locales = ['pl', 'en', 'de', 'fr', 'es', 'it', 'cs', 'sk', 'hu', 'ro', 'bg', 'hr', 'sl', 'lt', 'lv', 'et', 'fi', 'sv', 'da', 'nl', 'pt', 'el', 'ga', 'mt'];
   const alternates: Record<string, string> = {};
