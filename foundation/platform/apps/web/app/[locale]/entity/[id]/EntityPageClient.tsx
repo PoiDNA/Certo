@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import ShareButton from '../../../../components/pilotmap/ShareButton';
 
 const COUNTRY_NAMES: Record<string, string> = {
   PL: 'Polska', AT: 'Austria', BE: 'Belgia', BG: 'Bułgaria', HR: 'Chorwacja',
@@ -292,6 +293,13 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
               >
                 {votedIds.has(entity.id) ? '✓ Poparcie oddane' : '👍 Poprzyj ten podmiot'}
               </button>
+              <ShareButton
+                id={entity.id}
+                name={entity.organization_name}
+                city={entity.city}
+                country={entity.country}
+                sector={entity.sector}
+              />
             </div>
           </div>
         </div>

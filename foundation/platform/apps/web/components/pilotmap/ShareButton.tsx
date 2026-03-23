@@ -1,0 +1,153 @@
+'use client';
+
+import { useState, useRef, useEffect } from 'react';
+
+const COUNTRY_NAMES: Record<string, string> = {
+  PL: 'Polska', AT: 'Austria', BE: 'Belgia', BG: 'Bułgaria', HR: 'Chorwacja',
+  CY: 'Cypr', CZ: 'Czechy', DK: 'Dania', EE: 'Estonia', FI: 'Finlandia',
+  FR: 'Francja', DE: 'Niemcy', GR: 'Grecja', HU: 'Węgry', IE: 'Irlandia',
+  IT: 'Włochy', LV: 'Łotwa', LT: 'Litwa', LU: 'Luksemburg', MT: 'Malta',
+  NL: 'Holandia', PT: 'Portugalia', RO: 'Rumunia', SK: 'Słowacja',
+  SI: 'Słowenia', ES: 'Hiszpania', SE: 'Szwecja',
+};
+
+const SECTOR_ICONS: Record<string, string> = {
+  publiczny: '🏛️',
+  prywatny: '🏢',
+  pozarzadowy: '🤝',
+};
+
+type ShareButtonProps = {
+  id: string;
+  name: string;
+  city?: string | null;
+  country?: string | null;
+  sector?: string;
+  compact?: boolean;
+};
+
+export default function ShareButton({ id, name, city, country, sector, compact }: ShareButtonProps) {
+  const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    if (!open) return;
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, [open]);
+
+  const entityUrl = `https://www.certogov.org/pl/entity/${id}`;
+  const countryName = country ? COUNTRY_NAMES[country] || country : '';
+  const location = [city, countryName].filter(Boolean).join(', ');
+  const icon = sector ? SECTOR_ICONS[sector] || '📋' : '📋';
+
+  const shareText = `${icon} ${name}${location ? ` z ${location}` : ''} została zgłoszona do oceny wiarygodności publicznej Rating Certo!\nPoprzej ten podmiot 👍 ${entityUrl}\n#RatingCerto #Governance`;
+  const shareTextShort = `${icon} ${name} — ocena wiarygodności Rating Certo`;
+
+  const shareToX = () => {
+    const text = `${icon} ${name}${location ? ` z ${location}` : ''} została zgłoszona do oceny wiarygodności publicznej Rating Certo!\n\nPoprzej ten podmiot 👍\n\n#RatingCerto #Governance`;
+    window.open(
+      `https://x.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(entityUrl)}`,
+      '_blank',
+      'width=600,height=400',
+    );
+    setOpen(false);
+  };
+
+  const shareToLinkedIn = () => {
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(entityUrl)}`,
+      '_blank',
+      'width=600,height=400',
+    );
+    setOpen(false);
+  };
+
+  const shareToFacebook = () => {
+    window.open(
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(entityUrl)}&quote=${encodeURIComponent(shareTextShort)}`,
+      '_blank',
+      'width=600,height=400',
+    );
+    setOpen(false);
+  };
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      setTimeout(() => { setCopied(false); setOpen(false); }, 1500);
+    } catch {
+      setOpen(false);
+    }
+  };
+
+  return (
+    <div ref={ref} className="relative inline-block">
+      <button
+        onClick={(e) => { e.stopPropagation(); setOpen(!open); }}
+        className={`inline-flex items-center gap-1.5 transition-all ${
+          compact
+            ? 'px-2.5 py-1 text-[11px] rounded-full bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-gold/10 hover:text-certo-gold'
+            : 'px-4 py-2.5 text-sm rounded-xl bg-certo-navy/5 text-certo-navy/70 hover:bg-certo-gold/10 hover:text-certo-gold border border-certo-navy/10 hover:border-certo-gold/20'
+        }`}
+      >
+        📢 {!compact && 'Promuj'}
+      </button>
+
+      {open && (
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="absolute right-0 top-full mt-1.5 z-50 w-52 bg-white rounded-xl shadow-xl border border-certo-navy/10 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150"
+        >
+          <div className="px-3 py-2 border-b border-certo-navy/5">
+            <span className="text-[10px] font-semibold text-certo-navy/40 uppercase tracking-wider">Udostępnij</span>
+          </div>
+
+          <button
+            onClick={shareToX}
+            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
+          >
+            <span className="w-5 text-center font-bold text-base">𝕏</span>
+            <span>Udostępnij na X</span>
+          </button>
+
+          <button
+            onClick={shareToLinkedIn}
+            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
+          >
+            <svg className="w-5 h-5 text-[#0A66C2]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </button>
+
+          <button
+            onClick={shareToFacebook}
+            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
+          >
+            <svg className="w-5 h-5 text-[#1877F2]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            <span>Facebook</span>
+          </button>
+
+          <div className="border-t border-certo-navy/5">
+            <button
+              onClick={copyToClipboard}
+              className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
+            >
+              <span className="w-5 text-center">{copied ? '✅' : '📋'}</span>
+              <span>{copied ? 'Skopiowano!' : 'Kopiuj tekst'}</span>
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

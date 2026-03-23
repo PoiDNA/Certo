@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import ShareButton from './ShareButton';
 
 const COUNTRY_NAMES: Record<string, string> = {
   PL: 'Polska', AT: 'Austria', BE: 'Belgia', BG: 'Bułgaria', HR: 'Chorwacja',
@@ -204,11 +205,12 @@ export default function PilotTable({ applications, highlightedIds }: {
                 Data <SortIcon col="created_at" />
               </th>
               <th className="px-4 py-3 font-medium text-certo-navy text-center">Podbij</th>
+              <th className="px-4 py-3 font-medium text-certo-navy text-center">Promuj</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={7} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
+              <tr><td colSpan={8} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
             ) : (
               filtered.map((app, i) => {
                 const isHighlighted = highlightedIds?.has(app.id);
@@ -249,6 +251,9 @@ export default function PilotTable({ applications, highlightedIds }: {
                       👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
                     </button>
                   </td>
+                  <td className="px-4 py-3 text-center">
+                    <ShareButton id={app.id} name={app.organization_name} city={app.city} country={app.country} sector={app.sector} compact />
+                  </td>
                 </tr>
                 );
               })
@@ -287,15 +292,18 @@ export default function PilotTable({ applications, highlightedIds }: {
                   {app.country && <span>{COUNTRY_NAMES[app.country] || app.country}</span>}
                   <span>{new Date(app.created_at).toLocaleDateString('pl-PL')}</span>
                 </div>
-                <button
-                  onClick={() => handleVote(app.id)}
-                  disabled={votedIds.has(app.id)}
-                  className={`text-xs px-3 py-1 rounded-full ${
-                    votedIds.has(app.id) ? 'bg-certo-gold/20 text-certo-gold' : 'bg-certo-navy/5 text-certo-navy/60'
-                  }`}
-                >
-                  👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={(e) => { e.stopPropagation(); handleVote(app.id); }}
+                    disabled={votedIds.has(app.id)}
+                    className={`text-xs px-3 py-1 rounded-full ${
+                      votedIds.has(app.id) ? 'bg-certo-gold/20 text-certo-gold' : 'bg-certo-navy/5 text-certo-navy/60'
+                    }`}
+                  >
+                    👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
+                  </button>
+                  <ShareButton id={app.id} name={app.organization_name} city={app.city} country={app.country} sector={app.sector} compact />
+                </div>
               </div>
             </div>
           ))
