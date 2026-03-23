@@ -44,21 +44,8 @@ export async function GET(request: NextRequest) {
   const location = [city, country].filter(Boolean).join(', ');
   const texts = OG_TEXTS[locale] || OG_TEXTS.en;
 
-  // Fetch background from R2 (logo only) — try locale, fallback to en
-  let backgroundData: ArrayBuffer | null = null;
-  for (const loc of [locale, 'en']) {
-    try {
-      const res = await fetch(`${R2_BASE}/entity-${loc}.png`);
-      if (res.ok) {
-        backgroundData = await res.arrayBuffer();
-        break;
-      }
-    } catch { /* try next */ }
-  }
-
-  const backgroundSrc = backgroundData
-    ? `data:image/png;base64,${arrayBufferToBase64(backgroundData)}`
-    : null;
+  // Background URL from R2 (logo only) — use direct URL, no base64
+  const backgroundUrl = `${R2_BASE}/entity-${locale}.png`;
 
   return new ImageResponse(
     (
@@ -73,22 +60,21 @@ export async function GET(request: NextRequest) {
           fontFamily: 'sans-serif',
         }}
       >
-        {/* Background — logo only from R2 */}
-        {backgroundSrc && (
-          <img
-            src={backgroundSrc}
-            width={1200}
-            height={630}
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '1200px',
-              height: '630px',
-              objectFit: 'cover',
-            }}
-          />
-        )}
+        {/* Background — logo only from R2, direct URL */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={backgroundUrl}
+          width={1200}
+          height={630}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '1200px',
+            height: '630px',
+            objectFit: 'cover',
+          }}
+        />
 
         {/* Headline — centered, white, same size as entity name */}
         <div
@@ -219,11 +205,3 @@ export async function GET(request: NextRequest) {
   );
 }
 
-function arrayBufferToBase64(buffer: ArrayBuffer): string {
-  const bytes = new Uint8Array(buffer);
-  let binary = '';
-  for (let i = 0; i < bytes.byteLength; i++) {
-    binary += String.fromCharCode(bytes[i]);
-  }
-  return btoa(binary);
-}
