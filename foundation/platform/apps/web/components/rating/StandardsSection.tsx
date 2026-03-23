@@ -18,9 +18,16 @@ export default function StandardsSection() {
 
   return (
     <section ref={ref} className={`mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-3xl font-serif font-bold text-certo-navy mb-10">
+      <h2 className="text-3xl font-serif font-bold text-certo-navy mb-4">
         {t('standards_title')}
       </h2>
+
+      <p className="text-base text-certo-navy/60 leading-relaxed mb-10 max-w-4xl">
+        Od pierwszego dnia działalności opieramy nasze wewnętrzne procedury, metodologię ratingową
+        oraz polityki bezpieczeństwa danych na rygorystycznych wymogach norm ISO oraz wytycznych IOSCO.
+        Stanowi to nasz fundament w procesie przygotowań do uzyskania formalnych certyfikacji
+        w następujących obszarach:
+      </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {standards.map(({ name, desc }) => (
