@@ -553,6 +553,7 @@ export function ChatPanel() {
           </div>
         )}
 
+
         {/* Sources */}
         {sources.length > 0 && (
           <div>

@@ -104,6 +104,7 @@ export interface HybridSearchResult {
   graphData: GraphSearchResult;
 }
 
+
 /**
  * Sector relevance detection: infer which sectors a query relates to
  * based on keyword matching. Used for automatic sector boosting.
@@ -212,6 +213,7 @@ export async function multiQueryHybridSearch(
   // Graph search runs in parallel with traditional search
   const graphPromise = graphExpandedSearch(allEmbeddings[0], filters.sectors);
 
+
   const searchPromises = queries.flatMap((q, qi) => [
     (sb.rpc as any)("match_rag_chunks", {
       query_embedding: JSON.stringify(allEmbeddings[qi]),
@@ -288,6 +290,7 @@ export async function multiQueryHybridSearch(
     const current = rrfScores.get(gh.id) || 0;
     rrfScores.set(gh.id, current + GRAPH_WEIGHT * (1 / (60 + rank + 1)));
   });
+
 
   // Sort by RRF score, take top 40 for reranking
   const fusedIds = [...rrfScores.entries()]
