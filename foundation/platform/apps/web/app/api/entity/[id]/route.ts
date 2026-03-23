@@ -1,10 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!,
-);
+export const dynamic = 'force-dynamic';
 
 export async function GET(
   _req: NextRequest,
@@ -15,6 +12,13 @@ export async function GET(
   if (!id) {
     return NextResponse.json({ error: 'Missing id' }, { status: 400 });
   }
+
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!supabaseUrl || !supabaseKey) {
+    return NextResponse.json({ error: 'Server config error' }, { status: 500 });
+  }
+  const supabase = createClient(supabaseUrl, supabaseKey);
 
   // Try with all columns first
   let { data, error } = await supabase
