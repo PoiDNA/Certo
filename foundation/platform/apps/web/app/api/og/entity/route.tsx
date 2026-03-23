@@ -90,13 +90,13 @@ export async function GET(request: NextRequest) {
           />
         )}
 
-        {/* Headline — centered, white, two lines, bigger */}
+        {/* Headline — centered, white, same size as entity name */}
         <div
           style={{
             position: 'absolute',
             top: '20px',
-            left: '200px',
-            right: '200px',
+            left: '60px',
+            right: '60px',
             display: 'flex',
             justifyContent: 'center',
             textAlign: 'center',
@@ -105,22 +105,22 @@ export async function GET(request: NextRequest) {
           <span
             style={{
               color: 'white',
-              fontSize: '32px',
+              fontSize: '48px',
               fontWeight: 'bold',
               textAlign: 'center',
-              lineHeight: 1.4,
+              lineHeight: 1.3,
             }}
           >
             {texts.headline}
           </span>
         </div>
 
-        {/* Location — top right, aligned with Certo logo center (~35px) */}
+        {/* Location — bottom right corner */}
         {location && (
           <div
             style={{
               position: 'absolute',
-              top: '35px',
+              bottom: '30px',
               right: '60px',
               display: 'flex',
               color: 'rgba(255,255,255,0.85)',
@@ -220,8 +220,8 @@ export async function GET(request: NextRequest) {
             style={{
               color: '#C8A55A',
               fontSize: '48px',
-              fontWeight: 'bold',
-              letterSpacing: '1px',
+              fontWeight: 900,
+              letterSpacing: '2px',
             }}
           >
             {texts.cta}
