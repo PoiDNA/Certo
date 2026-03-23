@@ -23,6 +23,7 @@ const args = process.argv.slice(2);
 const category = args.includes("--category")
   ? args[args.indexOf("--category") + 1]
   : "all";
+const force = args.includes("--force");
 
 interface RegulationSource {
   title: string;
@@ -48,7 +49,7 @@ const EU_SOURCES: RegulationSource[] = [
     title: "NIS2 Directive 2022/2555 — Cybersecurity",
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555",
     sourceType: "regulation",
-    sectors: ["corporate", "defense", "medical"],
+    sectors: ["corporate", "public_com"],
     language: "en",
     description: "EU network and information security directive",
   },
@@ -64,7 +65,7 @@ const EU_SOURCES: RegulationSource[] = [
     title: "EU AI Act Regulation 2024/1689",
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689",
     sourceType: "regulation",
-    sectors: ["corporate", "medical", "defense", "jst"],
+    sectors: ["corporate", "public_com", "admin", "sme"],
     language: "en",
     description: "EU Artificial Intelligence regulation",
   },
@@ -80,7 +81,7 @@ const EU_SOURCES: RegulationSource[] = [
     title: "GDPR — General Data Protection Regulation 2016/679",
     url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679",
     sourceType: "regulation",
-    sectors: ["corporate", "jst", "medical", "ngo", "defense"],
+    sectors: ["corporate", "admin", "public_com", "sme", "nonprofit"],
     language: "en",
     description: "EU data protection regulation — all sectors",
   },
@@ -99,7 +100,7 @@ const OECD_SOURCES: RegulationSource[] = [
     title: "OECD Guidelines on Anti-Corruption and Integrity in SOEs 2019",
     url: "https://www.oecd.org/en/publications/guidelines-on-anti-corruption-and-integrity-in-state-owned-enterprises_315f5693-en.html",
     sourceType: "oecd",
-    sectors: ["corporate", "jst"],
+    sectors: ["corporate", "public_com"],
     language: "en",
     description: "OECD integrity guidelines for state-owned enterprises",
   },
@@ -110,7 +111,7 @@ const PL_SOURCES: RegulationSource[] = [
     title: "Ustawa o samorządzie gminnym (Dz.U. 1990 nr 16 poz. 95)",
     url: "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19900160095",
     sourceType: "regulation",
-    sectors: ["jst"],
+    sectors: ["admin"],
     language: "pl",
     description: "Polish local government act — municipal level",
   },
@@ -118,7 +119,7 @@ const PL_SOURCES: RegulationSource[] = [
     title: "Ustawa o samorządzie powiatowym (Dz.U. 1998 nr 91 poz. 578)",
     url: "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19980910578",
     sourceType: "regulation",
-    sectors: ["jst"],
+    sectors: ["admin"],
     language: "pl",
     description: "Polish local government act — county level",
   },
@@ -134,7 +135,7 @@ const PL_SOURCES: RegulationSource[] = [
     title: "Ustawa o działalności leczniczej (Dz.U. 2011 nr 112 poz. 654)",
     url: "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20111120654",
     sourceType: "regulation",
-    sectors: ["medical"],
+    sectors: ["sme"],
     language: "pl",
     description: "Polish medical activity regulation",
   },
@@ -142,7 +143,7 @@ const PL_SOURCES: RegulationSource[] = [
     title: "Ustawa Prawo o stowarzyszeniach (Dz.U. 1989 nr 20 poz. 104)",
     url: "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19890200104",
     sourceType: "regulation",
-    sectors: ["ngo"],
+    sectors: ["nonprofit"],
     language: "pl",
     description: "Polish law on associations",
   },
@@ -150,7 +151,7 @@ const PL_SOURCES: RegulationSource[] = [
     title: "Ustawa o fundacjach (Dz.U. 1984 nr 21 poz. 97)",
     url: "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19840210097",
     sourceType: "regulation",
-    sectors: ["ngo"],
+    sectors: ["nonprofit"],
     language: "pl",
     description: "Polish foundation law",
   },
@@ -190,10 +191,12 @@ async function ingestRegulation(source: RegulationSource): Promise<boolean> {
 
   // Check dedup by URL hash
   const urlHash = crypto.createHash("sha256").update(source.url).digest("hex");
-  const existing = await getDocumentByHash(urlHash);
-  if (existing) {
-    console.log("   ⏭️  Already ingested (use --force to re-ingest)");
-    return false;
+  if (!force) {
+    const existing = await getDocumentByHash(urlHash);
+    if (existing) {
+      console.log("   ⏭️  Already ingested (use --force to re-ingest)");
+      return false;
+    }
   }
 
   // Fetch
@@ -294,7 +297,7 @@ async function main() {
 
   console.log(`\n📊 Summary: ${success} ingested, ${skipped} skipped, ${errors} errors`);
   console.log(`\n💡 For Polish law: ISAP may require manual HTML download.`);
-  console.log(`   Save as .html and use: npx tsx scripts/rag/ingest.ts --source file.html --type regulation --sector jst`);
+  console.log(`   Save as .html and use: npx tsx scripts/rag/ingest.ts --source file.html --type regulation --sector admin`);
 }
 
 main().catch((err) => {

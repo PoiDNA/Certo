@@ -110,32 +110,32 @@ export interface HybridSearchResult {
  * based on keyword matching. Used for automatic sector boosting.
  */
 const SECTOR_KEYWORDS: Record<string, string[]> = {
-  jst: [
+  admin: [
     "jst", "samorząd", "gmina", "powiat", "województwo", "burmistrz",
     "wójt", "starosta", "marszałek", "rada gminy", "rada powiatu",
-    "sejmik", "budżet obywatelski", "administracja publiczna", "urzad",
-    "jednostka samorządu", "fundusz sołecki", "obywatelski",
+    "sejmik", "urząd", "administracja publiczna", "budżet obywatelski",
+    "fundusz sołecki",
+  ],
+  public_com: [
+    "spółka komunalna", "ssp", "skarb państwa", "udział publiczny",
+    "jednoosobowa spółka", "spółka z udziałem", "nadzór właścicielski",
+    "zarząd spółki komunalnej", "rada nadzorcza ssp", "majątek publiczny",
   ],
   corporate: [
-    "korporacja", "spółka", "zarząd", "rada nadzorcza", "akcjonariusz",
-    "ksh", "corporate governance", "compliance", "esg", "audyt",
-    "sprawozdanie finansowe", "giełda", "notowana", "ład korporacyjny",
+    "korporacja", "spółka giełdowa", "rada nadzorcza", "ksh",
+    "corporate governance", "compliance", "esg", "audyt", "ład korporacyjny",
     "komitet audytu", "walne zgromadzenie", "dobre praktyki",
+    "due diligence", "duże przedsiębiorstwo",
   ],
-  ngo: [
+  sme: [
+    "mśp", "msp", "startup", "mała firma", "mikroprzedsiębiorstwo",
+    "jednoosobowa działalność", "firma rodzinna", "mała klinika",
+    "rzemiosło", "inkubator", "sektor prywatny mały",
+  ],
+  nonprofit: [
     "ngo", "fundacja", "stowarzyszenie", "organizacja pozarządowa",
-    "pożytku publicznego", "wolontariat", "darczyńca", "dotacja",
-    "trzeci sektor", "społeczeństwo obywatelskie", "non-profit",
-  ],
-  medical: [
-    "medyczny", "szpital", "klinika", "pacjent", "lekarz", "nfz",
-    "ochrona zdrowia", "podmiot leczniczy", "akredytacja szpitalna",
-    "who", "zdrowie publiczne", "farmaceutyczny", "bioetyka",
-  ],
-  defense: [
-    "obronny", "wojskowy", "nato", "bezpieczeństwo narodowe",
-    "siły zbrojne", "mon", "cyberbezpieczeństwo", "nis2",
-    "infrastruktura krytyczna", "obronność", "militarny",
+    "pożytku publicznego", "wolontariat", "darczyńca", "trzeci sektor",
+    "izba", "samorząd zawodowy", "non-profit", "izba lekarska",
   ],
 };
 

@@ -1,0 +1,50 @@
+name: Auto-Ingest Documents
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**/*.docx'
+      - 'content/**/*.pdf'
+      - 'content/**/*.html'
+      - 'content/**/*.md'
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: foundation/platform/apps/web
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Ingest changed documents
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # Get changed files
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- '*.docx' '*.pdf' '*.html' '*.md' | grep '^content/' || true)
+          if [ -z "$CHANGED" ]; then
+            echo "No document changes detected"
+            exit 0
+          fi
+          echo "Changed files:"
+          echo "$CHANGED"
+          # Ingest each changed file
+          echo "$CHANGED" | while read file; do
+            npx tsx scripts/rag/ingest.ts --source "../../../../$file" --type internal --force
+          done
+      - name: Extract concepts from new chunks
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npx tsx scripts/rag/extract-concepts.ts
