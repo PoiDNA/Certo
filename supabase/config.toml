@@ -1,10 +1,6 @@
-[project]
-id = "certo-governance"
-name = "Certo Governance"
-
 [db]
 port = 54322
-major_version = 16
+major_version = 15
 
 [api]
 port = 54321
