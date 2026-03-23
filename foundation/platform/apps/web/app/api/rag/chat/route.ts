@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { generateResponse, type ChatMessage } from "@/lib/rag/generate";
+import { generateResponse, type ChatMessage, type ModelChoice } from "@/lib/rag/generate";
 
 // Rate limiter: 10 requests per minute per IP
 const rateMap = new Map<string, { count: number; resetAt: number }>();
@@ -36,6 +36,8 @@ export async function POST(request: NextRequest) {
       sectors?: string[];
       sourceTypes?: string[];
     };
+    model?: ModelChoice;
+    thinking?: boolean;
   };
 
   try {
@@ -58,11 +60,17 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  // Validate model choice
+  const model: ModelChoice = body.model === "opus" ? "opus" : "sonnet";
+  const thinking = body.thinking !== false; // default true
+
   try {
-    const { stream, sources } = await generateResponse({
+    const { stream, sources, expandedQueries, summarized } = await generateResponse({
       query: body.message,
       conversationHistory: body.conversationHistory,
       filters: body.filters,
+      model,
+      thinking,
     });
 
     // Create SSE stream
@@ -70,18 +78,27 @@ export async function POST(request: NextRequest) {
     const readable = new ReadableStream({
       async start(controller) {
         try {
-          // Send sources metadata first
+          // Send metadata first (sources + query expansion info)
           controller.enqueue(
             encoder.encode(
-              `data: ${JSON.stringify({ type: "sources", sources: sources.map((s) => ({ id: s.id, docTitle: s.docTitle, heading: (s.metadata as { heading?: string }).heading, docSourceType: s.docSourceType, score: s.score })) })}\n\n`
+              `data: ${JSON.stringify({
+                type: "sources",
+                sources: sources.map((s) => ({
+                  id: s.id, docTitle: s.docTitle,
+                  heading: (s.metadata as { heading?: string }).heading,
+                  docSourceType: s.docSourceType, score: s.score,
+                })),
+                expandedQueries,
+                summarized,
+              })}\n\n`
             )
           );
 
-          // Stream text chunks
-          for await (const text of stream) {
+          // Stream text + thinking chunks
+          for await (const event of stream) {
             controller.enqueue(
               encoder.encode(
-                `data: ${JSON.stringify({ type: "text", text })}\n\n`
+                `data: ${JSON.stringify({ type: event.type, text: event.content })}\n\n`
               )
             );
           }
