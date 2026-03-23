@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 
 const COUNTRY_NAMES: Record<string, string> = {
   PL: 'Polska', AT: 'Austria', BE: 'Belgia', BG: 'Bułgaria', HR: 'Chorwacja',
@@ -44,7 +45,7 @@ function getStatusInfo(app: Application): { label: string; className: string; or
 
   if (ps === 'rating' && app.rating_score != null) {
     return {
-      label: `Rating ${app.rating_score}`,
+      label: `Certo ${app.rating_score}`,
       className: 'bg-emerald-100 text-emerald-700 border border-emerald-200',
       order: 0,
     };
@@ -63,6 +64,9 @@ export default function PilotTable({ applications, highlightedIds }: {
   applications: Application[];
   highlightedIds?: Set<string> | null;
 }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = pathname?.split('/')[1] || 'pl';
   const [search, setSearch] = useState('');
   const [sectorFilter, setSectorFilter] = useState<string | null>(null);
   const [votedIds, setVotedIds] = useState<Set<string>>(new Set());
@@ -193,10 +197,12 @@ export default function PilotTable({ applications, highlightedIds }: {
               filtered.map((app, i) => {
                 const isHighlighted = highlightedIds?.has(app.id);
                 return (
-                <tr key={i} className={`border-t border-certo-navy/5 transition-colors ${
+                <tr key={i}
+                  onClick={() => router.push(`/${locale}/entity/${app.id}`)}
+                  className={`border-t border-certo-navy/5 transition-colors cursor-pointer ${
                   isHighlighted ? 'bg-certo-gold/10 ring-1 ring-inset ring-certo-gold/30' : 'hover:bg-certo-gold/5'
                 }`}>
-                  <td className="px-4 py-3 font-medium text-certo-navy">{app.organization_name}</td>
+                  <td className="px-4 py-3 font-medium text-certo-navy hover:text-certo-gold transition-colors">{app.organization_name}</td>
                   <td className="px-4 py-3 text-certo-navy/60">{app.city || '—'}</td>
                   <td className="px-4 py-3 text-certo-navy/60">{app.country ? COUNTRY_NAMES[app.country] || app.country : '—'}</td>
                   <td className="px-4 py-3">
@@ -241,11 +247,13 @@ export default function PilotTable({ applications, highlightedIds }: {
           <div className="bg-white rounded-xl p-6 text-center text-certo-navy/40">Brak wyników</div>
         ) : (
           filtered.map((app, i) => (
-            <div key={i} className={`rounded-xl border p-4 space-y-2 ${
-              highlightedIds?.has(app.id) ? 'bg-white border-certo-gold ring-2 ring-certo-gold/30' : 'bg-white border-certo-navy/5'
+            <div key={i}
+              onClick={() => router.push(`/${locale}/entity/${app.id}`)}
+              className={`rounded-xl border p-4 space-y-2 cursor-pointer ${
+              highlightedIds?.has(app.id) ? 'bg-white border-certo-gold ring-2 ring-certo-gold/30' : 'bg-white border-certo-navy/5 hover:border-certo-gold/30'
             }`}>
               <div className="flex items-start justify-between gap-2">
-                <h3 className="font-medium text-certo-navy text-sm">{app.organization_name}</h3>
+                <h3 className="font-medium text-certo-navy text-sm hover:text-certo-gold transition-colors">{app.organization_name}</h3>
                 <div className="flex items-center gap-1.5 shrink-0">
                   {(() => { const s = getStatusInfo(app); return (
                     <span className={`px-2 py-0.5 text-[10px] font-medium rounded-full ${s.className}`}>

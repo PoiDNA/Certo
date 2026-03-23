@@ -1,6 +1,7 @@
 'use client';
 
 import { memo, useState, useEffect, useRef } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 
 // TopoJSON world-atlas uses ISO 3166-1 NUMERIC codes (e.g. "616" for Poland)
 // Map numeric → ISO2 for EU countries
@@ -203,6 +204,9 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
   onSectorChange?: (f: SectorFilter) => void;
   sectorCounts?: Record<SectorFilter, number>;
 }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const locale = pathname?.split('/')[1] || 'pl';
   const [paths, setPaths] = useState<{ id: string; d: string; isEU: boolean; iso2: string }[]>([]);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; name: string; city: string; sector: string; date: string } | null>(null);
   const [zoom, setZoom] = useState<string>('EU');
@@ -680,8 +684,10 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
               </div>
               <div className="overflow-y-auto flex-1 divide-y divide-certo-navy/5">
                 {panelApps.map((app, i) => (
-                  <div key={i} className="px-4 py-2.5 hover:bg-certo-gold/5 transition-colors">
-                    <div className="text-xs font-semibold text-certo-navy leading-tight">{app.organization_name}</div>
+                  <div key={i}
+                    onClick={() => router.push(`/${locale}/entity/${app.id}`)}
+                    className="px-4 py-2.5 hover:bg-certo-gold/5 transition-colors cursor-pointer">
+                    <div className="text-xs font-semibold text-certo-navy leading-tight hover:text-certo-gold transition-colors">{app.organization_name}</div>
                     <div className="flex items-center gap-2 mt-1 text-[10px] text-certo-navy/50">
                       {app.city && <span>{app.city}</span>}
                       <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: SECTOR_COLORS[app.sector] || '#CC9B30' }} />
