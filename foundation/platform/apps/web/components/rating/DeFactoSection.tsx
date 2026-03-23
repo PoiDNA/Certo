@@ -9,30 +9,30 @@ export default function DeFactoSection() {
 
   return (
     <section ref={ref} className={`mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-3xl font-serif font-bold text-certo-navy mb-4">
+      <h2 className="text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-4">
         {t('defacto_title')}
       </h2>
-      <p className="text-lg text-certo-navy/60 mb-10">
+      <p className="text-lg text-certo-navy/60 dark:text-certo-dark-text/60 mb-10">
         {t('defacto_subtitle')}
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         {/* De iure */}
-        <div className="bg-certo-navy/5 p-8 border-l-4 border-certo-navy/20 rounded-lg">
-          <h3 className="font-serif font-bold text-certo-navy text-lg mb-3">
+        <div className="bg-certo-navy/5 dark:bg-certo-dark-card p-8 border-l-4 border-certo-navy/20 dark:border-certo-dark-border rounded-lg">
+          <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-lg mb-3">
             {t('defacto_iure')}
           </h3>
-          <p className="text-sm text-certo-navy/60 leading-relaxed">
+          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
             {t('defacto_iure_desc')}
           </p>
         </div>
 
         {/* De facto */}
         <div className="bg-certo-gold/5 p-8 border-l-4 border-certo-gold">
-          <h3 className="font-serif font-bold text-certo-navy text-lg mb-3">
+          <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-lg mb-3">
             {t('defacto_facto')}
           </h3>
-          <p className="text-sm text-certo-navy/60 leading-relaxed">
+          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
             {t('defacto_facto_desc')}
           </p>
         </div>

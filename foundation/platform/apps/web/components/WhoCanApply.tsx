@@ -42,10 +42,10 @@ export default function WhoCanApply() {
 
   return (
     <div>
-      <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-3">
+      <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-3">
         {t('who_title')}
       </h2>
-      <p className="text-base text-certo-navy/60 leading-relaxed mb-8">
+      <p className="text-base text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed mb-8">
         {t('who_intro')}
       </p>
 
@@ -60,7 +60,7 @@ export default function WhoCanApply() {
               className={`relative overflow-hidden rounded-xl p-6 md:p-8 text-left transition-all duration-500 ${
                 isActive
                   ? `${path.activeBg} ${path.activeText} shadow-xl scale-[1.02]`
-                  : 'bg-white border border-certo-navy/5 hover:border-certo-gold/30 hover:shadow-md text-certo-navy'
+                  : 'bg-white dark:bg-certo-dark-card border border-certo-navy/5 dark:border-certo-dark-border hover:border-certo-gold/30 hover:shadow-md text-certo-navy dark:text-certo-dark-text'
               }`}
             >
               {/* Decorative circle */}
@@ -84,7 +84,7 @@ export default function WhoCanApply() {
                 </h3>
 
                 <p className={`text-sm md:text-base leading-relaxed mb-4 transition-colors duration-300 ${
-                  isActive ? 'text-white/80' : 'text-certo-navy/50'
+                  isActive ? 'text-white/80' : 'text-certo-navy/50 dark:text-certo-dark-text/50'
                 }`}>
                   {t(`path_${path.key}_desc`)}
                 </p>

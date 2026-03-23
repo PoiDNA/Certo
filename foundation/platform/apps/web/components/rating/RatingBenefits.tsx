@@ -57,7 +57,7 @@ export default function RatingBenefits() {
       ref={ref}
       className={`mt-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
     >
-      <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy mb-10 text-center">
+      <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-10 text-center">
         {t('benefits_title')}
       </h2>
 
@@ -69,15 +69,15 @@ export default function RatingBenefits() {
             onClick={() => setActive(i)}
             className={`flex-1 flex items-center gap-3 p-4 sm:p-5 rounded-xl border-2 transition-all duration-300 text-left ${
               i === active
-                ? 'border-certo-gold bg-white shadow-lg shadow-certo-gold/10'
-                : 'border-transparent bg-white/60 hover:bg-white hover:border-certo-navy/10'
+                ? 'border-certo-gold bg-white dark:bg-certo-dark-card shadow-lg shadow-certo-gold/10'
+                : 'border-transparent bg-white/60 dark:bg-certo-dark-surface hover:bg-white dark:hover:bg-certo-dark-card hover:border-certo-navy/10'
             }`}
           >
             <div className={`w-10 h-10 rounded-lg ${i === active ? tab.accent : 'bg-certo-navy/10'} flex items-center justify-center text-white shrink-0 transition-colors duration-300`}>
               {tab.icon}
             </div>
             <span className={`font-serif font-bold text-sm sm:text-base transition-colors duration-300 ${
-              i === active ? 'text-certo-navy' : 'text-certo-navy/50'
+              i === active ? 'text-certo-navy dark:text-certo-dark-text' : 'text-certo-navy/50 dark:text-certo-dark-text/50'
             }`}>
               {t(`benefits_${tab.key}_title`)}
             </span>
@@ -87,7 +87,7 @@ export default function RatingBenefits() {
 
       {/* Content panel */}
       <div className={`${current.lightBg} rounded-xl p-8 md:p-10 animate-fadeIn`} key={active}>
-        <p className="text-base md:text-lg text-certo-navy/70 leading-relaxed mb-8 max-w-3xl">
+        <p className="text-base md:text-lg text-certo-navy/70 dark:text-certo-dark-text/70 leading-relaxed mb-8 max-w-3xl">
           {t(`benefits_${current.key}_intro`)}
         </p>
 
@@ -99,7 +99,7 @@ export default function RatingBenefits() {
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <span className="text-sm md:text-base text-certo-navy/70 leading-relaxed">
+              <span className="text-sm md:text-base text-certo-navy/70 dark:text-certo-dark-text/70 leading-relaxed">
                 {t(`benefits_${current.key}_${i + 1}`)}
               </span>
             </div>

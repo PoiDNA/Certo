@@ -73,7 +73,7 @@ export default function ScoreExplainer() {
                   }`}>
                     {t(`${key}_title`)}
                   </h3>
-                  <p className="text-base md:text-lg text-certo-navy/60 leading-relaxed">
+                  <p className="text-base md:text-lg text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
                     {t(`${key}_desc`)}
                   </p>
                 </div>
