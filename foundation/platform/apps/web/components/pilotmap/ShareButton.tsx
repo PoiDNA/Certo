@@ -85,7 +85,18 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
       {open && (
         <div
           onClick={(e) => e.stopPropagation()}
-          className="absolute right-0 top-full mt-1.5 z-50 w-52 bg-white rounded-xl shadow-xl border border-certo-navy/10 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150"
+          ref={(el) => {
+            if (el) {
+              const rect = el.getBoundingClientRect();
+              if (rect.bottom > window.innerHeight) {
+                el.style.top = 'auto';
+                el.style.bottom = '100%';
+                el.style.marginBottom = '6px';
+                el.style.marginTop = '0';
+              }
+            }
+          }}
+          className="absolute right-0 top-full mt-1.5 z-50 w-52 bg-white rounded-xl shadow-xl border border-certo-navy/10 overflow-hidden"
         >
           <div className="px-3 py-2 border-b border-certo-navy/5">
             <span className="text-[10px] font-semibold text-certo-navy/40 uppercase tracking-wider">Udostępnij</span>
