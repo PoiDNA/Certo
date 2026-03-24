@@ -111,6 +111,12 @@ INSERT INTO roles (role_id, role_name, role_group, description, tenant_id, permi
   ('olympiad-sports-observer',    '{"pl":"Obserwator OS","en":"Sports Center Observer"}',       'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                                    'sports', '["view:results"]', 42),
   ('olympiad-sports-auditor',     '{"pl":"Audytor OS","en":"Sports Center Auditor"}',           'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',                 'sports', '["read:all","audit:surveys","flag:anomalies"]', 43),
 
+  -- Org Representative: verified person who approves Certo Action (per tenant)
+  ('olympiad-schools-org-representative',      '{"pl":"Reprezentant podmiotu","en":"Organization Representative"}',      'olympiad', '{"pl":"Zweryfikowana osoba zatwierdzająca Certo Action i realizację kroków","en":"Verified person approving Certo Action and step completion"}', 'schools', '["approve:action","approve:steps","view:action","view:results"]', 17),
+  ('olympiad-culture-org-representative',      '{"pl":"Reprezentant podmiotu OK","en":"Culture Org Representative"}',   'olympiad', '{"pl":"Zweryfikowana osoba zatwierdzająca Certo Action i realizację kroków","en":"Verified person approving Certo Action and step completion"}', 'culture', '["approve:action","approve:steps","view:action","view:results"]', 27),
+  ('olympiad-social-care-org-representative',  '{"pl":"Reprezentant podmiotu DPS","en":"Social Care Org Representative"}', 'olympiad', '{"pl":"Zweryfikowana osoba zatwierdzająca Certo Action i realizację kroków","en":"Verified person approving Certo Action and step completion"}', 'social-care', '["approve:action","approve:steps","view:action","view:results"]', 37),
+  ('olympiad-sports-org-representative',       '{"pl":"Reprezentant podmiotu OS","en":"Sports Org Representative"}',    'olympiad', '{"pl":"Zweryfikowana osoba zatwierdzająca Certo Action i realizację kroków","en":"Verified person approving Certo Action and step completion"}', 'sports', '["approve:action","approve:steps","view:action","view:results"]', 47),
+
   -- Certo Action: Team roles per tenant (schools)
   ('olympiad-schools-team-action',      '{"pl":"Członek zespołu Action","en":"Action Team Member"}',       'olympiad', '{"pl":"Członek zespołu pracującego nad Certo Action","en":"Team member working on Certo Action"}',         'schools', '["edit:action","view:action","comment:action"]', 14),
   ('olympiad-schools-expert-action',    '{"pl":"Ekspert Action","en":"Action Expert"}',                     'olympiad', '{"pl":"Zewnętrzny ekspert zaproszony do Certo Action","en":"External expert invited to Certo Action"}',   'schools', '["edit:action","view:action","comment:action","suggest:action"]', 15),
@@ -173,6 +179,115 @@ CREATE TABLE IF NOT EXISTS olympiad_action_comments (
 );
 
 CREATE INDEX idx_action_comments_org ON olympiad_action_comments (org_id, created_at DESC);
+
+-- =============================================================================
+-- Identity Verification (banking / eID / document)
+-- =============================================================================
+CREATE TABLE IF NOT EXISTS identity_verifications (
+  id                UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id           UUID NOT NULL REFERENCES user_profiles(id),
+
+  -- Verification method
+  method            TEXT NOT NULL CHECK (method IN (
+    'bank_transfer',      -- 1 gr verification transfer (MVP)
+    'open_banking',       -- PSD2 / Kontomatik / similar
+    'eidas_signature',    -- Autenti / qualified electronic signature
+    'id_document',        -- Veriff / ID scan + selfie
+    'manual'              -- Manual verification by Certo staff
+  )),
+
+  -- Status
+  status            TEXT NOT NULL DEFAULT 'pending' CHECK (status IN ('pending', 'verified', 'rejected', 'expired')),
+
+  -- Verification data (encrypted / hashed)
+  verified_name     TEXT,                -- Full legal name from bank/ID
+  verified_at       TIMESTAMPTZ,
+  expires_at        TIMESTAMPTZ,         -- Verification validity (default 12 months)
+
+  -- Bank transfer specifics (MVP)
+  transfer_code     TEXT UNIQUE,          -- Random code for transfer title, e.g. "CERTO-A7X9K2"
+  transfer_amount   INT DEFAULT 1,        -- Amount in grosz/cent (1 = 0.01 PLN/EUR)
+  transfer_iban     TEXT,                  -- Certo's bank account
+  transfer_received BOOLEAN DEFAULT false,
+
+  -- Provider specifics (v2)
+  provider          TEXT,                 -- 'kontomatik', 'autenti', 'veriff'
+  provider_ref      TEXT,                 -- External reference ID
+  provider_data     JSONB,               -- Provider-specific response (encrypted)
+
+  -- Audit
+  ip_address        TEXT,
+  user_agent        TEXT,
+  created_at        TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX idx_identity_verifications_user ON identity_verifications (user_id, status);
+CREATE INDEX idx_identity_verifications_code ON identity_verifications (transfer_code) WHERE transfer_code IS NOT NULL;
+
+-- =============================================================================
+-- Certo Action Approvals (Representative approves plan + step completions)
+-- =============================================================================
+CREATE TABLE IF NOT EXISTS olympiad_action_approvals (
+  id                UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  org_id            UUID NOT NULL REFERENCES olympiad_organizations(org_id),
+  tenant_id         TEXT NOT NULL,
+
+  -- Who approves
+  representative_id UUID NOT NULL REFERENCES user_profiles(id),
+  verification_id   UUID REFERENCES identity_verifications(id),  -- Link to banking verification
+
+  -- What is approved
+  approval_type     TEXT NOT NULL CHECK (approval_type IN (
+    'action_plan',        -- Approve the entire Certo Action plan
+    'step_completion'     -- Approve that a specific step was completed
+  )),
+  plan_id           TEXT,              -- Which plan (for multi-plan Certo Action)
+  step_index        INT,               -- Which step (for step_completion)
+
+  -- Decision
+  decision          TEXT NOT NULL CHECK (decision IN ('approved', 'rejected', 'revision_requested')),
+  comment           TEXT,              -- Reason for rejection or revision request
+
+  -- Legal weight
+  legal_statement   TEXT NOT NULL DEFAULT 'Niniejszym potwierdzam, że informacje zawarte w tym zatwierdzeniu są zgodne z prawdą.',
+  verified_identity BOOLEAN NOT NULL DEFAULT false,  -- true = representative identity verified via banking
+
+  created_at        TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX idx_action_approvals_org ON olympiad_action_approvals (org_id, created_at DESC);
+CREATE INDEX idx_action_approvals_rep ON olympiad_action_approvals (representative_id);
+
+-- =============================================================================
+-- Seed: assign przemekbcs@gmail.com as coordinator in demo organizations
+-- (This runs on migration; in production, users register via Supabase Auth)
+-- =============================================================================
+DO $$
+DECLARE
+  v_user_id UUID;
+BEGIN
+  -- Create or find user profile for przemekbcs@gmail.com
+  INSERT INTO user_profiles (id, email, display_name, avatar_url)
+  VALUES (
+    gen_random_uuid(),
+    'przemekbcs@gmail.com',
+    'Przemek BCS',
+    NULL
+  )
+  ON CONFLICT (email) DO UPDATE SET display_name = 'Przemek BCS'
+  RETURNING id INTO v_user_id;
+
+  -- Assign coordinator role for all 4 tenants
+  INSERT INTO user_roles (user_id, role_id) VALUES
+    (v_user_id, 'olympiad-schools-coordinator'),
+    (v_user_id, 'olympiad-culture-coordinator'),
+    (v_user_id, 'olympiad-social-care-coordinator'),
+    (v_user_id, 'olympiad-sports-coordinator'),
+    (v_user_id, 'certo-centrum')
+  ON CONFLICT DO NOTHING;
+
+  RAISE NOTICE 'Assigned coordinator roles to przemekbcs@gmail.com (user_id: %)', v_user_id;
+END $$;
 
 -- =============================================================================
 -- Rating History (audit trail for score changes after Certo Action)
