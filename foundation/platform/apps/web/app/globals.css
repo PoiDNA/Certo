@@ -20,25 +20,75 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════ */
-/* LIGHT MODE (default)                                           */
+/* LIGHT / DARK MODE — CSS custom properties on :root               */
+/* Components use Tailwind utilities (text-certo-navy, dark:text-   */
+/* certo-dark-text) for text. Body only sets bg + default color.    */
 /* ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --certo-bg: var(--color-certo-cream);
+  --certo-fg: var(--color-certo-navy);
+  --certo-fg-muted: rgba(26, 39, 68, 0.6);
+  --certo-card-bg: #FFFFFF;
+  --certo-card-border: rgba(26, 39, 68, 0.05);
+}
+
+:root.dark {
+  --certo-bg: var(--color-certo-dark-bg);
+  --certo-fg: var(--color-certo-dark-text);
+  --certo-fg-muted: rgba(232, 228, 220, 0.6);
+  --certo-card-bg: var(--color-certo-dark-card);
+  --certo-card-border: var(--color-certo-dark-border);
+}
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-certo-cream);
-  color: var(--color-certo-navy);
+  background-color: var(--certo-bg);
+  color: var(--certo-fg);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ═══════════════════════════════════════════════════════════════ */
-/* DARK MODE — mirrors the light palette: navy↔cream swap          */
+/* DARK MODE — global text overrides                                */
+/* In dark mode, any text using certo-navy colors must flip to      */
+/* cream/light. This avoids needing dark: prefix on 256+ elements.  */
 /* ═══════════════════════════════════════════════════════════════ */
 
-.dark body,
-body.dark {
-  background-color: var(--color-certo-dark-bg);
-  color: var(--color-certo-dark-text);
+/* Navy text → cream text in dark mode (covers text-certo-navy) */
+:root.dark .text-certo-navy { color: var(--color-certo-dark-text) !important; }
+
+/* Navy text with opacity variants — preserve opacity */
+:root.dark .text-certo-navy\/50 { color: rgba(232, 228, 220, 0.5) !important; }
+:root.dark .text-certo-navy\/60 { color: rgba(232, 228, 220, 0.6) !important; }
+:root.dark .text-certo-navy\/70 { color: rgba(232, 228, 220, 0.7) !important; }
+:root.dark .text-certo-navy\/80 { color: rgba(232, 228, 220, 0.8) !important; }
+:root.dark .text-certo-navy\/40 { color: rgba(232, 228, 220, 0.4) !important; }
+:root.dark .text-certo-navy\/30 { color: rgba(232, 228, 220, 0.3) !important; }
+
+/* SVG fill overrides */
+:root.dark .fill-certo-navy { fill: var(--color-certo-dark-text) !important; }
+:root.dark .fill-certo-navy\/60 { fill: rgba(232, 228, 220, 0.6) !important; }
+:root.dark .fill-certo-navy\/30 { fill: rgba(232, 228, 220, 0.3) !important; }
+
+/* Background overrides: white → dark card */
+:root.dark .bg-white { background-color: var(--color-certo-dark-card) !important; }
+:root.dark .bg-white\/60 { background-color: var(--color-certo-dark-surface) !important; }
+:root.dark .bg-amber-50\/50 { background-color: var(--color-certo-dark-surface) !important; }
+:root.dark .bg-certo-navy\/5 { background-color: var(--color-certo-dark-surface) !important; }
+:root.dark .bg-certo-navy\/10 { background-color: var(--color-certo-dark-surface) !important; }
+:root.dark .bg-certo-navy\/\[0\.02\] { background-color: transparent !important; }
+
+/* Border overrides */
+:root.dark [class*="border-certo-navy/"] { border-color: var(--color-certo-dark-border) !important; }
+
+/* Gradient card overrides — Score/Vector cards */
+:root.dark [class*="bg-gradient-to-br"] {
+  background: var(--color-certo-dark-card) !important;
 }
+
+/* Preserve gold-on-navy (already has good contrast in dark) */
+:root.dark .bg-certo-navy { background-color: var(--color-certo-dark-surface) !important; }
+:root.dark .bg-certo-gold\/5 { background-color: rgba(196, 154, 60, 0.08) !important; }
 
 /* Dark mode prose */
 .dark .prose h1,
