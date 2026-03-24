@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { calculateActionBoost, type ActionBoostInput } from "../../../../../lib/olympiad/scoring";
 import { getOlympiadSupabase } from "../../../../../lib/olympiad/supabase";
-import { SCHOOLS_CONFIG } from "../../../../../lib/olympiad/tenants/schools";
+import { schoolsTenantConfig as SCHOOLS_CONFIG } from "../../../../../lib/olympiad/tenants/schools";
 
 /**
  * POST /api/olympiad/action/boost

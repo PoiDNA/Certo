@@ -74,20 +74,20 @@ const DEMO: Record<string, OrgDetail> = {
     { id: "a1", title: "Transparentność budżetu", weakest_pillar: "transparency", plan: "Rodzice nie wiedzą, na co szkoła wydaje pieniądze z komitetu rodzicielskiego. Chcemy to zmienić publikując budżet online i organizując regularne spotkania.", steps: [
       { text: "Przygotowanie uproszczonego zestawienia budżetu w formie infografiki", startDate: "2026-10-01", endDate: "2026-10-10", status: "completed", proof: "Infografika gotowa — zatwierdzona przez księgową i dyrektora. PDF na dysku współdzielonym." },
       { text: "Publikacja budżetu na stronie szkoły + wysyłka do rodziców przez e-dziennik", startDate: "2026-10-10", endDate: "2026-10-17", status: "completed", proof: "https://sp15.edu.pl/budzet — 312 wyświetleń w pierwszym tygodniu" },
-      { text: "Uruchomienie comiesięcznego newslettera „Złotówka SP15" z podsumowaniem wydatków", startDate: "2026-10-17", endDate: "2026-11-01", status: "in-progress", proof: "" },
-      { text: "Pierwszy „Dzień Otwarty Budżetu" — spotkanie z rodzicami i prezentacja wydatków", startDate: "2026-11-15", endDate: "2026-11-22", status: "planned", proof: "" },
+      { text: "Uruchomienie comiesięcznego newslettera Zlotowka SP15 z podsumowaniem wydatków", startDate: "2026-10-17", endDate: "2026-11-01", status: "in-progress", proof: "" },
+      { text: "Pierwszy Dzien Otwarty Budzetu — spotkanie z rodzicami i prezentacja wydatków", startDate: "2026-11-15", endDate: "2026-11-22", status: "planned", proof: "" },
       { text: "Ankieta ewaluacyjna wśród rodziców: czy czują się lepiej poinformowani?", startDate: "2026-11-25", endDate: "2026-12-05", status: "planned", proof: "" }
     ], metrics: ["60% rodziców odwiedza stronę budżetu", "80% otwarć newslettera", "40+ rodziców na Dniu Otwartym"] },
     { id: "a2", title: "Komunikacja z rodzicami", weakest_pillar: "stakeholders", plan: "Rodzice zgłaszają, że trudno się skontaktować ze szkołą i że informacje przychodzą za późno. Wdrażamy szybkie kanały komunikacji.", steps: [
       { text: "Ankieta potrzeb komunikacyjnych wśród rodziców (online, 5 pytań)", startDate: "2026-10-05", endDate: "2026-10-15", status: "completed", proof: "127 odpowiedzi zebranych. Top 3 problemy: spóźnione info o wycieczkach, brak odpowiedzi na maile, nieczytelne ogłoszenia." },
       { text: "Utworzenie grup WhatsApp per klasa (wychowawca + rodzice)", startDate: "2026-10-15", endDate: "2026-10-25", status: "completed", proof: "18 grup utworzonych, 89% rodziców dołączyło. Szablon powitalny rozesłany." },
-      { text: "Wdrożenie zasady „odpowiedź w 24h" na wiadomości od rodziców", startDate: "2026-10-25", endDate: "2026-11-08", status: "in-progress", proof: "" },
+      { text: "Wdrożenie zasady odpowiedz-w-24h na wiadomości od rodziców", startDate: "2026-10-25", endDate: "2026-11-08", status: "in-progress", proof: "" },
       { text: "Szkolenie nauczycieli z komunikacji z rodzicami (2h warsztat)", startDate: "2026-11-10", endDate: "2026-11-17", status: "planned", proof: "" }
     ], metrics: ["Czas odpowiedzi <24h", "90% rodziców w grupach klasowych", "Satysfakcja rodziców >4.0/5.0"] },
     { id: "a3", title: "Głos uczniów w decyzjach szkoły", weakest_pillar: "decisions", plan: "Samorząd uczniowski istnieje formalnie, ale nie ma realnego wpływu na decyzje. Chcemy dać uczniom prawdziwy głos.", steps: [
       { text: "Spotkanie z samorządem — zebranie listy spraw, w których uczniowie chcą mieć wpływ", startDate: "2026-10-08", endDate: "2026-10-15", status: "completed", proof: "Lista 12 tematów. Top 3: jadłospis stołówki, zasady korzystania z telefonów, wybór wycieczek klasowych." },
-      { text: "Wprowadzenie „Skrzynki pomysłów" (fizyczna + online) z comiesięcznym losowaniem", startDate: "2026-10-20", endDate: "2026-11-01", status: "in-progress", proof: "" },
-      { text: "Pierwsze „Konsultacje uczniowskie" — dyrektor spotyka się z samorządem co 2 tygodnie", startDate: "2026-11-05", endDate: "2026-11-20", status: "planned", proof: "" }
+      { text: "Wprowadzenie Skrzynki Pomyslow (fizyczna + online) z comiesięcznym losowaniem", startDate: "2026-10-20", endDate: "2026-11-01", status: "in-progress", proof: "" },
+      { text: "Pierwsze Konsultacje Uczniowskie — dyrektor spotyka się z samorządem co 2 tygodnie", startDate: "2026-11-05", endDate: "2026-11-20", status: "planned", proof: "" }
     ], metrics: ["Min. 20 pomysłów miesięcznie w Skrzynce", "3+ decyzje podjęte wspólnie z uczniami", "80% uczniów wie o Konsultacjach"] }
   ], peer_review_avg: 4.2, test_score: 80, test_passed: true },
   "2": { org_id: "2", org_name: "Liceum Ogólnokształcące nr 3", tenant_id: "schools", tenant_name: "Szkoły", country: "PL", municipality: "Kraków", phase: "gala", certo_score: 92, certo_vector: "++", level: "diament", participation_rates: { students: 85, teachers: 95, parents: 61, staff: 78 }, pillar_scores: { operational: 94, stakeholders: 90, decisions: 93, stability: 88, transparency: 95 }, total_responses: 512, created_at: "2026-09-12", coordinator_name: "Tomasz Wójcik", team_members: ["Katarzyna Dąbrowska", "Adam Lewandowski", "Ewa Kamińska", "Marek Szymański"], action_plans: [
