@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import AuthNav from "../../components/AuthNav";
 import SiteNav from "../../components/SiteNav";
+import LocaleSwitcher from "../../components/LocaleSwitcher";
 import Footer from "../../components/Footer";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const languages: Record<string, string> = {
     'x-default': `https://certogov.org/en`
   };
-  
+
   locales.forEach((l) => {
     languages[l] = `https://certogov.org/${l}`;
   });
@@ -82,9 +83,12 @@ export default async function RootLayout({
                   </span>
                 </a>
               </div>
-              <div className="flex items-center gap-8">
-                <div className="md:order-2"><AuthNav /></div>
+              <div className="flex items-center gap-6">
                 <SiteNav />
+                <div className="hidden md:block">
+                  <LocaleSwitcher />
+                </div>
+                <AuthNav />
               </div>
             </div>
           </header>
