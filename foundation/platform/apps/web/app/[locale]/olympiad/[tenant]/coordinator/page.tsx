@@ -1,7 +1,8 @@
 import { locales } from "@certo/i18n/config";
 import { setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getTenantConfig } from "../../../../../lib/olympiad/data";
+import { requireAuth } from "../../../../../lib/auth/session";
 import CoordinatorDashboard from "../../../../../components/olympiad/CoordinatorDashboard";
 
 export function generateStaticParams() {
@@ -10,6 +11,8 @@ export function generateStaticParams() {
     tenants.map((tenant) => ({ locale, tenant }))
   );
 }
+
+export const dynamic = "force-dynamic"; // auth requires dynamic rendering
 
 export default async function CoordinatorPage({
   params,
@@ -22,6 +25,12 @@ export default async function CoordinatorPage({
   const config = await getTenantConfig(tenantSlug);
   if (!config) notFound();
 
+  // Auth check — redirect to login if not authenticated
+  const user = await requireAuth();
+  if (!user) {
+    redirect(`/${locale}/login?redirect=/${locale}/olympiad/${tenantSlug}/coordinator`);
+  }
+
   const t = (key: Record<string, string>) =>
     key[locale] || key.en || key.pl || Object.values(key)[0] || "";
 
@@ -33,6 +42,9 @@ export default async function CoordinatorPage({
         </h1>
         <p className="text-certo-navy/60 dark:text-certo-dark-muted">
           Olimpiada Certo — {t(config.tenant_name)}
+        </p>
+        <p className="text-xs text-certo-navy/30 dark:text-certo-dark-muted mt-1">
+          {user.email}
         </p>
       </div>
 
