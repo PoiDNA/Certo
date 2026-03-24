@@ -163,6 +163,7 @@ export default function SurveyForm({
               key={index}
               questionText={text}
               pillar={q.pillar}
+              audioUrl={q.audioUrl}
               onAnswer={(_pillar, value) =>
                 handleAnswerByIndex(index, _pillar, value)
               }

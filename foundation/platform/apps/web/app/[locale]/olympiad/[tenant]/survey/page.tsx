@@ -2,6 +2,7 @@ import { locales } from "@certo/i18n/config";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { getTenantConfig } from "../../../../../lib/olympiad/data";
+import { getAudioUrl } from "../../../../../lib/olympiad/tts";
 import SurveyPageClient from "./SurveyPageClient";
 
 export function generateStaticParams() {
@@ -53,7 +54,12 @@ export default async function SurveyPage({
       </div>
 
       <SurveyPageClient
-        questions={surveyConfig.questions}
+        questions={surveyConfig.questions.map((q) => ({
+          ...q,
+          audioUrl: surveyConfig.audio_tts === "static_mp3"
+            ? getAudioUrl(q.text[locale] || q.text.pl || Object.values(q.text)[0] || "", locale)
+            : undefined,
+        }))}
         locale={locale}
         groupName={t(group.name)}
         tenantSlug={tenantSlug}
