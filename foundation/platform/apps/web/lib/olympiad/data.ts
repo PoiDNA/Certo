@@ -23,10 +23,11 @@ export async function getTenantConfig(
     return staticConfig;
   }
 
-  // Runtime: try Supabase (lazy import to avoid issues during build)
+  // Runtime: try Supabase
   try {
-    const { getServiceSupabase } = await import("../rag/supabase");
-    const supabase = getServiceSupabase();
+    const { getOlympiadSupabase } = await import("./supabase");
+    const supabase = getOlympiadSupabase();
+    if (!supabase) return null;
 
     const { data, error } = await supabase
       .from("olympiad_tenants")
