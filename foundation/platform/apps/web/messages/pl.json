@@ -407,6 +407,26 @@
     "coord_select_group": "Wybierz grupę...",
     "coord_live_session": "Live Session QR",
     "coord_empty": "Wygeneruj pierwszy link dla swojej społeczności",
-    "coord_total": "Łącznie odpowiedzi:"
+    "coord_total": "Łącznie odpowiedzi:",
+    "participants_title": "Uczestnicy Olimpiady Certo",
+    "participants_subtitle": "Wszystkie organizacje uczestniczące — obserwuj, porównuj i śledź postępy",
+    "participants_search": "Szukaj organizacji, miasta, kraju...",
+    "participants_all_countries": "Wszystkie kraje",
+    "participants_all_levels": "Wszystkie poziomy",
+    "participants_watched": "Obserwowane",
+    "participants_compare": "Porównaj",
+    "participants_details": "Szczegóły",
+    "participants_back": "Wszyscy uczestnicy",
+    "participants_watch": "Obserwuj",
+    "participants_watching": "Obserwujesz",
+    "participants_phase_progress": "Postęp w olimpiadzie",
+    "participants_pillars": "Wyniki filarów governance",
+    "participants_participation": "Frekwencja ankiet",
+    "participants_test": "Test wiedzy",
+    "participants_peer_review": "Peer-Review",
+    "participants_action": "Certo Action",
+    "participants_team": "Rada Olimpijska",
+    "participants_info": "Informacje",
+    "participants_compare_title": "Porównanie organizacji"
   }
 }
