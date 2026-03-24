@@ -41,65 +41,46 @@
   --certo-card-border: var(--color-certo-dark-border);
 }
 
-body {
-  font-family: var(--font-sans);
-  background-color: var(--certo-bg);
-  color: var(--certo-fg);
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* ═══════════════════════════════════════════════════════════════ */
+/* @layer base — body defaults, lower priority than Tailwind      */
+/* utilities. This ensures text-certo-navy, text-certo-cream etc  */
+/* always beat the body color in the cascade.                      */
+/* ═══════════════════════════════════════════════════════════════ */
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--certo-bg);
+    color: var(--certo-fg);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════ */
-/* DARK MODE — global text overrides                                */
-/* In dark mode, any text using certo-navy colors must flip to      */
-/* cream/light. This avoids needing dark: prefix on 256+ elements.  */
+/* DARK MODE — background overrides (no text overrides needed)    */
+/* Text is handled by dark: Tailwind variants on components.       */
+/* Body color fallback (cream in dark) handles unclassed elements. */
 /* ═══════════════════════════════════════════════════════════════ */
 
-/* ── LIGHT MODE — force navy text to be solid & readable ── */
-:root:not(.dark) .text-certo-navy  { color: #1A2744 !important; }
-:root:not(.dark) .text-certo-navy\/30 { color: rgba(26, 39, 68, 0.5) !important; }
-:root:not(.dark) .text-certo-navy\/40 { color: rgba(26, 39, 68, 0.6) !important; }
-:root:not(.dark) .text-certo-navy\/50 { color: rgba(26, 39, 68, 0.7) !important; }
-:root:not(.dark) .text-certo-navy\/60 { color: rgba(26, 39, 68, 0.8) !important; }
-:root:not(.dark) .text-certo-navy\/70 { color: rgba(26, 39, 68, 0.88) !important; }
-:root:not(.dark) .text-certo-navy\/80 { color: rgba(26, 39, 68, 0.92) !important; }
-:root:not(.dark) .text-certo-cream  { color: #F5F0E8 !important; }
-
-/* ── DARK MODE — flip navy to cream ── */
-:root.dark .text-certo-navy  { color: #E8E4DC !important; }
-:root.dark .text-certo-navy\/30 { color: rgba(232, 228, 220, 0.4) !important; }
-:root.dark .text-certo-navy\/40 { color: rgba(232, 228, 220, 0.5) !important; }
-:root.dark .text-certo-navy\/50 { color: rgba(232, 228, 220, 0.6) !important; }
-:root.dark .text-certo-navy\/60 { color: rgba(232, 228, 220, 0.75) !important; }
-:root.dark .text-certo-navy\/70 { color: rgba(232, 228, 220, 0.85) !important; }
-:root.dark .text-certo-navy\/80 { color: rgba(232, 228, 220, 0.92) !important; }
-:root.dark .text-certo-cream  { color: #F5F0E8 !important; }
-
-/* SVG fill overrides */
-:root:not(.dark) .fill-certo-navy { fill: #1A2744 !important; }
-:root:not(.dark) .fill-certo-navy\/60 { fill: rgba(26, 39, 68, 0.8) !important; }
-:root.dark .fill-certo-navy { fill: #E8E4DC !important; }
-:root.dark .fill-certo-navy\/60 { fill: rgba(232, 228, 220, 0.75) !important; }
-:root.dark .fill-certo-navy\/30 { fill: rgba(232, 228, 220, 0.4) !important; }
-
 /* Background overrides: white → dark card */
-:root.dark .bg-white { background-color: var(--color-certo-dark-card) !important; }
-:root.dark .bg-white\/60 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-amber-50\/50 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-navy\/5 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-navy\/10 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-navy\/\[0\.02\] { background-color: transparent !important; }
+:root.dark .bg-white { background-color: var(--color-certo-dark-card); }
+:root.dark .bg-white\/60 { background-color: var(--color-certo-dark-surface); }
+:root.dark .bg-amber-50\/50 { background-color: var(--color-certo-dark-surface); }
+:root.dark .bg-certo-navy\/5 { background-color: var(--color-certo-dark-surface); }
+:root.dark .bg-certo-navy\/10 { background-color: var(--color-certo-dark-surface); }
+:root.dark .bg-certo-navy\/\[0\.02\] { background-color: transparent; }
 
 /* Border overrides */
-:root.dark [class*="border-certo-navy/"] { border-color: var(--color-certo-dark-border) !important; }
+:root.dark [class*="border-certo-navy/"] { border-color: var(--color-certo-dark-border); }
 
 /* Gradient card overrides — Score/Vector cards */
 :root.dark [class*="bg-gradient-to-br"] {
-  background: var(--color-certo-dark-card) !important;
+  background: var(--color-certo-dark-card);
 }
 
 /* Preserve gold-on-navy (already has good contrast in dark) */
-:root.dark .bg-certo-navy { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-gold\/5 { background-color: rgba(196, 154, 60, 0.08) !important; }
+:root.dark .bg-certo-navy { background-color: var(--color-certo-dark-surface); }
+:root.dark .bg-certo-gold\/5 { background-color: rgba(196, 154, 60, 0.08); }
 
 /* Dark mode prose */
 .dark .prose h1,
@@ -112,8 +93,10 @@ body {
 .dark .prose pre { background: var(--color-certo-dark-header); }
 .dark .prose blockquote { color: rgba(232, 228, 220, 0.7); }
 
-h1, h2, h3, h4, h5, h6, .font-serif {
-  font-family: var(--font-serif);
+@layer base {
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--font-serif);
+  }
 }
 
 /* Typography for rendered Markdown */
