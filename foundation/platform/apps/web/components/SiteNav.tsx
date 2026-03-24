@@ -7,6 +7,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 
 const primaryLinks = [
   { href: '/ratings', key: 'rating' as const },
+  { href: '/olympiad', key: 'olympiad' as const },
   { href: '/pilot', key: 'pilot' as const },
   { href: '/about', key: 'about' as const },
 ];
