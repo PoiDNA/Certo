@@ -54,30 +54,31 @@ body {
 /* cream/light. This avoids needing dark: prefix on 256+ elements.  */
 /* ═══════════════════════════════════════════════════════════════ */
 
-/* ── LIGHT MODE — boost contrast for navy text on cream ── */
-/* Opacity variants are too faint on cream; bump them up */
-:root:not(.dark) .text-certo-navy\/50 { color: rgba(26, 39, 68, 0.7) !important; }
-:root:not(.dark) .text-certo-navy\/60 { color: rgba(26, 39, 68, 0.78) !important; }
-:root:not(.dark) .text-certo-navy\/70 { color: rgba(26, 39, 68, 0.85) !important; }
-:root:not(.dark) .text-certo-navy\/40 { color: rgba(26, 39, 68, 0.6) !important; }
+/* ── LIGHT MODE — force navy text to be solid & readable ── */
+:root:not(.dark) .text-certo-navy  { color: #1A2744 !important; }
 :root:not(.dark) .text-certo-navy\/30 { color: rgba(26, 39, 68, 0.5) !important; }
+:root:not(.dark) .text-certo-navy\/40 { color: rgba(26, 39, 68, 0.6) !important; }
+:root:not(.dark) .text-certo-navy\/50 { color: rgba(26, 39, 68, 0.7) !important; }
+:root:not(.dark) .text-certo-navy\/60 { color: rgba(26, 39, 68, 0.8) !important; }
+:root:not(.dark) .text-certo-navy\/70 { color: rgba(26, 39, 68, 0.88) !important; }
+:root:not(.dark) .text-certo-navy\/80 { color: rgba(26, 39, 68, 0.92) !important; }
+:root:not(.dark) .text-certo-cream  { color: #F5F0E8 !important; }
 
 /* ── DARK MODE — flip navy to cream ── */
-/* Navy text → cream text */
-:root.dark .text-certo-navy { color: var(--color-certo-dark-text) !important; }
-
-/* Navy text with opacity variants — preserve relative opacity */
-:root.dark .text-certo-navy\/50 { color: rgba(232, 228, 220, 0.6) !important; }
-:root.dark .text-certo-navy\/60 { color: rgba(232, 228, 220, 0.72) !important; }
-:root.dark .text-certo-navy\/70 { color: rgba(232, 228, 220, 0.82) !important; }
-:root.dark .text-certo-navy\/80 { color: rgba(232, 228, 220, 0.9) !important; }
-:root.dark .text-certo-navy\/40 { color: rgba(232, 228, 220, 0.5) !important; }
+:root.dark .text-certo-navy  { color: #E8E4DC !important; }
 :root.dark .text-certo-navy\/30 { color: rgba(232, 228, 220, 0.4) !important; }
+:root.dark .text-certo-navy\/40 { color: rgba(232, 228, 220, 0.5) !important; }
+:root.dark .text-certo-navy\/50 { color: rgba(232, 228, 220, 0.6) !important; }
+:root.dark .text-certo-navy\/60 { color: rgba(232, 228, 220, 0.75) !important; }
+:root.dark .text-certo-navy\/70 { color: rgba(232, 228, 220, 0.85) !important; }
+:root.dark .text-certo-navy\/80 { color: rgba(232, 228, 220, 0.92) !important; }
+:root.dark .text-certo-cream  { color: #F5F0E8 !important; }
 
 /* SVG fill overrides */
-:root:not(.dark) .fill-certo-navy\/60 { fill: rgba(26, 39, 68, 0.78) !important; }
-:root.dark .fill-certo-navy { fill: var(--color-certo-dark-text) !important; }
-:root.dark .fill-certo-navy\/60 { fill: rgba(232, 228, 220, 0.72) !important; }
+:root:not(.dark) .fill-certo-navy { fill: #1A2744 !important; }
+:root:not(.dark) .fill-certo-navy\/60 { fill: rgba(26, 39, 68, 0.8) !important; }
+:root.dark .fill-certo-navy { fill: #E8E4DC !important; }
+:root.dark .fill-certo-navy\/60 { fill: rgba(232, 228, 220, 0.75) !important; }
 :root.dark .fill-certo-navy\/30 { fill: rgba(232, 228, 220, 0.4) !important; }
 
 /* Background overrides: white → dark card */
