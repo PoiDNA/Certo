@@ -1,51 +1,51 @@
 @import "tailwindcss";
 
 @theme {
+  /* Raw palette */
   --color-certo-navy: #1A2744;
   --color-certo-cream: #F5F0E8;
   --color-certo-gold: #C49A3C;
   --color-certo-gold-light: #D4AF6A;
 
-  /* Dark mode palette */
-  --color-certo-dark-bg: #0F1219;
-  --color-certo-dark-surface: #1A2235;
-  --color-certo-dark-card: #232D3F;
-  --color-certo-dark-text: #E8E4DC;
-  --color-certo-dark-muted: #A0A0A0;
-  --color-certo-dark-border: #2A3548;
-  --color-certo-dark-header: #0A0E15;
-
   --font-serif: Georgia, "Playfair Display", serif;
   --font-sans: system-ui, sans-serif;
 }
 
-/* ═══════════════════════════════════════════════════════════════ */
-/* LIGHT / DARK MODE — CSS custom properties on :root               */
-/* Components use Tailwind utilities (text-certo-navy, dark:text-   */
-/* certo-dark-text) for text. Body only sets bg + default color.    */
-/* ═══════════════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════ */
+/* Semantic utility classes — auto-switch with dark mode  */
+/* Tailwind v4 @theme cannot use var() refs, so we use   */
+/* @utility to create classes that read CSS variables.    */
+/* ═══════════════════════════════════════════════════════ */
+
+@utility bg-certo-bg { background-color: var(--certo-bg); }
+@utility bg-certo-card { background-color: var(--certo-card-bg); }
+@utility bg-certo-surface { background-color: var(--certo-surface); }
+
+@utility text-certo-fg { color: var(--certo-fg); }
+@utility text-certo-fg-muted { color: var(--certo-fg-muted); }
+
+@utility border-certo-card-border { border-color: var(--certo-card-border); }
+
+@utility fill-certo-fg { fill: var(--certo-fg); }
+@utility fill-certo-fg-muted { fill: var(--certo-fg-muted); }
 
 :root {
-  --certo-bg: var(--color-certo-cream);
-  --certo-fg: var(--color-certo-navy);
+  --certo-bg: #F5F0E8;          /* cream */
+  --certo-fg: #1A2744;          /* navy */
   --certo-fg-muted: rgba(26, 39, 68, 0.6);
   --certo-card-bg: #FFFFFF;
   --certo-card-border: rgba(26, 39, 68, 0.05);
+  --certo-surface: rgba(26, 39, 68, 0.03);
 }
 
 :root.dark {
-  --certo-bg: var(--color-certo-dark-bg);
-  --certo-fg: var(--color-certo-dark-text);
+  --certo-bg: #0F1219;
+  --certo-fg: #E8E4DC;
   --certo-fg-muted: rgba(232, 228, 220, 0.6);
-  --certo-card-bg: var(--color-certo-dark-card);
-  --certo-card-border: var(--color-certo-dark-border);
+  --certo-card-bg: #232D3F;
+  --certo-card-border: #2A3548;
+  --certo-surface: #1A2235;
 }
-
-/* ═══════════════════════════════════════════════════════════════ */
-/* @layer base — body defaults, lower priority than Tailwind      */
-/* utilities. This ensures text-certo-navy, text-certo-cream etc  */
-/* always beat the body color in the cascade.                      */
-/* ═══════════════════════════════════════════════════════════════ */
 
 @layer base {
   body {
@@ -54,62 +54,28 @@
     color: var(--certo-fg);
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-}
 
-/* ═══════════════════════════════════════════════════════════════ */
-/* DARK MODE — background overrides (no text overrides needed)    */
-/* Text is handled by dark: Tailwind variants on components.       */
-/* Body color fallback (cream in dark) handles unclassed elements. */
-/* ═══════════════════════════════════════════════════════════════ */
-
-/* Background overrides: white → dark card */
-:root.dark .bg-white { background-color: var(--color-certo-dark-card); }
-:root.dark .bg-white\/60 { background-color: var(--color-certo-dark-surface); }
-:root.dark .bg-amber-50\/50 { background-color: var(--color-certo-dark-surface); }
-:root.dark .bg-certo-navy\/5 { background-color: var(--color-certo-dark-surface); }
-:root.dark .bg-certo-navy\/10 { background-color: var(--color-certo-dark-surface); }
-:root.dark .bg-certo-navy\/\[0\.02\] { background-color: transparent; }
-
-/* Border overrides */
-:root.dark [class*="border-certo-navy/"] { border-color: var(--color-certo-dark-border); }
-
-/* Gradient card overrides — Score/Vector cards */
-:root.dark [class*="bg-gradient-to-br"] {
-  background: var(--color-certo-dark-card);
-}
-
-/* Preserve gold-on-navy (already has good contrast in dark) */
-:root.dark .bg-certo-navy { background-color: var(--color-certo-dark-surface); }
-:root.dark .bg-certo-gold\/5 { background-color: rgba(196, 154, 60, 0.08); }
-
-/* Dark mode prose */
-.dark .prose h1,
-.dark .prose h2,
-.dark .prose h3 { color: var(--color-certo-dark-text); }
-.dark .prose h2 { border-bottom-color: var(--color-certo-gold); }
-.dark .prose th { background: rgba(196, 154, 60, 0.15); color: var(--color-certo-dark-text); border-color: rgba(196, 154, 60, 0.3); }
-.dark .prose td { border-color: var(--color-certo-dark-border); }
-.dark .prose code { background: rgba(232, 228, 220, 0.08); color: var(--color-certo-dark-text); }
-.dark .prose pre { background: var(--color-certo-dark-header); }
-.dark .prose blockquote { color: rgba(232, 228, 220, 0.7); }
-
-@layer base {
   h1, h2, h3, h4, h5, h6, .font-serif {
     font-family: var(--font-serif);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-certo-gold);
+    outline-offset: 2px;
   }
 }
 
 /* Typography for rendered Markdown */
-.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
-.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
-.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
+.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--certo-fg); }
+.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--certo-fg); }
+.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--certo-fg); }
 .prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
-.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--color-certo-navy); }
+.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--certo-fg); }
 .prose td { padding: 0.5rem 0.75rem; border: 1px solid rgba(26, 39, 68, 0.1); }
-.prose code { background: rgba(26, 39, 68, 0.05); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--color-certo-navy); }
+.prose code { background: var(--certo-surface); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--certo-fg); }
 .prose pre { background: var(--color-certo-navy); color: var(--color-certo-cream); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
 .prose pre code { background: none; padding: 0; color: inherit; }
-.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: rgba(26, 39, 68, 0.8); font-style: italic; }
+.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: var(--certo-fg-muted); font-style: italic; }
 .prose a { color: var(--color-certo-gold); text-decoration: none; font-weight: 500; }
 .prose a:hover { text-decoration: underline; }
 
