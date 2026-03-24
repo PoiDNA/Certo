@@ -87,29 +87,11 @@ INSERT INTO roles (role_id, role_name, role_group, description, tenant_id, permi
   ('certo-trybunal',     '{"pl":"Trybunał Etyczny","en":"Ethics Tribunal"}',            'platform', '{"pl":"Organ ds. etyki i odwołań","en":"Ethics and appeals body"}',                        NULL, '["read:all","adjudicate:appeals"]', 6),
   ('certo-centrum',      '{"pl":"Centrum Operacyjne","en":"Operations Center"}',        'platform', '{"pl":"Operacyjne zarządzanie platformą","en":"Platform operations management"}',          NULL, '["read:all","write:tenants","manage:olympiad"]', 7),
 
-  -- Olympiad: Schools (tenant: schools)
+  -- Olympiad: Schools
   ('olympiad-schools-coordinator', '{"pl":"Koordynator szkolny","en":"School Coordinator"}',  'olympiad', '{"pl":"Koordynator Olimpiady w szkole","en":"School Olympiad Coordinator"}',  'schools', '["manage:own-org","generate:links","view:results"]', 10),
   ('olympiad-schools-jury',        '{"pl":"Juror szkolny","en":"School Jury"}',                'olympiad', '{"pl":"Juror oceniający Certo Action","en":"Jury member evaluating Certo Action"}', 'schools', '["review:actions","view:results"]', 11),
-  ('olympiad-schools-observer',    '{"pl":"Obserwator szkolny","en":"School Observer"}',       'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                        'schools', '["view:results"]', 12),
-  ('olympiad-schools-auditor',     '{"pl":"Audytor szkolny","en":"School Auditor"}',           'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',     'schools', '["read:all","audit:surveys","flag:anomalies"]', 13),
-
-  -- Olympiad: Culture Centers (tenant: culture)
-  ('olympiad-culture-coordinator', '{"pl":"Koordynator OK","en":"Culture Center Coordinator"}',   'olympiad', '{"pl":"Koordynator Olimpiady w ośrodku kultury","en":"Culture Center Olympiad Coordinator"}', 'culture', '["manage:own-org","generate:links","view:results"]', 20),
-  ('olympiad-culture-jury',        '{"pl":"Juror OK","en":"Culture Center Jury"}',                 'olympiad', '{"pl":"Juror oceniający Certo Action OK","en":"Jury for Culture Center Certo Action"}',      'culture', '["review:actions","view:results"]', 21),
-  ('olympiad-culture-observer',    '{"pl":"Obserwator OK","en":"Culture Center Observer"}',        'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                                   'culture', '["view:results"]', 22),
-  ('olympiad-culture-auditor',     '{"pl":"Audytor OK","en":"Culture Center Auditor"}',            'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',                'culture', '["read:all","audit:surveys","flag:anomalies"]', 23),
-
-  -- Olympiad: Social Care (tenant: social-care)
-  ('olympiad-social-care-coordinator', '{"pl":"Koordynator DPS","en":"Social Care Coordinator"}',  'olympiad', '{"pl":"Koordynator Olimpiady w DPS","en":"Social Care Olympiad Coordinator"}', 'social-care', '["manage:own-org","generate:links","view:results"]', 30),
-  ('olympiad-social-care-jury',        '{"pl":"Juror DPS","en":"Social Care Jury"}',                'olympiad', '{"pl":"Juror oceniający Certo Action DPS","en":"Jury for Social Care Certo Action"}', 'social-care', '["review:actions","view:results"]', 31),
-  ('olympiad-social-care-observer',    '{"pl":"Obserwator DPS","en":"Social Care Observer"}',       'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                             'social-care', '["view:results"]', 32),
-  ('olympiad-social-care-auditor',     '{"pl":"Audytor DPS","en":"Social Care Auditor"}',           'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',          'social-care', '["read:all","audit:surveys","flag:anomalies"]', 33),
-
-  -- Olympiad: Sports Centers (tenant: sports)
-  ('olympiad-sports-coordinator', '{"pl":"Koordynator OS","en":"Sports Center Coordinator"}',  'olympiad', '{"pl":"Koordynator Olimpiady w ośrodku sportowym","en":"Sports Center Olympiad Coordinator"}', 'sports', '["manage:own-org","generate:links","view:results"]', 40),
-  ('olympiad-sports-jury',        '{"pl":"Juror OS","en":"Sports Center Jury"}',                'olympiad', '{"pl":"Juror oceniający Certo Action OS","en":"Jury for Sports Center Certo Action"}',        'sports', '["review:actions","view:results"]', 41),
-  ('olympiad-sports-observer',    '{"pl":"Obserwator OS","en":"Sports Center Observer"}',       'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                                    'sports', '["view:results"]', 42),
-  ('olympiad-sports-auditor',     '{"pl":"Audytor OS","en":"Sports Center Auditor"}',           'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',                 'sports', '["read:all","audit:surveys","flag:anomalies"]', 43),
+  ('olympiad-schools-observer',    '{"pl":"Obserwator","en":"Observer"}',                      'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                        'schools', '["view:results"]', 12),
+  ('olympiad-schools-auditor',     '{"pl":"Audytor","en":"Auditor"}',                          'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',     'schools', '["read:all","audit:surveys","flag:anomalies"]', 13),
 
   -- Org Representative: verified person who approves Certo Action (per tenant)
   ('olympiad-schools-org-representative',      '{"pl":"Reprezentant podmiotu","en":"Organization Representative"}',      'olympiad', '{"pl":"Zweryfikowana osoba zatwierdzająca Certo Action i realizację kroków","en":"Verified person approving Certo Action and step completion"}', 'schools', '["approve:action","approve:steps","view:action","view:results"]', 17),
@@ -138,7 +120,7 @@ INSERT INTO roles (role_id, role_name, role_group, description, tenant_id, permi
   ('olympiad-sports-obserwator-action','{"pl":"Obserwator Action OS","en":"Sports Action Observer"}',         'olympiad', '{"pl":"Obserwator Certo Action (media, dyrekcja)","en":"Certo Action observer (media, director)"}', 'sports', '["view:action","comment:action"]', 46),
 
   -- Consulting
-  ('advisor',            '{"pl":"Certo Advisor","en":"Certo Advisor"}',                'consulting', '{"pl":"Akredytowany doradca Certo","en":"Accredited Certo Advisor"}',                   NULL, '["review:actions","view:ratings","consult:orgs"]', 50)
+  ('advisor',            '{"pl":"Certo Advisor","en":"Certo Advisor"}',                'consulting', '{"pl":"Akredytowany doradca Certo","en":"Accredited Certo Advisor"}',                   NULL, '["review:actions","view:ratings","consult:orgs"]', 20)
 
 ON CONFLICT (role_id) DO NOTHING;
 
