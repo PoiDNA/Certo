@@ -295,6 +295,11 @@ export default function ParticipantsClient() {
           </div>
         </div>
 
+        {/* Map view */}
+        {viewMode === "both" && (
+          <ParticipantMap participants={filtered} locale={locale} />
+        )}
+
         {/* Compare modal */}
         {showCompare && comparePair && (
           <CompareModal
@@ -539,6 +544,143 @@ function CompareModal({
 }
 
 // ── Compare Row ───────────────────────────────────────────────────
+// ── Participant Map (EU with dots) ─────────────────────────────
+const CITY_POSITIONS: Record<string, [number, number]> = {
+  // [x%, y%] position on a 600x400 EU map
+  "Warszawa": [62, 32], "Kraków": [59, 38], "Wrocław": [54, 35],
+  "Gdańsk": [57, 24], "Poznań": [53, 31], "Łódź": [58, 34],
+  "Berlin": [48, 30], "München": [45, 42], "Hamburg": [43, 26],
+  "Paris": [27, 42], "Lyon": [30, 50], "Marseille": [31, 57],
+  "Madrid": [14, 58], "Barcelona": [24, 56],
+  "Roma": [44, 55], "Milano": [39, 48],
+  "Praha": [51, 38], "Budapest": [57, 44],
+  "Wien": [50, 42], "Bratislava": [54, 42],
+  "Amsterdam": [36, 28], "Bruxelles": [33, 32],
+  "Stockholm": [53, 14], "Helsinki": [62, 12],
+  "Dublin": [17, 27], "Lisboa": [7, 60],
+  "Bucuresti": [68, 48], "Sofia": [66, 52],
+  "Zagreb": [52, 48], "Ljubljana": [48, 46],
+  "Tallinn": [64, 14], "Riga": [64, 18], "Vilnius": [65, 22],
+};
+
+// Fallback: country center positions
+const COUNTRY_POSITIONS: Record<string, [number, number]> = {
+  PL: [60, 33], DE: [46, 33], FR: [28, 46], ES: [18, 58], IT: [42, 52],
+  NL: [36, 28], BE: [33, 32], AT: [49, 42], CZ: [51, 38], SK: [56, 41],
+  HU: [57, 44], RO: [68, 46], BG: [66, 50], HR: [52, 48], SI: [48, 46],
+  LT: [64, 22], LV: [64, 18], EE: [64, 14], FI: [62, 10], SE: [52, 16],
+  DK: [44, 22], IE: [17, 28], PT: [8, 58], GR: [62, 58], MT: [48, 64],
+  LU: [34, 36], CY: [78, 58],
+};
+
+function ParticipantMap({ participants, locale }: { participants: Participant[]; locale: string }) {
+  const dots = useMemo(() => {
+    return participants.map((p) => {
+      const cityPos = p.municipality ? CITY_POSITIONS[p.municipality] : null;
+      const pos = cityPos || COUNTRY_POSITIONS[p.country] || [50, 40];
+      // Add small random offset to avoid overlap
+      const jitter = () => (Math.random() - 0.5) * 3;
+      return {
+        ...p,
+        x: pos[0] + (cityPos ? 0 : jitter()),
+        y: pos[1] + (cityPos ? 0 : jitter()),
+      };
+    });
+  }, [participants]);
+
+  const [hovered, setHovered] = useState<string | null>(null);
+
+  return (
+    <div className="bg-certo-card rounded-xl border border-certo-card-border p-4 mb-6">
+      <div className="relative w-full" style={{ paddingBottom: "60%" }}>
+        <svg
+          viewBox="0 0 100 70"
+          className="absolute inset-0 w-full h-full"
+          style={{ background: "linear-gradient(135deg, #F8F5EE 0%, #EDE8DC 100%)", borderRadius: "12px" }}
+        >
+          {/* EU outline hint (simplified) */}
+          <text x="50" y="5" textAnchor="middle" fontSize="2.5" fill="#1A2744" opacity="0.15" fontWeight="bold">
+            EUROPA
+          </text>
+
+          {/* Country labels */}
+          {Object.entries(COUNTRY_POSITIONS).map(([code, [x, y]]) => {
+            const count = participants.filter((p) => p.country === code).length;
+            if (count === 0) return (
+              <text key={code} x={x} y={y} textAnchor="middle" fontSize="1.8" fill="#1A2744" opacity="0.08">
+                {code}
+              </text>
+            );
+            return (
+              <text key={code} x={x} y={y + 4} textAnchor="middle" fontSize="1.5" fill="#1A2744" opacity="0.2">
+                {code}
+              </text>
+            );
+          })}
+
+          {/* Participant dots */}
+          {dots.map((d) => {
+            const isHovered = hovered === d.org_id;
+            const color = d.level === "diament" ? "#C49A3C" :
+                          d.level === "gold" ? "#D4A843" :
+                          d.level === "silver" ? "#8B8B8B" :
+                          d.level === "bronze" ? "#CD7F32" :
+                          d.certo_score ? "#1A2744" : "#AAAAAA";
+            const r = isHovered ? 2.2 : (d.certo_score && d.certo_score >= 80 ? 1.6 : 1.2);
+
+            return (
+              <g key={d.org_id}
+                onMouseEnter={() => setHovered(d.org_id)}
+                onMouseLeave={() => setHovered(null)}
+                style={{ cursor: "pointer" }}
+              >
+                {/* Pulse ring for high scores */}
+                {d.certo_score && d.certo_score >= 80 && (
+                  <circle cx={d.x} cy={d.y} r={r + 1} fill="none" stroke={color} strokeWidth="0.2" opacity="0.3">
+                    <animate attributeName="r" from={String(r)} to={String(r + 2.5)} dur="2s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" from="0.4" to="0" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                )}
+                <circle cx={d.x} cy={d.y} r={r} fill={color} stroke="white" strokeWidth="0.4" />
+
+                {/* Tooltip */}
+                {isHovered && (
+                  <g>
+                    <rect x={d.x + 2} y={d.y - 5} width={28} height={8} rx="1" fill="#1A2744" opacity="0.95" />
+                    <text x={d.x + 3} y={d.y - 1.5} fontSize="1.6" fill="white" fontWeight="bold">
+                      {d.org_name.length > 25 ? d.org_name.slice(0, 25) + "…" : d.org_name}
+                    </text>
+                    <text x={d.x + 3} y={d.y + 1} fontSize="1.2" fill="#C49A3C">
+                      {d.certo_score ? `Score: ${d.certo_score}` : d.municipality || ""}
+                      {d.level && d.level !== "none" ? ` · ${LEVEL_INFO[d.level]?.label}` : ""}
+                    </text>
+                  </g>
+                )}
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+
+      {/* Legend */}
+      <div className="flex flex-wrap gap-4 mt-3 justify-center text-xs text-certo-fg-muted">
+        {[
+          { color: "#C49A3C", label: "Diament Certo" },
+          { color: "#D4A843", label: "Gold" },
+          { color: "#8B8B8B", label: "Silver" },
+          { color: "#CD7F32", label: "Bronze" },
+          { color: "#1A2744", label: "W trakcie" },
+        ].map((l) => (
+          <div key={l.label} className="flex items-center gap-1">
+            <span className="w-2.5 h-2.5 rounded-full inline-block" style={{ background: l.color }} />
+            {l.label}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function CompareRow({
   label,
   va,
