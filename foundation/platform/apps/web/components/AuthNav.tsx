@@ -71,6 +71,9 @@ export default function AuthNav() {
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         onMouseEnter={() => setMenuOpen(true)}
+        aria-haspopup="true"
+        aria-expanded={menuOpen}
+        aria-controls="panel-menu"
         className="border border-certo-gold/50 text-certo-gold bg-certo-navy px-5 py-2 hover:bg-certo-gold hover:text-white transition-colors duration-300 rounded-[2px] uppercase text-sm font-medium tracking-wide"
       >
         {t('dashboard')}
@@ -79,11 +82,15 @@ export default function AuthNav() {
       {/* Dropdown menu */}
       {menuOpen && (
         <div
+          id="panel-menu"
+          role="menu"
+          aria-label="Panel użytkownika"
           className="absolute right-0 top-full mt-1 w-48 bg-certo-navy border border-certo-gold/30 rounded-[2px] shadow-xl z-50 overflow-hidden"
           onMouseLeave={() => setMenuOpen(false)}
         >
           <a
             href={`/${locale}/docs`}
+            role="menuitem"
             className="block px-4 py-3 text-sm text-certo-cream/80 hover:text-certo-gold hover:bg-certo-gold/5 transition-colors uppercase tracking-wide"
             onClick={() => setMenuOpen(false)}
           >
@@ -91,6 +98,7 @@ export default function AuthNav() {
           </a>
           <a
             href={`/${locale}/pipeline`}
+            role="menuitem"
             className="block px-4 py-3 text-sm text-certo-cream/80 hover:text-certo-gold hover:bg-certo-gold/5 transition-colors uppercase tracking-wide"
             onClick={() => setMenuOpen(false)}
           >
@@ -99,6 +107,7 @@ export default function AuthNav() {
           <div className="border-t border-certo-gold/20" />
           <button
             onClick={handleLogout}
+            role="menuitem"
             className="block w-full text-left px-4 py-3 text-sm text-red-400/80 hover:text-red-300 hover:bg-red-500/5 transition-colors uppercase tracking-wide"
           >
             Wyloguj
