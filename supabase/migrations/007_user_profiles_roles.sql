@@ -111,10 +111,68 @@ INSERT INTO roles (role_id, role_name, role_group, description, tenant_id, permi
   ('olympiad-sports-observer',    '{"pl":"Obserwator OS","en":"Sports Center Observer"}',       'olympiad', '{"pl":"Dostęp tylko do odczytu","en":"Read-only access"}',                                    'sports', '["view:results"]', 42),
   ('olympiad-sports-auditor',     '{"pl":"Audytor OS","en":"Sports Center Auditor"}',           'olympiad', '{"pl":"Weryfikacja danych i anomalii","en":"Data and anomaly verification"}',                 'sports', '["read:all","audit:surveys","flag:anomalies"]', 43),
 
+  -- Certo Action: Team roles per tenant (schools)
+  ('olympiad-schools-team-action',      '{"pl":"Członek zespołu Action","en":"Action Team Member"}',       'olympiad', '{"pl":"Członek zespołu pracującego nad Certo Action","en":"Team member working on Certo Action"}',         'schools', '["edit:action","view:action","comment:action"]', 14),
+  ('olympiad-schools-expert-action',    '{"pl":"Ekspert Action","en":"Action Expert"}',                     'olympiad', '{"pl":"Zewnętrzny ekspert zaproszony do Certo Action","en":"External expert invited to Certo Action"}',   'schools', '["edit:action","view:action","comment:action","suggest:action"]', 15),
+  ('olympiad-schools-obserwator-action','{"pl":"Obserwator Action","en":"Action Observer"}',                'olympiad', '{"pl":"Obserwator Certo Action (media, dyrekcja)","en":"Certo Action observer (media, director)"}',       'schools', '["view:action","comment:action"]', 16),
+
+  -- Certo Action: Team roles per tenant (culture)
+  ('olympiad-culture-team-action',      '{"pl":"Członek zespołu Action OK","en":"Culture Action Team Member"}',    'olympiad', '{"pl":"Członek zespołu pracującego nad Certo Action","en":"Team member working on Certo Action"}',   'culture', '["edit:action","view:action","comment:action"]', 24),
+  ('olympiad-culture-expert-action',    '{"pl":"Ekspert Action OK","en":"Culture Action Expert"}',                  'olympiad', '{"pl":"Zewnętrzny ekspert zaproszony do Certo Action","en":"External expert invited to Certo Action"}', 'culture', '["edit:action","view:action","comment:action","suggest:action"]', 25),
+  ('olympiad-culture-obserwator-action','{"pl":"Obserwator Action OK","en":"Culture Action Observer"}',             'olympiad', '{"pl":"Obserwator Certo Action (media, dyrekcja)","en":"Certo Action observer (media, director)"}', 'culture', '["view:action","comment:action"]', 26),
+
+  -- Certo Action: Team roles per tenant (social-care)
+  ('olympiad-social-care-team-action',      '{"pl":"Członek zespołu Action DPS","en":"Social Care Action Team Member"}', 'olympiad', '{"pl":"Członek zespołu pracującego nad Certo Action","en":"Team member working on Certo Action"}',   'social-care', '["edit:action","view:action","comment:action"]', 34),
+  ('olympiad-social-care-expert-action',    '{"pl":"Ekspert Action DPS","en":"Social Care Action Expert"}',              'olympiad', '{"pl":"Zewnętrzny ekspert zaproszony do Certo Action","en":"External expert invited to Certo Action"}', 'social-care', '["edit:action","view:action","comment:action","suggest:action"]', 35),
+  ('olympiad-social-care-obserwator-action','{"pl":"Obserwator Action DPS","en":"Social Care Action Observer"}',         'olympiad', '{"pl":"Obserwator Certo Action (media, dyrekcja)","en":"Certo Action observer (media, director)"}', 'social-care', '["view:action","comment:action"]', 36),
+
+  -- Certo Action: Team roles per tenant (sports)
+  ('olympiad-sports-team-action',      '{"pl":"Członek zespołu Action OS","en":"Sports Action Team Member"}', 'olympiad', '{"pl":"Członek zespołu pracującego nad Certo Action","en":"Team member working on Certo Action"}',   'sports', '["edit:action","view:action","comment:action"]', 44),
+  ('olympiad-sports-expert-action',    '{"pl":"Ekspert Action OS","en":"Sports Action Expert"}',              'olympiad', '{"pl":"Zewnętrzny ekspert zaproszony do Certo Action","en":"External expert invited to Certo Action"}', 'sports', '["edit:action","view:action","comment:action","suggest:action"]', 45),
+  ('olympiad-sports-obserwator-action','{"pl":"Obserwator Action OS","en":"Sports Action Observer"}',         'olympiad', '{"pl":"Obserwator Certo Action (media, dyrekcja)","en":"Certo Action observer (media, director)"}', 'sports', '["view:action","comment:action"]', 46),
+
   -- Consulting
   ('advisor',            '{"pl":"Certo Advisor","en":"Certo Advisor"}',                'consulting', '{"pl":"Akredytowany doradca Certo","en":"Accredited Certo Advisor"}',                   NULL, '["review:actions","view:ratings","consult:orgs"]', 50)
 
 ON CONFLICT (role_id) DO NOTHING;
+
+-- =============================================================================
+-- Certo Action Team Members (collaborative work on action plans)
+-- =============================================================================
+CREATE TABLE IF NOT EXISTS olympiad_action_members (
+  id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  org_id        UUID NOT NULL REFERENCES olympiad_organizations(org_id),
+  tenant_id     TEXT NOT NULL,
+  user_id       UUID REFERENCES user_profiles(id),  -- NULL for email-only invites
+  email         TEXT NOT NULL,
+  display_name  TEXT NOT NULL,
+  role          TEXT NOT NULL CHECK (role IN ('team-action', 'expert-action', 'obserwator-action')),
+  invited_by    UUID REFERENCES user_profiles(id),  -- coordinator who invited
+  status        TEXT NOT NULL DEFAULT 'invited' CHECK (status IN ('invited', 'active', 'declined')),
+  affiliation   TEXT,           -- e.g. "SP 15", "Gazeta Lokalna", "Kuratorium"
+  can_edit      BOOLEAN NOT NULL DEFAULT false,  -- derived from role but explicit
+  invite_token  TEXT UNIQUE,    -- one-time token for email invite
+  last_active   TIMESTAMPTZ,
+  created_at    TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX idx_action_members_org ON olympiad_action_members (org_id, tenant_id);
+CREATE INDEX idx_action_members_user ON olympiad_action_members (user_id) WHERE user_id IS NOT NULL;
+
+-- Action comments (collaborative discussion)
+CREATE TABLE IF NOT EXISTS olympiad_action_comments (
+  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  org_id      UUID NOT NULL REFERENCES olympiad_organizations(org_id),
+  tenant_id   TEXT NOT NULL,
+  author_id   UUID REFERENCES user_profiles(id),
+  author_name TEXT NOT NULL,
+  author_role TEXT NOT NULL,    -- team-action, expert-action, obserwator-action, coordinator
+  content     TEXT NOT NULL,
+  section     TEXT,             -- 'plan', 'steps', 'metrics', 'general'
+  created_at  TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX idx_action_comments_org ON olympiad_action_comments (org_id, created_at DESC);
 
 -- =============================================================================
 -- RLS Policies
