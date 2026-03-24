@@ -400,6 +400,26 @@
     "coord_select_group": "Select group...",
     "coord_live_session": "Live Session QR",
     "coord_empty": "Generate the first link for your community",
-    "coord_total": "Total responses:"
+    "coord_total": "Total responses:",
+    "participants_title": "Certo Olympiad Participants",
+    "participants_subtitle": "All participating organizations — watch, compare and track progress",
+    "participants_search": "Search organizations, cities, countries...",
+    "participants_all_countries": "All countries",
+    "participants_all_levels": "All levels",
+    "participants_watched": "Watched",
+    "participants_compare": "Compare",
+    "participants_details": "Details",
+    "participants_back": "All participants",
+    "participants_watch": "Watch",
+    "participants_watching": "Watching",
+    "participants_phase_progress": "Olympiad progress",
+    "participants_pillars": "Governance pillar results",
+    "participants_participation": "Survey participation",
+    "participants_test": "Knowledge test",
+    "participants_peer_review": "Peer-Review",
+    "participants_action": "Certo Action",
+    "participants_team": "Olympiad Council",
+    "participants_info": "Information",
+    "participants_compare_title": "Organization comparison"
   }
 }
