@@ -112,7 +112,7 @@ export default function PillarsPreview() {
           onTouchEnd={onTouchEnd}
         >
           {/* Main slide */}
-          <div className={`bg-white rounded-xl border-l-4 ${current.border} p-8 md:p-12 min-h-[220px] flex items-center transition-all duration-500`}>
+          <div aria-live="polite" aria-atomic="true" className={`bg-white rounded-xl border-l-4 ${current.border} p-8 md:p-12 min-h-[220px] flex items-center transition-all duration-500`}>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 w-full">
               <div className="shrink-0">
                 <span className={`text-7xl md:text-8xl lg:text-9xl font-serif font-bold ${current.accent} leading-none`}>
@@ -139,7 +139,8 @@ export default function PillarsPreview() {
                 className={`relative h-2 rounded-full transition-all duration-300 ${
                   i === active ? 'w-10 bg-certo-gold' : 'w-2 bg-certo-navy/20 hover:bg-certo-navy/40'
                 }`}
-                aria-label={t(`pillar_${pillar.key}_name`)}
+                aria-label={`Slajd ${i + 1} z ${pillars.length}: ${t(`pillar_${pillar.key}_name`)}`}
+                aria-current={i === active ? 'true' : undefined}
               />
             ))}
           </div>

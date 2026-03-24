@@ -7,7 +7,7 @@
  *
  * Examples:
  *   npx tsx scripts/rag/ingest.ts --source "/Users/lk/_PS/DNAHC ALL/Certo" --type internal
- *   npx tsx scripts/rag/ingest.ts --source external/regulations/ --type regulation --sector jst,corporate
+ *   npx tsx scripts/rag/ingest.ts --source external/regulations/ --type regulation --sector admin,corporate
  *   npx tsx scripts/rag/ingest.ts --source document.docx --type internal --force
  */
 

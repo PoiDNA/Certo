@@ -10,11 +10,11 @@ import { ModelSelector } from "./ModelSelector";
 type ModelChoice = "sonnet" | "opus";
 
 const SECTOR_OPTIONS = [
-  { value: "jst", label: "JST (Administracja publiczna)" },
-  { value: "corporate", label: "Korporacje" },
-  { value: "ngo", label: "NGO" },
-  { value: "medical", label: "Sektor medyczny" },
-  { value: "defense", label: "Sektor obronny" },
+  { value: "admin", label: "Administracja i Samorząd" },
+  { value: "public_com", label: "Podmioty z udziałem publicznym" },
+  { value: "corporate", label: "Korporacje i Duże Przedsiębiorstwa" },
+  { value: "sme", label: "MŚP" },
+  { value: "nonprofit", label: "Organizacje Non-Profit" },
 ];
 
 export function ChatPanel() {
@@ -383,7 +383,7 @@ export function ChatPanel() {
         )}
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
+        <div role="log" aria-label="Historia konwersacji" aria-live="polite" className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
           {messages.length === 0 && (
             <div className="text-center text-gray-400 mt-20">
               <div className="text-4xl mb-4">🧠</div>

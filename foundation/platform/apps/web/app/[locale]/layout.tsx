@@ -62,6 +62,9 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className="bg-certo-cream text-certo-navy antialiased min-h-screen flex flex-col">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-certo-gold focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold">
+          Przejdź do treści
+        </a>
         <NextIntlClientProvider messages={messages} locale={locale}>
           <header className="bg-certo-navy text-certo-cream border-b-[3px] border-certo-gold relative z-50">
             <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
@@ -86,7 +89,7 @@ export default async function RootLayout({
             </div>
           </header>
 
-          <main className="flex-grow w-full">
+          <main id="main-content" className="flex-grow w-full">
             {children}
           </main>
 

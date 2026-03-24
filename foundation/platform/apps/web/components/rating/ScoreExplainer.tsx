@@ -83,7 +83,7 @@ export default function ScoreExplainer() {
               <div className={`absolute bottom-4 right-6 transition-all duration-300 ${
                 isActive ? 'opacity-0' : 'opacity-40'
               }`}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-certo-navy/30">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-certo-navy/30">
                   <path d="M7 17l9.2-9.2M17 17V7H7" />
                 </svg>
               </div>

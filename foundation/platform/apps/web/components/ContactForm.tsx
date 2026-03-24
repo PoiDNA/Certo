@@ -41,6 +41,8 @@ export default function ContactForm() {
           name="name"
           required
           placeholder={t('form_name')}
+          aria-label={t('form_name')}
+          aria-required="true"
           className={inputClass}
         />
         <input
@@ -48,6 +50,8 @@ export default function ContactForm() {
           type="email"
           required
           placeholder={t('form_email')}
+          aria-label={t('form_email')}
+          aria-required="true"
           className={inputClass}
         />
       </div>
@@ -56,6 +60,8 @@ export default function ContactForm() {
         <select
           name="subject"
           required
+          aria-label={t('subject_general')}
+          aria-required="true"
           className={`${inputClass} appearance-none pr-10 cursor-pointer`}
           defaultValue=""
         >
@@ -65,6 +71,7 @@ export default function ContactForm() {
           ))}
         </select>
         <svg
+          aria-hidden="true"
           className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/40 pointer-events-none"
           fill="none"
           stroke="currentColor"
@@ -79,6 +86,8 @@ export default function ContactForm() {
         required
         rows={5}
         placeholder={t('form_message')}
+        aria-label={t('form_message')}
+        aria-required="true"
         className={`${inputClass} resize-none`}
       />
 

@@ -71,6 +71,8 @@ export default function PillarsSection() {
           <svg
             viewBox="-160 -160 320 320"
             className="w-[280px] h-[280px] md:w-[340px] md:h-[340px]"
+            role="img"
+            aria-label="Wykres kołowy filarów ratingu"
           >
             {paths.map((path, i) => (
               <path
