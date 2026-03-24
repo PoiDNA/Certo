@@ -68,3 +68,22 @@ PR #7 translation pipeline DeepL ✅ closed
 PR #8 parcel/watcher fix ✅
 PR #9 Next.js RC→stable ✅
 PR Claude translation pipeline → do merge
+
+## Zasady kolorów (Dark/Light mode)
+
+### Używaj semantycznych tokenów:
+- `text-certo-fg` (nie text-certo-navy)
+- `text-certo-fg-muted` (nie text-certo-navy/60)
+- `bg-certo-card` (nie bg-white)
+- `bg-certo-surface` (nie bg-certo-navy/5)
+- `border-certo-card-border` (nie border-certo-navy/5)
+
+### Kiedy użyć raw kolorów:
+- `bg-certo-navy` — header, hero, ciemne sekcje (niezmienne)
+- `text-certo-cream` — tekst na navy-bg (niezmienne)
+- `text-certo-gold` / `bg-certo-gold` — akcenty (niezmienne)
+
+### NIGDY:
+- Nie używaj `dark:` prefixu dla tekstu/tła — semantyczne tokeny
+- Nie dodawaj \!important do kolorów
+- Nie hardcoduj hex wartości w komponentach

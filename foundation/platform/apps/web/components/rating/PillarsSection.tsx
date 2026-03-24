@@ -7,9 +7,8 @@ import { useScrollReveal } from '../shared/useScrollReveal';
 const pillars = [
   { key: '1', weight: 25, color: '#CC9B30', hoverColor: '#E5B04A' },
   { key: '2', weight: 25, color: '#B8891A', hoverColor: '#D4A030' },
-  { key: '3', weight: 20, color: '#0A1628', hoverColor: '#1A2A45' },
-  { key: '4', weight: 15, color: '#2A3F5F', hoverColor: '#3A5580' },
-  { key: '5', weight: 15, color: '#4A6080', hoverColor: '#5A7598' },
+  { key: '3', weight: 25, color: '#0A1628', hoverColor: '#1A2A45' },
+  { key: '4', weight: 25, color: '#2A3F5F', hoverColor: '#3A5580' },
 ];
 
 function getDonutPaths(data: typeof pillars, innerRadius: number, outerRadius: number) {
@@ -61,7 +60,7 @@ export default function PillarsSection() {
 
   return (
     <section ref={ref} className={`mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-10 text-center">
+      <h2 className="text-3xl font-serif font-bold text-certo-fg mb-10 text-center">
         {t('pillars_title')}
       </h2>
 
@@ -71,6 +70,8 @@ export default function PillarsSection() {
           <svg
             viewBox="-160 -160 320 320"
             className="w-[280px] h-[280px] md:w-[340px] md:h-[340px]"
+            role="img"
+            aria-label="Wykres kołowy filarów ratingu"
           >
             {paths.map((path, i) => (
               <path
@@ -93,7 +94,7 @@ export default function PillarsSection() {
               y={active !== null ? '-12' : '0'}
               textAnchor="middle"
               dominantBaseline="central"
-              className="fill-certo-navy dark:fill-certo-dark-text font-serif font-bold"
+              className="fill-certo-fg font-serif font-bold"
               fontSize={active !== null ? '28' : '16'}
             >
               {active !== null ? `${pillars[active].weight}%` : '100%'}
@@ -104,7 +105,7 @@ export default function PillarsSection() {
                 y="16"
                 textAnchor="middle"
                 dominantBaseline="central"
-                className="fill-certo-navy/60 dark:fill-certo-dark-text/60"
+                className="fill-certo-fg-muted"
                 fontSize="10"
               >
                 {t(`pillar_${pillars[active].key}_name`)}
@@ -124,11 +125,11 @@ export default function PillarsSection() {
                 >
                   {activePillar.weight}%
                 </span>
-                <h3 className="font-serif font-extrabold text-certo-navy dark:text-certo-dark-text text-2xl md:text-3xl">
+                <h3 className="font-serif font-extrabold text-certo-fg text-2xl md:text-3xl">
                   {t(`pillar_${activePillar.key}_name`)}
                 </h3>
               </div>
-              <p className="text-base md:text-lg text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
+              <p className="text-base md:text-lg text-certo-fg-muted leading-relaxed">
                 {t(`pillar_${activePillar.key}_desc`)}
               </p>
             </div>
@@ -139,16 +140,16 @@ export default function PillarsSection() {
                   key={pillar.key}
                   onClick={() => setActive(i)}
                   onMouseEnter={() => setActive(i)}
-                  className="w-full text-left flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-certo-dark-card border border-certo-navy/5 dark:border-certo-dark-border hover:border-certo-gold/30 transition-all duration-200"
+                  className="w-full text-left flex items-center gap-4 p-4 rounded-lg bg-certo-card border border-certo-card-border hover:border-certo-gold/30 transition-all duration-200"
                 >
                   <span
                     className="w-3 h-3 rounded-full shrink-0"
                     style={{ backgroundColor: pillar.color }}
                   />
-                  <span className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-base flex-1">
+                  <span className="font-serif font-bold text-certo-fg text-base flex-1">
                     {t(`pillar_${pillar.key}_name`)}
                   </span>
-                  <span className="text-sm font-bold text-certo-navy/40 dark:text-certo-dark-text/40">
+                  <span className="text-sm font-bold text-certo-fg-muted">
                     {pillar.weight}%
                   </span>
                 </button>

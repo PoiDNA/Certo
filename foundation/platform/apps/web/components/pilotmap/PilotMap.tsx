@@ -358,7 +358,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
   }, [paths]); // re-attach when paths load
 
   return (
-    <div className="w-full bg-white rounded-2xl border border-certo-navy/10 overflow-hidden relative">
+    <div className="w-full bg-certo-card rounded-2xl border border-certo-card-border overflow-hidden relative">
       {/* Map SVG */}
       <svg
         ref={svgRef}
@@ -509,7 +509,7 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
       <div className="absolute top-2 left-2 right-2 flex flex-col items-end sm:flex-row sm:items-start sm:justify-between gap-1.5 sm:gap-2 z-10">
         {/* Sector filter pills */}
         {onSectorChange && (
-          <div className="flex items-center gap-0.5 bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-navy/10 px-0.5 py-0.5 overflow-x-auto">
+          <div className="flex items-center gap-0.5 bg-certo-card/90 backdrop-blur-sm rounded-full shadow-lg border border-certo-card-border px-0.5 py-0.5 overflow-x-auto">
             {FILTER_ITEMS.map(({ key, label }) => {
               const isActive = sectorFilter === key;
               const count = sectorCounts?.[key] ?? 0;
@@ -520,14 +520,14 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
                   className={`flex items-center gap-1 px-2 sm:px-3 py-1 sm:py-1.5 text-[10px] sm:text-[11px] font-medium rounded-full transition-all duration-200 whitespace-nowrap ${
                     isActive
                       ? 'bg-certo-navy text-white shadow-sm'
-                      : 'text-certo-navy/60 hover:bg-certo-navy/5 hover:text-certo-navy'
+                      : 'text-certo-fg/60 hover:bg-certo-navy/5 hover:text-certo-fg'
                   }`}
                 >
                   {key !== 'all' && (
                     <span className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${SECTOR_DOTS[key]} ${isActive ? 'opacity-80' : 'opacity-50'}`} />
                   )}
                   <span>{label}</span>
-                  <span className={`text-[9px] sm:text-[10px] ${isActive ? 'text-white/60' : 'text-certo-navy/30'}`}>{count}</span>
+                  <span className={`text-[9px] sm:text-[10px] ${isActive ? 'text-white/60' : 'text-certo-fg/30'}`}>{count}</span>
                 </button>
               );
             })}
@@ -536,12 +536,12 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
 
         {/* Country zoom selector */}
         <div className="relative">
-          <div className="flex items-center gap-0 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-certo-navy/10">
+          <div className="flex items-center gap-0 bg-certo-card/90 backdrop-blur-sm rounded-xl shadow-lg border border-certo-card-border">
             {/* Back to Europa button — only when zoomed into a country */}
             {zoom !== 'EU' && (
               <button
                 onClick={() => { setZoom('EU'); setShowCountries(false); }}
-                className="flex items-center gap-1.5 pl-3 sm:pl-4 pr-2 sm:pr-3 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-certo-navy/50 hover:text-certo-navy border-r border-certo-navy/10 transition-colors"
+                className="flex items-center gap-1.5 pl-3 sm:pl-4 pr-2 sm:pr-3 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-certo-fg-muted hover:text-certo-fg border-r border-certo-card-border transition-colors"
               >
                 <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -552,32 +552,32 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
             {/* Current zoom / dropdown trigger */}
             <button
               onClick={() => setShowCountries(!showCountries)}
-              className={`flex items-center gap-2 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-certo-navy hover:text-certo-navy/80 transition-colors ${zoom !== 'EU' ? 'pl-2 sm:pl-3 pr-3 sm:pr-4' : 'px-3 sm:px-4'}`}
+              className={`flex items-center gap-2 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-certo-fg hover:text-certo-fg/80 transition-colors ${zoom !== 'EU' ? 'pl-2 sm:pl-3 pr-3 sm:pr-4' : 'px-3 sm:px-4'}`}
             >
               <span className="text-base">📍</span>
               <span>{currentZoomName}</span>
-              <svg className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-certo-navy/40 transition-transform ${showCountries ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className={`w-3.5 h-3.5 sm:w-4 sm:h-4 text-certo-fg-muted transition-transform ${showCountries ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
           </div>
 
           {showCountries && (
-            <div className="absolute right-0 sm:right-0 top-full mt-1 bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 w-[220px] sm:w-[280px] max-h-[250px] sm:max-h-[300px] overflow-y-auto py-1 z-40">
+            <div className="absolute right-0 sm:right-0 top-full mt-1 bg-certo-card/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-card-border w-[220px] sm:w-[280px] max-h-[250px] sm:max-h-[300px] overflow-y-auto py-1 z-40">
               {/* Europa button */}
               <button
                 onClick={() => { setZoom('EU'); setShowCountries(false); }}
                 className={`w-full flex items-center gap-2 px-4 py-2 text-xs transition-colors ${
-                  zoom === 'EU' ? 'bg-certo-navy text-white' : 'text-certo-navy hover:bg-certo-navy/5'
+                  zoom === 'EU' ? 'bg-certo-navy text-white' : 'text-certo-fg hover:bg-certo-navy/5'
                 }`}
               >
                 <span className="text-sm">🌍</span>
                 <span className="font-medium">Europa</span>
-                <span className={`ml-auto text-[10px] ${zoom === 'EU' ? 'text-white/50' : 'text-certo-navy/30'}`}>
+                <span className={`ml-auto text-[10px] ${zoom === 'EU' ? 'text-white/50' : 'text-certo-fg/30'}`}>
                   {applications.length}
                 </span>
               </button>
-              <div className="h-px bg-certo-navy/5 mx-3 my-1" />
+              <div className="h-px bg-certo-surface mx-3 my-1" />
               {/* Country list */}
               {Object.entries(COUNTRY_ZOOMS)
                 .filter(([code]) => code !== 'EU' && !code.startsWith('_custom'))
@@ -599,8 +599,8 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
                         zoom === code
                           ? 'bg-certo-gold text-white'
                           : hasApps
-                            ? 'text-certo-navy hover:bg-certo-gold/5'
-                            : 'text-certo-navy/30 hover:bg-certo-navy/5'
+                            ? 'text-certo-fg hover:bg-certo-gold/5'
+                            : 'text-certo-fg/30 hover:bg-certo-navy/5'
                       }`}
                     >
                       <span className="font-medium">{name}</span>
@@ -675,20 +675,20 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-navy/10 max-h-[250px] sm:max-h-[300px] flex flex-col">
-              <div className="flex items-center justify-between px-4 py-2.5 border-b border-certo-navy/5">
-                <span className="text-xs font-semibold text-certo-navy">
+            <div className="bg-certo-card/95 backdrop-blur-sm rounded-xl shadow-2xl border border-certo-card-border max-h-[250px] sm:max-h-[300px] flex flex-col">
+              <div className="flex items-center justify-between px-4 py-2.5 border-b border-certo-card-border">
+                <span className="text-xs font-semibold text-certo-fg">
                   Liczba podmiotów: {panelApps.length}
                 </span>
-                <button onClick={closePanel} className="text-certo-navy/30 hover:text-certo-navy text-sm leading-none">✕</button>
+                <button onClick={closePanel} className="text-certo-fg-muted hover:text-certo-fg text-sm leading-none">✕</button>
               </div>
               <div className="overflow-y-auto flex-1 divide-y divide-certo-navy/5">
                 {panelApps.map((app, i) => (
                   <div key={i}
                     onClick={() => router.push(`/${locale}/entity/${app.id}`)}
                     className="px-4 py-2.5 hover:bg-certo-gold/5 transition-colors cursor-pointer">
-                    <div className="text-xs font-semibold text-certo-navy leading-tight hover:text-certo-gold transition-colors">{app.organization_name}</div>
-                    <div className="flex items-center gap-2 mt-1 text-[10px] text-certo-navy/50">
+                    <div className="text-xs font-semibold text-certo-fg leading-tight hover:text-certo-gold transition-colors">{app.organization_name}</div>
+                    <div className="flex items-center gap-2 mt-1 text-[10px] text-certo-fg-muted">
                       {app.city && <span>{app.city}</span>}
                       <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: SECTOR_COLORS[app.sector] || '#CC9B30' }} />
                       <span>{SECTOR_LABELS[app.sector]?.replace('Sektor ', '') || app.sector}</span>
@@ -702,14 +702,14 @@ function PilotMap({ applications, onClusterSelect, sectorFilter, onSectorChange,
       })()}
 
       {/* Bottom bar — legend + count */}
-      <div className="flex flex-wrap items-center gap-4 px-4 py-2.5 border-t border-certo-navy/5 bg-white/80">
+      <div className="flex flex-wrap items-center gap-4 px-4 py-2.5 border-t border-certo-card-border bg-certo-card/80">
         {Object.entries(SECTOR_LABELS).map(([key, label]) => (
-          <div key={key} className="flex items-center gap-1.5 text-[10px] text-certo-navy/50">
+          <div key={key} className="flex items-center gap-1.5 text-[10px] text-certo-fg-muted">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: SECTOR_COLORS[key] }} />
             {label}
           </div>
         ))}
-        <div className="ml-auto text-[10px] text-certo-navy/30">
+        <div className="ml-auto text-[10px] text-certo-fg-muted">
           {applications.length} {applications.length === 1 ? 'podmiot' : 'podmiotów'}
         </div>
       </div>

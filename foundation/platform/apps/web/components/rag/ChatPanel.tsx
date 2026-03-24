@@ -306,7 +306,7 @@ export function ChatPanel() {
       {/* Main chat area */}
       <div className="flex-1 flex flex-col min-w-0">
         {/* Top bar: model selector + sidebar toggle */}
-        <div className="flex items-center gap-3 px-4 py-2 border-b border-gray-100 bg-white">
+        <div className="flex items-center gap-3 px-4 py-2 border-b border-gray-100 bg-certo-card">
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500"
@@ -383,7 +383,7 @@ export function ChatPanel() {
         )}
 
         {/* Messages */}
-        <div className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
+        <div role="log" aria-label="Historia konwersacji" aria-live="polite" className="flex-1 overflow-y-auto px-4 py-6 space-y-4">
           {messages.length === 0 && (
             <div className="text-center text-gray-400 mt-20">
               <div className="text-4xl mb-4">🧠</div>

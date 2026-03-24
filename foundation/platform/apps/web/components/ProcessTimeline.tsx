@@ -9,23 +9,23 @@ const steps = [1, 2, 3, 4] as const;
 
 const icons = [
   // 1 — Zgłoszenie (clipboard)
-  <svg key="1" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+  <svg aria-hidden="true" key="1" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
     <path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2" />
     <rect x="8" y="2" width="8" height="4" rx="1" />
     <path d="M9 14l2 2 4-4" />
   </svg>,
   // 2 — Analiza (magnifying glass)
-  <svg key="2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+  <svg aria-hidden="true" key="2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
     <circle cx="11" cy="11" r="8" />
     <path d="M21 21l-4.35-4.35" />
     <path d="M11 8v6M8 11h6" />
   </svg>,
   // 3 — Ocena (chart)
-  <svg key="3" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+  <svg aria-hidden="true" key="3" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
     <path d="M18 20V10M12 20V4M6 20v-6" />
   </svg>,
   // 4 — Raport (document)
-  <svg key="4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+  <svg aria-hidden="true" key="4" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
     <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
     <polyline points="14 2 14 8 20 8" />
     <line x1="16" y1="13" x2="8" y2="13" />
@@ -85,6 +85,7 @@ export default function ProcessTimeline() {
               key={step}
               onClick={() => { setActive(i); setPaused(true); }}
               className="flex flex-col items-center group"
+              aria-current={i === active ? 'step' : undefined}
             >
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
@@ -109,6 +110,7 @@ export default function ProcessTimeline() {
 
       {/* Active step content */}
       <div
+        aria-live="polite"
         className="bg-white rounded-xl border border-certo-navy/5 p-8 md:p-10 cursor-grab active:cursor-grabbing select-none"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
@@ -145,7 +147,7 @@ export default function ProcessTimeline() {
               active === 0 ? 'text-certo-navy/20 cursor-not-allowed' : 'text-certo-navy/60 hover:text-certo-gold'
             }`}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
             {active > 0 && t(`step_${steps[active - 1]}`)}
@@ -158,7 +160,7 @@ export default function ProcessTimeline() {
             }`}
           >
             {active < steps.length - 1 && t(`step_${steps[active + 1]}`)}
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </button>

@@ -12,7 +12,7 @@ const expertStructures = [
   { key: 'council', color: 'border-certo-gold bg-certo-gold/5' },
   { key: 'standard', color: 'border-certo-navy bg-certo-navy/5' },
   { key: 'tribunal', color: 'border-certo-navy bg-certo-navy/5' },
-  { key: 'centre', color: 'border-certo-gold/50 bg-white' },
+  { key: 'centre', color: 'border-certo-gold/50 bg-certo-card' },
 ] as const;
 
 export default function OrgChart() {
@@ -21,7 +21,7 @@ export default function OrgChart() {
 
   return (
     <section ref={ref} className={`mb-16 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-2xl font-serif font-bold text-certo-navy mb-8">
+      <h2 className="text-2xl font-serif font-bold text-certo-fg mb-8">
         {t('structure_title')}
       </h2>
 
@@ -32,10 +32,10 @@ export default function OrgChart() {
       <div className="grid sm:grid-cols-2 gap-4 mb-10">
         {formalOrgans.map(({ key, color }) => (
           <div key={key} className={`p-6 border-l-4 ${color}`}>
-            <h4 className="font-serif font-extrabold text-certo-navy text-[1.3rem] leading-tight md:text-xl mb-1">
+            <h4 className="font-serif font-extrabold text-certo-fg text-[1.3rem] leading-tight md:text-xl mb-1">
               {t(`organ_${key}_name`)}
             </h4>
-            <p className="text-xs text-certo-navy/60 leading-relaxed">
+            <p className="text-xs text-certo-fg-muted leading-relaxed">
               {t(`organ_${key}_role`)}
             </p>
           </div>
@@ -49,10 +49,10 @@ export default function OrgChart() {
       <div className="grid sm:grid-cols-2 gap-4">
         {expertStructures.map(({ key, color }) => (
           <div key={key} className={`p-6 border-l-4 ${color}`}>
-            <h4 className="font-serif font-extrabold text-certo-navy text-[1.3rem] leading-tight md:text-xl mb-1">
+            <h4 className="font-serif font-extrabold text-certo-fg text-[1.3rem] leading-tight md:text-xl mb-1">
               {t(`organ_${key}_name`)}
             </h4>
-            <p className="text-xs text-certo-navy/60 leading-relaxed">
+            <p className="text-xs text-certo-fg-muted leading-relaxed">
               {t(`organ_${key}_role`)}
             </p>
           </div>

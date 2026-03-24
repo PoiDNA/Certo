@@ -11,11 +11,11 @@ export default function SectionHeading({
 }) {
   return (
     <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
-      <h2 className={`text-3xl md:text-4xl font-serif font-bold mb-4 ${light ? 'text-certo-cream' : 'text-certo-navy'}`}>
+      <h2 className={`text-3xl md:text-4xl font-serif font-bold mb-4 ${light ? 'text-certo-cream' : 'text-certo-fg'}`}>
         {title}
       </h2>
       {subtitle && (
-        <p className={`text-lg max-w-2xl ${centered ? 'mx-auto' : ''} ${light ? 'text-certo-cream/70' : 'text-certo-navy/60'}`}>
+        <p className={`text-lg max-w-2xl ${centered ? 'mx-auto' : ''} ${light ? 'text-certo-cream/70' : 'text-certo-fg-muted'}`}>
           {subtitle}
         </p>
       )}

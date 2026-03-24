@@ -19,16 +19,19 @@ export function ChatMessage({ message }: { message: Message }) {
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
+        role="article"
+        aria-label={isUser ? "Wiadomość użytkownika" : "Odpowiedź asystenta"}
         className={`max-w-[85%] rounded-2xl px-4 py-3 ${
           isUser
             ? "bg-certo-navy text-white"
-            : "bg-gray-50 dark:bg-certo-dark-card border border-gray-200 dark:border-certo-dark-border text-gray-800 dark:text-certo-dark-text"
+            : "bg-gray-50  border border-gray-200  text-gray-800 "
         }`}
       >
         {/* Thinking toggle for assistant messages */}
         {!isUser && message.thinking && (
           <button
             onClick={() => setShowThinking(!showThinking)}
+            aria-expanded={showThinking}
             className="flex items-center gap-1 text-[10px] text-amber-600 hover:text-amber-700 mb-2 font-medium"
           >
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -40,7 +43,7 @@ export function ChatMessage({ message }: { message: Message }) {
 
         {/* Thinking content */}
         {showThinking && message.thinking && (
-          <div className="mb-3 p-2 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-100 dark:border-amber-800/30">
+          <div className="mb-3 p-2 rounded-lg bg-amber-50  border border-amber-100 ">
             <pre className="text-[11px] text-amber-800/80 whitespace-pre-wrap font-mono leading-relaxed max-h-64 overflow-y-auto">
               {message.thinking}
             </pre>
@@ -50,17 +53,19 @@ export function ChatMessage({ message }: { message: Message }) {
         {isUser ? (
           <p className="text-sm whitespace-pre-wrap">{message.content}</p>
         ) : message.content ? (
-          <div className="prose prose-sm max-w-none prose-headings:text-gray-800 dark:prose-headings:text-certo-dark-text prose-p:text-gray-700 dark:prose-p:text-certo-dark-text/80 prose-a:text-certo-gold prose-strong:text-gray-900 dark:prose-strong:text-certo-dark-text prose-code:text-sm prose-code:bg-gray-100 dark:prose-code:bg-certo-dark-surface prose-code:px-1 prose-code:rounded">
+          <div className="prose prose-sm max-w-none       prose-code:px-1 prose-code:rounded">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {message.content}
             </ReactMarkdown>
           </div>
         ) : (
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce" />
-            <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:150ms]" />
-            <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:300ms]" />
-          </div>
+          <span role="status" aria-label="Ładowanie odpowiedzi">
+            <span className="flex items-center gap-1.5">
+              <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce" />
+              <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:150ms]" />
+              <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:300ms]" />
+            </span>
+          </span>
         )}
       </div>
     </div>

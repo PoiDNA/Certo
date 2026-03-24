@@ -73,13 +73,15 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
     <div ref={ref} className="relative inline-block">
       <button
         onClick={(e) => { e.stopPropagation(); setOpen(!open); }}
+        aria-haspopup="true"
+        aria-expanded={open}
         className={`inline-flex items-center gap-1.5 transition-all ${
           compact
             ? 'px-2.5 py-1 text-[11px] rounded-full bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-gold/10 hover:text-certo-gold'
             : 'px-4 py-2.5 text-sm rounded-xl bg-certo-navy/5 text-certo-navy/70 hover:bg-certo-gold/10 hover:text-certo-gold border border-certo-navy/10 hover:border-certo-gold/20'
         }`}
       >
-        {compact ? '\u{1F4E2}' : '\u{1F4E2} Promuj'}
+        <span aria-hidden="true">{compact ? '\u{1F4E2}' : '\u{1F4E2}'}</span>{compact ? '' : ' Promuj'}
       </button>
 
       {open && (
@@ -96,6 +98,8 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
               }
             }
           }}
+          role="menu"
+          aria-label="Opcje udostępniania"
           className="absolute right-0 top-full mt-1.5 z-50 w-52 bg-white rounded-xl shadow-xl border border-certo-navy/10 overflow-hidden"
         >
           <div className="px-3 py-2 border-b border-certo-navy/5">
@@ -103,14 +107,16 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
           </div>
 
           <button
+            role="menuitem"
             onClick={shareToX}
             className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
-            <span className="w-5 text-center font-bold text-base">{'\u{1D54F}'}</span>
+            <span className="w-5 text-center font-bold text-base" aria-hidden="true">{'\u{1D54F}'}</span>
             <span>Udostępnij na X</span>
           </button>
 
           <button
+            role="menuitem"
             onClick={shareToLinkedIn}
             className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
@@ -121,6 +127,7 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
           </button>
 
           <button
+            role="menuitem"
             onClick={shareToFacebook}
             className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
@@ -132,10 +139,11 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
 
           <div className="border-t border-certo-navy/5">
             <button
+              role="menuitem"
               onClick={copyToClipboard}
               className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
             >
-              <span className="w-5 text-center">{copied ? '\u2705' : '\u{1F4CB}'}</span>
+              <span className="w-5 text-center" aria-hidden="true">{copied ? '\u2705' : '\u{1F4CB}'}</span>
               <span>{copied ? 'Skopiowano!' : 'Kopiuj tekst'}</span>
             </button>
           </div>

@@ -1,121 +1,55 @@
 @import "tailwindcss";
 
 @theme {
+  /* Raw palette */
   --color-certo-navy: #1A2744;
   --color-certo-cream: #F5F0E8;
   --color-certo-gold: #C49A3C;
   --color-certo-gold-light: #D4AF6A;
 
-  /* Dark mode palette */
-  --color-certo-dark-bg: #0F1219;
-  --color-certo-dark-surface: #1A2235;
-  --color-certo-dark-card: #232D3F;
-  --color-certo-dark-text: #E8E4DC;
-  --color-certo-dark-muted: #A0A0A0;
-  --color-certo-dark-border: #2A3548;
-  --color-certo-dark-header: #0A0E15;
+  /* Semantic tokens (light-mode defaults)                 */
+  /* These generate Tailwind utilities: bg-certo-bg,       */
+  /* text-certo-fg, etc. that reference CSS vars.          */
+  /* JS (ThemeProvider + anti-flash script) overrides      */
+  /* these vars at runtime for dark mode.                  */
+  --color-certo-bg: #F5F0E8;
+  --color-certo-fg: #1A2744;
+  --color-certo-fg-muted: rgba(26, 39, 68, 0.6);
+  --color-certo-card: #FFFFFF;
+  --color-certo-card-border: rgba(26, 39, 68, 0.05);
+  --color-certo-surface: rgba(26, 39, 68, 0.03);
 
   --font-serif: Georgia, "Playfair Display", serif;
   --font-sans: system-ui, sans-serif;
 }
 
-/* ═══════════════════════════════════════════════════════════════ */
-/* LIGHT / DARK MODE — CSS custom properties on :root               */
-/* Components use Tailwind utilities (text-certo-navy, dark:text-   */
-/* certo-dark-text) for text. Body only sets bg + default color.    */
-/* ═══════════════════════════════════════════════════════════════ */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-:root {
-  --certo-bg: var(--color-certo-cream);
-  --certo-fg: var(--color-certo-navy);
-  --certo-fg-muted: rgba(26, 39, 68, 0.6);
-  --certo-card-bg: #FFFFFF;
-  --certo-card-border: rgba(26, 39, 68, 0.05);
-}
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--font-serif);
+  }
 
-:root.dark {
-  --certo-bg: var(--color-certo-dark-bg);
-  --certo-fg: var(--color-certo-dark-text);
-  --certo-fg-muted: rgba(232, 228, 220, 0.6);
-  --certo-card-bg: var(--color-certo-dark-card);
-  --certo-card-border: var(--color-certo-dark-border);
-}
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--certo-bg);
-  color: var(--certo-fg);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* ═══════════════════════════════════════════════════════════════ */
-/* DARK MODE — global text overrides                                */
-/* In dark mode, any text using certo-navy colors must flip to      */
-/* cream/light. This avoids needing dark: prefix on 256+ elements.  */
-/* ═══════════════════════════════════════════════════════════════ */
-
-/* Navy text → cream text in dark mode (covers text-certo-navy) */
-:root.dark .text-certo-navy { color: var(--color-certo-dark-text) !important; }
-
-/* Navy text with opacity variants — preserve opacity */
-:root.dark .text-certo-navy\/50 { color: rgba(232, 228, 220, 0.5) !important; }
-:root.dark .text-certo-navy\/60 { color: rgba(232, 228, 220, 0.6) !important; }
-:root.dark .text-certo-navy\/70 { color: rgba(232, 228, 220, 0.7) !important; }
-:root.dark .text-certo-navy\/80 { color: rgba(232, 228, 220, 0.8) !important; }
-:root.dark .text-certo-navy\/40 { color: rgba(232, 228, 220, 0.4) !important; }
-:root.dark .text-certo-navy\/30 { color: rgba(232, 228, 220, 0.3) !important; }
-
-/* SVG fill overrides */
-:root.dark .fill-certo-navy { fill: var(--color-certo-dark-text) !important; }
-:root.dark .fill-certo-navy\/60 { fill: rgba(232, 228, 220, 0.6) !important; }
-:root.dark .fill-certo-navy\/30 { fill: rgba(232, 228, 220, 0.3) !important; }
-
-/* Background overrides: white → dark card */
-:root.dark .bg-white { background-color: var(--color-certo-dark-card) !important; }
-:root.dark .bg-white\/60 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-amber-50\/50 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-navy\/5 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-navy\/10 { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-navy\/\[0\.02\] { background-color: transparent !important; }
-
-/* Border overrides */
-:root.dark [class*="border-certo-navy/"] { border-color: var(--color-certo-dark-border) !important; }
-
-/* Gradient card overrides — Score/Vector cards */
-:root.dark [class*="bg-gradient-to-br"] {
-  background: var(--color-certo-dark-card) !important;
-}
-
-/* Preserve gold-on-navy (already has good contrast in dark) */
-:root.dark .bg-certo-navy { background-color: var(--color-certo-dark-surface) !important; }
-:root.dark .bg-certo-gold\/5 { background-color: rgba(196, 154, 60, 0.08) !important; }
-
-/* Dark mode prose */
-.dark .prose h1,
-.dark .prose h2,
-.dark .prose h3 { color: var(--color-certo-dark-text); }
-.dark .prose h2 { border-bottom-color: var(--color-certo-gold); }
-.dark .prose th { background: rgba(196, 154, 60, 0.15); color: var(--color-certo-dark-text); border-color: rgba(196, 154, 60, 0.3); }
-.dark .prose td { border-color: var(--color-certo-dark-border); }
-.dark .prose code { background: rgba(232, 228, 220, 0.08); color: var(--color-certo-dark-text); }
-.dark .prose pre { background: var(--color-certo-dark-header); }
-.dark .prose blockquote { color: rgba(232, 228, 220, 0.7); }
-
-h1, h2, h3, h4, h5, h6, .font-serif {
-  font-family: var(--font-serif);
+  :focus-visible {
+    outline: 2px solid var(--color-certo-gold);
+    outline-offset: 2px;
+  }
 }
 
 /* Typography for rendered Markdown */
-.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
-.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
-.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-navy); }
+.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--color-certo-fg); }
+.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-fg); }
+.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-fg); }
 .prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
-.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--color-certo-navy); }
+.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--color-certo-fg); }
 .prose td { padding: 0.5rem 0.75rem; border: 1px solid rgba(26, 39, 68, 0.1); }
-.prose code { background: rgba(26, 39, 68, 0.05); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--color-certo-navy); }
+.prose code { background: var(--color-certo-surface); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--color-certo-fg); }
 .prose pre { background: var(--color-certo-navy); color: var(--color-certo-cream); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
 .prose pre code { background: none; padding: 0; color: inherit; }
-.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: rgba(26, 39, 68, 0.8); font-style: italic; }
+.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: var(--color-certo-fg-muted); font-style: italic; }
 .prose a { color: var(--color-certo-gold); text-decoration: none; font-weight: 500; }
 .prose a:hover { text-decoration: underline; }
 
@@ -198,5 +132,21 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .animate-fadeIn {
+    animation: none;
+  }
+  .animate-blink {
+    animation: none;
+  }
+  .rhetorical-gold-bg {
+    animation: none;
+  }
+  .rhetorical-shimmer {
+    animation: none;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }

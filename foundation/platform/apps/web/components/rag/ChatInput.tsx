@@ -52,7 +52,7 @@ export function ChatInput({ onSend, onStop, isStreaming }: ChatInputProps) {
         onKeyDown={handleKeyDown}
         placeholder="Zadaj pytanie o metodologie Certo..."
         rows={1}
-        className="flex-1 resize-none rounded-xl border border-gray-300 dark:border-certo-dark-border px-4 py-2.5 text-sm dark:bg-certo-dark-surface dark:text-certo-dark-text focus:outline-none focus:ring-2 focus:ring-certo-gold/50 focus:border-certo-gold placeholder:text-gray-400 dark:placeholder:text-certo-dark-muted"
+        className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-certo-gold/50 focus:border-certo-gold placeholder:text-certo-fg-muted"
         disabled={isStreaming}
       />
 

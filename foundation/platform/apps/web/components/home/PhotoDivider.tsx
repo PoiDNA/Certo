@@ -21,8 +21,8 @@ export default function PhotoDivider({
 
       {/* Placeholder when no image */}
       {!imageUrl && (
-        <div className="absolute inset-0 bg-certo-navy/10 flex items-center justify-center">
-          <span className="text-xs text-certo-navy/40 uppercase tracking-widest">{alt}</span>
+        <div className="absolute inset-0 bg-certo-surface flex items-center justify-center">
+          <span className="text-xs text-certo-fg-muted uppercase tracking-widest">{alt}</span>
         </div>
       )}
     </div>

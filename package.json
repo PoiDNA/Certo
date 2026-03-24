@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "pngjs": "^7.0.0"
+    "pngjs": "^7.0.0",
+    "zod": "^4.3.6"
   },
   "private": true,
   "workspaces": [

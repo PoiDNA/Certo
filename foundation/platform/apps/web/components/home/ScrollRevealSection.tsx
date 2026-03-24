@@ -21,7 +21,7 @@ export default function ScrollRevealSection({
       style={imageUrl ? { backgroundImage: `url(${imageUrl})` } : undefined}
     >
       {/* Fallback bg when no image */}
-      {!imageUrl && <div className="absolute inset-0 bg-certo-navy/5" />}
+      {!imageUrl && <div className="absolute inset-0 bg-certo-surface" />}
 
       <div className={`absolute inset-0 ${overlay}`} />
 

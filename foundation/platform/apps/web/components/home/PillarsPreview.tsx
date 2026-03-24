@@ -82,7 +82,7 @@ export default function PillarsPreview() {
   const current = pillars[active];
 
   return (
-    <section className="w-full py-20 md:py-32 bg-white/50 dark:bg-certo-dark-surface">
+    <section className="w-full py-20 md:py-32 bg-white/50">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
@@ -91,10 +91,10 @@ export default function PillarsPreview() {
           <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-4 font-medium">
             Rating Certo
           </p>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-certo-navy mb-4">
             {t('pillars_title')}
           </h2>
-          <p className="text-lg text-certo-navy/60 dark:text-certo-dark-text/60 max-w-2xl mx-auto">
+          <p className="text-lg text-certo-navy/60 max-w-2xl mx-auto">
             {t('pillars_subtitle')}
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function PillarsPreview() {
           onTouchEnd={onTouchEnd}
         >
           {/* Main slide */}
-          <div className={`bg-white dark:bg-certo-dark-card rounded-xl border-l-4 ${current.border} p-8 md:p-12 min-h-[220px] flex items-center transition-all duration-500`}>
+          <div aria-live="polite" aria-atomic="true" className={`bg-white rounded-xl border-l-4 ${current.border} p-8 md:p-12 min-h-[220px] flex items-center transition-all duration-500`}>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 w-full">
               <div className="shrink-0">
                 <span className={`text-7xl md:text-8xl lg:text-9xl font-serif font-bold ${current.accent} leading-none`}>
@@ -120,10 +120,10 @@ export default function PillarsPreview() {
                 </span>
               </div>
               <div className="flex-1">
-                <h3 className="font-serif font-extrabold text-certo-navy dark:text-certo-dark-text text-2xl md:text-3xl mb-3">
+                <h3 className="font-serif font-extrabold text-certo-navy text-2xl md:text-3xl mb-3">
                   {t(`pillar_${current.key}_name`)}
                 </h3>
-                <p className="text-base md:text-lg text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
+                <p className="text-base md:text-lg text-certo-navy/60 leading-relaxed">
                   {t(`pillar_${current.key}_short`)}
                 </p>
               </div>
@@ -137,9 +137,10 @@ export default function PillarsPreview() {
                 key={pillar.key}
                 onClick={() => { setActive(i); setPaused(true); }}
                 className={`relative h-2 rounded-full transition-all duration-300 ${
-                  i === active ? 'w-10 bg-certo-gold' : 'w-2 bg-certo-navy/20 dark:bg-certo-dark-muted/40 hover:bg-certo-navy/40'
+                  i === active ? 'w-10 bg-certo-gold' : 'w-2 bg-certo-navy/20 hover:bg-certo-navy/40'
                 }`}
-                aria-label={t(`pillar_${pillar.key}_name`)}
+                aria-label={`Slajd ${i + 1} z ${pillars.length}: ${t(`pillar_${pillar.key}_name`)}`}
+                aria-current={i === active ? 'true' : undefined}
               />
             ))}
           </div>
@@ -153,13 +154,13 @@ export default function PillarsPreview() {
                 className={`text-left p-4 rounded-lg transition-all duration-300 ${
                   i === active
                     ? 'bg-certo-navy text-white'
-                    : 'bg-white dark:bg-certo-dark-card border border-certo-navy/5 dark:border-certo-dark-border hover:border-certo-gold/30 text-certo-navy dark:text-certo-dark-text'
+                    : 'bg-white border border-certo-navy/5 hover:border-certo-gold/30 text-certo-navy'
                 }`}
               >
                 <span className={`text-lg font-bold ${i === active ? 'text-certo-gold' : pillar.accent}`}>
                   {pillar.weight}%
                 </span>
-                <span className={`block text-xs font-medium mt-1 ${i === active ? 'text-white/80' : 'text-certo-navy/60 dark:text-certo-dark-text/60'}`}>
+                <span className={`block text-xs font-medium mt-1 ${i === active ? 'text-white/80' : 'text-certo-navy/60'}`}>
                   {t(`pillar_${pillar.key}_name`)}
                 </span>
               </button>

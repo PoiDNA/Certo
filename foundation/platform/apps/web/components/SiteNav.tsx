@@ -48,8 +48,9 @@ export default function SiteNav() {
         onClick={() => setOpen(!open)}
         aria-label="Menu"
         aria-expanded={open}
+        aria-controls="mobile-menu"
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
           {open ? (
             <>
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -67,7 +68,7 @@ export default function SiteNav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-certo-navy border-b-[3px] border-certo-gold z-50">
+        <div id="mobile-menu" role="navigation" aria-label="Menu główne" className="md:hidden absolute top-full left-0 right-0 bg-certo-navy border-b-[3px] border-certo-gold z-50">
           <nav className="flex flex-col px-6 py-4 gap-3">
             {links.map(({ href, key }) => {
               const fullHref = `/${locale}${href}`;

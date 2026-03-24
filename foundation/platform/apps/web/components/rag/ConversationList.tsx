@@ -49,7 +49,7 @@ export function ConversationList({
       <div className="p-3">
         <button
           onClick={onNewChat}
-          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-300 dark:border-certo-dark-border text-sm text-gray-700 dark:text-certo-dark-text hover:bg-white dark:hover:bg-certo-dark-card hover:border-gray-400 transition-colors"
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:bg-certo-card hover:border-gray-400 transition-colors"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -61,7 +61,7 @@ export function ConversationList({
       {/* Conversation list */}
       <div className="flex-1 overflow-y-auto px-2 pb-2">
         {conversations.length === 0 ? (
-          <p className="text-xs text-gray-400 dark:text-certo-dark-muted text-center mt-8 px-4">
+          <p className="text-xs text-gray-400 text-center mt-8 px-4">
             Brak zapisanych rozmów
           </p>
         ) : (
@@ -71,13 +71,13 @@ export function ConversationList({
                 key={conv.id}
                 className={`group relative rounded-lg px-3 py-2 cursor-pointer transition-colors ${
                   activeId === conv.id
-                    ? "bg-white dark:bg-certo-dark-card shadow-sm border border-gray-200 dark:border-certo-dark-border"
-                    : "hover:bg-gray-100 dark:hover:bg-certo-dark-card"
+                    ? "bg-certo-card shadow-sm border border-gray-200 "
+                    : "hover:bg-certo-card"
                 }`}
                 onClick={() => onSelect(conv.id)}
               >
                 <div className="flex items-center gap-1 pr-6">
-                  <p className="text-sm text-gray-800 dark:text-certo-dark-text truncate font-medium flex-1">
+                  <p className="text-sm text-gray-800 truncate font-medium flex-1">
                     {conv.title || "Nowa rozmowa"}
                   </p>
                   {conv.shared && (

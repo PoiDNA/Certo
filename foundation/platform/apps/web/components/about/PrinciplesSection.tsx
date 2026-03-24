@@ -11,17 +11,17 @@ export default function PrinciplesSection() {
 
   return (
     <section ref={ref} className={`mb-16 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-2xl font-serif font-bold text-certo-navy mb-8">
+      <h2 className="text-2xl font-serif font-bold text-certo-fg mb-8">
         {t('principles_title')}
       </h2>
 
       <div className="grid md:grid-cols-3 gap-6">
         {principles.map((key) => (
-          <div key={key} className="bg-white p-6 border border-certo-navy/5 rounded-lg">
-            <h3 className="font-serif font-bold text-certo-navy mb-2">
+          <div key={key} className="bg-certo-card p-6 border border-certo-card-border rounded-lg">
+            <h3 className="font-serif font-bold text-certo-fg mb-2">
               {t(`principle_${key}_name`)}
             </h3>
-            <p className="text-sm text-certo-navy/60 leading-relaxed">
+            <p className="text-sm text-certo-fg-muted leading-relaxed">
               {t(`principle_${key}_desc`)}
             </p>
           </div>

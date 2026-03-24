@@ -13,7 +13,7 @@ export default function SectorsSection() {
 
   return (
     <section ref={ref} className={`mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-3xl font-serif font-bold text-certo-navy mb-10">
+      <h2 className="text-3xl font-serif font-bold text-certo-fg mb-10">
         {t('sectors_title')}
       </h2>
 
@@ -25,7 +25,7 @@ export default function SectorsSection() {
             className={`px-4 py-2 text-sm font-medium transition-colors ${
               active === sector
                 ? 'bg-certo-navy text-certo-gold'
-                : 'bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-navy/10'
+                : 'bg-certo-navy/5 text-certo-fg-muted hover:bg-certo-navy/10'
             }`}
           >
             {t(`sector_${sector}`)}
@@ -33,11 +33,11 @@ export default function SectorsSection() {
         ))}
       </div>
 
-      <div className="bg-white p-8 border border-certo-navy/5 min-h-[120px]">
-        <h3 className="font-serif font-bold text-certo-navy text-lg mb-2">
+      <div className="bg-certo-card p-8 border border-certo-card-border min-h-[120px]">
+        <h3 className="font-serif font-bold text-certo-fg text-lg mb-2">
           {t(`sector_${active}`)}
         </h3>
-        <p className="text-sm text-certo-navy/60">
+        <p className="text-sm text-certo-fg-muted">
           Kryteria oceny dla sektora: {t(`sector_${active}`).toLowerCase()} — szczegóły w metodologii.
         </p>
       </div>

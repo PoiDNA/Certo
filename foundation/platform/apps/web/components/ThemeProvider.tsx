@@ -74,13 +74,33 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const DARK_VARS: Record<string, string> = {
+    '--color-certo-bg': '#0F1219',
+    '--color-certo-fg': '#E8E4DC',
+    '--color-certo-fg-muted': 'rgba(232,228,220,0.6)',
+    '--color-certo-card': '#232D3F',
+    '--color-certo-card-border': '#2A3548',
+    '--color-certo-surface': '#1A2235',
+  };
+
+  const LIGHT_VARS: Record<string, string> = {
+    '--color-certo-bg': '#F5F0E8',
+    '--color-certo-fg': '#1A2744',
+    '--color-certo-fg-muted': 'rgba(26,39,68,0.6)',
+    '--color-certo-card': '#FFFFFF',
+    '--color-certo-card-border': 'rgba(26,39,68,0.05)',
+    '--color-certo-surface': 'rgba(26,39,68,0.03)',
+  };
+
   function applyClass(resolved: 'light' | 'dark') {
     const root = document.documentElement;
+    const vars = resolved === 'dark' ? DARK_VARS : LIGHT_VARS;
     if (resolved === 'dark') {
       root.classList.add('dark');
     } else {
       root.classList.remove('dark');
     }
+    Object.entries(vars).forEach(([k, v]) => root.style.setProperty(k, v));
   }
 
   function applyTheme(t: Theme) {

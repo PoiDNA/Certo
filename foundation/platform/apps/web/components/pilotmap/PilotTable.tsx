@@ -21,7 +21,7 @@ const SECTOR_LABELS: Record<string, string> = {
 
 const SECTOR_COLORS: Record<string, string> = {
   publiczny: 'bg-certo-gold/20 text-certo-gold',
-  prywatny: 'bg-certo-navy/10 text-certo-navy',
+  prywatny: 'bg-certo-navy/10 text-certo-fg',
   pozarzadowy: 'bg-amber-100 text-amber-800',
 };
 
@@ -137,13 +137,13 @@ export default function PilotTable({ applications, highlightedIds }: {
   };
 
   const SortIcon = ({ col }: { col: SortKey }) => (
-    <span className="ml-1 text-certo-navy/30">
+    <span className="ml-1 text-certo-fg-muted">
       {sortKey === col ? (sortAsc ? '↑' : '↓') : '↕'}
     </span>
   );
 
   return (
-    <div className="space-y-4 bg-white rounded-2xl p-4 md:p-6">
+    <div className="space-y-4 bg-certo-card rounded-2xl p-4 md:p-6">
       {/* Search + filters */}
       <div className="flex flex-col sm:flex-row gap-3">
         <input
@@ -151,13 +151,13 @@ export default function PilotTable({ applications, highlightedIds }: {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Szukaj po nazwie, mieście lub kraju..."
-          className="flex-1 px-4 py-3 bg-white border border-certo-navy/10 rounded-lg text-sm text-certo-navy placeholder:text-certo-navy/40 focus:outline-none focus:border-certo-gold"
+          className="flex-1 px-4 py-3 bg-certo-card border border-certo-card-border rounded-lg text-sm text-certo-fg placeholder:text-certo-fg-muted focus:outline-none focus:border-certo-gold"
         />
         <div className="flex gap-2">
           <button
             onClick={() => setSectorFilter(null)}
             className={`px-3 py-2 text-xs rounded-lg transition-colors ${
-              !sectorFilter ? 'bg-certo-navy text-white' : 'bg-white border border-certo-navy/10 text-certo-navy/60 hover:border-certo-navy/30'
+              !sectorFilter ? 'bg-certo-navy text-white' : 'bg-certo-card border border-certo-card-border text-certo-fg-muted hover:border-certo-navy/30'
             }`}
           >
             Wszystkie
@@ -167,7 +167,7 @@ export default function PilotTable({ applications, highlightedIds }: {
               key={key}
               onClick={() => setSectorFilter(sectorFilter === key ? null : key)}
               className={`px-3 py-2 text-xs rounded-lg transition-colors ${
-                sectorFilter === key ? 'bg-certo-navy text-white' : 'bg-white border border-certo-navy/10 text-certo-navy/60 hover:border-certo-navy/30'
+                sectorFilter === key ? 'bg-certo-navy text-white' : 'bg-certo-card border border-certo-card-border text-certo-fg-muted hover:border-certo-navy/30'
               }`}
             >
               {label.replace('Sektor ', '')}
@@ -177,52 +177,52 @@ export default function PilotTable({ applications, highlightedIds }: {
       </div>
 
       {/* Count */}
-      <p className="text-xs text-certo-navy/40">
-        Łączna liczba zgłoszeń: <strong className="text-certo-navy">{filtered.length}</strong>
+      <p className="text-xs text-certo-fg-muted">
+        Łączna liczba zgłoszeń: <strong className="text-certo-fg">{filtered.length}</strong>
       </p>
 
       {/* Desktop table */}
-      <div className="hidden md:block bg-white rounded-xl border border-certo-navy/10 overflow-hidden">
+      <div className="hidden md:block bg-certo-card rounded-xl border border-certo-card-border overflow-hidden">
         <table className="w-full text-sm">
           <thead>
-            <tr className="bg-certo-navy/5 text-left">
-              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('organization_name')}>
+            <tr className="bg-certo-surface text-left">
+              <th className="px-4 py-3 font-medium text-certo-fg cursor-pointer" onClick={() => toggleSort('organization_name')}>
                 Nazwa podmiotu <SortIcon col="organization_name" />
               </th>
-              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('city')}>
+              <th className="px-4 py-3 font-medium text-certo-fg cursor-pointer" onClick={() => toggleSort('city')}>
                 Miasto <SortIcon col="city" />
               </th>
-              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('country')}>
+              <th className="px-4 py-3 font-medium text-certo-fg cursor-pointer" onClick={() => toggleSort('country')}>
                 Kraj <SortIcon col="country" />
               </th>
-              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('sector')}>
+              <th className="px-4 py-3 font-medium text-certo-fg cursor-pointer" onClick={() => toggleSort('sector')}>
                 Sektor <SortIcon col="sector" />
               </th>
-              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('status')}>
+              <th className="px-4 py-3 font-medium text-certo-fg cursor-pointer" onClick={() => toggleSort('status')}>
                 Status <SortIcon col="status" />
               </th>
-              <th className="px-4 py-3 font-medium text-certo-navy cursor-pointer" onClick={() => toggleSort('created_at')}>
+              <th className="px-4 py-3 font-medium text-certo-fg cursor-pointer" onClick={() => toggleSort('created_at')}>
                 Data <SortIcon col="created_at" />
               </th>
-              <th className="px-4 py-3 font-medium text-certo-navy text-center">Podbij</th>
-              <th className="px-4 py-3 font-medium text-certo-navy text-center">Promuj</th>
+              <th className="px-4 py-3 font-medium text-certo-fg text-center">Podbij</th>
+              <th className="px-4 py-3 font-medium text-certo-fg text-center">Promuj</th>
             </tr>
           </thead>
           <tbody>
             {filtered.length === 0 ? (
-              <tr><td colSpan={8} className="px-4 py-8 text-center text-certo-navy/40">Brak wyników</td></tr>
+              <tr><td colSpan={8} className="px-4 py-8 text-center text-certo-fg-muted">Brak wyników</td></tr>
             ) : (
               filtered.map((app, i) => {
                 const isHighlighted = highlightedIds?.has(app.id);
                 return (
                 <tr key={i}
                   onClick={() => router.push(`/${locale}/entity/${app.id}`)}
-                  className={`border-t border-certo-navy/5 transition-colors cursor-pointer ${
+                  className={`border-t border-certo-card-border transition-colors cursor-pointer ${
                   isHighlighted ? 'bg-certo-gold/10 ring-1 ring-inset ring-certo-gold/30' : 'hover:bg-certo-gold/5'
                 }`}>
-                  <td className="px-4 py-3 font-medium text-certo-navy hover:text-certo-gold transition-colors">{app.organization_name}</td>
-                  <td className="px-4 py-3 text-certo-navy/60">{app.city || '—'}</td>
-                  <td className="px-4 py-3 text-certo-navy/60">{app.country ? COUNTRY_NAMES[app.country] || app.country : '—'}</td>
+                  <td className="px-4 py-3 font-medium text-certo-fg hover:text-certo-gold transition-colors">{app.organization_name}</td>
+                  <td className="px-4 py-3 text-certo-fg-muted">{app.city || '—'}</td>
+                  <td className="px-4 py-3 text-certo-fg-muted">{app.country ? COUNTRY_NAMES[app.country] || app.country : '—'}</td>
                   <td className="px-4 py-3">
                     <span className={`inline-block px-2 py-0.5 text-xs rounded-full ${SECTOR_COLORS[app.sector] || ''}`}>
                       {SECTOR_LABELS[app.sector] || app.sector}
@@ -235,7 +235,7 @@ export default function PilotTable({ applications, highlightedIds }: {
                       </span>
                     ); })()}
                   </td>
-                  <td className="px-4 py-3 text-certo-navy/40 text-xs">
+                  <td className="px-4 py-3 text-certo-fg-muted text-xs">
                     {new Date(app.created_at).toLocaleDateString('pl-PL')}
                   </td>
                   <td className="px-4 py-3">
@@ -245,7 +245,7 @@ export default function PilotTable({ applications, highlightedIds }: {
                       className={`text-xs px-3 py-1 rounded-full transition-colors ${
                         votedIds.has(app.id)
                           ? 'bg-certo-gold/20 text-certo-gold'
-                          : 'bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-gold/10 hover:text-certo-gold'
+                          : 'bg-certo-navy/5 text-certo-fg-muted hover:bg-certo-gold/10 hover:text-certo-gold'
                       }`}
                     >
                       👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
@@ -265,16 +265,16 @@ export default function PilotTable({ applications, highlightedIds }: {
       {/* Mobile cards */}
       <div className="md:hidden space-y-3">
         {filtered.length === 0 ? (
-          <div className="bg-white rounded-xl p-6 text-center text-certo-navy/40">Brak wyników</div>
+          <div className="bg-certo-card rounded-xl p-6 text-center text-certo-fg-muted">Brak wyników</div>
         ) : (
           filtered.map((app, i) => (
             <div key={i}
               onClick={() => router.push(`/${locale}/entity/${app.id}`)}
               className={`rounded-xl border p-4 space-y-2 cursor-pointer ${
-              highlightedIds?.has(app.id) ? 'bg-white border-certo-gold ring-2 ring-certo-gold/30' : 'bg-white border-certo-navy/5 hover:border-certo-gold/30'
+              highlightedIds?.has(app.id) ? 'bg-certo-card border-certo-gold ring-2 ring-certo-gold/30' : 'bg-certo-card border-certo-card-border hover:border-certo-gold/30'
             }`}>
               <div className="flex items-start justify-between gap-2">
-                <h3 className="font-medium text-certo-navy text-sm hover:text-certo-gold transition-colors">{app.organization_name}</h3>
+                <h3 className="font-medium text-certo-fg text-sm hover:text-certo-gold transition-colors">{app.organization_name}</h3>
                 <div className="flex items-center gap-1.5 shrink-0">
                   {(() => { const s = getStatusInfo(app); return (
                     <span className={`px-2 py-0.5 text-[10px] font-medium rounded-full ${s.className}`}>
@@ -287,7 +287,7 @@ export default function PilotTable({ applications, highlightedIds }: {
                 </div>
               </div>
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-xs text-certo-navy/50">
+                <div className="flex items-center gap-4 text-xs text-certo-fg-muted">
                   {app.city && <span>📍 {app.city}</span>}
                   {app.country && <span>{COUNTRY_NAMES[app.country] || app.country}</span>}
                   <span>{new Date(app.created_at).toLocaleDateString('pl-PL')}</span>
@@ -297,7 +297,7 @@ export default function PilotTable({ applications, highlightedIds }: {
                     onClick={(e) => { e.stopPropagation(); handleVote(app.id); }}
                     disabled={votedIds.has(app.id)}
                     className={`text-xs px-3 py-1 rounded-full ${
-                      votedIds.has(app.id) ? 'bg-certo-gold/20 text-certo-gold' : 'bg-certo-navy/5 text-certo-navy/60'
+                      votedIds.has(app.id) ? 'bg-certo-gold/20 text-certo-gold' : 'bg-certo-navy/5 text-certo-fg/60'
                     }`}
                   >
                     👍 {(app.votes || 0) + (votedIds.has(app.id) ? 1 : 0)}
