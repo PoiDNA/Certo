@@ -26,7 +26,7 @@ export default function OrgChart() {
       </h2>
 
       {/* Organy Fundacji */}
-      <h3 className="text-sm uppercase tracking-[0.15em] text-certo-gold font-semibold mb-4">
+      <h3 className="text-sm uppercase tracking-[0.15em] text-certo-gold-text font-semibold mb-4">
         {t('organs_label')}
       </h3>
       <div className="grid sm:grid-cols-2 gap-4 mb-10">
@@ -43,7 +43,7 @@ export default function OrgChart() {
       </div>
 
       {/* Struktury eksperckie */}
-      <h3 className="text-sm uppercase tracking-[0.15em] text-certo-gold font-semibold mb-4">
+      <h3 className="text-sm uppercase tracking-[0.15em] text-certo-gold-text font-semibold mb-4">
         {t('expert_structures_label')}
       </h3>
       <div className="grid sm:grid-cols-2 gap-4">

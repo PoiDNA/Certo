@@ -160,7 +160,7 @@ export default function PillarsSection() {
           {active !== null && (
             <button
               onClick={() => setActive(null)}
-              className="mt-6 text-sm text-certo-gold hover:text-certo-gold-light transition-colors"
+              className="mt-6 text-sm text-certo-gold-text hover:text-certo-gold transition-colors underline underline-offset-2 decoration-certo-gold-text/30 hover:decoration-certo-gold"
             >
               ← {t('pillars_title')}
             </button>

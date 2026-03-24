@@ -6,6 +6,8 @@
   --color-certo-cream: #F5F0E8;
   --color-certo-gold: #C49A3C;
   --color-certo-gold-light: #D4AF6A;
+  /* Accessible gold for text on cream — passes WCAG AA 4.5:1 */
+  --color-certo-gold-text: #8B6914;
 
   /* Semantic tokens (light-mode defaults)                 */
   /* These generate Tailwind utilities: bg-certo-bg,       */
@@ -50,8 +52,8 @@
 .prose pre { background: var(--color-certo-navy); color: var(--color-certo-cream); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
 .prose pre code { background: none; padding: 0; color: inherit; }
 .prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: var(--color-certo-fg-muted); font-style: italic; }
-.prose a { color: var(--color-certo-gold); text-decoration: none; font-weight: 500; }
-.prose a:hover { text-decoration: underline; }
+.prose a { color: var(--color-certo-gold-text); text-decoration: underline; text-decoration-color: rgba(139, 105, 20, 0.3); text-underline-offset: 2px; font-weight: 500; }
+.prose a:hover { text-decoration-color: var(--color-certo-gold-text); }
 
 /* Scroll reveal animations */
 .reveal-base {

@@ -72,7 +72,7 @@ export default function BenefitsSection() {
               <ul className="space-y-2">
                 {Array.from({ length: items }, (_, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-certo-fg-muted">
-                    <span className="text-certo-gold mt-0.5 shrink-0">&#10003;</span>
+                    <span className="text-certo-gold-text mt-0.5 shrink-0" aria-hidden="true">&#10003;</span>
                     <span>{t(`benefits_${key}_item${i + 1}`)}</span>
                   </li>
                 ))}
@@ -84,7 +84,7 @@ export default function BenefitsSection() {
         <div className="text-center mt-10">
           <a
             href={`/${locale}/ratings`}
-            className="inline-block text-sm text-certo-gold font-medium hover:text-certo-gold-light transition-colors uppercase tracking-[0.1em]"
+            className="inline-block text-sm text-certo-gold-text font-medium hover:text-certo-gold transition-colors uppercase tracking-[0.1em] underline underline-offset-4 decoration-certo-gold-text/30 hover:decoration-certo-gold"
           >
             {t('benefits_cta')} &rarr;
           </a>

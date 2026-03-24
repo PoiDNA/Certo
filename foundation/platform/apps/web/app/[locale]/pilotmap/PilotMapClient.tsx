@@ -92,7 +92,7 @@ export default function PilotMapClient() {
           <span className="text-xs text-certo-fg-muted">
             Wybrano <strong className="text-certo-navy">{clusterHighlight.size}</strong> podmiotów z mapy
           </span>
-          <button onClick={() => setClusterHighlight(null)} className="text-xs text-certo-gold hover:text-certo-navy">
+          <button onClick={() => setClusterHighlight(null)} className="text-xs text-certo-gold-text hover:text-certo-fg underline underline-offset-2">
             ✕ Wyczyść wybór
           </button>
         </div>
