@@ -15,7 +15,6 @@ const primaryLinks = [
 const moreLinks = [
   { href: '/experts', key: 'experts' as const },
   { href: '/contact', key: 'contact' as const },
-  { href: '/olympiad', key: 'olympiad' as const },
 ];
 
 const allLinks = [...primaryLinks, ...moreLinks];
