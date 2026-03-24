@@ -175,6 +175,45 @@ CREATE TABLE IF NOT EXISTS olympiad_action_comments (
 CREATE INDEX idx_action_comments_org ON olympiad_action_comments (org_id, created_at DESC);
 
 -- =============================================================================
+-- Rating History (audit trail for score changes after Certo Action)
+-- =============================================================================
+CREATE TABLE IF NOT EXISTS olympiad_rating_history (
+  id                  UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  org_id              UUID NOT NULL REFERENCES olympiad_organizations(org_id),
+  tenant_id           TEXT NOT NULL,
+
+  -- Before
+  previous_score      INT,
+  previous_level      TEXT,
+  previous_pillar_scores JSONB,
+
+  -- After
+  new_score           INT NOT NULL,
+  new_level           TEXT,
+  new_pillar_scores   JSONB NOT NULL,
+  new_vector          TEXT,
+
+  -- Boost details
+  trigger_type        TEXT NOT NULL CHECK (trigger_type IN ('survey', 'action_completion', 'advisor_review', 'manual')),
+  weakest_pillar      TEXT,
+  pillar_boost        INT DEFAULT 0,
+  peer_review_avg     NUMERIC(3,1),
+  llm_score           INT,
+
+  -- Approval
+  approval_status     TEXT NOT NULL DEFAULT 'pending' CHECK (approval_status IN ('pending', 'auto_approved', 'advisor_approved', 'college_approved', 'rejected')),
+  approval_required   TEXT NOT NULL DEFAULT 'automatic' CHECK (approval_required IN ('automatic', 'advisor', 'expert-college')),
+  approved_by         UUID REFERENCES user_profiles(id),
+  approval_note       TEXT,
+  approved_at         TIMESTAMPTZ,
+
+  created_at          TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX idx_rating_history_org ON olympiad_rating_history (org_id, created_at DESC);
+CREATE INDEX idx_rating_history_pending ON olympiad_rating_history (approval_status) WHERE approval_status = 'pending';
+
+-- =============================================================================
 -- RLS Policies
 -- =============================================================================
 
