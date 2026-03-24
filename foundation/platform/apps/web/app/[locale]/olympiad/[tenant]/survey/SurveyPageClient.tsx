@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import SurveyForm from "../../../../../components/olympiad/SurveyForm";
 import type { SurveyQuestion } from "../../../../../lib/olympiad/types";
 
@@ -11,6 +11,7 @@ interface SurveyPageClientProps {
   tenantSlug: string;
   groupId: string;
   linkHash?: string;
+  orgName?: string;
 }
 
 export default function SurveyPageClient({
@@ -20,7 +21,10 @@ export default function SurveyPageClient({
   tenantSlug,
   groupId,
   linkHash,
+  orgName,
 }: SurveyPageClientProps) {
+  const [totalRespondents, setTotalRespondents] = useState<number | undefined>(undefined);
+
   const handleSubmit = useCallback(
     async (pillarScores: Record<string, number>) => {
       const res = await fetch("/api/olympiad/survey", {
@@ -38,6 +42,11 @@ export default function SurveyPageClient({
         const err = await res.json().catch(() => ({}));
         throw new Error(err.error || "Survey submission failed");
       }
+
+      const data = await res.json();
+      if (data.total_responses !== undefined) {
+        setTotalRespondents(data.total_responses);
+      }
     },
     [tenantSlug, groupId, linkHash]
   );
@@ -47,8 +56,9 @@ export default function SurveyPageClient({
       questions={questions}
       locale={locale}
       groupName={groupName}
-      orgName="Demo School"
+      orgName={orgName || locale === "pl" ? "Twoja organizacja" : "your organization"}
       onSubmit={handleSubmit}
+      totalRespondents={totalRespondents}
     />
   );
 }
