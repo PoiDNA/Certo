@@ -63,12 +63,23 @@ export default function PeerReviewClient({
     if (!allScored || submitting) return;
     setSubmitting(true);
 
-    // In production: POST to /api/olympiad/review
-    console.log("[Peer Review]", {
-      tenant_id: tenantSlug,
-      checklist_scores: scores,
-      total_score: totalScore,
-    });
+    try {
+      const res = await fetch("/api/olympiad/review", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          tenant_id: tenantSlug,
+          checklist_scores: scores,
+          total_score: totalScore,
+        }),
+      });
+
+      if (!res.ok) {
+        console.error("[Peer Review] API error:", res.status);
+      }
+    } catch (e) {
+      console.error("[Peer Review] Network error:", e);
+    }
 
     setSubmitted(true);
   }

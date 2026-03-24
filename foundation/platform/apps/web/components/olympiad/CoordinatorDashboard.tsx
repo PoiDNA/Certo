@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import type { TenantConfig } from "../../lib/olympiad/types";
 import { Link } from "../../i18n-config";
 
@@ -8,6 +8,7 @@ interface CoordinatorDashboardProps {
   config: TenantConfig;
   locale: string;
   tenantSlug: string;
+  orgId?: string;
 }
 
 interface CohortLink {
@@ -22,22 +23,54 @@ interface CohortLink {
   createdAt: string;
 }
 
-// Demo participation data
-const DEMO_PARTICIPATION = {
-  students: { responses: 292, declared: 450, rate: 65 },
-  teachers: { responses: 31, declared: 35, rate: 89 },
-  parents: { responses: 176, declared: 800, rate: 22 },
-  staff: { responses: 9, declared: 20, rate: 45 },
+interface ParticipationData {
+  [groupId: string]: { count: number; total: number; pct: number };
+}
+
+// Demo participation data (fallback)
+const DEMO_PARTICIPATION: ParticipationData = {
+  students: { count: 292, total: 450, pct: 65 },
+  teachers: { count: 31, total: 35, pct: 89 },
+  parents: { count: 176, total: 800, pct: 22 },
+  staff: { count: 9, total: 20, pct: 45 },
 };
 
 export default function CoordinatorDashboard({
   config,
   locale,
   tenantSlug,
+  orgId,
 }: CoordinatorDashboardProps) {
   const [links, setLinks] = useState<CohortLink[]>([]);
   const [generating, setGenerating] = useState(false);
   const [newCohort, setNewCohort] = useState({ groupId: "", name: "", maxUses: 30 });
+  const [participation, setParticipation] = useState<ParticipationData>(DEMO_PARTICIPATION);
+  const [anomalyLinks, setAnomalyLinks] = useState<{ link_hash: string; group_id: string; cohort_name: string }[]>([]);
+  const [dataSource, setDataSource] = useState<"demo" | "supabase">("demo");
+
+  // Fetch real participation data
+  useEffect(() => {
+    async function fetchParticipation() {
+      try {
+        const params = new URLSearchParams({ tenant_id: tenantSlug });
+        if (orgId) params.set("org_id", orgId);
+        const res = await fetch(`/api/olympiad/participation?${params}`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.participation && Object.keys(data.participation).length > 0) {
+            setParticipation(data.participation);
+            setDataSource(data.source);
+          }
+          if (data.anomaly_links) {
+            setAnomalyLinks(data.anomaly_links);
+          }
+        }
+      } catch {
+        // Keep demo data on error
+      }
+    }
+    fetchParticipation();
+  }, [tenantSlug, orgId]);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"links" | "participation" | "phases">("links");
 
@@ -48,32 +81,44 @@ export default function CoordinatorDashboard({
     [locale]
   );
 
-  function generateLink() {
+  async function generateLink() {
     if (!newCohort.groupId || !newCohort.name) return;
     setGenerating(true);
 
     const group = config.survey_groups.find((g) => g.group_id === newCohort.groupId);
-    const hash = Math.random().toString(36).substring(2, 10);
-    const baseUrl = typeof window !== "undefined" ? window.location.origin : "https://certogov.org";
-    const url = `${baseUrl}/${locale}/olympiad/${tenantSlug}/survey?group=${newCohort.groupId}&link=${hash}`;
 
-    const whatsappMsg = isPl
-      ? `Drodzy ${t(group?.name || { pl: "Uczestnicy" })}! Bierzemy udział w Olimpiadzie Certo. Odpowiedzcie na 5 pytań, zajmie to minutę! 👉 ${url}`
-      : `Dear ${t(group?.name || { en: "Participants" })}! We're taking part in the Certo Olympiad. Answer 5 questions, it takes 1 minute! 👉 ${url}`;
+    try {
+      const res = await fetch("/api/olympiad/links", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          org_id: orgId || null,
+          tenant_id: tenantSlug,
+          group_id: newCohort.groupId,
+          cohort_name: newCohort.name,
+          max_uses: newCohort.maxUses,
+        }),
+      });
 
-    const link: CohortLink = {
-      id: hash,
-      groupId: newCohort.groupId,
-      groupName: t(group?.name || { pl: "—" }),
-      cohortName: newCohort.name,
-      maxUses: newCohort.maxUses,
-      currentUses: 0,
-      url,
-      whatsappMsg,
-      createdAt: new Date().toISOString(),
-    };
+      const data = await res.json();
+      if (data.success) {
+        const link: CohortLink = {
+          id: data.link_hash,
+          groupId: newCohort.groupId,
+          groupName: t(group?.name || { pl: "—" }),
+          cohortName: newCohort.name,
+          maxUses: newCohort.maxUses,
+          currentUses: 0,
+          url: data.url,
+          whatsappMsg: data.whatsapp_msg?.[locale] || data.whatsapp_msg?.pl || "",
+          createdAt: new Date().toISOString(),
+        };
+        setLinks((prev) => [link, ...prev]);
+      }
+    } catch (e) {
+      console.error("[CoordinatorDashboard] Link generation error:", e);
+    }
 
-    setLinks((prev) => [link, ...prev]);
     setNewCohort({ groupId: "", name: "", maxUses: 30 });
     setGenerating(false);
   }
@@ -235,12 +280,12 @@ export default function CoordinatorDashboard({
         <div>
           <div className="grid gap-4 md:grid-cols-2">
             {config.survey_groups.map((group) => {
-              const data = DEMO_PARTICIPATION[group.group_id as keyof typeof DEMO_PARTICIPATION];
+              const data = participation[group.group_id];
               const threshold = config.thresholds[group.group_id];
               if (!data) return null;
 
-              const meetsMin = threshold ? data.rate >= threshold.min_pct : true;
-              const meetsBonus = threshold ? data.rate >= threshold.bonus_pct : false;
+              const meetsMin = threshold ? data.pct >= threshold.min_pct : true;
+              const meetsBonus = threshold ? data.pct >= threshold.bonus_pct : false;
 
               return (
                 <div
@@ -254,7 +299,7 @@ export default function CoordinatorDashboard({
                         meetsBonus ? "text-green-500" : meetsMin ? "text-certo-gold" : "text-red-400"
                       }`}
                     >
-                      {data.rate}%
+                      {data.pct}%
                     </span>
                   </div>
 
@@ -264,7 +309,7 @@ export default function CoordinatorDashboard({
                       className={`h-full rounded-full transition-all ${
                         meetsBonus ? "bg-green-500" : meetsMin ? "bg-certo-gold" : "bg-red-400"
                       }`}
-                      style={{ width: `${Math.min(data.rate, 100)}%` }}
+                      style={{ width: `${Math.min(data.pct, 100)}%` }}
                     />
                     {/* Threshold markers */}
                     {threshold && (
@@ -285,7 +330,7 @@ export default function CoordinatorDashboard({
 
                   <div className="flex justify-between text-xs text-certo-navy/50 dark:text-certo-dark-muted">
                     <span>
-                      {data.responses} / {data.declared}{" "}
+                      {data.count} / {data.total}{" "}
                       {isPl ? "odpowiedzi" : "responses"}
                     </span>
                     <div className="flex gap-3">
@@ -313,9 +358,12 @@ export default function CoordinatorDashboard({
             <span className="text-sm font-medium">
               {isPl ? "Łącznie odpowiedzi:" : "Total responses:"}{" "}
               <strong>
-                {Object.values(DEMO_PARTICIPATION).reduce((s, d) => s + d.responses, 0)}
+                {Object.values(participation).reduce((s, d) => s + d.count, 0)}
               </strong>{" "}
-              / {Object.values(DEMO_PARTICIPATION).reduce((s, d) => s + d.declared, 0)}
+              / {Object.values(participation).reduce((s, d) => s + d.total, 0)}
+              {dataSource === "demo" && (
+                <span className="ml-2 text-xs text-certo-navy/40 dark:text-certo-dark-muted">(demo)</span>
+              )}
             </span>
           </div>
         </div>
