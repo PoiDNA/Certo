@@ -265,7 +265,7 @@ export default function AdminPanel({ locale, userId }: AdminPanelProps) {
                       {isPl ? "Test" : "Test"}
                     </span>
                     <div className="font-semibold mt-1">
-                      {(tenant.config?.knowledge_test as Record<string, unknown>)?.num_questions || "—"} {isPl ? "pytań" : "questions"}
+                      {String((tenant.config?.knowledge_test as Record<string, unknown>)?.num_questions ?? "—")} {isPl ? "pytań" : "questions"}
                     </div>
                   </div>
                   <div className="p-2 rounded-lg bg-certo-navy/5 dark:bg-certo-dark-border">
