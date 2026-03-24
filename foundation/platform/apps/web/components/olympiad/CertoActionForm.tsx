@@ -35,6 +35,22 @@ const ROLE_INFO: Record<ActionRole, { label: Record<string, string>; icon: strin
   },
 };
 
+// ── Step with timeline + proof ────────────────────────────
+type StepStatus = "planned" | "in-progress" | "completed";
+type ActionStep = {
+  text: string;
+  startDate: string;  // ISO date
+  endDate: string;    // ISO date
+  status: StepStatus;
+  proof: string;      // URL or description of evidence
+};
+
+const STEP_STATUS: Record<StepStatus, { label: Record<string, string>; icon: string; color: string }> = {
+  planned: { label: { pl: "Zaplanowany", en: "Planned" }, icon: "📋", color: "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400" },
+  "in-progress": { label: { pl: "W realizacji", en: "In progress" }, icon: "⚡", color: "bg-blue-100 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400" },
+  completed: { label: { pl: "Zrealizowany", en: "Completed" }, icon: "✅", color: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/20 dark:text-emerald-400" },
+};
+
 interface Template {
   id: string;
   title: Record<string, string>;
@@ -62,11 +78,12 @@ export default function CertoActionForm({
 }: CertoActionFormProps) {
   const [selectedTemplate, setSelectedTemplate] = useState<string | null>(null);
   const [whatToChange, setWhatToChange] = useState("");
-  const [steps, setSteps] = useState<string[]>([""]);
+  const [steps, setSteps] = useState<ActionStep[]>([{ text: "", startDate: "", endDate: "", status: "planned", proof: "" }]);
   const [metrics, setMetrics] = useState<string[]>([""]);
   const [directorConsulted, setDirectorConsulted] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [showRoadmap, setShowRoadmap] = useState(false);
 
   // Team collaboration
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
@@ -106,20 +123,20 @@ export default function CertoActionForm({
     const tmpl = templates.find((t) => t.id === templateId);
     if (tmpl && tmpl.id !== "custom") {
       setWhatToChange(t(tmpl.description));
-      setSteps(tmpl.steps.map((s) => t(s)));
+      setSteps(tmpl.steps.map((s) => ({ text: t(s), startDate: "", endDate: "", status: "planned" as StepStatus, proof: "" })));
       setMetrics(tmpl.metrics.map((m) => t(m)));
     } else {
       setWhatToChange("");
-      setSteps([""]);
+      setSteps([{ text: "", startDate: "", endDate: "", status: "planned", proof: "" }]);
       setMetrics([""]);
     }
   }
 
   function addStep() {
-    if (steps.length < maxSteps) setSteps([...steps, ""]);
+    if (steps.length < maxSteps) setSteps([...steps, { text: "", startDate: "", endDate: "", status: "planned", proof: "" }]);
   }
-  function updateStep(i: number, val: string) {
-    setSteps((prev) => prev.map((s, idx) => (idx === i ? val : s)));
+  function updateStepField(i: number, field: keyof ActionStep, val: string) {
+    setSteps((prev) => prev.map((s, idx) => (idx === i ? { ...s, [field]: val } : s)));
   }
   function removeStep(i: number) {
     if (steps.length > 1) setSteps((prev) => prev.filter((_, idx) => idx !== i));
@@ -135,7 +152,7 @@ export default function CertoActionForm({
   const wordCount = whatToChange.trim().split(/\s+/).filter(Boolean).length;
   const canSubmit =
     whatToChange.trim() &&
-    steps.filter((s) => s.trim()).length >= 1 &&
+    steps.filter((s) => s.text.trim()).length >= 1 &&
     metrics.filter((m) => m.trim()).length >= 1 &&
     directorConsulted &&
     wordCount <= maxWords;
@@ -150,7 +167,13 @@ export default function CertoActionForm({
       weakest_pillar: weakestPillar.id,
       template_used: selectedTemplate,
       what_to_change: whatToChange,
-      steps: steps.filter((s) => s.trim()),
+      steps: steps.filter((s) => s.text.trim()).map((s) => ({
+        text: s.text,
+        start_date: s.startDate,
+        end_date: s.endDate,
+        status: s.status,
+        proof: s.proof,
+      })),
       success_metrics: metrics.filter((m) => m.trim()),
       director_consulted: directorConsulted,
       team_members: teamMembers.map((m) => ({
@@ -240,43 +263,164 @@ export default function CertoActionForm({
             />
           </section>
 
-          {/* Steps */}
+          {/* Steps + Roadmap */}
           <section>
-            <h2 className="font-bold mb-3">
-              {isPl ? "3. Jak to zrobimy?" : "3. How will we do it?"}
-              <span className="text-xs font-normal text-certo-navy/40 dark:text-certo-dark-muted ml-2">
-                (max {maxSteps} {isPl ? "kroków" : "steps"})
-              </span>
-            </h2>
-            <div className="space-y-2">
-              {steps.map((step, i) => (
-                <div key={i} className="flex gap-2">
-                  <span className="w-6 h-10 flex items-center justify-center text-xs font-bold text-certo-gold">
-                    {i + 1}.
-                  </span>
-                  <input
-                    type="text"
-                    value={step}
-                    onChange={(e) => updateStep(i, e.target.value)}
-                    className={`${inputClass} flex-1`}
-                    placeholder={isPl ? `Krok ${i + 1}` : `Step ${i + 1}`}
-                  />
-                  {steps.length > 1 && (
-                    <button
-                      onClick={() => removeStep(i)}
-                      className="text-red-400 hover:text-red-600 text-sm px-2"
-                    >
-                      ✕
-                    </button>
-                  )}
-                </div>
-              ))}
-              {steps.length < maxSteps && (
-                <button onClick={addStep} className="text-xs text-certo-gold font-medium">
-                  + {isPl ? "Dodaj krok" : "Add step"}
-                </button>
-              )}
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="font-bold">
+                {isPl ? "3. Droga do zmiany" : "3. Road to change"}
+                <span className="text-xs font-normal text-certo-navy/40 dark:text-certo-dark-muted ml-2">
+                  (max {maxSteps} {isPl ? "kroków" : "steps"})
+                </span>
+              </h2>
+              <button
+                onClick={() => setShowRoadmap(!showRoadmap)}
+                className="text-xs px-3 py-1 rounded-full bg-certo-gold/10 text-certo-gold font-medium hover:bg-certo-gold/20 transition"
+              >
+                {showRoadmap
+                  ? (isPl ? "📝 Edycja" : "📝 Edit")
+                  : (isPl ? "🗺️ Roadmapa" : "🗺️ Roadmap")}
+              </button>
             </div>
+
+            {showRoadmap ? (
+              /* ── Roadmap Timeline View ── */
+              <div className="relative pl-8 space-y-6">
+                {/* Vertical line */}
+                <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-gradient-to-b from-certo-gold via-certo-gold/50 to-certo-navy/20 dark:to-certo-dark-border rounded-full" />
+
+                {steps.map((step, i) => {
+                  const statusInfo = STEP_STATUS[step.status];
+                  const hasProof = step.proof.trim().length > 0;
+                  return (
+                    <div key={i} className="relative">
+                      {/* Timeline dot */}
+                      <div className={`absolute -left-5 w-6 h-6 rounded-full flex items-center justify-center text-xs border-2 border-white dark:border-certo-dark-card ${
+                        step.status === "completed" ? "bg-emerald-500 text-white" :
+                        step.status === "in-progress" ? "bg-blue-500 text-white" :
+                        "bg-gray-200 text-gray-500 dark:bg-gray-700"
+                      }`}>
+                        {step.status === "completed" ? "✓" : i + 1}
+                      </div>
+
+                      <div className={`rounded-xl border-2 p-4 transition ${
+                        step.status === "completed" ? "border-emerald-200 bg-emerald-50/50 dark:border-emerald-800/30 dark:bg-emerald-900/10" :
+                        step.status === "in-progress" ? "border-blue-200 bg-blue-50/50 dark:border-blue-800/30 dark:bg-blue-900/10" :
+                        "border-certo-navy/10 dark:border-certo-dark-border"
+                      }`}>
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <h3 className="font-semibold text-sm flex-1">
+                            {step.text || (isPl ? `Krok ${i + 1}` : `Step ${i + 1}`)}
+                          </h3>
+                          <span className={`text-xs px-2 py-0.5 rounded-full whitespace-nowrap ${statusInfo.color}`}>
+                            {statusInfo.icon} {statusInfo.label[locale] || statusInfo.label.en}
+                          </span>
+                        </div>
+
+                        {/* Dates */}
+                        {(step.startDate || step.endDate) && (
+                          <div className="flex items-center gap-2 text-xs text-certo-navy/50 dark:text-certo-dark-muted mb-2">
+                            {step.startDate && (
+                              <span>🚀 {isPl ? "Start" : "Start"}: {new Date(step.startDate).toLocaleDateString(locale === "pl" ? "pl-PL" : "en-GB", { day: "numeric", month: "short", year: "numeric" })}</span>
+                            )}
+                            {step.startDate && step.endDate && <span>→</span>}
+                            {step.endDate && (
+                              <span>🏁 {isPl ? "Cel" : "Target"}: {new Date(step.endDate).toLocaleDateString(locale === "pl" ? "pl-PL" : "en-GB", { day: "numeric", month: "short", year: "numeric" })}</span>
+                            )}
+                          </div>
+                        )}
+
+                        {/* Proof of completion */}
+                        {step.status === "completed" && hasProof && (
+                          <div className="mt-2 p-2 rounded-lg bg-emerald-100/50 dark:bg-emerald-900/20 text-xs text-emerald-700 dark:text-emerald-400">
+                            📎 {isPl ? "Dowód realizacji" : "Proof of completion"}: {step.proof}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              /* ── Edit View ── */
+              <div className="space-y-4">
+                {steps.map((step, i) => (
+                  <div key={i} className="rounded-xl border border-certo-navy/10 dark:border-certo-dark-border p-4 space-y-3">
+                    {/* Step header */}
+                    <div className="flex gap-2 items-start">
+                      <span className="w-6 h-8 flex items-center justify-center text-xs font-bold text-certo-gold shrink-0">
+                        {i + 1}.
+                      </span>
+                      <input
+                        type="text"
+                        value={step.text}
+                        onChange={(e) => updateStepField(i, "text", e.target.value)}
+                        className={`${inputClass} flex-1`}
+                        placeholder={isPl ? `Co zrobimy w kroku ${i + 1}?` : `What will we do in step ${i + 1}?`}
+                      />
+                      {steps.length > 1 && (
+                        <button onClick={() => removeStep(i)} className="text-red-400 hover:text-red-600 text-sm px-1 shrink-0">✕</button>
+                      )}
+                    </div>
+
+                    {/* Dates row */}
+                    <div className="grid grid-cols-2 gap-3 pl-8">
+                      <div>
+                        <label className="text-xs text-certo-navy/40 dark:text-certo-dark-muted mb-1 block">
+                          🚀 {isPl ? "Ruszamy" : "We start"}
+                        </label>
+                        <input
+                          type="date"
+                          value={step.startDate}
+                          onChange={(e) => updateStepField(i, "startDate", e.target.value)}
+                          className={`${inputClass} text-sm`}
+                        />
+                      </div>
+                      <div>
+                        <label className="text-xs text-certo-navy/40 dark:text-certo-dark-muted mb-1 block">
+                          🏁 {isPl ? "Cel osiągnięty do" : "Target achieved by"}
+                        </label>
+                        <input
+                          type="date"
+                          value={step.endDate}
+                          onChange={(e) => updateStepField(i, "endDate", e.target.value)}
+                          className={`${inputClass} text-sm`}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Status + Proof (for coordinator to update later) */}
+                    <div className="pl-8 flex flex-wrap items-center gap-3">
+                      <select
+                        value={step.status}
+                        onChange={(e) => updateStepField(i, "status", e.target.value)}
+                        className={`${inputClass} w-auto text-xs`}
+                      >
+                        {(Object.entries(STEP_STATUS) as [StepStatus, typeof STEP_STATUS[StepStatus]][]).map(([id, info]) => (
+                          <option key={id} value={id}>
+                            {info.icon} {info.label[locale] || info.label.en}
+                          </option>
+                        ))}
+                      </select>
+
+                      {step.status === "completed" && (
+                        <input
+                          type="text"
+                          value={step.proof}
+                          onChange={(e) => updateStepField(i, "proof", e.target.value)}
+                          className={`${inputClass} flex-1 text-xs`}
+                          placeholder={isPl ? "📎 Dowód: link, opis lub załącznik" : "📎 Proof: link, description or attachment"}
+                        />
+                      )}
+                    </div>
+                  </div>
+                ))}
+                {steps.length < maxSteps && (
+                  <button onClick={addStep} className="text-xs text-certo-gold font-medium">
+                    + {isPl ? "Dodaj kolejny krok" : "Add another step"}
+                  </button>
+                )}
+              </div>
+            )}
           </section>
 
           {/* Metrics */}
