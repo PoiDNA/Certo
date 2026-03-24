@@ -76,14 +76,44 @@ export default function CertoActionForm({
   maxSteps,
   maxWords,
 }: CertoActionFormProps) {
-  const [selectedTemplate, setSelectedTemplate] = useState<string | null>(null);
-  const [whatToChange, setWhatToChange] = useState("");
-  const [steps, setSteps] = useState<ActionStep[]>([{ text: "", startDate: "", endDate: "", status: "planned", proof: "" }]);
-  const [metrics, setMetrics] = useState<string[]>([""]);
+  // Multi-plan state — each "kwestia" has its own title, description, steps, metrics
+  type ActionPlan = {
+    id: string;
+    title: string;
+    whatToChange: string;
+    steps: ActionStep[];
+    metrics: string[];
+    showRoadmap: boolean;
+  };
+
+  const [plans, setPlans] = useState<ActionPlan[]>([
+    { id: "1", title: "", whatToChange: "", steps: [{ text: "", startDate: "", endDate: "", status: "planned", proof: "" }], metrics: [""], showRoadmap: false },
+  ]);
+  const [activePlanIdx, setActivePlanIdx] = useState(0);
   const [directorConsulted, setDirectorConsulted] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const [showRoadmap, setShowRoadmap] = useState(false);
+
+  // Helpers to update active plan
+  function updatePlan(idx: number, updates: Partial<ActionPlan>) {
+    setPlans((prev) => prev.map((p, i) => (i === idx ? { ...p, ...updates } : p)));
+  }
+  function addPlan() {
+    setPlans((prev) => [...prev, {
+      id: String(Date.now()),
+      title: "",
+      whatToChange: "",
+      steps: [{ text: "", startDate: "", endDate: "", status: "planned", proof: "" }],
+      metrics: [""],
+      showRoadmap: false,
+    }]);
+    setActivePlanIdx(plans.length);
+  }
+  function removePlan(idx: number) {
+    if (plans.length <= 1) return;
+    setPlans((prev) => prev.filter((_, i) => i !== idx));
+    setActivePlanIdx(Math.max(0, activePlanIdx - 1));
+  }
 
   // Team collaboration
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
@@ -118,44 +148,32 @@ export default function CertoActionForm({
   const t = (key: Record<string, string>) =>
     key[locale] || key.en || key.pl || Object.values(key)[0] || "";
 
-  function selectTemplate(templateId: string) {
-    setSelectedTemplate(templateId);
-    const tmpl = templates.find((t) => t.id === templateId);
-    if (tmpl && tmpl.id !== "custom") {
-      setWhatToChange(t(tmpl.description));
-      setSteps(tmpl.steps.map((s) => ({ text: t(s), startDate: "", endDate: "", status: "planned" as StepStatus, proof: "" })));
-      setMetrics(tmpl.metrics.map((m) => t(m)));
-    } else {
-      setWhatToChange("");
-      setSteps([{ text: "", startDate: "", endDate: "", status: "planned", proof: "" }]);
-      setMetrics([""]);
-    }
-  }
+  // Step helpers for active plan
+  const plan = plans[activePlanIdx];
 
   function addStep() {
-    if (steps.length < maxSteps) setSteps([...steps, { text: "", startDate: "", endDate: "", status: "planned", proof: "" }]);
+    const newSteps = [...plan.steps, { text: "", startDate: "", endDate: "", status: "planned" as StepStatus, proof: "" }];
+    if (newSteps.length <= maxSteps) updatePlan(activePlanIdx, { steps: newSteps });
   }
   function updateStepField(i: number, field: keyof ActionStep, val: string) {
-    setSteps((prev) => prev.map((s, idx) => (idx === i ? { ...s, [field]: val } : s)));
+    const newSteps = plan.steps.map((s, idx) => (idx === i ? { ...s, [field]: val } : s));
+    updatePlan(activePlanIdx, { steps: newSteps });
   }
   function removeStep(i: number) {
-    if (steps.length > 1) setSteps((prev) => prev.filter((_, idx) => idx !== i));
+    if (plan.steps.length > 1) updatePlan(activePlanIdx, { steps: plan.steps.filter((_, idx) => idx !== i) });
   }
 
   function addMetric() {
-    if (metrics.length < 3) setMetrics([...metrics, ""]);
+    if (plan.metrics.length < 3) updatePlan(activePlanIdx, { metrics: [...plan.metrics, ""] });
   }
   function updateMetric(i: number, val: string) {
-    setMetrics((prev) => prev.map((m, idx) => (idx === i ? val : m)));
+    updatePlan(activePlanIdx, { metrics: plan.metrics.map((m, idx) => (idx === i ? val : m)) });
   }
 
-  const wordCount = whatToChange.trim().split(/\s+/).filter(Boolean).length;
+  const wordCount = plan.whatToChange.trim().split(/\s+/).filter(Boolean).length;
   const canSubmit =
-    whatToChange.trim() &&
-    steps.filter((s) => s.text.trim()).length >= 1 &&
-    metrics.filter((m) => m.trim()).length >= 1 &&
-    directorConsulted &&
-    wordCount <= maxWords;
+    plans.every((p) => p.title.trim() && p.whatToChange.trim() && p.steps.filter((s) => s.text.trim()).length >= 1) &&
+    directorConsulted;
 
   async function handleSubmit() {
     if (!canSubmit || submitting) return;
@@ -165,16 +183,18 @@ export default function CertoActionForm({
     console.log("[Certo Action]", {
       tenant_id: tenantSlug,
       weakest_pillar: weakestPillar.id,
-      template_used: selectedTemplate,
-      what_to_change: whatToChange,
-      steps: steps.filter((s) => s.text.trim()).map((s) => ({
-        text: s.text,
-        start_date: s.startDate,
-        end_date: s.endDate,
-        status: s.status,
-        proof: s.proof,
+      plans: plans.map((p) => ({
+        title: p.title,
+        what_to_change: p.whatToChange,
+        steps: p.steps.filter((s) => s.text.trim()).map((s) => ({
+          text: s.text,
+          start_date: s.startDate,
+          end_date: s.endDate,
+          status: s.status,
+          proof: s.proof,
+        })),
+        success_metrics: p.metrics.filter((m) => m.trim()),
       })),
-      success_metrics: metrics.filter((m) => m.trim()),
       director_consulted: directorConsulted,
       team_members: teamMembers.map((m) => ({
         name: m.name,
@@ -219,34 +239,66 @@ export default function CertoActionForm({
         </span>
       </div>
 
-      {/* Template selection */}
+      {/* Plan tabs */}
       <section>
         <h2 className="font-bold mb-3">
-          {isPl ? "1. Wybierz szablon lub stwórz własny plan" : "1. Choose a template or create your own"}
+          {isPl ? "1. Co chcemy zmienić?" : "1. What do we want to change?"}
         </h2>
-        <div className="grid gap-3 md:grid-cols-2">
-          {templates.map((tmpl) => (
+        <p className="text-xs text-certo-navy/40 dark:text-certo-dark-muted mb-4">
+          {isPl
+            ? "Każda kwestia to osobny plan zmian z własną Drogą do Zmiany. Możesz dodać wiele kwestii."
+            : "Each issue is a separate change plan with its own Road to Change. You can add multiple issues."}
+        </p>
+
+        {/* Tab bar */}
+        <div className="flex items-center gap-2 mb-4 overflow-x-auto pb-2">
+          {plans.map((p, idx) => (
             <button
-              key={tmpl.id}
-              onClick={() => selectTemplate(tmpl.id)}
-              className={`text-left p-4 rounded-xl border-2 transition-all ${
-                selectedTemplate === tmpl.id
-                  ? "border-certo-gold bg-certo-gold/5"
-                  : "border-certo-navy/10 dark:border-certo-dark-border hover:border-certo-navy/20"
+              key={p.id}
+              onClick={() => setActivePlanIdx(idx)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm whitespace-nowrap transition ${
+                activePlanIdx === idx
+                  ? "bg-certo-gold text-white font-bold"
+                  : "bg-certo-navy/5 dark:bg-certo-dark-border text-certo-navy/60 dark:text-certo-dark-muted hover:bg-certo-navy/10"
               }`}
             >
-              <div className="font-semibold text-sm mb-1">{t(tmpl.title)}</div>
-              <div className="text-xs text-certo-navy/50 dark:text-certo-dark-muted">
-                {t(tmpl.description)}
-              </div>
+              <span>{idx + 1}.</span>
+              <span>{p.title || (isPl ? `Kwestia ${idx + 1}` : `Issue ${idx + 1}`)}</span>
+              {plans.length > 1 && activePlanIdx === idx && (
+                <span
+                  onClick={(e) => { e.stopPropagation(); removePlan(idx); }}
+                  className="ml-1 text-white/60 hover:text-white"
+                >✕</span>
+              )}
             </button>
           ))}
+          <button
+            onClick={addPlan}
+            className="px-4 py-2 rounded-lg text-sm border-2 border-dashed border-certo-navy/20 dark:border-certo-dark-border text-certo-gold font-medium hover:border-certo-gold transition whitespace-nowrap"
+          >
+            + {isPl ? "Dodaj kwestię" : "Add issue"}
+          </button>
         </div>
       </section>
 
-      {/* What to change */}
-      {selectedTemplate && (
+      {/* Active plan editor */}
+      {plan && (
         <>
+          {/* Plan title */}
+          <section>
+            <label className="font-bold text-sm mb-2 block">
+              {isPl ? "Nazwa kwestii" : "Issue name"}
+            </label>
+            <input
+              type="text"
+              value={plan.title}
+              onChange={(e) => updatePlan(activePlanIdx, { title: e.target.value })}
+              className={inputClass}
+              placeholder={isPl ? "np. Transparentność budżetu, Komunikacja z rodzicami" : "e.g. Budget transparency, Parent communication"}
+            />
+          </section>
+
+          {/* What to change */}
           <section>
             <h2 className="font-bold mb-3">
               {isPl ? "2. Co chcemy zmienić?" : "2. What do we want to change?"}
@@ -255,11 +307,11 @@ export default function CertoActionForm({
               </span>
             </h2>
             <textarea
-              value={whatToChange}
-              onChange={(e) => setWhatToChange(e.target.value)}
-              rows={4}
+              value={plan.whatToChange}
+              onChange={(e) => updatePlan(activePlanIdx, { whatToChange: e.target.value })}
+              rows={3}
               className={`${inputClass} ${wordCount > maxWords ? "border-red-400" : ""}`}
-              placeholder={isPl ? "Opisz, co chcesz zmienić..." : "Describe what you want to change..."}
+              placeholder={isPl ? "Opisz, co chcesz zmienić w tej kwestii..." : "Describe what you want to change..."}
             />
           </section>
 
@@ -273,22 +325,22 @@ export default function CertoActionForm({
                 </span>
               </h2>
               <button
-                onClick={() => setShowRoadmap(!showRoadmap)}
+                onClick={() => updatePlan(activePlanIdx, { showRoadmap: !plan.showRoadmap })}
                 className="text-xs px-3 py-1 rounded-full bg-certo-gold/10 text-certo-gold font-medium hover:bg-certo-gold/20 transition"
               >
-                {showRoadmap
+                {plan.showRoadmap
                   ? (isPl ? "📝 Edycja" : "📝 Edit")
                   : (isPl ? "🗺️ Roadmapa" : "🗺️ Roadmap")}
               </button>
             </div>
 
-            {showRoadmap ? (
+            {plan.showRoadmap ? (
               /* ── Roadmap Timeline View ── */
               <div className="relative pl-8 space-y-6">
                 {/* Vertical line */}
                 <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-gradient-to-b from-certo-gold via-certo-gold/50 to-certo-navy/20 dark:to-certo-dark-border rounded-full" />
 
-                {steps.map((step, i) => {
+                {plan.steps.map((step, i) => {
                   const statusInfo = STEP_STATUS[step.status];
                   const hasProof = step.proof.trim().length > 0;
                   return (
@@ -343,7 +395,7 @@ export default function CertoActionForm({
             ) : (
               /* ── Edit View ── */
               <div className="space-y-4">
-                {steps.map((step, i) => (
+                {plan.steps.map((step, i) => (
                   <div key={i} className="rounded-xl border border-certo-navy/10 dark:border-certo-dark-border p-4 space-y-3">
                     {/* Step header */}
                     <div className="flex gap-2 items-start">
@@ -357,7 +409,7 @@ export default function CertoActionForm({
                         className={`${inputClass} flex-1`}
                         placeholder={isPl ? `Co zrobimy w kroku ${i + 1}?` : `What will we do in step ${i + 1}?`}
                       />
-                      {steps.length > 1 && (
+                      {plan.steps.length > 1 && (
                         <button onClick={() => removeStep(i)} className="text-red-400 hover:text-red-600 text-sm px-1 shrink-0">✕</button>
                       )}
                     </div>
@@ -414,7 +466,7 @@ export default function CertoActionForm({
                     </div>
                   </div>
                 ))}
-                {steps.length < maxSteps && (
+                {plan.steps.length < maxSteps && (
                   <button onClick={addStep} className="text-xs text-certo-gold font-medium">
                     + {isPl ? "Dodaj kolejny krok" : "Add another step"}
                   </button>
@@ -429,7 +481,7 @@ export default function CertoActionForm({
               {isPl ? "4. Jak zmierzymy sukces?" : "4. How will we measure success?"}
             </h2>
             <div className="space-y-2">
-              {metrics.map((metric, i) => (
+              {plan.metrics.map((metric, i) => (
                 <input
                   key={i}
                   type="text"
@@ -439,7 +491,7 @@ export default function CertoActionForm({
                   placeholder={isPl ? `Wskaźnik ${i + 1}` : `Metric ${i + 1}`}
                 />
               ))}
-              {metrics.length < 3 && (
+              {plan.metrics.length < 3 && (
                 <button onClick={addMetric} className="text-xs text-certo-gold font-medium">
                   + {isPl ? "Dodaj wskaźnik" : "Add metric"}
                 </button>

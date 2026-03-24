@@ -21,7 +21,14 @@ type OrgDetail = {
   created_at: string;
   coordinator_name: string | null;
   team_members: string[];
-  action_plan: { weakest_pillar: string; plan: string; steps: string[]; metrics: string[] } | null;
+  action_plans: {
+    id: string;
+    title: string;
+    weakest_pillar: string;
+    plan: string;
+    steps: { text: string; startDate: string; endDate: string; status: string; proof: string }[];
+    metrics: string[];
+  }[] | null;
   peer_review_avg: number | null;
   test_score: number | null;
   test_passed: boolean | null;
@@ -63,8 +70,13 @@ const LEVEL_INFO: Record<string, { label: string; color: string; bg: string }> =
 
 // ── Demo data ─────────────────────────────────────────────────────
 const DEMO: Record<string, OrgDetail> = {
-  "1": { org_id: "1", org_name: "SP nr 15 im. Jana Pawła II", tenant_id: "schools", tenant_name: "Szkoły", country: "PL", municipality: "Warszawa", phase: "action", certo_score: 78, certo_vector: "+", level: "silver", participation_rates: { students: 72, teachers: 88, parents: 34, staff: 65 }, pillar_scores: { operational: 82, stakeholders: 71, decisions: 80, stability: 75, transparency: 68 }, total_responses: 245, created_at: "2026-09-15", coordinator_name: "Anna Kowalska", team_members: ["Jan Nowak", "Maria Wiśniewska", "Piotr Zieliński"], action_plan: { weakest_pillar: "transparency", plan: "Zwiększenie transparentności decyzji budżetowych", steps: ["Publikacja budżetu na stronie szkoły", "Newsletter miesięczny dla rodziców", "Dzień otwarty z dyrekcją raz na kwartał"], metrics: ["50% rodziców odwiedza stronę budżetu", "80% otwarć newslettera"] }, peer_review_avg: 4.2, test_score: 80, test_passed: true },
-  "2": { org_id: "2", org_name: "Liceum Ogólnokształcące nr 3", tenant_id: "schools", tenant_name: "Szkoły", country: "PL", municipality: "Kraków", phase: "gala", certo_score: 92, certo_vector: "++", level: "diament", participation_rates: { students: 85, teachers: 95, parents: 61, staff: 78 }, pillar_scores: { operational: 94, stakeholders: 90, decisions: 93, stability: 88, transparency: 95 }, total_responses: 512, created_at: "2026-09-12", coordinator_name: "Tomasz Wójcik", team_members: ["Katarzyna Dąbrowska", "Adam Lewandowski", "Ewa Kamińska", "Marek Szymański"], action_plan: { weakest_pillar: "stability", plan: "Wzmocnienie ciągłości kadry i procesów", steps: ["Program mentoringu dla nowych nauczycieli", "Dokumentacja procesów kluczowych", "Roczny plan sukcesji"], metrics: ["Retencja kadry >90%", "100% procesów udokumentowanych"] }, peer_review_avg: 4.8, test_score: 95, test_passed: true },
+  "1": { org_id: "1", org_name: "SP nr 15 im. Jana Pawła II", tenant_id: "schools", tenant_name: "Szkoły", country: "PL", municipality: "Warszawa", phase: "action", certo_score: 78, certo_vector: "+", level: "silver", participation_rates: { students: 72, teachers: 88, parents: 34, staff: 65 }, pillar_scores: { operational: 82, stakeholders: 71, decisions: 80, stability: 75, transparency: 68 }, total_responses: 245, created_at: "2026-09-15", coordinator_name: "Anna Kowalska", team_members: ["Jan Nowak", "Maria Wiśniewska", "Piotr Zieliński"], action_plans: [
+    { id: "a1", title: "Transparentność budżetu", weakest_pillar: "transparency", plan: "Zwiększenie transparentności decyzji budżetowych", steps: [{ text: "Publikacja budżetu na stronie szkoły", startDate: "2026-10-01", endDate: "2026-10-15", status: "completed", proof: "https://sp15.pl/budzet" }, { text: "Newsletter miesięczny dla rodziców", startDate: "2026-10-15", endDate: "2026-11-01", status: "in-progress", proof: "" }, { text: "Dzień otwarty z dyrekcją", startDate: "2026-11-15", endDate: "2026-12-01", status: "planned", proof: "" }], metrics: ["50% rodziców odwiedza stronę budżetu", "80% otwarć newslettera"] },
+    { id: "a2", title: "Komunikacja z rodzicami", weakest_pillar: "stakeholders", plan: "Poprawa kanałów komunikacji z rodzicami", steps: [{ text: "Ankieta potrzeb komunikacyjnych", startDate: "2026-10-05", endDate: "2026-10-20", status: "completed", proof: "127 odpowiedzi, raport załączony" }, { text: "Uruchomienie grupy WhatsApp per klasa", startDate: "2026-10-20", endDate: "2026-11-05", status: "planned", proof: "" }], metrics: ["Czas odpowiedzi <24h", "90% rodziców w grupach"] }
+  ], peer_review_avg: 4.2, test_score: 80, test_passed: true },
+  "2": { org_id: "2", org_name: "Liceum Ogólnokształcące nr 3", tenant_id: "schools", tenant_name: "Szkoły", country: "PL", municipality: "Kraków", phase: "gala", certo_score: 92, certo_vector: "++", level: "diament", participation_rates: { students: 85, teachers: 95, parents: 61, staff: 78 }, pillar_scores: { operational: 94, stakeholders: 90, decisions: 93, stability: 88, transparency: 95 }, total_responses: 512, created_at: "2026-09-12", coordinator_name: "Tomasz Wójcik", team_members: ["Katarzyna Dąbrowska", "Adam Lewandowski", "Ewa Kamińska", "Marek Szymański"], action_plans: [
+    { id: "b1", title: "Ciągłość kadry", weakest_pillar: "stability", plan: "Wzmocnienie ciągłości kadry i procesów", steps: [{ text: "Program mentoringu dla nowych nauczycieli", startDate: "2026-09-20", endDate: "2026-10-15", status: "completed", proof: "12 par mentor-mentee" }, { text: "Dokumentacja procesów kluczowych", startDate: "2026-10-15", endDate: "2026-11-15", status: "completed", proof: "Wiki wewnętrzne — 45 procesów" }, { text: "Roczny plan sukcesji", startDate: "2026-11-15", endDate: "2026-12-01", status: "completed", proof: "Zatwierdzony przez radę pedagogiczną" }], metrics: ["Retencja kadry >90%", "100% procesów udokumentowanych"] }
+  ], peer_review_avg: 4.8, test_score: 95, test_passed: true },
 };
 
 // ── Component ─────────────────────────────────────────────────────
@@ -273,33 +285,114 @@ export default function OrgDetailClient({ locale, orgId }: { locale: string; org
           )}
         </div>
 
-        {/* Certo Action */}
-        {org.action_plan && (
-          <div className="bg-certo-card rounded-xl border border-certo-card-border p-6">
-            <h2 className="text-lg font-serif font-bold text-certo-fg mb-3">🚀 Certo Action</h2>
-            <div className="mb-3">
-              <span className="text-xs text-certo-fg-muted">Najsłabszy filar:</span>
-              <span className="ml-2 px-2 py-0.5 bg-red-100 text-red-700 rounded text-xs font-medium">
-                {PILLARS.find((p) => p.id === org.action_plan!.weakest_pillar)?.friendly || org.action_plan.weakest_pillar}
-              </span>
-            </div>
-            <p className="text-certo-fg mb-4">{org.action_plan.plan}</p>
-            <div className="mb-4">
-              <h3 className="text-sm font-medium text-certo-fg mb-2">Kroki:</h3>
-              <ol className="list-decimal list-inside space-y-1 text-sm text-certo-fg-muted">
-                {org.action_plan.steps.map((step, i) => (
-                  <li key={i}>{step}</li>
-                ))}
-              </ol>
-            </div>
-            <div>
-              <h3 className="text-sm font-medium text-certo-fg mb-2">Wskaźniki sukcesu:</h3>
-              <ul className="list-disc list-inside space-y-1 text-sm text-certo-fg-muted">
-                {org.action_plan.metrics.map((m, i) => (
-                  <li key={i}>{m}</li>
-                ))}
-              </ul>
-            </div>
+        {/* Certo Action — Roadmapa */}
+        {org.action_plans && org.action_plans.length > 0 && (
+          <div className="space-y-6">
+            <h2 className="text-xl font-serif font-bold text-certo-fg">🚀 Certo Action — Droga do Zmiany</h2>
+
+            {org.action_plans.map((plan) => {
+              const totalSteps = plan.steps.length;
+              const completedSteps = plan.steps.filter((s) => s.status === "completed").length;
+              const progress = totalSteps > 0 ? Math.round((completedSteps / totalSteps) * 100) : 0;
+              const pillarInfo = PILLARS.find((p) => p.id === plan.weakest_pillar);
+
+              return (
+                <div key={plan.id} className="bg-certo-card rounded-xl border border-certo-card-border p-6">
+                  {/* Plan header */}
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="text-lg font-bold text-certo-fg">{plan.title}</h3>
+                      <p className="text-sm text-certo-fg-muted mt-1">{plan.plan}</p>
+                    </div>
+                    <span className="px-2 py-1 bg-red-100 text-red-700 rounded text-xs font-medium whitespace-nowrap">
+                      {pillarInfo?.friendly || plan.weakest_pillar}
+                    </span>
+                  </div>
+
+                  {/* Progress bar */}
+                  <div className="mb-5">
+                    <div className="flex items-center justify-between text-xs text-certo-fg-muted mb-1">
+                      <span>{completedSteps}/{totalSteps} kroków</span>
+                      <span className="font-bold">{progress}%</span>
+                    </div>
+                    <div className="h-2 bg-certo-surface rounded-full overflow-hidden">
+                      <div
+                        className={`h-full rounded-full transition-all ${
+                          progress === 100 ? "bg-emerald-500" : progress > 0 ? "bg-certo-gold" : "bg-gray-300"
+                        }`}
+                        style={{ width: `${progress}%` }}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Timeline */}
+                  <div className="relative pl-8 space-y-4">
+                    <div className="absolute left-3 top-1 bottom-1 w-0.5 bg-gradient-to-b from-certo-gold via-certo-gold/40 to-certo-card-border rounded-full" />
+
+                    {plan.steps.map((step, i) => {
+                      const isCompleted = step.status === "completed";
+                      const isInProgress = step.status === "in-progress";
+                      return (
+                        <div key={i} className="relative">
+                          <div className={`absolute -left-5 w-5 h-5 rounded-full flex items-center justify-center text-[10px] border-2 border-certo-card ${
+                            isCompleted ? "bg-emerald-500 text-white" :
+                            isInProgress ? "bg-blue-500 text-white" :
+                            "bg-gray-200 text-gray-500"
+                          }`}>
+                            {isCompleted ? "✓" : i + 1}
+                          </div>
+
+                          <div className={`rounded-lg border p-3 ${
+                            isCompleted ? "border-emerald-200 bg-emerald-50/50" :
+                            isInProgress ? "border-blue-200 bg-blue-50/50" :
+                            "border-certo-card-border"
+                          }`}>
+                            <div className="flex items-center justify-between gap-2">
+                              <span className="text-sm font-medium text-certo-fg">{step.text}</span>
+                              <span className={`text-[10px] px-2 py-0.5 rounded-full whitespace-nowrap ${
+                                isCompleted ? "bg-emerald-100 text-emerald-700" :
+                                isInProgress ? "bg-blue-100 text-blue-700" :
+                                "bg-gray-100 text-gray-500"
+                              }`}>
+                                {isCompleted ? "✅ Zrealizowany" : isInProgress ? "⚡ W realizacji" : "📋 Zaplanowany"}
+                              </span>
+                            </div>
+
+                            {(step.startDate || step.endDate) && (
+                              <div className="text-[11px] text-certo-fg-muted mt-1">
+                                {step.startDate && <>🚀 {new Date(step.startDate).toLocaleDateString("pl-PL", { day: "numeric", month: "short" })}</>}
+                                {step.startDate && step.endDate && " → "}
+                                {step.endDate && <>🏁 {new Date(step.endDate).toLocaleDateString("pl-PL", { day: "numeric", month: "short" })}</>}
+                              </div>
+                            )}
+
+                            {isCompleted && step.proof && (
+                              <div className="mt-2 p-2 rounded bg-emerald-100/50 text-xs text-emerald-700">
+                                📎 {step.proof}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Metrics */}
+                  {plan.metrics.length > 0 && (
+                    <div className="mt-4 pt-3 border-t border-certo-card-border">
+                      <h4 className="text-xs font-medium text-certo-fg-muted mb-2">Wskaźniki sukcesu:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {plan.metrics.map((m, i) => (
+                          <span key={i} className="px-2 py-1 bg-certo-surface rounded text-xs text-certo-fg">
+                            📏 {m}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
 
