@@ -15,7 +15,7 @@ export default function FounderPreamble() {
         className={`max-w-3xl mx-auto px-6 text-center reveal-base ${isVisible ? 'reveal-visible' : ''}`}
       >
         {/* Decorative quote mark */}
-        <div className="text-certo-gold/30 text-8xl font-serif leading-none mb-6">&ldquo;</div>
+        <div aria-hidden="true" className="text-certo-gold/30 text-8xl font-serif leading-none mb-6">&ldquo;</div>
 
         <p className="text-xl md:text-2xl font-serif text-certo-fg leading-relaxed mb-8">
           {t('founder_quote')}

@@ -73,13 +73,15 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
     <div ref={ref} className="relative inline-block">
       <button
         onClick={(e) => { e.stopPropagation(); setOpen(!open); }}
+        aria-haspopup="true"
+        aria-expanded={open}
         className={`inline-flex items-center gap-1.5 transition-all ${
           compact
-            ? 'px-2.5 py-1 text-[11px] rounded-full bg-certo-surface text-certo-fg-muted hover:bg-certo-gold/10 hover:text-certo-gold'
-            : 'px-4 py-2.5 text-sm rounded-xl bg-certo-surface text-certo-fg-muted hover:bg-certo-gold/10 hover:text-certo-gold border border-certo-card-border hover:border-certo-gold/20'
+            ? 'px-2.5 py-1 text-[11px] rounded-full bg-certo-navy/5 text-certo-navy/60 hover:bg-certo-gold/10 hover:text-certo-gold'
+            : 'px-4 py-2.5 text-sm rounded-xl bg-certo-navy/5 text-certo-navy/70 hover:bg-certo-gold/10 hover:text-certo-gold border border-certo-navy/10 hover:border-certo-gold/20'
         }`}
       >
-        {compact ? '\u{1F4E2}' : '\u{1F4E2} Promuj'}
+        <span aria-hidden="true">{compact ? '\u{1F4E2}' : '\u{1F4E2}'}</span>{compact ? '' : ' Promuj'}
       </button>
 
       {open && (
@@ -96,23 +98,27 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
               }
             }
           }}
-          className="absolute right-0 top-full mt-1.5 z-50 w-52 bg-certo-card rounded-xl shadow-xl border border-certo-card-border overflow-hidden"
+          role="menu"
+          aria-label="Opcje udostępniania"
+          className="absolute right-0 top-full mt-1.5 z-50 w-52 bg-white rounded-xl shadow-xl border border-certo-navy/10 overflow-hidden"
         >
-          <div className="px-3 py-2 border-b border-certo-card-border">
-            <span className="text-[10px] font-semibold text-certo-fg-muted uppercase tracking-wider">Udostępnij</span>
+          <div className="px-3 py-2 border-b border-certo-navy/5">
+            <span className="text-[10px] font-semibold text-certo-navy/40 uppercase tracking-wider">Udostępnij</span>
           </div>
 
           <button
+            role="menuitem"
             onClick={shareToX}
-            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-fg hover:bg-certo-navy/5 transition-colors"
+            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
-            <span className="w-5 text-center font-bold text-base">{'\u{1D54F}'}</span>
+            <span className="w-5 text-center font-bold text-base" aria-hidden="true">{'\u{1D54F}'}</span>
             <span>Udostępnij na X</span>
           </button>
 
           <button
+            role="menuitem"
             onClick={shareToLinkedIn}
-            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-fg hover:bg-certo-navy/5 transition-colors"
+            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
             <svg className="w-5 h-5 text-[#0A66C2]" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -121,8 +127,9 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
           </button>
 
           <button
+            role="menuitem"
             onClick={shareToFacebook}
-            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-fg hover:bg-certo-navy/5 transition-colors"
+            className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
           >
             <svg className="w-5 h-5 text-[#1877F2]" viewBox="0 0 24 24" fill="currentColor">
               <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -130,12 +137,13 @@ export default function ShareButton({ id, name, city, country, sector, locale = 
             <span>Facebook</span>
           </button>
 
-          <div className="border-t border-certo-card-border">
+          <div className="border-t border-certo-navy/5">
             <button
+              role="menuitem"
               onClick={copyToClipboard}
-              className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-fg hover:bg-certo-navy/5 transition-colors"
+              className="w-full flex items-center gap-3 px-3 py-2.5 text-sm text-certo-navy hover:bg-certo-navy/5 transition-colors"
             >
-              <span className="w-5 text-center">{copied ? '\u2705' : '\u{1F4CB}'}</span>
+              <span className="w-5 text-center" aria-hidden="true">{copied ? '\u2705' : '\u{1F4CB}'}</span>
               <span>{copied ? 'Skopiowano!' : 'Kopiuj tekst'}</span>
             </button>
           </div>

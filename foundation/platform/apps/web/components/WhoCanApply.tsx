@@ -7,7 +7,7 @@ const paths = [
   {
     key: 'representative',
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
         <circle cx="12" cy="7" r="4" />
       </svg>
@@ -22,7 +22,7 @@ const paths = [
   {
     key: 'observer',
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+      <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
         <circle cx="12" cy="12" r="3" />
       </svg>
@@ -65,6 +65,7 @@ export default function WhoCanApply() {
             >
               {/* Decorative circle */}
               <div
+                aria-hidden="true"
                 className={`absolute -right-8 -top-8 w-32 h-32 rounded-full transition-all duration-500 ${
                   isActive ? 'bg-certo-card/10 scale-100' : 'bg-certo-navy/[0.02] scale-75'
                 }`}

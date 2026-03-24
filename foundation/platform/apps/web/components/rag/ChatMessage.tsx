@@ -19,6 +19,8 @@ export function ChatMessage({ message }: { message: Message }) {
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
+        role="article"
+        aria-label={isUser ? "Wiadomość użytkownika" : "Odpowiedź asystenta"}
         className={`max-w-[85%] rounded-2xl px-4 py-3 ${
           isUser
             ? "bg-certo-navy text-white"
@@ -29,6 +31,7 @@ export function ChatMessage({ message }: { message: Message }) {
         {!isUser && message.thinking && (
           <button
             onClick={() => setShowThinking(!showThinking)}
+            aria-expanded={showThinking}
             className="flex items-center gap-1 text-[10px] text-amber-600 hover:text-amber-700 mb-2 font-medium"
           >
             <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,11 +59,13 @@ export function ChatMessage({ message }: { message: Message }) {
             </ReactMarkdown>
           </div>
         ) : (
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce" />
-            <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:150ms]" />
-            <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:300ms]" />
-          </div>
+          <span role="status" aria-label="Ładowanie odpowiedzi">
+            <span className="flex items-center gap-1.5">
+              <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce" />
+              <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:150ms]" />
+              <span className="w-2 h-2 bg-certo-gold rounded-full animate-bounce [animation-delay:300ms]" />
+            </span>
+          </span>
         )}
       </div>
     </div>

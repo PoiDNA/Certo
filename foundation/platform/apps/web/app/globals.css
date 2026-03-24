@@ -133,4 +133,20 @@
     transform: none;
     transition: none;
   }
+  .animate-fadeIn {
+    animation: none;
+  }
+  .animate-blink {
+    animation: none;
+  }
+  .rhetorical-gold-bg {
+    animation: none;
+  }
+  .rhetorical-shimmer {
+    animation: none;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

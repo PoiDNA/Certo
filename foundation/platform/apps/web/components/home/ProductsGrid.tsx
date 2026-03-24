@@ -5,6 +5,13 @@ import { useScrollReveal } from '../shared/useScrollReveal';
 
 const ICON_BASE = 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/web1/ico';
 
+const productAltText: Record<string, string> = {
+  roadmap: 'Mapa drogowa rozwoju ekosystemu Certo',
+  whistleblower: 'System zgłaszania nieprawidłowości',
+  own: 'Platforma Certo Online do zarządzania procesem oceny',
+  certoid: 'System delegatów AI Certo Delegate',
+};
+
 const products = [
   { key: 'roadmap', icon: `${ICON_BASE}/I1.png` },
   { key: 'whistleblower', icon: `${ICON_BASE}/I2.png` },
@@ -41,7 +48,7 @@ export default function ProductsGrid() {
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src={icon}
-                  alt={key}
+                  alt={productAltText[key] || `Produkt ${t(`product_${key}_name`)}`}
                   className="w-12 h-12 object-contain flex-shrink-0"
                 />
                 <h3 className="font-serif font-bold text-certo-fg text-xl md:text-2xl">
