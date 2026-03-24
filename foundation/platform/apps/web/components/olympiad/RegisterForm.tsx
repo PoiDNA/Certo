@@ -640,7 +640,10 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
               <span className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">
                 {isPl ? "Organizacja" : "Organization"}
               </span>
-              <div className="font-semibold">{fd.org_name}</div>
+              <div className="font-semibold">{fd.org_name_short || fd.org_name_full}</div>
+              {fd.org_name_short && fd.org_name_full && fd.org_name_short !== fd.org_name_full && (
+                <div className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">{fd.org_name_full}</div>
+              )}
             </div>
             <div>
               <span className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">

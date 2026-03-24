@@ -282,10 +282,10 @@ export function calculateActionBoost(
   let approvalRequired: ApprovalRequirement = "automatic";
   let approvalReason = "Zmiana w ramach obecnego poziomu — zatwierdzana automatycznie.";
 
-  if (newLevel === "diament" && currentLevel !== "diament") {
+  if (newLevel === "DIAMENT" && currentLevel !== "DIAMENT") {
     approvalRequired = "expert-college";
     approvalReason = "Awans do Diament Certo wymaga zatwierdzenia przez Kolegium Eksperckie Certo Governance Institute.";
-  } else if (newLevel === "gold" && currentLevel !== "gold" && currentLevel !== "diament") {
+  } else if (newLevel === "GOLD" && currentLevel !== "GOLD" && currentLevel !== "DIAMENT") {
     approvalRequired = "advisor";
     approvalReason = "Awans do Certo Gold wymaga weryfikacji dowodów przez Certo Advisor.";
   } else if (levelChanged) {
