@@ -21,14 +21,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   return (
     <div className="py-16 md:py-24 max-w-5xl mx-auto px-6">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-4">{t('title')}</h1>
-        <p className="text-lg text-certo-navy/60 dark:text-certo-dark-text/60">{t('subtitle')}</p>
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-certo-fg mb-4">{t('title')}</h1>
+        <p className="text-lg text-certo-fg-muted">{t('subtitle')}</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-12 items-start">
         {/* Contact info cards */}
         <div className="space-y-6">
-          <div className="bg-white dark:bg-certo-dark-surface rounded-lg border border-certo-navy/5 dark:border-certo-dark-border p-6">
+          <div className="bg-certo-card rounded-lg border border-certo-card-border p-6">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-10 h-10 bg-certo-navy rounded-lg flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C49A3C" strokeWidth="2">
@@ -38,13 +38,13 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               </div>
               <h3 className="text-xs uppercase tracking-[0.15em] text-certo-gold font-semibold">{t('label_address')}</h3>
             </div>
-            <p className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 leading-relaxed pl-[52px]">
+            <p className="text-sm text-certo-fg-muted leading-relaxed pl-[52px]">
               Certo Governance Institute<br />
               {t('address')}
             </p>
           </div>
 
-          <div className="bg-white dark:bg-certo-dark-surface rounded-lg border border-certo-navy/5 dark:border-certo-dark-border p-6">
+          <div className="bg-certo-card rounded-lg border border-certo-card-border p-6">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-10 h-10 bg-certo-gold rounded-lg flex items-center justify-center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -54,15 +54,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               </div>
               <h3 className="text-xs uppercase tracking-[0.15em] text-certo-gold font-semibold">{t('label_email')}</h3>
             </div>
-            <a href={`mailto:${t('email')}`} className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 hover:text-certo-gold transition-colors pl-[52px] block">
+            <a href={`mailto:${t('email')}`} className="text-sm text-certo-fg-muted hover:text-certo-gold transition-colors pl-[52px] block">
               {t('email')}
             </a>
           </div>
         </div>
 
         {/* Form */}
-        <div className="bg-white dark:bg-certo-dark-surface rounded-lg border border-certo-navy/5 dark:border-certo-dark-border p-8">
-          <h2 className="text-xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-6">{t('form_title')}</h2>
+        <div className="bg-certo-card rounded-lg border border-certo-card-border p-8">
+          <h2 className="text-xl font-serif font-bold text-certo-fg mb-6">{t('form_title')}</h2>
           <ContactForm />
         </div>
       </div>

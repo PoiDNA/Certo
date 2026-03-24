@@ -36,7 +36,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
         {/* Founder — Preambuła */}
         <div className="mb-16">
-          <h2 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-8">
+          <h2 className="text-2xl font-serif font-bold text-certo-fg mb-8">
             {t('founder_section_title')}
           </h2>
           <div className="flex flex-col md:flex-row gap-10 items-start">
@@ -51,14 +51,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 />
               </div>
               <div className="text-center">
-                <p className="font-serif font-bold text-certo-navy dark:text-certo-dark-text">{t('founder_name')}</p>
-                <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60">{t('founder_role')}</p>
+                <p className="font-serif font-bold text-certo-fg">{t('founder_name')}</p>
+                <p className="text-sm text-certo-fg-muted">{t('founder_role')}</p>
               </div>
             </div>
             {/* Preamble text */}
             <div className="flex-1">
               <div className="text-certo-gold/30 text-6xl font-serif leading-none mb-4">&ldquo;</div>
-              <p className="text-lg font-serif text-certo-navy dark:text-certo-dark-text leading-relaxed mb-6">
+              <p className="text-lg font-serif text-certo-fg leading-relaxed mb-6">
                 {t('founder_preamble')}
               </p>
               <blockquote className="text-lg font-serif italic text-certo-gold leading-relaxed border-l-4 border-certo-gold pl-6">
@@ -73,25 +73,25 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
         {/* Two entities */}
         <div className="mb-16">
-          <h2 className="text-2xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-8">
+          <h2 className="text-2xl font-serif font-bold text-certo-fg mb-8">
             {t('entities_title')}
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white dark:bg-certo-dark-surface p-6 border border-certo-navy/5 dark:border-certo-dark-border">
-              <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-2">{t('entity_foundation_name')}</h3>
-              <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">{t('entity_foundation_desc')}</p>
+            <div className="bg-certo-card p-6 border border-certo-card-border">
+              <h3 className="font-serif font-bold text-certo-fg mb-2">{t('entity_foundation_name')}</h3>
+              <p className="text-sm text-certo-fg-muted leading-relaxed">{t('entity_foundation_desc')}</p>
             </div>
-            <div className="bg-white dark:bg-certo-dark-surface p-6 border border-certo-navy/5 dark:border-certo-dark-border">
-              <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-2">{t('entity_company_name')}</h3>
-              <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">{t('entity_company_desc')}</p>
+            <div className="bg-certo-card p-6 border border-certo-card-border">
+              <h3 className="font-serif font-bold text-certo-fg mb-2">{t('entity_company_name')}</h3>
+              <p className="text-sm text-certo-fg-muted leading-relaxed">{t('entity_company_desc')}</p>
             </div>
           </div>
         </div>
 
         {/* Statute */}
-        <div className="text-center bg-certo-navy/5 dark:bg-certo-dark-card p-8">
-          <h2 className="text-xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-3">{t('statute_title')}</h2>
-          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 mb-4">{t('statute_desc')}</p>
+        <div className="text-center bg-certo-surface p-8">
+          <h2 className="text-xl font-serif font-bold text-certo-fg mb-3">{t('statute_title')}</h2>
+          <p className="text-sm text-certo-fg-muted mb-4">{t('statute_desc')}</p>
         </div>
       </section>
     </div>

@@ -28,7 +28,7 @@ function LoginContent() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-certo-cream dark:bg-certo-dark-bg font-serif px-4">
-      <div className="bg-white dark:bg-certo-dark-surface border-[2px] border-certo-gold/30 dark:border-certo-dark-border rounded-lg p-10 w-full max-w-md text-center shadow-lg">
+      <div className="bg-certo-card border-[2px] border-certo-card-border rounded-lg p-10 w-full max-w-md text-center shadow-lg">
         <div className="mb-8">
           <img 
             src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/certo-logo-black-200-120.png" 
@@ -37,12 +37,12 @@ function LoginContent() {
           />
         </div>
         
-        <h1 className="text-xl font-bold mb-8 text-certo-navy dark:text-certo-dark-text font-[Verdana] tracking-widest uppercase">
+        <h1 className="text-xl font-bold mb-8 text-certo-fg font-[Verdana] tracking-widest uppercase">
           
         </h1>
         
         <div className="flex flex-col gap-3 font-sans">
-          <button onClick={() => handleOAuth('google')} className="flex items-center justify-center gap-3 px-6 py-3 border border-certo-navy/20 dark:border-certo-dark-border rounded-lg bg-white dark:bg-certo-dark-card cursor-pointer text-sm font-semibold text-certo-navy dark:text-certo-dark-text w-full hover:bg-certo-navy/5 dark:hover:bg-certo-dark-surface hover:border-certo-navy/40 transition-all">
+          <button onClick={() => handleOAuth('google')} className="flex items-center justify-center gap-3 px-6 py-3 border border-certo-card-border rounded-lg bg-certo-card cursor-pointer text-sm font-semibold text-certo-fg w-full hover:bg-certo-surface hover:border-certo-navy/40 transition-all">
             <svg width="18" height="18" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
               <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -53,7 +53,7 @@ function LoginContent() {
           </button>
         </div>
         
-        <p className="mt-8 text-xs text-certo-navy/40 dark:text-certo-dark-muted font-sans tracking-wide">
+        <p className="mt-8 text-xs text-certo-fg-muted font-sans tracking-wide">
           Certo Governance Institute © {new Date().getFullYear()}
         </p>
       </div>

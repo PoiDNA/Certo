@@ -85,7 +85,7 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white dark:from-certo-dark-bg dark:to-certo-dark-surface flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white dark:from-certo-dark-bg dark:to-certo-dark-bg flex items-center justify-center">
         <div className="animate-pulse flex flex-col items-center gap-4">
           <div className="w-16 h-16 rounded-full bg-certo-gold/20" />
           <div className="h-4 w-48 bg-certo-navy/10 rounded" />
@@ -96,10 +96,10 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
 
   if (error || !entity) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white dark:from-certo-dark-bg dark:to-certo-dark-surface flex flex-col items-center justify-center gap-4">
+      <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white dark:from-certo-dark-bg dark:to-certo-dark-bg flex flex-col items-center justify-center gap-4">
         <div className="text-6xl">🔍</div>
-        <h1 className="text-2xl font-bold text-certo-navy dark:text-certo-dark-text">Podmiot nie znaleziony</h1>
-        <p className="text-certo-navy/50 dark:text-certo-dark-muted">Ten podmiot nie istnieje lub został usunięty.</p>
+        <h1 className="text-2xl font-bold text-certo-fg">Podmiot nie znaleziony</h1>
+        <p className="text-certo-fg-muted">Ten podmiot nie istnieje lub został usunięty.</p>
         <Link href={`/${locale}/pilotmap`} className="text-certo-gold hover:underline">
           ← Wróć do mapy zgłoszeń
         </Link>
@@ -114,7 +114,7 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
   const submissionIcon = isOwnSubmission ? '🏢' : '👁️';
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white dark:from-certo-dark-bg dark:to-certo-dark-surface">
+    <div className="min-h-screen bg-gradient-to-b from-certo-beige to-white dark:from-certo-dark-bg dark:to-certo-dark-bg">
       {/* Header */}
       <div className="bg-certo-navy text-white">
         <div className="max-w-5xl mx-auto px-4 py-6 md:py-10">
@@ -149,8 +149,8 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
 
       <div className="max-w-5xl mx-auto px-4 py-8 space-y-8">
         {/* Process Pipeline */}
-        <div className="bg-white dark:bg-certo-dark-surface rounded-2xl border border-certo-navy/10 dark:border-certo-dark-border p-6 shadow-sm">
-          <h2 className="text-sm font-semibold text-certo-navy/50 dark:text-certo-dark-muted uppercase tracking-wider mb-6">
+        <div className="bg-certo-card rounded-2xl border border-certo-card-border p-6 shadow-sm">
+          <h2 className="text-sm font-semibold text-certo-fg-muted uppercase tracking-wider mb-6">
             Proces oceny Ocena Certo
           </h2>
 
@@ -209,26 +209,26 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
         {/* Info cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Basic info */}
-          <div className="bg-white dark:bg-certo-dark-surface rounded-2xl border border-certo-navy/10 dark:border-certo-dark-border p-5 shadow-sm">
-            <h3 className="text-xs font-semibold text-certo-navy/40 dark:text-certo-dark-muted uppercase tracking-wider mb-4">Dane podmiotu</h3>
+          <div className="bg-certo-card rounded-2xl border border-certo-card-border p-5 shadow-sm">
+            <h3 className="text-xs font-semibold text-certo-fg-muted uppercase tracking-wider mb-4">Dane podmiotu</h3>
             <dl className="space-y-3">
               <div>
-                <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Nazwa</dt>
-                <dd className="text-sm font-medium text-certo-navy dark:text-certo-dark-text">{entity.organization_name}</dd>
+                <dt className="text-xs text-certo-fg-muted">Nazwa</dt>
+                <dd className="text-sm font-medium text-certo-fg">{entity.organization_name}</dd>
               </div>
               <div>
-                <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Sektor</dt>
-                <dd className="text-sm text-certo-navy dark:text-certo-dark-text">{SECTOR_LABELS[entity.sector] || entity.sector}</dd>
+                <dt className="text-xs text-certo-fg-muted">Sektor</dt>
+                <dd className="text-sm text-certo-fg">{SECTOR_LABELS[entity.sector] || entity.sector}</dd>
               </div>
               {entity.nip && (
                 <div>
-                  <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">NIP</dt>
+                  <dt className="text-xs text-certo-fg-muted">NIP</dt>
                   <dd className="text-sm text-certo-navy font-mono">{entity.nip}</dd>
                 </div>
               )}
               <div>
-                <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Lokalizacja</dt>
-                <dd className="text-sm text-certo-navy dark:text-certo-dark-text">
+                <dt className="text-xs text-certo-fg-muted">Lokalizacja</dt>
+                <dd className="text-sm text-certo-fg">
                   {[entity.city, countryName].filter(Boolean).join(', ') || '—'}
                 </dd>
               </div>
@@ -236,12 +236,12 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
           </div>
 
           {/* Status */}
-          <div className="bg-white dark:bg-certo-dark-surface rounded-2xl border border-certo-navy/10 dark:border-certo-dark-border p-5 shadow-sm">
-            <h3 className="text-xs font-semibold text-certo-navy/40 dark:text-certo-dark-muted uppercase tracking-wider mb-4">Status procesu</h3>
+          <div className="bg-certo-card rounded-2xl border border-certo-card-border p-5 shadow-sm">
+            <h3 className="text-xs font-semibold text-certo-fg-muted uppercase tracking-wider mb-4">Status procesu</h3>
             <dl className="space-y-3">
               <div>
-                <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Typ zgłoszenia</dt>
-                <dd className="text-sm font-medium text-certo-navy dark:text-certo-dark-text">
+                <dt className="text-xs text-certo-fg-muted">Typ zgłoszenia</dt>
+                <dd className="text-sm font-medium text-certo-fg">
                   <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ${
                     isOwnSubmission
                       ? 'bg-blue-50 text-blue-600 border border-blue-200'
@@ -252,20 +252,20 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
                 </dd>
               </div>
               <div>
-                <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Etap</dt>
-                <dd className="text-sm font-medium text-certo-navy dark:text-certo-dark-text">
+                <dt className="text-xs text-certo-fg-muted">Etap</dt>
+                <dd className="text-sm font-medium text-certo-fg">
                   {stages[currentIdx]?.icon} {stages[currentIdx]?.label}
                 </dd>
               </div>
               <div>
-                <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Data zgłoszenia</dt>
-                <dd className="text-sm text-certo-navy dark:text-certo-dark-text">
+                <dt className="text-xs text-certo-fg-muted">Data zgłoszenia</dt>
+                <dd className="text-sm text-certo-fg">
                   {new Date(entity.created_at).toLocaleDateString('pl-PL', { day: 'numeric', month: 'long', year: 'numeric' })}
                 </dd>
               </div>
               {entity.rating_score != null && (
                 <div>
-                  <dt className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">Certo Rating</dt>
+                  <dt className="text-xs text-certo-fg-muted">Certo Rating</dt>
                   <dd className="text-2xl font-bold text-certo-gold">{entity.rating_score}<span className="text-sm text-certo-navy/30 ml-1">/ 100</span></dd>
                 </div>
               )}
@@ -273,14 +273,14 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
           </div>
 
           {/* Community */}
-          <div className="bg-white dark:bg-certo-dark-surface rounded-2xl border border-certo-navy/10 dark:border-certo-dark-border p-5 shadow-sm">
-            <h3 className="text-xs font-semibold text-certo-navy/40 dark:text-certo-dark-muted uppercase tracking-wider mb-4">Społeczność</h3>
+          <div className="bg-certo-card rounded-2xl border border-certo-card-border p-5 shadow-sm">
+            <h3 className="text-xs font-semibold text-certo-fg-muted uppercase tracking-wider mb-4">Społeczność</h3>
             <div className="space-y-4">
               <div>
-                <div className="text-3xl font-bold text-certo-navy dark:text-certo-dark-text">
+                <div className="text-3xl font-bold text-certo-fg">
                   {(entity.votes || 0) + (votedIds.has(entity.id) ? 1 : 0)}
                 </div>
-                <div className="text-xs text-certo-navy/40 dark:text-certo-dark-muted">głosów poparcia</div>
+                <div className="text-xs text-certo-fg-muted">głosów poparcia</div>
               </div>
               <button
                 onClick={handleVote}
@@ -307,10 +307,10 @@ export default function EntityPageClient({ id, locale }: { id: string; locale: s
         </div>
 
         {/* Future: authenticated section */}
-        <div className="bg-certo-navy/5 dark:bg-certo-dark-card rounded-2xl border border-dashed border-certo-navy/10 dark:border-certo-dark-border p-8 text-center">
+        <div className="bg-certo-surface rounded-2xl border border-dashed border-certo-card-border p-8 text-center">
           <div className="text-3xl mb-3">🔐</div>
-          <h3 className="text-lg font-semibold text-certo-navy dark:text-certo-dark-text mb-2">Panel reprezentanta</h3>
-          <p className="text-sm text-certo-navy/50 dark:text-certo-dark-muted max-w-md mx-auto">
+          <h3 className="text-lg font-semibold text-certo-fg mb-2">Panel reprezentanta</h3>
+          <p className="text-sm text-certo-fg-muted max-w-md mx-auto">
             Zaloguj się jako reprezentant podmiotu, aby zobaczyć szczegóły procesu,
             rekomendacje i feedback z oceny Ocena Certo.
           </p>
