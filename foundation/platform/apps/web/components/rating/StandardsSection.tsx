@@ -18,11 +18,11 @@ export default function StandardsSection() {
 
   return (
     <section ref={ref} className={`mb-20 reveal-base ${isVisible ? 'reveal-visible' : ''}`}>
-      <h2 className="text-3xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-4">
+      <h2 className="text-3xl font-serif font-bold text-certo-fg mb-4">
         {t('standards_title')}
       </h2>
 
-      <p className="text-base text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed mb-10 max-w-4xl">
+      <p className="text-base text-certo-fg-muted leading-relaxed mb-10 max-w-4xl">
         Od pierwszego dnia działalności opieramy nasze wewnętrzne procedury, metodologię ratingową
         oraz polityki bezpieczeństwa danych na rygorystycznych wymogach norm ISO oraz wytycznych IOSCO.
         Stanowi to nasz fundament w procesie przygotowań do uzyskania formalnych certyfikacji
@@ -31,9 +31,9 @@ export default function StandardsSection() {
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {standards.map(({ name, desc }) => (
-          <div key={name} className="bg-white dark:bg-certo-dark-card p-6 border border-certo-navy/5 dark:border-certo-dark-border rounded-lg hover:border-certo-gold/30 transition-colors">
-            <h3 className="font-mono text-sm font-bold text-certo-navy dark:text-certo-dark-text mb-1">{name}</h3>
-            <p className="text-xs text-certo-navy/60 dark:text-certo-dark-text/60">{desc}</p>
+          <div key={name} className="bg-certo-card p-6 border border-certo-card-border rounded-lg hover:border-certo-gold/30 transition-colors">
+            <h3 className="font-mono text-sm font-bold text-certo-fg mb-1">{name}</h3>
+            <p className="text-xs text-certo-fg-muted">{desc}</p>
           </div>
         ))}
       </div>

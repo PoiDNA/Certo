@@ -64,14 +64,14 @@ export default function ProcessTimeline() {
 
   return (
     <div>
-      <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-navy mb-8">
+      <h2 className="text-2xl md:text-3xl font-serif font-bold text-certo-fg mb-8">
         {t('timeline_title')}
       </h2>
 
       {/* Progress bar + step indicators */}
       <div className="relative mb-10">
         {/* Track */}
-        <div className="absolute top-5 left-0 right-0 h-0.5 bg-certo-navy/10" />
+        <div className="absolute top-5 left-0 right-0 h-0.5 bg-certo-surface" />
         {/* Active track */}
         <div
           className="absolute top-5 left-0 h-0.5 bg-certo-gold transition-all duration-500 ease-out"
@@ -90,14 +90,14 @@ export default function ProcessTimeline() {
                 className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
                   i <= active
                     ? 'bg-certo-gold text-white shadow-md shadow-certo-gold/30'
-                    : 'bg-white border-2 border-certo-navy/15 text-certo-navy/40'
+                    : 'bg-certo-card border-2 border-certo-navy/15 text-certo-fg/40'
                 } ${i === active ? 'scale-125 ring-4 ring-certo-gold/20' : ''}`}
               >
                 {step}
               </div>
               <span
                 className={`mt-2 text-xs font-medium transition-colors hidden md:block ${
-                  i === active ? 'text-certo-navy' : 'text-certo-navy/40'
+                  i === active ? 'text-certo-fg' : 'text-certo-fg/40'
                 }`}
               >
                 {t(`step_${step}`)}
@@ -109,7 +109,7 @@ export default function ProcessTimeline() {
 
       {/* Active step content */}
       <div
-        className="bg-white rounded-xl border border-certo-navy/5 p-8 md:p-10 cursor-grab active:cursor-grabbing select-none"
+        className="bg-certo-card rounded-xl border border-certo-card-border p-8 md:p-10 cursor-grab active:cursor-grabbing select-none"
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
@@ -126,23 +126,23 @@ export default function ProcessTimeline() {
               <span className="text-4xl md:text-5xl font-serif font-bold text-certo-gold/30">
                 0{steps[active]}
               </span>
-              <h3 className="font-serif font-extrabold text-certo-navy text-xl md:text-2xl">
+              <h3 className="font-serif font-extrabold text-certo-fg text-xl md:text-2xl">
                 {t(`step_${steps[active]}`)}
               </h3>
             </div>
-            <p className="text-base md:text-lg text-certo-navy/60 leading-relaxed">
+            <p className="text-base md:text-lg text-certo-fg-muted leading-relaxed">
               {t(`step_${steps[active]}_desc`)}
             </p>
           </div>
         </div>
 
         {/* Navigation arrows */}
-        <div className="flex justify-between mt-8 pt-6 border-t border-certo-navy/5">
+        <div className="flex justify-between mt-8 pt-6 border-t border-certo-card-border">
           <button
             onClick={() => { goTo(active - 1); setPaused(true); }}
             disabled={active === 0}
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-              active === 0 ? 'text-certo-navy/20 cursor-not-allowed' : 'text-certo-navy/60 hover:text-certo-gold'
+              active === 0 ? 'text-certo-fg/20 cursor-not-allowed' : 'text-certo-fg/60 hover:text-certo-gold'
             }`}
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -154,7 +154,7 @@ export default function ProcessTimeline() {
             onClick={() => { goTo(active + 1); setPaused(true); }}
             disabled={active === steps.length - 1}
             className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-              active === steps.length - 1 ? 'text-certo-navy/20 cursor-not-allowed' : 'text-certo-navy/60 hover:text-certo-gold'
+              active === steps.length - 1 ? 'text-certo-fg/20 cursor-not-allowed' : 'text-certo-fg/60 hover:text-certo-gold'
             }`}
           >
             {active < steps.length - 1 && t(`step_${steps[active + 1]}`)}

@@ -7,51 +7,25 @@
   --color-certo-gold: #C49A3C;
   --color-certo-gold-light: #D4AF6A;
 
+  /* Semantic tokens (light-mode defaults)                 */
+  /* These generate Tailwind utilities: bg-certo-bg,       */
+  /* text-certo-fg, etc. that reference CSS vars.          */
+  /* JS (ThemeProvider + anti-flash script) overrides      */
+  /* these vars at runtime for dark mode.                  */
+  --color-certo-bg: #F5F0E8;
+  --color-certo-fg: #1A2744;
+  --color-certo-fg-muted: rgba(26, 39, 68, 0.6);
+  --color-certo-card: #FFFFFF;
+  --color-certo-card-border: rgba(26, 39, 68, 0.05);
+  --color-certo-surface: rgba(26, 39, 68, 0.03);
+
   --font-serif: Georgia, "Playfair Display", serif;
   --font-sans: system-ui, sans-serif;
-}
-
-/* ═══════════════════════════════════════════════════════ */
-/* Semantic utility classes — auto-switch with dark mode  */
-/* Tailwind v4 @theme cannot use var() refs, so we use   */
-/* @utility to create classes that read CSS variables.    */
-/* ═══════════════════════════════════════════════════════ */
-
-@utility bg-certo-bg { background-color: var(--certo-bg); }
-@utility bg-certo-card { background-color: var(--certo-card-bg); }
-@utility bg-certo-surface { background-color: var(--certo-surface); }
-
-@utility text-certo-fg { color: var(--certo-fg); }
-@utility text-certo-fg-muted { color: var(--certo-fg-muted); }
-
-@utility border-certo-card-border { border-color: var(--certo-card-border); }
-
-@utility fill-certo-fg { fill: var(--certo-fg); }
-@utility fill-certo-fg-muted { fill: var(--certo-fg-muted); }
-
-:root {
-  --certo-bg: #F5F0E8;          /* cream */
-  --certo-fg: #1A2744;          /* navy */
-  --certo-fg-muted: rgba(26, 39, 68, 0.6);
-  --certo-card-bg: #FFFFFF;
-  --certo-card-border: rgba(26, 39, 68, 0.05);
-  --certo-surface: rgba(26, 39, 68, 0.03);
-}
-
-:root.dark {
-  --certo-bg: #0F1219;
-  --certo-fg: #E8E4DC;
-  --certo-fg-muted: rgba(232, 228, 220, 0.6);
-  --certo-card-bg: #232D3F;
-  --certo-card-border: #2A3548;
-  --certo-surface: #1A2235;
 }
 
 @layer base {
   body {
     font-family: var(--font-sans);
-    background-color: var(--certo-bg);
-    color: var(--certo-fg);
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
@@ -66,16 +40,16 @@
 }
 
 /* Typography for rendered Markdown */
-.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--certo-fg); }
-.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--certo-fg); }
-.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--certo-fg); }
+.prose h1 { font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; font-family: var(--font-serif); color: var(--color-certo-fg); }
+.prose h2 { font-size: 1.4rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--color-certo-gold-light); padding-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-fg); }
+.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; font-family: var(--font-serif); color: var(--color-certo-fg); }
 .prose table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.875rem; }
-.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--certo-fg); }
+.prose th { background: rgba(196, 154, 60, 0.1); text-align: left; padding: 0.5rem 0.75rem; border: 1px solid rgba(196, 154, 60, 0.3); font-weight: 600; color: var(--color-certo-fg); }
 .prose td { padding: 0.5rem 0.75rem; border: 1px solid rgba(26, 39, 68, 0.1); }
-.prose code { background: var(--certo-surface); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--certo-fg); }
+.prose code { background: var(--color-certo-surface); padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-size: 0.85em; color: var(--color-certo-fg); }
 .prose pre { background: var(--color-certo-navy); color: var(--color-certo-cream); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
 .prose pre code { background: none; padding: 0; color: inherit; }
-.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: var(--certo-fg-muted); font-style: italic; }
+.prose blockquote { border-left: 3px solid var(--color-certo-gold); padding-left: 1rem; color: var(--color-certo-fg-muted); font-style: italic; }
 .prose a { color: var(--color-certo-gold); text-decoration: none; font-weight: 500; }
 .prose a:hover { text-decoration: underline; }
 

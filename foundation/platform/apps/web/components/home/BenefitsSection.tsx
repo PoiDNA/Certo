@@ -46,32 +46,32 @@ export default function BenefitsSection() {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="w-full py-20 md:py-32 bg-white dark:bg-certo-dark-bg">
+    <section className="w-full py-20 md:py-32 bg-certo-card">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 reveal-base ${isVisible ? 'reveal-visible' : ''}`}
       >
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-fg mb-4">
             {t('benefits_title')}
           </h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {cards.map(({ key, items, icon, iconBg }) => (
-            <div key={key} className="bg-certo-cream/50 dark:bg-certo-dark-card rounded-lg p-8 border border-certo-navy/5 dark:border-certo-dark-border">
+            <div key={key} className="bg-certo-cream/50 rounded-lg p-8 border border-certo-card-border">
               <div className={`w-12 h-12 ${iconBg} rounded-lg flex items-center justify-center text-white mb-5`}>
                 {icon}
               </div>
-              <h3 className="font-serif font-bold text-certo-navy text-xl mb-3">
+              <h3 className="font-serif font-bold text-certo-fg text-xl mb-3">
                 {t(`benefits_${key}_title`)}
               </h3>
-              <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed mb-5">
+              <p className="text-sm text-certo-fg-muted leading-relaxed mb-5">
                 {t(`benefits_${key}_intro`)}
               </p>
               <ul className="space-y-2">
                 {Array.from({ length: items }, (_, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-certo-navy/70 dark:text-certo-dark-text/70">
+                  <li key={i} className="flex items-start gap-2 text-sm text-certo-fg-muted">
                     <span className="text-certo-gold mt-0.5 shrink-0">&#10003;</span>
                     <span>{t(`benefits_${key}_item${i + 1}`)}</span>
                   </li>

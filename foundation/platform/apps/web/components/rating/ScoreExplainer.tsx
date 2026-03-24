@@ -19,7 +19,7 @@ const scores = [
     icon: `${ICON_BASE}/I-I-3.png`,
     gradient: 'from-slate-100 via-blue-50/40 to-white',
     activeBorder: 'border-certo-navy/60',
-    accentColor: 'text-certo-navy',
+    accentColor: 'text-certo-fg',
   },
 ] as const;
 
@@ -69,11 +69,11 @@ export default function ScoreExplainer() {
                 {/* Content */}
                 <div className="text-center md:text-left flex-1">
                   <h3 className={`font-serif font-bold text-3xl md:text-4xl mb-3 transition-colors duration-300 whitespace-nowrap ${
-                    isActive ? accentColor : 'text-certo-navy'
+                    isActive ? accentColor : 'text-certo-fg'
                   }`}>
                     {t(`${key}_title`)}
                   </h3>
-                  <p className="text-base md:text-lg text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">
+                  <p className="text-base md:text-lg text-certo-fg-muted leading-relaxed">
                     {t(`${key}_desc`)}
                   </p>
                 </div>
@@ -83,7 +83,7 @@ export default function ScoreExplainer() {
               <div className={`absolute bottom-4 right-6 transition-all duration-300 ${
                 isActive ? 'opacity-0' : 'opacity-40'
               }`}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-certo-navy/30">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-certo-fg-muted">
                   <path d="M7 17l9.2-9.2M17 17V7H7" />
                 </svg>
               </div>

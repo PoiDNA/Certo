@@ -27,12 +27,12 @@ export default function ContactForm() {
   if (sent) {
     return (
       <div className="bg-certo-gold/10 border border-certo-gold/30 rounded-lg p-8 text-center">
-        <p className="text-sm text-certo-navy">{t('form_success')}</p>
+        <p className="text-sm text-certo-fg">{t('form_success')}</p>
       </div>
     );
   }
 
-  const inputClass = 'w-full px-4 py-3 bg-white border border-certo-navy/10 rounded-lg text-sm text-certo-navy placeholder:text-certo-navy/40 focus:outline-none focus:border-certo-gold focus:ring-1 focus:ring-certo-gold/20 transition-all';
+  const inputClass = 'w-full px-4 py-3 bg-certo-card border border-certo-card-border rounded-lg text-sm text-certo-fg placeholder:text-certo-fg-muted focus:outline-none focus:border-certo-gold focus:ring-1 focus:ring-certo-gold/20 transition-all';
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
@@ -65,7 +65,7 @@ export default function ContactForm() {
           ))}
         </select>
         <svg
-          className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/40 pointer-events-none"
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-fg-muted pointer-events-none"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

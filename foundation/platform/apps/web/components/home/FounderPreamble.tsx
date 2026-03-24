@@ -9,7 +9,7 @@ export default function FounderPreamble() {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="w-full py-20 md:py-32 bg-certo-cream dark:bg-certo-dark-bg">
+    <section className="w-full py-20 md:py-32 bg-certo-bg">
       <div
         ref={ref}
         className={`max-w-3xl mx-auto px-6 text-center reveal-base ${isVisible ? 'reveal-visible' : ''}`}
@@ -17,7 +17,7 @@ export default function FounderPreamble() {
         {/* Decorative quote mark */}
         <div className="text-certo-gold/30 text-8xl font-serif leading-none mb-6">&ldquo;</div>
 
-        <p className="text-xl md:text-2xl font-serif text-certo-navy dark:text-certo-dark-text leading-relaxed mb-8">
+        <p className="text-xl md:text-2xl font-serif text-certo-fg leading-relaxed mb-8">
           {t('founder_quote')}
         </p>
 
@@ -37,8 +37,8 @@ export default function FounderPreamble() {
             />
           </div>
           <div>
-            <p className="font-serif font-bold text-certo-navy dark:text-certo-dark-text">{t('founder_name')}</p>
-            <p className="text-sm text-certo-navy/60 dark:text-certo-dark-text/60">{t('founder_title')}</p>
+            <p className="font-serif font-bold text-certo-fg">{t('founder_name')}</p>
+            <p className="text-sm text-certo-fg-muted">{t('founder_title')}</p>
           </div>
         </div>
       </div>

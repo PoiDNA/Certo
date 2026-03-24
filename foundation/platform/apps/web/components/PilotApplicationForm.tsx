@@ -11,7 +11,7 @@ const STEPS = ['type', 'org', 'contact', 'details'] as const;
 type Step = (typeof STEPS)[number];
 
 const CHEVRON = (
-  <svg className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-navy/30 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-certo-fg-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
   </svg>
 );
@@ -162,23 +162,23 @@ export default function PilotApplicationForm() {
 
   if (state === 'success') {
     return (
-      <div className="bg-white dark:bg-certo-dark-surface rounded-2xl shadow-xl p-10 text-center max-w-xl mx-auto">
+      <div className="bg-certo-card rounded-2xl shadow-xl p-10 text-center max-w-xl mx-auto">
         <div className="w-20 h-20 bg-certo-gold/10 rounded-full flex items-center justify-center mx-auto mb-8">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#CC9B30" strokeWidth="2">
             <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
             <polyline points="22 4 12 14.01 9 11.01" />
           </svg>
         </div>
-        <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-2xl mb-4">Zgłoszenie przyjęte</h3>
-        <p className="text-base text-certo-navy/60 dark:text-certo-dark-text/60 leading-relaxed">{t('form_success')}</p>
+        <h3 className="font-serif font-bold text-certo-fg text-2xl mb-4">Zgłoszenie przyjęte</h3>
+        <p className="text-base text-certo-fg-muted leading-relaxed">{t('form_success')}</p>
       </div>
     );
   }
 
-  const input = 'w-full px-4 py-3.5 bg-certo-cream/30 dark:bg-certo-dark-card border border-certo-navy/8 dark:border-certo-dark-border rounded-xl text-sm text-certo-navy dark:text-certo-dark-text placeholder:text-certo-navy/60 dark:placeholder:text-certo-dark-muted focus:outline-none focus:border-certo-gold focus:bg-white dark:focus:bg-certo-dark-surface focus:shadow-sm transition-all duration-200';
+  const input = 'w-full px-4 py-3.5 bg-certo-cream/30  border border-certo-navy/8  rounded-xl text-sm text-certo-fg placeholder:text-certo-fg-muted focus:outline-none focus:border-certo-gold focus:bg-certo-surface focus:shadow-sm transition-all duration-200';
 
   return (
-    <div className="bg-white dark:bg-certo-dark-surface rounded-2xl shadow-xl overflow-hidden max-w-xl mx-auto">
+    <div className="bg-certo-card rounded-2xl shadow-xl overflow-hidden max-w-xl mx-auto">
       {/* Turnstile — always loaded */}
       <div className={step === 'details' ? 'px-8' : 'sr-only'}>
         <TurnstileWidget onVerify={handleTurnstileVerify} onExpire={handleTurnstileExpire} />
@@ -193,9 +193,9 @@ export default function PilotApplicationForm() {
 
       {/* Step indicator */}
       <div className="px-8 pt-6 flex items-center justify-between">
-        <span className="text-xs text-certo-navy/30 dark:text-certo-dark-muted font-medium">{stepIndex + 1} / {STEPS.length}</span>
+        <span className="text-xs text-certo-fg-muted font-medium">{stepIndex + 1} / {STEPS.length}</span>
         {stepIndex > 0 && (
-          <button type="button" onClick={goBack} className="text-xs text-certo-gold hover:text-certo-navy transition-colors">← Wróć</button>
+          <button type="button" onClick={goBack} className="text-xs text-certo-gold hover:text-certo-fg transition-colors">← Wróć</button>
         )}
       </div>
 
@@ -203,20 +203,20 @@ export default function PilotApplicationForm() {
         {/* STEP 1: Applicant type */}
         {step === 'type' && (
           <div>
-            <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-xl mb-1">{t('form_applicant_type')}</h3>
-            <p className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
+            <h3 className="font-serif font-bold text-certo-fg text-xl mb-1">{t('form_applicant_type')}</h3>
+            <p className="text-sm text-certo-fg-muted mb-6">Wybierz swoją rolę w procesie zgłoszenia</p>
             <div className="space-y-3">
               {(['representative', 'observer'] as const).map((type) => (
                 <label key={type} className={`flex items-start gap-4 p-5 rounded-xl border-2 cursor-pointer transition-all duration-200 ${
-                  fd.applicant_type === type ? 'border-certo-gold bg-certo-gold/5 shadow-sm' : 'border-transparent bg-certo-cream/30 dark:bg-certo-dark-card hover:bg-certo-cream/50 dark:hover:bg-certo-dark-card/80'
+                  fd.applicant_type === type ? 'border-certo-gold bg-certo-gold/5 shadow-sm' : 'border-transparent bg-certo-cream/30  hover:bg-certo-card/80'
                 }`}>
                   <input type="radio" value={type} checked={fd.applicant_type === type} onChange={() => set('applicant_type', type)} className="sr-only" />
                   <div className={`w-5 h-5 rounded-full border-2 shrink-0 mt-0.5 flex items-center justify-center ${fd.applicant_type === type ? 'border-certo-gold' : 'border-certo-navy/20'}`}>
                     {fd.applicant_type === type && <div className="w-2.5 h-2.5 rounded-full bg-certo-gold" />}
                   </div>
                   <div>
-                    <span className="text-sm font-semibold text-certo-navy dark:text-certo-dark-text block">{t(`form_type_${type}`)}</span>
-                    <span className="text-xs text-certo-navy/50 dark:text-certo-dark-muted mt-0.5 block">{t(`form_type_${type}_desc`)}</span>
+                    <span className="text-sm font-semibold text-certo-fg block">{t(`form_type_${type}`)}</span>
+                    <span className="text-xs text-certo-fg-muted mt-0.5 block">{t(`form_type_${type}_desc`)}</span>
                   </div>
                 </label>
               ))}
@@ -230,8 +230,8 @@ export default function PilotApplicationForm() {
         {/* STEP 2: Organization info */}
         {step === 'org' && (
           <div>
-            <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-xl mb-1">Dane podmiotu</h3>
-            <p className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 mb-4">Wpisz NIP/VAT lub KRS — pobierzemy dane automatycznie</p>
+            <h3 className="font-serif font-bold text-certo-fg text-xl mb-1">Dane podmiotu</h3>
+            <p className="text-sm text-certo-fg-muted mb-4">Wpisz NIP/VAT lub KRS — pobierzemy dane automatycznie</p>
 
             <div className="space-y-4">
               {/* Country selector first */}
@@ -251,7 +251,7 @@ export default function PilotApplicationForm() {
               </div>
 
               {/* NIP + KRS + Lookup button */}
-              <div className="bg-certo-cream/40 dark:bg-certo-dark-card rounded-xl p-4 space-y-3">
+              <div className="bg-certo-cream/40 rounded-xl p-4 space-y-3">
                 <div className="grid grid-cols-2 gap-3">
                   <input value={fd.nip} onChange={(e) => { set('nip', e.target.value); setLookupState('idle'); }} placeholder={fd.country === 'PL' ? 'NIP (np. 5252344078)' : `VAT ID (np. ${fd.country}123456789)`} className={input} />
                   {fd.country === 'PL' && (
@@ -314,8 +314,8 @@ export default function PilotApplicationForm() {
         {/* STEP 3: Contact info */}
         {step === 'contact' && (
           <div>
-            <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-xl mb-1">Dane kontaktowe</h3>
-            <p className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 mb-6">Osoba odpowiedzialna za zgłoszenie</p>
+            <h3 className="font-serif font-bold text-certo-fg text-xl mb-1">Dane kontaktowe</h3>
+            <p className="text-sm text-certo-fg-muted mb-6">Osoba odpowiedzialna za zgłoszenie</p>
             <div className="space-y-4">
               <input value={fd.contact_person} onChange={(e) => { set('contact_person', e.target.value); setStepError(false); }} placeholder={`${t('form_contact_person')} *`} className={`${input} ${stepError && !fd.contact_person ? 'border-red-300 bg-red-50/30' : ''}`} />
               {fd.applicant_type === 'representative' && (
@@ -339,8 +339,8 @@ export default function PilotApplicationForm() {
         {/* STEP 4: Motivation + submit */}
         {step === 'details' && (
           <div>
-            <h3 className="font-serif font-bold text-certo-navy dark:text-certo-dark-text text-xl mb-1">Ostatni krok</h3>
-            <p className="text-sm text-certo-navy/70 dark:text-certo-dark-text/70 mb-6">Powiedz nam dlaczego</p>
+            <h3 className="font-serif font-bold text-certo-fg text-xl mb-1">Ostatni krok</h3>
+            <p className="text-sm text-certo-fg-muted mb-6">Powiedz nam dlaczego</p>
             <div className="space-y-4">
               <textarea
                 value={fd.motivation}
@@ -349,12 +349,12 @@ export default function PilotApplicationForm() {
                 placeholder={fd.applicant_type === 'observer' ? t('form_motivation_observer') : t('form_motivation_representative')}
                 className={`${input} resize-none`}
               />
-              <label className="flex items-start gap-3 text-xs text-certo-navy/60 dark:text-certo-dark-text/60 cursor-pointer p-4 bg-certo-cream/30 dark:bg-certo-dark-card rounded-xl">
+              <label className="flex items-start gap-3 text-xs text-certo-fg-muted cursor-pointer p-4 bg-certo-cream/30 rounded-xl">
                 <input type="checkbox" checked={fd.consent} onChange={(e) => set('consent', e.target.checked)} className="mt-0.5 accent-certo-gold shrink-0" />
                 <span>
                   {t('form_consent')}
                   {fd.applicant_type === 'observer' && (
-                    <span className="block text-certo-navy/40 mt-1">{t('form_consent_observer_note')}</span>
+                    <span className="block text-certo-fg-muted mt-1">{t('form_consent_observer_note')}</span>
                   )}
                 </span>
               </label>

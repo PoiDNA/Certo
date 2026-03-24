@@ -4,7 +4,7 @@ export default async function Footer({ locale }: { locale: string }) {
   const tf = await getTranslations({ locale, namespace: 'Footer' });
 
   return (
-    <footer className="bg-certo-navy dark:bg-certo-dark-header border-t-[3px] border-certo-gold mt-auto transition-colors duration-300">
+    <footer className="bg-certo-navy border-t-[3px] border-certo-gold mt-auto transition-colors duration-300">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>

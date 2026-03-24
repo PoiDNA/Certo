@@ -71,7 +71,7 @@ export default function AuthNav() {
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         onMouseEnter={() => setMenuOpen(true)}
-        className="border border-certo-gold/50 text-certo-gold bg-certo-navy dark:bg-certo-dark-header px-5 py-2 hover:bg-certo-gold hover:text-white transition-colors duration-300 rounded-[2px] uppercase text-sm font-medium tracking-wide"
+        className="border border-certo-gold/50 text-certo-gold bg-certo-navy px-5 py-2 hover:bg-certo-gold hover:text-white transition-colors duration-300 rounded-[2px] uppercase text-sm font-medium tracking-wide"
       >
         {t('dashboard')}
       </button>
@@ -79,7 +79,7 @@ export default function AuthNav() {
       {/* Dropdown menu */}
       {menuOpen && (
         <div
-          className="absolute right-0 top-full mt-1 w-48 bg-certo-navy dark:bg-certo-dark-header border border-certo-gold/30 rounded-[2px] shadow-xl z-50 overflow-hidden"
+          className="absolute right-0 top-full mt-1 w-48 bg-certo-navy border border-certo-gold/30 rounded-[2px] shadow-xl z-50 overflow-hidden"
           onMouseLeave={() => setMenuOpen(false)}
         >
           <a

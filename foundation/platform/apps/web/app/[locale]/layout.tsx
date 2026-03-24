@@ -64,22 +64,30 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        {/* Anti-flash script: apply saved theme before paint */}
+        {/* Anti-flash: apply dark class + override Tailwind CSS vars before paint */}
         <script dangerouslySetInnerHTML={{ __html: `
           (function(){
-            try {
-              var t = localStorage.getItem('certo-theme');
-              if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
+            try{
+              var t=localStorage.getItem('certo-theme');
+              var dark=t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches);
+              if(dark){
+                var d=document.documentElement;
+                d.classList.add('dark');
+                d.style.setProperty('--color-certo-bg','#0F1219');
+                d.style.setProperty('--color-certo-fg','#E8E4DC');
+                d.style.setProperty('--color-certo-fg-muted','rgba(232,228,220,0.6)');
+                d.style.setProperty('--color-certo-card','#232D3F');
+                d.style.setProperty('--color-certo-card-border','#2A3548');
+                d.style.setProperty('--color-certo-surface','#1A2235');
               }
-            } catch(e) {}
+            }catch(e){}
           })();
         `}} />
       </head>
-      <body className="bg-certo-cream dark:bg-certo-dark-bg text-certo-navy dark:text-certo-dark-text antialiased min-h-screen flex flex-col transition-colors duration-300">
+      <body className="bg-certo-bg text-certo-fg antialiased min-h-screen flex flex-col transition-colors duration-300">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider>
-            <header className="bg-certo-navy dark:bg-certo-dark-header text-certo-cream border-b-[3px] border-certo-gold relative z-50 transition-colors duration-300">
+            <header className="bg-certo-navy text-certo-cream border-b-[3px] border-certo-gold relative z-50 transition-colors duration-300">
               <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
                 <div className="flex items-center gap-4">
                   <a href={`/${locale}`} className="flex items-center gap-4">

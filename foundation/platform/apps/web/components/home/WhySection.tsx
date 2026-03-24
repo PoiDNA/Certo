@@ -9,7 +9,7 @@ export default function WhySection() {
   const { ref, isVisible } = useScrollReveal();
 
   return (
-    <section className="w-full py-20 md:py-32 bg-certo-cream dark:bg-certo-dark-bg">
+    <section className="w-full py-20 md:py-32 bg-certo-bg">
       <div
         ref={ref}
         className={`max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-16 items-center reveal-base ${isVisible ? 'reveal-visible' : ''}`}
@@ -19,13 +19,13 @@ export default function WhySection() {
           <p className="text-certo-gold text-xs uppercase tracking-[0.25em] mb-4 font-medium">
             {t('why_label')}
           </p>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-navy dark:text-certo-dark-text mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-certo-fg mb-6 leading-tight">
             {t('why_title')}
           </h2>
-          <p className="text-certo-navy/70 dark:text-certo-dark-text/70 leading-relaxed mb-6">
+          <p className="text-certo-fg-muted leading-relaxed mb-6">
             {t('why_text')}
           </p>
-          <p className="text-xl font-serif italic text-certo-navy/80 dark:text-certo-dark-text/80">
+          <p className="text-xl font-serif italic text-certo-fg-muted">
             {t('why_rhetorical')}
           </p>
         </div>
