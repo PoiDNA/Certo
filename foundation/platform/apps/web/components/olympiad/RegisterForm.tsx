@@ -83,6 +83,7 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
   const [nipLoading, setNipLoading] = useState(false);
   const [registry, setRegistry] = useState<RegistryData | null>(null);
   const [nipError, setNipError] = useState("");
+  const [idType, setIdType] = useState<"nip" | "regon">("nip");
   const [fd, setFd] = useState<FormData>({
     nip: "",
     org_name_full: "",
@@ -106,17 +107,20 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
     representative_from_registry: false,
   });
 
-  // NIP lookup
+  // NIP / REGON lookup
+  const idValue = fd.nip.replace(/[\s-]/g, "");
+  const idValid = idType === "nip" ? idValue.length === 10 : (idValue.length === 9 || idValue.length === 14);
+
   async function handleNipLookup() {
-    const cleanNip = fd.nip.replace(/[\s-]/g, "");
-    if (cleanNip.length !== 10) return;
+    if (!idValid) return;
 
     setNipLoading(true);
     setNipError("");
     setRegistry(null);
 
     try {
-      const res = await fetch(`/api/olympiad/registry-lookup?nip=${cleanNip}`);
+      const param = idType === "nip" ? `nip=${idValue}` : `regon=${idValue}`;
+      const res = await fetch(`/api/olympiad/registry-lookup?${param}`);
       const data = await res.json();
 
       if (data.success && data.data) {
@@ -169,7 +173,7 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
   function canProceed(): boolean {
     switch (step) {
       case "nip":
-        return fd.nip.replace(/[\s-]/g, "").length === 10 && (!!registry || !!nipError);
+        return idValid && (!!registry || !!nipError);
       case "org":
         return !!(fd.org_name_full && fd.org_name_short && fd.country);
       case "team":
@@ -316,7 +320,7 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
         ))}
       </div>
 
-      {/* Step: NIP Lookup */}
+      {/* Step: NIP / REGON Lookup */}
       {step === "nip" && (
         <div className="space-y-4">
           <h2 className="text-xl font-bold mb-2">
@@ -324,9 +328,26 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
           </h2>
           <p className="text-sm text-certo-navy/60 dark:text-certo-dark-muted mb-4">
             {isPl
-              ? "Wpisz NIP organizacji — automatycznie pobierzemy dane z rejestru (RSPO dla szkół, KRS dla fundacji i firm)."
-              : "Enter the organization's NIP — we'll automatically fetch data from the registry (RSPO for schools, KRS for NGOs and companies)."}
+              ? "Wpisz NIP lub REGON organizacji — automatycznie pobierzemy dane z rejestru (RSPO dla szkół, KRS dla fundacji i firm)."
+              : "Enter the organization's NIP or REGON — we'll automatically fetch data from the registry (RSPO for schools, KRS for NGOs and companies)."}
           </p>
+
+          {/* NIP / REGON toggle */}
+          <div className="flex items-center gap-1 bg-certo-navy/5 dark:bg-certo-dark-border rounded-lg p-1 w-fit">
+            {(["nip", "regon"] as const).map((type) => (
+              <button
+                key={type}
+                onClick={() => { setIdType(type); updateField("nip", ""); setRegistry(null); setNipError(""); }}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition ${
+                  idType === type
+                    ? "bg-certo-gold text-white shadow-sm"
+                    : "text-certo-navy/60 dark:text-certo-dark-muted hover:text-certo-navy"
+                }`}
+              >
+                {type === "nip" ? "NIP" : "REGON"}
+              </button>
+            ))}
+          </div>
 
           <div className="flex gap-2">
             <input
@@ -334,17 +355,23 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
               value={fd.nip}
               onChange={(e) => { updateField("nip", e.target.value.replace(/[^\d\s-]/g, "")); setRegistry(null); setNipError(""); }}
               className={`${inputClass} flex-1 font-mono text-lg tracking-wider`}
-              placeholder="NIP: 000-000-00-00"
-              maxLength={13}
+              placeholder={idType === "nip" ? "NIP: 000-000-00-00" : "REGON: 000000000"}
+              maxLength={idType === "nip" ? 13 : 16}
             />
             <button
               onClick={handleNipLookup}
-              disabled={nipLoading || fd.nip.replace(/[\s-]/g, "").length !== 10}
+              disabled={nipLoading || !idValid}
               className="px-6 py-3 bg-certo-gold text-white text-sm font-bold rounded-lg hover:bg-certo-gold-light transition disabled:opacity-50"
             >
               {nipLoading ? "⏳" : "🔍 Sprawdź"}
             </button>
           </div>
+
+          <p className="text-[11px] text-certo-navy/30 dark:text-certo-dark-muted">
+            {idType === "nip"
+              ? (isPl ? "NIP to 10-cyfrowy numer identyfikacji podatkowej" : "NIP is a 10-digit tax identification number")
+              : (isPl ? "REGON to 9- lub 14-cyfrowy numer statystyczny (szczególnie dla szkół)" : "REGON is a 9- or 14-digit statistical number (especially for schools)")}
+          </p>
 
           {/* Registry result */}
           {registry && (

@@ -1,30 +1,39 @@
 import { NextRequest, NextResponse } from "next/server";
-import { lookupOrganization } from "../../../../lib/olympiad/registry-lookup";
+import { lookupOrganization, lookupKRS, lookupRSPO } from "../../../../lib/olympiad/registry-lookup";
 
 /**
  * GET /api/olympiad/registry-lookup?nip=1234567890
+ * GET /api/olympiad/registry-lookup?regon=000000000
  *
  * Look up organization in public registers (RSPO for schools, KRS for NGOs/companies).
+ * Accepts NIP (10 digits) or REGON (9 or 14 digits).
  * Returns: org name, type, address, authorized representatives.
- *
- * Flow:
- * 1. Dyrektor/koordynator wpisuje NIP
- * 2. System odpytuje RSPO → KRS
- * 3. Zwraca listę osób uprawnionych do reprezentacji
- * 4. Użytkownik wybiera siebie lub "inna osoba" (pełnomocnik)
  */
 export async function GET(req: NextRequest) {
   const nip = req.nextUrl.searchParams.get("nip");
+  const regon = req.nextUrl.searchParams.get("regon");
 
-  if (!nip) {
+  if (!nip && !regon) {
     return NextResponse.json(
-      { error: "Podaj NIP organizacji", error_en: "Provide organization NIP" },
+      { error: "Podaj NIP lub REGON organizacji", error_en: "Provide organization NIP or REGON" },
       { status: 400 }
     );
   }
 
   try {
-    const result = await lookupOrganization(nip);
+    let result;
+
+    if (regon) {
+      // REGON lookup — try RSPO first (schools use REGON), then KRS
+      const cleanRegon = regon.replace(/[\s-]/g, "");
+      result = await lookupRSPO(cleanRegon, "regon");
+      if (!result.found) {
+        result = await lookupKRS(cleanRegon, "regon");
+      }
+    } else {
+      // NIP lookup — unified (RSPO → KRS)
+      result = await lookupOrganization(nip!);
+    }
 
     return NextResponse.json({
       success: result.found,
