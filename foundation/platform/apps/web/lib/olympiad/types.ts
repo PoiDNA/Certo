@@ -17,6 +17,7 @@ export const surveyQuestionSchema = z.object({
   text: i18nString,
   type: questionTypeSchema.default("emoji_3_scale"),
   pillar: z.string(),
+  audioUrl: z.string().optional(), // Injected at runtime from TTS CDN
 });
 
 export const surveyConfigSchema = z.object({
