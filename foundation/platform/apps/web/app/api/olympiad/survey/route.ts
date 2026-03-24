@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getOlympiadSupabase } from "../../../../lib/olympiad/supabase";
+import { verifyTurnstile } from "../../../../lib/olympiad/turnstile";
 
 /**
  * POST /api/olympiad/survey
@@ -11,7 +12,7 @@ import { getOlympiadSupabase } from "../../../../lib/olympiad/supabase";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { tenant_id, group_id, pillar_scores, link_hash, org_id } = body;
+    const { tenant_id, group_id, pillar_scores, link_hash, org_id, turnstile_token } = body;
 
     if (!tenant_id || !group_id || !pillar_scores) {
       return NextResponse.json(
@@ -20,10 +21,11 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // TODO: Cloudflare Turnstile verification
-    // const turnstileToken = body.turnstile_token;
-    // const verified = await verifyTurnstile(turnstileToken);
-    // if (!verified) return NextResponse.json({ error: "Bot detected" }, { status: 403 });
+    // Cloudflare Turnstile verification (403 before any DB write)
+    const turnstileValid = await verifyTurnstile(turnstile_token || "");
+    if (!turnstileValid) {
+      return NextResponse.json({ error: "Bot detected" }, { status: 403 });
+    }
 
     // Fingerprint for duplicate detection
     const fingerprint =

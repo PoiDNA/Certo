@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getOlympiadSupabase } from "../../../../lib/olympiad/supabase";
+import { verifyTurnstile } from "../../../../lib/olympiad/turnstile";
 
 /**
  * POST /api/olympiad/register
@@ -23,6 +24,12 @@ export async function POST(req: NextRequest) {
       declared_population,
       director_declaration,
     } = body;
+
+    // Cloudflare Turnstile (403 before any DB write)
+    const turnstileValid = await verifyTurnstile(body.turnstile_token || "");
+    if (!turnstileValid) {
+      return NextResponse.json({ error: "Bot detected" }, { status: 403 });
+    }
 
     // Validation
     if (!tenant_id || !org_name || !country) {
