@@ -38,122 +38,97 @@ export interface RegistryLookupResult {
   error?: string;
 }
 
-// ── KRS API (Polish National Court Register) ───────────────────────
+// ── Biała Lista VAT API (Ministry of Finance) ──────────────────────
 
-const KRS_API_BASE = "https://api-krs.ms.gov.pl/api/krs";
+const WL_API_BASE = "https://wl-api.mf.gov.pl/api/search";
 
 /**
- * Look up organization in KRS by NIP, KRS number, or REGON.
- * Returns board members (zarząd) and their roles.
+ * Look up organization via Biała Lista VAT (White List) API.
+ * Free, official, no API key required.
+ * Returns: name, address, NIP, REGON, KRS, and REPRESENTATIVES.
  *
- * Official API: https://prs.ms.gov.pl/krs/openApi
- * Free, no API key required.
+ * Docs: https://wl-api.mf.gov.pl
  */
 export async function lookupKRS(
   identifier: string,
   type: "nip" | "krs" | "regon" = "nip"
 ): Promise<RegistryLookupResult> {
   try {
-    // KRS API endpoint for full extract
-    const paramMap = { nip: "nip", krs: "rejestr", regon: "regon" };
-    const url = `${KRS_API_BASE}/OdsijOdpisPelwordzyn/${identifier}?${paramMap[type]}=${identifier}`;
+    const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+    const url = `${WL_API_BASE}/${type}/${identifier}?date=${today}`;
 
-    // Fallback: use rejestr.io or direct search
-    const searchUrl = `${KRS_API_BASE}/OdpisPelwordzyn/${identifier}`;
-
-    const response = await fetch(searchUrl, {
+    const response = await fetch(url, {
       headers: { Accept: "application/json" },
       signal: AbortSignal.timeout(10000),
     });
 
     if (!response.ok) {
-      // Try alternative endpoint format
-      return await lookupKRSAlternative(identifier, type);
+      return {
+        found: false, source: "krs", org_name: null, org_type: null,
+        address: null, nip: type === "nip" ? identifier : null,
+        regon: type === "regon" ? identifier : null,
+        krs: type === "krs" ? identifier : null,
+        representatives: [],
+        error: `Biała Lista API returned ${response.status}`,
+      };
     }
 
     const data = await response.json();
-    return parseKRSResponse(data);
-  } catch (error) {
-    console.error("[KRS Lookup] Error:", error);
-    return await lookupKRSAlternative(identifier, type);
-  }
-}
+    const subject = data?.result?.subject;
 
-async function lookupKRSAlternative(
-  identifier: string,
-  type: "nip" | "krs" | "regon"
-): Promise<RegistryLookupResult> {
-  try {
-    // Use rejestr.io as fallback (requires API key in production)
-    // For now, return structured error
+    if (!subject) {
+      return {
+        found: false, source: "krs", org_name: null, org_type: null,
+        address: null, nip: type === "nip" ? identifier : null,
+        regon: type === "regon" ? identifier : null,
+        krs: type === "krs" ? identifier : null,
+        representatives: [],
+        error: type === "nip"
+          ? "Podmiot nie jest podatnikiem VAT (szkoły publiczne, jednostki budżetowe). Spróbuj wyszukać po REGON lub wpisz dane ręcznie."
+          : "Nie znaleziono podmiotu po REGON w Białej Liście VAT.",
+      };
+    }
+
+    // Parse representatives from Biała Lista
+    const representatives: Representative[] = (subject.representatives || []).map((rep: any) => {
+      const name = [rep.firstName, rep.lastName].filter(Boolean).join(" ") || rep.companyName || "";
+      return {
+        name,
+        role: "Reprezentant",
+        source: "krs" as RegistrySource,
+      };
+    });
+
+    // Parse authorized clerks
+    const authorizedClerks: Representative[] = (subject.authorizedClerks || []).map((clerk: any) => {
+      const name = [clerk.firstName, clerk.lastName].filter(Boolean).join(" ") || clerk.companyName || "";
+      return {
+        name,
+        role: "Pełnomocnik",
+        source: "krs" as RegistrySource,
+      };
+    });
+
     return {
-      found: false,
+      found: true,
       source: "krs",
-      org_name: null,
-      org_type: null,
-      address: null,
-      nip: type === "nip" ? identifier : null,
-      regon: type === "regon" ? identifier : null,
-      krs: type === "krs" ? identifier : null,
-      representatives: [],
-      error: `KRS lookup unavailable for ${type}=${identifier}. Configure KRS API or rejestr.io API key.`,
+      org_name: subject.name || null,
+      org_type: subject.statusVat ? `VAT: ${subject.statusVat}` : null,
+      address: subject.workingAddress || subject.residenceAddress || null,
+      nip: subject.nip || null,
+      regon: subject.regon || null,
+      krs: subject.krs || null,
+      representatives: [...representatives, ...authorizedClerks],
+      raw_data: subject,
     };
   } catch (error) {
+    console.error("[Biała Lista] Error:", error);
     return {
-      found: false,
-      source: "krs",
-      org_name: null,
-      org_type: null,
-      address: null,
-      nip: null,
-      regon: null,
-      krs: null,
+      found: false, source: "krs", org_name: null, org_type: null,
+      address: null, nip: type === "nip" ? identifier : null,
+      regon: type === "regon" ? identifier : null, krs: null,
       representatives: [],
-      error: String(error),
-    };
-  }
-}
-
-function parseKRSResponse(data: Record<string, unknown>): RegistryLookupResult {
-  try {
-    // KRS API returns nested structure — extract representatives from "Organ reprezentacji"
-    const odpis = (data as any)?.odppisPewordzyn ?? data;
-    const dane = odpis?.dane ?? {};
-    const dzial2 = dane?.dzial2 ?? {};
-
-    // Extract board members from "Organ uprawniony do reprezentowania podmiotu"
-    const organRep = dzial2?.organReprezentacji?.sklad ?? [];
-    const representatives: Representative[] = organRep.map((person: any) => ({
-      name: `${person?.imiona ?? ""} ${person?.nazwisko ?? ""}`.trim(),
-      role: person?.funkcja ?? "Członek zarządu",
-      since: person?.dataOd,
-      source: "krs" as RegistrySource,
-    }));
-
-    return {
-      found: representatives.length > 0,
-      source: "krs",
-      org_name: dane?.dzial1?.danePodmiotu?.nazwa ?? null,
-      org_type: dane?.dzial1?.danePodmiotu?.formaPrawna ?? null,
-      address: formatAddress(dane?.dzial1?.siedzibaiAdres),
-      nip: dane?.dzial1?.danePodmiotu?.identyfikatory?.nip ?? null,
-      regon: dane?.dzial1?.danePodmiotu?.identyfikatory?.regon ?? null,
-      krs: dane?.dzial1?.danePodmiotu?.identyfikatory?.numerKRS ?? null,
-      representatives,
-      raw_data: data,
-    };
-  } catch {
-    return {
-      found: false,
-      source: "krs",
-      org_name: null,
-      org_type: null,
-      address: null,
-      nip: null,
-      regon: null,
-      krs: null,
-      representatives: [],
-      error: "Failed to parse KRS response",
+      error: `Błąd połączenia z Białą Listą VAT: ${error}`,
     };
   }
 }
@@ -292,13 +267,13 @@ export async function lookupOrganization(
     };
   }
 
-  // Try RSPO first (schools/education)
+  // Try Biała Lista VAT first (fastest, most reliable, has representatives)
+  const wlResult = await lookupKRS(cleanNip, "nip");
+  if (wlResult.found) return wlResult;
+
+  // Then try RSPO (schools — may have director info)
   const rspoResult = await lookupRSPO(cleanNip, "nip");
   if (rspoResult.found) return rspoResult;
-
-  // Then try KRS (NGOs, companies, cooperatives)
-  const krsResult = await lookupKRS(cleanNip, "nip");
-  if (krsResult.found) return krsResult;
 
   // Nothing found
   return {
@@ -311,7 +286,7 @@ export async function lookupOrganization(
     regon: null,
     krs: null,
     representatives: [],
-    error: "Nie znaleziono podmiotu w RSPO ani KRS. Sprawdź NIP lub wprowadź dane ręcznie.",
+    error: "Nie znaleziono podmiotu. Sprawdź NIP/REGON lub wprowadź dane ręcznie.",
   };
 }
 
