@@ -7,9 +7,8 @@ import { useScrollReveal } from '../shared/useScrollReveal';
 const pillars = [
   { key: '1', weight: 25, color: '#CC9B30', hoverColor: '#E5B04A' },
   { key: '2', weight: 25, color: '#B8891A', hoverColor: '#D4A030' },
-  { key: '3', weight: 20, color: '#0A1628', hoverColor: '#1A2A45' },
-  { key: '4', weight: 15, color: '#2A3F5F', hoverColor: '#3A5580' },
-  { key: '5', weight: 15, color: '#4A6080', hoverColor: '#5A7598' },
+  { key: '3', weight: 25, color: '#0A1628', hoverColor: '#1A2A45' },
+  { key: '4', weight: 25, color: '#2A3F5F', hoverColor: '#3A5580' },
 ];
 
 function getDonutPaths(data: typeof pillars, innerRadius: number, outerRadius: number) {

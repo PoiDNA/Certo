@@ -7,9 +7,8 @@ import { useScrollReveal } from '../shared/useScrollReveal';
 const pillars = [
   { key: '1', weight: 25, accent: 'text-certo-gold', bar: 'bg-certo-gold', border: 'border-certo-gold' },
   { key: '2', weight: 25, accent: 'text-certo-gold', bar: 'bg-certo-gold/80', border: 'border-certo-gold/60' },
-  { key: '3', weight: 20, accent: 'text-certo-navy', bar: 'bg-certo-navy', border: 'border-certo-navy' },
-  { key: '4', weight: 15, accent: 'text-certo-navy/70', bar: 'bg-certo-navy/70', border: 'border-certo-navy/50' },
-  { key: '5', weight: 15, accent: 'text-certo-navy/50', bar: 'bg-certo-navy/50', border: 'border-certo-navy/30' },
+  { key: '3', weight: 25, accent: 'text-certo-navy', bar: 'bg-certo-navy', border: 'border-certo-navy' },
+  { key: '4', weight: 25, accent: 'text-certo-navy/70', bar: 'bg-certo-navy/70', border: 'border-certo-navy/50' },
 ];
 
 const SWIPE_THRESHOLD = 50;
@@ -145,7 +144,7 @@ export default function PillarsPreview() {
           </div>
 
           {/* Mini thumbnails */}
-          <div className="hidden md:grid grid-cols-5 gap-3 mt-8">
+          <div className="hidden md:grid grid-cols-4 gap-3 mt-8">
             {pillars.map((pillar, i) => (
               <button
                 key={pillar.key}

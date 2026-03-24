@@ -5,8 +5,6 @@ import WhySection from '../../components/home/WhySection';
 import PhotoDivider from '../../components/home/PhotoDivider';
 import PillarsPreview from '../../components/home/PillarsPreview';
 import FactDeNoiserSection from '../../components/home/FactDeNoiserSection';
-import RhetoricalBreak from '../../components/home/RhetoricalBreak';
-import ProductsGrid from '../../components/home/ProductsGrid';
 import BenefitsSection from '../../components/home/BenefitsSection';
 import PilotCTA from '../../components/home/PilotCTA';
 import { images } from '../../lib/images';
