@@ -326,10 +326,15 @@ export default function RegisterForm({ config, locale }: RegisterFormProps) {
           <h2 className="text-xl font-bold mb-2">
             {isPl ? "Identyfikacja organizacji" : "Organization identification"}
           </h2>
-          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-muted mb-4">
+          <p className="text-sm text-certo-navy/60 dark:text-certo-dark-muted mb-2">
             {isPl
-              ? "Wpisz NIP lub REGON organizacji — automatycznie pobierzemy dane z rejestru (RSPO dla szkół, KRS dla fundacji i firm)."
-              : "Enter the organization's NIP or REGON — we'll automatically fetch data from the registry (RSPO for schools, KRS for NGOs and companies)."}
+              ? "Wpisz NIP lub REGON organizacji — spróbujemy automatycznie pobrać dane z rejestru."
+              : "Enter the organization's NIP or REGON — we'll try to fetch data from the registry automatically."}
+          </p>
+          <p className="text-xs text-certo-navy/40 dark:text-certo-dark-muted mb-4 p-2 rounded-lg bg-blue-50/50 dark:bg-blue-900/10">
+            💡 {isPl
+              ? "Szkoły publiczne i jednostki budżetowe mogą nie zostać znalezione automatycznie (nie są w rejestrze VAT). W takim przypadku kliknij Dalej i wpisz dane ręcznie."
+              : "Public schools and budget units may not be found automatically (not in VAT registry). In that case, click Next and enter data manually."}
           </p>
 
           {/* NIP / REGON toggle */}

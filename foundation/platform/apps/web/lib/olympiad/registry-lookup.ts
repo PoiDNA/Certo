@@ -267,15 +267,15 @@ export async function lookupOrganization(
     };
   }
 
-  // Try Biała Lista VAT first (fastest, most reliable, has representatives)
+  // Try Biała Lista VAT (works for companies, NGOs with VAT registration)
   const wlResult = await lookupKRS(cleanNip, "nip");
   if (wlResult.found) return wlResult;
 
-  // Then try RSPO (schools — may have director info)
+  // Then try RSPO (schools — requires API key)
   const rspoResult = await lookupRSPO(cleanNip, "nip");
   if (rspoResult.found) return rspoResult;
 
-  // Nothing found
+  // Nothing found — provide helpful guidance
   return {
     found: false,
     source: "krs",
@@ -286,7 +286,7 @@ export async function lookupOrganization(
     regon: null,
     krs: null,
     representatives: [],
-    error: "Nie znaleziono podmiotu. Sprawdź NIP/REGON lub wprowadź dane ręcznie.",
+    error: "Nie znaleziono podmiotu automatycznie. Szkoły publiczne i jednostki budżetowe nie są w rejestrze VAT. Kliknij Dalej i wpisz dane ręcznie — zweryfikujemy je w kolejnym kroku.",
   };
 }
 
