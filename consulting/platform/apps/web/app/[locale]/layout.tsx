@@ -44,8 +44,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t('title'),
     description: t('description'),
     icons: {
-      icon: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/consulting/certo-consulting-favicon.png',
-      apple: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/consulting/certo-consulting-favicon.png',
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32' },
+        { url: '/favicon-48.png', sizes: '48x48', type: 'image/png' },
+        { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+      ],
+      apple: '/apple-icon.png',
     },
     alternates: {
       canonical: `https://certo.consulting/${locale}`,
@@ -73,6 +78,17 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${playfair.variable} ${dmSans.variable}`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Certo Consulting',
+          url: 'https://certo.consulting',
+          logo: 'https://certo.consulting/icon-192.png',
+          description: 'Portal doradców i ekspertów wspierających organizacje w procesie oceny Rating Certo.',
+          parentOrganization: { '@type': 'Organization', name: 'Certo Governance Institute', url: 'https://certogov.org' },
+        }) }} />
+      </head>
       <body className="font-sans antialiased min-h-screen flex flex-col bg-white">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <header className="absolute top-0 left-0 w-full z-50">

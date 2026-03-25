@@ -36,8 +36,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t('title'),
     description: t('description'),
     icons: {
-      icon: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/web1/certo-favicon.png',
-      apple: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/foundation/images/web1/certo-favicon.png',
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32' },
+        { url: '/favicon-48.png', sizes: '48x48', type: 'image/png' },
+        { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+      ],
+      apple: '/apple-icon.png',
     },
     alternates: {
       canonical: `https://certogov.org/${locale}`,
@@ -85,6 +90,15 @@ export default async function RootLayout({
             }catch(e){}
           })();
         `}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Certo Governance Institute',
+          url: 'https://certogov.org',
+          logo: 'https://certogov.org/icon-192.png',
+          description: 'Niezależna organizacja ratingowa oceniająca jakość zarządzania w sektorze publicznym, korporacyjnym, medycznym, obronnym i pozarządowym.',
+          sameAs: ['https://certo.id', 'https://certo.consulting'],
+        }) }} />
       </head>
       <body className="bg-certo-bg text-certo-fg antialiased min-h-screen flex flex-col transition-colors duration-300">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-certo-gold focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold">

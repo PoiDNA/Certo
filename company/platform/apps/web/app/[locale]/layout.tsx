@@ -33,8 +33,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: t('title'),
     description: t('description'),
     icons: {
-      icon: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/certo-id-favicon.png',
-      apple: 'https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/certo-id-favicon.png',
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32' },
+        { url: '/favicon-48.png', sizes: '48x48', type: 'image/png' },
+        { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+        { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+      ],
+      apple: '/apple-icon.png',
     },
     alternates: {
       canonical: `https://certo.id/${locale}`,
@@ -84,6 +89,15 @@ export default async function RootLayout({
             }catch(e){}
           })();
         `}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Certo ID',
+          url: 'https://certo.id',
+          logo: 'https://certo.id/icon-192.png',
+          description: 'Komercyjny operator technologiczny systemu Certo — utrzymuje systemy IT dla ekosystemu ratingowego.',
+          parentOrganization: { '@type': 'Organization', name: 'Certo Governance Institute', url: 'https://certogov.org' },
+        }) }} />
       </head>
       <body className="bg-certo-bg text-certo-fg antialiased min-h-screen flex flex-col font-sans transition-colors duration-300">
         {/* Skip to main content — accessibility */}
