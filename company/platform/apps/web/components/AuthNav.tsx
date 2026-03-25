@@ -1,8 +1,10 @@
 import { createServerClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
+import { cookies, headers } from 'next/headers';
 
 export default async function AuthNav() {
   const cookieStore = await cookies();
+  const headerStore = await headers();
+  const locale = headerStore.get('x-next-intl-locale') ?? 'en';
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -23,24 +25,21 @@ export default async function AuthNav() {
 
   if (user) {
     return (
-      <div className="flex items-center gap-4">
-        <span className="text-xs text-certo-teal-dark hidden lg:block truncate max-w-[160px]">
-          {user.email}
-        </span>
-        <a
-          href="/auth/logout"
-          className="text-sm font-medium text-certo-teal hover:text-certo-teal-dark transition-colors duration-300 uppercase tracking-wide"
-        >
-          Wyloguj
-        </a>
-      </div>
+      <a
+        href={`/${locale}/auth/logout`}
+        className="text-sm font-medium text-certo-teal hover:text-certo-teal-dark transition-colors duration-300 uppercase tracking-wide"
+        aria-label="Wyloguj się"
+      >
+        Wyloguj
+      </a>
     );
   }
 
   return (
     <a
-      href="/en/login"
+      href={`/${locale}/login`}
       className="text-sm font-medium text-certo-teal hover:text-certo-teal-dark transition-colors duration-300 uppercase tracking-wide"
+      aria-label="Zaloguj się"
     >
       Log In
     </a>

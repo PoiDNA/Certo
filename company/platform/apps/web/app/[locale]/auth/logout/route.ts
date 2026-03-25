@@ -3,8 +3,12 @@ import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export async function GET(request: NextRequest) {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ locale: string }> }
+) {
   const { origin } = new URL(request.url);
+  const { locale } = await params;
   const cookieStore = await cookies();
 
   const supabase = createServerClient(
@@ -24,5 +28,5 @@ export async function GET(request: NextRequest) {
 
   await supabase.auth.signOut();
 
-  return NextResponse.redirect(`${origin}/en/login`, { headers: { 'Cache-Control': 'no-store' } });
+  return NextResponse.redirect(`${origin}/${locale}/login`);
 }
