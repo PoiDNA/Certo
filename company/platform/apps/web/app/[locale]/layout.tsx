@@ -119,11 +119,8 @@ export default async function RootLayout({
                   </Link>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="hidden md:flex items-center gap-2">
-                    <ThemeToggle />
-                  </div>
-                  <div className="md:order-2"><AuthNav /></div>
                   <SiteNav />
+                  <div className="md:order-2"><AuthNav /></div>
                 </div>
               </div>
             </header>
