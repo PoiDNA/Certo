@@ -61,6 +61,7 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const messages = await getMessages();
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -103,7 +104,7 @@ export default async function RootLayout({
                       className="h-10 w-auto"
                     />
                     <span className="hidden sm:inline-block border-l border-certo-cream/20 pl-4 text-certo-gold font-serif text-[0.7rem] uppercase tracking-[0.15em] leading-snug">
-                      Public Credibility<br/>Index
+                      {t('site_tagline_line1')}<br/>{t('site_tagline_line2')}
                     </span>
                   </a>
                 </div>
