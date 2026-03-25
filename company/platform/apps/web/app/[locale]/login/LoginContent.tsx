@@ -25,10 +25,17 @@ function LoginForm() {
     <div className="min-h-screen flex items-center justify-center bg-certo-teal-darker">
       <div className="w-full max-w-sm p-8 bg-certo-card rounded-lg shadow-xl border border-certo-card-border text-center">
         <div className="mb-8">
+          {/* Light mode logo */}
           <img
             src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-400-120.png"
             alt="Certo ID"
-            className="w-[200px] h-[60px] object-contain mx-auto mb-3 block"
+            className="w-[200px] h-[60px] object-contain mx-auto mb-3 block dark:hidden"
+          />
+          {/* Dark mode logo */}
+          <img
+            src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-white-400-120.png.png"
+            alt="Certo ID"
+            className="w-[200px] h-[60px] object-contain mx-auto mb-3 hidden dark:block"
           />
           <div className="font-sans text-xs tracking-widest uppercase text-certo-teal">Cryptographic Rating</div>
         </div>
