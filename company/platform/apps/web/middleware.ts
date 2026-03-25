@@ -8,9 +8,16 @@ const intlMiddleware = createMiddleware(routing);
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  
+
   // Zwróć od razu jeśli to statyki
   if (pathname.includes('/_next/') || pathname.includes('/favicon.ico') || pathname.match(/\.(svg|png|jpg|jpeg|gif|webp)$/)) {
+    return NextResponse.next();
+  }
+
+  // Logout: pomiń intlMiddleware żeby uniknąć redirect /auth/logout → /pl/auth/logout → 404
+  const isLogoutPath = pathname === '/auth/logout' ||
+    locales.some(l => pathname === `/${l}/auth/logout`);
+  if (isLogoutPath) {
     return NextResponse.next();
   }
 
@@ -63,6 +70,11 @@ export async function middleware(request: NextRequest) {
       return NextResponse.redirect(url);
     }
   }
+
+  // Cache-Control: no-store dla chronionych stron — uniknięcie "cofnij = zalogowany"
+  supabaseResponse.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  supabaseResponse.headers.set('Pragma', 'no-cache');
+  supabaseResponse.headers.set('Expires', '0');
 
   return supabaseResponse;
 }

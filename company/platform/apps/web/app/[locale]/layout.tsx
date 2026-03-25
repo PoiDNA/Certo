@@ -100,12 +100,21 @@ export default async function RootLayout({
               <div className="w-full py-4 flex items-center justify-between px-6">
                 <div className="flex items-center">
                   <Link href={`/${locale}`}>
+                    {/* Light mode logo */}
                     <img
                       src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-400-120.png"
                       width={160}
                       height={48}
                       alt="Certo ID"
-                      className="h-10 w-auto"
+                      className="h-10 w-auto block dark:hidden"
+                    />
+                    {/* Dark mode logo — white version */}
+                    <img
+                      src="https://pub-4d688aa7ff85432985833ce88b08ec4d.r2.dev/company/images/certo-id-logo-white-400-120.png.png"
+                      width={160}
+                      height={48}
+                      alt="Certo ID"
+                      className="h-10 w-auto hidden dark:block"
                     />
                   </Link>
                 </div>
