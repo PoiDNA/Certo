@@ -37,20 +37,31 @@ export async function middleware(request: NextRequest) {
 
   const { data: { user } } = await supabase.auth.getUser();
 
-  // Omijamy autoryzację dla publicznych ścieżek
-  // Sprawdzamy czy pathname pasuje do publicznych z uwzględnieniem locale
-  const isPublic = ['/', '/login', '/auth/callback', '/auth/logout', '/pp', '/privacy', '/terms', '/contact'].some(p => {
-    // Sprawdzamy czy ścieżka zaczyna się od /locale/p lub jest równa /p
+  // Tylko strony logowania są publiczne
+  const isPublic = ['/login', '/auth/callback'].some(p => {
     if (pathname === p || pathname.startsWith(`${p}/`)) return true;
-    return locales.some(l => pathname === `/${l}${p === '/' ? '' : p}` || pathname.startsWith(`/${l}${p}/`));
+    return locales.some(l => pathname === `/${l}${p}` || pathname.startsWith(`/${l}${p}/`));
   });
 
-  if (!user && !isPublic && !pathname.includes('/auth/callback')) {
+  const localeMatch = pathname.match(/^\/([a-z]{2})(?:\/|$)/);
+  const locale = localeMatch ? localeMatch[1] : routing.defaultLocale;
+
+  if (!user && !isPublic) {
     const url = request.nextUrl.clone();
-    const localeMatch = pathname.match(/^\/([a-z]{2})(?:\/|$)/);
-    const locale = localeMatch ? localeMatch[1] : routing.defaultLocale;
     url.pathname = `/${locale}/login`;
     return NextResponse.redirect(url);
+  }
+
+  // Sprawdzamy czy zalogowany użytkownik ma rolę admina
+  if (user && !isPublic) {
+    const adminEmails = (process.env.ADMIN_EMAILS ?? '').split(',').map(e => e.trim().toLowerCase());
+    const isAdmin = adminEmails.includes((user.email ?? '').toLowerCase());
+    if (!isAdmin) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${locale}/login`;
+      url.searchParams.set('error', 'unauthorized');
+      return NextResponse.redirect(url);
+    }
   }
 
   return supabaseResponse;
