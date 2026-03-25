@@ -4,9 +4,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: '*',
-      allow: '/',
-      disallow: ['/api/', '/auth/', '/dashboard/', '/profile/', '/delegate/'],
+      disallow: '/',
     },
-    sitemap: 'https://certo.id/sitemap.xml',
   };
 }
