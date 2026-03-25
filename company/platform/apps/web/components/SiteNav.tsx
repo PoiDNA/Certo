@@ -27,6 +27,7 @@ export default function SiteNav() {
           {t('contact')}
         </a>
         <LocaleSwitcher />
+        <ThemeToggle />
       </nav>
 
       {/* Mobile hamburger */}
