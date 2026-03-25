@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 export default function SiteNav() {
   const locale = useLocale();
@@ -11,18 +12,18 @@ export default function SiteNav() {
 
   return (
     <>
-      {/* Desktop */}
-      <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide items-center">
-        <a href="#rozwiazania" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">
+      {/* Desktop nav */}
+      <nav className="hidden md:flex gap-8 text-sm font-semibold tracking-wide items-center" aria-label="Nawigacja główna">
+        <a href="#rozwiazania" className="text-certo-fg hover:text-certo-teal transition-colors duration-200">
           {t('solutions')}
         </a>
-        <a href="#technologia" className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">
+        <a href="#technologia" className="text-certo-fg hover:text-certo-teal transition-colors duration-200">
           {t('technology')}
         </a>
         <a href="https://certogov.org" className="text-certo-teal hover:text-certo-teal-dark transition-colors duration-200">
           {t('foundation')} →
         </a>
-        <a href={`/${locale}/contact`} className="text-certo-gray-dark hover:text-certo-teal transition-colors duration-200">
+        <a href={`/${locale}/contact`} className="text-certo-fg hover:text-certo-teal transition-colors duration-200">
           {t('contact')}
         </a>
         <LocaleSwitcher />
@@ -30,12 +31,13 @@ export default function SiteNav() {
 
       {/* Mobile hamburger */}
       <button
-        className="md:hidden text-certo-teal-darker p-1"
+        className="md:hidden text-certo-fg p-1"
         onClick={() => setOpen(!open)}
-        aria-label="Menu"
+        aria-label={open ? 'Zamknij menu' : 'Otwórz menu'}
         aria-expanded={open}
+        aria-controls="mobile-menu"
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
           {open ? (
             <>
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -53,18 +55,21 @@ export default function SiteNav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-certo-gray shadow-lg z-50">
-          <nav className="flex flex-col px-6 py-4 gap-3">
+        <div
+          id="mobile-menu"
+          className="md:hidden absolute top-full left-0 right-0 bg-certo-header-bg border-b border-certo-card-border shadow-lg z-50"
+        >
+          <nav className="flex flex-col px-6 py-4 gap-3" aria-label="Menu mobilne">
             <a
               href="#rozwiazania"
-              className="text-sm font-semibold text-certo-gray-dark hover:text-certo-teal py-1"
+              className="text-sm font-semibold text-certo-fg hover:text-certo-teal py-1"
               onClick={() => setOpen(false)}
             >
               {t('solutions')}
             </a>
             <a
               href="#technologia"
-              className="text-sm font-semibold text-certo-gray-dark hover:text-certo-teal py-1"
+              className="text-sm font-semibold text-certo-fg hover:text-certo-teal py-1"
               onClick={() => setOpen(false)}
             >
               {t('technology')}
@@ -77,13 +82,14 @@ export default function SiteNav() {
             </a>
             <a
               href={`/${locale}/contact`}
-              className="text-sm font-semibold text-certo-gray-dark hover:text-certo-teal py-1"
+              className="text-sm font-semibold text-certo-fg hover:text-certo-teal py-1"
               onClick={() => setOpen(false)}
             >
               {t('contact')}
             </a>
-            <div className="pt-2 border-t border-gray-200">
+            <div className="pt-2 border-t border-certo-card-border flex items-center justify-between">
               <LocaleSwitcher />
+              <ThemeToggle />
             </div>
           </nav>
         </div>

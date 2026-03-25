@@ -2,41 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Semantic color tokens — light mode defaults ──────────────────────────── */
+/* ThemeProvider + anti-flash script override these vars at runtime.          */
+:root {
+  --certo-bg: #F4F6F7;
+  --certo-fg: #0D3340;
+  --certo-fg-muted: rgba(13, 51, 64, 0.6);
+  --certo-card: #FFFFFF;
+  --certo-card-border: rgba(42, 122, 140, 0.12);
+  --certo-surface: rgba(42, 122, 140, 0.04);
+  --certo-header-bg: #FFFFFF;
+}
+
+/* Dark mode overrides */
+.dark {
+  --certo-bg: #0A1E26;
+  --certo-fg: #E0F2F5;
+  --certo-fg-muted: rgba(224, 242, 245, 0.6);
+  --certo-card: #132830;
+  --certo-card-border: rgba(42, 122, 140, 0.25);
+  --certo-surface: rgba(42, 122, 140, 0.10);
+  --certo-header-bg: #0D2430;
+}
+
 @layer base {
   body {
-    background-color: theme('colors.certo.gray-light');
-    color: theme('colors.certo.teal-darker');
-    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Focus indicator — WCAG AA, visible for keyboard users */
+  :focus-visible {
+    outline: 2px solid #2A7A8C;
+    outline-offset: 2px;
   }
 }
 
+/* ── Text selection ──────────────────────────────────────────────────────── */
+::selection {
+  background: theme('colors.certo.teal');
+  color: theme('colors.certo.white');
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────── */
 @layer utilities {
   .animate-fade-up {
     animation: fadeUp 0.6s ease-out forwards;
   }
-
   .animate-pulse-slow {
     animation: pulse 3s infinite ease-in-out;
   }
-
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }
   .delay-400 { animation-delay: 400ms; }
 }
 
-::selection { 
-  background: theme('colors.certo.teal'); 
-  color: theme('colors.certo.white'); 
-}
-
-/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.05); }
+  50%       { opacity: 0.8; transform: scale(1.05); }
+}
+
+/* ── Reduced motion — accessibility ────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-pulse-slow {
+    animation: none;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }
