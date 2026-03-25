@@ -26,9 +26,16 @@ export async function GET(req: NextRequest) {
     if (regon) {
       // REGON lookup — try RSPO first (schools use REGON), then KRS
       const cleanRegon = regon.replace(/[\s-]/g, "");
-      result = await lookupRSPO(cleanRegon, "regon");
+      // Try Biała Lista by REGON first, then RSPO
+      result = await lookupKRS(cleanRegon, "regon");
       if (!result.found) {
-        result = await lookupKRS(cleanRegon, "regon");
+        result = await lookupRSPO(cleanRegon, "regon");
+      }
+      if (!result.found) {
+        result = {
+          ...result,
+          error: "Nie znaleziono podmiotu po REGON. Szkoły publiczne wymagają integracji z RSPO (w trakcie wdrażania). Kliknij Dalej i wpisz dane ręcznie.",
+        };
       }
     } else {
       // NIP lookup — unified (RSPO → KRS)
