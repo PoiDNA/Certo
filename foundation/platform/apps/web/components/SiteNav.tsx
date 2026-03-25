@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import LocaleSwitcher from './LocaleSwitcher';
+import ThemeToggle from './ThemeToggle';
 
 const allLinks = [
   { href: '/ratings', key: 'rating' as const },
@@ -129,8 +130,9 @@ export default function SiteNav() {
                 </a>
               );
             })}
-            <div className="pt-2 border-t border-certo-gold/20">
+            <div className="pt-2 border-t border-certo-gold/20 flex items-center justify-between">
               <LocaleSwitcher />
+              <ThemeToggle />
             </div>
           </nav>
         </div>
