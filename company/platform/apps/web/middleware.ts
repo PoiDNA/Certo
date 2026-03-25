@@ -37,8 +37,8 @@ export async function middleware(request: NextRequest) {
 
   const { data: { user } } = await supabase.auth.getUser();
 
-  // Tylko strony logowania są publiczne
-  const isPublic = ['/login', '/auth/callback'].some(p => {
+  // Tylko strony logowania/wylogowania są publiczne
+  const isPublic = ['/login', '/auth/callback', '/auth/logout'].some(p => {
     if (pathname === p || pathname.startsWith(`${p}/`)) return true;
     return locales.some(l => pathname === `/${l}${p}` || pathname.startsWith(`/${l}${p}/`));
   });
