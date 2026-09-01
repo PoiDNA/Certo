@@ -24,6 +24,20 @@ export default async function Footer({ locale }: { locale: string }) {
           <div className="text-xs text-certo-cream/40">
             {tf('copyright', { year: new Date().getFullYear() })}
           </div>
+          <div className="text-[11px] text-certo-cream/30 mt-2">
+            {tf.rich('producedBy', {
+              link: (chunks) => (
+                <a
+                  href="https://pilot.place"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-certo-gold/60 hover:text-certo-gold transition-colors"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
+          </div>
         </div>
       </div>
     </footer>

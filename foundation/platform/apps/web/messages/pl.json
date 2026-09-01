@@ -115,7 +115,8 @@
     "pilot": "Pilotaż Rating Certo",
     "privacy": "Polityka Prywatności",
     "terms": "Warunki Korzystania",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "producedBy": "Serwis wyprodukowany przez <link>PILOT</link>"
   },
   "About": {
     "title": "O Fundacji Certo Governance Institute",

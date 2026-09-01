@@ -115,7 +115,8 @@
     "pilot": "Rating Certo Pilot",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "contact": "Contact"
+    "contact": "Contact",
+    "producedBy": "Website produced by <link>PILOT</link>"
   },
   "About": {
     "title": "About Certo Governance Institute Foundation",

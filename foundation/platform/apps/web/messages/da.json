@@ -105,7 +105,8 @@
     "pilot": "Pilotprogram Rating Certo",
     "privacy": "Privatlivspolitik",
     "terms": "Brugsbetingelser",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "producedBy": "Websted produceret af <link>PILOT</link>"
   },
   "About": {
     "title": "Om Certo Governance Institute",

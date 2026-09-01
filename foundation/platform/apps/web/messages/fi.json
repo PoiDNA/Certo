@@ -105,7 +105,8 @@
     "pilot": "Pilottiohjelma Rating Certo",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Käyttöehdot",
-    "contact": "Yhteystiedot"
+    "contact": "Yhteystiedot",
+    "producedBy": "Sivuston on tuottanut <link>PILOT</link>"
   },
   "About": {
     "title": "Certo Governance Institute -säätiöstä",
