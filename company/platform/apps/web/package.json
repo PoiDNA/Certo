@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@certo/i18n": "^1.0.0",
+    "@certo/site-gate": "^1.0.0",
     "@supabase/ssr": "^0.9.0",
     "next": "^15.3.0",
     "next-intl": "^4.8.3",

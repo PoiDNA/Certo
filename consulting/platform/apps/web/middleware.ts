@@ -3,12 +3,26 @@ import { NextResponse, type NextRequest } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n-config';
 import { locales } from '@certo/i18n/config';
+import { siteGate } from '@certo/site-gate';
 
 const intlMiddleware = createMiddleware(routing);
 
+// API routes, Next internals and files: the gate covers them, routing does not.
+const GATE_ONLY = /^\/(?:api|_next|_vercel)|\./;
+
 export async function middleware(request: NextRequest) {
+  const locked = await siteGate(request, {
+    password: process.env.SITE_PASSWORD,
+    siteName: 'Certo Consulting',
+    defaultLang: 'pl',
+  });
+  if (locked) return locked;
+
   const { pathname } = request.nextUrl;
-  
+
+  if (GATE_ONLY.test(pathname)) return NextResponse.next();
+
+
   if (pathname.includes('/_next/') || pathname.includes('/favicon.ico') || pathname.match(/\.(svg|png|jpg|jpeg|gif|webp)$/)) {
     return NextResponse.next();
   }
@@ -52,6 +66,7 @@ export async function middleware(request: NextRequest) {
   return supabaseResponse;
 }
 
+// Everything except build assets, so the password gate covers the whole site.
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
+  matcher: ['/((?!_next/static|_next/webpack-hmr|_vercel|favicon\\.ico).*)'],
 };
