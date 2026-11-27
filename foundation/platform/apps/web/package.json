@@ -10,6 +10,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
     "@certo/i18n": "^1.0.0",
+    "@certo/site-gate": "^1.0.0",
     "@parcel/watcher": "^2.4.1",
     "@supabase/ssr": "^0.9.0",
     "@supabase/supabase-js": "^2.99.2",

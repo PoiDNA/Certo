@@ -1,6 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n-config';
 import { NextRequest, NextResponse } from 'next/server';
+import { siteGate } from '@certo/site-gate';
 
 /**
  * Domain Masking for Olimpiada Certo tenants.
@@ -20,7 +21,29 @@ const DOMAIN_TENANT_MAP: Record<string, { tenant: string; locale: string }> = {
 
 const intlMiddleware = createMiddleware(routing);
 
-export default function middleware(request: NextRequest) {
+// Machine endpoints with their own secret, plus the server-to-server call
+// from /api/pilot-application: none of them can present the gate cookie.
+const GATE_BYPASS = [
+  '/api/rag/webhook',
+  '/api/pilot-bot-submit',
+  '/api/pilot-bot-vote',
+  '/api/verify-application',
+];
+
+// API routes, Next internals and files: the gate covers them, routing does not.
+const GATE_ONLY = /^\/(?:api|_next|_vercel)|\./;
+
+export default async function middleware(request: NextRequest) {
+  const locked = await siteGate(request, {
+    password: process.env.SITE_PASSWORD,
+    siteName: 'Certo Governance Institute',
+    defaultLang: 'pl',
+    bypass: GATE_BYPASS,
+  });
+  if (locked) return locked;
+
+  if (GATE_ONLY.test(request.nextUrl.pathname)) return NextResponse.next();
+
   const host = request.headers.get('host')?.split(':')[0] || '';
 
   // Check if this is a custom tenant domain
@@ -47,6 +70,7 @@ export default function middleware(request: NextRequest) {
   return intlMiddleware(request);
 }
 
+// Everything except build assets, so the password gate covers the whole site.
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!_next/static|_next/webpack-hmr|_vercel|favicon\\.ico).*)']
 };

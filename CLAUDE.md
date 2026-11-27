@@ -19,6 +19,16 @@ packages/i18n                  → shared i18n (24 języki UE)
 packages/i18n/messages/        → pl.json (source), en.json + 22 języki (auto)
 packages/i18n/scripts/         → translate.ts (Claude API pipeline)
 .github/workflows/             → translate.yml (auto-tłumaczenie po commicie)
+packages/site-gate             → bramka hasłem na cały serwis (wspólna dla 3 aplikacji)
+
+## Bramka hasłem
+Każde middleware zaczyna od `siteGate()` z packages/site-gate.
+Sterowanie zmienną `SITE_PASSWORD` w projekcie Vercel (osobno dla każdego serwisu):
+- ustawiona → cały serwis (strony, API, pliki) wymaga hasła; cookie `certo_gate` na 30 dni
+- usunięta + redeploy → bramka wyłączona, serwis publiczny jak wcześniej
+- zmiana hasła + redeploy → wszyscy muszą wpisać nowe
+Hasła nie commitujemy (repo jest publiczne). Endpointy maszynowe z własnym sekretem
+omijają bramkę — lista `GATE_BYPASS` w foundation/platform/apps/web/middleware.ts.
 
 ## Stack
 Next.js 15, TypeScript, React 19, Supabase, Vercel, Cloudflare, next-intl, Turborepo
